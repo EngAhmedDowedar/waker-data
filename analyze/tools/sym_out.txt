@@ -1,0 +1,42 @@
+--- 'PropertyListCate' ---
+  0x005241b0 sz=0xbc _ZN23CPropertyListCateScreenC1Eii10ngStringV2
+  0x005241b0 sz=0xbc _ZN23CPropertyListCateScreenC2Eii10ngStringV2
+  0x0052426c sz=0x80 _ZN23CPropertyListCateScreenD1Ev
+  0x0052426c sz=0x80 _ZN23CPropertyListCateScreenD2Ev
+  0x005242ec sz=0xa _ZThn4_N23CPropertyListCateScreenD1Ev
+  0x005242f8 sz=0x10 _ZThn268_N23CPropertyListCateScreenD1Ev
+  0x00524308 sz=0x10 _ZThn272_N23CPropertyListCateScreenD1Ev
+  0x00524318 sz=0x52 _ZN23CPropertyListCateScreen5ClearEv
+  0x0052436a sz=0xc _ZN23CPropertyListCateScreenD0Ev
+  0x00524376 sz=0xe _ZThn4_N23CPropertyListCateScreenD0Ev
+  0x00524384 sz=0x14 _ZThn268_N23CPropertyListCateScreenD0Ev
+  0x00524398 sz=0x14 _ZThn272_N23CPropertyListCateScreenD0Ev
+--- 'GetPrice' ---
+  0x00327de4 sz=0x14 _ZN6CArmor8GetPriceEv
+  0x00328128 sz=0x48 _ZN8CAuction15GetPriceTypeStrEv
+  0x00340226 sz=0x14 _ZN9CCBWeapon8GetPriceEv
+  0x0038de28 sz=0x14 _ZN5CDrug8GetPriceEv
+  0x003fab6c sz=0x14 _ZN13CFunctionTool8GetPriceEv
+  0x0040ab88 sz=0x14 _ZN5CGift8GetPriceEv
+  0x0040d26c sz=0x23c _ZN6CGoods8GetPriceEv
+  0x004436c0 sz=0x8 _ZN10CHG_Spoils8GetPriceEv
+  0x00449da2 sz=0x176 _ZN6CHouse8GetPriceEv
+  0x004ee10c sz=0x14 _ZN6CMount8GetPriceEv
+  0x0051f440 sz=0x14 _ZN8CProduct8GetPriceEv
+  0x0054aed8 sz=0x30 _ZN7CRG_car8GetPriceEv
+--- 'House' ---
+  0x0032277c sz=0xb0 _ZN14CAirLineScreen18MoveBagToWareHouseEv
+  0x00329b3c sz=0x6c _ZN19CAuctionHouseScreenC1Ev
+  0x00329b3c sz=0x6c _ZN19CAuctionHouseScreenC2Ev
+  0x00329ba8 sz=0x60 _ZN19CAuctionHouseScreenD1Ev
+  0x00329ba8 sz=0x60 _ZN19CAuctionHouseScreenD2Ev
+  0x00329c08 sz=0xa _ZThn4_N19CAuctionHouseScreenD1Ev
+  0x00329c14 sz=0x10 _ZThn268_N19CAuctionHouseScreenD1Ev
+  0x00329c24 sz=0x42 _ZN19CAuctionHouseScreen5ClearEv
+  0x00329c66 sz=0xc _ZN19CAuctionHouseScreenD0Ev
+  0x00329c72 sz=0xe _ZThn4_N19CAuctionHouseScreenD0Ev
+  0x00329c80 sz=0x14 _ZThn268_N19CAuctionHouseScreenD0Ev
+  0x00329c94 sz=0x18 _ZN19CAuctionHouseScreen7DestroyEv
+near 0x449da2: _ZN6CHouse8GetPriceEv +0x0 (sz=0x176)
+near 0x524b7c: _ZN23CPropertyListCateScreen17OnReceiveResponseEiPv +0x0 (sz=0x4a8)
+near 0x524b7d: _ZN23CPropertyListCateScreen17OnReceiveResponseEiPv +0x1 (sz=0x4a8)

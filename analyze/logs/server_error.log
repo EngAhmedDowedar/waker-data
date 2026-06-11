@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\Admin\Videos\New folder\waker\local-server\python\server.py", line 876, in <module>
+    print('  Waker Local Server - \u0648\u0643\u0631 \u0627\u0644\u0627\u0648\u063a\u0627\u062f')
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 23-25: character maps to <undefined>

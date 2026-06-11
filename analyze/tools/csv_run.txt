@@ -1,0 +1,243 @@
+PLT entries for targets:
+  PLT 0x002ce1f8 -> CallStaticObjectMethod
+  PLT 0x002fd16c -> CallStaticIntMethod
+  PLT 0x002fd5ec -> CallStaticVoidMethod
+  PLT 0x002fd67c -> CallStaticBooleanMethod
+veneers:
+  veneer 0x0069d15c -> CallStaticObjectMethod
+  veneer 0x006bb75c -> CallStaticIntMethod
+  veneer 0x006bbc0c -> CallStaticVoidMethod
+  veneer 0x006bbc3c -> CallStaticBooleanMethod
+Callers of CallStatic*Method veneers
+========================================================================
+
+=== CallStaticObjectMethod  (22 sites) veneer 0x0069d15c ===
+  _ZN6CEmoji13CopyHeadWordsEP10ngStringV2RS0_i (@0x003912e8) -- 1
+    0x0039133e
+  _ZN6CEmoji13CopyHeadBytesEP10ngStringV2RS0_i (@0x003913a4) -- 1
+    0x003913fa
+  _ZN17CResPackageLoader18OnDownloadCompleteEP12ngByteBufferPKcS3_ (@0x00552820) -- 2
+    0x00552876
+    0x0055293e
+  _ZN14ngStatisticsUM21OnEventWithPropertiesEPKcP11ngNVHashMap (@0x005b239c) -- 1
+    0x005b2480
+  _ZN18ngStatisticsFlurry21OnEventWithPropertiesEPKcP11ngNVHashMap (@0x005b2820) -- 1
+    0x005b2904
+  _ZN12ngFileReader4LoadEPKc (@0x005c48c4) -- 1
+    0x005c4984
+  _ZN15ngDeviceAndroid11GetFilePathER10ngStringV2PKc (@0x005eee50) -- 1
+    0x005eeed0
+  _ZN15ngDeviceAndroid16GetFileWritePathER10ngStringV2PKc (@0x005eef2c) -- 1
+    0x005eefac
+  _ZN15ngDeviceAndroid13GetDeviceTypeEv (@0x005ef018) -- 1
+    0x005ef094
+  _ZN15ngDeviceAndroid16GetDeviceVersionEv (@0x005ef0fc) -- 1
+    0x005ef178
+  _ZN15ngDeviceAndroid25CurrentLocaleLanguageFullEv (@0x005ef3d4) -- 1
+    0x005ef444
+  _ZN15ngDeviceAndroid21CurrentLocaleLanguageEv (@0x005ef4b4) -- 1
+    0x005ef524
+  _ZN15ngDeviceAndroid19CurrentLocaleRegionEv (@0x005ef594) -- 1
+    0x005ef604
+  _ZN15ngDeviceAndroid12SaveDeviceIDEv (@0x005ef7d4) -- 3
+    0x005ef852
+    0x005ef91a
+    0x005ef94c
+  _ZNK15ngDeviceAndroid7GetIdfaEv (@0x005efac0) -- 1
+    0x005efb3c
+  _ZN14ngMediaAndroid11SetFileNameEPKc (@0x005effbc) -- 1
+    0x005f004a
+  _ZN16ngTextureAndroid14InitWithStringEP12ngSystemFontR10ngStringV2P25__T_STRING_IMAGE_CATCHE__ (@0x005f0e14) -- 1
+    0x005f0eec
+  _ZN18ngLabelImplAndroid19FitTextToLabelWidthER10ngStringV2i (@0x005f2e7c) -- 1
+    0x005f2f56
+  _ZN18ngTextInputAndroid19HandleInputKeyEventE25__E_TEXT_INPUT_KEYEVENT__ (@0x005f5c4c) -- 1
+    0x005f5d04
+
+=== CallStaticIntMethod  (10 sites) veneer 0x006bb75c ===
+  _Z13GetWordLengthP10ngStringV2 (@0x005af074) -- 1
+    0x005af0da
+  _ZN18asHelpShiftAndroid20GetNotificationCountEv (@0x005b54d8) -- 1
+    0x005b5506
+  _ZN22ngTextFieldImplAndroid7SetTextER10ngStringV2 (@0x005f1bb8) -- 1
+    0x005f1c54
+  _ZN22ngTextFieldImplAndroid17ShouldReplaceTextEPKc (@0x005f1cf0) -- 1
+    0x005f1d84
+  _ZN22ngTextFieldImplAndroid16ShouldAppendTextEPKc (@0x005f1e20) -- 2
+    0x005f1eea
+    0x005f1f0e
+  _ZN22ngTextFieldImplAndroid19HandleInputKeyEventE25__E_TEXT_INPUT_KEYEVENT__ (@0x005f1fb0) -- 1
+    0x005f206c
+  _ZN21ngTextViewImplAndroid17ShouldReplaceTextEPKc (@0x005f24e4) -- 1
+    0x005f2576
+  _ZN21ngTextViewImplAndroid16ShouldAppendTextEPKc (@0x005f25e0) -- 2
+    0x005f267a
+    0x005f269c
+
+=== CallStaticVoidMethod  (84 sites) veneer 0x006bbc0c ===
+  _ZN14ngStatisticsUM13OnSimpleEventEPKc (@0x005b21b8) -- 1
+    0x005b2232
+  _ZN14ngStatisticsUM16OnEventWithValueEPKcS1_ (@0x005b22d4) -- 1
+    0x005b2362
+  _ZN14ngStatisticsUM21OnEventWithPropertiesEPKcP11ngNVHashMap (@0x005b239c) -- 2
+    0x005b2526
+    0x005b256e
+  _ZN14ngStatisticsUM12OnEventStartEPKc (@0x005b25cc) -- 1
+    0x005b2648
+  _ZN14ngStatisticsUM10OnEventEndEPKc (@0x005b2678) -- 1
+    0x005b26f4
+  _ZN18ngStatisticsFlurry13OnSimpleEventEPKc (@0x005b2724) -- 1
+    0x005b279e
+  _ZN18ngStatisticsFlurry21OnEventWithPropertiesEPKcP11ngNVHashMap (@0x005b2820) -- 2
+    0x005b29aa
+    0x005b29f2
+  _ZN18ngStatisticsFlurry12OnEventStartEPKc (@0x005b2a50) -- 1
+    0x005b2acc
+  _ZN18ngStatisticsFlurry10OnEventEndEPKc (@0x005b2afc) -- 1
+    0x005b2b78
+  _ZN22asTalkingDataInterface14SetAccountInfoExPKciiiii (@0x005b2bac) -- 7
+    0x005b2c56
+    0x005b2c8e
+    0x005b2cbe
+    0x005b2ce6
+    ...3 more
+  _ZN22asTalkingDataInterface13BeginPurchaseEPKcS1_dS1_dS1_ (@0x005b2e20) -- 1
+    0x005b2eea
+  _ZN22asTalkingDataInterface11EndPurchaseEPKc (@0x005b2f38) -- 1
+    0x005b2fb4
+  _ZN22asTalkingDataInterface8UseBucksEPKcid (@0x005b2fe4) -- 1
+    0x005b3074
+  _ZN22asTalkingDataInterface12MissionStartEi (@0x005b30a4) -- 1
+    0x005b3114
+  _ZN22asTalkingDataInterface10MissionEndEi (@0x005b3138) -- 1
+    0x005b31a8
+  _ZN14asMATInterface17TrackRegistrationEPKc (@0x005b31cc) -- 1
+    0x005b3244
+  _ZN14asMATInterface13TrackPurchaseEPKcS1_dS1_ (@0x005b32c8) -- 1
+    0x005b3386
+  _ZN14asMATInterface11TrackActionEPKc (@0x005b33c8) -- 1
+    0x005b3444
+  _ZN14asMATInterface9TrackOpenEv (@0x005b3474) -- 1
+    0x005b34de
+  _ZN14asMATInterface12TrackInstallEv (@0x005b3500) -- 1
+    0x005b356a
+  _ZN14asMATInterface10TrackLoginEPKc (@0x005b358c) -- 1
+    0x005b3606
+  _ZN26asVungleAdInterfaceAndroid19ShowIncentivizedAdsEPKcii (@0x005b37c0) -- 1
+    0x005b380c
+  _ZN26asVungleAdInterfaceAndroid19ShowInterstitialAdsEv (@0x005b3880) -- 1
+    0x005b38ae
+  _ZN26asVungleAdInterfaceAndroid14SetSoundEnableEi (@0x005b38c0) -- 1
+    0x005b38f4
+  _ZN26asVungleAdInterfaceAndroid22SetAutoRotationEnabledEi (@0x005b3908) -- 1
+    0x005b393c
+  _ZN22ngFacebookShareAndroid5LoginEv (@0x005b3a54) -- 1
+    0x005b3a82
+  _ZN22ngFacebookShareAndroid11LogPurchaseEdPKc (@0x005b3ae8) -- 1
+    0x005b3b32
+  _ZN22ngFacebookShareAndroid6LogOutEv (@0x005b3b50) -- 1
+    0x005b3b7e
+  _ZN18asHelpShiftAndroid11LoginHelperEPKcS1_i (@0x005b5000) -- 1
+    0x005b5064
+  _ZN18asHelpShiftAndroid12LogoutHelperEv (@0x005b5100) -- 1
+    0x005b512e
+  _ZN18asHelpShiftAndroid8ShowFAQsEhP10ngJsonHashP11ngJsonArrayh (@0x005b5140) -- 1
+    0x005b51f6
+  _ZN18asHelpShiftAndroid14ShowFAQSectionEPKchP10ngJsonHashP11ngJsonArrayh (@0x005b5220) -- 1
+    0x005b52e8
+  _ZN18asHelpShiftAndroid13ShowSingleFAQEPKchP10ngJsonHashP11ngJsonArrayh (@0x005b531c) -- 1
+    0x005b53e6
+  _ZN18asHelpShiftAndroid16ShowConversationEP10ngJsonHashP11ngJsonArray (@0x005b5418) -- 1
+    0x005b54b0
+  _ZN18asHelpShiftAndroid11SetLanguageEPKc (@0x005b5518) -- 1
+    0x005b5558
+  _ZN26asPayssionInterfaceAndroid8PurchaseEPKcS1_S1_S1_S1_S1_S1_ (@0x005b5744) -- 1
+    0x005b5832
+  _ZN16ngGameResManager9LoadMediaEv (@0x005c0528) -- 2
+    0x005c05d2
+    0x005c0632
+  _ZN10ngAppRater5PopupEv (@0x005ee604) -- 1
+    0x005ee6ea
+  _ZN10ngAppRater5SetupExxPKcS1_S1_S1_S1_ (@0x005ee740) -- 1
+    0x005ee7fe
+  _ZN10ngAppRater19SetTimesUntilPromptEi (@0x005ee824) -- 1
+    0x005ee894
+  _ZN21ngReachabilityAndroid5StartEv (@0x005ee9fc) -- 1
+    0x005eea66
+  _ZN21ngReachabilityAndroid4StopEv (@0x005eea88) -- 1
+    0x005eeaf2
+  _ZN15ngDeviceAndroid9LaunchURLEPKc (@0x005efb9c) -- 1
+    0x005efc18
+  _ZN15ngDeviceAndroid24RegisterPushNotificationEPKcS1_iS1_ (@0x005efc48) -- 1
+    0x005efcea
+  _ZN15ngDeviceAndroid21PushLocalNotificationExP10ngStringV2iPKc (@0x005efd2c) -- 1
+    0x005efdde
+  _ZN15ngDeviceAndroid23CancelLocalNotificationEiPKc (@0x005efe1c) -- 1
+    0x005efe9c
+  _ZN14ngMediaAndroidD1Ev (@0x005f00c8) -- 1
+    0x005f014a
+  _ZN14ngMediaAndroid8PrefetchEv (@0x005f01b0) -- 1
+    0x005f02c6
+  _ZN14ngMediaAndroid7UnfetchEv (@0x005f0310) -- 1
+    0x005f03ec
+  _ZN14ngMediaAndroid9SetVolumeEi (@0x005f042c) -- 1
+    0x005f04e2
+  _ZN14ngMediaAndroid4PlayEh (@0x005f0514) -- 1
+    0x005f0602
+  _ZN14ngMediaAndroid5PauseEv (@0x005f0640) -- 1
+    0x005f071c
+  _ZN14ngMediaAndroid4StopEv (@0x005f0758) -- 1
+    0x005f0834
+  _ZN14ngMediaAndroid6ResumeEv (@0x005f0870) -- 1
+    0x005f094c
+  _ZN20ngMediaPlayerAndroid14SetSoundVolumeEi (@0x005f0a7c) -- 1
+    0x005f0aec
+  _ZN16ngTextureAndroid16LoadTextureAsyncEPKcS1_hh (@0x005f1038) -- 2
+    0x005f115e
+    0x005f11a8
+  _ZN16ngTextureAndroid12LoadInternalEv (@0x005f1424) -- 1
+    0x005f1550
+  _ZN20ngAlertDialogAndroid4ShowEPKcz (@0x005f1644) -- 1
+    0x005f17be
+  _ZN20ngAlertDialogAndroid11ShowWaitingEPKcz (@0x005f1818) -- 1
+    0x005f197e
+  _ZN20ngAlertDialogAndroid7DismissEv (@0x005f19d0) -- 1
+    0x005f1a46
+  _ZN17ngStoreKitAndroid8PurchaseEPKc (@0x005f2b10) -- 1
+    0x005f2bd4
+  _ZN17ngStoreKitAndroid4ListER6ngList (@0x005f2c14) -- 2
+    0x005f2d04
+    0x005f2d36
+  _ZN20ngImagePickerAndroid4OpenEi (@0x005f346c) -- 1
+    0x005f34bc
+  _ZN20ngImagePickerAndroid17SaveImageFromDataEPKvi10ngStringV2 (@0x005f34d8) -- 1
+    0x005f355c
+  _ZN20ngImagePickerAndroid16ScaleImageToSizeEPKviff (@0x005f3584) -- 1
+    0x005f360e
+  _ZN20ngImagePickerAndroid16ScaleImageToSizeEPKvffii (@0x005f362c) -- 1
+    0x005f371c
+  _ZN14ngStringHelper9BreakTextEPKcP12ngSystemFontiPvPFvS4_S1_EPFvS4_iEPFS1_vESA_ (@0x005f5930) -- 1
+    0x005f5a06
+  _ZN18ngTextInputAndroid14SendTextToJavaEPKc (@0x005f5b8c) -- 1
+    0x005f5c1e
+  _ZN18ngTextInputAndroid15ResignResponderEhh (@0x005f5dd4) -- 1
+    0x005f5eac
+  _ZN18ngTextInputAndroid15BecomeResponderEhh (@0x005f5f54) -- 1
+    0x005f609e
+  _ZN13ngMailAndroid4ShowEPKcS1_S1_S1_ (@0x005f628c) -- 1
+    0x005f6340
+  _ZN24ngLocationManagerAndroid5StartEv (@0x00608c04) -- 1
+    0x00608c6e
+  _ZN24ngLocationManagerAndroid4StopEv (@0x00608c90) -- 1
+    0x00608cfa
+
+=== CallStaticBooleanMethod  (4 sites) veneer 0x006bbc3c ===
+  _ZN26asVungleAdInterfaceAndroid19GetIsVideoAvailableEi (@0x005b3950) -- 1
+    0x005b3984
+  _ZN15ngDeviceAndroid11IsFileExistEPKc (@0x005eeda4) -- 1
+    0x005eee1e
+  _ZN17ngStoreKitAndroid4ListER6ngList (@0x005f2c14) -- 1
+    0x005f2cbc
+  _ZN24ngLocationManagerAndroid11IsAvailableEv (@0x00608b78) -- 1
+    0x00608be2
+---DONE---

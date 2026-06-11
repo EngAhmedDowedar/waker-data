@@ -1,0 +1,1468 @@
+{
+  "scan_root": "/home/runner/work/waker/waker",
+  "protocols_detected": [
+    "http",
+    "https"
+  ],
+  "urls": [
+    "http://adlog.flurry.com",
+    "http://ads.flurry.com",
+    "http://ads.flurry.com/v6/getAds.do",
+    "http://alog.umeng.co/app_logs",
+    "http://alog.umeng.com/app_logs",
+    "http://api.vungle.com/api/v4/",
+    "http://appstat.anansicorp.org:8992/logevent/weightevent",
+    "http://city-arab.anansigame.org:2095/page/pwdreset",
+    "http://city-arab.anansigame.org:8080/",
+    "http://city.wiyun.com/mobilefaq/helpfaq.html",
+    "http://curl.haxx.se/docs/http-cookies.html",
+    "http://data.flurry.com/aap.do",
+    "http://etherx.jabber.org/streams",
+    "http://flurry.cachefly.net/adSpaceStyles/images/bttn-close-bw.png",
+    "http://gaandroid.talkingdata.net/g/d?crc=",
+    "http://id1.cn.com/a/",
+    "http://jabber.org/protocol/compress",
+    "http://oc.umeng.co/check_config_update",
+    "http://oc.umeng.com/check_config_update",
+    "http://plus.google.com/",
+    "http://s3.amazonaws.com/anansi-bucket/police/cityarab_policy.html",
+    "http://sandbox.payssion.com/",
+    "http://sandbox.payssion.com/api/v1/",
+    "http://schemas.android.com/apk/res-auto",
+    "http://schemas.android.com/apk/res/android",
+    "http://www.example.com",
+    "http://www.google.com",
+    "http://www.jivesoftware.com/xmlns/xmpp/properties",
+    "http://www.sakhabgame.com/EN/soft/CityRes_005.zip",
+    "http://www.winimage.com/zLibDll",
+    "http://xmlpull.org/v1/doc/features.html#process-namespaces",
+    "https://adlog.flurry.com",
+    "https://ads.flurry.com",
+    "https://ads.flurry.com/v6/getAds.do",
+    "https://api.appsflyer.com/install_data/v3/",
+    "https://app-measurement.com/a",
+    "https://csi.gstatic.com/csi",
+    "https://data.flurry.com/aap.do",
+    "https://developers.facebook.com/docs/android/getting-started",
+    "https://developers.facebook.com/docs/sharing/android",
+    "https://events.appsflyer.com/api/v2.3/androidevent?buildnumber=1.17&app_id=",
+    "https://facebook.com",
+    "https://goo.gl/NAOOOI",
+    "https://goo.gl/NAOOOI.",
+    "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/mraid/v2/mraid_app_banner.js",
+    "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/mraid/v2/mraid_app_expanded_banner.js",
+    "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/mraid/v2/mraid_app_interstitial.js",
+    "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/native_ads.html",
+    "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/sdk-core-v40.html",
+    "https://imasdk.googleapis.com/admob/sdkloader/native_video.html",
+    "https://ingest.vungle.com/",
+    "https://market.android.com/details?id=",
+    "https://pagead2.googlesyndication.com/pagead/gen_204",
+    "https://pagead2.googlesyndication.com/pagead/gen_204?id=gmob-apps",
+    "https://play.google.com/store/apps/details?id=",
+    "https://play.google.com/store/apps/details?id=com.anansimobile.city_ar",
+    "https://plus.google.com/",
+    "https://pubads.g.doubleclick.net/activity;dc_iu=",
+    "https://pubads.g.doubleclick.net/activity;xsp=",
+    "https://sdk.appsflyer.com/reattr_data/",
+    "https://support.google.com/dfp_premium/answer/7160685#push",
+    "https://track.appsflyer.com/api/v2.3/androidevent?buildnumber=1.17&app_id=",
+    "https://track.appsflyer.com/api/v2.3/uninsall?buildnumber=1.17",
+    "https://twitter.com/Wild_Cityarabic",
+    "https://u.talkingdata.net/ota/b/android/dynamic/sdk.zip",
+    "https://u.talkingdata.net/ota/b/android/dynamic/ver",
+    "https://u.talkingdata.net/ota/common/android/dynamic/sdk.zip",
+    "https://u.talkingdata.net/ota/common/android/dynamic/ver",
+    "https://wild-city-9abb9.firebaseio.com",
+    "https://www.facebook.com/wkralawghad",
+    "https://www.google.com",
+    "https://www.google.com/dfp/debugSignals",
+    "https://www.google.com/dfp/inAppPreview",
+    "https://www.google.com/dfp/linkDevice",
+    "https://www.google.com/dfp/sendDebugData",
+    "https://www.googleadservices.com/pagead/conversion/",
+    "https://www.googleapis.com/auth/appstate",
+    "https://www.googleapis.com/auth/datastoremobile",
+    "https://www.googleapis.com/auth/drive.appdata",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/fitness.activity.read",
+    "https://www.googleapis.com/auth/fitness.activity.write",
+    "https://www.googleapis.com/auth/fitness.body.read",
+    "https://www.googleapis.com/auth/fitness.body.write",
+    "https://www.googleapis.com/auth/fitness.location.read",
+    "https://www.googleapis.com/auth/fitness.location.write",
+    "https://www.googleapis.com/auth/fitness.nutrition.read",
+    "https://www.googleapis.com/auth/fitness.nutrition.write",
+    "https://www.googleapis.com/auth/games",
+    "https://www.googleapis.com/auth/plus.login",
+    "https://www.googleapis.com/auth/plus.me",
+    "https://www.payssion.com/",
+    "https://www.payssion.com/api/v1/",
+    "https://www.payssion.com/paylink/",
+    "https://www.vungle.com/privacy/",
+    "https://xdrig.com/push"
+  ],
+  "hosts": [
+    "adlog.flurry.com",
+    "ads.flurry.com",
+    "alog.umeng.co",
+    "alog.umeng.com",
+    "api.appsflyer.com",
+    "api.vungle.com",
+    "app-measurement.com",
+    "appstat.anansicorp.org",
+    "city-arab.anansigame.org",
+    "city.wiyun.com",
+    "csi.gstatic.com",
+    "curl.haxx.se",
+    "data.flurry.com",
+    "developers.facebook.com",
+    "etherx.jabber.org",
+    "events.appsflyer.com",
+    "facebook.com",
+    "flurry.cachefly.net",
+    "gaandroid.talkingdata.net",
+    "goo.gl",
+    "googleads.g.doubleclick.net",
+    "id1.cn.com",
+    "imasdk.googleapis.com",
+    "ingest.vungle.com",
+    "jabber.org",
+    "market.android.com",
+    "oc.umeng.co",
+    "oc.umeng.com",
+    "pagead2.googlesyndication.com",
+    "play.google.com",
+    "plus.google.com",
+    "pubads.g.doubleclick.net",
+    "s3.amazonaws.com",
+    "sandbox.payssion.com",
+    "schemas.android.com",
+    "sdk.appsflyer.com",
+    "support.google.com",
+    "track.appsflyer.com",
+    "twitter.com",
+    "u.talkingdata.net",
+    "wild-city-9abb9.firebaseio.com",
+    "www.example.com",
+    "www.facebook.com",
+    "www.google.com",
+    "www.googleadservices.com",
+    "www.googleapis.com",
+    "www.jivesoftware.com",
+    "www.payssion.com",
+    "www.sakhabgame.com",
+    "www.vungle.com",
+    "www.winimage.com",
+    "xdrig.com",
+    "xmlpull.org"
+  ],
+  "ip_or_ip_port": [
+    "1.1.10.4",
+    "10.0.0.172",
+    "10.10.32.105:9092",
+    "127.0.0.1",
+    "2.3.1.17",
+    "211.151.121.43",
+    "211.151.164.168",
+    "4.6.3.0"
+  ],
+  "host_ports": [
+    "appstat.anansicorp.org:8992",
+    "city-arab.anansigame.org:2095",
+    "city-arab.anansigame.org:8080"
+  ],
+  "file_hits": {
+    "smali/com/appsflyer/AppsFlyerLib$InstallAttributionIdFetcher.smali": [
+      "api.appsflyer.com",
+      "https://api.appsflyer.com/install_data/v3/"
+    ],
+    "smali/com/appsflyer/AppsFlyerLib$ReAttributionIdFetcher.smali": [
+      "https://sdk.appsflyer.com/reattr_data/",
+      "sdk.appsflyer.com"
+    ],
+    "smali/com/appsflyer/AppsFlyerLib.smali": [
+      "2.3.1.17",
+      "events.appsflyer.com",
+      "https://events.appsflyer.com/api/v2.3/androidevent?buildnumber=1.17&app_id=",
+      "https://track.appsflyer.com/api/v2.3/androidevent?buildnumber=1.17&app_id=",
+      "https://track.appsflyer.com/api/v2.3/uninsall?buildnumber=1.17",
+      "track.appsflyer.com"
+    ],
+    "smali/com/facebook/internal/Utility.smali": [
+      "facebook.com",
+      "https://facebook.com"
+    ],
+    "smali/com/facebook/internal/Validate.smali": [
+      "developers.facebook.com",
+      "https://developers.facebook.com/docs/android/getting-started",
+      "https://developers.facebook.com/docs/sharing/android"
+    ],
+    "smali/com/payssion/android/sdk/Payssion.smali": [
+      "https://www.payssion.com/",
+      "www.payssion.com"
+    ],
+    "smali/com/payssion/android/sdk/model/ContinuePayRequest.smali": [
+      "http://sandbox.payssion.com/",
+      "https://www.payssion.com/",
+      "sandbox.payssion.com",
+      "www.payssion.com"
+    ],
+    "smali/com/payssion/android/sdk/model/d.smali": [
+      "http://sandbox.payssion.com/api/v1/",
+      "https://www.payssion.com/api/v1/",
+      "sandbox.payssion.com",
+      "www.payssion.com"
+    ],
+    "smali/com/payssion/android/sdk/ui/l.smali": [
+      "https://www.payssion.com/paylink/",
+      "www.payssion.com"
+    ],
+    "smali/com/vungle/publisher/FullScreenAdActivity$AdEventListener.smali": [
+      "https://www.vungle.com/privacy/",
+      "www.vungle.com"
+    ],
+    "smali/com/vungle/publisher/inject/ConfigurablePublisherModule.smali": [
+      "api.vungle.com",
+      "http://api.vungle.com/api/v4/",
+      "https://ingest.vungle.com/",
+      "ingest.vungle.com"
+    ],
+    "smali/com/helpshift/app/ActionBarHelperBase.smali": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "smali/com/helpshift/app/ActionBarHelperBase$WrappedMenuInflater.smali": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "smali/com/google/ads/conversiontracking/o.smali": [
+      "http://plus.google.com/",
+      "plus.google.com"
+    ],
+    "smali/com/google/ads/conversiontracking/g.smali": [
+      "https://pubads.g.doubleclick.net/activity;dc_iu=",
+      "https://pubads.g.doubleclick.net/activity;xsp=",
+      "https://www.googleadservices.com/pagead/conversion/",
+      "pubads.g.doubleclick.net",
+      "www.googleadservices.com"
+    ],
+    "smali/com/google/android/vending/expansion/downloader/impl/DownloadThread.smali": [
+      "127.0.0.1"
+    ],
+    "smali/com/google/android/gms/common/Scopes.smali": [
+      "https://www.googleapis.com/auth/appstate",
+      "https://www.googleapis.com/auth/datastoremobile",
+      "https://www.googleapis.com/auth/drive.appdata",
+      "https://www.googleapis.com/auth/drive.file",
+      "https://www.googleapis.com/auth/fitness.activity.read",
+      "https://www.googleapis.com/auth/fitness.activity.write",
+      "https://www.googleapis.com/auth/fitness.body.read",
+      "https://www.googleapis.com/auth/fitness.body.write",
+      "https://www.googleapis.com/auth/fitness.location.read",
+      "https://www.googleapis.com/auth/fitness.location.write",
+      "https://www.googleapis.com/auth/fitness.nutrition.read",
+      "https://www.googleapis.com/auth/fitness.nutrition.write",
+      "https://www.googleapis.com/auth/games",
+      "https://www.googleapis.com/auth/plus.login",
+      "https://www.googleapis.com/auth/plus.me",
+      "www.googleapis.com"
+    ],
+    "smali/com/google/android/gms/internal/zzeif.smali": [
+      "http://www.example.com",
+      "www.example.com"
+    ],
+    "smali/com/google/android/gms/internal/zzacf.smali": [
+      "https://pagead2.googlesyndication.com/pagead/gen_204",
+      "pagead2.googlesyndication.com"
+    ],
+    "smali/com/google/android/gms/internal/zzaif.smali": [
+      "https://support.google.com/dfp_premium/answer/7160685#push",
+      "support.google.com"
+    ],
+    "smali/com/google/android/gms/internal/zzacj.smali": [
+      "http://www.google.com",
+      "www.google.com"
+    ],
+    "smali/com/google/android/gms/internal/zzmn.smali": [
+      "csi.gstatic.com",
+      "googleads.g.doubleclick.net",
+      "https://csi.gstatic.com/csi",
+      "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/mraid/v2/mraid_app_banner.js",
+      "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/mraid/v2/mraid_app_expanded_banner.js",
+      "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/mraid/v2/mraid_app_interstitial.js",
+      "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/native_ads.html",
+      "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/sdk-core-v40.html",
+      "https://imasdk.googleapis.com/admob/sdkloader/native_video.html",
+      "https://www.google.com/dfp/debugSignals",
+      "https://www.google.com/dfp/inAppPreview",
+      "https://www.google.com/dfp/linkDevice",
+      "https://www.google.com/dfp/sendDebugData",
+      "imasdk.googleapis.com",
+      "www.google.com"
+    ],
+    "smali/com/google/android/gms/internal/zzcbm.smali": [
+      "app-measurement.com",
+      "https://app-measurement.com/a"
+    ],
+    "smali/com/google/android/gms/internal/zzcfw.smali": [
+      "goo.gl",
+      "https://goo.gl/NAOOOI",
+      "https://goo.gl/NAOOOI.",
+      "https://www.google.com",
+      "www.google.com"
+    ],
+    "smali/com/google/android/gms/internal/zznk.smali": [
+      "http://www.example.com",
+      "www.example.com"
+    ],
+    "smali/com/google/android/gms/ads/identifier/zze.smali": [
+      "https://pagead2.googlesyndication.com/pagead/gen_204?id=gmob-apps",
+      "pagead2.googlesyndication.com"
+    ],
+    "smali/com/google/android/gms/common/internal/zzaj.smali": [
+      "https://plus.google.com/",
+      "plus.google.com"
+    ],
+    "smali/com/umeng/analytics/g.smali": [
+      "4.6.3.0",
+      "alog.umeng.co",
+      "alog.umeng.com",
+      "http://alog.umeng.co/app_logs",
+      "http://alog.umeng.com/app_logs",
+      "http://oc.umeng.co/check_config_update",
+      "http://oc.umeng.com/check_config_update",
+      "oc.umeng.co",
+      "oc.umeng.com"
+    ],
+    "smali/com/umeng/analytics/h.smali": [
+      "10.0.0.172"
+    ],
+    "smali/com/umeng/analytics/onlineconfig/a.smali": [
+      "4.6.3.0"
+    ],
+    "smali/com/umeng/analytics/a/f.smali": [
+      "4.6.3.0"
+    ],
+    "smali/com/flurry/android/ft.smali": [
+      "flurry.cachefly.net",
+      "http://flurry.cachefly.net/adSpaceStyles/images/bttn-close-bw.png"
+    ],
+    "smali/com/flurry/android/ce.smali": [
+      "data.flurry.com",
+      "http://data.flurry.com/aap.do",
+      "https://data.flurry.com/aap.do"
+    ],
+    "smali/com/flurry/android/FlurryAds.smali": [
+      "adlog.flurry.com",
+      "ads.flurry.com",
+      "http://adlog.flurry.com",
+      "http://ads.flurry.com",
+      "http://ads.flurry.com/v6/getAds.do",
+      "https://adlog.flurry.com",
+      "https://ads.flurry.com",
+      "https://ads.flurry.com/v6/getAds.do",
+      "https://market.android.com/details?id=",
+      "https://play.google.com/store/apps/details?id=",
+      "market.android.com",
+      "play.google.com"
+    ],
+    "smali/com/flurry/android/ao.smali": [
+      "1.1.10.4"
+    ],
+    "smali/com/tendcloud/tenddata/game/an.smali": [
+      "https://u.talkingdata.net/ota/common/android/dynamic/sdk.zip",
+      "https://u.talkingdata.net/ota/common/android/dynamic/ver",
+      "u.talkingdata.net"
+    ],
+    "smali/com/tendcloud/tenddata/game/be.smali": [
+      "10.10.32.105:9092"
+    ],
+    "smali/com/tendcloud/tenddata/game/bh.smali": [
+      "https://xdrig.com/push",
+      "xdrig.com"
+    ],
+    "smali/com/tendcloud/tenddata/game/bx.smali": [
+      "http://id1.cn.com/a/",
+      "id1.cn.com"
+    ],
+    "smali/com/tendcloud/tenddata/game/bo.smali": [
+      "211.151.121.43",
+      "gaandroid.talkingdata.net",
+      "http://gaandroid.talkingdata.net/g/d?crc="
+    ],
+    "smali/com/tendcloud/tenddata/game/au.smali": [
+      "https://u.talkingdata.net/ota/b/android/dynamic/sdk.zip",
+      "https://u.talkingdata.net/ota/b/android/dynamic/ver",
+      "u.talkingdata.net"
+    ],
+    "smali/com/tendcloud/tenddata/game/l.smali": [
+      "https://u.talkingdata.net/ota/common/android/dynamic/sdk.zip",
+      "https://u.talkingdata.net/ota/common/android/dynamic/ver",
+      "u.talkingdata.net"
+    ],
+    "smali/com/tendcloud/tenddata/game/az.smali": [
+      "211.151.164.168",
+      "https://xdrig.com/push",
+      "xdrig.com"
+    ],
+    "smali/org/jivesoftware/smack/SmackConfiguration.smali": [
+      "http://xmlpull.org/v1/doc/features.html#process-namespaces",
+      "xmlpull.org"
+    ],
+    "smali/org/jivesoftware/smack/XMPPConnection.smali": [
+      "http://jabber.org/protocol/compress",
+      "jabber.org"
+    ],
+    "smali/org/jivesoftware/smack/PacketReader.smali": [
+      "http://jabber.org/protocol/compress",
+      "http://xmlpull.org/v1/doc/features.html#process-namespaces",
+      "jabber.org",
+      "xmlpull.org"
+    ],
+    "smali/org/jivesoftware/smack/PacketWriter.smali": [
+      "etherx.jabber.org",
+      "http://etherx.jabber.org/streams"
+    ],
+    "smali/org/jivesoftware/smack/util/PacketParserUtils.smali": [
+      "http://www.jivesoftware.com/xmlns/xmpp/properties",
+      "www.jivesoftware.com"
+    ],
+    "smali/org/jivesoftware/smack/provider/ProviderManager.smali": [
+      "http://xmlpull.org/v1/doc/features.html#process-namespaces",
+      "xmlpull.org"
+    ],
+    "smali/org/jivesoftware/smack/packet/Packet.smali": [
+      "http://www.jivesoftware.com/xmlns/xmpp/properties",
+      "www.jivesoftware.com"
+    ],
+    "smali/android/support/v4/content/res/TypedArrayUtils.smali": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/menu/hs__messages_menu.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/menu/hs__search_on_conversation.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/menu/hs__actionbar_indeterminate_progress.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/menu/hs__faqs_fragment.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/menu/hs__show_conversation.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/menu/hs__add_conversation_menu.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v16/notification_template_custom_big.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v16/com_facebook_device_auth_dialog_fragment.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v16/com_facebook_smart_device_dialog_fragment.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable-v23/abc_control_background_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_secondary_text_material_dark.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_primary_text_material_dark.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_tint_btn_checkable.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_btn_colored_text_material.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/switch_thumb_material_light.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_hint_foreground_material_dark.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_tint_seek_thumb.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_primary_text_disable_only_material_light.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_tint_default.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/switch_thumb_material_dark.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_tint_switch_track.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_primary_text_material_light.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_tint_edittext.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/com_facebook_button_text_color.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_hint_foreground_material_light.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_background_cache_hint_selector_material_dark.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_primary_text_disable_only_material_dark.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_secondary_text_material_light.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_btn_colored_borderless_text_material.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_search_url_text.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_background_cache_hint_selector_material_light.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color/abc_tint_spinner.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_activity_chooser_view.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/notification_template_media.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_select_dialog_material.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/notification_template_big_media.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__simple_search_view.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/notification_template_custom_big.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/support_simple_spinner_dropdown_item.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/af_notification_zh_type1.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/defaultwebview.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_alert_dialog_button_bar_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/notification_template_media_custom.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_activity_chooser_view_list_item.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/notification_media_action.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__msg_txt_admin.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_search_dropdown_item_icons_2line.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__video_loading_progress.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__actionbar_compat_home.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/status_bar_ongoing_event_progress_bar.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/select_dialog_multichoice_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/title.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/notification_template_icon_group.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__msg_review_accepted.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__msg_confirmation_status.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__actionbar_indeterminate_progress.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_action_bar_title_item.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_list_menu_item_checkbox.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__faqs.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__local_msg_request_screenshot.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_list_menu_item_layout.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__msg_screenshot_status.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__simple_list_item_3.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__questions_list.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_dialog_title_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_action_menu_layout.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__csat_view.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_screen_content_include.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/tooltip.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/com_facebook_activity_layout.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__new_conversation_fragment.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_expanded_menu_layout.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/notification_action_tombstone.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/notification_template_big_media_narrow.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_action_menu_item_layout.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_alert_dialog_title_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/select_dialog_singlechoice_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__msg_confirmation_box.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__badge_layout.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__csat_dialog.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__msg_attachment_image.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/pmitem.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__no_faqs.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_screen_simple_overlay_action_mode.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__messages_list_footer.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/notification_template_lines_media.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/com_facebook_login_fragment.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_action_mode_bar.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__screenshot_preview.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__conversation.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__search_result_header.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__webview_custom_content.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/select_dialog_item_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_popup_menu_header_item_layout.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__msg_request_screenshot.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_action_bar_up_container.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/com_facebook_device_auth_dialog_fragment.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__question_fragment.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_search_view.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__question.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__search_result_footer.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/activity_paymentselect.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__simple_list_item_1.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_popup_menu_item_layout.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/notification_template_part_chronometer.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/notification_action.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__search_result_activity.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/com_facebook_smart_device_dialog_fragment.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_screen_toolbar.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__msg_attachment_generic.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_alert_dialog_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__search_list_footer.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/notification_media_cancel_action.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__section.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_list_menu_item_icon.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__actionbar_compat.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/com_facebook_tooltip_bubble.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__msg_txt_user.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__msg_review_request.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/af_notification_zh_type2.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_screen_simple.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__csat_holder.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/hs__messages_fragment.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_list_menu_item_radio.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/notification_template_big_media_custom.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/notification_template_big_media_narrow_custom.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/notification_template_part_time.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout/abc_action_mode_close_item_material.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v22/abc_alert_dialog_button_bar_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/notification_bg.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_btn_default_mtrl_shape.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/com_facebook_favicon_blue.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_ic_search_api_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/com_facebook_button_like_background.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/com_facebook_button_login_background.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_dialog_material_background.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_ic_arrow_drop_right_black_24dp.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_seekbar_tick_mark_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_ratingbar_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_item_background_holo_light.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_list_selector_holo_light.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_ratingbar_indicator_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_ic_go_search_api_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/nge_defaultwebview_btn_reload.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/com_facebook_button_login_silver_background.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_text_cursor_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/notification_tile_bg.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/tooltip_frame_dark.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_spinner_textfield_background_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_cab_background_top_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_tab_indicator_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_btn_radio_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_cab_background_internal_bg.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_seekbar_track_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/hs__actionbar_compat_item_focused.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/com_facebook_auth_dialog_background.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/nge_defaultwebview_btn_close.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/com_facebook_button_background.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_switch_thumb_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_item_background_holo_dark.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_ratingbar_small_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_list_selector_background_transition_holo_dark.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/notification_icon_background.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_btn_colored_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/tooltip_frame_light.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_ic_clear_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/com_facebook_button_login_logo.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_list_selector_background_transition_holo_light.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_seekbar_thumb_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_ic_ab_back_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/com_facebook_button_icon.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_ic_voice_search_api_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_ic_menu_overflow_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_btn_check_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/notification_bg_low.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/hs__actionbar_compat_selectable_item_background.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_textfield_search_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/com_facebook_auth_dialog_header_background.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_btn_borderless_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_list_selector_holo_dark.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/hs__edit_text_compat_background.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_vector_test.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/com_facebook_auth_dialog_cancel_background.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable/abc_edit_text_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable-hdpi/list_arrow.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/values/strings.xml": [
+      "https://wild-city-9abb9.firebaseio.com",
+      "wild-city-9abb9.firebaseio.com"
+    ],
+    "res/anim/abc_slide_in_top.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/anim/abc_shrink_fade_out_from_bottom.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/anim/tooltip_enter.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/anim/abc_popup_exit.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/anim/tooltip_exit.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/anim/abc_fade_out.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/anim/abc_slide_in_bottom.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/anim/abc_fade_in.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/anim/abc_slide_out_bottom.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/anim/abc_grow_fade_in_from_bottom.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/anim/abc_slide_out_top.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/anim/abc_popup_enter.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color-v21/abc_btn_colored_borderless_text_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/notification_template_media.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/abc_select_dialog_material.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/notification_template_big_media.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/notification_template_custom_big.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/abc_alert_dialog_button_bar_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/notification_template_media_custom.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/select_dialog_multichoice_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/abc_dialog_title_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/tooltip.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/notification_action_tombstone.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/notification_template_big_media_narrow.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/abc_alert_dialog_title_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/select_dialog_singlechoice_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/notification_template_lines_media.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/abc_popup_menu_header_item_layout.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/com_facebook_device_auth_dialog_fragment.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/abc_search_view.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/abc_popup_menu_item_layout.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/notification_action.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/com_facebook_smart_device_dialog_fragment.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/notification_template_big_media_custom.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/notification_template_big_media_narrow_custom.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v17/abc_action_mode_close_item_material.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v26/abc_screen_toolbar.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v21/notification_template_custom_big.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v21/notification_template_icon_group.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v21/notification_action_tombstone.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v21/notification_action.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/layout-v21/abc_screen_toolbar.xml": [
+      "http://schemas.android.com/apk/res-auto",
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color-v23/abc_tint_btn_checkable.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color-v23/abc_btn_colored_text_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color-v23/abc_color_highlight_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color-v23/abc_tint_seek_thumb.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color-v23/abc_tint_default.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color-v23/abc_tint_switch_track.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color-v23/abc_tint_edittext.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color-v23/abc_btn_colored_borderless_text_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/color-v23/abc_tint_spinner.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable-v21/abc_ratingbar_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable-v21/abc_ratingbar_indicator_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable-v21/abc_action_bar_item_background_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable-v21/abc_ratingbar_small_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable-v21/abc_btn_colored_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable-v21/notification_action_background.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "res/drawable-v21/abc_edit_text_material.xml": [
+      "http://schemas.android.com/apk/res/android",
+      "schemas.android.com"
+    ],
+    "lib/armeabi/libcity_ar.so": [
+      "appstat.anansicorp.org",
+      "appstat.anansicorp.org:8992",
+      "city-arab.anansigame.org",
+      "city-arab.anansigame.org:2095",
+      "city-arab.anansigame.org:8080",
+      "city.wiyun.com",
+      "curl.haxx.se",
+      "http://appstat.anansicorp.org:8992/logevent/weightevent",
+      "http://city-arab.anansigame.org:2095/page/pwdreset",
+      "http://city-arab.anansigame.org:8080/",
+      "http://city.wiyun.com/mobilefaq/helpfaq.html",
+      "http://curl.haxx.se/docs/http-cookies.html",
+      "http://s3.amazonaws.com/anansi-bucket/police/cityarab_policy.html",
+      "http://www.sakhabgame.com/EN/soft/CityRes_005.zip",
+      "http://www.winimage.com/zLibDll",
+      "https://play.google.com/store/apps/details?id=com.anansimobile.city_ar",
+      "https://twitter.com/Wild_Cityarabic",
+      "https://www.facebook.com/wkralawghad",
+      "play.google.com",
+      "s3.amazonaws.com",
+      "twitter.com",
+      "www.facebook.com",
+      "www.sakhabgame.com",
+      "www.winimage.com"
+    ]
+  }
+}

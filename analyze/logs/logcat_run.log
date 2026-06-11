@@ -1,0 +1,23 @@
+--------- beginning of main
+05-27 14:06:03.301  8508  8508 D libnativebridge: PreInitializeNativeBridge name=zygote instruction_set=arm
+05-27 14:06:03.307  8508  8508 I chatty  : uid=10052(com.anansimobile.city_ar) expire 30 lines
+05-27 14:06:04.414  8508  8539 I chatty  : uid=10052(com.anansimobile.city_ar) expire 165 lines
+05-27 14:06:05.231  8508  8563 I chatty  : uid=10052(com.anansimobile.city_ar) expire 2 lines
+--------- beginning of system
+05-27 14:06:05.236  8508  8563 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+05-27 14:06:05.324  8508  8561 I chatty  : uid=10052(com.anansimobile.city_ar) expire 42 lines
+05-27 14:06:05.326  8508  8569 I chatty  : uid=10052(com.anansimobile.city_ar) expire 2 lines
+05-27 14:06:05.329  8508  8538 I chatty  : uid=10052(com.anansimobile.city_ar) expire 1 line
+05-27 14:06:05.331  8508  8569 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+05-27 14:06:05.406  8508  8577 I chatty  : uid=10052(com.anansimobile.city_ar) expire 12 lines
+05-27 14:06:05.430  8508  8539 I chatty  : uid=10052(com.anansimobile.city_ar) expire 12 lines
+05-27 14:06:05.462  8508  8570 I chatty  : uid=10052(com.anansimobile.city_ar) expire 17 lines
+05-27 14:06:05.492  8508  8558 I chatty  : uid=10052(com.anansimobile.city_ar) expire 17 lines
+05-27 14:06:05.507  8508  8508 I chatty  : uid=10052(com.anansimobile.city_ar) expire 21 lines
+05-27 14:06:12.727  8508  8563 I chatty  : uid=10052(com.anansimobile.city_ar) expire 7 lines
+05-27 14:06:12.729  8508  8569 I chatty  : uid=10052(com.anansimobile.city_ar) expire 7 lines
+05-27 14:06:49.717  8508  8558 I chatty  : uid=10052(com.anansimobile.city_ar) expire 4 lines
+05-27 14:06:50.064  8508  8508 I chatty  : uid=10052(com.anansimobile.city_ar) expire 14 lines
+05-27 14:06:50.168  8508  8570 I chatty  : uid=10052(com.anansimobile.city_ar) expire 4 lines
+--------- beginning of crash
+05-27 14:07:13.221  8508  8558 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x10 in tid 8558 (GLThread 414)

@@ -1,0 +1,1238 @@
+--------- beginning of main
+06-11 08:46:43.769 12260 12260 I appproc : exec app_process! cmdline: /system/bin com.android.commands.am.Am start -n com.anansimobile.city_ar/.Main 
+06-11 08:46:43.769 12260 12260 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:46:43.777 12260 12260 D AndroidRuntime: CheckJNI is OFF
+06-11 08:46:43.882 12260 12260 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:46:43.909 12260 12260 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:46:43.910 12260 12260 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:46:43.941 12260 12260 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:46:43.941 12260 12260 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:46:43.944 12260 12260 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:46:43.966 12260 12260 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+--------- beginning of system
+06-11 08:46:43.975  1302  7763 I ActivityManager: START u0 {flg=0x10000000 cmp=com.anansimobile.city_ar/.Main} from uid 0 on display 0
+06-11 08:46:43.990 12260 12260 D AndroidRuntime: Shutting down VM
+06-11 08:46:43.990  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:44 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:46:44.008 12272 12272 D libnativebridge: PreInitializeNativeBridge name=zygote instruction_set=arm
+06-11 08:46:44.010 12272 12272 V libnb   : enter native_bridge2_initialize /data/user/0/com.anansimobile.city_ar/code_cache arm
+06-11 08:46:44.018  1302  2906 I ActivityManager: Start proc 12272:com.anansimobile.city_ar/u0a56 for activity com.anansimobile.city_ar/.Main
+06-11 08:46:44.025 12272 12272 D houdini : [12272] Initialize library(version: 7.1.1b_x.49852 RELEASE)... successfully.
+06-11 08:46:44.090  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:53 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:46:44.091 11067 11067 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+06-11 08:46:44.092 11067 11067 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+06-11 08:46:44.100  1758  1918 D EGL_adreno: eglMakeCurrent: 0xb6f221a0: ver 3 1 (tinfo 0xa617fbd0)
+06-11 08:46:44.154 11067 12286 D AdvertisingIdClient: AdvertisingIdClient already created.
+06-11 08:46:44.154 11067 12286 D AdvertisingIdClient: AdvertisingIdClient is not bounded. Starting to bind it...
+06-11 08:46:44.154  1716  1716 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+06-11 08:46:44.193 11067 12286 D AdvertisingIdClient: AdvertisingIdClient is bounded
+06-11 08:46:44.230 11067 12286 I AdvertisingIdClient: shouldSendLog 19503010
+06-11 08:46:44.231 11067 12286 I AdvertisingIdClient: GetInfoInternal elapse 76ms
+06-11 08:46:44.245  1716  1716 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.presencemanager.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+06-11 08:46:44.251  1716  1716 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.presencemanager.service.INTERNAL_IDENTITY dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+06-11 08:46:44.270 11067 11067 I AdvertisingIdClient: getting error as 17: API: ClientTelemetry.API is not available on this device. Connection failed with: ConnectionResult{statusCode=API_DISABLED_FOR_CONNECTION, resolution=null, message=null, clientMethodKey=null}
+06-11 08:46:44.600 12272 12272 I FirebaseInitProvider: FirebaseApp initialization skipped (Waker patch)
+06-11 08:46:44.649 12272 12290 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+06-11 08:46:44.671 12272 12272 V libnb   : enter native_bridge2_isSupported /data/app/com.anansimobile.city_ar-1/lib/arm/libcity_ar.so
+06-11 08:46:44.671 12272 12272 V libnb   : enter native_bridge2_loadLibrary /data/app/com.anansimobile.city_ar-1/lib/arm/libcity_ar.so
+06-11 08:46:45.129 12272 12272 D houdini : [12272] Added shared library /data/app/com.anansimobile.city_ar-1/lib/arm/libcity_ar.so for ClassLoader by Native Bridge.
+06-11 08:46:45.129 12272 12272 V libnb   : enter native_bridge2_getTrampoline JNI_OnLoad, trampoline_addr 0x0
+06-11 08:46:45.187 12272 12272 D native_project_lib: [root_service_log] Callback Activity...
+06-11 08:46:45.233 12272 12272 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_RootActivity_setSystemUIFrame, trampoline_addr 0xb91bafc4
+06-11 08:46:45.542 12272 12272 I AppsFlyer_1.17: Start tracking package: com.anansimobile.city_ar
+06-11 08:46:45.547 12272 12312 I AppsFlyer_1.17-156805547: ******* sendTrackingWithEvent: Launch
+06-11 08:46:45.570 12272 12312 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+06-11 08:46:45.579 12272 12312 I AppsFlyer_1.17: WARNING:READ_PHONE_STATE is missing
+06-11 08:46:45.651 12272 12272 D FlurryAgent: Initializing Flurry session
+06-11 08:46:45.656 12272 12272 D FlurryAgent: New session
+06-11 08:46:45.661 12272 12272 I AppsFlyer_1.17: Start tracking package: com.anansimobile.city_ar
+06-11 08:46:45.665 12272 12319 I AppsFlyer_1.17-156805664: ******* sendTrackingWithEvent: Launch
+06-11 08:46:45.669 12272 12272 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_RootActivity_onGameResume, trampoline_addr 0xb91baf8c
+06-11 08:46:45.677 12272 12319 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+06-11 08:46:45.682 12272 12319 I AppsFlyer_1.17: WARNING:READ_PHONE_STATE is missing
+06-11 08:46:45.688 12272 12310 I FlurryAgent: Agent cache file doesn't exist.
+06-11 08:46:45.704  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:53 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:46:45.704 12272 12310 D FlurryAgent: generating agent report
+06-11 08:46:45.709 12272 12310 I FlurryAgent: getting push token.
+06-11 08:46:45.713 12272 12310 D FlurryAgent: generated report of size 284 with 0 reports.
+06-11 08:46:45.715 12272 12310 I FlurryDataSenderBlockInfo: Writing FlurryDataSenderBlockInfo: /data/user/0/com.anansimobile.city_ar/files/.flurrydatasenderblock.9484ec9c-4aad-4fdf-8d82-5b82f14d68b4
+06-11 08:46:45.717 12272 12310 I FlurryDataSender: Number of not sent blocks = 1
+06-11 08:46:45.718 12272 12310 I FlurryDataSenderBlockInfo: Reading FlurryDataSenderBlockInfo: /data/user/0/com.anansimobile.city_ar/files/.flurrydatasenderblock.9484ec9c-4aad-4fdf-8d82-5b82f14d68b4
+06-11 08:46:45.719 12272 12310 I FlurryDataSender: FlurryDataSender: start upload data with id = 9484ec9c-4aad-4fdf-8d82-5b82f14d68b4 to http://data.flurry.com/aap.do
+06-11 08:46:45.720 12272 12310 D FlurryAgent: Done sending initial agent report
+06-11 08:46:45.734 12272 12322 I FlurryDataSenderIndex: write iter 0 dataLength = 36
+06-11 08:46:45.737 12272 12272 I HostConnection: HostConnection::HostConnection: pid=12272, tid=12272, this=0xb6f2c900
+06-11 08:46:45.742 12272 12272 I         : fastpipe: Connect success
+06-11 08:46:45.743 12272 12272 D HostConnection: HostRPC::connect sucess: app=com.anansimobile.city_ar, pid=12272, tid=12272, this=0xa6a20440
+06-11 08:46:45.745 12272 12272 E HostConnection: /data/local/cfg-znz/gl_force format error! com.tencent.tmgp.trssj 5 
+06-11 08:46:45.745 12272 12272 E HostConnection: /data/local/cfg-znz/gl_force format error! com.huiqi.mrby gl
+06-11 08:46:45.745 12272 12272 E HostConnection: /data/local/cfg-znz/gl_force format error! aos.playpark.ygc gl
+06-11 08:46:45.745 12272 12272 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:com.anansimobile.city_ar
+06-11 08:46:45.749 12272 12272 I         : fastpipe: Connect success
+06-11 08:46:45.750 12272 12272 D HostConnection: recv ProcessPuidReply name=com.anansimobile.city_ar puid=42 g_u64CapsFlag=1d
+06-11 08:46:45.780 12272 12272 D native_project_lib: [root_service_log] RootService Created!~
+06-11 08:46:45.783 12272 12272 D native_project_lib: [root_service_log] RootService Start!~
+06-11 08:46:45.809 11135 11181 W Finsky  : [356] com.anansimobile.city_ar: No account found.
+06-11 08:46:45.810 11135 11181 I Finsky  : [356] Billing preferred account via installer for com.anansimobile.city_ar: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+06-11 08:46:45.838  1302  1310 I art     : Background partial concurrent mark sweep GC freed 16325(729KB) AllocSpace objects, 14(280KB) LOS objects, 33% free, 9MB/14MB, paused 2.979ms total 140.800ms
+06-11 08:46:45.918 12272 12321 I HostConnection: HostConnection::HostConnection: pid=12272, tid=12321, this=0xb6f2cf40
+06-11 08:46:45.918 12272 12292 D GraphRequest: Warning: Request without access token missing application ID or client token.
+06-11 08:46:45.921 12272 12321 I         : fastpipe: Connect success
+06-11 08:46:45.922 12272 12321 D HostConnection: HostRPC::connect sucess: app=com.anansimobile.city_ar, pid=12272, tid=12321, this=0xa6b78f80
+06-11 08:46:45.923 12272 12321 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:com.anansimobile.city_ar
+06-11 08:46:45.927 12272 12321 I OpenGLRenderer: Initialized EGL, version 1.4
+06-11 08:46:45.927 12272 12321 D OpenGLRenderer: Swap behavior 1
+06-11 08:46:45.927 12272 12307 I HostConnection: HostConnection::HostConnection: pid=12272, tid=12307, this=0xa6b763c0
+06-11 08:46:45.928 12272 12321 I EGL_adreno: eglCreateContext request GLES major-version=2
+06-11 08:46:45.931 12272 12307 I         : fastpipe: Connect success
+06-11 08:46:45.932 12272 12307 D HostConnection: HostRPC::connect sucess: app=com.anansimobile.city_ar, pid=12272, tid=12307, this=0xa6b99600
+06-11 08:46:45.934 12272 12307 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:com.anansimobile.city_ar
+06-11 08:46:45.959 12272 12321 D EGL_adreno: eglCreateContext: 0xc7c091c0: maj 3 min 1 rcv 4
+06-11 08:46:45.991 12272 12307 D EGL_adreno: eglCreateContext: 0xc7c072a0: maj 1 min 0 rcv 1
+06-11 08:46:46.013 12272 12321 D EGL_adreno: eglMakeCurrent: 0xc7c091c0: ver 3 1 (tinfo 0xb6f485d0)
+06-11 08:46:46.016 12272 12321 D HostConnection: ExtendedRCEncoderContext GL_VERSION return OpenGL ES 3.1
+06-11 08:46:46.041 12272 12307 D EGL_adreno: eglMakeCurrent: 0xc7c072a0: ver 1 0 (tinfo 0xc787f420)
+06-11 08:46:46.051 12272 12307 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NDKRenderer_nativeInit, trampoline_addr 0xb91baf54
+06-11 08:46:46.063 12272 12307 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NDKRenderer_nativeResize, trampoline_addr 0xb91baf1c
+06-11 08:46:46.067 12272 12321 E EGL_adreno: tid 12321: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+06-11 08:46:46.067 12272 12321 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xa6deb860, error=EGL_BAD_MATCH
+06-11 08:46:46.099  1758 12271 I FA      : Application backgrounded at: timestamp_millis: 1781156804094
+06-11 08:46:46.285 12272 12307 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NextGenEngine_bitmapDataDidLoad, trampoline_addr 0xb91baee4
+06-11 08:46:46.409 12272 12283 I art     : Background partial concurrent mark sweep GC freed 468(56KB) AllocSpace objects, 2(2MB) LOS objects, 39% free, 10MB/18MB, paused 22.320ms total 75.683ms
+06-11 08:46:46.733 12272 12307 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NDKRenderer_nativeRender, trampoline_addr 0xb91baeac
+06-11 08:46:46.814 12272 12293 W System.err: java.net.UnknownHostException: Unable to resolve host "data.flurry.com": No address associated with hostname
+06-11 08:46:46.817 12272 12293 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:125)
+06-11 08:46:46.817 12272 12293 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:74)
+06-11 08:46:46.817 12272 12293 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:752)
+06-11 08:46:46.817 12272 12293 W System.err: 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:142)
+06-11 08:46:46.817 12272 12293 W System.err: 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:169)
+06-11 08:46:46.817 12272 12293 W System.err: 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:124)
+06-11 08:46:46.818 12272 12293 W System.err: 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:366)
+06-11 08:46:46.818 12272 12293 W System.err: 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:560)
+06-11 08:46:46.819 12272 12293 W System.err: 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:492)
+06-11 08:46:46.819 12272 12293 W System.err: 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:470)
+06-11 08:46:46.819 12272 12293 W System.err: 	at com.flurry.android.FlurryDataSenderAsyncOperation.doInBackground(SourceFile:50)
+06-11 08:46:46.819 12272 12293 W System.err: 	at com.flurry.android.FlurryDataSenderAsyncOperation.doInBackground(SourceFile:17)
+06-11 08:46:46.819 12272 12293 W System.err: 	at android.os.AsyncTask$2.call(AsyncTask.java:305)
+06-11 08:46:46.819 12272 12293 W System.err: 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+06-11 08:46:46.819 12272 12293 W System.err: 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:243)
+06-11 08:46:46.819 12272 12293 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+06-11 08:46:46.819 12272 12293 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+06-11 08:46:46.819 12272 12293 W System.err: 	at java.lang.Thread.run(Thread.java:761)
+06-11 08:46:46.820 12272 12293 W System.err: Caused by: android.system.GaiException: android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)
+06-11 08:46:46.820 12272 12293 W System.err: 	at libcore.io.Posix.android_getaddrinfo(Native Method)
+06-11 08:46:46.820 12272 12293 W System.err: 	at libcore.io.ForwardingOs.android_getaddrinfo(ForwardingOs.java:55)
+06-11 08:46:46.820 12272 12293 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:106)
+06-11 08:46:46.820 12272 12293 W System.err: 	... 17 more
+06-11 08:46:46.879 12272 12321 D EGL_adreno: eglMakeCurrent: 0xc7c091c0: ver 3 1 (tinfo 0xb6f485d0)
+06-11 08:46:46.983 12272 12307 I engine  : [LoadingMnger] do step:1
+06-11 08:46:46.992 12272 12272 E FlurryDataSender: --onServerError 9484ec9c-4aad-4fdf-8d82-5b82f14d68b4
+06-11 08:46:46.994  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:46:46.999  1302  1323 I ActivityManager: Displayed com.anansimobile.city_ar/.Main: +3s6ms
+06-11 08:46:47.001  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:46:49.301  1716  1716 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+06-11 08:46:54.043 12272 12312 D ApplicationLoaders: ignored Vulkan layer search path /data/app/com.google.android.gms-1/lib/x86:/data/app/com.google.android.gms-1/base.apk!/lib/x86:/data/app/com.google.android.gms-1/split_config.en.apk!/lib/x86:/data/app/com.google.android.gms-1/split_config.hdpi.apk!/lib/x86 for namespace 0xba583090
+06-11 08:46:54.054 12272 12319 W art     : Long monitor contention with owner pool-5-thread-1 (12312) at java.lang.Object dalvik.system.DexFile.openDexFileNative(java.lang.String, java.lang.String, int, java.lang.ClassLoader, dalvik.system.DexPathList$Element[])(DexFile.java:-2) waiters=0 in java.lang.ClassLoader android.app.LoadedApk.getClassLoader() for 8.341s
+06-11 08:46:54.055 12272 12307 W art     : Long monitor contention with owner pool-5-thread-1 (12312) at java.lang.Object dalvik.system.DexFile.openDexFileNative(java.lang.String, java.lang.String, int, java.lang.ClassLoader, dalvik.system.DexPathList$Element[])(DexFile.java:-2) waiters=1 in java.lang.ClassLoader android.app.LoadedApk.getClassLoader() for 7.071s
+06-11 08:46:54.213 12272 12319 W ResourceType: ResTable_typeSpec entry count inconsistent: given 112, previously 115
+06-11 08:46:54.213 12272 12307 W ResourceType: ResTable_typeSpec entry count inconsistent: given 112, previously 115
+06-11 08:46:54.218 12272 12312 W ResourceType: ResTable_typeSpec entry count inconsistent: given 112, previously 115
+06-11 08:46:54.220 12272 12312 W ResourceType: ResTable_typeSpec entry count inconsistent: given 4810, previously 5454
+06-11 08:46:54.220 12272 12319 W ResourceType: ResTable_typeSpec entry count inconsistent: given 4810, previously 5454
+06-11 08:46:54.220 12272 12307 W ResourceType: ResTable_typeSpec entry count inconsistent: given 4810, previously 5454
+06-11 08:46:54.221 12272 12312 W ResourceType: ResTable_typeSpec entry count inconsistent: given 3589, previously 3610
+06-11 08:46:54.221 12272 12319 W ResourceType: ResTable_typeSpec entry count inconsistent: given 3589, previously 3610
+06-11 08:46:54.221 12272 12307 W ResourceType: ResTable_typeSpec entry count inconsistent: given 3589, previously 3610
+06-11 08:46:54.225 12272 12312 W ResourceType: ResTable_typeSpec entry count inconsistent: given 235, previously 240
+06-11 08:46:54.225 12272 12312 W ResourceType: ResTable_typeSpec entry count inconsistent: given 508, previously 5852
+06-11 08:46:54.225 12272 12307 W ResourceType: ResTable_typeSpec entry count inconsistent: given 235, previously 240
+06-11 08:46:54.225 12272 12307 W ResourceType: ResTable_typeSpec entry count inconsistent: given 508, previously 5852
+06-11 08:46:54.225 12272 12319 W ResourceType: ResTable_typeSpec entry count inconsistent: given 235, previously 240
+06-11 08:46:54.225 12272 12319 W ResourceType: ResTable_typeSpec entry count inconsistent: given 508, previously 5852
+06-11 08:46:54.382 12272 12312 D AppsFlyer_1.17: AppsFlyer: first launch detected
+06-11 08:46:54.383 12272 12319 I AppsFlyer_1.17: AppsFlyer: first launch date: 2026-06-11_0846+0300
+06-11 08:46:54.389 12272 12312 I AppsFlyer_1.17: AppsFlyer: first launch date: 2026-06-11_0846+0300
+06-11 08:46:54.666 12272 12307 I engine  : [LoadingMnger] do step:4
+06-11 08:46:54.750 12272 12307 I engine  : [LoadingMnger] do step:5
+06-11 08:46:56.143 11067 11067 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+06-11 08:46:56.265 12272 12307 I engine  : [LoadingMnger] do step:6
+06-11 08:46:56.789 12272 12307 I engine  : [LoadingMnger] do step:7
+06-11 08:46:56.939 12272 12307 D FlurryAgent: Event count incremented: new_login_step
+06-11 08:46:58.555  1302  1358 D WifiStateMachine: setScanResults mScanResults.size=1
+06-11 08:46:59.234 11067 12286 I DynamiteModule: Considering local module com.google.android.gms.cronet_dynamite:0 and remote module com.google.android.gms.cronet_dynamite:4811
+06-11 08:46:59.234 11067 12286 I DynamiteModule: Selected remote version of com.google.android.gms.cronet_dynamite, version >= 4811
+06-11 08:46:59.235 11067 12286 W System  : ClassLoader referenced unknown path: 
+06-11 08:46:59.236 11067 12286 D ApplicationLoaders: ignored Vulkan layer search path /data/app/com.google.android.gms-1/lib/x86:/data/app/com.google.android.gms-1/base.apk!/lib/x86:/data/app/com.google.android.gms-1/split_config.en.apk!/lib/x86:/data/app/com.google.android.gms-1/split_config.hdpi.apk!/lib/x86 for namespace 0xba5830d0
+06-11 08:46:59.248 11067 12286 W System  : ClassLoader referenced unknown path: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/n/armeabi-v7a
+06-11 08:46:59.248 11067 12286 W System  : ClassLoader referenced unknown path: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/n/armeabi
+06-11 08:46:59.262  1716  1716 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+06-11 08:46:59.514 11067 12286 I cn_CronetLibraryLoader: Cronet version: 147.0.7727.49, arch: i686
+06-11 08:46:59.543 12272 12279 I art     : Debugger is no longer active
+06-11 08:46:59.543 12272 12279 I art     : Starting a blocking GC Instrumentation
+06-11 08:47:00.071  1302  1310 I art     : Background partial concurrent mark sweep GC freed 23366(1046KB) AllocSpace objects, 22(440KB) LOS objects, 33% free, 9MB/14MB, paused 8.309ms total 110.317ms
+06-11 08:47:00.150 12272 12272 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+06-11 08:47:00.157 12272 12272 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+06-11 08:47:00.157 12272 12272 D native_project_lib: [root_service_log] notification ignored, activity in foreground!~
+06-11 08:47:00.800  1302  1310 I art     : Background partial concurrent mark sweep GC freed 21108(934KB) AllocSpace objects, 19(380KB) LOS objects, 33% free, 9MB/14MB, paused 2.307ms total 114.231ms
+06-11 08:47:01.346 11067 11072 I art     : Do partial code cache collection, code=227KB, data=214KB
+06-11 08:47:01.346 11067 11072 I art     : After code cache collection, code=224KB, data=214KB
+06-11 08:47:01.346 11067 11072 I art     : Increasing code cache capacity to 1024KB
+06-11 08:47:01.347 11067 11072 I art     : Compiler allocated 7MB to compile int hcba.c(java.lang.Object, byte[], int, int, int, hbxf)
+06-11 08:47:01.904  1302  1310 I art     : Background partial concurrent mark sweep GC freed 20342(913KB) AllocSpace objects, 19(380KB) LOS objects, 33% free, 9MB/14MB, paused 1.673ms total 103.163ms
+06-11 08:47:02.682  1302  1310 I art     : Background partial concurrent mark sweep GC freed 20765(911KB) AllocSpace objects, 18(360KB) LOS objects, 33% free, 9MB/14MB, paused 1.832ms total 104.111ms
+06-11 08:47:04.283  1716  1716 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+06-11 08:47:27.839 11067 11110 I art     : Starting a blocking GC Explicit
+06-11 08:47:27.887 11067 11110 I art     : Explicit concurrent mark sweep GC freed 31073(1354KB) AllocSpace objects, 12(408KB) LOS objects, 24% free, 8MB/11MB, paused 432us total 47.843ms
+06-11 08:47:48.106 12347 12347 I appproc : exec app_process! cmdline: /system/bin com.android.commands.am.Am force-stop com.android.ld.appstore 
+06-11 08:47:48.106 12347 12347 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:47:48.124 12347 12347 D AndroidRuntime: CheckJNI is OFF
+06-11 08:47:48.259 12347 12347 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:47:48.303 12347 12347 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:47:48.309 12347 12347 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:47:48.347 12347 12347 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:47:48.347 12347 12347 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:47:48.348 12347 12347 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:47:48.396 12347 12347 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+06-11 08:47:48.402  1302  1839 I ActivityManager: Force stopping com.android.ld.appstore appid=10025 user=0: from pid 12347
+06-11 08:47:48.404 12347 12347 D AndroidRuntime: Shutting down VM
+06-11 08:47:48.421  1516  1516 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntent: No UICC
+06-11 08:47:48.421  1516  1516 D CarrierSvcBindHelper: No carrier app for: 0
+06-11 08:47:48.423  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:53 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:47:56.943 12362 12362 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 800 
+06-11 08:47:56.943 12362 12362 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:47:56.947 12362 12362 D AndroidRuntime: CheckJNI is OFF
+06-11 08:47:57.010 12362 12362 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:47:57.027 12362 12362 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:47:57.028 12362 12362 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:47:57.046 12362 12362 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:47:57.046 12362 12362 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:47:57.049 12362 12362 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:47:57.064 12362 12362 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:47:57.077 12362 12362 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=800.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=22890268, downTime=22890268, deviceId=0, source=0x2002 }
+06-11 08:47:57.081 12362 12362 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=800.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=22890268, downTime=22890268, deviceId=0, source=0x2002 }
+06-11 08:47:57.083 12362 12362 D AndroidRuntime: Shutting down VM
+06-11 08:47:57.084 12272 12307 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NGGLSurfaceView_onTouchBegin, trampoline_addr 0xb91bae74
+06-11 08:47:57.084 12272 12307 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NGGLSurfaceView_onTouchEnd, trampoline_addr 0xb91bae3c
+06-11 08:48:00.152 12272 12272 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+06-11 08:48:00.168 12272 12272 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+06-11 08:48:00.168 12272 12272 D native_project_lib: [root_service_log] notification ignored, activity in foreground!~
+06-11 08:48:00.185  1302  1310 I art     : Background partial concurrent mark sweep GC freed 33235(1372KB) AllocSpace objects, 21(420KB) LOS objects, 33% free, 9MB/14MB, paused 3.745ms total 114.200ms
+06-11 08:48:06.121 12372 12372 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 550 
+06-11 08:48:06.122 12372 12372 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:48:06.128 12372 12372 D AndroidRuntime: CheckJNI is OFF
+06-11 08:48:06.242 12372 12372 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:48:06.257 12372 12372 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:48:06.258 12372 12372 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:48:06.275 12372 12372 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:48:06.275 12372 12372 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:48:06.276 12372 12372 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:48:06.289 12372 12372 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:48:06.297 12372 12372 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=550.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=22899494, downTime=22899494, deviceId=0, source=0x2002 }
+06-11 08:48:06.298 12372 12372 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=550.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=22899494, downTime=22899494, deviceId=0, source=0x2002 }
+06-11 08:48:06.299 12372 12372 D AndroidRuntime: Shutting down VM
+06-11 08:48:06.322 12272 12307 D FlurryAgent: Event count incremented: Statistics
+06-11 08:48:06.558 12272 12307 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NGStringHelper_UpdateLineHeight, trampoline_addr 0xb91bae04
+06-11 08:48:06.561 12272 12307 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NGStringHelper_AddStringLine, trampoline_addr 0xb91badcc
+06-11 08:48:06.598 12272 12307 D FlurryAgent: Event count incremented: login_step
+06-11 08:48:21.760 12386 12386 I HostConnection: HostConnection::HostConnection: pid=12386, tid=12386, this=0xc7e69200
+06-11 08:48:21.763 12386 12386 I         : fastpipe: Connect success
+06-11 08:48:21.763 12386 12386 D HostConnection: HostRPC::connect sucess: app=screencap, pid=12386, tid=12386, this=0xc6804740
+06-11 08:48:21.764 12386 12386 E HostConnection: /data/local/cfg-znz/gl_force format error! com.tencent.tmgp.trssj 5 
+06-11 08:48:21.764 12386 12386 E HostConnection: /data/local/cfg-znz/gl_force format error! com.huiqi.mrby gl
+06-11 08:48:21.764 12386 12386 E HostConnection: /data/local/cfg-znz/gl_force format error! aos.playpark.ygc gl
+06-11 08:48:21.764 12386 12386 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:screencap
+06-11 08:48:21.766 12386 12386 I         : fastpipe: Connect success
+06-11 08:48:21.766 12386 12386 D HostConnection: recv ProcessPuidReply name=screencap puid=43 g_u64CapsFlag=1d
+06-11 08:48:21.769  1110  1110 E EGL_adreno: tid 1110: eglCreateSyncKHR(2089): error 0x3004 (EGL_BAD_ATTRIBUTE)
+06-11 08:48:23.181 12391 12391 I appproc : exec app_process! cmdline: /system/bin com.android.commands.am.Am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d file:///sdcard/screen.png 
+06-11 08:48:23.181 12391 12391 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:48:23.187 12391 12391 D AndroidRuntime: CheckJNI is OFF
+06-11 08:48:23.284 12391 12391 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:48:23.309 12391 12391 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:48:23.310 12391 12391 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:48:23.337 12391 12391 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:48:23.338 12391 12391 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:48:23.340 12391 12391 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:48:23.363 12391 12391 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+06-11 08:48:23.382  8246  8246 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /storage/emulated/0/screen.png
+06-11 08:48:23.387 12391 12391 D AndroidRuntime: Shutting down VM
+06-11 08:48:23.436 12386 12386 I         : fastpipe: close connect
+06-11 08:48:32.445 12402 12402 I HostConnection: HostConnection::HostConnection: pid=12402, tid=12402, this=0xc7e69200
+06-11 08:48:32.448 12402 12402 I         : fastpipe: Connect success
+06-11 08:48:32.449 12402 12402 D HostConnection: HostRPC::connect sucess: app=screencap, pid=12402, tid=12402, this=0xc6804740
+06-11 08:48:32.449 12402 12402 E HostConnection: /data/local/cfg-znz/gl_force format error! com.tencent.tmgp.trssj 5 
+06-11 08:48:32.449 12402 12402 E HostConnection: /data/local/cfg-znz/gl_force format error! com.huiqi.mrby gl
+06-11 08:48:32.449 12402 12402 E HostConnection: /data/local/cfg-znz/gl_force format error! aos.playpark.ygc gl
+06-11 08:48:32.450 12402 12402 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:screencap
+06-11 08:48:32.451 12402 12402 I         : fastpipe: Connect success
+06-11 08:48:32.452 12402 12402 D HostConnection: recv ProcessPuidReply name=screencap puid=44 g_u64CapsFlag=1d
+06-11 08:48:32.455  1110  1110 E EGL_adreno: tid 1110: eglCreateSyncKHR(2089): error 0x3004 (EGL_BAD_ATTRIBUTE)
+06-11 08:48:33.606 12407 12407 I appproc : exec app_process! cmdline: /system/bin com.android.commands.am.Am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d file:///sdcard/screen.png 
+06-11 08:48:33.606 12407 12407 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:48:33.610 12407 12407 D AndroidRuntime: CheckJNI is OFF
+06-11 08:48:33.676 12407 12407 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:48:33.693 12407 12407 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:48:33.694 12407 12407 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:48:33.718 12407 12407 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:48:33.718 12407 12407 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:48:33.719 12407 12407 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:48:33.734 12407 12407 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+06-11 08:48:33.740  8246  8246 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /storage/emulated/0/screen.png
+06-11 08:48:33.743 12407 12407 D AndroidRuntime: Shutting down VM
+06-11 08:48:33.784 12402 12402 I         : fastpipe: close connect
+06-11 08:48:55.298 12418 12418 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 720 
+06-11 08:48:55.298 12418 12418 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:48:55.305 12418 12418 D AndroidRuntime: CheckJNI is OFF
+06-11 08:48:55.417 12418 12418 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:48:55.444 12418 12418 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:48:55.445 12418 12418 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:48:55.478 12418 12418 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:48:55.479 12418 12418 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:48:55.481 12418 12418 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:48:55.501 12418 12418 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:48:55.512 12418 12418 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=720.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=22948705, downTime=22948705, deviceId=0, source=0x2002 }
+06-11 08:48:55.515 12418 12418 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=720.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=22948705, downTime=22948705, deviceId=0, source=0x2002 }
+06-11 08:48:55.518 12418 12418 D AndroidRuntime: Shutting down VM
+06-11 08:49:00.149 12272 12272 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+06-11 08:49:00.158 12272 12272 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+06-11 08:49:00.159 12272 12272 D native_project_lib: [root_service_log] notification ignored, activity in foreground!~
+06-11 08:49:11.983 12428 12428 I HostConnection: HostConnection::HostConnection: pid=12428, tid=12428, this=0xc7e69200
+06-11 08:49:11.985 12428 12428 I         : fastpipe: Connect success
+06-11 08:49:11.986 12428 12428 D HostConnection: HostRPC::connect sucess: app=screencap, pid=12428, tid=12428, this=0xc6804740
+06-11 08:49:11.986 12428 12428 E HostConnection: /data/local/cfg-znz/gl_force format error! com.tencent.tmgp.trssj 5 
+06-11 08:49:11.986 12428 12428 E HostConnection: /data/local/cfg-znz/gl_force format error! com.huiqi.mrby gl
+06-11 08:49:11.986 12428 12428 E HostConnection: /data/local/cfg-znz/gl_force format error! aos.playpark.ygc gl
+06-11 08:49:11.986 12428 12428 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:screencap
+06-11 08:49:11.987 12428 12428 I         : fastpipe: Connect success
+06-11 08:49:11.988 12428 12428 D HostConnection: recv ProcessPuidReply name=screencap puid=45 g_u64CapsFlag=1d
+06-11 08:49:11.997  1110  1110 E EGL_adreno: tid 1110: eglCreateSyncKHR(2089): error 0x3004 (EGL_BAD_ATTRIBUTE)
+06-11 08:49:13.258 12434 12434 I appproc : exec app_process! cmdline: /system/bin com.android.commands.am.Am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d file:///sdcard/screen2.png 
+06-11 08:49:13.258 12434 12434 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:49:13.263 12434 12434 D AndroidRuntime: CheckJNI is OFF
+06-11 08:49:13.342 12434 12434 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:49:13.362 12434 12434 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:49:13.362 12434 12434 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:49:13.386 12434 12434 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:49:13.386 12434 12434 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:49:13.388 12434 12434 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:49:13.403 12434 12434 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+06-11 08:49:13.414  8246  8246 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /storage/emulated/0/screen2.png
+06-11 08:49:13.419 12434 12434 D AndroidRuntime: Shutting down VM
+06-11 08:49:13.468 12428 12428 I         : fastpipe: close connect
+06-11 08:49:35.806 12445 12445 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 740 
+06-11 08:49:35.806 12445 12445 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:49:35.811 12445 12445 D AndroidRuntime: CheckJNI is OFF
+06-11 08:49:35.875 12445 12445 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:49:35.891 12445 12445 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:49:35.891 12445 12445 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:49:35.909 12445 12445 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:49:35.909 12445 12445 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:49:35.911 12445 12445 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:49:35.923 12445 12445 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:49:35.929 12445 12445 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=740.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=22989128, downTime=22989128, deviceId=0, source=0x2002 }
+06-11 08:49:35.931 12445 12445 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=740.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=22989128, downTime=22989128, deviceId=0, source=0x2002 }
+06-11 08:49:35.932 12445 12445 D AndroidRuntime: Shutting down VM
+06-11 08:49:37.843 12455 12455 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 750 
+06-11 08:49:37.843 12455 12455 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:49:37.847 12455 12455 D AndroidRuntime: CheckJNI is OFF
+06-11 08:49:37.914 12455 12455 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:49:37.928 12455 12455 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:49:37.929 12455 12455 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:49:37.944 12455 12455 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:49:37.944 12455 12455 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:49:37.946 12455 12455 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:49:37.956 12455 12455 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:49:37.961 12455 12455 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=750.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=22991160, downTime=22991160, deviceId=0, source=0x2002 }
+06-11 08:49:37.962 12455 12455 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=750.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=22991160, downTime=22991160, deviceId=0, source=0x2002 }
+06-11 08:49:37.963 12455 12455 D AndroidRuntime: Shutting down VM
+06-11 08:49:38.555  1302  1358 D WifiStateMachine: setScanResults mScanResults.size=1
+06-11 08:49:39.800 12465 12465 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 760 
+06-11 08:49:39.800 12465 12465 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:49:39.804 12465 12465 D AndroidRuntime: CheckJNI is OFF
+06-11 08:49:39.889 12465 12465 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:49:39.905 12465 12465 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:49:39.905 12465 12465 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:49:39.924 12465 12465 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:49:39.924 12465 12465 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:49:39.926 12465 12465 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:49:39.938 12465 12465 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:49:39.945 12465 12465 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=760.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=22993142, downTime=22993142, deviceId=0, source=0x2002 }
+06-11 08:49:39.946 12465 12465 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=760.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=22993142, downTime=22993142, deviceId=0, source=0x2002 }
+06-11 08:49:39.947 12465 12465 D AndroidRuntime: Shutting down VM
+06-11 08:49:55.616 12475 12475 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 710 
+06-11 08:49:55.616 12475 12475 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:49:55.621 12475 12475 D AndroidRuntime: CheckJNI is OFF
+06-11 08:49:55.705 12475 12475 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:49:55.727 12475 12475 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:49:55.728 12475 12475 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:49:55.750 12475 12475 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:49:55.750 12475 12475 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:49:55.752 12475 12475 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:49:55.770 12475 12475 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:49:55.778 12475 12475 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=710.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23008974, downTime=23008974, deviceId=0, source=0x2002 }
+06-11 08:49:55.780 12475 12475 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=710.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23008974, downTime=23008974, deviceId=0, source=0x2002 }
+06-11 08:49:55.783 12475 12475 D AndroidRuntime: Shutting down VM
+06-11 08:50:00.153 12272 12272 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+06-11 08:50:00.169 12272 12272 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+06-11 08:50:00.169 12272 12272 D native_project_lib: [root_service_log] notification ignored, activity in foreground!~
+06-11 08:50:00.228  1302  1310 I art     : Background partial concurrent mark sweep GC freed 29741(1183KB) AllocSpace objects, 14(280KB) LOS objects, 33% free, 9MB/14MB, paused 1.318ms total 104.342ms
+06-11 08:50:04.419  1716 12195 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 23077622]
+06-11 08:50:04.422  1716 12195 W WakeLock: GCM_HB_ALARM release without a matched acquire! [CONTEXT service_id=259 ]
+06-11 08:50:04.683  1302  1310 I art     : Background partial concurrent mark sweep GC freed 22722(1015KB) AllocSpace objects, 21(420KB) LOS objects, 33% free, 9MB/14MB, paused 2.082ms total 110.133ms
+06-11 08:50:04.743  1716 12195 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 23307946]
+06-11 08:50:05.371  1716  1716 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+06-11 08:50:07.886 12487 12487 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 150 680 
+06-11 08:50:07.886 12487 12487 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:50:07.890 12487 12487 D AndroidRuntime: CheckJNI is OFF
+06-11 08:50:07.955 12487 12487 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:50:07.970 12487 12487 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:50:07.971 12487 12487 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:50:07.990 12487 12487 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:50:07.990 12487 12487 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:50:07.992 12487 12487 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:50:08.004 12487 12487 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:50:08.010 12487 12487 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=150.0, y[0]=680.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23021208, downTime=23021208, deviceId=0, source=0x2002 }
+06-11 08:50:08.011 12487 12487 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=150.0, y[0]=680.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23021208, downTime=23021208, deviceId=0, source=0x2002 }
+06-11 08:50:08.013 12487 12487 D AndroidRuntime: Shutting down VM
+06-11 08:50:09.806 12497 12497 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 720 
+06-11 08:50:09.806 12497 12497 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:50:09.811 12497 12497 D AndroidRuntime: CheckJNI is OFF
+06-11 08:50:09.891 12497 12497 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:50:09.910 12497 12497 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:50:09.911 12497 12497 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:50:09.928 12497 12497 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:50:09.928 12497 12497 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:50:09.930 12497 12497 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:50:09.941 12497 12497 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:50:09.947 12497 12497 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=720.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23023145, downTime=23023145, deviceId=0, source=0x2002 }
+06-11 08:50:09.949 12497 12497 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=720.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23023145, downTime=23023145, deviceId=0, source=0x2002 }
+06-11 08:50:09.950 12497 12497 D AndroidRuntime: Shutting down VM
+06-11 08:50:20.393  1716  1716 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+06-11 08:50:27.202 12507 12507 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 600 
+06-11 08:50:27.202 12507 12507 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:50:27.207 12507 12507 D AndroidRuntime: CheckJNI is OFF
+06-11 08:50:27.282 12507 12507 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:50:27.297 12507 12507 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:50:27.297 12507 12507 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:50:27.313 12507 12507 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:50:27.313 12507 12507 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:50:27.315 12507 12507 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:50:27.327 12507 12507 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:50:27.334 12507 12507 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=600.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23040531, downTime=23040531, deviceId=0, source=0x2002 }
+06-11 08:50:27.335 12507 12507 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=600.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23040531, downTime=23040531, deviceId=0, source=0x2002 }
+06-11 08:50:27.336 12507 12507 D AndroidRuntime: Shutting down VM
+06-11 08:50:28.790 12517 12517 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 620 
+06-11 08:50:28.790 12517 12517 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:50:28.797 12517 12517 D AndroidRuntime: CheckJNI is OFF
+06-11 08:50:28.910 12517 12517 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:50:28.942 12517 12517 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:50:28.943 12517 12517 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:50:28.977 12517 12517 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:50:28.977 12517 12517 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:50:28.981 12517 12517 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:50:29.004 12517 12517 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:50:29.015 12517 12517 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=620.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23042208, downTime=23042208, deviceId=0, source=0x2002 }
+06-11 08:50:29.018 12517 12517 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=620.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23042208, downTime=23042208, deviceId=0, source=0x2002 }
+06-11 08:50:29.020 12517 12517 D AndroidRuntime: Shutting down VM
+06-11 08:50:30.315 12527 12527 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 640 
+06-11 08:50:30.315 12527 12527 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:50:30.319 12527 12527 D AndroidRuntime: CheckJNI is OFF
+06-11 08:50:30.396 12527 12527 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:50:30.412 12527 12527 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:50:30.413 12527 12527 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:50:30.433 12527 12527 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:50:30.433 12527 12527 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:50:30.435 12527 12527 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:50:30.448 12527 12527 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:50:30.456 12527 12527 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=640.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23043652, downTime=23043652, deviceId=0, source=0x2002 }
+06-11 08:50:30.458 12527 12527 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=640.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23043652, downTime=23043652, deviceId=0, source=0x2002 }
+06-11 08:50:30.459 12527 12527 D AndroidRuntime: Shutting down VM
+06-11 08:50:31.805 12537 12537 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 660 
+06-11 08:50:31.805 12537 12537 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:50:31.812 12537 12537 D AndroidRuntime: CheckJNI is OFF
+06-11 08:50:31.942 12537 12537 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:50:31.975 12537 12537 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:50:31.976 12537 12537 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:50:32.007 12537 12537 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:50:32.007 12537 12537 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:50:32.010 12537 12537 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:50:32.036 12537 12537 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:50:32.049 12537 12537 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=660.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23045240, downTime=23045240, deviceId=0, source=0x2002 }
+06-11 08:50:32.052 12537 12537 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=660.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23045240, downTime=23045240, deviceId=0, source=0x2002 }
+06-11 08:50:32.053 12537 12537 D AndroidRuntime: Shutting down VM
+06-11 08:50:33.382 12547 12547 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 680 
+06-11 08:50:33.382 12547 12547 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:50:33.386 12547 12547 D AndroidRuntime: CheckJNI is OFF
+06-11 08:50:33.444 12547 12547 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:50:33.459 12547 12547 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:50:33.460 12547 12547 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:50:33.480 12547 12547 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:50:33.480 12547 12547 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:50:33.482 12547 12547 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:50:33.495 12547 12547 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:50:33.501 12547 12547 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=680.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23046699, downTime=23046699, deviceId=0, source=0x2002 }
+06-11 08:50:33.503 12547 12547 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=680.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23046699, downTime=23046699, deviceId=0, source=0x2002 }
+06-11 08:50:33.504 12547 12547 D AndroidRuntime: Shutting down VM
+06-11 08:50:34.538 12557 12557 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 700 
+06-11 08:50:34.539 12557 12557 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:50:34.543 12557 12557 D AndroidRuntime: CheckJNI is OFF
+06-11 08:50:34.603 12557 12557 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:50:34.617 12557 12557 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:50:34.618 12557 12557 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:50:34.636 12557 12557 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:50:34.636 12557 12557 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:50:34.637 12557 12557 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:50:34.649 12557 12557 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:50:34.656 12557 12557 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=700.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23047853, downTime=23047853, deviceId=0, source=0x2002 }
+06-11 08:50:34.657 12557 12557 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=700.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23047853, downTime=23047853, deviceId=0, source=0x2002 }
+06-11 08:50:34.658 12557 12557 D AndroidRuntime: Shutting down VM
+06-11 08:50:36.161 12567 12567 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 720 
+06-11 08:50:36.161 12567 12567 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:50:36.168 12567 12567 D AndroidRuntime: CheckJNI is OFF
+06-11 08:50:36.291 12567 12567 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:50:36.319 12567 12567 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:50:36.320 12567 12567 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:50:36.352 12567 12567 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:50:36.352 12567 12567 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:50:36.354 12567 12567 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:50:36.379 12567 12567 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:50:36.391 12567 12567 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=720.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23049584, downTime=23049584, deviceId=0, source=0x2002 }
+06-11 08:50:36.394 12567 12567 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=720.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23049584, downTime=23049584, deviceId=0, source=0x2002 }
+06-11 08:50:36.396 12567 12567 D AndroidRuntime: Shutting down VM
+06-11 08:50:37.873 12577 12577 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 740 
+06-11 08:50:37.873 12577 12577 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:50:37.876 12577 12577 D AndroidRuntime: CheckJNI is OFF
+06-11 08:50:37.943 12577 12577 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:50:37.967 12577 12577 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:50:37.968 12577 12577 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:50:37.989 12577 12577 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:50:37.989 12577 12577 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:50:37.991 12577 12577 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:50:38.008 12577 12577 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:50:38.018 12577 12577 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=740.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23051212, downTime=23051212, deviceId=0, source=0x2002 }
+06-11 08:50:38.020 12577 12577 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=740.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23051212, downTime=23051212, deviceId=0, source=0x2002 }
+06-11 08:50:38.022 12577 12577 D AndroidRuntime: Shutting down VM
+06-11 08:50:39.421 12587 12587 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 760 
+06-11 08:50:39.421 12587 12587 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:50:39.427 12587 12587 D AndroidRuntime: CheckJNI is OFF
+06-11 08:50:39.550 12587 12587 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:50:39.580 12587 12587 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:50:39.582 12587 12587 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:50:39.612 12587 12587 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:50:39.612 12587 12587 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:50:39.617 12587 12587 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:50:39.640 12587 12587 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:50:39.652 12587 12587 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=760.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23052844, downTime=23052844, deviceId=0, source=0x2002 }
+06-11 08:50:39.655 12587 12587 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=760.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23052844, downTime=23052844, deviceId=0, source=0x2002 }
+06-11 08:50:39.657 12587 12587 D AndroidRuntime: Shutting down VM
+06-11 08:50:55.664 12597 12597 I HostConnection: HostConnection::HostConnection: pid=12597, tid=12597, this=0xc7e69200
+06-11 08:50:55.667 12597 12597 I         : fastpipe: Connect success
+06-11 08:50:55.667 12597 12597 D HostConnection: HostRPC::connect sucess: app=screencap, pid=12597, tid=12597, this=0xc6804740
+06-11 08:50:55.668 12597 12597 E HostConnection: /data/local/cfg-znz/gl_force format error! com.tencent.tmgp.trssj 5 
+06-11 08:50:55.668 12597 12597 E HostConnection: /data/local/cfg-znz/gl_force format error! com.huiqi.mrby gl
+06-11 08:50:55.668 12597 12597 E HostConnection: /data/local/cfg-znz/gl_force format error! aos.playpark.ygc gl
+06-11 08:50:55.668 12597 12597 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:screencap
+06-11 08:50:55.669 12597 12597 I         : fastpipe: Connect success
+06-11 08:50:55.670 12597 12597 D HostConnection: recv ProcessPuidReply name=screencap puid=46 g_u64CapsFlag=1d
+06-11 08:50:55.673  1110  1110 E EGL_adreno: tid 1110: eglCreateSyncKHR(2089): error 0x3004 (EGL_BAD_ATTRIBUTE)
+06-11 08:50:56.452 11067 11067 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.backup.GMS_MODULE_RESTORE dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+06-11 08:50:57.364 12603 12603 I appproc : exec app_process! cmdline: /system/bin com.android.commands.am.Am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d file:///sdcard/screen3.png 
+06-11 08:50:57.365 12603 12603 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:50:57.369 12603 12603 D AndroidRuntime: CheckJNI is OFF
+06-11 08:50:57.447 12603 12603 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:50:57.465 12603 12603 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:50:57.465 12603 12603 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:50:57.488 12603 12603 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:50:57.489 12603 12603 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:50:57.490 12603 12603 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:50:57.503 12603 12603 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+06-11 08:50:57.513  8246  8246 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /storage/emulated/0/screen3.png
+06-11 08:50:57.517 12603 12603 D AndroidRuntime: Shutting down VM
+06-11 08:50:57.573 12597 12597 I         : fastpipe: close connect
+06-11 08:51:00.154 12272 12272 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+06-11 08:51:00.167 12272 12272 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+06-11 08:51:00.167 12272 12272 D native_project_lib: [root_service_log] notification ignored, activity in foreground!~
+06-11 08:51:00.228  1302  1310 I art     : Background partial concurrent mark sweep GC freed 27278(1077KB) AllocSpace objects, 14(280KB) LOS objects, 33% free, 9MB/14MB, paused 1.889ms total 106.652ms
+06-11 08:51:19.320  1716 12209 I art     : Starting a blocking GC Explicit
+06-11 08:51:19.474  1716 12209 I art     : Explicit concurrent mark sweep GC freed 15782(727KB) AllocSpace objects, 2(40KB) LOS objects, 40% free, 12MB/21MB, paused 1.356ms total 152.727ms
+06-11 08:51:23.464 12614 12614 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input tap 270 720 
+06-11 08:51:23.464 12614 12614 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:51:23.471 12614 12614 D AndroidRuntime: CheckJNI is OFF
+06-11 08:51:23.589 12614 12614 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:51:23.615 12614 12614 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:51:23.616 12614 12614 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:51:23.648 12614 12614 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:51:23.648 12614 12614 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:51:23.650 12614 12614 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:51:23.675 12614 12614 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:51:23.684 12614 12614 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=720.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23096879, downTime=23096879, deviceId=2, source=0x1002 }
+06-11 08:51:23.686 12614 12614 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=720.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23096879, downTime=23096879, deviceId=2, source=0x1002 }
+06-11 08:51:23.688 12614 12614 D AndroidRuntime: Shutting down VM
+06-11 08:51:49.374  1716  1716 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.presencemanager.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+06-11 08:51:49.387  1716  1716 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.presencemanager.service.INTERNAL_IDENTITY dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+06-11 08:52:00.118 12272 12272 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+06-11 08:52:00.128 12272 12272 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+06-11 08:52:00.128 12272 12272 D native_project_lib: [root_service_log] notification ignored, activity in foreground!~
+06-11 08:52:00.200  1302  1310 I art     : Background partial concurrent mark sweep GC freed 27975(1136KB) AllocSpace objects, 16(320KB) LOS objects, 33% free, 9MB/14MB, paused 2.187ms total 103.923ms
+06-11 08:52:08.665 12636 12636 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 200 500 
+06-11 08:52:08.666 12636 12636 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:08.671 12636 12636 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:08.766 12636 12636 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:08.789 12636 12636 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:08.789 12636 12636 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:08.816 12636 12636 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:08.816 12636 12636 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:08.820 12636 12636 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:08.838 12636 12636 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:08.846 12636 12636 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=200.0, y[0]=500.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23142042, downTime=23142042, deviceId=0, source=0x2002 }
+06-11 08:52:08.849 12636 12636 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=200.0, y[0]=500.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23142042, downTime=23142042, deviceId=0, source=0x2002 }
+06-11 08:52:08.851 12636 12636 D AndroidRuntime: Shutting down VM
+06-11 08:52:09.889 12646 12646 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 500 
+06-11 08:52:09.889 12646 12646 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:09.894 12646 12646 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:09.956 12646 12646 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:09.977 12646 12646 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:09.977 12646 12646 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:10.019 12646 12646 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:10.019 12646 12646 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:10.022 12646 12646 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:10.041 12646 12646 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:10.049 12646 12646 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=500.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23143246, downTime=23143246, deviceId=0, source=0x2002 }
+06-11 08:52:10.051 12646 12646 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=500.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23143246, downTime=23143246, deviceId=0, source=0x2002 }
+06-11 08:52:10.052 12646 12646 D AndroidRuntime: Shutting down VM
+06-11 08:52:11.069 12656 12656 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 340 500 
+06-11 08:52:11.069 12656 12656 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:11.073 12656 12656 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:11.154 12656 12656 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:11.171 12656 12656 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:11.172 12656 12656 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:11.190 12656 12656 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:11.190 12656 12656 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:11.193 12656 12656 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:11.206 12656 12656 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:11.213 12656 12656 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=340.0, y[0]=500.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23144411, downTime=23144411, deviceId=0, source=0x2002 }
+06-11 08:52:11.215 12656 12656 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=340.0, y[0]=500.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23144411, downTime=23144411, deviceId=0, source=0x2002 }
+06-11 08:52:11.216 12656 12656 D AndroidRuntime: Shutting down VM
+06-11 08:52:12.239 12666 12666 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 200 550 
+06-11 08:52:12.239 12666 12666 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:12.244 12666 12666 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:12.310 12666 12666 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:12.326 12666 12666 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:12.327 12666 12666 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:12.344 12666 12666 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:12.344 12666 12666 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:12.346 12666 12666 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:12.361 12666 12666 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:12.368 12666 12666 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=200.0, y[0]=550.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23145564, downTime=23145564, deviceId=0, source=0x2002 }
+06-11 08:52:12.369 12666 12666 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=200.0, y[0]=550.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23145564, downTime=23145564, deviceId=0, source=0x2002 }
+06-11 08:52:12.371 12666 12666 D AndroidRuntime: Shutting down VM
+06-11 08:52:12.470 12272 12272 W System  : ClassLoader referenced unknown path: /system/app/Chrome/lib/x86
+06-11 08:52:12.470 12272 12272 D ApplicationLoaders: ignored Vulkan layer search path /system/app/Chrome/lib/x86:/system/app/Chrome/Chrome.apk!/lib/x86:/system/lib:/vendor/lib for namespace 0xba5830d0
+06-11 08:52:12.509 12272 12272 I WebViewFactory: Loading com.android.chrome version 86.0.4240.198 (code 424019821)
+06-11 08:52:12.763  1302  2173 I ActivityManager: Start proc 12680:com.android.chrome:webview_service/u0a30 for service com.android.chrome/org.chromium.android_webview.services.VariationsSeedServer
+06-11 08:52:12.810 12680 12680 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:12.847 12272 12272 I cr_LibraryLoader: Loaded native library version number "86.0.4240.198"
+06-11 08:52:12.859 12272 12272 I cr_CachingUmaRecorder: Flushed 5 samples from 5 histograms.
+06-11 08:52:12.913  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:53 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:52:12.952 12680 12680 W System  : ClassLoader referenced unknown path: /system/app/Chrome/lib/x86
+06-11 08:52:12.991 12680 12680 I LoadedApk: No resource references to update in package com.android.chrome.cablev2_authenticator
+06-11 08:52:12.991 12680 12680 I LoadedApk: No resource references to update in package com.android.chrome.autofill_assistant
+06-11 08:52:12.991 12680 12680 I LoadedApk: No resource references to update in package com.android.chrome.chime
+06-11 08:52:12.992 12680 12680 I LoadedApk: No resource references to update in package com.android.chrome.dev_ui
+06-11 08:52:12.992 12680 12680 I LoadedApk: No resource references to update in package com.android.chrome.stack_unwinder
+06-11 08:52:12.992 12680 12680 I LoadedApk: No resource references to update in package com.android.chrome.test_dummy
+06-11 08:52:13.037 11067 11067 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.safetynet.service.START pkg=com.google.android.gms }
+06-11 08:52:13.037 11067 11067 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.safetynet.service.START pkg=com.google.android.gms }
+06-11 08:52:13.047 12272 12272 W ResourceType: Failure getting entry for 0x7f130606 (t=18 e=1542) (error -2147483647)
+06-11 08:52:13.158 12272 12272 E chromium: [ERROR:filesystem_posix.cc(62)] mkdir /data/user/0/com.anansimobile.city_ar/cache/WebView/Crashpad: No such file or directory (2)
+06-11 08:52:13.513  1302  1310 I art     : Background partial concurrent mark sweep GC freed 21871(967KB) AllocSpace objects, 18(360KB) LOS objects, 33% free, 9MB/14MB, paused 1.423ms total 118.920ms
+06-11 08:52:14.024 12696 12696 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 550 
+06-11 08:52:14.025 12696 12696 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:14.033 12696 12696 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:14.077  1302  1310 I art     : Background partial concurrent mark sweep GC freed 17637(775KB) AllocSpace objects, 15(300KB) LOS objects, 33% free, 9MB/14MB, paused 1.682ms total 100.135ms
+06-11 08:52:14.180 12272 12719 E libEGL  : validate_display:99 error 3008 (EGL_BAD_DISPLAY)
+06-11 08:52:14.184 12272 12719 I HostConnection: HostConnection::HostConnection: pid=12272, tid=12719, this=0xa0d61240
+06-11 08:52:14.188 12272 12719 I         : fastpipe: Connect success
+06-11 08:52:14.189 12272 12719 D HostConnection: HostRPC::connect sucess: app=com.anansimobile.city_ar, pid=12272, tid=12719, this=0xa0ec8080
+06-11 08:52:14.190 12272 12719 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:com.anansimobile.city_ar
+06-11 08:52:14.239 12272 12719 I EGL_adreno: eglCreateContext request GLES major-version=2
+06-11 08:52:14.240 12272 12719 I EGL_adreno: eglCreateContext request GLES minor-version=0
+06-11 08:52:14.266 12272 12719 D EGL_adreno: eglCreateContext: 0xa0e0fb60: maj 3 min 1 rcv 4
+06-11 08:52:14.271 12272 12719 D EGL_adreno: eglMakeCurrent: 0xa0e0fb60: ver 3 1 (tinfo 0xa694aca0)
+06-11 08:52:14.286 12272 12719 D HostConnection: ExtendedRCEncoderContext GL_VERSION return OpenGL ES 3.1
+06-11 08:52:14.301 12272 12719 W GLESv2_enc: no support GL_NUM_PROGRAM_BINARY_FORMATS
+06-11 08:52:14.316 12696 12696 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:14.364 12696 12696 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:14.365 12696 12696 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:14.419 12272 12719 I EGL_adreno: eglCreateContext request GLES major-version=3
+06-11 08:52:14.420 12272 12719 I EGL_adreno: eglCreateContext request GLES minor-version=0
+06-11 08:52:14.421 12272 12709 W cr_media: Requires BLUETOOTH permission
+06-11 08:52:14.440 12272 12719 D EGL_adreno: eglCreateContext: 0xa10f1d20: maj 3 min 0 rcv 3
+06-11 08:52:14.449 12272 12719 D EGL_adreno: eglMakeCurrent: 0xa10f1d20: ver 3 0 (tinfo 0xa694aca0)
+06-11 08:52:14.452 12272 12307 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NGGLSurfaceView_onTouchMoved, trampoline_addr 0xb91bad94
+06-11 08:52:14.463 12272 12719 D HostConnection: ExtendedRCEncoderContext GL_VERSION return OpenGL ES 3.1
+06-11 08:52:14.517 12272 12719 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+06-11 08:52:14.588 12272 12719 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+06-11 08:52:14.596 12272 12719 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+06-11 08:52:14.628 12696 12696 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:14.628 12696 12696 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:14.631 12696 12696 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:14.641 12272 12719 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+06-11 08:52:14.647 12272 12719 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+06-11 08:52:14.678 12272 12719 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+06-11 08:52:14.698 12696 12696 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:14.722 12696 12696 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=550.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23147904, downTime=23147904, deviceId=0, source=0x2002 }
+06-11 08:52:14.766 12696 12696 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=550.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23147904, downTime=23147904, deviceId=0, source=0x2002 }
+06-11 08:52:14.803 12696 12696 D AndroidRuntime: Shutting down VM
+06-11 08:52:14.820  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:52:14.821 12272 12272 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+06-11 08:52:14.914 12272 12321 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+06-11 08:52:15.083 12272 12272 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NGWebView_OnWebViewLoaded, trampoline_addr 0xb91bad5c
+06-11 08:52:16.543 12742 12742 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 340 550 
+06-11 08:52:16.543 12742 12742 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:16.546 12742 12742 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:16.637 12742 12742 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:16.663 12742 12742 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:16.663 12742 12742 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:16.694 12742 12742 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:16.694 12742 12742 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:16.697 12742 12742 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:16.720 12742 12742 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:16.736 12742 12742 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=340.0, y[0]=550.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23149925, downTime=23149925, deviceId=0, source=0x2002 }
+06-11 08:52:16.743 12742 12742 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=340.0, y[0]=550.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23149925, downTime=23149925, deviceId=0, source=0x2002 }
+06-11 08:52:16.747 12742 12742 D AndroidRuntime: Shutting down VM
+06-11 08:52:17.989 12752 12752 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 200 600 
+06-11 08:52:17.989 12752 12752 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:17.994 12752 12752 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:18.082 12752 12752 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:18.103 12752 12752 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:18.104 12752 12752 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:18.127 12752 12752 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:18.127 12752 12752 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:18.129 12752 12752 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:18.144 12752 12752 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:18.151 12752 12752 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=200.0, y[0]=600.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23151348, downTime=23151348, deviceId=0, source=0x2002 }
+06-11 08:52:18.154 12752 12752 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=200.0, y[0]=600.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23151348, downTime=23151348, deviceId=0, source=0x2002 }
+06-11 08:52:18.157 12752 12752 D AndroidRuntime: Shutting down VM
+06-11 08:52:18.585  1302  1358 D WifiStateMachine: setScanResults mScanResults.size=1
+06-11 08:52:18.736 12272 12719 D EGL_adreno: eglMakeCurrent: 0xa10f1d20: ver 3 0 (tinfo 0xa694aca0)
+06-11 08:52:18.740 12272 12272 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NGWebView_OnWebViewDismissed, trampoline_addr 0xb91bad24
+06-11 08:52:18.757  1117  1138 D audio_hw_hal: raw_start_output_stream, stream=0xc6f05140, sampleRate=48000, channel=2, bps=16, bufSize=4096
+06-11 08:52:18.802  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:52:19.220 12763 12763 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 600 
+06-11 08:52:19.220 12763 12763 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:19.223 12763 12763 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:19.289 12763 12763 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:19.307 12763 12763 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:19.308 12763 12763 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:19.324 12763 12763 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:19.324 12763 12763 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:19.326 12763 12763 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:19.339 12763 12763 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:19.346 12763 12763 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=600.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23152543, downTime=23152543, deviceId=0, source=0x2002 }
+06-11 08:52:19.348 12763 12763 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=600.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23152543, downTime=23152543, deviceId=0, source=0x2002 }
+06-11 08:52:19.349 12763 12763 D AndroidRuntime: Shutting down VM
+06-11 08:52:20.210  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:52:20.213  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:52:20.223 12272 12272 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+06-11 08:52:20.231  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:52:20.234  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:52:20.250  1302  7767 D NotificationService: notify pkg=android pid=1302
+06-11 08:52:20.268  1302  1314 D NotificationService: notify pkg=android pid=1302
+06-11 08:52:20.310  1933  4713 E EGL_adreno: tid 4713: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+06-11 08:52:20.310  1933  4713 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xb6e4d880, error=EGL_BAD_MATCH
+06-11 08:52:20.599 12773 12773 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 340 600 
+06-11 08:52:20.599 12773 12773 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:20.602 12773 12773 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:20.714 12773 12773 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:20.781 12773 12773 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:20.782 12773 12773 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:20.823 12773 12773 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:20.823 12773 12773 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:20.824 12773 12773 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:20.841 12773 12773 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:20.852 12773 12773 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=340.0, y[0]=600.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23154045, downTime=23154045, deviceId=0, source=0x2002 }
+06-11 08:52:20.854 12773 12773 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=340.0, y[0]=600.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23154045, downTime=23154045, deviceId=0, source=0x2002 }
+06-11 08:52:20.855 12773 12773 D AndroidRuntime: Shutting down VM
+06-11 08:52:20.919  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:878 android.content.ContextWrapper.sendBroadcast:421 com.android.coreservice.CoreService.sendImeAction:435 com.android.coreservice.HostService.onReceived:303 com.android.coreservice.HostService.onData:225 
+06-11 08:52:20.933 12272 12272 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NGTextInputConn_nativeCommitAllText, trampoline_addr 0xb91bacec
+06-11 08:52:21.143  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:878 android.content.ContextWrapper.sendBroadcast:421 com.android.coreservice.CoreService.sendImeAction:435 com.android.coreservice.HostService.onReceived:303 com.android.coreservice.HostService.onData:225 
+06-11 08:52:21.860  1117  1138 D audio_hw_hal: log_func, out_standby
+06-11 08:52:21.860  1117  1138 D audio_hw_hal: raw_close_output_stream, dev=0xc6f0a0c0, stream =0xc6f05140
+06-11 08:52:21.860  1117  1138 D audio_hw_hal: raw_close_output_stream, stream=0xc6f05140,  success!
+06-11 08:52:22.449 12785 12785 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 200 650 
+06-11 08:52:22.449 12785 12785 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:22.456 12785 12785 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:22.586 12785 12785 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:22.620 12785 12785 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:22.621 12785 12785 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:22.655 12785 12785 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:22.655 12785 12785 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:22.658 12785 12785 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:22.688 12785 12785 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:22.701 12785 12785 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=200.0, y[0]=650.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23155892, downTime=23155892, deviceId=0, source=0x2002 }
+06-11 08:52:22.704 12785 12785 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=200.0, y[0]=650.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23155892, downTime=23155892, deviceId=0, source=0x2002 }
+06-11 08:52:22.706 12785 12785 D AndroidRuntime: Shutting down VM
+06-11 08:52:23.302  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:52:23.319  1933  1933 W InputService: onEvaluateInputViewShown inputType=0 imeOptions=0
+06-11 08:52:23.319  1933  1933 W InputService: onEvaluateInputViewShown inputType=0 imeOptions=0
+06-11 08:52:23.320  1302  1841 D NotificationService: notify pkg=android pid=1302
+06-11 08:52:23.337 12272 12272 W System.err: java.lang.Exception: show AlertDialog! title=
+06-11 08:52:23.338 12272 12272 W System.err: 	at android.app.AlertDialog.show(AlertDialog.java:134)
+06-11 08:52:23.338 12272 12272 W System.err: 	at com.anansimobile.nge.NGAlertDialog.handleMessage(NGAlertDialog.java:127)
+06-11 08:52:23.338 12272 12272 W System.err: 	at com.anansimobile.nge.NGMsgHandler.handleMessage(RootActivity.java:1028)
+06-11 08:52:23.338 12272 12272 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+06-11 08:52:23.338 12272 12272 W System.err: 	at android.os.Looper.loop(Looper.java:154)
+06-11 08:52:23.338 12272 12272 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6190)
+06-11 08:52:23.339 12272 12272 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+06-11 08:52:23.339 12272 12272 W System.err: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:892)
+06-11 08:52:23.339 12272 12272 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:782)
+06-11 08:52:23.346  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:52:23.418 12272 12272 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+06-11 08:52:23.467 12272 12321 E EGL_adreno: tid 12321: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+06-11 08:52:23.467 12272 12321 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xa20a9060, error=EGL_BAD_MATCH
+06-11 08:52:23.473  1302  1310 W art     : Suspending all threads took: 12.352ms
+06-11 08:52:23.474 12272 12321 D EGL_adreno: eglMakeCurrent: 0xc7c091c0: ver 3 1 (tinfo 0xb6f485d0)
+06-11 08:52:23.508  1302  1310 I art     : Background partial concurrent mark sweep GC freed 26182(1120KB) AllocSpace objects, 17(340KB) LOS objects, 33% free, 9MB/14MB, paused 18.091ms total 141.287ms
+06-11 08:52:23.574 12272 12307 I engine  : [LoadingMnger] do step:8
+06-11 08:52:23.657 12272 12307 I engine  : [LoadingMnger] do step:9
+06-11 08:52:23.659 12272 12321 D EGL_adreno: eglMakeCurrent: 0xc7c091c0: ver 3 1 (tinfo 0xb6f485d0)
+06-11 08:52:23.698  1302  1314 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@3414b52 attribute=null, token = android.os.BinderProxy@6e5bd32
+06-11 08:52:23.868 12272 12307 I engine  : [LoadingMnger] do step:10
+06-11 08:52:23.954 12272 12307 I engine  : [ERROR][Impart]parseImpart,but there has no data!!!!
+06-11 08:52:23.956 12272 12307 I engine  : [LoadingMnger] do step:10
+06-11 08:52:24.039 12272 12307 I engine  : [LoadingMnger] do step:11
+06-11 08:52:24.092 12795 12795 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 650 
+06-11 08:52:24.093 12795 12795 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:24.099 12795 12795 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:24.226 12795 12795 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:24.257 12795 12795 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:24.258 12795 12795 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:24.293 12795 12795 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:24.293 12795 12795 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:24.294 12272 12307 I engine  : [LoadingMnger] do step:12
+06-11 08:52:24.296 12795 12795 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:24.322 12795 12795 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:24.335 12795 12795 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=650.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23157526, downTime=23157526, deviceId=0, source=0x2002 }
+06-11 08:52:24.338 12795 12795 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=650.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23157526, downTime=23157526, deviceId=0, source=0x2002 }
+06-11 08:52:24.341 12795 12795 D AndroidRuntime: Shutting down VM
+06-11 08:52:24.458 12272 12307 E TDGA    : TDGAAccount.setAccount()#SDK not initialized. 
+06-11 08:52:24.543 12272 12307 I engine  : [LoadingMnger] do step:13
+06-11 08:52:26.179 12816 12816 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 340 650 
+06-11 08:52:26.180 12816 12816 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:26.187 12816 12816 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:26.338 12816 12816 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:26.381 12816 12816 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:26.382 12816 12816 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:26.423 12816 12816 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:26.423 12816 12816 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:26.426 12816 12816 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:26.458 12816 12816 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:26.472 12816 12816 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=340.0, y[0]=650.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23159663, downTime=23159663, deviceId=0, source=0x2002 }
+06-11 08:52:26.477 12816 12816 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=340.0, y[0]=650.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23159663, downTime=23159663, deviceId=0, source=0x2002 }
+06-11 08:52:26.480 12816 12816 D AndroidRuntime: Shutting down VM
+06-11 08:52:27.792 12828 12828 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 200 700 
+06-11 08:52:27.792 12828 12828 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:27.796 12828 12828 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:27.869 12828 12828 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:27.889 12828 12828 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:27.889 12828 12828 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:27.910 12828 12828 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:27.910 12828 12828 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:27.911 12828 12828 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:27.923 12828 12828 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:27.929 12828 12828 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=200.0, y[0]=700.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23161127, downTime=23161127, deviceId=0, source=0x2002 }
+06-11 08:52:27.931 12828 12828 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=200.0, y[0]=700.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23161127, downTime=23161127, deviceId=0, source=0x2002 }
+06-11 08:52:27.932 12828 12828 D AndroidRuntime: Shutting down VM
+06-11 08:52:28.082 12272 12307 I engine  : [CGameMission Debug] mission Key is: 1
+06-11 08:52:28.119 12272 12307 I engine  : CGameMissionManager::GetCurMissionIdL called
+06-11 08:52:28.194 12272 12307 I engine  : avatar_bucket:
+06-11 08:52:28.209 12272 12272 E IabHelper: In-app billing error: Illegal state for operation (queryInventory): IAB helper is not set up.
+06-11 08:52:28.252  1125  1125 I FFmpegExtractor: android-source:0xc3cf7200
+06-11 08:52:28.303  1125  1125 D FFmpegExtractor: supported codec (mp3) by official Stagefright
+06-11 08:52:28.305  1125  1125 D FFmpegExtractor: ffmpeg detected media content as 'audio/mpeg' with confidence 0.08
+06-11 08:52:28.310  1126 12841 D NuPlayerDriver: notifyListener_l(0xc7d27560), (1, 0, 0), loop setting(0, 0)
+06-11 08:52:28.311 12272 12307 D MediaPlayer: setSubtitleAnchor in MediaPlayer
+06-11 08:52:28.311 12272 12272 D MediaPlayer: setSubtitleAnchor in MediaPlayer
+06-11 08:52:28.336 12680 12687 I art     : Debugger is no longer active
+06-11 08:52:28.336 12680 12687 I art     : Starting a blocking GC Instrumentation
+06-11 08:52:28.346  1126  1126 D NuPlayerDriver: start(0xc7d27560), state is 4, eos is 0
+06-11 08:52:28.347  1126 12841 I GenericSource: start
+06-11 08:52:28.362  1126 12841 W Utils   : track of type 'audio/mpeg' does not publish channel mask, channel count 2
+06-11 08:52:28.379  1126 12841 W Utils   : track of type 'audio/mpeg' does not publish channel mask, channel count 2
+06-11 08:52:28.387  1126 12851 I MediaPlayerService: MediaPlayerService::getOMX
+06-11 08:52:28.396  1126 12851 I OMXClient: MuxOMX ctor
+06-11 08:52:28.403  1123  1123 I OMXMaster: makeComponentInstance(OMX.google.mp3.decoder) in mediacodec process
+06-11 08:52:28.428  1123  1132 E OMXNodeInstance: setConfig(4630045:google.mp3.decoder, ConfigPriority(0x6f800002)) ERROR: Undefined(0x80001001)
+06-11 08:52:28.428  1126 12851 I ACodec  : codec does not support config priority (err -2147483648)
+06-11 08:52:28.435  1126 12851 I MediaCodec: MediaCodec will operate in async mode
+06-11 08:52:28.480  1117  1143 W AudioFlinger: createTrack_l(): mismatch between requested flags (00000008) and output flags (00000002)
+06-11 08:52:28.482  1126 12849 D AudioTrack: Client defaulted notificationFrames to 7520 for frameCount 22560
+06-11 08:52:28.487  1126 12841 D NuPlayerDriver: notifyListener_l(0xc7d27560), (6, 0, 0), loop setting(0, 1)
+06-11 08:52:28.488  1117  1138 D audio_hw_hal: raw_start_output_stream, stream=0xc6f05140, sampleRate=48000, channel=2, bps=16, bufSize=4096
+06-11 08:52:28.561  1117  1138 D AudioFlinger: mixer(0xc5a80000) throttle end: throttle time(10)
+06-11 08:52:28.862 12272 12307 W Vungle  : Please call VunglePub.init() before isAdPlayable()
+06-11 08:52:29.132 12854 12854 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 700 
+06-11 08:52:29.132 12854 12854 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:29.137 12854 12854 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:29.212 12854 12854 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:29.232 12854 12854 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:29.234 12854 12854 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:29.249 12854 12854 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:29.249 12854 12854 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:29.251 12854 12854 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:29.264 12854 12854 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:29.273 12854 12854 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=700.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23162468, downTime=23162468, deviceId=0, source=0x2002 }
+06-11 08:52:29.275 12854 12854 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=700.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23162468, downTime=23162468, deviceId=0, source=0x2002 }
+06-11 08:52:29.276 12854 12854 D AndroidRuntime: Shutting down VM
+06-11 08:52:29.667  1117  1138 D AudioFlinger: mixer(0xc5a80000) throttle end: throttle time(8)
+06-11 08:52:29.747 11067 11067 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.safetynet.service.START pkg=com.google.android.gms }
+06-11 08:52:29.954 12272 12307 E TDGA    : TDGAMission.onBegin()#SDK not initialized. 
+06-11 08:52:29.956 12272 12307 I engine  : CGameMissionManager::GetCurMissionIdL called
+06-11 08:52:30.006 12272 12307 W SoundPool:   sample 1 not READY
+06-11 08:52:30.051 12272 12306 E WVMExtractor: Failed to open libwvm.so: dlopen failed: library "libwvm.so" not found
+06-11 08:52:30.072  1125  1150 I FFmpegExtractor: android-source:0xc3b63400
+06-11 08:52:30.081  1125  1150 D FFmpegExtractor: supported codec (pcm_s16le) by official Stagefright
+06-11 08:52:30.081  1125  1150 D FFmpegExtractor: ffmpeg detected media content as 'audio/x-wav' with confidence 0.08
+06-11 08:52:30.090  1126  1155 I MediaPlayerService: MediaPlayerService::getOMX
+06-11 08:52:30.092 12272 12867 I OMXClient: MuxOMX ctor
+06-11 08:52:30.094  1123 11499 I OMXMaster: makeComponentInstance(OMX.google.raw.decoder) in mediacodec process
+06-11 08:52:30.116  1125  1630 D MediaBufferGroup: creating MemoryDealer
+06-11 08:52:30.154 12272 12272 W AudioTrack: AUDIO_OUTPUT_FLAG_FAST denied by client; transfer 4, track 22050 Hz, output 48000 Hz
+06-11 08:52:30.951 12864 12864 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 340 700 
+06-11 08:52:30.952 12864 12864 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:30.960 12864 12864 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:31.134 12864 12864 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:31.192 12864 12864 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:31.193 12864 12864 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:31.238 12864 12864 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:31.238 12864 12864 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:31.244 12864 12864 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:31.266 12864 12864 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:31.275 12864 12864 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=340.0, y[0]=700.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23164470, downTime=23164470, deviceId=0, source=0x2002 }
+06-11 08:52:31.277 12864 12864 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=340.0, y[0]=700.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23164470, downTime=23164470, deviceId=0, source=0x2002 }
+06-11 08:52:31.278 12864 12864 D AndroidRuntime: Shutting down VM
+06-11 08:52:31.305 12272 12307 W SoundPool:   sample 2 not READY
+06-11 08:52:31.312  1125  1630 I FFmpegExtractor: android-source:0xc3ad8a00
+06-11 08:52:31.316  1125  1630 D FFmpegExtractor: supported codec (pcm_s16le) by official Stagefright
+06-11 08:52:31.316  1125  1630 D FFmpegExtractor: ffmpeg detected media content as 'audio/x-wav' with confidence 0.08
+06-11 08:52:31.320  1126  1441 I MediaPlayerService: MediaPlayerService::getOMX
+06-11 08:52:31.322 12272 12879 I OMXClient: MuxOMX ctor
+06-11 08:52:31.324  1123  1123 I OMXMaster: makeComponentInstance(OMX.google.raw.decoder) in mediacodec process
+06-11 08:52:31.333  1125  1410 D MediaBufferGroup: creating MemoryDealer
+06-11 08:52:31.350 12272 12272 W AudioTrack: AUDIO_OUTPUT_FLAG_FAST denied by client; transfer 4, track 44100 Hz, output 48000 Hz
+06-11 08:52:32.268 12272 12307 W SoundPool:   sample 3 not READY
+06-11 08:52:32.275  1125  1410 I FFmpegExtractor: android-source:0xc6c1da00
+06-11 08:52:32.278  1125  1410 D FFmpegExtractor: supported codec (pcm_s16le) by official Stagefright
+06-11 08:52:32.279  1125  1410 D FFmpegExtractor: ffmpeg detected media content as 'audio/x-wav' with confidence 0.08
+06-11 08:52:32.283  1126  1441 I MediaPlayerService: MediaPlayerService::getOMX
+06-11 08:52:32.283 12272 12885 I OMXClient: MuxOMX ctor
+06-11 08:52:32.285  1123  1123 I OMXMaster: makeComponentInstance(OMX.google.raw.decoder) in mediacodec process
+06-11 08:52:32.290  1125  1630 D MediaBufferGroup: creating MemoryDealer
+06-11 08:52:32.306 12272 12272 W AudioTrack: AUDIO_OUTPUT_FLAG_FAST denied by client; transfer 4, track 22050 Hz, output 48000 Hz
+06-11 08:52:32.508 12883 12883 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 200 750 
+06-11 08:52:32.509 12883 12883 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:32.513 12883 12883 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:32.589 12883 12883 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:32.608 12883 12883 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:32.609 12883 12883 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:32.632 12883 12883 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:32.632 12883 12883 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:32.634 12883 12883 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:32.646 12883 12883 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:32.654 12883 12883 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=200.0, y[0]=750.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23165850, downTime=23165850, deviceId=0, source=0x2002 }
+06-11 08:52:32.656 12883 12883 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=200.0, y[0]=750.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23165850, downTime=23165850, deviceId=0, source=0x2002 }
+06-11 08:52:32.658 12883 12883 D AndroidRuntime: Shutting down VM
+06-11 08:52:32.664 11135 11161 I Finsky  : [336] Stats for Executor: BlockingExecutor wcd@455b0c3[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 25]
+06-11 08:52:32.665 11135 11161 I Finsky  : [336] Stats for Executor: LightweightExecutor wcd@e29dd40[Running, pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 159]
+06-11 08:52:33.693 12897 12897 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 750 
+06-11 08:52:33.693 12897 12897 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:33.697 12897 12897 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:33.766 12897 12897 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:33.783 12897 12897 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:33.783 12897 12897 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:33.805 12897 12897 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:33.805 12897 12897 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:33.806 12897 12897 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:33.819 12897 12897 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:33.826 12897 12897 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=750.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23167023, downTime=23167023, deviceId=0, source=0x2002 }
+06-11 08:52:33.828 12897 12897 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=750.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23167023, downTime=23167023, deviceId=0, source=0x2002 }
+06-11 08:52:33.829 12897 12897 D AndroidRuntime: Shutting down VM
+06-11 08:52:33.842 12272 12307 I engine  : building 37 released
+06-11 08:52:34.388 11135 11161 I Finsky  : [336] Stats for Executor: bgExecutor wcd@8bce479[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 160]
+06-11 08:52:34.829 12907 12907 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 340 750 
+06-11 08:52:34.829 12907 12907 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:34.833 12907 12907 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:34.902 12907 12907 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:34.917 12907 12907 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:34.917 12907 12907 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:34.941 12907 12907 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:34.941 12907 12907 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:34.942 12907 12907 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:34.954 12907 12907 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:34.961 12907 12907 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=340.0, y[0]=750.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23168158, downTime=23168158, deviceId=0, source=0x2002 }
+06-11 08:52:34.962 12907 12907 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=340.0, y[0]=750.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23168158, downTime=23168158, deviceId=0, source=0x2002 }
+06-11 08:52:34.963 12907 12907 D AndroidRuntime: Shutting down VM
+06-11 08:52:34.984 12272 12307 I engine  : building 37 released
+06-11 08:52:36.170 12917 12917 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 200 800 
+06-11 08:52:36.170 12917 12917 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:36.173 12917 12917 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:36.240 12917 12917 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:36.257 12917 12917 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:36.257 12917 12917 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:36.276 12917 12917 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:36.276 12917 12917 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:36.278 12917 12917 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:36.290 12917 12917 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:36.297 12917 12917 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=200.0, y[0]=800.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23169494, downTime=23169494, deviceId=0, source=0x2002 }
+06-11 08:52:36.299 12917 12917 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=200.0, y[0]=800.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23169494, downTime=23169494, deviceId=0, source=0x2002 }
+06-11 08:52:36.301 12917 12917 D AndroidRuntime: Shutting down VM
+06-11 08:52:37.290 12272 12307 I engine  : building 27 released
+06-11 08:52:37.515 12927 12927 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 270 800 
+06-11 08:52:37.515 12927 12927 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:37.519 12927 12927 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:37.589 12927 12927 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:37.608 12927 12927 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:37.609 12927 12927 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:37.628 12927 12927 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:37.628 12927 12927 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:37.630 12927 12927 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:37.645 12927 12927 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:37.653 12927 12927 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=270.0, y[0]=800.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23170850, downTime=23170850, deviceId=0, source=0x2002 }
+06-11 08:52:37.655 12927 12927 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=270.0, y[0]=800.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23170850, downTime=23170850, deviceId=0, source=0x2002 }
+06-11 08:52:37.656 12927 12927 D AndroidRuntime: Shutting down VM
+06-11 08:52:38.653 12937 12937 I appproc : exec app_process! cmdline: /system/bin com.android.commands.input.Input mouse tap 340 800 
+06-11 08:52:38.653 12937 12937 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:52:38.657 12937 12937 D AndroidRuntime: CheckJNI is OFF
+06-11 08:52:38.727 12937 12937 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:52:38.745 12937 12937 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:52:38.746 12937 12937 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:52:38.764 12937 12937 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:52:38.764 12937 12937 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:52:38.765 12937 12937 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:52:38.779 12937 12937 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+06-11 08:52:38.792 12937 12937 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=340.0, y[0]=800.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23171983, downTime=23171983, deviceId=0, source=0x2002 }
+06-11 08:52:38.794 12937 12937 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=340.0, y[0]=800.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=23171983, downTime=23171983, deviceId=0, source=0x2002 }
+06-11 08:52:38.795 12937 12937 D AndroidRuntime: Shutting down VM
+06-11 08:52:38.819 12272 12307 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NGGLSurfaceView_onTouchCanceled, trampoline_addr 0xb91bacb4
+06-11 08:52:39.891 12272 12307 I engine  : building 1000 released
+06-11 08:52:41.729 11225 11243 I Finsky:background: [340] Stats for Executor: bgExecutor wcd@8b28144[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 40]
+06-11 08:52:41.990 11225 11243 I Finsky:background: [340] Stats for Executor: LightweightExecutor wcd@5fbf22d[Running, pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 23]
+06-11 08:52:42.057 12272 12307 I engine  : building 36 released
+06-11 08:52:43.466 11225 11243 I Finsky:background: [340] Stats for Executor: BlockingExecutor wcd@bde0362[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 1]
+06-11 08:52:46.610 12272 12307 I engine  : building -1 released
+06-11 08:52:56.973 12272 12307 W AudioTrack: AUDIO_OUTPUT_FLAG_FAST denied by client; transfer 4, track 22050 Hz, output 48000 Hz
+06-11 08:52:57.167 12272 12307 I engine  : newspaper content received
+06-11 08:53:00.256 12272 12272 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+06-11 08:53:00.265 12272 12272 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+06-11 08:53:00.265 12272 12272 D native_project_lib: [root_service_log] notification ignored, activity in foreground!~
+06-11 08:53:00.298  1302  1310 I art     : Background partial concurrent mark sweep GC freed 28685(1205KB) AllocSpace objects, 19(380KB) LOS objects, 33% free, 9MB/14MB, paused 1.219ms total 112.970ms
+06-11 08:53:04.673 12272 12307 I engine  : building 10 released
+06-11 08:53:07.580 12272 12307 I engine  : building 13 released
+06-11 08:53:07.582 12272 12307 W AudioTrack: AUDIO_OUTPUT_FLAG_FAST denied by client; transfer 4, track 22050 Hz, output 48000 Hz
+06-11 08:53:08.694 12272 12307 W AudioTrack: AUDIO_OUTPUT_FLAG_FAST denied by client; transfer 4, track 44100 Hz, output 48000 Hz
+06-11 08:53:09.990 12272 12307 I engine  : building 12 released
+06-11 08:53:10.159 12272 12307 I engine  : recv list faction response
+06-11 08:53:15.292 12272 12307 I engine  : building 1000 released
+06-11 08:53:18.428 12272 12307 I engine  : building 36 released
+06-11 08:53:18.430 12272 12307 W AudioTrack: AUDIO_OUTPUT_FLAG_FAST denied by client; transfer 4, track 22050 Hz, output 48000 Hz
+06-11 08:53:19.534 12272 12307 W AudioTrack: AUDIO_OUTPUT_FLAG_FAST denied by client; transfer 4, track 44100 Hz, output 48000 Hz
+06-11 08:53:22.077 12272 12307 I engine  : building 1000 released
+06-11 08:53:25.284 12272 12307 I engine  : building 1 released
+06-11 08:53:25.478 12956 12956 E linker  : normalize_path - invalid input: "", the input path should be absolute
+06-11 08:53:25.478 12956 12956 W linker  : Warning: unable to normalize ""
+06-11 08:53:25.935 12956 12956 I appproc : exec app_process! cmdline: /system/bin --application org.chromium.components.crash.browser.CrashpadMain /system/bin/app_process32 --sanitization-information=0xa6d7e6c0 --write-minidump-to-log --database=/data/user/0/com.anansimobile.city_ar/cache/WebView/Crashpad --annotation=abi_name=x86, armeabi-v7a, armeabi --annotation=android_build_fp=google/android_x86/x86:7.1.2/N2G48C/N975FXXU1ASGO:user/release-keys --annotation=android_build_id=N2G48C --annotation=board=SM-A805N --annotation=brand=samsung --annotation=channel=stable --annotation=custom_themes=false --annotation=device=aosp --annotation=gms_core_version=261833007 --annotation=installer_package_name= --annotation=model=SM-A805N --annotation=package=1:914760932289:android:bdb905fe8b8890ae v424019821 (86.0.4240.198) --annotation=plat=Android --annotation=prod=AndroidWebView --annotation=ptype=webview --annotation=resources_version=Not found --annotation=sdk=25 --annotation=ver=86.0.4240.198 --trace-parent-with-exception=0xa0d08304 
+06-11 08:53:25.935 12956 12956 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 10056 <<<<<<
+06-11 08:53:25.940 12956 12956 D AndroidRuntime: CheckJNI is OFF
+06-11 08:53:25.940 12956 12956 E cutils-trace: Error opening trace file: Permission denied (13)
+06-11 08:53:26.028 12956 12956 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:53:26.065 12956 12956 W System  : ClassLoader referenced unknown path: /system/app/Chrome/lib/x86
+06-11 08:53:26.097 12956 12956 W System  : ClassLoader referenced unknown path: /system/app/Chrome/lib/x86
+06-11 08:53:26.098 12956 12956 W art     : Could not create mount namespace.
+06-11 08:53:26.098 12956 12956 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:53:26.098 12956 12956 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:53:26.116 12956 12956 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:53:26.117 12956 12956 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:53:26.118 12956 12956 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:53:26.131 12956 12956 D AndroidRuntime: Calling main entry org.chromium.components.crash.browser.CrashpadMain
+06-11 08:53:26.226 12956 12956 E chromium: [0611/085326.225770:ERROR:elf_dynamic_array_reader.h(61)] tag not found
+06-11 08:53:26.263 12956 12956 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+06-11 08:53:26.287 12272 12307 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 12307 (GLThread 377)
+06-11 08:53:26.288  1060  1060 W         : debuggerd: handling request: pid=12272 uid=10056 gid=10056 tid=12307
+06-11 08:53:26.305 12965 12965 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-11 08:53:26.305 12965 12965 F DEBUG   : Build fingerprint: 'google/android_x86/x86:7.1.2/N2G48C/N975FXXU1ASGO:user/release-keys'
+06-11 08:53:26.305 12965 12965 F DEBUG   : Revision: '0'
+06-11 08:53:26.305 12965 12965 F DEBUG   : ABI: 'x86'
+06-11 08:53:26.305 12965 12965 F DEBUG   : pid: 12272, tid: 12307, name: GLThread 377  >>> com.anansimobile.city_ar <<<
+06-11 08:53:26.305 12965 12965 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+06-11 08:53:26.305 12965 12965 F DEBUG   :     eax 00000000  ebx ac34aff4  ecx 00000000  edx 00000000
+06-11 08:53:26.306 12965 12965 F DEBUG   :     esi 00000000  edi 00000002
+06-11 08:53:26.306 12965 12965 F DEBUG   :     xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+06-11 08:53:26.306 12965 12965 F DEBUG   :     eip abfa7750  ebp 10128040  esp a544b070  flags 00010246
+06-11 08:53:26.308 12965 12965 F DEBUG   : 
+06-11 08:53:26.308 12965 12965 F DEBUG   : backtrace:
+06-11 08:53:26.308 12965 12965 F DEBUG   :     #00 pc 000bf750  /system/lib/libhoudini.so
+06-11 08:53:28.482  1302  1320 I BootReceiver: Copying /data/tombstones/tombstone_08 to DropBox (SYSTEM_TOMBSTONE)
+06-11 08:53:28.485  1060  1060 W         : debuggerd: resuming target 12272
+06-11 08:53:28.502  1302 12970 W ActivityManager:   Force finishing activity com.anansimobile.city_ar/.Main
+06-11 08:53:28.520  1302  1323 E JavaBinder: !!! FAILED BINDER TRANSACTION !!!  (parcel size = 60)
+06-11 08:53:28.521  1302 12970 E JavaBinder: !!! FAILED BINDER TRANSACTION !!!  (parcel size = 104)
+06-11 08:53:28.536  1302  1314 I WindowManager: WIN DEATH: Window{622fa83 u0 com.anansimobile.city_ar/com.anansimobile.city_ar.Main}
+06-11 08:53:28.537  1302  1314 W WindowManager: Force-removing child win Window{67f248c u0 SurfaceView - com.anansimobile.city_ar/com.anansimobile.city_ar.Main} from container Window{622fa83 u0 com.anansimobile.city_ar/com.anansimobile.city_ar.Main}
+06-11 08:53:28.537  1126  1126 D NuPlayerDriver: reset(0xc7d27560) at state 5
+06-11 08:53:28.538  1126  1126 D NuPlayerDriver: notifyListener_l(0xc7d27560), (8, 0, 0), loop setting(0, 1)
+06-11 08:53:28.539  1302  1840 D GraphicsStats: Buffer count: 4
+06-11 08:53:28.585  1116  1116 I Zygote  : Process 12272 exited due to signal (11)
+06-11 08:53:28.586  1302  7765 W WindowManager: Failed looking up window
+06-11 08:53:28.586  1302  7765 W WindowManager: java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@210bbdf does not exist
+06-11 08:53:28.586  1302  7765 W WindowManager: 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:9459)
+06-11 08:53:28.586  1302  7765 W WindowManager: 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:9450)
+06-11 08:53:28.586  1302  7765 W WindowManager: 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1807)
+06-11 08:53:28.586  1302  7765 W WindowManager: 	at android.os.BinderProxy.sendDeathNotice(Binder.java:688)
+06-11 08:53:28.586  1302  7765 I WindowManager: WIN DEATH: null
+06-11 08:53:28.589  1302 12970 W ActivityManager: Exception thrown during pause
+06-11 08:53:28.589  1302 12970 W ActivityManager: android.os.DeadObjectException: Transaction failed on small parcel; remote process probably died
+06-11 08:53:28.589  1302 12970 W ActivityManager: 	at android.os.BinderProxy.transactNative(Native Method)
+06-11 08:53:28.589  1302 12970 W ActivityManager: 	at android.os.BinderProxy.transact(Binder.java:615)
+06-11 08:53:28.589  1302 12970 W ActivityManager: 	at android.app.ApplicationThreadProxy.schedulePauseActivity(ApplicationThreadNative.java:785)
+06-11 08:53:28.589  1302 12970 W ActivityManager: 	at com.android.server.am.ActivityStack.startPausingLocked(ActivityStack.java:1145)
+06-11 08:53:28.589  1302 12970 W ActivityManager: 	at com.android.server.am.ActivityStack.finishActivityLocked(ActivityStack.java:3531)
+06-11 08:53:28.589  1302 12970 W ActivityManager: 	at com.android.server.am.ActivityStack.finishTopRunningActivityLocked(ActivityStack.java:3367)
+06-11 08:53:28.589  1302 12970 W ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.finishTopRunningActivityLocked(ActivityStackSupervisor.java:1855)
+06-11 08:53:28.589  1302 12970 W ActivityManager: 	at com.android.server.am.AppErrors.handleAppCrashLocked(AppErrors.java:619)
+06-11 08:53:28.589  1302 12970 W ActivityManager: 	at com.android.server.am.AppErrors.makeAppCrashingLocked(AppErrors.java:477)
+06-11 08:53:28.589  1302 12970 W ActivityManager: 	at com.android.server.am.AppErrors.crashApplicationInner(AppErrors.java:353)
+06-11 08:53:28.589  1302 12970 W ActivityManager: 	at com.android.server.am.AppErrors.crashApplication(AppErrors.java:305)
+06-11 08:53:28.589  1302 12970 W ActivityManager: 	at com.android.server.am.ActivityManagerService.handleApplicationCrashInner(ActivityManagerService.java:13676)
+06-11 08:53:28.589  1302 12970 W ActivityManager: 	at com.android.server.am.NativeCrashListener$NativeCrashReporter.run(NativeCrashListener.java:86)
+06-11 08:53:28.591  1126 12841 W AMessage: failed to post message as target looper for handler 0 is gone.
+06-11 08:53:28.594  1126 12841 D NuPlayerDriver: notifyResetComplete(0xc7d27560)
+06-11 08:53:28.596  1108  1108 E lowmemorykiller: Error opening /proc/12272/oom_score_adj; errno=2
+06-11 08:53:28.605  1302 12970 W ActivityManager: Failed setting process group of 12272 to 1
+06-11 08:53:28.605  1302 12970 W System.err: java.lang.IllegalArgumentException: Given thread 12272 does not exist
+06-11 08:53:28.605  1302 12970 W System.err: 	at android.os.Process.setThreadPriority(Native Method)
+06-11 08:53:28.605  1302 12970 W System.err: 	at com.android.server.am.ActivityManagerService.applyOomAdjLocked(ActivityManagerService.java:20847)
+06-11 08:53:28.605  1302 12970 W System.err: 	at com.android.server.am.ActivityManagerService.updateOomAdjLocked(ActivityManagerService.java:21351)
+06-11 08:53:28.605  1302 12970 W System.err: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2455)
+06-11 08:53:28.606  1302 12970 W System.err: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2131)
+06-11 08:53:28.606  1302 12970 W System.err: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:1833)
+06-11 08:53:28.606  1302 12970 W System.err: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:1823)
+06-11 08:53:28.606  1302 12970 W System.err: 	at com.android.server.am.ActivityStack.startPausingLocked(ActivityStack.java:1200)
+06-11 08:53:28.606  1302 12970 W System.err: 	at com.android.server.am.ActivityStack.finishActivityLocked(ActivityStack.java:3531)
+06-11 08:53:28.606  1302 12970 W System.err: 	at com.android.server.am.ActivityStack.finishTopRunningActivityLocked(ActivityStack.java:3367)
+06-11 08:53:28.606  1302 12970 W System.err: 	at com.android.server.am.ActivityStackSupervisor.finishTopRunningActivityLocked(ActivityStackSupervisor.java:1855)
+06-11 08:53:28.606  1302 12970 W System.err: 	at com.android.server.am.AppErrors.handleAppCrashLocked(AppErrors.java:619)
+06-11 08:53:28.606  1302 12970 W System.err: 	at com.android.server.am.AppErrors.makeAppCrashingLocked(AppErrors.java:477)
+06-11 08:53:28.606  1302 12970 W System.err: 	at com.android.server.am.AppErrors.crashApplicationInner(AppErrors.java:353)
+06-11 08:53:28.606  1302 12970 W System.err: 	at com.android.server.am.AppErrors.crashApplication(AppErrors.java:305)
+06-11 08:53:28.606  1302 12970 W System.err: 	at com.android.server.am.ActivityManagerService.handleApplicationCrashInner(ActivityManagerService.java:13676)
+06-11 08:53:28.606  1302 12970 W System.err: 	at com.android.server.am.NativeCrashListener$NativeCrashReporter.run(NativeCrashListener.java:86)
+06-11 08:53:28.626  1302  1802 I ActivityManager: Process com.anansimobile.city_ar (pid 12272) has died
+06-11 08:53:28.627  1302  1802 D ActivityManager: cleanUpApplicationRecord -- 12272
+06-11 08:53:28.642  1302  1802 W ActivityManager: Scheduling restart of crashed service com.anansimobile.city_ar/com.anansimobile.nge.RootService in 1000ms
+06-11 08:53:28.646  1302  1317 W System.err: java.lang.Exception: show AlertDialog! title=‎‫وكر الاوغاد‬‎ has stopped
+06-11 08:53:28.651  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:44 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:53:28.652  1302  1603 I ActivityManager: Killing 11112:com.google.process.gapps/u0a19 (adj 906): empty for 3638s
+06-11 08:53:28.653  1302  1317 W System.err: 	at android.app.AlertDialog.show(AlertDialog.java:134)
+06-11 08:53:28.653  1302  1317 W System.err: 	at com.android.server.am.AppErrors.handleShowAppErrorUi(AppErrors.java:719)
+06-11 08:53:28.654  1302  1317 W System.err: 	at com.android.server.am.ActivityManagerService$UiHandler.handleMessage(ActivityManagerService.java:1637)
+06-11 08:53:28.654  1302  1317 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+06-11 08:53:28.654  1302  1317 W System.err: 	at android.os.Looper.loop(Looper.java:154)
+06-11 08:53:28.654  1302  1317 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:61)
+06-11 08:53:28.654  1302  1317 W System.err: 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+06-11 08:53:28.675  1302  2912 D ActivityManager: cleanUpApplicationRecord -- 11112
+06-11 08:53:28.767  1302  3729 I HostConnection: HostConnection::HostConnection: pid=1302, tid=3729, this=0xa9653f00
+06-11 08:53:28.769  1302  3729 I         : fastpipe: Connect success
+06-11 08:53:28.770  1302  3729 D HostConnection: HostRPC::connect sucess: app=system_server, pid=1302, tid=3729, this=0xa9730440
+06-11 08:53:28.770  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:53 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:53:28.771  1302  3729 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:system_server
+06-11 08:53:28.772  1302  3729 I OpenGLRenderer: Initialized EGL, version 1.4
+06-11 08:53:28.772  1302  3729 D OpenGLRenderer: Swap behavior 1
+06-11 08:53:28.772  1302  3729 I EGL_adreno: eglCreateContext request GLES major-version=2
+06-11 08:53:28.791  1302  3729 D EGL_adreno: eglCreateContext: 0xa8fb2f60: maj 3 min 1 rcv 4
+06-11 08:53:28.795 11067 11067 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+06-11 08:53:28.795 11067 11067 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+06-11 08:53:28.805  1302  3729 D EGL_adreno: eglMakeCurrent: 0xa8fb2f60: ver 3 1 (tinfo 0xa92f3e60)
+06-11 08:53:28.824  1758  1918 E EGL_adreno: tid 1918: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+06-11 08:53:28.824  1758  1918 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xa6196420, error=EGL_BAD_MATCH
+06-11 08:53:28.828  1302  3729 E EGL_adreno: tid 3729: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+06-11 08:53:28.828  1302  3729 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xa9569740, error=EGL_BAD_MATCH
+06-11 08:53:28.841  1302  3729 D EGL_adreno: eglMakeCurrent: 0xa8fb2f60: ver 3 1 (tinfo 0xa92f3e60)
+06-11 08:53:28.872  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:893 android.content.ContextWrapper.sendBroadcast:426 com.android.coreservice.TabManager.notifyClosing:345 com.android.coreservice.TabManager.updateInner:182 com.android.coreservice.TabManager.onUpdate:217 
+06-11 08:53:28.888  1302  2893 E ActivityManager: Sending non-protected broadcast android.intent.action.CLOSE_TASK from system 1735:com.android.coreservice/1000 pkg com.android.coreservice
+06-11 08:53:28.888  1302  2893 E ActivityManager: java.lang.Throwable
+06-11 08:53:28.888  1302  2893 E ActivityManager: 	at com.android.server.am.ActivityManagerService.checkBroadcastFromSystem(ActivityManagerService.java:18108)
+06-11 08:53:28.888  1302  2893 E ActivityManager: 	at com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:18680)
+06-11 08:53:28.888  1302  2893 E ActivityManager: 	at com.android.server.am.ActivityManagerService.broadcastIntent(ActivityManagerService.java:18771)
+06-11 08:53:28.888  1302  2893 E ActivityManager: 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:499)
+06-11 08:53:28.888  1302  2893 E ActivityManager: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2820)
+06-11 08:53:28.888  1302  2893 E ActivityManager: 	at android.os.Binder.execTransact(Binder.java:565)
+06-11 08:53:28.897  1735  1735 I CoreService: notifyClosing notify tab closed taskPackageName:com.anansimobile.city_ar
+06-11 08:53:28.909  1758  1918 D EGL_adreno: eglMakeCurrent: 0xb6f221a0: ver 3 1 (tinfo 0xa617fbd0)
+06-11 08:53:29.398  1758  1918 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+06-11 08:53:29.663 12977 12977 D libnativebridge: PreInitializeNativeBridge name=zygote instruction_set=arm
+06-11 08:53:29.665 12977 12977 V libnb   : enter native_bridge2_initialize /data/user/0/com.anansimobile.city_ar/code_cache arm
+06-11 08:53:29.668  1302  1316 I ActivityManager: Start proc 12977:com.anansimobile.city_ar/u0a56 for service com.anansimobile.city_ar/com.anansimobile.nge.RootService
+06-11 08:53:29.681 12977 12977 D houdini : [12977] Initialize library(version: 7.1.1b_x.49852 RELEASE)... successfully.
+06-11 08:53:29.778  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:53 android.app.ActivityThread.handleReceiver:3073 
+06-11 08:53:30.388 12977 12977 I FirebaseInitProvider: FirebaseApp initialization skipped (Waker patch)
+06-11 08:53:30.437 12977 12977 D native_project_lib: [root_service_log] RootService Created!~
+06-11 08:53:30.485 12977 12993 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+06-11 08:53:30.879 12977 12995 W AnalyticsUserIDStore: initStore should have been called before calling setUserID
+06-11 08:53:31.564  1117  1138 D audio_hw_hal: log_func, out_standby
+06-11 08:53:31.564  1117  1138 D audio_hw_hal: raw_close_output_stream, dev=0xc6f0a0c0, stream =0xc6f05140
+06-11 08:53:31.564  1117  1138 D audio_hw_hal: raw_close_output_stream, stream=0xc6f05140,  success!
+06-11 08:53:31.570 13006 13006 I HostConnection: HostConnection::HostConnection: pid=13006, tid=13006, this=0xc7e69200
+06-11 08:53:31.572 13006 13006 I         : fastpipe: Connect success
+06-11 08:53:31.573 13006 13006 D HostConnection: HostRPC::connect sucess: app=screencap, pid=13006, tid=13006, this=0xc6804740
+06-11 08:53:31.574 13006 13006 E HostConnection: /data/local/cfg-znz/gl_force format error! com.tencent.tmgp.trssj 5 
+06-11 08:53:31.574 13006 13006 E HostConnection: /data/local/cfg-znz/gl_force format error! com.huiqi.mrby gl
+06-11 08:53:31.574 13006 13006 E HostConnection: /data/local/cfg-znz/gl_force format error! aos.playpark.ygc gl
+06-11 08:53:31.574 13006 13006 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:screencap
+06-11 08:53:31.576 13006 13006 I         : fastpipe: Connect success
+06-11 08:53:31.576 13006 13006 D HostConnection: recv ProcessPuidReply name=screencap puid=47 g_u64CapsFlag=1d
+06-11 08:53:31.580  1110  1110 E EGL_adreno: tid 1110: eglCreateSyncKHR(2089): error 0x3004 (EGL_BAD_ATTRIBUTE)
+06-11 08:53:32.738 13012 13012 I appproc : exec app_process! cmdline: /system/bin com.android.commands.am.Am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d file:///sdcard/screen4.png 
+06-11 08:53:32.738 13012 13012 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 08:53:32.743 13012 13012 D AndroidRuntime: CheckJNI is OFF
+06-11 08:53:32.812 13012 13012 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 08:53:32.837 13012 13012 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 08:53:32.837 13012 13012 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 08:53:32.858 13012 13012 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 08:53:32.858 13012 13012 E android.os.Debug: failed to load memtrack module: -2
+06-11 08:53:32.859 13012 13012 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 08:53:32.874 13012 13012 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+06-11 08:53:32.885  8246  8246 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /storage/emulated/0/screen4.png
+06-11 08:53:32.889 13012 13012 D AndroidRuntime: Shutting down VM
+06-11 08:53:32.961 13006 13006 I         : fastpipe: close connect
+06-11 08:53:39.013 11067 11067 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+06-11 08:53:45.202 12977 12984 I art     : Debugger is no longer active
+06-11 08:53:45.202 12977 12984 I art     : Starting a blocking GC Instrumentation
+06-11 08:54:00.254 12977 12977 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+06-11 08:54:00.279 12977 12977 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+06-11 08:54:00.333  1302  1310 I art     : Background partial concurrent mark sweep GC freed 24023(993KB) AllocSpace objects, 15(300KB) LOS objects, 33% free, 9MB/14MB, paused 1.159ms total 136.289ms
+06-11 08:54:54.995  1302  1310 I art     : Background partial concurrent mark sweep GC freed 28429(1143KB) AllocSpace objects, 16(320KB) LOS objects, 33% free, 9MB/14MB, paused 1.824ms total 111.795ms
+06-11 08:54:55.083  1716 12209 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 23368286]
+06-11 08:54:55.216  1716 12209 W WakeLock: GCM_HB_ALARM release without a matched acquire! [CONTEXT service_id=259 ]
+06-11 08:54:55.294  1302  1310 I art     : Background partial concurrent mark sweep GC freed 22227(1011KB) AllocSpace objects, 22(440KB) LOS objects, 33% free, 9MB/14MB, paused 2.117ms total 115.506ms
+06-11 08:54:55.917  1716  1716 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+06-11 08:54:58.597  1302  1358 D WifiStateMachine: setScanResults mScanResults.size=1
+06-11 08:54:59.236  1302  1310 I art     : Background partial concurrent mark sweep GC freed 26911(1188KB) AllocSpace objects, 22(440KB) LOS objects, 33% free, 9MB/14MB, paused 2.778ms total 134.443ms
+06-11 08:54:59.336  1716 12209 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 23602539]
+06-11 08:55:00.124  1302  1310 I art     : Background partial concurrent mark sweep GC freed 24530(1099KB) AllocSpace objects, 23(460KB) LOS objects, 33% free, 9MB/14MB, paused 1.137ms total 105.518ms
+06-11 08:55:00.149 12977 12977 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+06-11 08:55:00.153 12977 12977 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+06-11 08:55:10.966  1716  1716 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+06-11 08:55:27.896 11067 11101 I art     : Starting a blocking GC Explicit
+06-11 08:55:27.974 11067 11101 I art     : Explicit concurrent mark sweep GC freed 143(5KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 8MB/11MB, paused 614us total 77.353ms
+06-11 08:56:00.099 12977 12977 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+06-11 08:56:00.105 12977 12977 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+06-11 08:56:26.876  1302  1358 D WifiNative-HAL: Failing getSupportedFeatureset because HAL isn't started
+06-11 08:56:26.877  1302  1319 E BatteryStatsService: no controller energy info supplied
+06-11 08:56:26.877  1302  1319 E BatteryStatsService: no controller energy info supplied
+06-11 08:56:26.889  1516  1516 E PhoneInterfaceManager: [PhoneIntfMgr] queryModemActivityInfo: Empty response
+06-11 08:56:26.892  1302  1319 E KernelCpuSpeedReader: Failed to read cpu-freq: /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state (No such file or directory)
+06-11 08:56:26.892  1302  1319 E KernelUidCpuTimeReader: Failed to read uid_cputime: /proc/uid_cputime/show_uid_stat (No such file or directory)
+06-11 08:56:26.893  1302  1319 E BatteryStatsService: modem info is invalid: ModemActivityInfo{ mTimestamp=0 mSleepTimeMs=0 mIdleTimeMs=0 mTxTimeMs[]=[0, 0, 0, 0, 0] mRxTimeMs=0 mEnergyUsed=0}
+06-11 08:57:00.065 12977 12977 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+06-11 08:57:00.071 12977 12977 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main

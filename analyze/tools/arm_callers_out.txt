@@ -1,0 +1,4 @@
+ARM-mode callers of LaunchURL: 0
+
+All 32-bit aligned occurrences of LaunchURL VA across entire .so:
+  thumb hit  file_off=0x0007ff2c  va=0x0007ff2c  in .dynsym

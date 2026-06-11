@@ -1,0 +1,56 @@
+Resolution: thumb veneer -> ARM PLT -> GOT slot -> imported symbol
+========================================================================
+
+S_str_conv                     veneer=0x00693c4c  ARM PLT=0x002c04c4
+  raw words: 0xe28fc604  0xe28cca9a  0xe5bcfef0
+  imm_a=0x400000  imm_b=0x9a000  imm_c=3824
+  GOT slot = pc(=0x2c04cc) + 0x400000 + 0x9a000 + (3824) = 0x0075b3bc
+  -> IMPORTED SYMBOL: __aeabi_ui2f
+
+D0_block_A_first               veneer=0x006bce9c  ARM PLT=0x002ff920
+  raw words: 0xe28fc604  0xe28cca70  0xe5bcfc08
+  imm_a=0x400000  imm_b=0x70000  imm_c=3080
+  GOT slot = pc(=0x2ff928) + 0x400000 + 0x70000 + (3080) = 0x00770530
+  -> IMPORTED SYMBOL: glBindFramebufferOES
+
+D1                             veneer=0x006bcaac  ARM PLT=0x002ff410
+  raw words: 0xe28fc604  0xe28cca70  0xe5bcff68
+  imm_a=0x400000  imm_b=0x70000  imm_c=3944
+  GOT slot = pc(=0x2ff418) + 0x400000 + 0x70000 + (3944) = 0x00770380
+  -> IMPORTED SYMBOL: glMatrixMode
+
+D2                             veneer=0x006bcabc  ARM PLT=0x002ff41c
+  raw words: 0xe28fc604  0xe28cca70  0xe5bcff60
+  imm_a=0x400000  imm_b=0x70000  imm_c=3936
+  GOT slot = pc(=0x2ff424) + 0x400000 + 0x70000 + (3936) = 0x00770384
+  -> IMPORTED SYMBOL: glLoadIdentity
+
+D3_jstring_args                veneer=0x006bcacc  ARM PLT=0x002ff428
+  raw words: 0xe28fc604  0xe28cca70  0xe5bcff58
+  imm_a=0x400000  imm_b=0x70000  imm_c=3928
+  GOT slot = pc(=0x2ff430) + 0x400000 + 0x70000 + (3928) = 0x00770388
+  -> IMPORTED SYMBOL: glOrthof
+
+D4                             veneer=0x006bcadc  ARM PLT=0x002ff434
+  raw words: 0xe28fc604  0xe28cca70  0xe5bcff50
+  imm_a=0x400000  imm_b=0x70000  imm_c=3920
+  GOT slot = pc(=0x2ff43c) + 0x400000 + 0x70000 + (3920) = 0x0077038c
+  -> IMPORTED SYMBOL: glViewport
+
+D5                             veneer=0x006bcb9c  ARM PLT=0x002ff4c4
+  raw words: 0xe28fc604  0xe28cca70  0xe5bcfef0
+  imm_a=0x400000  imm_b=0x70000  imm_c=3824
+  GOT slot = pc(=0x2ff4cc) + 0x400000 + 0x70000 + (3824) = 0x007703bc
+  -> IMPORTED SYMBOL: glScissor
+
+D6_block_A_last                veneer=0x006bcecc  ARM PLT=0x002ff944
+  raw words: 0xe28fc604  0xe28cca70  0xe5bcfbf0
+  imm_a=0x400000  imm_b=0x70000  imm_c=3056
+  GOT slot = pc(=0x2ff94c) + 0x400000 + 0x70000 + (3056) = 0x0077053c
+  -> IMPORTED SYMBOL: glClear
+
+D7_alt                         veneer=0x006bf62c  ARM PLT=0x00303acc
+  raw words: 0xe28fc604  0xe28cca6e  0xe5bcf040
+  imm_a=0x400000  imm_b=0x6e000  imm_c=64
+  GOT slot = pc(=0x303ad4) + 0x400000 + 0x6e000 + (64) = 0x00771b14
+  -> IMPORTED SYMBOL: glClearColor

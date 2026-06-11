@@ -1,0 +1,1501 @@
+=== symbols: tcp/connect/server/gateway/keepalive ===
+  0x00371f98 sz=0x34    _ZN20CDZ_ChooseModeScreen16OnConnectSuccessEPv
+  0x00371fcc sz=0x8     _ZThn236_N20CDZ_ChooseModeScreen16OnConnectSuccessEPv
+  0x00371fd4 sz=0x60    _ZN20CDZ_ChooseModeScreen15OnConnectFailedEv
+  0x00372034 sz=0xa     _ZThn236_N20CDZ_ChooseModeScreen15OnConnectFailedEv
+  0x003fa830 sz=0x20    _ZN8CFunGame14GetLongConnectEv
+  0x00490dd0 sz=0x1c    _ZN14CLoadingScreen15DoGetServerInfoEh
+  0x00490e20 sz=0x18    _ZN14CLoadingScreen19DoConnectPlayerInfoEv
+  0x00501df0 sz=0x66    _ZN22CNewServerChooseScreen17RequestServerListEv
+  0x00501e56 sz=0x5e    _ZN22CNewServerChooseScreen20CheckServerListValidEv
+  0x00502a0c sz=0x60    _ZN16CNewspaperScreen17ShowNewServerInfoEv
+  0x0051c5fc sz=0x48    _ZN7CPlayer16OnConnectSuccessEPv
+  0x0051c644 sz=0xa     _ZThn60_N7CPlayer16OnConnectSuccessEPv
+  0x0051c650 sz=0x2c    _ZN7CPlayer15OnConnectFailedEv
+  0x0051c67c sz=0x8     _ZThn60_N7CPlayer15OnConnectFailedEv
+  0x0056ddc0 sz=0x64    _ZN7CServerC2Ev
+  0x0056ddc0 sz=0x64    _ZN7CServerC1Ev
+  0x0056de24 sz=0x48    _ZN7CServerD2Ev
+  0x0056de24 sz=0x48    _ZN7CServerD1Ev
+  0x0056de6c sz=0xc     _ZN7CServerD0Ev
+  0x0056de78 sz=0x260   _ZN7CServer5ParseEPv
+  0x0056e0d8 sz=0x4     _ZN7CServer12SetRecommendEi
+  0x0056e0dc sz=0x48    _ZN7CServer10GetHostUrlEv
+  0x0056e124 sz=0x48    _ZN7CServer9IsIosPlatEv
+  0x0056e16c sz=0x48    _ZN7CServer13IsAndroidPlatEv
+  0x0056e1b4 sz=0x48    _ZN7CServer8IsWpPlatEv
+  0x0056e1fc sz=0xa     _ZN7CServer15GetPlatformCodeEv
+  0x0056e208 sz=0x6c    _ZN19CServerChooseScreenC2EP21CServerChooseListener
+  0x0056e208 sz=0x6c    _ZN19CServerChooseScreenC1EP21CServerChooseListener
+  0x0056e274 sz=0x58    _ZN19CServerChooseScreenD2Ev
+  0x0056e274 sz=0x58    _ZN19CServerChooseScreenD1Ev
+  0x0056e2cc sz=0xa     _ZThn4_N19CServerChooseScreenD1Ev
+  0x0056e2d8 sz=0x10    _ZThn268_N19CServerChooseScreenD1Ev
+  0x0056e2e8 sz=0xe     _ZN19CServerChooseScreen5ClearEv
+  0x0056e2f6 sz=0xc     _ZN19CServerChooseScreenD0Ev
+  0x0056e302 sz=0xe     _ZThn4_N19CServerChooseScreenD0Ev
+  0x0056e310 sz=0x14    _ZThn268_N19CServerChooseScreenD0Ev
+  0x0056e324 sz=0x18    _ZN19CServerChooseScreen7DestroyEv
+  0x0056e33c sz=0x5c    _ZN19CServerChooseScreen11ViewDidLoadEv
+  0x0056e398 sz=0xc8    _ZN19CServerChooseScreen10InitScreenEv
+  0x0056e460 sz=0x54    _ZN19CServerChooseScreen17RequestServerListEv
+  0x0056e4b4 sz=0x5e    _ZN19CServerChooseScreen20CheckServerListValidEv
+  0x0056e512 sz=0x6c    _ZN19CServerChooseScreen21ScrollToCurrentServerEv
+  0x0056e580 sz=0x1c    _ZN19CServerChooseScreen15GetAllTargetMapEv
+  0x0056e59c sz=0xe4    _ZN19CServerChooseScreen11HandleEventEP6ngViewiii
+  0x0056e680 sz=0x4e    _ZN19CServerChooseScreen18GetChooseServerIdxEv
+  0x0056e6ce sz=0x64    _ZN19CServerChooseScreen18UpdateChooseServerEi
+  0x0056e732 sz=0xe     _ZThn4_N19CServerChooseScreen11HandleEventEP6ngViewiii
+  0x0056e740 sz=0x50    _ZN19CServerChooseScreen17OnReceiveResponseEiPv
+  0x0056e790 sz=0x10    _ZThn268_N19CServerChooseScreen17OnReceiveResponseEiPv
+  0x0056e7a0 sz=0x3e    _ZN19CServerChooseScreen14OnReceiveErrorEPKcS1_Pv
+  0x0056e7de sz=0x8     _ZThn268_N19CServerChooseScreen14OnReceiveErrorEPKcS1_Pv
+  0x0056e7e6 sz=0x8     _ZN19CServerChooseScreen14OnNetworkErrorEi
+  0x0056e7ee sz=0x8     _ZThn268_N19CServerChooseScreen14OnNetworkErrorEi
+  0x0056e7f8 sz=0x24    _ZN12CServerModelC2Ev
+  0x0056e7f8 sz=0x24    _ZN12CServerModelC1Ev
+  0x0056e81c sz=0x8     _ZN12CServerModelD2Ev
+  0x0056e81c sz=0x8     _ZN12CServerModelD1Ev
+  0x0056e824 sz=0xc     _ZN12CServerModelD0Ev
+  0x0056e830 sz=0xc     _ZN12CServerModel11GetRowCountEv
+  0x0056e83c sz=0x4     _ZN12CServerModel14GetColumnCountEv
+  0x0056e840 sz=0xc     _ZN12CServerModel12GetDataCountEv
+  0x0056e84c sz=0x20    _ZN12CServerModel10GetValueAtEii
+  0x0056e86c sz=0x24    _ZN17CServerCellRenderC2Ev
+  0x0056e86c sz=0x24    _ZN17CServerCellRenderC1Ev
+  0x0056e890 sz=0x8     _ZN17CServerCellRenderD2Ev
+  0x0056e890 sz=0x8     _ZN17CServerCellRenderD1Ev
+  0x0056e898 sz=0xc     _ZN17CServerCellRenderD0Ev
+  0x0056e8a4 sz=0x60    _ZN17CServerCellRender8SetValueEPvhii
+  0x0056e904 sz=0x50    _ZN17CServerCellRender15GetAllTargetMapEv
+  0x0056e954 sz=0x5c    _ZN12CServerMngerC2Ev
+  0x0056e954 sz=0x5c    _ZN12CServerMngerC1Ev
+  0x0056e9b0 sz=0x4c    _ZN12CServerMngerD2Ev
+  0x0056e9b0 sz=0x4c    _ZN12CServerMngerD1Ev
+  0x0056e9fc sz=0x78    _ZN12CServerMnger5ClearEv
+  0x0056ea74 sz=0xc     _ZN12CServerMngerD0Ev
+  0x0056ea80 sz=0x4a    _ZN12CServerMnger11ClearServerEv
+  0x0056eaca sz=0x42    _ZN12CServerMnger9ClearRoleEv
+  0x0056eb0c sz=0xa     _ZN12CServerMnger10ClearCkSumEv
+  0x0056eb18 sz=0x34    _ZN12CServerMnger11GetInstanceEv
+  0x0056eb4c sz=0x7e    _ZN12CServerMnger15ParseServerListEPv
+  0x0056ebca sz=0xe0    _ZN12CServerMnger22FilterCrossPlatServersEv
+  0x0056ecac sz=0x12a   _ZN12CServerMnger24_CheckMergeServerOperateEv
+  0x0056edd8 sz=0x86    _ZN12CServerMnger14OptimizeServerEv
+  0x0056ee5e sz=0x4     _ZN12CServerMnger13GetServerListEv
+  0x0056ee62 sz=0x2a    _ZN12CServerMnger19SetCurrentServerIdxEi
+  0x0056ee8c sz=0x2     _ZN12CServerMnger14ParseCkSumDataEPv
+  0x0056ee8e sz=0x4     _ZN12CServerMnger26__IsUseCrossPlatformMethodEv
+  0x0056ee92 sz=0x2     _ZN12CServerMnger18ParseCrossPlatInfoEPv
+  0x0056ee94 sz=0x2     _ZN12CServerMnger26LoadChoosePlatformServerIdEv
+  0x0056ee96 sz=0x4a    _ZN12CServerMnger18GetChooseServerIdxEv
+  0x0056eee0 sz=0xb6    _ZN12CServerMnger16SetSuggestServerEh
+  0x0056ef96 sz=0x4e    _ZN12CServerMnger24SetSuggestDefiniteServerEi
+  0x0056efe4 sz=0x2a    _ZN12CServerMnger19GetCurrentServerIdxEv
+  0x0056f00e sz=0x1a    _ZN12CServerMnger23GetCurrentServerShowIdxEv
+  0x0056f028 sz=0x54    _ZN12CServerMnger16GetCurrentServerEv
+  0x0056f07c sz=0x70    _ZN12CServerMnger19GetCurrentServerUrlEv
+  0x0056f0ec sz=0x68    _ZN12CServerMnger22GetCurrentServerBucketEv
+  0x0056f154 sz=0x46    _ZN12CServerMnger12JudgeIsValidEi
+  0x0056f19a sz=0xde    _ZN12CServerMnger13ParseRoleListEPv
+  0x0056f278 sz=0x54    _ZN12CServerMnger15SetChoosePlayerEi
+  0x0056f2cc sz=0x52    _ZN12CServerMnger15JudgeNeedChooseEv
+  0x0056f31e sz=0x16    _ZN12CServerMnger15JudgeNeedCreateEv
+  0x0056f334 sz=0x4a    _ZN12CServerMnger19GetChoosePlayerTypeEv
+  0x0056f37e sz=0x50    _ZN12CServerMnger17GetChoosePlayerIdEv
+  0x0056f3ce sz=0x14    _ZN12CServerMnger13IfOnlyOneRoleEv
+  0x0056f3e2 sz=0x16    _ZN12CServerMnger15IfCanSwitchRoleEv
+  0x0056f3f8 sz=0x40    _ZN12CServerMnger21JudgeIsHasServerDebugEv
+  0x0056f438 sz=0x6c    _ZN12CServerMnger18GetServerNameByIdxEi
+  0x0056f4a4 sz=0x50    _ZN12CServerMnger23GetServerDisplayIdByIdxEi
+  0x0056f4f4 sz=0x14    _ZN12CServerMnger16IfHasCrossServerEv
+  0x0056f508 sz=0x6c    _ZN12CServerMnger29GetCrossServerPlayerCenterURLEv
+  0x0056f574 sz=0x6c    _ZN12CServerMnger25GetCrossServerResetPWDURLEv
+  0x0056f5e0 sz=0x54    _ZN12CServerMnger23GetPlatServerByPlatCodeEPKc
+  0x0056f634 sz=0x5a    _ZN12CServerMnger23GetChoosePlatformServerEv
+  0x0056f68e sz=0x74    _ZN12CServerMnger16SetCrossServerIdEi
+  0x0056f702 sz=0x4     _ZN12CServerMnger23GetCurrentCrossServerIdEv
+  0x0056f706 sz=0x2     _ZN12CServerMnger29AutoSetCrossPlatServerDefaultEv
+  0x0058e4c0 sz=0x54    _ZN21CTcpLongConnectCreateC1Ev
+  0x0058e4c0 sz=0x54    _ZN21CTcpLongConnectCreateC2Ev
+  0x0058e514 sz=0x50    _ZN21CTcpLongConnectCreateD2Ev
+  0x0058e514 sz=0x50    _ZN21CTcpLongConnectCreateD1Ev
+  0x0058e564 sz=0xa     _ZThn8_N21CTcpLongConnectCreateD1Ev
+  0x0058e56e sz=0xc     _ZN21CTcpLongConnectCreateD0Ev
+  0x0058e57a sz=0xe     _ZThn8_N21CTcpLongConnectCreateD0Ev
+  0x0058e588 sz=0x70    _ZN21CTcpLongConnectCreate20CreatRaceLongConnectEv
+  0x0058e5f8 sz=0x68    _ZN21CTcpLongConnectCreate16CreatLongConnectEPKcS1_i
+  0x0058e660 sz=0xf0    _ZN21CTcpLongConnectCreate16CreatLongConnectE10ngStringV2S0_
+  0x0058e750 sz=0x20    _ZN21CTcpLongConnectCreate14CutLongConnectEv
+  0x0058e770 sz=0x24    _ZN21CTcpLongConnectCreate14AddTCPListenerEP21CTcpLongConnectLister
+  0x0058e794 sz=0xe     _ZN21CTcpLongConnectCreate17RemoveTCPListenerEP21CTcpLongConnectLister
+  0x0058e7a4 sz=0x144   _ZN21CTcpLongConnectCreate20OnTCPReceiveResponseEiPv
+  0x0058e8e8 sz=0x6     _ZN21CTcpLongConnectCreate19OnTCPReConnectBeginEv
+  0x0058e8ee sz=0x6     _ZN21CTcpLongConnectCreate20OnTCPReConnectFailedEv
+  0x0058e8f4 sz=0x6     _ZN21CTcpLongConnectCreate21OnTCPReConnectSuccessEv
+  0x0058e8fc sz=0x7c    _ZN21CTcpLongConnectCreate12OnTCPOffLineEv
+  0x0058e978 sz=0x6     _ZN21CTcpLongConnectCreate15OnTCPDisconnectEv
+  0x0058e980 sz=0x54    _ZN21CTcpLongConnectCreate19OnTCPServerShutDownEv
+  0x0058e9d4 sz=0x48    _ZN21CTcpLongConnectCreate16OnConnectSuccessEPv
+  0x0058ea1c sz=0xa     _ZThn4_N21CTcpLongConnectCreate16OnConnectSuccessEPv
+  0x0058ea26 sz=0xe     _ZN21CTcpLongConnectCreate15OnConnectFailedEv
+  0x0058ea34 sz=0xe     _ZThn4_N21CTcpLongConnectCreate15OnConnectFailedEv
+  0x0058ea42 sz=0xe     _ZN21CTcpLongConnectCreate19OnGameStatusChangedEi
+  0x0058ea50 sz=0x2     _ZN21CTcpLongConnectCreate9OnAlertNoEv
+  0x0058ea52 sz=0x2     _ZThn8_N21CTcpLongConnectCreate9OnAlertNoEv
+  0x0058ea54 sz=0x2     _ZN21CTcpLongConnectCreate10OnAlertYesEv
+  0x0058ea56 sz=0x2     _ZThn8_N21CTcpLongConnectCreate10OnAlertYesEv
+  0x0058ea58 sz=0x60    _ZN21CTcpLongConnectCreate9OnAlertOKEi
+  0x0058eab8 sz=0xa     _ZThn8_N21CTcpLongConnectCreate9OnAlertOKEi
+  0x0058eac2 sz=0xe     _ZN21CTcpLongConnectCreate16IsLongConnectingEv
+  0x0058ead0 sz=0x60    _ZN21CTcpLongConnectLister13OnTCPMsgErrorEiPKciPv
+  0x0059ff68 sz=0x3c    _ZN24CVerifyDeviceChangeMnger18ParseServerCommandEPv
+  0x005b09a8 sz=0x40    _ZN10CTcpClient11GetInstanceEv
+  0x005b09e8 sz=0x38    _ZN10CTcpClient15ReleaseInstanceEv
+  0x005b0a20 sz=0xac    _ZN10CTcpClient4SendEP10ngJsonHash
+  0x005b0acc sz=0x8     _ZN10CTcpClient13SendCustomMsgEP10ngJsonHash
+  0x005b0ad4 sz=0x2     _ZN10CTcpClient11Holdem_NoneEv
+  0x005b0ad6 sz=0x2     _ZN10CTcpClient16Holdem_LicensingEv
+  0x005b0ad8 sz=0x2     _ZN10CTcpClient18Holdem_NoLicensingEv
+  0x005b0adc sz=0x4c    _ZN10CTcpClient11Holdem_CallEv
+  0x005b0b28 sz=0x4c    _ZN10CTcpClient13Holdem_NoCallEv
+  0x005b0b74 sz=0x68    _ZN10CTcpClient15Holdem_AddMoneyEx
+  0x005b0bdc sz=0x4c    _ZN10CTcpClient11Holdem_PassEv
+  0x005b0c28 sz=0x4c    _ZN10CTcpClient12Holdem_AllInEv
+  0x005b0c74 sz=0x4c    _ZN10CTcpClient12Holdem_ReadyEv
+  0x005b0cc0 sz=0x4c    _ZN10CTcpClient14Holdem_TimeOutEv
+  0x005b0d0c sz=0x2     _ZN10CTcpClient16Holdem_HeartBeatEv
+  0x005b0d10 sz=0x64    _ZN10CTcpClient15Holdem_JoinHallEii
+  0x005b0d74 sz=0x64    _ZN10CTcpClient16Holdem_AutoMatchEi
+  0x005b0dd8 sz=0x90    _ZN10CTcpClient17Holdem_CreateRoomEhi10ngStringV2
+  0x005b0e68 sz=0x64    _ZN10CTcpClient17Holdem_SearchRoomEi
+  0x005b0ecc sz=0x2     _ZN10CTcpClient11Holdem_EchoEv
+  0x005b0ed0 sz=0x54    _ZN10CTcpClient15Holdem_QuitRoomEv
+  0x005b0f24 sz=0x4c    _ZN10CTcpClient14Holdem_EndGameEv
+  0x005b0f70 sz=0x90    _ZN10CTcpClient15Holdem_JoinRoomEiR10ngStringV2i
+  0x005b1000 sz=0x4c    _ZN10CTcpClient22Holdem_SynchronizationEv
+  0x005b104c sz=0x68    _ZN10CTcpClient18Holdem_SendChatMsgEP10ngStringV2
+  0x005b10b4 sz=0x64    _ZN10CTcpClient19Holdem_InviteFriendEi
+  0x005b1118 sz=0x64    _ZN10CTcpClient21Holdem_InviteJumpRoomEi
+  0x005b117c sz=0x94    _ZN10CTcpClient15RG_StatusChangeEii
+  0x005b1210 sz=0x70    _ZN10CTcpClient11QuitSWBuildEv
+  0x005b1280 sz=0x70    _ZN10CTcpClient21QuitSWSelfMemberBuildEv
+  0x005b12f0 sz=0x70    _ZN10CTcpClient30SW_NotifyServerNeedSendWarInfoEv
+  0x005b1360 sz=0x2     _ZN10CTcpClientD2Ev
+  0x005b1362 sz=0x8     _ZN10CTcpClientD0Ev
+  0x005c9f64 sz=0x2     _ZN16ngHttpDownloader9OnConnectEv
+  0x005ca330 sz=0x2     _ZN17ngHttpTransporter9OnConnectEv
+  0x0060909c sz=0x2     _ZN24ngCURLHttpSessionAndroid9OnConnectEv
+  0x00624418 sz=0x14    _ZN13ngHttpSession9OnConnectEv
+  0x00710d30 sz=0x18    _ZTS21CServerChooseListener
+  0x00714eb0 sz=0x9     _ZTS7CServer
+  0x00714ec0 sz=0x16    _ZTS19CServerChooseScreen
+  0x00714ed8 sz=0xf     _ZTS12CServerModel
+  0x00714ef0 sz=0x14    _ZTS17CServerCellRender
+  0x00714f10 sz=0xf     _ZTS12CServerMnger
+  0x00716470 sz=0x18    _ZTS21CTcpLongConnectCreate
+  0x00716490 sz=0x18    _ZTS21CTcpLongConnectLister
+  0x00716e70 sz=0xd     _ZTS10CTcpClient
+  0x00734770 sz=0x8     _ZTI21CServerChooseListener
+  0x00749420 sz=0x10    _ZTV7CServer
+  0x00749430 sz=0x8     _ZTI7CServer
+  0x00749440 sz=0xf4    _ZTV19CServerChooseScreen
+  0x00749540 sz=0x28    _ZTV12CServerModel
+  0x00749570 sz=0x38    _ZTV17CServerCellRender
+  0x007495b0 sz=0x20    _ZTI19CServerChooseScreen
+  0x007495d0 sz=0xc     _ZTI12CServerModel
+  0x007495dc sz=0xc     _ZTI17CServerCellRender
+  0x007495f0 sz=0x10    _ZTV12CServerMnger
+  0x00749600 sz=0x8     _ZTI12CServerMnger
+  0x0074b1a0 sz=0x88    _ZTV21CTcpLongConnectCreate
+  0x0074b230 sz=0x28    _ZTI21CTcpLongConnectCreate
+  0x0074b258 sz=0x10    _ZTV21CTcpLongConnectLister
+  0x0074b268 sz=0x8     _ZTI21CTcpLongConnectLister
+  0x0074db20 sz=0x10    _ZTV10CTcpClient
+  0x0074db30 sz=0x8     _ZTI10CTcpClient
+  0x0077428c sz=0x4     _ZN10CTcpClient8m_gameIdE
+  0x007748b4 sz=0x4     _ZN12CServerMnger13m_serverMngerE
+  0x007748e4 sz=0x4     _ZN10CTcpClient7m_pThisE
+
+===== CLoadingScreen::DoGetServerInfo  va=0x00490dd0 len=0x1c =====
+  0x00490dd0: b0b5     push    {r4, r5, r7, lr}
+  0x00490dd2: 0446     mov     r4, r0
+  0x00490dd4: 0125     movs    r5, #1
+  0x00490dd6: 2946     mov     r1, r5
+  0x00490dd8: 1af2a0fc bl      #0x6ab71c  ; -> 0x006ab71c
+  0x00490ddc: 1b20     movs    r0, #0x1b
+  0x00490dde: 0001     lsls    r0, r0, #4
+  0x00490de0: 2550     str     r5, [r4, r0]
+  0x00490de2: 0021     movs    r1, #0
+  0x00490de4: 2046     mov     r0, r4
+  0x00490de6: 1af219fe bl      #0x6aba1c  ; -> 0x006aba1c
+  0x00490dea: b0bd     pop     {r4, r5, r7, pc}
+
+===== _ZN21CTcpLongConnectCreate20CreatRaceLongConnectEv  va=0x0058e588 len=0x70 =====
+  0x0058e588: 70b5     push    {r4, r5, r6, lr}
+  0x0058e58a: 82b0     sub     sp, #8
+  0x0058e58c: 0446     mov     r4, r0
+  0x0058e58e: 0cf195fa bl      #0x69aabc  ; -> 0x0069aabc
+  0x0058e592: 211d     adds    r1, r4, #4
+  0x0058e594: 0cf1b2fa bl      #0x69aafc  ; -> 0x0069aafc
+  0x0058e598: 0cf190fa bl      #0x69aabc  ; -> 0x0069aabc
+  0x0058e59c: 0446     mov     r4, r0
+  0x0058e59e: 04f135fe bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x0058e5a2: 104a     ldr     r2, [pc, #0x40]  ; lit=0x000008a8 "Y"
+  0x0058e5a4: 8118     adds    r1, r0, r2
+  0x0058e5a6: 8058     ldr     r0, [r0, r2]
+  0x0058e5a8: c26b     ldr     r2, [r0, #0x3c]
+  0x0058e5aa: 0846     mov     r0, r1
+  0x0058e5ac: 9047     blx     r2   (vcall)
+  0x0058e5ae: 0546     mov     r5, r0
+  0x0058e5b0: 04f12cfe bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x0058e5b4: 0c49     ldr     r1, [pc, #0x30]  ; lit=0x00001310 ""
+  0x0058e5b6: 4018     adds    r0, r0, r1
+  0x0058e5b8: 0121     movs    r1, #1
+  0x0058e5ba: 04f107fd bl      #0x692fcc  ; -> __udivdi3+0x3b0
+  0x0058e5be: 0646     mov     r6, r0
+  0x0058e5c0: 04f124fe bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x0058e5c4: 0949     ldr     r1, [pc, #0x24]  ; lit=0x00001328 "`)"
+  0x0058e5c6: 4058     ldr     r0, [r0, r1]
+  0x0058e5c8: 6946     mov     r1, sp
+  0x0058e5ca: 0860     str     r0, [r1]
+  0x0058e5cc: 0848     ldr     r0, [pc, #0x20]  ; lit=0x001cc54e "1dragonBones13AnimationDataEESt10_Select1stIS5_ESt4lessISsESaIS5_EE7_M_copyEPKSt13_Rb_tree"
+  0x0058e5ce: 7844     add     r0, pc
+  0x0058e5d0: 0849     ldr     r1, [pc, #0x20]  ; lit=0xfffa9107
+  0x0058e5d2: 0a18     adds    r2, r1, r0  ; STR->0x00703c27 "raceRoom"
+  0x0058e5d4: 2046     mov     r0, r4
+  0x0058e5d6: 2946     mov     r1, r5
+  0x0058e5d8: 3346     mov     r3, r6
+  0x0058e5da: 0cf197fa bl      #0x69ab0c  ; -> 0x0069ab0c
+  0x0058e5de: 02b0     add     sp, #8
+  0x0058e5e0: 70bd     pop     {r4, r5, r6, pc}
+  0x0058e5e2: c046     mov     r8, r8
+  0x0058e5e4: a808     lsrs    r0, r5, #2
+  0x0058e5e6: 0000     movs    r0, r0
+  0x0058e5e8: 1013     asrs    r0, r2, #0xc
+  0x0058e5ea: 0000     movs    r0, r0
+  0x0058e5ec: 2813     asrs    r0, r5, #0xc
+  0x0058e5ee: 0000     movs    r0, r0
+  0x0058e5f0: 4ec5     stm     r5!, {r1, r2, r3, r6}
+  0x0058e5f2: 1c00     movs    r4, r3
+  0x0058e5f4: 0791     str     r1, [sp, #0x1c]
+
+===== _ZN21CTcpLongConnectCreate14CutLongConnectEv  va=0x0058e750 len=0x20 =====
+  0x0058e750: 10b5     push    {r4, lr}
+  0x0058e752: 0446     mov     r4, r0
+  0x0058e754: 0cf1b2f9 bl      #0x69aabc  ; -> 0x0069aabc
+  0x0058e758: 0cf1b8f9 bl      #0x69aacc  ; -> 0x0069aacc
+  0x0058e75c: 0cf1aef9 bl      #0x69aabc  ; -> 0x0069aabc
+  0x0058e760: 0021     movs    r1, #0
+  0x0058e762: 0cf1fbf9 bl      #0x69ab5c  ; -> 0x0069ab5c
+  0x0058e766: 2434     adds    r4, #0x24
+  0x0058e768: 2046     mov     r0, r4
+  0x0058e76a: 04f1a7fe bl      #0x6934bc  ; -> __udivdi3+0x8a0
+  0x0058e76e: 10bd     pop     {r4, pc}
+
+===== _ZN21CTcpLongConnectCreateC1Ev  va=0x0058e4c0 len=0x54 =====
+  0x0058e4c0: b0b5     push    {r4, r5, r7, lr}
+  0x0058e4c2: 0446     mov     r4, r0
+  0x0058e4c4: 0cf16afa bl      #0x69a99c  ; -> 0x0069a99c
+  0x0058e4c8: 0020     movs    r0, #0
+  0x0058e4ca: c543     mvns    r5, r0
+  0x0058e4cc: e061     str     r0, [r4, #0x1c]
+  0x0058e4ce: 2562     str     r5, [r4, #0x20]
+  0x0058e4d0: 0e48     ldr     r0, [pc, #0x38]  ; lit=0x001cc64a "DpOT_"
+  0x0058e4d2: 7844     add     r0, pc
+  0x0058e4d4: 0e49     ldr     r1, [pc, #0x38]  ; lit=0xfffff194
+  0x0058e4d6: 0818     adds    r0, r1, r0  ; STR->0x00759cb4
+  0x0058e4d8: 0068     ldr     r0, [r0]
+  0x0058e4da: 0146     mov     r1, r0
+  0x0058e4dc: 0831     adds    r1, #8
+  0x0058e4de: 2160     str     r1, [r4]
+  0x0058e4e0: 0146     mov     r1, r0
+  0x0058e4e2: 4c31     adds    r1, #0x4c
+  0x0058e4e4: 6160     str     r1, [r4, #4]
+  0x0058e4e6: 5c30     adds    r0, #0x5c
+  0x0058e4e8: a060     str     r0, [r4, #8]
+  0x0058e4ea: 2046     mov     r0, r4
+  0x0058e4ec: 2430     adds    r0, #0x24
+  0x0058e4ee: 04f1a5fd bl      #0x69303c  ; -> __udivdi3+0x420
+  0x0058e4f2: 2046     mov     r0, r4
+  0x0058e4f4: 3430     adds    r0, #0x34
+  0x0058e4f6: 04f139fd bl      #0x692f6c  ; -> __udivdi3+0x350
+  0x0058e4fa: 2046     mov     r0, r4
+  0x0058e4fc: 4c30     adds    r0, #0x4c
+  0x0058e4fe: 04f135fd bl      #0x692f6c  ; -> __udivdi3+0x350
+  0x0058e502: 6566     str     r5, [r4, #0x64]
+  0x0058e504: a566     str     r5, [r4, #0x68]
+  0x0058e506: 2046     mov     r0, r4
+  0x0058e508: b0bd     pop     {r4, r5, r7, pc}
+  0x0058e50a: c046     mov     r8, r8
+  0x0058e50c: 4ac6     stm     r6!, {r1, r3, r6}
+  0x0058e50e: 1c00     movs    r4, r3
+  0x0058e510: 94f1ffff bl      #0x723512  ; -> _ZTV14CBlackJackHelp+0x42
+
+===== _ZTV21CTcpLongConnectLister  va=0x0074b258 len=0x10 =====
+  0x0074b258: 0000     movs    r0, r0
+  0x0074b25a: 0000     movs    r0, r0
+  0x0074b25c: 0000     movs    r0, r0
+  0x0074b25e: 0000     movs    r0, r0
+  0x0074b260: 0000     movs    r0, r0
+  0x0074b262: 0000     movs    r0, r0
+  0x0074b264: 0000     movs    r0, r0
+  0x0074b266: 0000     movs    r0, r0
+
+===== _ZN21CTcpLongConnectCreate17RemoveTCPListenerEP21CTcpLongConnectLister  va=0x0058e794 len=0xe =====
+  0x0058e794: 80b5     push    {r7, lr}
+  0x0058e796: 0029     cmp     r1, #0
+  0x0058e798: 02d0     beq     #0x58e7a0
+  0x0058e79a: 2430     adds    r0, #0x24
+  0x0058e79c: 05f1e6f8 bl      #0x69396c  ; -> __udivdi3+0xd50
+  0x0058e7a0: 80bd     pop     {r7, pc}
+
+===== _ZN21CTcpLongConnectCreate16CreatLongConnectE10ngStringV2S0_  va=0x0058e660 len=0xf0 =====
+  0x0058e660: f0b5     push    {r4, r5, r6, r7, lr}
+  0x0058e662: 8bb0     sub     sp, #0x2c
+  0x0058e664: 0392     str     r2, [sp, #0xc]
+  0x0058e666: 0d46     mov     r5, r1
+  0x0058e668: 0446     mov     r4, r0
+  0x0058e66a: 05a8     add     r0, sp, #0x14
+  0x0058e66c: 04f17efc bl      #0x692f6c  ; -> __udivdi3+0x350
+  0x0058e670: 2846     mov     r0, r5
+  0x0058e672: 05f1ebfd bl      #0x69424c  ; -> 0x0069424c
+  0x0058e676: 0646     mov     r6, r0
+  0x0058e678: 012e     cmp     r6, #1
+  0x0058e67a: 60db     blt     #0x58e73e
+  0x0058e67c: 0494     str     r4, [sp, #0x10]   <== +0x10/14 deref
+  0x0058e67e: 3248     ldr     r0, [pc, #0xc8]  ; lit=0x001cc49c "5_EE4findERS1_"
+  0x0058e680: 7844     add     r0, pc
+  0x0058e682: 3249     ldr     r1, [pc, #0xc8]  ; lit=0xfffa67e8
+  0x0058e684: 0918     adds    r1, r1, r0  ; STR->0x00701308 ":"
+  0x0058e686: 0027     movs    r7, #0
+  0x0058e688: 2846     mov     r0, r5
+  0x0058e68a: 3a46     mov     r2, r7
+  0x0058e68c: 06f176f9 bl      #0x69497c  ; -> 0x0069497c
+  0x0058e690: 0446     mov     r4, r0
+  0x0058e692: fa43     mvns    r2, r7
+  0x0058e694: 9442     cmp     r4, r2
+  0x0058e696: 39d0     beq     #0x58e70c
+  0x0058e698: 0096     str     r6, [sp]
+  0x0058e69a: 2846     mov     r0, r5
+  0x0058e69c: 2146     mov     r1, r4
+  0x0058e69e: 0292     str     r2, [sp, #8]
+  0x0058e6a0: 06f14cfa bl      #0x694b3c  ; -> 0x00694b3c
+  0x0058e6a4: 0746     mov     r7, r0
+  0x0058e6a6: 05ae     add     r6, sp, #0x14
+  0x0058e6a8: 3046     mov     r0, r6
+  0x0058e6aa: 3946     mov     r1, r7
+  0x0058e6ac: 04f18efe bl      #0x6933cc  ; -> __udivdi3+0x7b0
+  0x0058e6b0: 0121     movs    r1, #1
+  0x0058e6b2: 3046     mov     r0, r6
+  0x0058e6b4: 04f18afc bl      #0x692fcc  ; -> __udivdi3+0x3b0
+  0x0058e6b8: 0146     mov     r1, r0
+  0x0058e6ba: 0498     ldr     r0, [sp, #0x10]   <== +0x10/14 deref
+  0x0058e6bc: 4c30     adds    r0, #0x4c
+  0x0058e6be: 0190     str     r0, [sp, #4]
+  0x0058e6c0: 029a     ldr     r2, [sp, #8]
+  0x0058e6c2: 04f18bfc bl      #0x692fdc  ; -> __udivdi3+0x3c0
+  0x0058e6c6: 002f     cmp     r7, #0
+  0x0058e6c8: 03d0     beq     #0x58e6d2
+  0x0058e6ca: 3868     ldr     r0, [r7]
+  0x0058e6cc: 4168     ldr     r1, [r0, #4]
+  0x0058e6ce: 3846     mov     r0, r7
+  0x0058e6d0: 8847     blx     r1   (vcall)
+  0x0058e6d2: 05ae     add     r6, sp, #0x14
+  0x0058e6d4: 3046     mov     r0, r6
+  0x0058e6d6: 05f101fa bl      #0x693adc  ; -> __udivdi3+0xec0
+  0x0058e6da: 0098     ldr     r0, [sp]
+  0x0058e6dc: 0138     subs    r0, #1
+  0x0058e6de: 011b     subs    r1, r0, r4
+  0x0058e6e0: 2846     mov     r0, r5
+  0x0058e6e2: 06f133fa bl      #0x694b4c  ; -> 0x00694b4c
+  0x0058e6e6: 0446     mov     r4, r0
+  0x0058e6e8: 3046     mov     r0, r6
+  0x0058e6ea: 2146     mov     r1, r4
+  0x0058e6ec: 04f16efe bl      #0x6933cc  ; -> __udivdi3+0x7b0
+  0x0058e6f0: 3046     mov     r0, r6
+  0x0058e6f2: 04f12bfe bl      #0x69334c  ; -> __udivdi3+0x730
+  0x0058e6f6: 049e     ldr     r6, [sp, #0x10]   <== +0x10/14 deref
+  0x0058e6f8: 7066     str     r0, [r6, #0x64]
+  0x0058e6fa: 002c     cmp     r4, #0
+  0x0058e6fc: 03d0     beq     #0x58e706
+  0x0058e6fe: 2068     ldr     r0, [r4]
+  0x0058e700: 4168     ldr     r1, [r0, #4]
+  0x0058e702: 2046     mov     r0, r4
+  0x0058e704: 8847     blx     r1   (vcall)
+  0x0058e706: 029a     ldr     r2, [sp, #8]
+  0x0058e708: 019f     ldr     r7, [sp, #4]
+  0x0058e70a: 02e0     b       #0x58e712
+  0x0058e70c: 049e     ldr     r6, [sp, #0x10]   <== +0x10/14 deref
+  0x0058e70e: 3746     mov     r7, r6
+  0x0058e710: 4c37     adds    r7, #0x4c
+  0x0058e712: f06d     ldr     r0, [r6, #0x5c]
+  0x0058e714: 0028     cmp     r0, #0
+  0x0058e716: 12d0     beq     #0x58e73e
+  0x0058e718: 706e     ldr     r0, [r6, #0x64]
+  0x0058e71a: 9042     cmp     r0, r2
+  0x0058e71c: 0fd0     beq     #0x58e73e
+  0x0058e71e: 0124     movs    r4, #1
+  0x0058e720: 0398     ldr     r0, [sp, #0xc]
+  0x0058e722: 2146     mov     r1, r4
+  0x0058e724: 04f152fc bl      #0x692fcc  ; -> __udivdi3+0x3b0
+  0x0058e728: 0546     mov     r5, r0
+  0x0058e72a: 3846     mov     r0, r7
+  0x0058e72c: 2146     mov     r1, r4
+  0x0058e72e: 04f14dfc bl      #0x692fcc  ; -> __udivdi3+0x3b0
+  0x0058e732: 0246     mov     r2, r0
+  0x0058e734: 736e     ldr     r3, [r6, #0x64]
+  0x0058e736: 3046     mov     r0, r6
+  0x0058e738: 2946     mov     r1, r5
+  0x0058e73a: 2bf15ffb bl      #0x6b9dfc  ; -> 0x006b9dfc
+  0x0058e73e: 05a8     add     r0, sp, #0x14
+  0x0058e740: 04f11cfc bl      #0x692f7c  ; -> __udivdi3+0x360
+  0x0058e744: 0bb0     add     sp, #0x2c
+  0x0058e746: f0bd     pop     {r4, r5, r6, r7, pc}
+  0x0058e748: 9cc4     stm     r4!, {r2, r3, r4, r7}
+  0x0058e74a: 1c00     movs    r4, r3
+  0x0058e74c: e867     str     r0, [r5, #0x7c]
+
+===== _ZN21CTcpLongConnectCreate14AddTCPListenerEP21CTcpLongConnectLister  va=0x0058e770 len=0x24 =====
+  0x0058e770: b0b5     push    {r4, r5, r7, lr}
+  0x0058e772: 0c46     mov     r4, r1
+  0x0058e774: 0546     mov     r5, r0
+  0x0058e776: 002c     cmp     r4, #0
+  0x0058e778: 0bd0     beq     #0x58e792
+  0x0058e77a: 2435     adds    r5, #0x24
+  0x0058e77c: 0022     movs    r2, #0
+  0x0058e77e: 2846     mov     r0, r5
+  0x0058e780: 2146     mov     r1, r4
+  0x0058e782: 0bf1fbfe bl      #0x69a57c  ; -> 0x0069a57c
+  0x0058e786: 0028     cmp     r0, #0
+  0x0058e788: 03d1     bne     #0x58e792
+  0x0058e78a: 2846     mov     r0, r5
+  0x0058e78c: 2146     mov     r1, r4
+  0x0058e78e: 04f1c5fd bl      #0x69331c  ; -> __udivdi3+0x700
+  0x0058e792: b0bd     pop     {r4, r5, r7, pc}
+
+===== _ZN21CTcpLongConnectLister13OnTCPMsgErrorEiPKciPv  va=0x0058ead0 len=0x60 =====
+  0x0058ead0: 70b5     push    {r4, r5, r6, lr}
+  0x0058ead2: 8cb0     sub     sp, #0x30
+  0x0058ead4: 1446     mov     r4, r2
+  0x0058ead6: 0d46     mov     r5, r1
+  0x0058ead8: 06ae     add     r6, sp, #0x18
+  0x0058eada: 3046     mov     r0, r6
+  0x0058eadc: 04f146fa bl      #0x692f6c  ; -> __udivdi3+0x350
+  0x0058eae0: 1148     ldr     r0, [pc, #0x44]  ; lit=0x001cc03a "dom_access_iterator_tag"
+  0x0058eae2: 7844     add     r0, pc
+  0x0058eae4: 1149     ldr     r1, [pc, #0x44]  ; lit=0xfffa9120
+  0x0058eae6: 0918     adds    r1, r1, r0  ; STR->0x00703c40 "%s[%d]"
+  0x0058eae8: 3046     mov     r0, r6
+  0x0058eaea: 2246     mov     r2, r4
+  0x0058eaec: 2b46     mov     r3, r5
+  0x0058eaee: 04f1d5fb bl      #0x69329c  ; -> __udivdi3+0x680
+  0x0058eaf2: 2b20     movs    r0, #0x2b
+  0x0058eaf4: c400     lsls    r4, r0, #3
+  0x0058eaf6: 04f189fb bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x0058eafa: 0459     ldr     r4, [r0, r4]
+  0x0058eafc: 0121     movs    r1, #1
+  0x0058eafe: 3046     mov     r0, r6
+  0x0058eb00: 04f164fa bl      #0x692fcc  ; -> __udivdi3+0x3b0
+  0x0058eb04: 0146     mov     r1, r0
+  0x0058eb06: 6d46     mov     r5, sp
+  0x0058eb08: 2846     mov     r0, r5
+  0x0058eb0a: 04f117fc bl      #0x69333c  ; -> __udivdi3+0x720
+  0x0058eb0e: 2046     mov     r0, r4
+  0x0058eb10: 2946     mov     r1, r5
+  0x0058eb12: 05f1cbfb bl      #0x6942ac  ; -> 0x006942ac
+  0x0058eb16: 2846     mov     r0, r5
+  0x0058eb18: 04f130fa bl      #0x692f7c  ; -> __udivdi3+0x360
+  0x0058eb1c: 3046     mov     r0, r6
+  0x0058eb1e: 04f12dfa bl      #0x692f7c  ; -> __udivdi3+0x360
+  0x0058eb22: 0cb0     add     sp, #0x30
+  0x0058eb24: 70bd     pop     {r4, r5, r6, pc}
+  0x0058eb26: c046     mov     r8, r8
+  0x0058eb28: 3ac0     stm     r0!, {r1, r3, r4, r5}
+  0x0058eb2a: 1c00     movs    r4, r3
+  0x0058eb2c: 2091     str     r1, [sp, #0x80]
+
+===== _ZTI21CTcpLongConnectLister  va=0x0074b268 len=0x8 =====
+  0x0074b268: 0800     movs    r0, r1
+  0x0074b26a: 0000     movs    r0, r0
+  0x0074b26c: 0000     movs    r0, r0
+  0x0074b26e: 0000     movs    r0, r0
+
+===== _ZN21CTcpLongConnectCreateC2Ev  va=0x0058e4c0 len=0x54 =====
+  0x0058e4c0: b0b5     push    {r4, r5, r7, lr}
+  0x0058e4c2: 0446     mov     r4, r0
+  0x0058e4c4: 0cf16afa bl      #0x69a99c  ; -> 0x0069a99c
+  0x0058e4c8: 0020     movs    r0, #0
+  0x0058e4ca: c543     mvns    r5, r0
+  0x0058e4cc: e061     str     r0, [r4, #0x1c]
+  0x0058e4ce: 2562     str     r5, [r4, #0x20]
+  0x0058e4d0: 0e48     ldr     r0, [pc, #0x38]  ; lit=0x001cc64a "DpOT_"
+  0x0058e4d2: 7844     add     r0, pc
+  0x0058e4d4: 0e49     ldr     r1, [pc, #0x38]  ; lit=0xfffff194
+  0x0058e4d6: 0818     adds    r0, r1, r0  ; STR->0x00759cb4
+  0x0058e4d8: 0068     ldr     r0, [r0]
+  0x0058e4da: 0146     mov     r1, r0
+  0x0058e4dc: 0831     adds    r1, #8
+  0x0058e4de: 2160     str     r1, [r4]
+  0x0058e4e0: 0146     mov     r1, r0
+  0x0058e4e2: 4c31     adds    r1, #0x4c
+  0x0058e4e4: 6160     str     r1, [r4, #4]
+  0x0058e4e6: 5c30     adds    r0, #0x5c
+  0x0058e4e8: a060     str     r0, [r4, #8]
+  0x0058e4ea: 2046     mov     r0, r4
+  0x0058e4ec: 2430     adds    r0, #0x24
+  0x0058e4ee: 04f1a5fd bl      #0x69303c  ; -> __udivdi3+0x420
+  0x0058e4f2: 2046     mov     r0, r4
+  0x0058e4f4: 3430     adds    r0, #0x34
+  0x0058e4f6: 04f139fd bl      #0x692f6c  ; -> __udivdi3+0x350
+  0x0058e4fa: 2046     mov     r0, r4
+  0x0058e4fc: 4c30     adds    r0, #0x4c
+  0x0058e4fe: 04f135fd bl      #0x692f6c  ; -> __udivdi3+0x350
+  0x0058e502: 6566     str     r5, [r4, #0x64]
+  0x0058e504: a566     str     r5, [r4, #0x68]
+  0x0058e506: 2046     mov     r0, r4
+  0x0058e508: b0bd     pop     {r4, r5, r7, pc}
+  0x0058e50a: c046     mov     r8, r8
+  0x0058e50c: 4ac6     stm     r6!, {r1, r3, r6}
+  0x0058e50e: 1c00     movs    r4, r3
+  0x0058e510: 94f1ffff bl      #0x723512  ; -> _ZTV14CBlackJackHelp+0x42
+
+===== _ZTV21CTcpLongConnectCreate  va=0x0074b1a0 len=0x88 =====
+  0x0074b1a0: 0000     movs    r0, r0
+  0x0074b1a2: 0000     movs    r0, r0
+  0x0074b1a4: 0000     movs    r0, r0
+  0x0074b1a6: 0000     movs    r0, r0
+  0x0074b1a8: 0000     movs    r0, r0
+  0x0074b1aa: 0000     movs    r0, r0
+  0x0074b1ac: 0000     movs    r0, r0
+  0x0074b1ae: 0000     movs    r0, r0
+  0x0074b1b0: 0000     movs    r0, r0
+  0x0074b1b2: 0000     movs    r0, r0
+  0x0074b1b4: 0000     movs    r0, r0
+  0x0074b1b6: 0000     movs    r0, r0
+  0x0074b1b8: 0000     movs    r0, r0
+  0x0074b1ba: 0000     movs    r0, r0
+  0x0074b1bc: 0000     movs    r0, r0
+  0x0074b1be: 0000     movs    r0, r0
+  0x0074b1c0: 0000     movs    r0, r0
+  0x0074b1c2: 0000     movs    r0, r0
+  0x0074b1c4: 0000     movs    r0, r0
+  0x0074b1c6: 0000     movs    r0, r0
+  0x0074b1c8: 0000     movs    r0, r0
+  0x0074b1ca: 0000     movs    r0, r0
+  0x0074b1cc: 0000     movs    r0, r0
+  0x0074b1ce: 0000     movs    r0, r0
+  0x0074b1d0: 0000     movs    r0, r0
+  0x0074b1d2: 0000     movs    r0, r0
+  0x0074b1d4: 0000     movs    r0, r0
+  0x0074b1d6: 0000     movs    r0, r0
+  0x0074b1d8: 0000     movs    r0, r0
+  0x0074b1da: 0000     movs    r0, r0
+  0x0074b1dc: 0000     movs    r0, r0
+  0x0074b1de: 0000     movs    r0, r0
+  0x0074b1e0: 0000     movs    r0, r0
+  0x0074b1e2: 0000     movs    r0, r0
+
+===== _ZN21CTcpLongConnectCreateD2Ev  va=0x0058e514 len=0x50 =====
+  0x0058e514: b0b5     push    {r4, r5, r7, lr}
+  0x0058e516: 0446     mov     r4, r0
+  0x0058e518: 1048     ldr     r0, [pc, #0x40]  ; lit=0x001cc602 "S5_ESt4lessISsESaIS5_EE14_M_create_nodeIJRKS5_EEEPSt13_Rb_tree_nodeIS5_EDpOT_"
+  0x0058e51a: 7844     add     r0, pc
+  0x0058e51c: 1049     ldr     r1, [pc, #0x40]  ; lit=0xfffff194
+  0x0058e51e: 0818     adds    r0, r1, r0  ; STR->0x00759cb4
+  0x0058e520: 0068     ldr     r0, [r0]
+  0x0058e522: 0146     mov     r1, r0
+  0x0058e524: 0831     adds    r1, #8
+  0x0058e526: 0246     mov     r2, r0
+  0x0058e528: 4c32     adds    r2, #0x4c
+  0x0058e52a: 5c30     adds    r0, #0x5c
+  0x0058e52c: 2160     str     r1, [r4]
+  0x0058e52e: 6260     str     r2, [r4, #4]
+  0x0058e530: a060     str     r0, [r4, #8]
+  0x0058e532: 2546     mov     r5, r4
+  0x0058e534: 2435     adds    r5, #0x24
+  0x0058e536: 2846     mov     r0, r5
+  0x0058e538: 04f1c0ff bl      #0x6934bc  ; -> __udivdi3+0x8a0
+  0x0058e53c: 2046     mov     r0, r4
+  0x0058e53e: 4c30     adds    r0, #0x4c
+  0x0058e540: 04f11cfd bl      #0x692f7c  ; -> __udivdi3+0x360
+  0x0058e544: 2046     mov     r0, r4
+  0x0058e546: 3430     adds    r0, #0x34
+  0x0058e548: 04f118fd bl      #0x692f7c  ; -> __udivdi3+0x360
+  0x0058e54c: 2846     mov     r0, r5
+  0x0058e54e: 04f1a5fd bl      #0x69309c  ; -> __udivdi3+0x480
+  0x0058e552: 2046     mov     r0, r4
+  0x0058e554: 0cf12afa bl      #0x69a9ac  ; -> 0x0069a9ac
+  0x0058e558: 2046     mov     r0, r4
+  0x0058e55a: b0bd     pop     {r4, r5, r7, pc}
+  0x0058e55c: 02c6     stm     r6!, {r1}
+  0x0058e55e: 1c00     movs    r4, r3
+  0x0058e560: 94f1ffff bl      #0x723562  ; -> _ZTV14CBlackJackHelp+0x92
+
+===== _ZThn8_N21CTcpLongConnectCreateD1Ev  va=0x0058e564 len=0xa =====
+  0x0058e564: 80b5     push    {r7, lr}
+  0x0058e566: 0838     subs    r0, #8
+  0x0058e568: 2bf140fc bl      #0x6b9dec  ; -> 0x006b9dec
+  0x0058e56c: 80bd     pop     {r7, pc}
+
+===== _ZN21CTcpLongConnectCreateD0Ev  va=0x0058e56e len=0xc =====
+  0x0058e56e: 80b5     push    {r7, lr}
+  0x0058e570: 2bf13cfc bl      #0x6b9dec  ; -> 0x006b9dec
+  0x0058e574: 04f10afd bl      #0x692f8c  ; -> __udivdi3+0x370
+  0x0058e578: 80bd     pop     {r7, pc}
+
+===== _ZThn8_N21CTcpLongConnectCreateD0Ev  va=0x0058e57a len=0xe =====
+  0x0058e57a: 80b5     push    {r7, lr}
+  0x0058e57c: 0838     subs    r0, #8
+  0x0058e57e: 2bf135fc bl      #0x6b9dec  ; -> 0x006b9dec
+  0x0058e582: 04f103fd bl      #0x692f8c  ; -> __udivdi3+0x370
+  0x0058e586: 80bd     pop     {r7, pc}
+
+===== _ZN21CTcpLongConnectCreate16CreatLongConnectEPKcS1_i  va=0x0058e5f8 len=0x68 =====
+  0x0058e5f8: f0b5     push    {r4, r5, r6, r7, lr}
+  0x0058e5fa: 83b0     sub     sp, #0xc
+  0x0058e5fc: 1e46     mov     r6, r3
+  0x0058e5fe: 0196     str     r6, [sp, #4]
+  0x0058e600: 0292     str     r2, [sp, #8]
+  0x0058e602: 0f46     mov     r7, r1
+  0x0058e604: 0546     mov     r5, r0
+  0x0058e606: 0cf159fa bl      #0x69aabc  ; -> 0x0069aabc
+  0x0058e60a: 291d     adds    r1, r5, #4
+  0x0058e60c: 0cf176fa bl      #0x69aafc  ; -> 0x0069aafc
+  0x0058e610: 0cf154fa bl      #0x69aabc  ; -> 0x0069aabc
+  0x0058e614: 0446     mov     r4, r0
+  0x0058e616: 04f1f9fd bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x0058e61a: 104a     ldr     r2, [pc, #0x40]  ; lit=0x000008a8 "Y"
+  0x0058e61c: 8118     adds    r1, r0, r2
+  0x0058e61e: 8058     ldr     r0, [r0, r2]
+  0x0058e620: c26b     ldr     r2, [r0, #0x3c]
+  0x0058e622: 0846     mov     r0, r1
+  0x0058e624: 9047     blx     r2   (vcall)
+  0x0058e626: 0146     mov     r1, r0
+  0x0058e628: 6846     mov     r0, sp
+  0x0058e62a: 0660     str     r6, [r0]
+  0x0058e62c: 2046     mov     r0, r4
+  0x0058e62e: 3a46     mov     r2, r7
+  0x0058e630: 029e     ldr     r6, [sp, #8]
+  0x0058e632: 3346     mov     r3, r6
+  0x0058e634: 0cf16afa bl      #0x69ab0c  ; -> 0x0069ab0c
+  0x0058e638: 2846     mov     r0, r5
+  0x0058e63a: 3430     adds    r0, #0x34
+  0x0058e63c: 0021     movs    r1, #0
+  0x0058e63e: cc43     mvns    r4, r1
+  0x0058e640: 3946     mov     r1, r7
+  0x0058e642: 2246     mov     r2, r4
+  0x0058e644: 04f1cafc bl      #0x692fdc  ; -> __udivdi3+0x3c0
+  0x0058e648: 2846     mov     r0, r5
+  0x0058e64a: 4c30     adds    r0, #0x4c
+  0x0058e64c: 3146     mov     r1, r6
+  0x0058e64e: 2246     mov     r2, r4
+  0x0058e650: 04f1c4fc bl      #0x692fdc  ; -> __udivdi3+0x3c0
+  0x0058e654: 0198     ldr     r0, [sp, #4]
+  0x0058e656: 6866     str     r0, [r5, #0x64]
+  0x0058e658: 03b0     add     sp, #0xc
+  0x0058e65a: f0bd     pop     {r4, r5, r6, r7, pc}
+  0x0058e65c: a808     lsrs    r0, r5, #2
+  0x0058e65e: 0000     movs    r0, r0
+
+===== _ZN21CTcpLongConnectCreate20OnTCPReceiveResponseEiPv  va=0x0058e7a4 len=0x144 =====
+  0x0058e7a4: f0b5     push    {r4, r5, r6, r7, lr}
+  0x0058e7a6: 8bb0     sub     sp, #0x2c
+  0x0058e7a8: 1746     mov     r7, r2
+  0x0058e7aa: 0e46     mov     r6, r1
+  0x0058e7ac: 0446     mov     r4, r0
+  0x0058e7ae: 05f14dfb bl      #0x693e4c  ; -> 0x00693e4c
+  0x0058e7b2: 002f     cmp     r7, #0
+  0x0058e7b4: 00d1     bne     #0x58e7b8
+  0x0058e7b6: 84e0     b       #0x58e8c2
+  0x0058e7b8: 4348     ldr     r0, [pc, #0x10c]  ; lit=0x001cc362 "reAtlasDataESaIS5_EEESt10_Select1stIS8_ESt4lessISsESaIS8_EE12_M_erase_auxESt23_Rb_tree_con"
+  0x0058e7ba: 7844     add     r0, pc
+  0x0058e7bc: 4349     ldr     r1, [pc, #0x10c]  ; lit=0xfff9ddd8
+  0x0058e7be: 0918     adds    r1, r1, r0  ; STR->0x006f88f8 "error"
+  0x0058e7c0: 7868     ldr     r0, [r7, #4]
+  0x0058e7c2: 026c     ldr     r2, [r0, #0x40]
+  0x0058e7c4: 3d1d     adds    r5, r7, #4
+  0x0058e7c6: 2846     mov     r0, r5
+  0x0058e7c8: 9047     blx     r2   (vcall)
+  0x0058e7ca: 0028     cmp     r0, #0
+  0x0058e7cc: 61d0     beq     #0x58e892
+  0x0058e7ce: 0830     adds    r0, #8
+  0x0058e7d0: 04f11cfc bl      #0x69300c  ; -> __udivdi3+0x3f0
+  0x0058e7d4: 0490     str     r0, [sp, #0x10]   <== +0x10/14 deref
+  0x0058e7d6: 0028     cmp     r0, #0
+  0x0058e7d8: 5bd0     beq     #0x58e892
+  0x0058e7da: 05a8     add     r0, sp, #0x14
+  0x0058e7dc: 04f1c6fb bl      #0x692f6c  ; -> __udivdi3+0x350
+  0x0058e7e0: 3b48     ldr     r0, [pc, #0xec]  ; lit=0x001cc33a "pairIKSsSt6vectorIPN11dragonBones16TextureAtlasDataESaIS5_EEESt10_Select1stIS8_ESt4lessISs"
+  0x0058e7e2: 7844     add     r0, pc
+  0x0058e7e4: 3b49     ldr     r1, [pc, #0xec]  ; lit=0xfff9ddde
+  0x0058e7e6: 0918     adds    r1, r1, r0  ; STR->0x006966d6
+  0x0058e7e8: 2868     ldr     r0, [r5]
+  0x0058e7ea: 026c     ldr     r2, [r0, #0x40]
+  0x0058e7ec: 2846     mov     r0, r5
+  0x0058e7ee: 9047     blx     r2   (vcall)
+  0x0058e7f0: 0028     cmp     r0, #0
+  0x0058e7f2: 10d0     beq     #0x58e816
+  0x0058e7f4: 0430     adds    r0, #4
+  0x0058e7f6: 0121     movs    r1, #1
+  0x0058e7f8: 04f1e8fb bl      #0x692fcc  ; -> __udivdi3+0x3b0
+  0x0058e7fc: 0146     mov     r1, r0
+  0x0058e7fe: 0020     movs    r0, #0
+  0x0058e800: c243     mvns    r2, r0
+  0x0058e802: 2e46     mov     r6, r5
+  0x0058e804: 05ad     add     r5, sp, #0x14
+  0x0058e806: 2846     mov     r0, r5
+  0x0058e808: 04f1e8fb bl      #0x692fdc  ; -> __udivdi3+0x3c0
+  0x0058e80c: 2846     mov     r0, r5
+  0x0058e80e: 2946     mov     r1, r5
+  0x0058e810: 3546     mov     r5, r6
+  0x0058e812: 06f133f8 bl      #0x69487c  ; -> 0x0069487c
+  0x0058e816: 3048     ldr     r0, [pc, #0xc0]  ; lit=0x001cc304 "S8_ESt4lessISsESaIS8_EE4findERS1_"
+  0x0058e818: 7844     add     r0, pc
+  0x0058e81a: 3049     ldr     r1, [pc, #0xc0]  ; lit=0xfffa9110
+  0x0058e81c: 0918     adds    r1, r1, r0  ; STR->0x0063f7e6
+  0x0058e81e: 2868     ldr     r0, [r5]
+  0x0058e820: 026c     ldr     r2, [r0, #0x40]
+  0x0058e822: 2846     mov     r0, r5
+  0x0058e824: 9047     blx     r2   (vcall)
+  0x0058e826: 0027     movs    r7, #0
+  0x0058e828: 0028     cmp     r0, #0
+  0x0058e82a: 0397     str     r7, [sp, #0xc]
+  0x0058e82c: 03d0     beq     #0x58e836
+  0x0058e82e: 0830     adds    r0, #8
+  0x0058e830: 04f1ecfb bl      #0x69300c  ; -> __udivdi3+0x3f0
+  0x0058e834: 0390     str     r0, [sp, #0xc]
+  0x0058e836: 2a48     ldr     r0, [pc, #0xa8]  ; lit=0x001cc2e4 "lasDataESaIS5_EEESt10_Select1stIS8_ESt4lessISsESaIS8_EE4findERS1_"
+  0x0058e838: 7844     add     r0, pc
+  0x0058e83a: 2a49     ldr     r1, [pc, #0xa8]  ; lit=0xfff9dd63
+  0x0058e83c: 0918     adds    r1, r1, r0  ; STR->0x005dd549
+  0x0058e83e: 2868     ldr     r0, [r5]
+  0x0058e840: 026c     ldr     r2, [r0, #0x40]
+  0x0058e842: 2846     mov     r0, r5
+  0x0058e844: 9047     blx     r2   (vcall)
+  0x0058e846: 0290     str     r0, [sp, #8]
+  0x0058e848: 2434     adds    r4, #0x24
+  0x0058e84a: 2046     mov     r0, r4
+  0x0058e84c: 04f1deff bl      #0x69380c  ; -> __udivdi3+0xbf0
+  0x0058e850: 0028     cmp     r0, #0
+  0x0058e852: 1ad0     beq     #0x58e88a
+  0x0058e854: 2046     mov     r0, r4
+  0x0058e856: 3946     mov     r1, r7
+  0x0058e858: 04f1e0ff bl      #0x69381c  ; -> __udivdi3+0xc00
+  0x0058e85c: 0646     mov     r6, r0
+  0x0058e85e: 002e     cmp     r6, #0
+  0x0058e860: 0dd0     beq     #0x58e87e
+  0x0058e862: 3068     ldr     r0, [r6]
+  0x0058e864: 4568     ldr     r5, [r0, #4]
+  0x0058e866: 05a8     add     r0, sp, #0x14
+  0x0058e868: 0121     movs    r1, #1
+  0x0058e86a: 04f1affb bl      #0x692fcc  ; -> __udivdi3+0x3b0
+  0x0058e86e: 0246     mov     r2, r0
+  0x0058e870: 6846     mov     r0, sp
+  0x0058e872: 0299     ldr     r1, [sp, #8]
+  0x0058e874: 0160     str     r1, [r0]
+  0x0058e876: 3046     mov     r0, r6
+  0x0058e878: 0499     ldr     r1, [sp, #0x10]   <== +0x10/14 deref
+  0x0058e87a: 039b     ldr     r3, [sp, #0xc]
+  0x0058e87c: a847     blx     r5   (vcall)
+  0x0058e87e: 0137     adds    r7, #1
+  0x0058e880: 2046     mov     r0, r4
+  0x0058e882: 04f1c3ff bl      #0x69380c  ; -> __udivdi3+0xbf0
+  0x0058e886: 8742     cmp     r7, r0
+  0x0058e888: e4d3     blo     #0x58e854
+  0x0058e88a: 05a8     add     r0, sp, #0x14
+  0x0058e88c: 04f176fb bl      #0x692f7c  ; -> __udivdi3+0x360
+  0x0058e890: 17e0     b       #0x58e8c2
+  0x0058e892: 2434     adds    r4, #0x24
+  0x0058e894: 2046     mov     r0, r4
+  0x0058e896: 04f1b9ff bl      #0x69380c  ; -> __udivdi3+0xbf0
+  0x0058e89a: 0025     movs    r5, #0
+  0x0058e89c: 0028     cmp     r0, #0
+  0x0058e89e: 10d0     beq     #0x58e8c2
+  0x0058e8a0: 2046     mov     r0, r4
+  0x0058e8a2: 2946     mov     r1, r5
+  0x0058e8a4: 04f1baff bl      #0x69381c  ; -> __udivdi3+0xc00
+  0x0058e8a8: 0028     cmp     r0, #0
+  0x0058e8aa: 04d0     beq     #0x58e8b6
+  0x0058e8ac: 0168     ldr     r1, [r0]
+  0x0058e8ae: 0b68     ldr     r3, [r1]
+  0x0058e8b0: 3146     mov     r1, r6
+  0x0058e8b2: 3a46     mov     r2, r7
+  0x0058e8b4: 9847     blx     r3   (vcall)
+  0x0058e8b6: 0135     adds    r5, #1
+  0x0058e8b8: 2046     mov     r0, r4
+  0x0058e8ba: 04f1a7ff bl      #0x69380c  ; -> __udivdi3+0xbf0
+  0x0058e8be: 8542     cmp     r5, r0
+  0x0058e8c0: eed3     blo     #0x58e8a0
+  0x0058e8c2: 0bb0     add     sp, #0x2c
+  0x0058e8c4: f0bd     pop     {r4, r5, r6, r7, pc}
+  0x0058e8c6: c046     mov     r8, r8
+  0x0058e8c8: 62c3     stm     r3!, {r1, r5, r6}
+  0x0058e8ca: 1c00     movs    r4, r3
+  0x0058e8cc: d8dd     ble     #0x58e880
+  0x0058e8ce: f9ff3ac3 vrsra.u32 d28, d26, #7
+  0x0058e8d2: 1c00     movs    r4, r3
+  0x0058e8d4: dedd     ble     #0x58e894
+  0x0058e8d6: f9ff04c3 vabs.s32 d28, d4
+  0x0058e8da: 1c00     movs    r4, r3
+  0x0058e8dc: 1091     str     r1, [sp, #0x40]
+  0x0058e8de: faffe4c2 vqmovn.u64 d28, q10
+  0x0058e8e2: 1c00     movs    r4, r3
+  0x0058e8e4: 63dd     ble     #0x58e9ae
+
+===== _ZN21CTcpLongConnectCreate19OnTCPReConnectBeginEv  va=0x0058e8e8 len=0x6 =====
+  0x0058e8e8: 0221     movs    r1, #2
+  0x0058e8ea: 8166     str     r1, [r0, #0x68]
+  0x0058e8ec: 7047     bx      lr
+
+===== _ZN21CTcpLongConnectCreate20OnTCPReConnectFailedEv  va=0x0058e8ee len=0x6 =====
+  0x0058e8ee: 0121     movs    r1, #1
+  0x0058e8f0: 8166     str     r1, [r0, #0x68]
+  0x0058e8f2: 7047     bx      lr
+
+===== _ZN21CTcpLongConnectCreate21OnTCPReConnectSuccessEv  va=0x0058e8f4 len=0x6 =====
+  0x0058e8f4: 0021     movs    r1, #0
+  0x0058e8f6: 8166     str     r1, [r0, #0x68]
+  0x0058e8f8: 7047     bx      lr
+
+===== _ZN21CTcpLongConnectCreate12OnTCPOffLineEv  va=0x0058e8fc len=0x7c =====
+  0x0058e8fc: f0b5     push    {r4, r5, r6, r7, lr}
+  0x0058e8fe: 87b0     sub     sp, #0x1c
+  0x0058e900: 0446     mov     r4, r0
+  0x0058e902: 05f1a3fa bl      #0x693e4c  ; -> 0x00693e4c
+  0x0058e906: 01ad     add     r5, sp, #4
+  0x0058e908: 2846     mov     r0, r5
+  0x0058e90a: 04f12ffb bl      #0x692f6c  ; -> __udivdi3+0x350
+  0x0058e90e: 04f14dfb bl      #0x692fac  ; -> __udivdi3+0x390
+  0x0058e912: 0430     adds    r0, #4
+  0x0058e914: 1649     ldr     r1, [pc, #0x58]  ; lit=0x00002532
+  0x0058e916: 05f191f8 bl      #0x693a3c  ; -> __udivdi3+0xe20
+  0x0058e91a: 0646     mov     r6, r0
+  0x0058e91c: 04f146fb bl      #0x692fac  ; -> __udivdi3+0x390
+  0x0058e920: 0430     adds    r0, #4
+  0x0058e922: 144f     ldr     r7, [pc, #0x50]  ; lit=0x0000190c
+  0x0058e924: 3946     mov     r1, r7
+  0x0058e926: 05f189f8 bl      #0x693a3c  ; -> __udivdi3+0xe20
+  0x0058e92a: 0246     mov     r2, r0
+  0x0058e92c: 2846     mov     r0, r5
+  0x0058e92e: 3146     mov     r1, r6
+  0x0058e930: 04f1b4fc bl      #0x69329c  ; -> __udivdi3+0x680
+  0x0058e934: 04f13afb bl      #0x692fac  ; -> __udivdi3+0x390
+  0x0058e938: 0430     adds    r0, #4
+  0x0058e93a: 3946     mov     r1, r7
+  0x0058e93c: 04f13efb bl      #0x692fbc  ; -> __udivdi3+0x3a0
+  0x0058e940: 0346     mov     r3, r0
+  0x0058e942: 0021     movs    r1, #0
+  0x0058e944: c843     mvns    r0, r1
+  0x0058e946: 6a46     mov     r2, sp
+  0x0058e948: 1060     str     r0, [r2]
+  0x0058e94a: 2046     mov     r0, r4
+  0x0058e94c: 0830     adds    r0, #8
+  0x0058e94e: 2a46     mov     r2, r5
+  0x0058e950: 07f194fe bl      #0x69667c  ; -> 0x0069667c
+  0x0058e954: 0028     cmp     r0, #0
+  0x0058e956: 03d0     beq     #0x58e960
+  0x0058e958: 2521     movs    r1, #0x25
+  0x0058e95a: c900     lsls    r1, r1, #3
+  0x0058e95c: 0922     movs    r2, #9
+  0x0058e95e: 4250     str     r2, [r0, r1]
+  0x0058e960: 0120     movs    r0, #1
+  0x0058e962: a066     str     r0, [r4, #0x68]
+  0x0058e964: 01a8     add     r0, sp, #4
+  0x0058e966: 04f109fb bl      #0x692f7c  ; -> __udivdi3+0x360
+  0x0058e96a: 07b0     add     sp, #0x1c
+  0x0058e96c: f0bd     pop     {r4, r5, r6, r7, pc}
+  0x0058e96e: c046     mov     r8, r8
+  0x0058e970: 3225     movs    r5, #0x32
+  0x0058e972: 0000     movs    r0, r0
+  0x0058e974: 0c19     adds    r4, r1, r4
+  0x0058e976: 0000     movs    r0, r0
+
+===== _ZN21CTcpLongConnectCreate15OnTCPDisconnectEv  va=0x0058e978 len=0x6 =====
+  0x0058e978: 0121     movs    r1, #1
+  0x0058e97a: 8166     str     r1, [r0, #0x68]
+  0x0058e97c: 7047     bx      lr
+
+===== _ZN21CTcpLongConnectCreate19OnTCPServerShutDownEv  va=0x0058e980 len=0x54 =====
+  0x0058e980: b0b5     push    {r4, r5, r7, lr}
+  0x0058e982: 82b0     sub     sp, #8
+  0x0058e984: 0446     mov     r4, r0
+  0x0058e986: 05f161fa bl      #0x693e4c  ; -> 0x00693e4c
+  0x0058e98a: 04f10ffb bl      #0x692fac  ; -> __udivdi3+0x390
+  0x0058e98e: 0430     adds    r0, #4
+  0x0058e990: 0e49     ldr     r1, [pc, #0x38]  ; lit=0x0000163c
+  0x0058e992: 04f113fb bl      #0x692fbc  ; -> __udivdi3+0x3a0
+  0x0058e996: 0546     mov     r5, r0
+  0x0058e998: 04f108fb bl      #0x692fac  ; -> __udivdi3+0x390
+  0x0058e99c: 0430     adds    r0, #4
+  0x0058e99e: 0c49     ldr     r1, [pc, #0x30]  ; lit=0x0000190c
+  0x0058e9a0: 04f10cfb bl      #0x692fbc  ; -> __udivdi3+0x3a0
+  0x0058e9a4: 0346     mov     r3, r0
+  0x0058e9a6: 0021     movs    r1, #0
+  0x0058e9a8: c843     mvns    r0, r1
+  0x0058e9aa: 6a46     mov     r2, sp
+  0x0058e9ac: 1060     str     r0, [r2]
+  0x0058e9ae: 2046     mov     r0, r4
+  0x0058e9b0: 0830     adds    r0, #8
+  0x0058e9b2: 2a46     mov     r2, r5
+  0x0058e9b4: 07f162fe bl      #0x69667c  ; -> 0x0069667c
+  0x0058e9b8: 0028     cmp     r0, #0
+  0x0058e9ba: 03d0     beq     #0x58e9c4
+  0x0058e9bc: 2521     movs    r1, #0x25
+  0x0058e9be: c900     lsls    r1, r1, #3
+  0x0058e9c0: 0922     movs    r2, #9
+  0x0058e9c2: 4250     str     r2, [r0, r1]
+  0x0058e9c4: 0120     movs    r0, #1
+  0x0058e9c6: a066     str     r0, [r4, #0x68]
+  0x0058e9c8: 02b0     add     sp, #8
+  0x0058e9ca: b0bd     pop     {r4, r5, r7, pc}
+  0x0058e9cc: 3c16     asrs    r4, r7, #0x18
+  0x0058e9ce: 0000     movs    r0, r0
+  0x0058e9d0: 0c19     adds    r4, r1, r4
+  0x0058e9d2: 0000     movs    r0, r0
+
+===== _ZN21CTcpLongConnectCreate16OnConnectSuccessEPv  va=0x0058e9d4 len=0x48 =====
+  0x0058e9d4: 70b5     push    {r4, r5, r6, lr}
+  0x0058e9d6: 0d46     mov     r5, r1
+  0x0058e9d8: 0446     mov     r4, r0
+  0x0058e9da: 0d48     ldr     r0, [pc, #0x34]  ; lit=0x001cc140
+  0x0058e9dc: 7844     add     r0, pc
+  0x0058e9de: 0d49     ldr     r1, [pc, #0x34]  ; lit=0xfffa698f
+  0x0058e9e0: 0e18     adds    r6, r1, r0  ; STR->0x007014af "streetWar"
+  0x0058e9e2: 04f113fc bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x0058e9e6: 0c49     ldr     r1, [pc, #0x30]  ; lit=0x0000132c
+  0x0058e9e8: 4018     adds    r0, r0, r1  ; STR->0x0075be4c
+  0x0058e9ea: 3146     mov     r1, r6
+  0x0058e9ec: 06f17efe bl      #0x6956ec  ; -> 0x006956ec
+  0x0058e9f0: 0028     cmp     r0, #0
+  0x0058e9f2: 09d1     bne     #0x58ea08
+  0x0058e9f4: 002d     cmp     r5, #0
+  0x0058e9f6: 07d0     beq     #0x58ea08
+  0x0058e9f8: 2b20     movs    r0, #0x2b
+  0x0058e9fa: c600     lsls    r6, r0, #3
+  0x0058e9fc: 04f106fc bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x0058ea00: 8059     ldr     r0, [r0, r6]
+  0x0058ea02: 2946     mov     r1, r5
+  0x0058ea04: 1ff1e2fe bl      #0x6ae7cc  ; -> 0x006ae7cc
+  0x0058ea08: 0020     movs    r0, #0
+  0x0058ea0a: a066     str     r0, [r4, #0x68]
+  0x0058ea0c: 70bd     pop     {r4, r5, r6, pc}
+  0x0058ea0e: c046     mov     r8, r8
+  0x0058ea10: 40c1     stm     r1!, {r6}
+  0x0058ea12: 1c00     movs    r4, r3
+  0x0058ea14: 8f69     ldr     r7, [r1, #0x18]
+
+===== _ZThn4_N21CTcpLongConnectCreate16OnConnectSuccessEPv  va=0x0058ea1c len=0xa =====
+  0x0058ea1c: 80b5     push    {r7, lr}
+  0x0058ea1e: 0438     subs    r0, #4
+  0x0058ea20: 2bf1f4f9 bl      #0x6b9e0c  ; -> 0x006b9e0c
+  0x0058ea24: 80bd     pop     {r7, pc}
+
+===== _ZN21CTcpLongConnectCreate15OnConnectFailedEv  va=0x0058ea26 len=0xe =====
+  0x0058ea26: 10b5     push    {r4, lr}
+  0x0058ea28: 0446     mov     r4, r0
+  0x0058ea2a: 05f10ffa bl      #0x693e4c  ; -> 0x00693e4c
+  0x0058ea2e: 0120     movs    r0, #1
+  0x0058ea30: a066     str     r0, [r4, #0x68]
+  0x0058ea32: 10bd     pop     {r4, pc}
+
+===== _ZThn4_N21CTcpLongConnectCreate15OnConnectFailedEv  va=0x0058ea34 len=0xe =====
+  0x0058ea34: 10b5     push    {r4, lr}
+  0x0058ea36: 0446     mov     r4, r0
+  0x0058ea38: 05f108fa bl      #0x693e4c  ; -> 0x00693e4c
+  0x0058ea3c: 0120     movs    r0, #1
+  0x0058ea3e: 6066     str     r0, [r4, #0x64]
+  0x0058ea40: 10bd     pop     {r4, pc}
+
+===== _ZN21CTcpLongConnectCreate19OnGameStatusChangedEi  va=0x0058ea42 len=0xe =====
+  0x0058ea42: 80b5     push    {r7, lr}
+  0x0058ea44: 481e     subs    r0, r1, #1
+  0x0058ea46: 0128     cmp     r0, #1
+  0x0058ea48: 01d8     bhi     #0x58ea4e
+  0x0058ea4a: 05f1fff9 bl      #0x693e4c  ; -> 0x00693e4c
+  0x0058ea4e: 80bd     pop     {r7, pc}
+
+===== _ZN21CTcpLongConnectCreate9OnAlertNoEv  va=0x0058ea50 len=0x2 =====
+  0x0058ea50: 7047     bx      lr
+
+===== _ZThn8_N21CTcpLongConnectCreate9OnAlertNoEv  va=0x0058ea52 len=0x2 =====
+  0x0058ea52: 7047     bx      lr
+
+===== _ZN21CTcpLongConnectCreate10OnAlertYesEv  va=0x0058ea54 len=0x2 =====
+  0x0058ea54: 7047     bx      lr
+
+===== _ZThn8_N21CTcpLongConnectCreate10OnAlertYesEv  va=0x0058ea56 len=0x2 =====
+  0x0058ea56: 7047     bx      lr
+
+===== _ZN21CTcpLongConnectCreate9OnAlertOKEi  va=0x0058ea58 len=0x60 =====
+  0x0058ea58: f0b5     push    {r4, r5, r6, r7, lr}
+  0x0058ea5a: 83b0     sub     sp, #0xc
+  0x0058ea5c: 0446     mov     r4, r0
+  0x0058ea5e: 0929     cmp     r1, #9
+  0x0058ea60: 25d1     bne     #0x58eaae
+  0x0058ea62: 0cf12bf8 bl      #0x69aabc  ; -> 0x0069aabc
+  0x0058ea66: 211d     adds    r1, r4, #4
+  0x0058ea68: 0cf148f8 bl      #0x69aafc  ; -> 0x0069aafc
+  0x0058ea6c: 0cf126f8 bl      #0x69aabc  ; -> 0x0069aabc
+  0x0058ea70: 0290     str     r0, [sp, #8]
+  0x0058ea72: 04f1cbfb bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x0058ea76: 0f4a     ldr     r2, [pc, #0x3c]  ; lit=0x000008a8 "Y"
+  0x0058ea78: 8118     adds    r1, r0, r2
+  0x0058ea7a: 8058     ldr     r0, [r0, r2]
+  0x0058ea7c: c26b     ldr     r2, [r0, #0x3c]
+  0x0058ea7e: 0846     mov     r0, r1
+  0x0058ea80: 9047     blx     r2   (vcall)
+  0x0058ea82: 0646     mov     r6, r0
+  0x0058ea84: 2046     mov     r0, r4
+  0x0058ea86: 3430     adds    r0, #0x34
+  0x0058ea88: 0127     movs    r7, #1
+  0x0058ea8a: 3946     mov     r1, r7
+  0x0058ea8c: 04f19efa bl      #0x692fcc  ; -> __udivdi3+0x3b0
+  0x0058ea90: 0546     mov     r5, r0
+  0x0058ea92: 2046     mov     r0, r4
+  0x0058ea94: 4c30     adds    r0, #0x4c
+  0x0058ea96: 3946     mov     r1, r7
+  0x0058ea98: 04f198fa bl      #0x692fcc  ; -> __udivdi3+0x3b0
+  0x0058ea9c: 0346     mov     r3, r0
+  0x0058ea9e: 606e     ldr     r0, [r4, #0x64]
+  0x0058eaa0: 6946     mov     r1, sp
+  0x0058eaa2: 0860     str     r0, [r1]
+  0x0058eaa4: 0298     ldr     r0, [sp, #8]
+  0x0058eaa6: 3146     mov     r1, r6
+  0x0058eaa8: 2a46     mov     r2, r5
+  0x0058eaaa: 0cf12ff8 bl      #0x69ab0c  ; -> 0x0069ab0c
+  0x0058eaae: 03b0     add     sp, #0xc
+  0x0058eab0: f0bd     pop     {r4, r5, r6, r7, pc}
+  0x0058eab2: c046     mov     r8, r8
+  0x0058eab4: a808     lsrs    r0, r5, #2
+  0x0058eab6: 0000     movs    r0, r0
+
+===== _ZThn8_N21CTcpLongConnectCreate9OnAlertOKEi  va=0x0058eab8 len=0xa =====
+  0x0058eab8: 80b5     push    {r7, lr}
+  0x0058eaba: 0838     subs    r0, #8
+  0x0058eabc: 2bf1aef9 bl      #0x6b9e1c  ; -> 0x006b9e1c
+  0x0058eac0: 80bd     pop     {r7, pc}
+
+===== _ZN21CTcpLongConnectCreate16IsLongConnectingEv  va=0x0058eac2 len=0xe =====
+  0x0058eac2: 826e     ldr     r2, [r0, #0x68]
+  0x0058eac4: 0120     movs    r0, #1
+  0x0058eac6: 0021     movs    r1, #0
+  0x0058eac8: 002a     cmp     r2, #0
+  0x0058eaca: 00d0     beq     #0x58eace
+  0x0058eacc: 0846     mov     r0, r1
+  0x0058eace: 7047     bx      lr
+
+===== _ZTI21CTcpLongConnectCreate  va=0x0074b230 len=0x28 =====
+  0x0074b230: 0800     movs    r0, r1
+  0x0074b232: 0000     movs    r0, r0
+  0x0074b234: 0000     movs    r0, r0
+  0x0074b236: 0000     movs    r0, r0
+  0x0074b238: 0000     movs    r0, r0
+  0x0074b23a: 0000     movs    r0, r0
+  0x0074b23c: 0300     movs    r3, r0
+  0x0074b23e: 0000     movs    r0, r0
+  0x0074b240: 0000     movs    r0, r0
+  0x0074b242: 0000     movs    r0, r0
+  0x0074b244: 0200     movs    r2, r0
+  0x0074b246: 0000     movs    r0, r0
+  0x0074b248: 0000     movs    r0, r0
+  0x0074b24a: 0000     movs    r0, r0
+  0x0074b24c: 0204     lsls    r2, r0, #0x10
+  0x0074b24e: 0000     movs    r0, r0
+  0x0074b250: 0000     movs    r0, r0
+  0x0074b252: 0000     movs    r0, r0
+  0x0074b254: 0208     lsrs    r2, r0, #0x20
+  0x0074b256: 0000     movs    r0, r0
+
+===== _ZTS21CTcpLongConnectCreate  va=0x00716470 len=0x18 =====
+  0x00716470: 3231     adds    r1, #0x32
+  0x00716472: 4354     strb    r3, [r0, r1]
+  0x00716474: 6370     strb    r3, [r4, #1]
+  0x00716476: 4c6f     ldr     r4, [r1, #0x74]
+  0x00716478: 6e67     str     r6, [r5, #0x74]
+  0x0071647a: 436f     ldr     r3, [r0, #0x74]
+  0x0071647c: 6e6e     ldr     r6, [r5, #0x64]
+  0x0071647e: 6563     str     r5, [r4, #0x34]
+  0x00716480: 7443     muls    r4, r6, r4
+  0x00716482: 7265     str     r2, [r6, #0x54]
+  0x00716484: 6174     strb    r1, [r4, #0x11]
+  0x00716486: 6500     lsls    r5, r4, #1
+
+===== _ZTS21CTcpLongConnectLister  va=0x00716490 len=0x18 =====
+  0x00716490: 3231     adds    r1, #0x32
+  0x00716492: 4354     strb    r3, [r0, r1]
+  0x00716494: 6370     strb    r3, [r4, #1]
+  0x00716496: 4c6f     ldr     r4, [r1, #0x74]
+  0x00716498: 6e67     str     r6, [r5, #0x74]
+  0x0071649a: 436f     ldr     r3, [r0, #0x74]
+  0x0071649c: 6e6e     ldr     r6, [r5, #0x64]
+  0x0071649e: 6563     str     r5, [r4, #0x34]
+  0x007164a0: 744c     ldr     r4, [pc, #0x1d0]  ; lit=0x6f4e6e72
+  0x007164a2: 6973     strb    r1, [r5, #0xd]
+  0x007164a4: 7465     str     r4, [r6, #0x54]
+  0x007164a6: 7200     lsls    r2, r6, #1
+
+===== _ZN21CTcpLongConnectCreateD1Ev  va=0x0058e514 len=0x50 =====
+  0x0058e514: b0b5     push    {r4, r5, r7, lr}
+  0x0058e516: 0446     mov     r4, r0
+  0x0058e518: 1048     ldr     r0, [pc, #0x40]  ; lit=0x001cc602 "S5_ESt4lessISsESaIS5_EE14_M_create_nodeIJRKS5_EEEPSt13_Rb_tree_nodeIS5_EDpOT_"
+  0x0058e51a: 7844     add     r0, pc
+  0x0058e51c: 1049     ldr     r1, [pc, #0x40]  ; lit=0xfffff194
+  0x0058e51e: 0818     adds    r0, r1, r0  ; STR->0x00759cb4
+  0x0058e520: 0068     ldr     r0, [r0]
+  0x0058e522: 0146     mov     r1, r0
+  0x0058e524: 0831     adds    r1, #8
+  0x0058e526: 0246     mov     r2, r0
+  0x0058e528: 4c32     adds    r2, #0x4c
+  0x0058e52a: 5c30     adds    r0, #0x5c
+  0x0058e52c: 2160     str     r1, [r4]
+  0x0058e52e: 6260     str     r2, [r4, #4]
+  0x0058e530: a060     str     r0, [r4, #8]
+  0x0058e532: 2546     mov     r5, r4
+  0x0058e534: 2435     adds    r5, #0x24
+  0x0058e536: 2846     mov     r0, r5
+  0x0058e538: 04f1c0ff bl      #0x6934bc  ; -> __udivdi3+0x8a0
+  0x0058e53c: 2046     mov     r0, r4
+  0x0058e53e: 4c30     adds    r0, #0x4c
+  0x0058e540: 04f11cfd bl      #0x692f7c  ; -> __udivdi3+0x360
+  0x0058e544: 2046     mov     r0, r4
+  0x0058e546: 3430     adds    r0, #0x34
+  0x0058e548: 04f118fd bl      #0x692f7c  ; -> __udivdi3+0x360
+  0x0058e54c: 2846     mov     r0, r5
+  0x0058e54e: 04f1a5fd bl      #0x69309c  ; -> __udivdi3+0x480
+  0x0058e552: 2046     mov     r0, r4
+  0x0058e554: 0cf12afa bl      #0x69a9ac  ; -> 0x0069a9ac
+  0x0058e558: 2046     mov     r0, r4
+  0x0058e55a: b0bd     pop     {r4, r5, r7, pc}
+  0x0058e55c: 02c6     stm     r6!, {r1}
+  0x0058e55e: 1c00     movs    r4, r3
+  0x0058e560: 94f1ffff bl      #0x723562  ; -> _ZTV14CBlackJackHelp+0x92
+
+===== crash-region full ~0x5cbdc4 (TCP-connect-create)  va=0x005cbb80 len=0x2c0 =====
+  0x005cbb80: 0446     mov     r4, r0
+  0x005cbb82: 1020     movs    r0, #0x10
+  0x005cbb84: c7f0fafa bl      #0x69317c  ; -> __udivdi3+0x560
+  0x005cbb88: 2146     mov     r1, r4
+  0x005cbb8a: f1f067fe bl      #0x6bd85c  ; -> 0x006bd85c
+  0x005cbb8e: 10bd     pop     {r4, pc}
+  0x005cbb90: f0b5     push    {r4, r5, r6, r7, lr}
+  0x005cbb92: 81b0     sub     sp, #4
+  0x005cbb94: 0c46     mov     r4, r1
+  0x005cbb96: 0646     mov     r6, r0
+  0x005cbb98: f768     ldr     r7, [r6, #0xc]
+  0x005cbb9a: 0025     movs    r5, #0
+  0x005cbb9c: 002f     cmp     r7, #0
+  0x005cbb9e: 1bd0     beq     #0x5cbbd8
+  0x005cbba0: 7069     ldr     r0, [r6, #0x14]   <== +0x10/14 deref
+  0x005cbba2: 0028     cmp     r0, #0
+  0x005cbba4: 07d0     beq     #0x5cbbb6
+  0x005cbba6: 0168     ldr     r1, [r0]
+  0x005cbba8: 4a69     ldr     r2, [r1, #0x14]   <== +0x10/14 deref
+  0x005cbbaa: 2146     mov     r1, r4
+  0x005cbbac: 9047     blx     r2   (vcall)
+  0x005cbbae: 3946     mov     r1, r7
+  0x005cbbb0: c8f0b4fc bl      #0x69451c  ; -> 0x0069451c
+  0x005cbbb4: 05e0     b       #0x5cbbc2
+  0x005cbbb6: fb17     asrs    r3, r7, #0x1f
+  0x005cbbb8: 0021     movs    r1, #0
+  0x005cbbba: 2046     mov     r0, r4
+  0x005cbbbc: 3a46     mov     r2, r7
+  0x005cbbbe: eff065ff bl      #0x6bba8c  ; -> 0x006bba8c
+  0x005cbbc2: 8000     lsls    r0, r0, #2
+  0x005cbbc4: b168     ldr     r1, [r6, #8]
+  0x005cbbc6: 0818     adds    r0, r1, r0
+  0x005cbbc8: 0068     ldr     r0, [r0]
+  0x005cbbca: 0028     cmp     r0, #0
+  0x005cbbcc: 04d0     beq     #0x5cbbd8
+  0x005cbbce: 0168     ldr     r1, [r0]
+  0x005cbbd0: 0a69     ldr     r2, [r1, #0x10]   <== +0x10/14 deref
+  0x005cbbd2: 2146     mov     r1, r4
+  0x005cbbd4: 9047     blx     r2   (vcall)
+  0x005cbbd6: 0546     mov     r5, r0
+  0x005cbbd8: 2846     mov     r0, r5
+  0x005cbbda: 01b0     add     sp, #4
+  0x005cbbdc: f0bd     pop     {r4, r5, r6, r7, pc}
+  0x005cbbde: 70b5     push    {r4, r5, r6, lr}
+  0x005cbbe0: 0446     mov     r4, r0
+  0x005cbbe2: a068     ldr     r0, [r4, #8]
+  0x005cbbe4: e268     ldr     r2, [r4, #0xc]
+  0x005cbbe6: 0025     movs    r5, #0
+  0x005cbbe8: 012a     cmp     r2, #1
+  0x005cbbea: 11db     blt     #0x5cbc10
+  0x005cbbec: ae00     lsls    r6, r5, #2
+  0x005cbbee: 8119     adds    r1, r0, r6
+  0x005cbbf0: 0968     ldr     r1, [r1]
+  0x005cbbf2: 0029     cmp     r1, #0
+  0x005cbbf4: 09d0     beq     #0x5cbc0a
+  0x005cbbf6: 0868     ldr     r0, [r1]
+  0x005cbbf8: 4268     ldr     r2, [r0, #4]
+  0x005cbbfa: 0846     mov     r0, r1
+  0x005cbbfc: 9047     blx     r2   (vcall)
+  0x005cbbfe: a068     ldr     r0, [r4, #8]
+  0x005cbc00: 8019     adds    r0, r0, r6
+  0x005cbc02: 0021     movs    r1, #0
+  0x005cbc04: 0160     str     r1, [r0]
+  0x005cbc06: a068     ldr     r0, [r4, #8]
+  0x005cbc08: e268     ldr     r2, [r4, #0xc]
+  0x005cbc0a: 0135     adds    r5, #1
+  0x005cbc0c: 9542     cmp     r5, r2
+  0x005cbc0e: eddb     blt     #0x5cbbec
+  0x005cbc10: c7f064fa bl      #0x6930dc  ; -> __udivdi3+0x4c0
+  0x005cbc14: 0020     movs    r0, #0
+  0x005cbc16: a060     str     r0, [r4, #8]
+  0x005cbc18: e060     str     r0, [r4, #0xc]
+  0x005cbc1a: 2061     str     r0, [r4, #0x10]   <== +0x10/14 deref
+  0x005cbc1c: 0120     movs    r0, #1
+  0x005cbc1e: 70bd     pop     {r4, r5, r6, pc}
+  0x005cbc20: f0b5     push    {r4, r5, r6, r7, lr}
+  0x005cbc22: 81b0     sub     sp, #4
+  0x005cbc24: 1446     mov     r4, r2
+  0x005cbc26: 0e46     mov     r6, r1
+  0x005cbc28: 0546     mov     r5, r0
+  0x005cbc2a: ef68     ldr     r7, [r5, #0xc]
+  0x005cbc2c: 002f     cmp     r7, #0
+  0x005cbc2e: 0ad0     beq     #0x5cbc46
+  0x005cbc30: 6869     ldr     r0, [r5, #0x14]   <== +0x10/14 deref
+  0x005cbc32: 0028     cmp     r0, #0
+  0x005cbc34: 0dd0     beq     #0x5cbc52
+  0x005cbc36: 0168     ldr     r1, [r0]
+  0x005cbc38: 4a69     ldr     r2, [r1, #0x14]   <== +0x10/14 deref
+  0x005cbc3a: 3146     mov     r1, r6
+  0x005cbc3c: 9047     blx     r2   (vcall)
+  0x005cbc3e: 3946     mov     r1, r7
+  0x005cbc40: c8f06cfc bl      #0x69451c  ; -> 0x0069451c
+  0x005cbc44: 0be0     b       #0x5cbc5e
+  0x005cbc46: 0027     movs    r7, #0
+  0x005cbc48: 002c     cmp     r4, #0
+  0x005cbc4a: 21d0     beq     #0x5cbc90
+  0x005cbc4c: 0027     movs    r7, #0
+  0x005cbc4e: 2770     strb    r7, [r4]
+  0x005cbc50: 1ee0     b       #0x5cbc90
+  0x005cbc52: fb17     asrs    r3, r7, #0x1f
+  0x005cbc54: 0021     movs    r1, #0
+  0x005cbc56: 3046     mov     r0, r6
+  0x005cbc58: 3a46     mov     r2, r7
+  0x005cbc5a: eff017ff bl      #0x6bba8c  ; -> 0x006bba8c
+  0x005cbc5e: a968     ldr     r1, [r5, #8]
+  0x005cbc60: 002c     cmp     r4, #0
+  0x005cbc62: 01d0     beq     #0x5cbc68
+  0x005cbc64: 0022     movs    r2, #0
+  0x005cbc66: 2270     strb    r2, [r4]
+  0x005cbc68: 8000     lsls    r0, r0, #2
+  0x005cbc6a: 0818     adds    r0, r1, r0
+  0x005cbc6c: 0068     ldr     r0, [r0]
+  0x005cbc6e: 0027     movs    r7, #0
+  0x005cbc70: 0028     cmp     r0, #0
+  0x005cbc72: 0dd0     beq     #0x5cbc90
+  0x005cbc74: 0168     ldr     r1, [r0]
+  0x005cbc76: ca68     ldr     r2, [r1, #0xc]
+  0x005cbc78: 3146     mov     r1, r6
+  0x005cbc7a: 9047     blx     r2   (vcall)
+  0x005cbc7c: 0028     cmp     r0, #0
+  0x005cbc7e: 07d0     beq     #0x5cbc90
+  0x005cbc80: 2969     ldr     r1, [r5, #0x10]   <== +0x10/14 deref
+  0x005cbc82: 0139     subs    r1, #1
+  0x005cbc84: 2961     str     r1, [r5, #0x10]   <== +0x10/14 deref
+  0x005cbc86: 002c     cmp     r4, #0
+  0x005cbc88: 01d0     beq     #0x5cbc8e
+  0x005cbc8a: 0121     movs    r1, #1
+  0x005cbc8c: 2170     strb    r1, [r4]
+  0x005cbc8e: 0746     mov     r7, r0
+  0x005cbc90: 3846     mov     r0, r7
+  0x005cbc92: 01b0     add     sp, #4
+  0x005cbc94: f0bd     pop     {r4, r5, r6, r7, pc}
+  0x005cbc96: 0020     movs    r0, #0
+  0x005cbc98: c043     mvns    r0, r0
+  0x005cbc9a: 7047     bx      lr
+  0x005cbc9c: 10b5     push    {r4, lr}
+  0x005cbc9e: 0446     mov     r4, r0
+  0x005cbca0: 0848     ldr     r0, [pc, #0x20]  ; lit=0x0018ee7a "9OnGameStatusChangedEi"
+  0x005cbca2: 7844     add     r0, pc
+  0x005cbca4: 084a     ldr     r2, [pc, #0x20]  ; lit=0xfffff4d0
+  0x005cbca6: 1018     adds    r0, r2, r0  ; STR->0x00759ff0
+  0x005cbca8: 0068     ldr     r0, [r0]
+  0x005cbcaa: 0830     adds    r0, #8
+  0x005cbcac: 0022     movs    r2, #0
+  0x005cbcae: d343     mvns    r3, r2
+  0x005cbcb0: 2060     str     r0, [r4]
+  0x005cbcb2: 6360     str     r3, [r4, #4]
+  0x005cbcb4: a260     str     r2, [r4, #8]
+  0x005cbcb6: e160     str     r1, [r4, #0xc]
+  0x005cbcb8: 2046     mov     r0, r4
+  0x005cbcba: f1f0fffd bl      #0x6bd8bc  ; -> 0x006bd8bc
+  0x005cbcbe: 2046     mov     r0, r4
+  0x005cbcc0: 10bd     pop     {r4, pc}
+  0x005cbcc2: c046     mov     r8, r8
+  0x005cbcc4: 7aee1800 mrc     p0, #3, r0, c10, c8, #0
+  0x005cbcc8: d0f4ffff bl      #0x29ccca  ; -> 0x0029ccca
+  0x005cbccc: b0b5     push    {r4, r5, r7, lr}
+  0x005cbcce: 4168     ldr     r1, [r0, #4]
+  0x005cbcd0: 8268     ldr     r2, [r0, #8]
+  0x005cbcd2: 002a     cmp     r2, #0
+  0x005cbcd4: 01d1     bne     #0x5cbcda
+  0x005cbcd6: 0131     adds    r1, #1
+  0x005cbcd8: 4160     str     r1, [r0, #4]
+  0x005cbcda: c268     ldr     r2, [r0, #0xc]
+  0x005cbcdc: d368     ldr     r3, [r2, #0xc]
+  0x005cbcde: 01e0     b       #0x5cbce4
+  0x005cbce0: 0131     adds    r1, #1
+  0x005cbce2: 4160     str     r1, [r0, #4]
+  0x005cbce4: 9942     cmp     r1, r3
+  0x005cbce6: 09da     bge     #0x5cbcfc
+  0x005cbce8: 8c00     lsls    r4, r1, #2
+  0x005cbcea: 9568     ldr     r5, [r2, #8]
+  0x005cbcec: 2c19     adds    r4, r5, r4
+  0x005cbcee: 2468     ldr     r4, [r4]
+  0x005cbcf0: 002c     cmp     r4, #0
+  0x005cbcf2: f5d0     beq     #0x5cbce0
+  0x005cbcf4: 6468     ldr     r4, [r4, #4]
+  0x005cbcf6: 002c     cmp     r4, #0
+  0x005cbcf8: f2d0     beq     #0x5cbce0
+  0x005cbcfa: 8460     str     r4, [r0, #8]
+  0x005cbcfc: b0bd     pop     {r4, r5, r7, pc}
+  0x005cbcfe: 8168     ldr     r1, [r0, #8]
+  0x005cbd00: 0120     movs    r0, #1
+  0x005cbd02: 0029     cmp     r1, #0
+  0x005cbd04: 00d1     bne     #0x5cbd08
+  0x005cbd06: 0846     mov     r0, r1
+  0x005cbd08: 7047     bx      lr
+  0x005cbd0a: 10b5     push    {r4, lr}
+  0x005cbd0c: 8168     ldr     r1, [r0, #8]
+  0x005cbd0e: 0c68     ldr     r4, [r1]
+  0x005cbd10: 4968     ldr     r1, [r1, #4]
+  0x005cbd12: 8160     str     r1, [r0, #8]
+  0x005cbd14: 0029     cmp     r1, #0
+  0x005cbd16: 01d1     bne     #0x5cbd1c
+  0x005cbd18: f1f0d0fd bl      #0x6bd8bc  ; -> 0x006bd8bc
+  0x005cbd1c: 2046     mov     r0, r4
+  0x005cbd1e: 10bd     pop     {r4, pc}
+  0x005cbd20: 8068     ldr     r0, [r0, #8]
+  0x005cbd22: 0068     ldr     r0, [r0]
+  0x005cbd24: 7047     bx      lr
+  0x005cbd26: 10b5     push    {r4, lr}
+  0x005cbd28: 0446     mov     r4, r0
+  0x005cbd2a: 0020     movs    r0, #0
+  0x005cbd2c: c143     mvns    r1, r0
+  0x005cbd2e: 6160     str     r1, [r4, #4]
+  0x005cbd30: a060     str     r0, [r4, #8]
+  0x005cbd32: 2046     mov     r0, r4
+  0x005cbd34: f1f0c2fd bl      #0x6bd8bc  ; -> 0x006bd8bc
+  0x005cbd38: 002c     cmp     r4, #0
+  0x005cbd3a: 06d0     beq     #0x5cbd4a
+  0x005cbd3c: 2068     ldr     r0, [r4]
+  0x005cbd3e: 0168     ldr     r1, [r0]
+  0x005cbd40: 2046     mov     r0, r4
+  0x005cbd42: 8847     blx     r1   (vcall)
+  0x005cbd44: 2046     mov     r0, r4
+  0x005cbd46: c7f0c9f9 bl      #0x6930dc  ; -> __udivdi3+0x4c0
+  0x005cbd4a: 10bd     pop     {r4, pc}
+  0x005cbd4c: 80b5     push    {r7, lr}
+  0x005cbd4e: c7f01df9 bl      #0x692f8c  ; -> __udivdi3+0x370
+  0x005cbd52: 80bd     pop     {r7, pc}
+  0x005cbd54: 0549     ldr     r1, [pc, #0x14]  ; lit=0x0018edc6 "Pv"   <== +0x10/14 deref
+  0x005cbd56: 7944     add     r1, pc
+  0x005cbd58: 054a     ldr     r2, [pc, #0x14]  ; lit=0xfffff4d4   <== +0x10/14 deref
+  0x005cbd5a: 5118     adds    r1, r2, r1  ; STR->0x00759ff4
+  0x005cbd5c: 0968     ldr     r1, [r1]
+  0x005cbd5e: 0831     adds    r1, #8
+  0x005cbd60: 0160     str     r1, [r0]
+  0x005cbd62: 0021     movs    r1, #0
+  0x005cbd64: 8160     str     r1, [r0, #8]
+  0x005cbd66: c160     str     r1, [r0, #0xc]
+  0x005cbd68: 7047     bx      lr
+  0x005cbd6a: c046     mov     r8, r8
+  0x005cbd6c: c6ed1800 stcl    p0, c0, [r6, #0x60]
+  0x005cbd70: d4f4ffff bl      #0x2a0d72  ; -> 0x002a0d72
+  0x005cbd74: 10b5     push    {r4, lr}
+  0x005cbd76: 0549     ldr     r1, [pc, #0x14]  ; lit=0x0018eda4 "ngConnectCreate16OnConnectSuccessEPv"   <== +0x10/14 deref
+  0x005cbd78: 7944     add     r1, pc
+  0x005cbd7a: 054c     ldr     r4, [pc, #0x14]  ; lit=0xfffff4d4   <== +0x10/14 deref
+  0x005cbd7c: 6118     adds    r1, r4, r1  ; STR->0x00759ff4
+  0x005cbd7e: 0968     ldr     r1, [r1]
+  0x005cbd80: 0831     adds    r1, #8
+  0x005cbd82: 0160     str     r1, [r0]
+  0x005cbd84: 8260     str     r2, [r0, #8]
+  0x005cbd86: c360     str     r3, [r0, #0xc]
+  0x005cbd88: 10bd     pop     {r4, pc}
+  0x005cbd8a: c046     mov     r8, r8
+  0x005cbd8c: a4ed1800 stc     p0, c0, [r4, #0x60]!
+  0x005cbd90: d4f4ffff bl      #0x2a0d92  ; -> 0x002a0d92
+  0x005cbd94: 10b5     push    {r4, lr}
+  0x005cbd96: 0446     mov     r4, r0
+  0x005cbd98: 0648     ldr     r0, [pc, #0x18]  ; lit=0x0018ed82 "9OnTCPServerShutDownEv"
+  0x005cbd9a: 7844     add     r0, pc
+  0x005cbd9c: 064a     ldr     r2, [pc, #0x18]  ; lit=0xfffff4d4
+  0x005cbd9e: 1018     adds    r0, r2, r0  ; STR->0x00759ff4
+  0x005cbda0: 0068     ldr     r0, [r0]
+  0x005cbda2: 0830     adds    r0, #8
+  0x005cbda4: 2060     str     r0, [r4]
+  0x005cbda6: 0846     mov     r0, r1
+  0x005cbda8: c7f0d0fa bl      #0x69334c  ; -> __udivdi3+0x730
+  0x005cbdac: a060     str     r0, [r4, #8]
+  0x005cbdae: e160     str     r1, [r4, #0xc]
+  0x005cbdb0: 2046     mov     r0, r4
+  0x005cbdb2: 10bd     pop     {r4, pc}
+  0x005cbdb4: 82ed1800 stc     p0, c0, [r2, #0x60]
+  0x005cbdb8: d4f4ffff bl      #0x2a0dba  ; -> 0x002a0dba
+  0x005cbdbc: 80b5     push    {r7, lr}
+  0x005cbdbe: c7f0c5fa bl      #0x69334c  ; -> __udivdi3+0x730
+  0x005cbdc2: 80bd     pop     {r7, pc}
+  0x005cbdc4: 8268     ldr     r2, [r0, #8]
+  0x005cbdc6: c168     ldr     r1, [r0, #0xc]
+  0x005cbdc8: 1046     mov     r0, r2
+  0x005cbdca: 7047     bx      lr
+  0x005cbdcc: 7047     bx      lr
+  0x005cbdce: 80b5     push    {r7, lr}
+  0x005cbdd0: c7f0dcf8 bl      #0x692f8c  ; -> __udivdi3+0x370
+  0x005cbdd4: 80bd     pop     {r7, pc}
+  0x005cbdd6: 0021     movs    r1, #0
+  0x005cbdd8: 0160     str     r1, [r0]
+  0x005cbdda: 4160     str     r1, [r0, #4]
+  0x005cbddc: 8160     str     r1, [r0, #8]
+  0x005cbdde: 7047     bx      lr
+  0x005cbde0: 0549     ldr     r1, [pc, #0x14]  ; lit=0x0018ed3a "ZN21CTcpLongConnectCreate15OnTCPDisconnectEv"   <== +0x10/14 deref
+  0x005cbde2: 7944     add     r1, pc
+  0x005cbde4: 054a     ldr     r2, [pc, #0x14]  ; lit=0xfffff4d8   <== +0x10/14 deref
+  0x005cbde6: 5118     adds    r1, r2, r1  ; STR->0x00759ff8
+  0x005cbde8: 0968     ldr     r1, [r1]
+  0x005cbdea: 0831     adds    r1, #8
+  0x005cbdec: 0022     movs    r2, #0
+  0x005cbdee: 0160     str     r1, [r0]
+  0x005cbdf0: 4260     str     r2, [r0, #4]
+  0x005cbdf2: 8260     str     r2, [r0, #8]
+  0x005cbdf4: c260     str     r2, [r0, #0xc]
+  0x005cbdf6: 7047     bx      lr
+  0x005cbdf8: 3aed1800 ldc     p0, c0, [sl, #-0x60]!
+  0x005cbdfc: d8f4ffff bl      #0x2a4dfe  ; -> 0x002a4dfe
+  0x005cbe00: 70b5     push    {r4, r5, r6, lr}
+  0x005cbe02: 0446     mov     r4, r0
+  0x005cbe04: 1348     ldr     r0, [pc, #0x4c]  ; lit=0x0018ed16 "pLongConnectCreate12OnTCPOffLineEv"
+  0x005cbe06: 7844     add     r0, pc
+  0x005cbe08: 134a     ldr     r2, [pc, #0x4c]  ; lit=0xfffff4d8
+  0x005cbe0a: 1018     adds    r0, r2, r0  ; STR->0x00759ff8
+  0x005cbe0c: 0068     ldr     r0, [r0]
+  0x005cbe0e: 0830     adds    r0, #8
+  0x005cbe10: 0022     movs    r2, #0
+  0x005cbe12: 2060     str     r0, [r4]
+  0x005cbe14: 6260     str     r2, [r4, #4]
+  0x005cbe16: a260     str     r2, [r4, #8]
+  0x005cbe18: e260     str     r2, [r4, #0xc]
+  0x005cbe1a: 0868     ldr     r0, [r1]
+  0x005cbe1c: 4369     ldr     r3, [r0, #0x14]   <== +0x10/14 deref
+  0x005cbe1e: 0846     mov     r0, r1
+  0x005cbe20: 1146     mov     r1, r2
+  0x005cbe22: 9847     blx     r3   (vcall)
+  0x005cbe24: 0546     mov     r5, r0
+  0x005cbe26: 08e0     b       #0x5cbe3a
+  0x005cbe28: 2068     ldr     r0, [r4]
+  0x005cbe2a: 8668     ldr     r6, [r0, #8]
+  0x005cbe2c: 2868     ldr     r0, [r5]
+  0x005cbe2e: c168     ldr     r1, [r0, #0xc]
+  0x005cbe30: 2846     mov     r0, r5
+  0x005cbe32: 8847     blx     r1   (vcall)
+  0x005cbe34: 0146     mov     r1, r0
+  0x005cbe36: 2046     mov     r0, r4
+  0x005cbe38: b047     blx     r6   (vcall)
+  0x005cbe3a: 2868     ldr     r0, [r5]
+  0x005cbe3c: 8168     ldr     r1, [r0, #8]
+  0x005cbe3e: 2846     mov     r0, r5

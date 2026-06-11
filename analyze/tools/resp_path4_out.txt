@@ -1,0 +1,403 @@
+
+===== _ZN9CMsgCodec6EnCodeE11ENCODE_TYPEP10ngJsonHashP12ngByteBuffer
+      va=0x004ee1d4 len=0xb0 =====
+  0x004ee1d4: f0b5     push    {r4, r5, r6, r7, lr}
+  0x004ee1d6: 8db0     sub     sp, #0x34
+  0x004ee1d8: 06a8     add     r0, sp, #0x18
+  0x004ee1da: 1c46     mov     r4, r3
+  0x004ee1dc: 1546     mov     r5, r2
+  0x004ee1de: 8161     str     r1, [r0, #0x18]
+  0x004ee1e0: 002d     cmp     r5, #0
+  0x004ee1e2: 4bd0     beq     #0x4ee27c
+  0x004ee1e4: 0029     cmp     r1, #0
+  0x004ee1e6: 49d0     beq     #0x4ee27c
+  0x004ee1e8: 06ae     add     r6, sp, #0x18
+  0x004ee1ea: 0296     str     r6, [sp, #8]
+  0x004ee1ec: 0390     str     r0, [sp, #0xc]
+  0x004ee1ee: 3046     mov     r0, r6
+  0x004ee1f0: a4f1bcfe bl      #0x692f6c  ; -> __udivdi3+0x350
+  0x004ee1f4: 2868     ldr     r0, [r5]
+  0x004ee1f6: 4269     ldr     r2, [r0, #0x14]
+  0x004ee1f8: 2846     mov     r0, r5
+  0x004ee1fa: 3146     mov     r1, r6
+  0x004ee1fc: 9047     blx     r2
+  0x004ee1fe: 3046     mov     r0, r6
+  0x004ee200: a6f124f8 bl      #0x69424c  ; -> 0x0069424c
+  0x004ee204: 0546     mov     r5, r0
+  0x004ee206: 280a     lsrs    r0, r5, #8
+  0x004ee208: ff21     movs    r1, #0xff
+  0x004ee20a: 0840     ands    r0, r1
+  0x004ee20c: 2a02     lsls    r2, r5, #8
+  0x004ee20e: 0243     orrs    r2, r0
+  0x004ee210: 05a8     add     r0, sp, #0x14
+  0x004ee212: 0190     str     r0, [sp, #4]
+  0x004ee214: 0280     strh    r2, [r0]
+  0x004ee216: e81c     adds    r0, r5, #3
+  0x004ee218: 020a     lsrs    r2, r0, #8
+  0x004ee21a: 0a40     ands    r2, r1
+  0x004ee21c: 0002     lsls    r0, r0, #8
+  0x004ee21e: 1043     orrs    r0, r2
+  0x004ee220: 04af     add     r7, sp, #0x10
+  0x004ee222: 3880     strh    r0, [r7]
+  0x004ee224: 2068     ldr     r0, [r4]
+  0x004ee226: 8169     ldr     r1, [r0, #0x18]
+  0x004ee228: 2046     mov     r0, r4
+  0x004ee22a: 8847     blx     r1
+  0x004ee22c: 2068     ldr     r0, [r4]
+  0x004ee22e: c369     ldr     r3, [r0, #0x1c]
+  0x004ee230: 0226     movs    r6, #2
+  0x004ee232: 2046     mov     r0, r4
+  0x004ee234: 3946     mov     r1, r7
+  0x004ee236: 3246     mov     r2, r6
+  0x004ee238: 9847     blx     r3
+  0x004ee23a: 2068     ldr     r0, [r4]
+  0x004ee23c: c369     ldr     r3, [r0, #0x1c]
+  0x004ee23e: 0ca9     add     r1, sp, #0x30
+  0x004ee240: 0122     movs    r2, #1
+  0x004ee242: 2046     mov     r0, r4
+  0x004ee244: 9847     blx     r3
+  0x004ee246: 2068     ldr     r0, [r4]
+  0x004ee248: c369     ldr     r3, [r0, #0x1c]
+  0x004ee24a: 2046     mov     r0, r4
+  0x004ee24c: 0199     ldr     r1, [sp, #4]
+  0x004ee24e: 3246     mov     r2, r6
+  0x004ee250: 9847     blx     r3
+  0x004ee252: 2068     ldr     r0, [r4]
+  0x004ee254: c669     ldr     r6, [r0, #0x1c]
+  0x004ee256: 0398     ldr     r0, [sp, #0xc]
+  0x004ee258: 0068     ldr     r0, [r0]
+  0x004ee25a: 4169     ldr     r1, [r0, #0x14]
+  0x004ee25c: 029f     ldr     r7, [sp, #8]
+  0x004ee25e: 3846     mov     r0, r7
+  0x004ee260: 8847     blx     r1
+  0x004ee262: 0146     mov     r1, r0
+  0x004ee264: 064a     ldr     r2, [pc, #0x18]  ; lit=0x0000ffff
+  0x004ee266: 2a40     ands    r2, r5
+  0x004ee268: 2046     mov     r0, r4
+  0x004ee26a: b047     blx     r6
+  0x004ee26c: c3f126f9 bl      #0x6b14bc  ; -> 0x006b14bc
+  0x004ee270: 2146     mov     r1, r4
+  0x004ee272: c3f12bf9 bl      #0x6b14cc  ; -> 0x006b14cc
+  0x004ee276: 3846     mov     r0, r7
+  0x004ee278: a4f180fe bl      #0x692f7c  ; -> __udivdi3+0x360
+  0x004ee27c: 0db0     add     sp, #0x34
+  0x004ee27e: f0bd     pop     {r4, r5, r6, r7, pc}
+
+===== _ZN9CMsgCodec11GetJsonDataEP12ngByteBufferiPP10ngJsonHash
+      va=0x004ee67c len=0x94 =====
+  0x004ee67c: f0b5     push    {r4, r5, r6, r7, lr}
+  0x004ee67e: 89b0     sub     sp, #0x24
+  0x004ee680: 0193     str     r3, [sp, #4]
+  0x004ee682: 1546     mov     r5, r2
+  0x004ee684: 0e46     mov     r6, r1
+  0x004ee686: 3068     ldr     r0, [r6]
+  0x004ee688: 4169     ldr     r1, [r0, #0x14]
+  0x004ee68a: 3046     mov     r0, r6
+  0x004ee68c: 8847     blx     r1
+  0x004ee68e: 4019     adds    r0, r0, r5
+  0x004ee690: 0088     ldrh    r0, [r0]
+  0x004ee692: 0290     str     r0, [sp, #8]
+  0x004ee694: 3068     ldr     r0, [r6]
+  0x004ee696: 4169     ldr     r1, [r0, #0x14]
+  0x004ee698: 3046     mov     r0, r6
+  0x004ee69a: 8847     blx     r1
+  0x004ee69c: 2818     adds    r0, r5, r0
+  0x004ee69e: 0321     movs    r1, #3
+  0x004ee6a0: 445a     ldrh    r4, [r0, r1]
+  0x004ee6a2: 03a8     add     r0, sp, #0xc
+  0x004ee6a4: 0090     str     r0, [sp]
+  0x004ee6a6: a4f161fc bl      #0x692f6c  ; -> __udivdi3+0x350
+  0x004ee6aa: 2702     lsls    r7, r4, #8
+  0x004ee6ac: 3068     ldr     r0, [r6]
+  0x004ee6ae: 4169     ldr     r1, [r0, #0x14]
+  0x004ee6b0: 3046     mov     r0, r6
+  0x004ee6b2: 8847     blx     r1
+  0x004ee6b4: ff21     movs    r1, #0xff
+  0x004ee6b6: 0e02     lsls    r6, r1, #8
+  0x004ee6b8: 3740     ands    r7, r6
+  0x004ee6ba: 220a     lsrs    r2, r4, #8
+  0x004ee6bc: 3a43     orrs    r2, r7
+  0x004ee6be: 2818     adds    r0, r5, r0
+  0x004ee6c0: 411d     adds    r1, r0, #5
+  0x004ee6c2: 009c     ldr     r4, [sp]
+  0x004ee6c4: 2046     mov     r0, r4
+  0x004ee6c6: a4f189fc bl      #0x692fdc  ; -> __udivdi3+0x3c0
+  0x004ee6ca: 2020     movs    r0, #0x20
+  0x004ee6cc: a4f156fd bl      #0x69317c  ; -> __udivdi3+0x560
+  0x004ee6d0: 0546     mov     r5, r0
+  0x004ee6d2: a9f18bfe bl      #0x6983ec  ; -> 0x006983ec
+  0x004ee6d6: 0121     movs    r1, #1
+  0x004ee6d8: 2046     mov     r0, r4
+  0x004ee6da: a4f177fc bl      #0x692fcc  ; -> __udivdi3+0x3b0
+  0x004ee6de: 0146     mov     r1, r0
+  0x004ee6e0: 2846     mov     r0, r5
+  0x004ee6e2: a9f193fe bl      #0x69840c  ; -> 0x0069840c
+  0x004ee6e6: 6868     ldr     r0, [r5, #4]
+  0x004ee6e8: 0199     ldr     r1, [sp, #4]
+  0x004ee6ea: 0860     str     r0, [r1]
+  0x004ee6ec: 0021     movs    r1, #0
+  0x004ee6ee: 2846     mov     r0, r5
+  0x004ee6f0: c2f13cff bl      #0x6b156c  ; -> 0x006b156c
+  0x004ee6f4: 2868     ldr     r0, [r5]
+  0x004ee6f6: 4168     ldr     r1, [r0, #4]
+  0x004ee6f8: 2846     mov     r0, r5
+  0x004ee6fa: 8847     blx     r1
+  0x004ee6fc: 2046     mov     r0, r4
+  0x004ee6fe: a4f13dfc bl      #0x692f7c  ; -> __udivdi3+0x360
+  0x004ee702: 0298     ldr     r0, [sp, #8]
+  0x004ee704: 0102     lsls    r1, r0, #8
+  0x004ee706: 3140     ands    r1, r6
+  0x004ee708: 000a     lsrs    r0, r0, #8
+  0x004ee70a: 0843     orrs    r0, r1
+  0x004ee70c: 09b0     add     sp, #0x24
+  0x004ee70e: f0bd     pop     {r4, r5, r6, r7, pc}
+
+===== _ZN9CMsgCodec17GetJsonDataSingleEP12ngByteBufferPP10ngJsonHash
+      va=0x004ee58c len=0x9a =====
+  0x004ee58c: f0b5     push    {r4, r5, r6, r7, lr}
+  0x004ee58e: 89b0     sub     sp, #0x24
+  0x004ee590: 0d46     mov     r5, r1
+  0x004ee592: 0020     movs    r0, #0
+  0x004ee594: c043     mvns    r0, r0
+  0x004ee596: 002d     cmp     r5, #0
+  0x004ee598: 43d0     beq     #0x4ee622
+  0x004ee59a: 002a     cmp     r2, #0
+  0x004ee59c: 41d0     beq     #0x4ee622
+  0x004ee59e: 2868     ldr     r0, [r5]
+  0x004ee5a0: 4169     ldr     r1, [r0, #0x14]
+  0x004ee5a2: 2846     mov     r0, r5
+  0x004ee5a4: 0192     str     r2, [sp, #4]
+  0x004ee5a6: 8847     blx     r1
+  0x004ee5a8: 0088     ldrh    r0, [r0]
+  0x004ee5aa: 0290     str     r0, [sp, #8]
+  0x004ee5ac: 2868     ldr     r0, [r5]
+  0x004ee5ae: 4169     ldr     r1, [r0, #0x14]
+  0x004ee5b0: 2846     mov     r0, r5
+  0x004ee5b2: 8847     blx     r1
+  0x004ee5b4: 0321     movs    r1, #3
+  0x004ee5b6: 475a     ldrh    r7, [r0, r1]
+  0x004ee5b8: 03ae     add     r6, sp, #0xc
+  0x004ee5ba: 3046     mov     r0, r6
+  0x004ee5bc: a4f1d6fc bl      #0x692f6c  ; -> __udivdi3+0x350
+  0x004ee5c0: 3c02     lsls    r4, r7, #8
+  0x004ee5c2: 2868     ldr     r0, [r5]
+  0x004ee5c4: 4169     ldr     r1, [r0, #0x14]
+  0x004ee5c6: 2846     mov     r0, r5
+  0x004ee5c8: 8847     blx     r1
+  0x004ee5ca: ff21     movs    r1, #0xff
+  0x004ee5cc: 0902     lsls    r1, r1, #8
+  0x004ee5ce: 0091     str     r1, [sp]
+  0x004ee5d0: 0c40     ands    r4, r1
+  0x004ee5d2: 3a0a     lsrs    r2, r7, #8
+  0x004ee5d4: 2243     orrs    r2, r4
+  0x004ee5d6: 411d     adds    r1, r0, #5
+  0x004ee5d8: 3046     mov     r0, r6
+  0x004ee5da: a4f1fffc bl      #0x692fdc  ; -> __udivdi3+0x3c0
+  0x004ee5de: 2020     movs    r0, #0x20
+  0x004ee5e0: a4f1ccfd bl      #0x69317c  ; -> __udivdi3+0x560
+  0x004ee5e4: 0546     mov     r5, r0
+  0x004ee5e6: a9f101ff bl      #0x6983ec  ; -> 0x006983ec
+  0x004ee5ea: 0121     movs    r1, #1
+  0x004ee5ec: 3046     mov     r0, r6
+  0x004ee5ee: a4f1edfc bl      #0x692fcc  ; -> __udivdi3+0x3b0
+  0x004ee5f2: 0146     mov     r1, r0
+  0x004ee5f4: 2846     mov     r0, r5
+  0x004ee5f6: a9f109ff bl      #0x69840c  ; -> 0x0069840c
+  0x004ee5fa: 6868     ldr     r0, [r5, #4]
+  0x004ee5fc: 0199     ldr     r1, [sp, #4]
+  0x004ee5fe: 0860     str     r0, [r1]
+  0x004ee600: 0021     movs    r1, #0
+  0x004ee602: 2846     mov     r0, r5
+  0x004ee604: c2f1b2ff bl      #0x6b156c  ; -> 0x006b156c
+  0x004ee608: 2868     ldr     r0, [r5]
+  0x004ee60a: 4168     ldr     r1, [r0, #4]
+  0x004ee60c: 2846     mov     r0, r5
+  0x004ee60e: 8847     blx     r1
+  0x004ee610: 3046     mov     r0, r6
+  0x004ee612: a4f1b3fc bl      #0x692f7c  ; -> __udivdi3+0x360
+  0x004ee616: 0298     ldr     r0, [sp, #8]
+  0x004ee618: 0102     lsls    r1, r0, #8
+  0x004ee61a: 009a     ldr     r2, [sp]
+  0x004ee61c: 1140     ands    r1, r2
+  0x004ee61e: 000a     lsrs    r0, r0, #8
+  0x004ee620: 0843     orrs    r0, r1
+  0x004ee622: 09b0     add     sp, #0x24
+  0x004ee624: f0bd     pop     {r4, r5, r6, r7, pc}
+
+===== _ZN14ngStringHelper10encryptXOREPKcS1_
+      va=0x005f5804 len=0xa2 =====
+  0x005f5804: f0b5     push    {r4, r5, r6, r7, lr}
+  0x005f5806: 89b0     sub     sp, #0x24
+  0x005f5808: 02ad     add     r5, sp, #8
+  0x005f580a: 0195     str     r5, [sp, #4]
+  0x005f580c: 0c46     mov     r4, r1
+  0x005f580e: 0146     mov     r1, r0
+  0x005f5810: 03ae     add     r6, sp, #0xc
+  0x005f5812: 3046     mov     r0, r6
+  0x005f5814: 9df092fd bl      #0x69333c  ; -> __udivdi3+0x720
+  0x005f5818: 6868     ldr     r0, [r5, #4]
+  0x005f581a: 4169     ldr     r1, [r0, #0x14]
+  0x005f581c: 3046     mov     r0, r6
+  0x005f581e: 8847     blx     r1
+  0x005f5820: 0546     mov     r5, r0
+  0x005f5822: 3046     mov     r0, r6
+  0x005f5824: 9ef012fd bl      #0x69424c  ; -> 0x0069424c
+  0x005f5828: 0646     mov     r6, r0
+  0x005f582a: 2046     mov     r0, r4
+  0x005f582c: c7f056f8 bl      #0x6bc8dc  ; -> 0x006bc8dc
+  0x005f5830: 0021     movs    r1, #0
+  0x005f5832: 012e     cmp     r6, #1
+  0x005f5834: 12db     blt     #0x5f585c
+  0x005f5836: 2246     mov     r2, r4
+  0x005f5838: 2b78     ldrb    r3, [r5]
+  0x005f583a: 1778     ldrb    r7, [r2]
+  0x005f583c: 5f40     eors    r7, r3
+  0x005f583e: 2f70     strb    r7, [r5]
+  0x005f5840: 4b1c     adds    r3, r1, #1
+  0x005f5842: 511c     adds    r1, r2, #1
+  0x005f5844: 8342     cmp     r3, r0
+  0x005f5846: 2246     mov     r2, r4
+  0x005f5848: 00d0     beq     #0x5f584c
+  0x005f584a: 0a46     mov     r2, r1
+  0x005f584c: 0021     movs    r1, #0
+  0x005f584e: 8342     cmp     r3, r0
+  0x005f5850: 00d0     beq     #0x5f5854
+  0x005f5852: 1946     mov     r1, r3
+  0x005f5854: 013e     subs    r6, #1
+  0x005f5856: 0135     adds    r5, #1
+  0x005f5858: 002e     cmp     r6, #0
+  0x005f585a: edd1     bne     #0x5f5838
+  0x005f585c: 0024     movs    r4, #0
+  0x005f585e: 0198     ldr     r0, [sp, #4]
+  0x005f5860: 0460     str     r4, [r0]
+  0x005f5862: 4068     ldr     r0, [r0, #4]
+  0x005f5864: 4169     ldr     r1, [r0, #0x14]
+  0x005f5866: 03ad     add     r5, sp, #0xc
+  0x005f5868: 2846     mov     r0, r5
+  0x005f586a: 8847     blx     r1
+  0x005f586c: 0646     mov     r6, r0
+  0x005f586e: 2846     mov     r0, r5
+  0x005f5870: 9ef0ecfc bl      #0x69424c  ; -> 0x0069424c
+  0x005f5874: 0146     mov     r1, r0
+  0x005f5876: 02ab     add     r3, sp, #8
+  0x005f5878: 3046     mov     r0, r6
+  0x005f587a: 2246     mov     r2, r4
+  0x005f587c: c6f096fb bl      #0x6bbfac  ; -> 0x006bbfac
+  0x005f5880: 0546     mov     r5, r0
+  0x005f5882: 1820     movs    r0, #0x18
+  0x005f5884: 9df07afc bl      #0x69317c  ; -> __udivdi3+0x560
+  0x005f5888: 0446     mov     r4, r0
+  0x005f588a: 2946     mov     r1, r5
+  0x005f588c: 9df056fd bl      #0x69333c  ; -> __udivdi3+0x720
+  0x005f5890: 002d     cmp     r5, #0
+  0x005f5892: 02d0     beq     #0x5f589a
+  0x005f5894: 2846     mov     r0, r5
+  0x005f5896: 9df021fc bl      #0x6930dc  ; -> __udivdi3+0x4c0
+  0x005f589a: 03a8     add     r0, sp, #0xc
+  0x005f589c: 9df06efb bl      #0x692f7c  ; -> __udivdi3+0x360
+  0x005f58a0: 2046     mov     r0, r4
+  0x005f58a2: 09b0     add     sp, #0x24
+  0x005f58a4: f0bd     pop     {r4, r5, r6, r7, pc}
+
+===== _ZN14ngStringHelper10decryptXOREPKcS1_
+      va=0x005f58a6 len=0x8a =====
+  0x005f58a6: f0b5     push    {r4, r5, r6, r7, lr}
+  0x005f58a8: 83b0     sub     sp, #0xc
+  0x005f58aa: 02ad     add     r5, sp, #8
+  0x005f58ac: 0095     str     r5, [sp]
+  0x005f58ae: 0f46     mov     r7, r1
+  0x005f58b0: 0646     mov     r6, r0
+  0x005f58b2: 0024     movs    r4, #0
+  0x005f58b4: 2c60     str     r4, [r5]
+  0x005f58b6: c7f011f8 bl      #0x6bc8dc  ; -> 0x006bc8dc
+  0x005f58ba: 0146     mov     r1, r0
+  0x005f58bc: 02aa     add     r2, sp, #8
+  0x005f58be: 3046     mov     r0, r6
+  0x005f58c0: 3e46     mov     r6, r7
+  0x005f58c2: c0f0ebfa bl      #0x6b5e9c  ; -> 0x006b5e9c
+  0x005f58c6: 0746     mov     r7, r0
+  0x005f58c8: 3046     mov     r0, r6
+  0x005f58ca: c7f007f8 bl      #0x6bc8dc  ; -> 0x006bc8dc
+  0x005f58ce: 0190     str     r0, [sp, #4]
+  0x005f58d0: 2968     ldr     r1, [r5]
+  0x005f58d2: 0029     cmp     r1, #0
+  0x005f58d4: 1bd0     beq     #0x5f590e
+  0x005f58d6: 2246     mov     r2, r4
+  0x005f58d8: 3146     mov     r1, r6
+  0x005f58da: 3046     mov     r0, r6
+  0x005f58dc: 3b19     adds    r3, r7, r4
+  0x005f58de: 3d46     mov     r5, r7
+  0x005f58e0: 1e78     ldrb    r6, [r3]
+  0x005f58e2: 0f78     ldrb    r7, [r1]
+  0x005f58e4: 7740     eors    r7, r6
+  0x005f58e6: 1f70     strb    r7, [r3]
+  0x005f58e8: 531c     adds    r3, r2, #1
+  0x005f58ea: 4a1c     adds    r2, r1, #1
+  0x005f58ec: 0199     ldr     r1, [sp, #4]
+  0x005f58ee: 8b42     cmp     r3, r1
+  0x005f58f0: 0146     mov     r1, r0
+  0x005f58f2: 00d0     beq     #0x5f58f6
+  0x005f58f4: 1146     mov     r1, r2
+  0x005f58f6: 0022     movs    r2, #0
+  0x005f58f8: 019e     ldr     r6, [sp, #4]
+  0x005f58fa: b342     cmp     r3, r6
+  0x005f58fc: 00d0     beq     #0x5f5900
+  0x005f58fe: 1a46     mov     r2, r3
+  0x005f5900: 0134     adds    r4, #1
+  0x005f5902: 009b     ldr     r3, [sp]
+  0x005f5904: 1e68     ldr     r6, [r3]
+  0x005f5906: b442     cmp     r4, r6
+  0x005f5908: 2f46     mov     r7, r5
+  0x005f590a: e7d3     blo     #0x5f58dc
+  0x005f590c: 00e0     b       #0x5f5910
+  0x005f590e: 2646     mov     r6, r4
+  0x005f5910: 1820     movs    r0, #0x18
+  0x005f5912: 9df033fc bl      #0x69317c  ; -> __udivdi3+0x560
+  0x005f5916: 0546     mov     r5, r0
+  0x005f5918: 3946     mov     r1, r7
+  0x005f591a: 3246     mov     r2, r6
+  0x005f591c: c9f0a6ff bl      #0x6bf86c  ; -> 0x006bf86c
+  0x005f5920: 002f     cmp     r7, #0
+  0x005f5922: 02d0     beq     #0x5f592a
+  0x005f5924: 3846     mov     r0, r7
+  0x005f5926: 9df0d9fb bl      #0x6930dc  ; -> __udivdi3+0x4c0
+  0x005f592a: 2846     mov     r0, r5
+  0x005f592c: 03b0     add     sp, #0xc
+  0x005f592e: f0bd     pop     {r4, r5, r6, r7, pc}
+
+===== _ZN12ngHttpClient13CreateReqBodyEP10ngJsonHash
+      va=0x005cfe40 len=0x54 =====
+  0x005cfe40: f0b5     push    {r4, r5, r6, r7, lr}
+  0x005cfe42: 81b0     sub     sp, #4
+  0x005cfe44: 0c46     mov     r4, r1
+  0x005cfe46: 0546     mov     r5, r0
+  0x005cfe48: 2020     movs    r0, #0x20
+  0x005cfe4a: c3f097f9 bl      #0x69317c  ; -> __udivdi3+0x560
+  0x005cfe4e: 0646     mov     r6, r0
+  0x005cfe50: c8f0ccfa bl      #0x6983ec  ; -> 0x006983ec
+  0x005cfe54: 0421     movs    r1, #4
+  0x005cfe56: 3046     mov     r0, r6
+  0x005cfe58: e3f0e0fc bl      #0x6b381c  ; -> 0x006b381c
+  0x005cfe5c: 7768     ldr     r7, [r6, #4]
+  0x005cfe5e: 2868     ldr     r0, [r5]
+  0x005cfe60: 4169     ldr     r1, [r0, #0x14]
+  0x005cfe62: 2846     mov     r0, r5
+  0x005cfe64: 8847     blx     r1
+  0x005cfe66: 0246     mov     r2, r0
+  0x005cfe68: 074d     ldr     r5, [pc, #0x1c]  ; lit=0x0018acb2 "N11CStoreModel10GetValueAtEii"
+  0x005cfe6a: 7d44     add     r5, pc  ; picbase=0x0075ab20
+  0x005cfe6c: 0748     ldr     r0, [pc, #0x1c]  ; lit=0xfffa972f
+  0x005cfe6e: 4119     adds    r1, r0, r5  ; ->0x0070424f "header"
+  0x005cfe70: 3846     mov     r0, r7
+  0x005cfe72: d8f003ff bl      #0x6a8c7c  ; -> 0x006a8c7c
+  0x005cfe76: 0648     ldr     r0, [pc, #0x18]  ; lit=0xfffaa685
+  0x005cfe78: 4119     adds    r1, r0, r5  ; ->0x007051a5 "command"
+  0x005cfe7a: 3846     mov     r0, r7
+  0x005cfe7c: 2246     mov     r2, r4
+  0x005cfe7e: d8f0fdfe bl      #0x6a8c7c  ; -> 0x006a8c7c
+  0x005cfe82: 3046     mov     r0, r6
+  0x005cfe84: 01b0     add     sp, #4
+  0x005cfe86: f0bd     pop     {r4, r5, r6, r7, pc}
+  0x005cfe88: b2ac     add     r4, sp, #0x2c8
+  0x005cfe8a: 1800     movs    r0, r3
+  0x005cfe8c: 2f97     str     r7, [sp, #0xbc]

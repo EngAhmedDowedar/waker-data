@@ -1,0 +1,149 @@
+======================================================================
+PART A: encode-path disassembly
+======================================================================
+
+===== _ZN11CHttpClient6PutURLER10ngStringV2P10ngJsonHash  va=0x0044e2b4 len=0x24 =====
+  0x0044e2b4: 70b5     push    {r4, r5, r6, lr}
+  0x0044e2b6: 1446     mov     r4, r2
+  0x0044e2b8: 0d46     mov     r5, r1
+  0x0044e2ba: 0646     mov     r6, r0
+  0x0044e2bc: 44f2a6ff bl      #0x69320c  ; -> 0x0069320c
+  0x0044e2c0: 5af28cfc bl      #0x6a8bdc  ; -> 0x006a8bdc
+  0x0044e2c4: 0028     cmp     r0, #0
+  0x0044e2c6: 01d0     beq     #0x44e2cc
+  0x0044e2c8: 0220     movs    r0, #2
+  0x0044e2ca: b063     str     r0, [r6, #0x38]
+  0x0044e2cc: 3046     mov     r0, r6
+  0x0044e2ce: 2946     mov     r1, r5
+  0x0044e2d0: 2246     mov     r2, r4
+  0x0044e2d2: 5af28bfc bl      #0x6a8bec  ; -> 0x006a8bec
+  0x0044e2d6: 70bd     pop     {r4, r5, r6, pc}
+
+===== _ZN12ngHttpClient6PutURLER10ngStringV2P10ngJsonHash  va=0x005cfdbc len=0x82 =====
+  0x005cfdbc: f0b5     push    {r4, r5, r6, r7, lr}
+  0x005cfdbe: 83b0     sub     sp, #0xc
+  0x005cfdc0: 0291     str     r1, [sp, #8]
+  0x005cfdc2: 0646     mov     r6, r0
+  0x005cfdc4: 0124     movs    r4, #1
+  0x005cfdc6: f462     str     r4, [r6, #0x2c]
+  0x005cfdc8: 1146     mov     r1, r2
+  0x005cfdca: edf037ff bl      #0x6bdc3c  ; -> 0x006bdc3c
+  0x005cfdce: 0190     str     r0, [sp, #4]
+  0x005cfdd0: edf03cff bl      #0x6bdc4c  ; -> 0x006bdc4c
+  0x005cfdd4: 0746     mov     r7, r0
+  0x005cfdd6: edf081fc bl      #0x6bd6dc  ; -> 0x006bd6dc
+  0x005cfdda: 0168     ldr     r1, [r0]
+  0x005cfddc: 0969     ldr     r1, [r1, #0x10]
+  0x005cfdde: 8847     blx     r1
+  0x005cfde0: 7060     str     r0, [r6, #4]
+  0x005cfde2: 5c21     movs    r1, #0x5c
+  0x005cfde4: 4454     strb    r4, [r0, r1]
+  0x005cfde6: b06b     ldr     r0, [r6, #0x38]
+  0x005cfde8: 7168     ldr     r1, [r6, #4]
+  0x005cfdea: 0866     str     r0, [r1, #0x60]
+  0x005cfdec: 7068     ldr     r0, [r6, #4]
+  0x005cfdee: 0168     ldr     r1, [r0]
+  0x005cfdf0: 096c     ldr     r1, [r1, #0x40]
+  0x005cfdf2: 8847     blx     r1
+  0x005cfdf4: 0546     mov     r5, r0
+  0x005cfdf6: 2868     ldr     r0, [r5]
+  0x005cfdf8: 8269     ldr     r2, [r0, #0x18]
+  0x005cfdfa: 0221     movs    r1, #2
+  0x005cfdfc: 2846     mov     r0, r5
+  0x005cfdfe: 9047     blx     r2
+  0x005cfe00: a86a     ldr     r0, [r5, #0x28]
+  0x005cfe02: c069     ldr     r0, [r0, #0x1c]
+  0x005cfe04: 0090     str     r0, [sp]
+  0x005cfe06: 3868     ldr     r0, [r7]
+  0x005cfe08: 4169     ldr     r1, [r0, #0x14]
+  0x005cfe0a: 3846     mov     r0, r7
+  0x005cfe0c: 8847     blx     r1
+  0x005cfe0e: 0446     mov     r4, r0
+  0x005cfe10: 3846     mov     r0, r7
+  0x005cfe12: c4f01bfa bl      #0x69424c  ; -> 0x0069424c
+  0x005cfe16: 0246     mov     r2, r0
+  0x005cfe18: 2835     adds    r5, #0x28
+  0x005cfe1a: 2846     mov     r0, r5
+  0x005cfe1c: 2146     mov     r1, r4
+  0x005cfe1e: 009b     ldr     r3, [sp]
+  0x005cfe20: 9847     blx     r3
+  0x005cfe22: 7068     ldr     r0, [r6, #4]
+  0x005cfe24: 0168     ldr     r1, [r0]
+  0x005cfe26: ca69     ldr     r2, [r1, #0x1c]
+  0x005cfe28: 0299     ldr     r1, [sp, #8]
+  0x005cfe2a: 9047     blx     r2
+  0x005cfe2c: 0198     ldr     r0, [sp, #4]
+  0x005cfe2e: 0028     cmp     r0, #0
+  0x005cfe30: 02d0     beq     #0x5cfe38
+  0x005cfe32: 0168     ldr     r1, [r0]
+  0x005cfe34: 4968     ldr     r1, [r1, #4]
+  0x005cfe36: 8847     blx     r1
+  0x005cfe38: 0020     movs    r0, #0
+  0x005cfe3a: 03b0     add     sp, #0xc
+  0x005cfe3c: f0bd     pop     {r4, r5, r6, r7, pc}
+
+===== _ZN10ngStringV212Base64EncodeEP12ngByteBuffer  va=0x005cf2ac len=0x5c =====
+  0x005cf2ac: 70b5     push    {r4, r5, r6, lr}
+  0x005cf2ae: 82b0     sub     sp, #8
+  0x005cf2b0: 0446     mov     r4, r0
+  0x005cf2b2: 0026     movs    r6, #0
+  0x005cf2b4: 0196     str     r6, [sp, #4]
+  0x005cf2b6: 2068     ldr     r0, [r4]
+  0x005cf2b8: 4169     ldr     r1, [r0, #0x14]
+  0x005cf2ba: 2046     mov     r0, r4
+  0x005cf2bc: 8847     blx     r1
+  0x005cf2be: 6168     ldr     r1, [r4, #4]
+  0x005cf2c0: 01ab     add     r3, sp, #4
+  0x005cf2c2: 3246     mov     r2, r6
+  0x005cf2c4: ecf072fe bl      #0x6bbfac  ; -> 0x006bbfac
+  0x005cf2c8: 0446     mov     r4, r0
+  0x005cf2ca: 1820     movs    r0, #0x18
+  0x005cf2cc: c3f056ff bl      #0x69317c  ; -> 0x0069317c
+  0x005cf2d0: 0546     mov     r5, r0
+  0x005cf2d2: eef0f3fb bl      #0x6bdabc  ; -> 0x006bdabc
+  0x005cf2d6: 0a48     ldr     r0, [pc, #0x28]  ; lit=0x0018b844 "D1Ev"
+  0x005cf2d8: 7844     add     r0, pc  ; picbase=0x0075ab20
+  0x005cf2da: 0a49     ldr     r1, [pc, #0x28]  ; lit=0xfffff510
+  0x005cf2dc: 0818     adds    r0, r1, r0  ; ->0x0075a030
+  0x005cf2de: 0068     ldr     r0, [r0]
+  0x005cf2e0: 0830     adds    r0, #8
+  0x005cf2e2: 2860     str     r0, [r5]
+  0x005cf2e4: f243     mvns    r2, r6
+  0x005cf2e6: 2846     mov     r0, r5
+  0x005cf2e8: 2146     mov     r1, r4
+  0x005cf2ea: c3f077fe bl      #0x692fdc  ; -> 0x00692fdc
+  0x005cf2ee: 002c     cmp     r4, #0
+  0x005cf2f0: 02d0     beq     #0x5cf2f8
+  0x005cf2f2: 2046     mov     r0, r4
+  0x005cf2f4: c3f0f2fe bl      #0x6930dc  ; -> 0x006930dc
+  0x005cf2f8: 2846     mov     r0, r5
+  0x005cf2fa: 02b0     add     sp, #8
+  0x005cf2fc: 70bd     pop     {r4, r5, r6, pc}
+  0x005cf2fe: c046     mov     r8, r8
+
+--- CheckVersion send target 0x6a8bcc (veneer?) ---
+
+===== send_target_0x6a8bcc  va=0x006a8bcc len=0x30 =====
+  0x006a8bcc: 7847     bx      pc
+  0x006a8bce: c046     mov     r8, r8
+
+======================================================================
+PART B: captured /checkversion request ciphertext
+======================================================================
+found 96 checkversion request bodies; analyzing last one
+b64 len: 628
+decoded len: 469
+first 48 bytes hex: 344c064f1f040f094456555b50140803415652475b1050590848460e435041145043531844590d045b5d5c0d4509510c
+first 48 bytes repr: b'4L\x06O\x1f\x04\x0f\tDVU[P\x14\x08\x03AVRG[\x10PY\x08HF\x0eCPA\x14PCS\x18DY\r\x04[]\\\rE\tQ\x0c'
+magic check: zlib(78..)? False gzip(1f8b)? False
+byte entropy: 6.061 bits/byte over 86 distinct values
+index of coincidence (norm, ~1.0=random, >1.7=text): 4.052
+autocorrelation (lag: matches) lags 1..40:
+  avg matches: 6.7 ; spikes(>1.6x avg): [(13, 11), (16, 12), (18, 12), (23, 13), (27, 13)]
+  KP-XOR pt=b'{"header"'       -> key_bytes=4f6e6e2a7e606a7b66 ascii=b'Onn*~`j{f'
+  KP-XOR pt=b'{"command"'      -> key_bytes=4f6e652072696e672074 ascii=b'One ring t'
+  KP-XOR pt=b'header='         -> key_bytes=5c29672b7a7632 ascii=b'\\)g+zv2'
+  KP-XOR pt=b'command='        -> key_bytes=57236b227e6a6b34 ascii=b'W#k"~jk4'
+  KP-XOR pt=b'{"head'          -> key_bytes=4f6e6e2a7e60 ascii=b'Onn*~`'
+  KP-XOR pt=b'\x00\x00'        -> key_bytes=344c ascii=b'4L'
+  KP-XOR pt=b'{"'              -> key_bytes=4f6e ascii=b'On'

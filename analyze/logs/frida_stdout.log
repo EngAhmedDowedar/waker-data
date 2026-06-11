@@ -1,0 +1,98 @@
+[JAVA-DUMP] 18:35:28.799 ============================================
+[JAVA-DUMP] 18:35:28.799   Waker Java-Layer Protocol Dump
+[JAVA-DUMP] 18:35:28.799   (Houdini/x86-compatible)
+[JAVA-DUMP] 18:35:28.799 ============================================
+[JAVA-DUMP] 18:35:29.092 \u2713 Hooked NGHttpSession.doPut
+[JAVA-DUMP] 18:35:29.093 \u2713 Hooked NextGenEngine.nge_log
+[JAVA-DUMP] 18:35:29.093 \u2713 Hooked NextGenEngine.nge_logf
+[JAVA-DUMP] 18:35:29.097 \u2713 Hooked System.loadLibrary
+[JAVA-DUMP] 18:35:29.105 \u2713 Hooked android.util.Log (d/i/e) with game filter
+[JAVA-DUMP] 18:35:29.108 Main class methods (18):
+[JAVA-DUMP] 18:35:29.109   CheckExpansionFile - private void com.anansimobile.city_ar.Main.CheckExpansionFile()
+[JAVA-DUMP] 18:35:29.109   expansionFilesDelivered - private boolean com.anansimobile.city_ar.Main.expansionFilesDelivered()
+[JAVA-DUMP] 18:35:29.109   ChangeInputStr - public java.lang.String com.anansimobile.city_ar.Main.ChangeInputStr(java.lang.String,java.lang.String)
+[JAVA-DUMP] 18:35:29.109   CheckPackageName - public boolean com.anansimobile.city_ar.Main.CheckPackageName(java.lang.String)
+[JAVA-DUMP] 18:35:29.110   getNotificationIcon - public int com.anansimobile.city_ar.Main.getNotificationIcon()
+[JAVA-DUMP] 18:35:29.110   handleBackPressed - public void com.anansimobile.city_ar.Main.handleBackPressed()
+[JAVA-DUMP] 18:35:29.111   onActivityResult - public void com.anansimobile.city_ar.Main.onActivityResult(int,int,android.content.Intent)
+[JAVA-DUMP] 18:35:29.111   onCreate - protected void com.anansimobile.city_ar.Main.onCreate(android.os.Bundle)
+[JAVA-DUMP] 18:35:29.111   onDestroy - public void com.anansimobile.city_ar.Main.onDestroy()
+[JAVA-DUMP] 18:35:29.112   onDownloadProgress - public void com.anansimobile.city_ar.Main.onDownloadProgress(com.google.android.vending.expansion.downloader.DownloadProgressInfo)
+[JAVA-DUMP] 18:35:29.112   onDownloadStateChanged - public void com.anansimobile.city_ar.Main.onDownloadStateChanged(int)
+[JAVA-DUMP] 18:35:29.112   onExitGameCancel - public void com.anansimobile.city_ar.Main.onExitGameCancel()
+[JAVA-DUMP] 18:35:29.112   onExitGameNo - public void com.anansimobile.city_ar.Main.onExitGameNo()
+[JAVA-DUMP] 18:35:29.113   onPause - public void com.anansimobile.city_ar.Main.onPause()
+[JAVA-DUMP] 18:35:29.113   onResume - public void com.anansimobile.city_ar.Main.onResume()
+[JAVA-DUMP] 18:35:29.113   onServiceConnected - public void com.anansimobile.city_ar.Main.onServiceConnected(android.os.Messenger)
+[JAVA-DUMP] 18:35:29.113   onStart - protected void com.anansimobile.city_ar.Main.onStart()
+[JAVA-DUMP] 18:35:29.113   onStop - protected void com.anansimobile.city_ar.Main.onStop()
+[JAVA-DUMP] 18:35:29.117 \u2713 Hooked java.net.URL.openConnection
+[JAVA-DUMP] 18:35:29.117 NGHttpSession methods (1):
+[JAVA-DUMP] 18:35:29.117   public static void com.anansimobile.nge.NGHttpSession.doPut(java.lang.String,byte[],long)
+[JAVA-DUMP] 18:35:29.119 NextGenEngine methods (17):
+[JAVA-DUMP] 18:35:29.119   public static int[] com.anansimobile.nge.NextGenEngine.CreateStringTextureCache(int,java.lang.String,java.lang.String,int,int,int,int,int)
+[JAVA-DUMP] 18:35:29.119   public static long com.anansimobile.nge.NextGenEngine.CreateTextureWithString(int,java.lang.String,java.lang.String,int,int,int,int,int)
+[JAVA-DUMP] 18:35:29.120   public static byte[] com.anansimobile.nge.NextGenEngine.ReadAsset(java.lang.String)
+[JAVA-DUMP] 18:35:29.120   public static void com.anansimobile.nge.NextGenEngine.SetUseGooglePlayExtractImage()
+[JAVA-DUMP] 18:35:29.120   public static void com.anansimobile.nge.NextGenEngine.SetUseStrokeUseHightSpace()
+[JAVA-DUMP] 18:35:29.120   public static native void com.anansimobile.nge.NextGenEngine.bitmapDataDidLoad(int,android.graphics.Bitmap,int,int)
+[JAVA-DUMP] 18:35:29.121   public static void com.anansimobile.nge.NextGenEngine.exportImageAssets(java.lang.String,java.lang.String,float,java.lang.String)
+[JAVA-DUMP] 18:35:29.121   public static void com.anansimobile.nge.NextGenEngine.extractFileFromExpansion(java.lang.String)
+[JAVA-DUMP] 18:35:29.122   public static boolean com.anansimobile.nge.NextGenEngine.isAssetExist(java.lang.String)
+[JAVA-DUMP] 18:35:29.122   public static boolean com.anansimobile.nge.NextGenEngine.isDebugMode()
+[JAVA-DUMP] 18:35:29.122   private static void com.anansimobile.nge.NextGenEngine.loadBitmap(int,android.graphics.Bitmap)
+[JAVA-DUMP] 18:35:29.122   public static void com.anansimobile.nge.NextGenEngine.loadBitmapData(int,java.lang.String)
+[JAVA-DUMP] 18:35:29.123   public static void com.anansimobile.nge.NextGenEngine.loadPackageBitmapData(int,byte[],int)
+[JAVA-DUMP] 18:35:29.123   public static void com.anansimobile.nge.NextGenEngine.nge_log(java.lang.String)
+[JAVA-DUMP] 18:35:29.123   public static void com.anansimobile.nge.NextGenEngine.nge_logf(java.lang.String,java.lang.Object[])
+[JAVA-DUMP] 18:35:29.123   public static byte[] com.anansimobile.nge.NextGenEngine.openFile(java.lang.String)
+[JAVA-DUMP] 18:35:29.123   public static void com.anansimobile.nge.NextGenEngine.setMediaPlayer(android.media.MediaPlayer,java.lang.String)
+[JAVA-DUMP] 18:35:29.126 \u2713 Hooked SharedPreferences.putString (filtered)
+[JAVA-DUMP] 18:35:29.128 NGDevice methods (24):
+[JAVA-DUMP] 18:35:29.128   public static void com.anansimobile.nge.NGDevice.InitDeviceId()
+[JAVA-DUMP] 18:35:29.128   public static long com.anansimobile.nge.NGDevice.getCurrentTimeMS()
+[JAVA-DUMP] 18:35:29.128   public static java.lang.String com.anansimobile.nge.NGDevice.getDeviceAdfa()
+[JAVA-DUMP] 18:35:29.129   public static java.lang.String com.anansimobile.nge.NGDevice.getDeviceId()
+[JAVA-DUMP] 18:35:29.129   public static int com.anansimobile.nge.NGDevice.getDeviceSDKVersion()
+[JAVA-DUMP] 18:35:29.129   public static java.lang.String com.anansimobile.nge.NGDevice.getDeviceVersion()
+[JAVA-DUMP] 18:35:29.129   public static java.io.File com.anansimobile.nge.NGDevice.getDocumentRoot()
+[JAVA-DUMP] 18:35:29.130   public static java.io.File com.anansimobile.nge.NGDevice.getExternalDocumentRoot()
+[JAVA-DUMP] 18:35:29.130   public static java.lang.String com.anansimobile.nge.NGDevice.getFilePath(java.lang.String)
+[JAVA-DUMP] 18:35:29.130   public static java.lang.String com.anansimobile.nge.NGDevice.getFileWritePath(java.lang.String)
+[JAVA-DUMP] 18:35:29.130   public static long com.anansimobile.nge.NGDevice.getFreeMemory()
+[JAVA-DUMP] 18:35:29.130   public static java.lang.String com.anansimobile.nge.NGDevice.getLocaleCountry()
+[JAVA-DUMP] 18:35:29.131   public static java.lang.String com.anansimobile.nge.NGDevice.getLocaleLanguage()
+[JAVA-DUMP] 18:35:29.131   public static java.lang.String com.anansimobile.nge.NGDevice.getLocaleLanguageFull()
+[JAVA-DUMP] 18:35:29.131   public static java.lang.String com.anansimobile.nge.NGDevice.getMacAddress()
+[JAVA-DUMP] 18:35:29.131   public static java.lang.String com.anansimobile.nge.NGDevice.getModel()
+[JAVA-DUMP] 18:35:29.132   public static java.lang.String com.anansimobile.nge.NGDevice.getObbFilePath(java.lang.String)
+[JAVA-DUMP] 18:35:29.132   public static java.lang.String com.anansimobile.nge.NGDevice.getObbPath()
+[JAVA-DUMP] 18:35:29.132   public static java.lang.String com.anansimobile.nge.NGDevice.getPackageName()
+[JAVA-DUMP] 18:35:29.132   public static int com.anansimobile.nge.NGDevice.getScreenHeight()
+[JAVA-DUMP] 18:35:29.133   private static void com.anansimobile.nge.NGDevice.getScreenSize(android.graphics.Point)
+[JAVA-DUMP] 18:35:29.133   public static int com.anansimobile.nge.NGDevice.getScreenWidth()
+[JAVA-DUMP] 18:35:29.133   public static boolean com.anansimobile.nge.NGDevice.isFileExist(java.lang.String)
+[JAVA-DUMP] 18:35:29.133   public static void com.anansimobile.nge.NGDevice.launchUrl(java.lang.String)
+[JAVA-DUMP] 18:35:29.134 Hooking 1 overload(s) of NGDevice.launchUrl:
+[JAVA-DUMP] 18:35:29.134   [0] launchUrl(java.lang.String)  ret=void
+[JAVA-DUMP] 18:35:29.134 \u2713 NGDevice.launchUrl hooks installed (suppress-on-empty, pass-through otherwise)
+[JAVA-DUMP] 18:35:29.135 ============================================
+[JAVA-DUMP] 18:35:29.135   Java hooks active. Monitoring...
+[JAVA-DUMP] 18:35:29.135 ============================================
+[NATIVE-ABORT] 15:35:29.137   hooked: abort @ 0xc714fe70
+[NATIVE-ABORT] 15:35:29.137   hooked: raise @ 0xc7158eb0
+[NATIVE-ABORT] 15:35:29.137   hooked: __assert2 @ 0xc7150350
+[NATIVE-ABORT] 15:35:29.138   hooked: __android_log_assert @ 0xc3be93f0
+[NATIVE-ABORT] 15:35:29.138   hooked: __android_log_print @ 0xc3be92b0
+[NATIVE-ABORT] 15:35:29.138   hooked: sigaction
+[NATIVE-ABORT] 15:35:29.138   (native ARM hook disabled — HOOK_NATIVE_ARM=false; Houdini-safe)
+[NATIVE-ABORT] 15:35:29.139   libart base = 0xc2f9c000 name=libart.so  (x86-native, safe)
+[NATIVE-ABORT] 15:35:29.154   hooked: GetStaticMethodID (launchUrl filter) @ 0xc30c32e0
+[NATIVE-ABORT] 15:35:29.164   hooked: GetMethodID (launchUrl filter) @ 0xc30c0570
+[NATIVE-ABORT] 15:35:29.166   hooked: CallStaticVoidMethodV @ 0xc30c43a0
+[NATIVE-ABORT] 15:35:29.169   hooked: CallStaticVoidMethodA @ 0xc338a2d0
+[NATIVE-ABORT] 15:35:29.170   hooked: CallVoidMethodV @ 0xc30c1630
+[NATIVE-ABORT] 15:35:29.171   hooked: CallVoidMethodA @ 0xc3375910
+[NATIVE-ABORT] 15:35:29.176   hooked: NewStringUTF @ 0xc30c5870
+[NATIVE-ABORT] 15:35:29.593 [NGE_LOGF] will open %s eng_pic_mash.png
+[NATIVE-ABORT] 15:35:29.594 [NGE_LOG] not exist in Documents/, will find it in asset!

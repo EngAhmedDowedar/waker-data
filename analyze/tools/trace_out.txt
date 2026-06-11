@@ -1,0 +1,116 @@
+=== CLoadingScreen::OnReceiveResponse va=0x0048fe21 size=1528 ===
+  0x0048fe20: f0b5     push {r4, r5, r6, r7, lr}
+  0x0048fe22: 99b0     sub sp, #0x64
+  0x0048fe24: 1646     mov r6, r2
+  0x0048fe26: 0446     mov r4, r0
+  0x0048fe28: e329     cmp r1, #0xe3
+  0x0048fe2a: 09dc     bgt #0x48fe40
+  0x0048fe2c: 6929     cmp r1, #0x69
+  0x0048fe2e: 21d0     beq #0x48fe74
+  0x0048fe30: 7929     cmp r1, #0x79
+  0x0048fe32: 49d1     bne #0x48fec8
+  0x0048fe34: 03f2eaf9 bl #0x69320c
+  0x0048fe38: 2049     ldr r1, [pc, #0x80]
+  0x0048fe3a: 0022     movs r2, #0
+  0x0048fe3c: 4254     strb r2, [r0, r1]
+  0x0048fe3e: 95e2     b #0x49036c
+  0x0048fe40: e429     cmp r1, #0xe4
+  0x0048fe42: 00d0     beq #0x48fe46
+  0x0048fe44: 92e2     b #0x49036c
+  0x0048fe46: 03f2e1f9 bl #0x69320c
+  0x0048fe4a: 1d49     ldr r1, [pc, #0x74]
+  0x0048fe4c: 4018     adds r0, r0, r1
+  0x0048fe4e: 0821     movs r1, #8
+  0x0048fe50: 18f21cff bl #0x6a8c8c
+  0x0048fe54: 0028     cmp r0, #0
+  0x0048fe56: 00d0     beq #0x48fe5a
+  0x0048fe58: 88e2     b #0x49036c
+  0x0048fe5a: 03f2d7f9 bl #0x69320c
+  0x0048fe5e: 1749     ldr r1, [pc, #0x5c]
+  0x0048fe60: 0022     movs r2, #0
+  0x0048fe62: 4254     strb r2, [r0, r1]
+  0x0048fe64: 05f262fa bl #0x69532c
+  0x0048fe68: 3146     mov r1, r6
+  0x0048fe6a: 1bf2a7fc bl #0x6ab7bc
+  0x0048fe6e: 1bf245fc bl #0x6ab6fc
+  0x0048fe72: 7be2     b #0x49036c
+  0x0048fe74: 03f2caf9 bl #0x69320c
+  0x0048fe78: 1149     ldr r1, [pc, #0x44]
+  0x0048fe7a: 4018     adds r0, r0, r1
+  0x0048fe7c: 0721     movs r1, #7
+  0x0048fe7e: 18f205ff bl #0x6a8c8c
+  0x0048fe82: 0028     cmp r0, #0
+  0x0048fe84: 00d0     beq #0x48fe88
+  0x0048fe86: 71e2     b #0x49036c
+  0x0048fe88: 03f2c0f9 bl #0x69320c
+  0x0048fe8c: 0b49     ldr r1, [pc, #0x2c]
+  0x0048fe8e: 0022     movs r2, #0
+  0x0048fe90: 4254     strb r2, [r0, r1]
+  0x0048fe92: 03f2bbf9 bl #0x69320c
+  0x0048fe96: 002e     cmp r6, #0
+  0x0048fe98: 06d0     beq #0x48fea8
+  0x0048fe9a: 03f2b7f9 bl #0x69320c
+  0x0048fe9e: 0949     ldr r1, [pc, #0x24]
+  0x0048fea0: 4018     adds r0, r0, r1
+  0x0048fea2: 3146     mov r1, r6
+  0x0048fea4: 18f222ff bl #0x6a8cec
+  0x0048fea8: 03f2b0f9 bl #0x69320c
+  0x0048feac: 0449     ldr r1, [pc, #0x10]
+  0x0048feae: 4018     adds r0, r0, r1
+  0x0048feb0: 0721     movs r1, #7
+  0x0048feb2: 0822     movs r2, #8
+  0x0048feb4: 0023     movs r3, #0
+  0x0048feb6: 18f229ff bl #0x6a8d0c
+  0x0048feba: 57e2     b #0x49036c
+  0x0048febc: f01b     subs r0, r6, r7
+  0x0048febe: 0000     movs r0, r0
+  0x0048fec0: cc1b     subs r4, r1, r7
+  0x0048fec2: 0000     movs r0, r0
+  0x0048fec4: a808     lsrs r0, r5, #2
+  0x0048fec6: 0000     movs r0, r0
+  0x0048fec8: 8029     cmp r1, #0x80
+  0x0048feca: 00d0     beq #0x48fece
+  0x0048fecc: 4ee2     b #0x49036c
+  0x0048fece: 002e     cmp r6, #0
+  0x0048fed0: 00d1     bne #0x48fed4
+  0x0048fed2: 4be2     b #0x49036c
+  0x0048fed4: 03f29af9 bl #0x69320c
+  0x0048fed8: 0349     ldr r1, [pc, #0xc]
+  0x0048feda: 4018     adds r0, r0, r1
+  0x0048fedc: 0121     movs r1, #1
+  0x0048fede: 18f2d5fe bl #0x6a8c8c
+  0x0048fee2: 0028     cmp r0, #0
+  0x0048fee4: 02d0     beq #0x48feec
+  0x0048fee6: 41e2     b #0x49036c
+  0x0048fee8: cc1b     subs r4, r1, r7
+  0x0048feea: 0000     movs r0, r0
+  0x0048feec: 03f28ef9 bl #0x69320c
+  0x0048fef0: 0849     ldr r1, [pc, #0x20]
+  0x0048fef2: 0027     movs r7, #0
+  0x0048fef4: 4754     strb r7, [r0, r1]
+  0x0048fef6: 0848     ldr r0, [pc, #0x20]
+  0x0048fef8: 7844     add r0, pc
+  0x0048fefa: 0849     ldr r1, [pc, #0x20]
+  0x0048fefc: 0918     adds r1, r1, r0
+  0x0048fefe: 7068     ldr r0, [r6, #4]
+  0x0048ff00: 026c     ldr r2, [r0, #0x40]
+  0x0048ff02: 301d     adds r0, r6, #4
+  0x0048ff04: 0490     str r0, [sp, #0x10]
+  0x0048ff06: 9047     blx r2
+  0x0048ff08: 0028     cmp r0, #0
+  0x0048ff0a: 3a46     mov r2, r7
+  0x0048ff0c: 3946     mov r1, r7
+  0x0048ff0e: 0bd0     beq #0x48ff28
+  0x0048ff10: 06e0     b #0x48ff20
+  0x0048ff12: c046     mov r8, r8
+  0x0048ff14: f01b     subs r0, r6, r7
+  0x0048ff16: 0000     movs r0, r0
+  0x0048ff18: 24ac     add r4, sp, #0x90
+  0x0048ff1a: 2c00     movs r4, r5
+  0x0048ff1c: 8a3c     subs r4, #0x8a
+
+0x693b7c context:
+  nearest preceding sym: 0x00692c1c __udivdi3
+  disasm 0x693b7c (24 bytes):
+  0x00693b7c: 7847     bx pc
+  0x00693b7e: c046     mov r8, r8

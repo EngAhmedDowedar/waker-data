@@ -1,0 +1,9 @@
+Compound-PIC xrefs to "launchUrl" string (va 0x7054f4): 1
+
+  add r?,pc @ va=0x005efbf2  (global_base = 0x0075ab20)
+    in _ZN15ngDeviceAndroid9LaunchURLEPKc (@0x005efb9c)
+    ldr lit B @0x005efbf4 = 0xfffaa9d4
+    adds @0x005efbf6  -> string va = 0x007054f4
+
+Owners (1):
+  _ZN15ngDeviceAndroid9LaunchURLEPKc  -> 1 site(s):  0x005efbf2

@@ -1,0 +1,15 @@
+{
+  "name": "waker-local-server",
+  "version": "1.0.0",
+  "description": "Local server emulator for Waker (وكر الاوغاد / Wild City)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "net": "^1.0.2"
+  }
+}

@@ -1,0 +1,161 @@
+
+===== CServerMnger::ParseRoleList  va=0x0056f19a len=0xde =====
+  0x0056f19a: f0b5     push    {r4, r5, r6, r7, lr}
+  0x0056f19c: 85b0     sub     sp, #0x14
+  0x0056f19e: 0c46     mov     r4, r1
+  0x0056f1a0: 0546     mov     r5, r0
+  0x0056f1a2: 002c     cmp     r4, #0
+  0x0056f1a4: 66d0     beq     #0x56f274
+  0x0056f1a6: 25f1a9ff bl      #0x6950fc -> 0x006950fc
+  0x0056f1aa: 806a     ldr     r0, [r0, #0x28]
+  0x0056f1ac: 0390     str     r0, [sp, #0xc] (iter vtbl)
+  0x0056f1ae: 2846     mov     r0, r5
+  0x0056f1b0: 48f1ccfe bl      #0x6b7f4c -> 0x006b7f4c
+  0x0056f1b4: 6068     ldr     r0, [r4, #4]
+  0x0056f1b6: 4269     ldr     r2, [r0, #0x14] (iter vtbl)
+  0x0056f1b8: 201d     adds    r0, r4, #4
+  0x0056f1ba: 0026     movs    r6, #0
+  0x0056f1bc: 0296     str     r6, [sp, #8] (iter vtbl)
+  0x0056f1be: 3146     mov     r1, r6
+  0x0056f1c0: 9047     blx     r2
+  0x0056f1c2: 0446     mov     r4, r0
+  0x0056f1c4: f043     mvns    r0, r6
+  0x0056f1c6: 0490     str     r0, [sp, #0x10]
+  0x0056f1c8: 0195     str     r5, [sp, #4]
+  0x0056f1ca: 2f46     mov     r7, r5
+  0x0056f1cc: 2c37     adds    r7, #0x2c
+  0x0056f1ce: 04e0     b       #0x56f1da
+  0x0056f1d0: 9720     movs    r0, #0x97
+  0x0056f1d2: c000     lsls    r0, r0, #3
+  0x0056f1d4: 0121     movs    r1, #1
+  0x0056f1d6: 0291     str     r1, [sp, #8] (iter vtbl)
+  0x0056f1d8: 3154     strb    r1, [r6, r0]
+  0x0056f1da: 2068     ldr     r0, [r4] <==+64 CRASH
+  0x0056f1dc: 8168     ldr     r1, [r0, #8] (iter vtbl)
+  0x0056f1de: 2046     mov     r0, r4
+  0x0056f1e0: 8847     blx     r1
+  0x0056f1e2: 0028     cmp     r0, #0
+  0x0056f1e4: 25d0     beq     #0x56f232
+  0x0056f1e6: 2068     ldr     r0, [r4]
+  0x0056f1e8: c168     ldr     r1, [r0, #0xc] (iter vtbl)
+  0x0056f1ea: 2046     mov     r0, r4
+  0x0056f1ec: 8847     blx     r1
+  0x0056f1ee: 0546     mov     r5, r0
+  0x0056f1f0: ad20     movs    r0, #0xad
+  0x0056f1f2: c000     lsls    r0, r0, #3
+  0x0056f1f4: 23f1c2ff bl      #0x69317c -> op_new
+  0x0056f1f8: 0646     mov     r6, r0
+  0x0056f1fa: 24f15ffe bl      #0x693ebc -> __udivdi3+0x12a0
+  0x0056f1fe: 3046     mov     r0, r6
+  0x0056f200: 2946     mov     r1, r5
+  0x0056f202: 24f163fe bl      #0x693ecc -> __udivdi3+0x12b0
+  0x0056f206: 3846     mov     r0, r7
+  0x0056f208: 3146     mov     r1, r6
+  0x0056f20a: 24f187f8 bl      #0x69331c -> list.add
+  0x0056f20e: 3068     ldr     r0, [r6]
+  0x0056f210: 0169     ldr     r1, [r0, #0x10]
+  0x0056f212: 3046     mov     r0, r6
+  0x0056f214: 8847     blx     r1
+  0x0056f216: 0399     ldr     r1, [sp, #0xc] (iter vtbl)
+  0x0056f218: 8142     cmp     r1, r0
+  0x0056f21a: d9d0     beq     #0x56f1d0
+  0x0056f21c: 0020     movs    r0, #0
+  0x0056f21e: c043     mvns    r0, r0
+  0x0056f220: 0499     ldr     r1, [sp, #0x10]
+  0x0056f222: 8142     cmp     r1, r0
+  0x0056f224: d9d1     bne     #0x56f1da
+  0x0056f226: 3068     ldr     r0, [r6]
+  0x0056f228: 0169     ldr     r1, [r0, #0x10]
+  0x0056f22a: 3046     mov     r0, r6
+  0x0056f22c: 8847     blx     r1
+  0x0056f22e: 0490     str     r0, [sp, #0x10]
+  0x0056f230: d3e7     b       #0x56f1da
+  0x0056f232: 2068     ldr     r0, [r4]
+  0x0056f234: 4169     ldr     r1, [r0, #0x14] (iter vtbl)
+  0x0056f236: 2046     mov     r0, r4
+  0x0056f238: 8847     blx     r1
+  0x0056f23a: 3846     mov     r0, r7
+  0x0056f23c: 24f1e6fa bl      #0x69380c -> __udivdi3+0xbf0
+  0x0056f240: 0128     cmp     r0, #1
+  0x0056f242: 0ad1     bne     #0x56f25a
+  0x0056f244: 0021     movs    r1, #0
+  0x0056f246: 3846     mov     r0, r7
+  0x0056f248: 24f1e8fa bl      #0x69381c -> __udivdi3+0xc00
+  0x0056f24c: 0028     cmp     r0, #0
+  0x0056f24e: 11d0     beq     #0x56f274
+  0x0056f250: 9721     movs    r1, #0x97
+  0x0056f252: c900     lsls    r1, r1, #3
+  0x0056f254: 0122     movs    r2, #1
+  0x0056f256: 4254     strb    r2, [r0, r1]
+  0x0056f258: 0ce0     b       #0x56f274
+  0x0056f25a: ff20     movs    r0, #0xff
+  0x0056f25c: 0299     ldr     r1, [sp, #8] (iter vtbl)
+  0x0056f25e: 0142     tst     r1, r0
+  0x0056f260: 0198     ldr     r0, [sp, #4]
+  0x0056f262: 07d1     bne     #0x56f274
+  0x0056f264: 0021     movs    r1, #0
+  0x0056f266: c943     mvns    r1, r1
+  0x0056f268: 049a     ldr     r2, [sp, #0x10]
+  0x0056f26a: 8a42     cmp     r2, r1
+  0x0056f26c: 02d0     beq     #0x56f274
+  0x0056f26e: 0499     ldr     r1, [sp, #0x10]
+  0x0056f270: 47f1d4fc bl      #0x6b6c1c -> 0x006b6c1c
+  0x0056f274: 05b0     add     sp, #0x14
+  0x0056f276: f0bd     pop     {r4, r5, r6, r7, pc}
+
+===== _ZN12CServerMnger15SetChoosePlayerEi  va=0x0056f278 len=0x60 =====
+  0x0056f278: f0b5     push    {r4, r5, r6, r7, lr}
+  0x0056f27a: 81b0     sub     sp, #4
+  0x0056f27c: 0c46     mov     r4, r1
+  0x0056f27e: 2c30     adds    r0, #0x2c
+  0x0056f280: 0025     movs    r5, #0
+  0x0056f282: 2946     mov     r1, r5
+  0x0056f284: 24f1fafa bl      #0x69387c -> __udivdi3+0xc60
+  0x0056f288: 0646     mov     r6, r0
+  0x0056f28a: 00e0     b       #0x56f28e
+  0x0056f28c: 0d70     strb    r5, [r1]
+  0x0056f28e: 3068     ldr     r0, [r6]
+  0x0056f290: 8168     ldr     r1, [r0, #8] (iter vtbl)
+  0x0056f292: 3046     mov     r0, r6
+  0x0056f294: 8847     blx     r1
+  0x0056f296: 0028     cmp     r0, #0
+  0x0056f298: 12d0     beq     #0x56f2c0
+  0x0056f29a: 3068     ldr     r0, [r6]
+  0x0056f29c: c168     ldr     r1, [r0, #0xc] (iter vtbl)
+  0x0056f29e: 3046     mov     r0, r6
+  0x0056f2a0: 8847     blx     r1
+  0x0056f2a2: 0746     mov     r7, r0
+  0x0056f2a4: 002f     cmp     r7, #0
+  0x0056f2a6: f2d0     beq     #0x56f28e
+  0x0056f2a8: 3868     ldr     r0, [r7]
+  0x0056f2aa: 0169     ldr     r1, [r0, #0x10]
+  0x0056f2ac: 3846     mov     r0, r7
+  0x0056f2ae: 8847     blx     r1
+  0x0056f2b0: 9721     movs    r1, #0x97
+  0x0056f2b2: c900     lsls    r1, r1, #3
+  0x0056f2b4: 7918     adds    r1, r7, r1
+  0x0056f2b6: a042     cmp     r0, r4
+  0x0056f2b8: e8d1     bne     #0x56f28c <==+64 CRASH
+  0x0056f2ba: 0120     movs    r0, #1
+  0x0056f2bc: 0870     strb    r0, [r1]
+  0x0056f2be: e6e7     b       #0x56f28e
+  0x0056f2c0: 3068     ldr     r0, [r6]
+  0x0056f2c2: 4169     ldr     r1, [r0, #0x14] (iter vtbl)
+  0x0056f2c4: 3046     mov     r0, r6
+  0x0056f2c6: 8847     blx     r1
+  0x0056f2c8: 01b0     add     sp, #4
+  0x0056f2ca: f0bd     pop     {r4, r5, r6, r7, pc}
+  0x0056f2cc: 70b5     push    {r4, r5, r6, lr}
+  0x0056f2ce: 0446     mov     r4, r0
+  0x0056f2d0: 25f114ff bl      #0x6950fc -> 0x006950fc
+  0x0056f2d4: 866a     ldr     r6, [r0, #0x28]
+  0x0056f2d6: 2c34     adds    r4, #0x2c
+
+=== role/player symbols near CServerMnger ===
+  0x0056f3e2 sz=0x16 _ZN12CServerMnger15IfCanSwitchRoleEv
+  0x0056f19a sz=0xde _ZN12CServerMnger13ParseRoleListEPv
+  0x0056f37e sz=0x50 _ZN12CServerMnger17GetChoosePlayerIdEv
+  0x0056f278 sz=0x54 _ZN12CServerMnger15SetChoosePlayerEi
+  0x0056eaca sz=0x42 _ZN12CServerMnger9ClearRoleEv
+  0x0056f334 sz=0x4a _ZN12CServerMnger19GetChoosePlayerTypeEv
+  0x0056f3ce sz=0x14 _ZN12CServerMnger13IfOnlyOneRoleEv

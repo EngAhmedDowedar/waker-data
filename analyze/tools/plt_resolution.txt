@@ -1,0 +1,47 @@
+PLT resolution of nativeRender dispatcher helpers
+========================================================================
+
+S_str_conv  thumb_veneer=0x00693c4c  arm_plt=0x002c04c0  got_slot=0x006c1ee2
+  PLT raw: 0xe5bcfef8 0xe28fc604 0xe28cca9a
+  PLT decoded: ip = pc(+8) + 0xf80 + 0x400000 + 0xa9a = 0x006c1ee2
+  IMPORTED SYMBOL: None
+
+D0  thumb_veneer=0x006bce9c  arm_plt=0x002ff91c  got_slot=0x00701394
+  PLT raw: 0xe5bcfc10 0xe28fc604 0xe28cca70
+  PLT decoded: ip = pc(+8) + 0x1000 + 0x400000 + 0xa70 = 0x00701394
+  IMPORTED SYMBOL: None
+
+D1  thumb_veneer=0x006bcaac  arm_plt=0x002ff40c  got_slot=0x00700044
+  PLT raw: 0xe5bcff70 0xe28fc604 0xe28cca70
+  PLT decoded: ip = pc(+8) + 0x1c0 + 0x400000 + 0xa70 = 0x00700044
+  IMPORTED SYMBOL: None
+
+D2  thumb_veneer=0x006bcabc  arm_plt=0x002ff418  got_slot=0x00700030
+  PLT raw: 0xe5bcff68 0xe28fc604 0xe28cca70
+  PLT decoded: ip = pc(+8) + 0x1a0 + 0x400000 + 0xa70 = 0x00700030
+  IMPORTED SYMBOL: None
+
+D3 (jstring args in nativeRender)  thumb_veneer=0x006bcacc  arm_plt=0x002ff424  got_slot=0x0070001c
+  PLT raw: 0xe5bcff60 0xe28fc604 0xe28cca70
+  PLT decoded: ip = pc(+8) + 0x180 + 0x400000 + 0xa70 = 0x0070001c
+  IMPORTED SYMBOL: None
+
+D4  thumb_veneer=0x006bcadc  arm_plt=0x002ff430  got_slot=0x00700008
+  PLT raw: 0xe5bcff58 0xe28fc604 0xe28cca70
+  PLT decoded: ip = pc(+8) + 0x160 + 0x400000 + 0xa70 = 0x00700008
+  IMPORTED SYMBOL: None
+
+D5  thumb_veneer=0x006bcb9c  arm_plt=0x002ff4c0  got_slot=0x00700eb8
+  PLT raw: 0xe5bcfef8 0xe28fc604 0xe28cca70
+  PLT decoded: ip = pc(+8) + 0xf80 + 0x400000 + 0xa70 = 0x00700eb8
+  IMPORTED SYMBOL: None
+
+D6  thumb_veneer=0x006bcecc  arm_plt=0x002ff940  got_slot=0x0073e3b8
+  PLT raw: 0xe5bcfbf8 0xe28fc604 0xe28cca70
+  PLT decoded: ip = pc(+8) + 0x3e000 + 0x400000 + 0xa70 = 0x0073e3b8
+  IMPORTED SYMBOL: None
+
+D7  thumb_veneer=0x006bf62c  arm_plt=0x00303ac8  got_slot=0x00704586
+  PLT raw: 0xe5bcf048 0xe28fc604 0xe28cca6e
+  PLT decoded: ip = pc(+8) + 0x48 + 0x400000 + 0xa6e = 0x00704586
+  IMPORTED SYMBOL: None

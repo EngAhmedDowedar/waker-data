@@ -1,0 +1,367 @@
+========================================================================
+(7) launchUrl / LaunchURL / update / url-related strings in binary
+========================================================================
+  cluster @ .rodata 0x006f717a:
+    0x006f717a  'crossServerWarConfig'
+  cluster @ .rodata 0x006f74e7:
+    0x006f74e7  'occupyServer'
+  cluster @ .rodata 0x006f787b:
+    0x006f787b  'recv UpdateMoney response'
+  cluster @ .rodata 0x006f7c1d:
+    0x006f7c1d  'serverIdx'
+    0x006f7cf9  'updatedAt'
+  cluster @ .rodata 0x006f912e:
+    0x006f912e  'hostId'
+  cluster @ .rodata 0x006f9404:
+    0x006f9404  'hostName'
+    0x006f9498  'awardSysUpdate'
+  cluster @ .rodata 0x006f9d77:
+    0x006f9d77  'GetFGCurLevel'
+  cluster @ .rodata 0x006fa937:
+    0x006fa937  'crossserverwar_attack'
+  cluster @ .rodata 0x006fac25:
+    0x006fac25  'url'
+    0x006fac29  'url_schemes'
+  cluster @ .rodata 0x006fafa1:
+    0x006fafa1  'adURL'
+  cluster @ .rodata 0x006fb49f:
+    0x006fb49f  'crossserverwar/'
+    0x006fb4af  'crossserverladderfight/'
+  cluster @ .rodata 0x006fb6a3:
+    0x006fb6a3  'OnUpdateInfo'
+    0x006fb6f9  'OnUpdateMoney'
+  cluster @ .rodata 0x006fc00b:
+    0x006fc00b  'updateMissionStatus'
+  cluster @ .rodata 0x006fc291:
+    0x006fc291  'updatemissionprogress'
+    0x006fc2e5  'versionForUpgrade%d'
+    0x006fc2f9  'minorVersion.bin'
+  cluster @ .rodata 0x006fd2bd:
+    0x006fd2bd  'dailyTaskUpdatedAt '
+    0x006fd305  'updatesignature'
+    0x006fd320  'version'
+    0x006fd33a  'reviewVersion'
+    0x006fd348  'checkversion'
+    0x006fd35f  'majorVersion'
+    0x006fd3a1  'isReview'
+  cluster @ .rodata 0x006fd4de:
+    0x006fd4de  'updateavatar'
+  cluster @ .rodata 0x006fd651:
+    0x006fd651  'updatemembertitle'
+    0x006fd6bb  'updateganglevel'
+    0x006fd797  'updatelevel'
+    0x006fd88a  'getallserver'
+    0x006fd8fb  'isCrossVersion'
+    0x006fd90a  'isStreetWarVersion'
+  cluster @ .rodata 0x006fdc22:
+    0x006fdc22  'serverOpen'
+    0x006fdc83  'ctrlVersion'
+  cluster @ .rodata 0x006fde2f:
+    0x006fde2f  'updateremark'
+  cluster @ .rodata 0x006fe142:
+    0x006fe142  'updateskill'
+    0x006fe15f  'updatedailytask'
+  cluster @ .rodata 0x006fe331:
+    0x006fe331  'newVersion'
+  cluster @ .rodata 0x006fe485:
+    0x006fe485  'updatefactorylevel'
+  cluster @ .rodata 0x006fe80f:
+    0x006fe80f  'update'
+  cluster @ .rodata 0x006fe919:
+    0x006fe919  'updateplayerinfo'
+  cluster @ .rodata 0x006fea94:
+    0x006fea94  'updateskillexp'
+    0x006feaa3  'updatelevelexp'
+    0x006feb19  'updatecamps'
+  cluster @ .rodata 0x006fedc7:
+    0x006fedc7  'window/update'
+  cluster @ .rodata 0x006ff0d4:
+    0x006ff0d4  'updatesamplestatus'
+    0x006ff0e7  'updatewindowstatus'
+  cluster @ .rodata 0x006ff220:
+    0x006ff220  'updateProjectFinish'
+  cluster @ .rodata 0x006fface:
+    0x006fface  'travelMapURL'
+  cluster @ .rodata 0x00700098:
+    0x00700098  'fbURL'
+    0x007000e9  'versionFuncControl'
+  cluster @ .rodata 0x00700d74:
+    0x00700d74  'majorUpgradeUrl'
+    0x00700d84  'majorUpgrade'
+    0x00700dcf  'contentUrlPrefix'
+    0x00700de0  'upgradeVersionFile'
+    0x00700df3  'minorVersion'
+    0x00700e00  'inReview'
+    0x00700e12  'serverCtrlDebugSwitch'
+    0x00700e38  'servers'
+    0x00700e40  'preServerIdx'
+    0x00700e5b  'majorUpgradeText'
+  cluster @ .rodata 0x0070139e:
+    0x0070139e  'http://192.168.1.4:8080/policy.html'
+  cluster @ .rodata 0x00701dd1:
+    0x00701dd1  'FIGHT_CROSS_SERVER_WAR'
+  cluster @ .rodata 0x0070207c:
+    0x0070207c  'curLightNum'
+  cluster @ .rodata 0x007021a9:
+    0x007021a9  'serverSideCheck '
+    0x007021c9  'activityVersion'
+  cluster @ .rodata 0x007022ff:
+    0x007022ff  'holdemServer'
+    0x00702324  'holdemHost'
+    0x00702350  'keepLiveServer'
+    0x0070235f  'keepLiveServerPort'
+    0x00702372  'keepLiveServerHost'
+    0x00702385  'streetWarServer'
+    0x0070240f  'crossServerWarOccupy'
+  cluster @ .rodata 0x007026db:
+    0x007026db  'serverSideCostMoney'
+  cluster @ .rodata 0x00702879:
+    0x00702879  'city_activitise_version_%d.bin'
+  cluster @ .rodata 0x0070306a:
+    0x0070306a  'city_update'
+  cluster @ .rodata 0x00703490:
+    0x00703490  'mergeServer'
+  cluster @ .rodata 0x00703e58:
+    0x00703e58  'updateWindowOrder'
+  cluster @ .rodata 0x00703f5a:
+    0x00703f5a  'versions'
+    0x00703f63  'major_version'
+    0x00703f71  'minor_version'
+    0x00703ffc  'serverId'
+  cluster @ .rodata 0x007044da:
+    0x007044da  'setAccountServerId'
+  cluster @ .rodata 0x00704ac1:
+    0x00704ac1  'http://trx.9191card.com/trx/paymentTrxOrder.action?customerNumber=%s&requestId=%s&productType=%s&amount=%d&cardNo=%s&cardPwd=%s&encrypt=%d&callbackUrl=%s&sign=%s&userIP=%s&extInfo=%s'
+  cluster @ .rodata 0x007051c5:
+    0x007051c5  'deviceVersion'
+    0x007051dc  'gameVersion'
+    0x007051f1  'Error when communicating with server'
+    0x00705216  'We are sorry, but we got an error when connecting to server, please come back again later'
+    0x00705296  'beforeUpdate'
+    0x007052a6  'afterUpdate'
+  cluster @ .rodata 0x007053fc:
+    0x007053fc  'openUrl'
+    0x00705463  'getDeviceVersion'
+    0x007054f4  'launchUrl'
+  cluster @ .rodata 0x00705feb:
+    0x00705feb  '[curl] response status non-20)!~'
+    0x0070600c  '[curl] network error!~'
+  cluster @ .rodata 0x007061ad:
+    0x007061ad  'version mismatch: app. needs %f, Lua core provides %f'
+    0x007061e3  'bad conversion number->int; must recompile Lua with proper settings'
+  cluster @ .rodata 0x00706cac:
+    0x00706cac  "invalid conversion specifier '%%%s'"
+  cluster @ .rodata 0x007073f8:
+    0x007073f8  'version mismatch in'
+  cluster @ .rodata 0x007076b8:
+    0x007076b8  'host!'
+  cluster @ .rodata 0x00707ab8:
+    0x00707ab8  'URL using bad/illegal format or missing URL'
+    0x00707ae4  'A requested feature, protocol or option was not found built-in in this libcurl due to a build-time decision.'
+    0x00707b6d  "Couldn't resolve host name"
+    0x00707b88  "Couldn't connect to server"
+    0x00707ba3  'FTP: weird server reply'
+    0x00707bdc  'FTP: The server failed to connect to data port'
+    0x00707c0b  'FTP: Accepting server connect has timed out'
+    0x00707c37  'FTP: The server did not accept the PRET command.'
+    0x00707cb9  "FTP: can't figure out the host in the PASV response"
+  cluster @ .rodata 0x00707e9e:
+    0x00707e9e  'Requested range was not delivered by the server'
+  cluster @ .rodata 0x00707fc3:
+    0x00707fc3  'A libcurl function was given a bad argument'
+    0x00708013  'Number of redirects hit maximum amount'
+    0x0070803a  'An unknown option was passed in to libcurl'
+    0x007080af  'Server returned nothing (no headers, no data)'
+  cluster @ .rodata 0x0070828a:
+    0x0070828a  'Invalid LDAP URL'
+  cluster @ .rodata 0x0070844d:
+    0x0070844d  'Conversion failed'
+    0x0070845f  'Caller must register CURLOPT_CONV_ callback options'
+  cluster @ .rodata 0x007085ab:
+    0x007085ab  'Please call curl_multi_perform() soon'
+  cluster @ .rodata 0x007086c8:
+    0x007086c8  'CURLSHcode unknown'
+    0x007087aa  '_VERSION'
+  cluster @ .rodata 0x0070898d:
+    0x0070898d  'setmajorinc'
+  cluster @ .rodata 0x00709297:
+    0x00709297  'The requested URL returned error: %d'
+    0x00709319  'Empty reply from server'
+    0x00709331  'Host:'
+  cluster @ .rodata 0x007098e5:
+    0x007098e5  'Server:'
+  cluster @ .rodata 0x00709a02:
+    0x00709a02  'The requested URL returned error: %s'
+    0x00709ae4  'Server'
+    0x00709bcf  'CURLOPT_SSL_VERIFYHOST no longer supports 1 as value!'
+  cluster @ .rodata 0x00709d7f:
+    0x00709d7f  "Couldn't resolve host '%s'"
+  cluster @ .rodata 0x0070a00d:
+    0x0070a00d  '<url> malformed'
+    0x0070a076  'Protocol "%s" not supported or disabled in libcurl'
+  cluster @ .rodata 0x0070a451:
+    0x0070a451  'No URL set!'
+    0x0070a45d  'Maximum (%ld) redirects followed'
+  cluster @ .rodata 0x0070a662:
+    0x0070a662  "HTTP server doesn't seem to support byte ranges. Cannot resume."
+  cluster @ .rodata 0x0070ac1e:
+    0x0070ac1e  'SOCKS4 reply has wrong version, version should be 4.'
+    0x0070acc6  "Can't complete SOCKS4 connection to %d.%d.%d.%d:%d. (%d), request rejected because SOCKS server cannot connect to identd on the client."
+  cluster @ .rodata 0x0070af66:
+    0x0070af66  'Received invalid version in initial SOCKS5 response.'
+    0x0070affd  'User was rejected by the SOCKS5 server (%d %d).'
+    0x0070b068  'No authentication method was acceptable. (It is quite likely that the SOCKS5 server wanted a username/password, since none was supplied to the server on this connection.)'
+    0x0070b13c  'Undocumented SOCKS5 mode attempted to be used by server.'
+    0x0070b1f9  'SOCKS5 reply has wrong version, version should be 5.'
+  cluster @ .rodata 0x0070d9c0:
+    0x0070d9c0  '22CDZ_AnimCardConversion'
+  cluster @ .rodata 0x0070dd20:
+    0x0070dd20  '30CDZ_AnimCardConversionListener'
+  cluster @ .rodata 0x0070dfe0:
+    0x0070dfe0  '24CTopScreenUpdateListener'
+  cluster @ .rodata 0x0070f8d0:
+    0x0070f8d0  '24CFG_NotifyUpdateListener'
+  cluster @ .rodata 0x00710750:
+    0x00710750  '26CGameMissionUpdateApiMaker'
+  cluster @ .rodata 0x00710b20:
+    0x00710b20  '27ngTableModelUpdateListenter'
+  cluster @ .rodata 0x00710d30:
+    0x00710d30  '21CServerChooseListener'
+  cluster @ .rodata 0x00711d70:
+    0x00711d70  '24CNewServerChooseListener'
+  cluster @ .rodata 0x007136a0:
+    0x007136a0  '22CNewServerChooseScreen'
+    0x007136c0  '20CNewServerCellRender'
+  cluster @ .rodata 0x00714eb0:
+    0x00714eb0  '7CServer'
+    0x00714ec0  '19CServerChooseScreen'
+    0x00714ed8  '12CServerModel'
+    0x00714ef0  '17CServerCellRender'
+    0x00714f10  '12CServerMnger'
+  cluster @ .rodata 0x00716420:
+    0x00716420  '29CTG_UpdateThemeConfigListener'
+  cluster @ .rodata 0x007167f0:
+    0x007167f0  '24CUpdateWindowOrderScreen'
+    0x00716810  '22CUpdateOrderComparator'
+  cluster @ .rodata 0x00716c60:
+    0x00716c60  '28CWareHouseGoodsAmountUpdater'
+    0x00716cc0  '18IGoodsAmountUpdate'
+  cluster @ .rodata 0x00718840:
+    0x00718840  '14ngParticleHost'
+  cluster @ .rodata 0x00718cd0:
+    0x00718cd0  '14ngCURLListener'
+    0x00718d90  '24ngCURLHttpSessionAndroid'
+    0x00718db0  '13ngCURLManager'
+    0x00718df0  '$LuaVersion: Lua 5.2.0  Copyright (C) 1994-2011 Lua.org, PUC-Rio $$LuaAuthors: R. Ierusalimschy, L. H. de Figueiredo, W. Celes $'
+
+--- LDR pc-relative xrefs to selected high-signal strings ---
+
+========================================================================
+(8) callers of CheckUpdate and branches into the patched region
+========================================================================
+  CheckUpdate region: [0x0048f8b0, 0x0048f968)
+
+  direct BL/BLX -> CheckUpdate (0):
+
+  other branches landing inside CheckUpdate region (0):
+
+  this+0x2AC accessors (state byte writers/readers):
+    off=0x003d41f4 va=0x003d41f4  ldr r0,[r4,r0]  in _ZN26CFactionFactoryApplyScreen23SwitchScreenBySelectIdxEi (@0x003d41e8)
+    off=0x003d6ea8 va=0x003d6ea8  ldr r0,[r4,r0]  in _ZN26CFactionFactoryApplyScreen17OnReceiveResponseEiPv (@0x003d6c20)
+    off=0x003d7438 va=0x003d7438  ldr r6,[r4,r0]  in _ZN26CFactionFactoryApplyScreen24SetButtonStatusWithValueEPvi (@0x003d73a0)
+    off=0x0042e2c8 va=0x0042e2c8  ldr r3,[r5,r0]  in _ZN10CGymScreen16ShowFloatFadeOutEi (@0x0042e268)
+    off=0x00430896 va=0x00430896  str r6,[r5,r0]  in _ZN17CHG_CaptureScreenC1Eh (@0x0043073c)
+    off=0x0047a372 va=0x0047a372  strb r6,[r5,r0]  in _ZN22CKingAppellationScreenC2Ei (@0x0047a244)
+    off=0x0047c6b6 va=0x0047c6b6  ldrb r0,[r4,r0]  in _ZN22CKingAppellationScreen12HandleUpdateEi (@0x0047c690)
+    off=0x0048ed6e va=0x0048ed6e  strb r6,[r5,r0]  in _ZN14CLoadingScreenC2Eh (@0x0048ec34)
+    off=0x0048f8ec va=0x0048f8ec  ldrb r7,[r5,r0]  in _ZN14CLoadingScreen11CheckUpdateEPKcS1_ (@0x0048f8b0)
+    off=0x00494ea4 va=0x00494ea4  ldr r0,[r5,r0]  in _ZN14CLotteryScreen12SetGoodsDescEP6CGoods (@0x00494e9c)
+    off=0x004951f2 va=0x004951f2  ldr r0,[r4,r0]  in _ZN14CLotteryScreen16HandleTouchEventEi (@0x00494f78)
+    off=0x004be61e va=0x004be61e  ldr r0,[r6,r0]  in _ZN11CMainScreen20AdjustSWTopPanelSizeEv (@0x004be600)
+    off=0x004be6bc va=0x004be6bc  ldr r0,[r6,r0]  in _ZN11CMainScreen20AdjustSWTopPanelSizeEv (@0x004be600)
+    off=0x004c0754 va=0x004c0754  ldr r0,[r5,r0]  in _ZN11CMainScreen21CreateSWProgressPriveEv (@0x004c069c)
+    off=0x004c082a va=0x004c082a  ldr r0,[r5,r0]  in _ZN11CMainScreen21CreateSWProgressPriveEv (@0x004c069c)
+    off=0x004c091c va=0x004c091c  ldr r0,[r1,r0]  in _ZN11CMainScreen21CreateSWProgressPriveEv (@0x004c069c)
+    off=0x00557528 va=0x00557528  strb r4,[r5,r0]  in _ZN17CSW_BuildTreeView15SetScrollEnableEh (@0x005574dc)
+    off=0x005740a0 va=0x005740a0  str r5,[r4,r0]  in _ZN17CSkyscraperScreen16HandleStairEventEPv (@0x00574008)
+    off=0x00574336 va=0x00574336  str r5,[r4,r0]  in _ZN17CSkyscraperScreen16HandleStairEventEv (@0x00574274)
+    off=0x00574e6c va=0x00574e6c  ldr r1,[r4,r0]  in _ZN17CSkyscraperScreen19OnEventHandleFinishEP6ngViewii (@0x00574e08)
+    off=0x00575178 va=0x00575178  ldr r1,[r4,r0]  in _ZN17CSkyscraperScreen21OnPvpFightSentCrippleEi (@0x00575150)
+    off=0x005854c2 va=0x005854c2  str r6,[r4,r0]  in _ZN21CStrengthenShopScreen11HandleEventEP6ngViewiii (@0x0058500c)
+    off=0x00588072 va=0x00588072  ldr r0,[r4,r0]  in _ZN21CStrengthenShopScreen9OnAlertOKEi (@0x00587fb4)
+    off=0x005d6dda va=0x005d6dda  ldrb r0,[r4,r0]  in _ZN12ngScrollView12HandleScrollEi (@0x005d6a88)
+    off=0x006219d8 va=0x006219d8  str r5,[r4,r0]  in _ZN11dragonBones10DBCCSpriteC1Ev (@0x00621880)
+
+========================================================================
+(9) opcode dispatch in OnReceiveResponse + 0x80 (CheckVersion) handler
+========================================================================
+  OnReceiveResponse va=0x0048fe20 size=1528
+
+  opcode dispatch table (cmp r1,#K  -> destination):
+    0x48fe28: cmp r1,#0xe3  -> bgt 0x0048fe40
+    0x48fe2c: cmp r1,#0x69  -> beq 0x0048fe74
+    0x48fe30: cmp r1,#0x79  -> bne 0x0048fec8
+    0x48fe40: cmp r1,#0xe4  -> beq 0x0048fe46
+    0x48fec8: cmp r1,#0x80  -> beq 0x0048fece
+
+  full disasm: opcode 0x80 (/checkversion) handler  [0x48fec8..]
+    0x0048fec8: 8029     cmp r1, #0x80
+    0x0048feca: 00d0     beq #0x48fece
+    0x0048fecc: 4ee2     b #0x49036c
+    0x0048fece: 002e     cmp r6, #0
+    0x0048fed0: 00d1     bne #0x48fed4
+    0x0048fed2: 4be2     b #0x49036c
+    0x0048fed4: 03f29af9 bl #0x69320c  ;; near __udivdi3+0x5f0
+    0x0048fed8: 0349     ldr r1, [pc, #0xc]  ;; lit @0x48fee8 = 0x00001bcc
+    0x0048feda: 4018     adds r0, r0, r1
+    0x0048fedc: 0121     movs r1, #1
+    0x0048fede: 18f2d5fe bl #0x6a8c8c  ;; near __udivdi3+0x16070
+    0x0048fee2: 0028     cmp r0, #0
+    0x0048fee4: 02d0     beq #0x48feec
+    0x0048fee6: 41e2     b #0x49036c
+    0x0048fee8: cc1b     subs r4, r1, r7
+    0x0048feea: 0000     movs r0, r0
+    0x0048feec: 03f28ef9 bl #0x69320c  ;; near __udivdi3+0x5f0
+    0x0048fef0: 0849     ldr r1, [pc, #0x20]  ;; lit @0x48ff14 = 0x00001bf0
+    0x0048fef2: 0027     movs r7, #0
+    0x0048fef4: 4754     strb r7, [r0, r1]
+    0x0048fef6: 0848     ldr r0, [pc, #0x20]  ;; lit @0x48ff18 = 0x002cac24
+    0x0048fef8: 7844     add r0, pc
+    0x0048fefa: 0849     ldr r1, [pc, #0x20]  ;; lit @0x48ff1c = 0xfffa3c8a
+    0x0048fefc: 0918     adds r1, r1, r0
+    0x0048fefe: 7068     ldr r0, [r6, #4]
+    0x0048ff00: 026c     ldr r2, [r0, #0x40]
+    0x0048ff02: 301d     adds r0, r6, #4
+    0x0048ff04: 0490     str r0, [sp, #0x10]
+    0x0048ff06: 9047     blx r2
+    0x0048ff08: 0028     cmp r0, #0
+    0x0048ff0a: 3a46     mov r2, r7
+    0x0048ff0c: 3946     mov r1, r7
+    0x0048ff0e: 0bd0     beq #0x48ff28
+    0x0048ff10: 06e0     b #0x48ff20
+    0x0048ff12: c046     mov r8, r8
+    0x0048ff14: f01b     subs r0, r6, r7
+    0x0048ff16: 0000     movs r0, r0
+    0x0048ff18: 24ac     add r4, sp, #0x90
+    0x0048ff1a: 2c00     movs r4, r5
+    0x0048ff1c: 8a3c     subs r4, #0x8a
+
+========================================================================
+Summary / decision points:
+========================================================================
+
+Next steps depend on what the opcode-0x80 handler does with the response:
+  - If it calls a vtable parser and only checks "result == 0" or "code == 200":
+        the gate is response-shape, not version — fix by widening the server
+        schema (add fields the parser may need beyond version/* keys).
+  - If it explicitly reads .version/.majorVersion and compares against a
+        hard-coded constant ("39", "1.1.38", or version code embedded in
+        the .so):
+        the gate is version comparison; either match it server-side or
+        patch the comparison branch.
+  - If the next vtable call's return value (cmp r0,#0 at 0x48ff08) drives
+        a beq to a "bail-to-end" basic block:
+        that beq is the *next* candidate gate. Note its file offset and
+        we have the minimal patch site, structurally identical to the
+        Option A patch you already applied at 0x48f910.
+

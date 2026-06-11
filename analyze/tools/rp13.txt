@@ -1,0 +1,268 @@
+
+===== _ZN11CHttpClient12GetAllServerEv  va=0x00453044 len=0x94 =====
+  0x00453044: f0b5     push    {r4, r5, r6, r7, lr}
+  0x00453046: 87b0     sub     sp, #0x1c
+  0x00453048: 0446     mov     r4, r0
+  0x0045304a: e420     movs    r0, #0xe4
+  0x0045304c: 6063     str     r0, [r4, #0x34]  <== OPCODE store [+0x34] = 0xe4
+  0x0045304e: 1420     movs    r0, #0x14
+  0x00453050: 40f294f8 bl      #0x69317c -> __udivdi3+0x560
+  0x00453054: 0546     mov     r5, r0
+  0x00453056: 45f261f8 bl      #0x69811c -> 0x0069811c
+  0x0045305a: 40f2d7f8 bl      #0x69320c -> __udivdi3+0x5f0
+  0x0045305e: 194a     ldr     r2, [pc, #0x64] lit=0x000008a8 "Y"
+  0x00453060: 8118     adds    r1, r0, r2
+  0x00453062: 8058     ldr     r0, [r0, r2]
+  0x00453064: c26b     ldr     r2, [r0, #0x3c]
+  0x00453066: 0846     mov     r0, r1
+  0x00453068: 9047     blx     r2
+  0x0045306a: 0246     mov     r2, r0
+  0x0045306c: 164f     ldr     r7, [pc, #0x58] lit=0x00307aae
+  0x0045306e: 7f44     add     r7, pc
+  0x00453070: 1648     ldr     r0, [pc, #0x58] lit=0xfff9d713
+  0x00453072: c119     adds    r1, r0, r7 STR="playerId"
+  0x00453074: 2846     mov     r0, r5
+  0x00453076: 45f259f8 bl      #0x69812c -> 0x0069812c
+  0x0045307a: 1548     ldr     r0, [pc, #0x54] lit=0xfffa281a
+  0x0045307c: c619     adds    r6, r0, r7 STR="reviewVersion"
+  0x0045307e: 55f2ddfd bl      #0x6a8c3c -> 0x006a8c3c
+  0x00453082: 0246     mov     r2, r0
+  0x00453084: 2846     mov     r0, r5
+  0x00453086: 3146     mov     r1, r6
+  0x00453088: 45f250f8 bl      #0x69812c -> 0x0069812c
+  0x0045308c: 0d20     movs    r0, #0xd
+  0x0045308e: 4601     lsls    r6, r0, #5
+  0x00453090: 40f2bcf8 bl      #0x69320c -> __udivdi3+0x5f0
+  0x00453094: 8119     adds    r1, r0, r6 ->0x006fd347
+  0x00453096: 01ae     add     r6, sp, #4
+  0x00453098: 3046     mov     r0, r6
+  0x0045309a: 40f20ffd bl      #0x693abc -> __udivdi3+0xea0
+  0x0045309e: 0d48     ldr     r0, [pc, #0x34] lit=0xfffa2d6a
+  0x004530a0: c119     adds    r1, r0, r7 STR="getallserver"
+  0x004530a2: 0020     movs    r0, #0
+  0x004530a4: c243     mvns    r2, r0
+  0x004530a6: 3046     mov     r0, r6
+  0x004530a8: 3ff2a8ff bl      #0x692ffc -> __udivdi3+0x3e0
+  0x004530ac: 2046     mov     r0, r4
+  0x004530ae: 3146     mov     r1, r6
+  0x004530b0: 2a46     mov     r2, r5
+  0x004530b2: 55f28bfd bl      #0x6a8bcc -> 0x006a8bcc
+  0x004530b6: 0446     mov     r4, r0
+  0x004530b8: 3046     mov     r0, r6
+  0x004530ba: 3ff25fff bl      #0x692f7c -> __udivdi3+0x360
+  0x004530be: 2046     mov     r0, r4
+  0x004530c0: 07b0     add     sp, #0x1c
+  0x004530c2: f0bd     pop     {r4, r5, r6, r7, pc}
+  0x004530c4: a808     lsrs    r0, r5, #2
+  0x004530c6: 0000     movs    r0, r0
+  0x004530c8: ae7a     ldrb    r6, [r5, #0xa]
+  0x004530ca: 3000     movs    r0, r6
+  0x004530cc: 13d7     bvc     #0x4530f6
+  0x004530ce: f9ff1a28 vqshrun.s64 d18, q5, #7
+
+===== _ZN11CHttpClient11PlayerLoginEv  va=0x0044e9b8 len=0x8c =====
+  0x0044e9b8: f0b5     push    {r4, r5, r6, r7, lr}
+  0x0044e9ba: 87b0     sub     sp, #0x1c
+  0x0044e9bc: 0446     mov     r4, r0
+  0x0044e9be: 7820     movs    r0, #0x78
+  0x0044e9c0: 6063     str     r0, [r4, #0x34]  <== OPCODE store [+0x34] = 0x78
+  0x0044e9c2: 44f223fc bl      #0x69320c -> __udivdi3+0x5f0
+  0x0044e9c6: 0546     mov     r5, r0
+  0x0044e9c8: 1420     movs    r0, #0x14
+  0x0044e9ca: 44f2d7fb bl      #0x69317c -> __udivdi3+0x560
+  0x0044e9ce: 0646     mov     r6, r0
+  0x0044e9d0: 49f2a4fb bl      #0x69811c -> 0x0069811c
+  0x0044e9d4: 1648     ldr     r0, [pc, #0x58] lit=0x00000934 """
+  0x0044e9d6: 2a58     ldr     r2, [r5, r0]
+  0x0044e9d8: 164f     ldr     r7, [pc, #0x58] lit=0x0030c142
+  0x0044e9da: 7f44     add     r7, pc
+  0x0044e9dc: 1648     ldr     r0, [pc, #0x58] lit=0xfff9d294
+  0x0044e9de: c119     adds    r1, r0, r7 STR="playerType"
+  0x0044e9e0: 3046     mov     r0, r6
+  0x0044e9e2: 49f2a3fb bl      #0x69812c -> 0x0069812c
+  0x0044e9e6: 9320     movs    r0, #0x93
+  0x0044e9e8: 0001     lsls    r0, r0, #4
+  0x0044e9ea: 2a58     ldr     r2, [r5, r0]
+  0x0044e9ec: 1348     ldr     r0, [pc, #0x4c] lit=0xfffa2722
+  0x0044e9ee: c119     adds    r1, r0, r7 STR="key"
+  0x0044e9f0: 3046     mov     r0, r6
+  0x0044e9f2: 49f29bfb bl      #0x69812c -> 0x0069812c
+  0x0044e9f6: 0d20     movs    r0, #0xd
+  0x0044e9f8: 4501     lsls    r5, r0, #5
+  0x0044e9fa: 44f207fc bl      #0x69320c -> __udivdi3+0x5f0
+  0x0044e9fe: 4119     adds    r1, r0, r5
+  0x0044ea00: 01ad     add     r5, sp, #4
+  0x0044ea02: 2846     mov     r0, r5
+  0x0044ea04: 45f25af8 bl      #0x693abc -> __udivdi3+0xea0
+  0x0044ea08: 0d48     ldr     r0, [pc, #0x34] lit=0xfffa268f
+  0x0044ea0a: c119     adds    r1, r0, r7 STR="connect"
+  0x0044ea0c: 0020     movs    r0, #0
+  0x0044ea0e: c243     mvns    r2, r0
+  0x0044ea10: 2846     mov     r0, r5
+  0x0044ea12: 44f2f3fa bl      #0x692ffc -> __udivdi3+0x3e0
+  0x0044ea16: 2046     mov     r0, r4
+  0x0044ea18: 2946     mov     r1, r5
+  0x0044ea1a: 3246     mov     r2, r6
+  0x0044ea1c: 5af2d6f8 bl      #0x6a8bcc -> 0x006a8bcc
+  0x0044ea20: 0446     mov     r4, r0
+  0x0044ea22: 2846     mov     r0, r5
+  0x0044ea24: 44f2aafa bl      #0x692f7c -> __udivdi3+0x360
+  0x0044ea28: 2046     mov     r0, r4
+  0x0044ea2a: 07b0     add     sp, #0x1c
+  0x0044ea2c: f0bd     pop     {r4, r5, r6, r7, pc}
+  0x0044ea2e: c046     mov     r8, r8
+  0x0044ea30: 3409     lsrs    r4, r6, #4
+  0x0044ea32: 0000     movs    r0, r0
+  0x0044ea34: 42c1     stm     r1!, {r1, r6}
+  0x0044ea36: 3000     movs    r0, r6
+  0x0044ea38: 94d2     bhs     #0x44e964
+  0x0044ea3a: f9ff2227 vabs.f32 d18, d18
+
+===== _ZN14CLoadingScreen15DoGetServerInfoEh  va=0x00490dd0 len=0x1c =====
+  0x00490dd0: b0b5     push    {r4, r5, r7, lr}
+  0x00490dd2: 0446     mov     r4, r0
+  0x00490dd4: 0125     movs    r5, #1
+  0x00490dd6: 2946     mov     r1, r5
+  0x00490dd8: 1af2a0fc bl      #0x6ab71c -> 0x006ab71c
+  0x00490ddc: 1b20     movs    r0, #0x1b
+  0x00490dde: 0001     lsls    r0, r0, #4
+  0x00490de0: 2550     str     r5, [r4, r0]
+  0x00490de2: 0021     movs    r1, #0
+  0x00490de4: 2046     mov     r0, r4
+  0x00490de6: 1af219fe bl      #0x6aba1c -> 0x006aba1c
+  0x00490dea: b0bd     pop     {r4, r5, r7, pc}
+
+===== _ZN14CLoadingScreen19DoConnectPlayerInfoEv  va=0x00490e20 len=0x18 =====
+  0x00490e20: 10b5     push    {r4, lr}
+  0x00490e22: 0446     mov     r4, r0
+  0x00490e24: 0621     movs    r1, #6
+  0x00490e26: 1af2e9fd bl      #0x6ab9fc -> 0x006ab9fc
+  0x00490e2a: e834     adds    r4, #0xe8
+  0x00490e2c: 2046     mov     r0, r4
+  0x00490e2e: 02f285f9 bl      #0x69313c -> __udivdi3+0x520
+  0x00490e32: 1af203fe bl      #0x6aba3c -> 0x006aba3c
+  0x00490e36: 10bd     pop     {r4, pc}
+
+===== _ZN14CLoadingScreen7DoLoginEv  va=0x00490e4c len=0xcc =====
+  0x00490e4c: f0b5     push    {r4, r5, r6, r7, lr}
+  0x00490e4e: 87b0     sub     sp, #0x1c
+  0x00490e50: 0446     mov     r4, r0
+  0x00490e52: 0421     movs    r1, #4
+  0x00490e54: 1af2d2fd bl      #0x6ab9fc -> 0x006ab9fc
+  0x00490e58: 02f2d8f9 bl      #0x69320c -> __udivdi3+0x5f0
+  0x00490e5c: 2d49     ldr     r1, [pc, #0xb4] lit=0x00000934 """
+  0x00490e5e: 4058     ldr     r0, [r0, r1]
+  0x00490e60: 0228     cmp     r0, #2
+  0x00490e62: 17d1     bne     #0x490e94
+  0x00490e64: 2046     mov     r0, r4
+  0x00490e66: e830     adds    r0, #0xe8
+  0x00490e68: 02f268f9 bl      #0x69313c -> __udivdi3+0x520
+  0x00490e6c: 0546     mov     r5, r0
+  0x00490e6e: 3d20     movs    r0, #0x3d
+  0x00490e70: c000     lsls    r0, r0, #3
+  0x00490e72: 2018     adds    r0, r4, r0
+  0x00490e74: 0126     movs    r6, #1
+  0x00490e76: 3146     mov     r1, r6
+  0x00490e78: 02f2a8f8 bl      #0x692fcc -> str_dup[STR]
+  0x00490e7c: 0746     mov     r7, r0
+  0x00490e7e: 7002     lsls    r0, r6, #9
+  0x00490e80: 2018     adds    r0, r4, r0
+  0x00490e82: 3146     mov     r1, r6
+  0x00490e84: 02f2a2f8 bl      #0x692fcc -> str_dup[STR]
+  0x00490e88: 0246     mov     r2, r0
+  0x00490e8a: 2846     mov     r0, r5
+  0x00490e8c: 3946     mov     r1, r7
+  0x00490e8e: 1af2ddfd bl      #0x6aba4c -> 0x006aba4c
+  0x00490e92: 35e0     b       #0x490f00
+  0x00490e94: 02f2baf9 bl      #0x69320c -> __udivdi3+0x5f0
+  0x00490e98: 1e49     ldr     r1, [pc, #0x78] lit=0x00000934 """
+  0x00490e9a: 4058     ldr     r0, [r0, r1]
+  0x00490e9c: 2428     cmp     r0, #0x24
+  0x00490e9e: 17d0     beq     #0x490ed0
+  0x00490ea0: 02f2b4f9 bl      #0x69320c -> __udivdi3+0x5f0
+  0x00490ea4: 1b49     ldr     r1, [pc, #0x6c] lit=0x00000934 """
+  0x00490ea6: 4058     ldr     r0, [r0, r1]
+  0x00490ea8: 2528     cmp     r0, #0x25
+  0x00490eaa: 11d0     beq     #0x490ed0
+  0x00490eac: 02f2aef9 bl      #0x69320c -> __udivdi3+0x5f0
+  0x00490eb0: 1849     ldr     r1, [pc, #0x60] lit=0x00000934 """
+  0x00490eb2: 4058     ldr     r0, [r0, r1]
+  0x00490eb4: 2628     cmp     r0, #0x26
+  0x00490eb6: 0bd0     beq     #0x490ed0
+  0x00490eb8: 02f2a8f9 bl      #0x69320c -> __udivdi3+0x5f0
+  0x00490ebc: 1549     ldr     r1, [pc, #0x54] lit=0x00000934 """
+  0x00490ebe: 4058     ldr     r0, [r0, r1]
+  0x00490ec0: 2728     cmp     r0, #0x27
+  0x00490ec2: 05d0     beq     #0x490ed0
+  0x00490ec4: 02f2a2f9 bl      #0x69320c -> __udivdi3+0x5f0
+  0x00490ec8: 1249     ldr     r1, [pc, #0x48] lit=0x00000934 """
+  0x00490eca: 4058     ldr     r0, [r0, r1]
+  0x00490ecc: 2928     cmp     r0, #0x29
+  0x00490ece: 19d1     bne     #0x490f04
+  0x00490ed0: e834     adds    r4, #0xe8
+  0x00490ed2: 2046     mov     r0, r4
+  0x00490ed4: 02f232f9 bl      #0x69313c -> __udivdi3+0x520
+  0x00490ed8: 0446     mov     r4, r0
+  0x00490eda: 04f227fa bl      #0x69532c -> 0x0069532c
+  0x00490ede: 0146     mov     r1, r0
+  0x00490ee0: 5431     adds    r1, #0x54
+  0x00490ee2: 01ad     add     r5, sp, #4
+  0x00490ee4: 2846     mov     r0, r5
+  0x00490ee6: 02f2e9fd bl      #0x693abc -> __udivdi3+0xea0
+  0x00490eea: 0121     movs    r1, #1
+  0x00490eec: 2846     mov     r0, r5
+  0x00490eee: 02f26df8 bl      #0x692fcc -> str_dup[STR]
+  0x00490ef2: 0146     mov     r1, r0
+  0x00490ef4: 2046     mov     r0, r4
+  0x00490ef6: 1af2b1fd bl      #0x6aba5c -> 0x006aba5c
+  0x00490efa: 2846     mov     r0, r5
+  0x00490efc: 02f23ef8 bl      #0x692f7c -> __udivdi3+0x360
+  0x00490f00: 07b0     add     sp, #0x1c
+  0x00490f02: f0bd     pop     {r4, r5, r6, r7, pc}
+  0x00490f04: e834     adds    r4, #0xe8
+  0x00490f06: 2046     mov     r0, r4
+  0x00490f08: 02f218f9 bl      #0x69313c -> __udivdi3+0x520
+  0x00490f0c: 1af2aefd bl      #0x6aba6c -> 0x006aba6c
+  0x00490f10: f6e7     b       #0x490f00
+  0x00490f12: c046     mov     r8, r8
+  0x00490f14: 3409     lsrs    r4, r6, #4
+  0x00490f16: 0000     movs    r0, r0
+
+===== _ZN14CLoadingScreen14OnLoginSuccessEPKcS1_  va=0x00490ade len=0x50 =====
+  0x00490ade: f0b5     push    {r4, r5, r6, r7, lr}
+  0x00490ae0: 87b0     sub     sp, #0x1c
+  0x00490ae2: 1446     mov     r4, r2
+  0x00490ae4: 0d46     mov     r5, r1
+  0x00490ae6: 0646     mov     r6, r0
+  0x00490ae8: 3d20     movs    r0, #0x3d
+  0x00490aea: c000     lsls    r0, r0, #3
+  0x00490aec: 3018     adds    r0, r6, r0
+  0x00490aee: 0021     movs    r1, #0
+  0x00490af0: cf43     mvns    r7, r1
+  0x00490af2: 2946     mov     r1, r5
+  0x00490af4: 3a46     mov     r2, r7
+  0x00490af6: 02f271fa bl      #0x692fdc -> __udivdi3+0x3c0
+  0x00490afa: 0120     movs    r0, #1
+  0x00490afc: 4002     lsls    r0, r0, #9
+  0x00490afe: 3018     adds    r0, r6, r0
+  0x00490b00: 2146     mov     r1, r4
+  0x00490b02: 3a46     mov     r2, r7
+  0x00490b04: 02f26afa bl      #0x692fdc -> __udivdi3+0x3c0
+  0x00490b08: 02f280fb bl      #0x69320c -> __udivdi3+0x5f0
+  0x00490b0c: 0446     mov     r4, r0
+  0x00490b0e: 01ae     add     r6, sp, #4
+  0x00490b10: 3046     mov     r0, r6
+  0x00490b12: 2946     mov     r1, r5
+  0x00490b14: 02f212fc bl      #0x69333c -> __udivdi3+0x720
+  0x00490b18: 1320     movs    r0, #0x13
+  0x00490b1a: c001     lsls    r0, r0, #7
+  0x00490b1c: 2018     adds    r0, r4, r0
+  0x00490b1e: 3146     mov     r1, r6
+  0x00490b20: 02f254fc bl      #0x6933cc -> __udivdi3+0x7b0
+  0x00490b24: 3046     mov     r0, r6
+  0x00490b26: 02f229fa bl      #0x692f7c -> __udivdi3+0x360
+  0x00490b2a: 07b0     add     sp, #0x1c
+  0x00490b2c: f0bd     pop     {r4, r5, r6, r7, pc}
+
+=== callers of CreatLongConnect / DoConnectPlayerInfo (TCP init path) ===
+targets: {'0x58e588': '_ZN21CTcpLongConnectCreate20CreatRaceLongConnectEv', '0x490e20': '_ZN14CLoadingScreen19DoConnectPlayerInfoEv', '0x58e660': '_ZN21CTcpLongConnectCreate16CreatLongConnectE10ngStringV2S0_', '0x58e5f8': '_ZN21CTcpLongConnectCreate16CreatLongConnectEPKcS1_i'}

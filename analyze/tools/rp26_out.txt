@@ -1,0 +1,253 @@
+
+===== CPropertyListCateScreen::OnReceiveResponse va=0x00524b7c len=0xc0 =====
+  +0x000 f0b5     push   {r4, r5, r6, r7, lr}
+  +0x002 97b0     sub    sp, #0x5c
+  +0x004 1646     mov    r6, r2
+  +0x006 0d46     mov    r5, r1
+  +0x008 0446     mov    r4, r0
+  +0x00a 4920     movs   r0, #0x49
+  +0x00c 0121     movs   r1, #1
+  +0x00e 2154     strb   r1, [r4, r0]
+  +0x010 6ef16efb bl     #0x69326c -> __udivdi3+0x650
+  +0x014 e448     ldr    r0, [pc, #0x390]
+  +0x016 8542     cmp    r5, r0
+  +0x018 00dd     ble    #0x524b98
+  +0x01a 99e0     b      #0x524ccc
+  +0x01c e348     ldr    r0, [pc, #0x38c]
+  +0x01e 8542     cmp    r5, r0
+  +0x020 00d0     beq    #0x524ba0
+  +0x022 2be2     b      #0x524ff8
+  +0x024 0920     movs   r0, #9
+  +0x026 4001     lsls   r0, r0, #5
+  +0x028 6ef1eafa bl     #0x69317c -> __udivdi3+0x560
+  +0x02c 0546     mov    r5, r0
+  +0x02e 73f1d7fc bl     #0x69855c -> 0x69855c
+  +0x032 2846     mov    r0, r5
+  +0x034 3146     mov    r1, r6
+  +0x036 73f113fd bl     #0x6985dc -> 0x6985dc
+  +0x03a 6ef129fb bl     #0x69320c -> __udivdi3+0x5f0
+  +0x03e dc4a     ldr    r2, [pc, #0x370]
+  +0x040 8118     adds   r1, r0, r2
+  +0x042 8058     ldr    r0, [r0, r2]
+  +0x044 8268     ldr    r2, [r0, #8]
+  +0x046 0846     mov    r0, r1
+  +0x048 2946     mov    r1, r5
+  +0x04a 9047     blx    r2
+  +0x04c 6ef120fb bl     #0x69320c -> __udivdi3+0x5f0
+  +0x050 d849     ldr    r1, [pc, #0x360]
+  +0x052 4618     adds   r6, r0, r1
+  +0x054 2846     mov    r0, r5
+  +0x056 83f163fe bl     #0x6a889c -> 0x6a889c
+  +0x05a 0027     movs   r7, #0
+  +0x05c 3a1a     subs   r2, r7, r0
+  +0x05e 3b46     mov    r3, r7
+  +0x060 8b41     sbcs   r3, r1
+  +0x062 3046     mov    r0, r6
+  +0x064 70f1b4f9 bl     #0x694f4c -> __udivdi3+0x2330
+  +0x068 2b20     movs   r0, #0x2b
+  +0x06a c600     lsls   r6, r0, #3
+  +0x06c 6ef110fb bl     #0x69320c -> __udivdi3+0x5f0
+  +0x070 8059     ldr    r0, [r0, r6]
+  +0x072 0028     cmp    r0, #0
+  +0x074 04d0     beq    #0x524bfc
+  +0x076 6ef10bfb bl     #0x69320c -> __udivdi3+0x5f0
+  +0x07a 8059     ldr    r0, [r0, r6]
+  +0x07c 6ef170fc bl     #0x6934dc -> __udivdi3+0x8c0
+  +0x080 0296     str    r6, [sp, #8]
+  +0x082 6320     movs   r0, #0x63
+  +0x084 8000     lsls   r0, r0, #2
+  +0x086 0494     str    r4, [sp, #0x10]
+  +0x088 2458     ldr    r4, [r4, r0]
+  +0x08a 2846     mov    r0, r5
+  +0x08c 0390     str    r0, [sp, #0xc]
+  +0x08e 4569     ldr    r5, [r0, #0x14] <arr.begin>
+  +0x090 83f146fe bl     #0x6a889c -> 0x6a889c
+  +0x094 0346     mov    r3, r0
+  +0x096 fe43     mvns   r6, r7
+  +0x098 6846     mov    r0, sp
+  +0x09a 0660     str    r6, [r0]
+  +0x09c 4660     str    r6, [r0, #4]
+  +0x09e 0920     movs   r0, #9
+  +0x0a0 2146     mov    r1, r4
+  +0x0a2 2a46     mov    r2, r5
+  +0x0a4 6ef16cfc bl     #0x6934fc -> __udivdi3+0x8e0
+  +0x0a8 6ef1f2fa bl     #0x69320c -> __udivdi3+0x5f0
+  +0x0ac fb49     ldr    r1, [pc, #0x3ec]
+  +0x0ae 4018     adds   r0, r0, r1
+  +0x0b0 0621     movs   r1, #6
+  +0x0b2 0222     movs   r2, #2
+  +0x0b4 6ef16cfc bl     #0x69350c -> __udivdi3+0x8f0
+  +0x0b8 0028     cmp    r0, #0
+  +0x0ba 0ed0     beq    #0x524c56
+  +0x0bc 6ef1e8fa bl     #0x69320c -> __udivdi3+0x5f0
+
+===== CHouse::GetPrice va=0x00449da2 len=0x176 =====
+  +0x000 70b5     push   {r4, r5, r6, lr}
+  +0x002 0446     mov    r4, r0
+  +0x004 4cf2a1f9 bl     #0x6960ec -> 0x6960ec
+  +0x008 8421     movs   r1, #0x84
+  +0x00a 4158     ldr    r1, [r0, r1]
+  +0x00c 8022     movs   r2, #0x80
+  +0x00e 8058     ldr    r0, [r0, r2]
+  +0x010 4bf2c3fe bl     #0x695b3c -> __udivdi3+0x2f20
+  +0x014 cc22     movs   r2, #0xcc
+  +0x016 a150     str    r1, [r4, r2]
+  +0x018 c821     movs   r1, #0xc8
+  +0x01a 6050     str    r0, [r4, r1]
+  +0x01c 2546     mov    r5, r4
+  +0x01e c835     adds   r5, #0xc8
+  +0x020 a069     ldr    r0, [r4, #0x18]
+  +0x022 0128     cmp    r0, #1
+  +0x024 11db     blt    #0x449dec
+  +0x026 5720     movs   r0, #0x57
+  +0x028 8600     lsls   r6, r0, #2
+  +0x02a 49f256fa bl     #0x69327c -> __udivdi3+0x660
+  +0x02e 8019     adds   r0, r0, r6
+  +0x030 a169     ldr    r1, [r4, #0x18]
+  +0x032 49f222fb bl     #0x69341c -> __udivdi3+0x800
+  +0x036 0028     cmp    r0, #0
+  +0x038 07d0     beq    #0x449dec
+  +0x03a 816a     ldr    r1, [r0, #0x28]
+  +0x03c c06a     ldr    r0, [r0, #0x2c]
+  +0x03e 2a68     ldr    r2, [r5]
+  +0x040 6b68     ldr    r3, [r5, #4]
+  +0x042 5118     adds   r1, r2, r1
+  +0x044 4341     adcs   r3, r0
+  +0x046 2960     str    r1, [r5]
+  +0x048 6b60     str    r3, [r5, #4]
+  +0x04a e069     ldr    r0, [r4, #0x1c]
+  +0x04c 0128     cmp    r0, #1
+  +0x04e 11db     blt    #0x449e16
+  +0x050 5720     movs   r0, #0x57
+  +0x052 8600     lsls   r6, r0, #2
+  +0x054 49f241fa bl     #0x69327c -> __udivdi3+0x660
+  +0x058 8019     adds   r0, r0, r6
+  +0x05a e169     ldr    r1, [r4, #0x1c]
+  +0x05c 49f20dfb bl     #0x69341c -> __udivdi3+0x800
+  +0x060 0028     cmp    r0, #0
+  +0x062 07d0     beq    #0x449e16
+  +0x064 816a     ldr    r1, [r0, #0x28]
+  +0x066 c06a     ldr    r0, [r0, #0x2c]
+  +0x068 2a68     ldr    r2, [r5]
+  +0x06a 6b68     ldr    r3, [r5, #4]
+  +0x06c 5118     adds   r1, r2, r1
+  +0x06e 4341     adcs   r3, r0
+  +0x070 2960     str    r1, [r5]
+  +0x072 6b60     str    r3, [r5, #4]
+  +0x074 206a     ldr    r0, [r4, #0x20]
+  +0x076 0128     cmp    r0, #1
+  +0x078 11db     blt    #0x449e40
+  +0x07a 5720     movs   r0, #0x57
+  +0x07c 8600     lsls   r6, r0, #2
+  +0x07e 49f22cfa bl     #0x69327c -> __udivdi3+0x660
+  +0x082 8019     adds   r0, r0, r6
+  +0x084 216a     ldr    r1, [r4, #0x20]
+  +0x086 49f2f8fa bl     #0x69341c -> __udivdi3+0x800
+  +0x08a 0028     cmp    r0, #0
+  +0x08c 07d0     beq    #0x449e40
+  +0x08e 816a     ldr    r1, [r0, #0x28]
+  +0x090 c06a     ldr    r0, [r0, #0x2c]
+  +0x092 2a68     ldr    r2, [r5]
+  +0x094 6b68     ldr    r3, [r5, #4]
+  +0x096 5118     adds   r1, r2, r1
+  +0x098 4341     adcs   r3, r0
+  +0x09a 2960     str    r1, [r5]
+  +0x09c 6b60     str    r3, [r5, #4]
+  +0x09e 606a     ldr    r0, [r4, #0x24]
+  +0x0a0 0128     cmp    r0, #1
+  +0x0a2 11db     blt    #0x449e6a
+  +0x0a4 5720     movs   r0, #0x57
+  +0x0a6 8600     lsls   r6, r0, #2
+  +0x0a8 49f217fa bl     #0x69327c -> __udivdi3+0x660
+  +0x0ac 8019     adds   r0, r0, r6
+  +0x0ae 616a     ldr    r1, [r4, #0x24]
+  +0x0b0 49f2e3fa bl     #0x69341c -> __udivdi3+0x800
+  +0x0b4 0028     cmp    r0, #0
+  +0x0b6 07d0     beq    #0x449e6a
+  +0x0b8 816a     ldr    r1, [r0, #0x28]
+  +0x0ba c06a     ldr    r0, [r0, #0x2c]
+  +0x0bc 2a68     ldr    r2, [r5]
+  +0x0be 6b68     ldr    r3, [r5, #4]
+  +0x0c0 5118     adds   r1, r2, r1
+  +0x0c2 4341     adcs   r3, r0
+  +0x0c4 2960     str    r1, [r5]
+  +0x0c6 6b60     str    r3, [r5, #4]
+  +0x0c8 a06a     ldr    r0, [r4, #0x28]
+  +0x0ca 0128     cmp    r0, #1
+  +0x0cc 11db     blt    #0x449e94
+  +0x0ce 5b20     movs   r0, #0x5b
+  +0x0d0 8600     lsls   r6, r0, #2
+  +0x0d2 49f202fa bl     #0x69327c -> __udivdi3+0x660
+  +0x0d6 8019     adds   r0, r0, r6
+  +0x0d8 a16a     ldr    r1, [r4, #0x28]
+  +0x0da 49f2cefa bl     #0x69341c -> __udivdi3+0x800
+  +0x0de 0028     cmp    r0, #0
+  +0x0e0 07d0     beq    #0x449e94
+  +0x0e2 816a     ldr    r1, [r0, #0x28]
+  +0x0e4 c06a     ldr    r0, [r0, #0x2c]
+  +0x0e6 2a68     ldr    r2, [r5]
+  +0x0e8 6b68     ldr    r3, [r5, #4]
+  +0x0ea 5118     adds   r1, r2, r1
+  +0x0ec 4341     adcs   r3, r0
+  +0x0ee 2960     str    r1, [r5]
+  +0x0f0 6b60     str    r3, [r5, #4]
+  +0x0f2 a06b     ldr    r0, [r4, #0x38]
+  +0x0f4 0128     cmp    r0, #1
+  +0x0f6 11db     blt    #0x449ebe
+  +0x0f8 5b20     movs   r0, #0x5b
+  +0x0fa 8600     lsls   r6, r0, #2
+  +0x0fc 49f2edf9 bl     #0x69327c -> __udivdi3+0x660
+  +0x100 8019     adds   r0, r0, r6
+  +0x102 a16b     ldr    r1, [r4, #0x38]
+  +0x104 49f2b9fa bl     #0x69341c -> __udivdi3+0x800
+  +0x108 0028     cmp    r0, #0
+  +0x10a 07d0     beq    #0x449ebe
+  +0x10c 816a     ldr    r1, [r0, #0x28]
+  +0x10e c06a     ldr    r0, [r0, #0x2c]
+  +0x110 2a68     ldr    r2, [r5]
+  +0x112 6b68     ldr    r3, [r5, #4]
+  +0x114 5118     adds   r1, r2, r1
+  +0x116 4341     adcs   r3, r0
+  +0x118 2960     str    r1, [r5]
+  +0x11a 6b60     str    r3, [r5, #4]
+  +0x11c a06c     ldr    r0, [r4, #0x48]
+  +0x11e 0128     cmp    r0, #1
+  +0x120 11db     blt    #0x449ee8
+  +0x122 5b20     movs   r0, #0x5b
+  +0x124 8600     lsls   r6, r0, #2
+  +0x126 49f2d8f9 bl     #0x69327c -> __udivdi3+0x660
+  +0x12a 8019     adds   r0, r0, r6
+  +0x12c a16c     ldr    r1, [r4, #0x48]
+  +0x12e 49f2a4fa bl     #0x69341c -> __udivdi3+0x800
+  +0x132 0028     cmp    r0, #0
+  +0x134 07d0     beq    #0x449ee8
+  +0x136 816a     ldr    r1, [r0, #0x28]
+  +0x138 c06a     ldr    r0, [r0, #0x2c]
+  +0x13a 2a68     ldr    r2, [r5]
+  +0x13c 6b68     ldr    r3, [r5, #4]
+  +0x13e 5118     adds   r1, r2, r1
+  +0x140 4341     adcs   r3, r0
+  +0x142 2960     str    r1, [r5]
+  +0x144 6b60     str    r3, [r5, #4]
+  +0x146 a06d     ldr    r0, [r4, #0x58]
+  +0x148 0128     cmp    r0, #1
+  +0x14a 11db     blt    #0x449f12
+  +0x14c 5b20     movs   r0, #0x5b
+  +0x14e 8600     lsls   r6, r0, #2
+  +0x150 49f2c3f9 bl     #0x69327c -> __udivdi3+0x660
+  +0x154 8019     adds   r0, r0, r6
+  +0x156 a16d     ldr    r1, [r4, #0x58]
+  +0x158 49f28ffa bl     #0x69341c -> __udivdi3+0x800
+  +0x15c 0028     cmp    r0, #0
+  +0x15e 07d0     beq    #0x449f12
+  +0x160 816a     ldr    r1, [r0, #0x28]
+  +0x162 c06a     ldr    r0, [r0, #0x2c]
+  +0x164 2a68     ldr    r2, [r5]
+  +0x166 6b68     ldr    r3, [r5, #4]
+  +0x168 5118     adds   r1, r2, r1
+  +0x16a 4341     adcs   r3, r0
+  +0x16c 2960     str    r1, [r5]
+  +0x16e 6b60     str    r3, [r5, #4]
+  +0x170 2868     ldr    r0, [r5]
+  +0x172 6968     ldr    r1, [r5, #4]
+  +0x174 70bd     pop    {r4, r5, r6, pc}

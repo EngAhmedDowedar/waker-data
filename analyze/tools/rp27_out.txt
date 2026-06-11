@@ -1,0 +1,11 @@
+opcode literal @+0x14: 0x143
+opcode literal @+0x1c: 0x13b
+
+===== house-parse 0x6985dc 0x006985dc =====
+  +0x000 7847     bx     pc
+
+===== GetPrice-lookup 0x6960ec 0x006960ec =====
+  +0x000 7847     bx     pc
+
+===== house-ctor 0x69855c 0x0069855c =====
+  +0x000 7847     bx     pc

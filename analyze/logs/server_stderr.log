@@ -1,0 +1,34 @@
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8992
+ * Running on http://192.168.1.3:8992
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9090
+ * Running on http://192.168.1.3:9090
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.3:8080
+Press CTRL+C to quit
+Press CTRL+C to quit
+Press CTRL+C to quit
+192.168.1.3 - - [11/Jun/2026 13:06:15] "PUT /checkversion HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:19] "PUT /api/auth HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:19] "PUT /api/connect HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:20] "PUT /city/impart HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:20] "PUT /city/impart HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:20] "PUT /city/connect/getplayerlist HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:30] "PUT /city/connect/create HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:30] "PUT /city/connect/connect HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:33] "PUT /city/chat/getsysmsgs HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:33] "PUT /city/monthCard/enterMatchCard HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:34] "PUT /race/match/matchconfig HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:43] "PUT /race/car/getcars HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:43] "PUT /race/car/getstoreitems HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:44] "PUT /race/car/getstoreitems HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:45] "PUT /race/car/getstoreitems HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:53] "PUT /city/goods/playerbags HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:56] "PUT /city/news/frontpage HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:09:59] "PUT /city/chat/getmsg HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 13:10:15] "PUT /city/airline/airlines HTTP/1.1" 200 -

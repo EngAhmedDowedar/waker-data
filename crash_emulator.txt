@@ -1,0 +1,110 @@
+--------- beginning of system
+06-11 02:40:25.357  1302  2174 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.anansimobile.city_ar/.Main bnds=[270,380][393,501] (has extras)} from uid 10043 on display 0
+--------- beginning of main
+06-11 02:40:25.357  1117  1138 D audio_hw_hal: raw_start_output_stream, stream=0xc6f05140, sampleRate=48000, channel=2, bps=16, bufSize=4096
+06-11 02:40:25.358  1117  1138 D AudioFlinger: mixer(0xc5a80000) throttle end: throttle time(10)
+06-11 02:40:25.363  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:44 android.app.ActivityThread.handleReceiver:3073 
+06-11 02:40:25.367  1302  2912 W BroadcastQueue: Permission Denial: receiving Intent { act=com.android.launcher3.action.LAUNCH flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$GmsExternalReceiver requires com.android.launcher3.permission.RECEIVE_LAUNCH_BROADCASTS due to sender com.ldmnq.launcher3 (uid 10043)
+06-11 02:40:25.389  3844  3844 D libnativebridge: PreInitializeNativeBridge name=zygote instruction_set=arm
+06-11 02:40:25.390  3844  3844 V libnb   : enter native_bridge2_initialize /data/user/0/com.anansimobile.city_ar/code_cache arm
+06-11 02:40:25.394  1302  1802 I ActivityManager: Start proc 3844:com.anansimobile.city_ar/u0a54 for activity com.anansimobile.city_ar/.Main
+06-11 02:40:25.401  3844  3844 D houdini : [3844] Initialize library(version: 7.1.1b_x.49852 RELEASE)... successfully.
+06-11 02:40:25.427  2029  2029 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+06-11 02:40:25.428  2029  2029 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+06-11 02:40:25.451  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:53 android.app.ActivityThread.handleReceiver:3073 
+06-11 02:40:25.466  1758  1918 D EGL_adreno: eglMakeCurrent: 0xb6f221a0: ver 3 1 (tinfo 0xa617fbd0)
+06-11 02:40:25.491  2029  3859 D AdvertisingIdClient: AdvertisingIdClient already created.
+06-11 02:40:25.491  2029  3859 D AdvertisingIdClient: AdvertisingIdClient is not bounded. Starting to bind it...
+06-11 02:40:25.493  2029  3859 D AdvertisingIdClient: AdvertisingIdClient is bounded
+06-11 02:40:25.495  2029  3859 I AdvertisingIdClient: shouldSendLog 59381
+06-11 02:40:25.495  2029  3859 I AdvertisingIdClient: GetInfoInternal elapse 4ms
+06-11 02:40:25.969  3844  3844 I FirebaseInitProvider: FirebaseApp initialization skipped (Waker patch)
+06-11 02:40:26.056  3844  3864 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+06-11 02:40:26.078  3844  3844 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: FATAL EXCEPTION: main
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: Process: com.anansimobile.city_ar, PID: 3844
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.anansimobile.city_ar-1/base.apk"],nativeLibraryDirectories=[/data/app/com.anansimobile.city_ar-1/lib/arm, /data/app/com.anansimobile.city_ar-1/base.apk!/lib/armeabi, /system/lib, /vendor/lib]]] couldn't find "libfrida-gadget.so"
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: 	at java.lang.Runtime.loadLibrary0(Runtime.java:1002)
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: 	at java.lang.System.loadLibrary(System.java:1579)
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: 	at com.anansimobile.city_ar.Main.<clinit>(Main.java:171)
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1078)
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2571)
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2759)
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1482)
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6190)
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:892)
+06-11 02:40:26.079  3844  3844 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:782)
+06-11 02:40:26.082  1302  1841 W ActivityManager:   Force finishing activity com.anansimobile.city_ar/.Main
+06-11 02:40:26.093  1302  1317 W System.err: java.lang.Exception: show AlertDialog! title=‎‫وكر الاوغاد‬‎ has stopped
+06-11 02:40:26.093  1302  1317 W System.err: 	at android.app.AlertDialog.show(AlertDialog.java:134)
+06-11 02:40:26.093  1302  1317 W System.err: 	at com.android.server.am.AppErrors.handleShowAppErrorUi(AppErrors.java:719)
+06-11 02:40:26.094  1302  1317 W System.err: 	at com.android.server.am.ActivityManagerService$UiHandler.handleMessage(ActivityManagerService.java:1637)
+06-11 02:40:26.094  1302  1317 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+06-11 02:40:26.094  1302  1317 W System.err: 	at android.os.Looper.loop(Looper.java:154)
+06-11 02:40:26.094  1302  1317 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:61)
+06-11 02:40:26.094  1302  1317 W System.err: 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+06-11 02:40:26.159  1302  3729 I HostConnection: HostConnection::HostConnection: pid=1302, tid=3729, this=0xa92a9480
+06-11 02:40:26.162  1302  3729 I         : fastpipe: Connect success
+06-11 02:40:26.163  1302  3729 D HostConnection: HostRPC::connect sucess: app=system_server, pid=1302, tid=3729, this=0xa9730440
+06-11 02:40:26.164  1302  3729 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:system_server
+06-11 02:40:26.168  1302  3729 I OpenGLRenderer: Initialized EGL, version 1.4
+06-11 02:40:26.168  1302  3729 D OpenGLRenderer: Swap behavior 1
+06-11 02:40:26.169  1302  3729 I EGL_adreno: eglCreateContext request GLES major-version=2
+06-11 02:40:26.220  1302  3729 D EGL_adreno: eglCreateContext: 0xa8fb2f60: maj 3 min 1 rcv 4
+06-11 02:40:26.267  1302  3729 D EGL_adreno: eglMakeCurrent: 0xa8fb2f60: ver 3 1 (tinfo 0xa92f3e60)
+06-11 02:40:26.298  1302  3729 E EGL_adreno: tid 3729: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+06-11 02:40:26.298  1302  3729 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xa59422e0, error=EGL_BAD_MATCH
+06-11 02:40:26.317  1302  3729 D EGL_adreno: eglMakeCurrent: 0xa8fb2f60: ver 3 1 (tinfo 0xa92f3e60)
+06-11 02:40:26.590  1302  1316 W ActivityManager: Activity pause timeout for ActivityRecord{3af251c u0 com.anansimobile.city_ar/.Main t7 f}
+06-11 02:40:26.594  1302  1316 I WindowManager: Failed to capture screenshot of Token{e898525 ActivityRecord{3af251c u0 com.anansimobile.city_ar/.Main t7 f}} appWin=Window{b724ea1 u0 Starting com.anansimobile.city_ar} drawState=4
+06-11 02:40:26.642  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:44 android.app.ActivityThread.handleReceiver:3073 
+06-11 02:40:26.667  1758  1918 E EGL_adreno: tid 1918: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+06-11 02:40:26.667  1758  1918 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xa5b49980, error=EGL_BAD_MATCH
+06-11 02:40:26.669  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:53 android.app.ActivityThread.handleReceiver:3073 
+06-11 02:40:26.729  1758  1918 D EGL_adreno: eglMakeCurrent: 0xb6f221a0: ver 3 1 (tinfo 0xa617fbd0)
+06-11 02:40:26.801  1302  1310 I art     : Background partial concurrent mark sweep GC freed 27715(1241KB) AllocSpace objects, 16(320KB) LOS objects, 33% free, 9MB/14MB, paused 1.854ms total 181.439ms
+06-11 02:40:26.848  1302  2897 W art     : Long monitor contention with owner Binder:1302_18 (2912) at int com.android.server.pm.PackageManagerService.checkUidPermission(java.lang.String, int)(PackageManagerService.java:4040) waiters=0 in int com.android.server.pm.PackageManagerService.checkUidPermission(java.lang.String, int) for 130ms
+06-11 02:40:26.857  1302  1316 W art     : Long monitor contention with owner Binder:1302_12 (2897) at java.util.List com.android.server.am.ActivityManagerService.getTasks(int, int)(ActivityManagerService.java:9190) waiters=1 in void com.android.server.am.ActivityManagerService$MainHandler.handleMessage(android.os.Message) for 106ms
+06-11 02:40:26.864  1302  2174 I ActivityManager: Killing 3844:com.anansimobile.city_ar/u0a54 (adj 900): remove task
+06-11 02:40:26.865  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:893 android.content.ContextWrapper.sendBroadcast:426 com.android.coreservice.TabManager.notifyClosing:345 com.android.coreservice.TabManager.updateInner:182 com.android.coreservice.TabManager.onUpdate:217 
+06-11 02:40:26.868  1302  1314 E ActivityManager: Sending non-protected broadcast android.intent.action.CLOSE_TASK from system 1735:com.android.coreservice/1000 pkg com.android.coreservice
+06-11 02:40:26.868  1302  1314 E ActivityManager: java.lang.Throwable
+06-11 02:40:26.868  1302  1314 E ActivityManager: 	at com.android.server.am.ActivityManagerService.checkBroadcastFromSystem(ActivityManagerService.java:18108)
+06-11 02:40:26.868  1302  1314 E ActivityManager: 	at com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:18680)
+06-11 02:40:26.868  1302  1314 E ActivityManager: 	at com.android.server.am.ActivityManagerService.broadcastIntent(ActivityManagerService.java:18771)
+06-11 02:40:26.868  1302  1314 E ActivityManager: 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:499)
+06-11 02:40:26.868  1302  1314 E ActivityManager: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2820)
+06-11 02:40:26.868  1302  1314 E ActivityManager: 	at android.os.Binder.execTransact(Binder.java:565)
+06-11 02:40:26.874  1735  1735 I CoreService: notifyClosing notify tab closed taskPackageName:com.anansimobile.city_ar
+06-11 02:40:26.890  1302  1323 W WindowManager: Failed looking up window
+06-11 02:40:26.890  1302  1323 W WindowManager: java.lang.IllegalArgumentException: Requested window android.view.ViewRootImpl$W@f177708 does not exist
+06-11 02:40:26.890  1302  1323 W WindowManager: 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:9459)
+06-11 02:40:26.890  1302  1323 W WindowManager: 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:9450)
+06-11 02:40:26.890  1302  1323 W WindowManager: 	at com.android.server.wm.WindowManagerService.removeWindow(WindowManagerService.java:2410)
+06-11 02:40:26.890  1302  1323 W WindowManager: 	at com.android.server.wm.Session.remove(Session.java:202)
+06-11 02:40:26.890  1302  1323 W WindowManager: 	at android.view.ViewRootImpl.dispatchDetachedFromWindow(ViewRootImpl.java:3290)
+06-11 02:40:26.890  1302  1323 W WindowManager: 	at android.view.ViewRootImpl.doDie(ViewRootImpl.java:5917)
+06-11 02:40:26.890  1302  1323 W WindowManager: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:3626)
+06-11 02:40:26.890  1302  1323 W WindowManager: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+06-11 02:40:26.890  1302  1323 W WindowManager: 	at android.os.Looper.loop(Looper.java:154)
+06-11 02:40:26.890  1302  1323 W WindowManager: 	at android.os.HandlerThread.run(HandlerThread.java:61)
+06-11 02:40:26.890  1302  1323 W WindowManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+06-11 02:40:26.904  1302  2907 D ActivityManager: cleanUpApplicationRecord -- 3844
+06-11 02:40:26.911  1302  3729 D EGL_adreno: eglMakeCurrent: 0xa8fb2f60: ver 3 1 (tinfo 0xa92f3e60)
+06-11 02:40:26.935  1302  2897 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@19bac98 attribute=null, token = android.os.BinderProxy@db53abd
+06-11 02:40:26.941  1302  3729 I HostConnection: HostConnection::~HostConnection, pid=1302, tid=3729, this=0xa92a9480, m_stream=0xa9730440
+06-11 02:40:26.943  1302  3729 I         : fastpipe: close connect
+06-11 02:40:26.944  1302  1841 W ActivityManager: Ignoring remove of inactive process: ProcessRecord{efe1a9e 0:com.anansimobile.city_ar/u0a54}
+06-11 02:40:26.959  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:53 android.app.ActivityThread.handleReceiver:3073 
+06-11 02:40:27.018  1302  1323 W AppOps  : Finishing op nesting under-run: uid 1000 pkg android code 24 time=0 duration=0 nesting=0
+06-11 02:40:27.075  1302  1310 I art     : Background partial concurrent mark sweep GC freed 18314(903KB) AllocSpace objects, 16(320KB) LOS objects, 33% free, 9MB/13MB, paused 1.265ms total 107.361ms
+06-11 02:40:27.183  1758  1918 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+06-11 02:40:28.449  1117  1138 D audio_hw_hal: log_func, out_standby
+06-11 02:40:28.449  1117  1138 D audio_hw_hal: raw_close_output_stream, dev=0xc6f0a0c0, stream =0xc6f05140
+06-11 02:40:28.449  1117  1138 D audio_hw_hal: raw_close_output_stream, stream=0xc6f05140,  success!

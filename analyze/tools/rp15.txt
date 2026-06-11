@@ -1,0 +1,58 @@
+
+===== ParseResponseEx around ParseRoleList call (+478)  0x004673f0..0x00467470 =====
+  0x004673f0: 026c     ldr     r2, [r0, #0x40] (GetNode)
+  0x004673f2: 0846     mov     r0, r1
+  0x004673f4: 2146     mov     r1, r4
+  0x004673f6: 9047     blx     r2
+  0x004673f8: 2df280fe bl      #0x6950fc -> 0x006950fc[bxpc-veneer]
+  0x004673fc: 0921     movs    r1, #9
+  0x004673fe: 2246     mov     r2, r4
+  0x00467400: 3cf2acfb bl      #0x6a3b5c -> 0x006a3b5c[bxpc-veneer]
+  0x00467404: 2bf202ff bl      #0x69320c -> 0x0069320c[bxpc-veneer]
+  0x00467408: 9f49     ldr     r1, [pc, #0x27c] lit=0x00001bcc
+  0x0046740a: 4018     adds    r0, r0, r1
+  0x0046740c: 0b21     movs    r1, #0xb
+  0x0046740e: 41f245fc bl      #0x6a8c9c -> 0x006a8c9c[bxpc-veneer]
+  0x00467412: 2a46     mov     r2, r5
+  0x00467414: 42e2     b       #0x46789c
+  0x00467416: e72c     cmp     r4, #0xe7
+  0x00467418: 00d0     beq     #0x46741c
+  0x0046741a: 3fe2     b       #0x46789c
+  0x0046741c: 2bf2f6fe bl      #0x69320c -> 0x0069320c[bxpc-veneer]
+  0x00467420: 9949     ldr     r1, [pc, #0x264] lit=0x00001bcc
+  0x00467422: 4018     adds    r0, r0, r1
+  0x00467424: 0b21     movs    r1, #0xb
+  0x00467426: 41f231fc bl      #0x6a8c8c -> 0x006a8c8c[bxpc-veneer]
+  0x0046742a: 0025     movs    r5, #0
+  0x0046742c: ea43     mvns    r2, r5
+  0x0046742e: 0028     cmp     r0, #0
+  0x00467430: 00d0     beq     #0x467434
+  0x00467432: 33e2     b       #0x46789c
+  0x00467434: 2bf2eafe bl      #0x69320c -> 0x0069320c[bxpc-veneer]
+  0x00467438: 9449     ldr     r1, [pc, #0x250] lit=0x00001bf0
+  0x0046743a: 4554     strb    r5, [r0, r1]
+  0x0046743c: 2df276ff bl      #0x69532c -> 0x0069532c[bxpc-veneer]
+  0x00467440: 3146     mov     r1, r6
+  0x00467442: 41f233fc bl      #0x6a8cac -> 0x006a8cac[bxpc-veneer]
+  0x00467446: 2df271ff bl      #0x69532c -> 0x0069532c[bxpc-veneer]
+  0x0046744a: 41f237fc bl      #0x6a8cbc -> 0x006a8cbc[bxpc-veneer]
+  0x0046744e: 0028     cmp     r0, #0
+  0x00467450: 00d1     bne     #0x467454
+  0x00467452: cae1     b       #0x4677ea
+  0x00467454: 5b20     movs    r0, #0x5b
+  0x00467456: 8400     lsls    r4, r0, #2
+  0x00467458: 2bf2d8fe bl      #0x69320c -> 0x0069320c[bxpc-veneer]
+  0x0046745c: 0059     ldr     r0, [r0, r4]
+  0x0046745e: 41f235fc bl      #0x6a8ccc -> 0x006a8ccc[bxpc-veneer]
+  0x00467462: 2a46     mov     r2, r5
+  0x00467464: 1ae2     b       #0x46789c
+  0x00467466: 0921     movs    r1, #9
+  0x00467468: 41f210fc bl      #0x6a8c8c -> 0x006a8c8c[bxpc-veneer]
+  0x0046746c: 0021     movs    r1, #0
+  0x0046746e: ca43     mvns    r2, r1
+
+=== resolve 0x693ecc (role-entry parser thunk) ===
+  0x00693ecc: 7847 bx pc
+  0x00693ece: c046 mov r8, r8
+
+=== callers of ParseRoleList (0x0056f19a) ===

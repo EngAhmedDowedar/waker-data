@@ -1,0 +1,84 @@
+=== ngDeviceAndroid vtable @ 0x00752b70 ===
+  [ 0] +0x000 raw=0x00000000 noreloc resolved=0x00000000 None
+  [ 1] +0x004 raw=0x00000000 ABS32   resolved=0x00752c30 _ZTI15ngDeviceAndroid
+  [ 2] +0x008 raw=0x00000000 ABS32   resolved=0x005eed89 _ZN15ngDeviceAndroidD1Ev
+  [ 3] +0x00c raw=0x00000000 ABS32   resolved=0x005eed91 _ZN15ngDeviceAndroidD0Ev
+  [ 4] +0x010 raw=0x00000000 ABS32   resolved=0x005bb9f1 _ZN11ngSingleton18AddReleaseCallbackEPFvPvES0_i
+  [ 5] +0x014 raw=0x00000000 ABS32   resolved=0x005eed9d _ZN15ngDeviceAndroid10InitializeEv
+  [ 6] +0x018 raw=0x00000000 ABS32   resolved=0x005bb81d _ZN8ngDevice7DestroyEv
+  [ 7] +0x01c raw=0x00000000 ABS32   resolved=0x005bb81f _ZN8ngDevice17HandleSystemEventEiii
+  [ 8] +0x020 raw=0x00000000 ABS32   resolved=0x005bb821 _ZN8ngDevice16SetRetinaDisplayEh
+  [ 9] +0x024 raw=0x00000000 ABS32   resolved=0x005bb825 _ZN8ngDevice15IsRetinaDisplayEv
+  [10] +0x028 raw=0x00000000 ABS32   resolved=0x005bb829 _ZN8ngDevice6IsIPadEv
+  [11] +0x02c raw=0x00000000 ABS32   resolved=0x005bb7d9 _ZN8ngDevice17SetDeviceDimesionEii
+  [12] +0x030 raw=0x00000000 ABS32   resolved=0x005bb82d _ZN8ngDevice14GetScreenWidthEv
+  [13] +0x034 raw=0x00000000 ABS32   resolved=0x005bb831 _ZN8ngDevice15GetScreenHeightEv
+  [14] +0x038 raw=0x00000000 ABS32   resolved=0x005bb7e1 _ZN8ngDevice12RotateScreenEi
+  [15] +0x03c raw=0x00000000 ABS32   resolved=0x005bb835 _ZN8ngDevice16GetRotationAngleEv
+  [16] +0x040 raw=0x00000000 ABS32   resolved=0x005eeda5 _ZN15ngDeviceAndroid11IsFileExistEPKc
+  [17] +0x044 raw=0x00000000 ABS32   resolved=0x005eee51 _ZN15ngDeviceAndroid11GetFilePathER10ngStringV2PKc
+  [18] +0x048 raw=0x00000000 ABS32   resolved=0x005eef2d _ZN15ngDeviceAndroid16GetFileWritePathER10ngStringV2PKc
+  [19] +0x04c raw=0x00000000 ABS32   resolved=0x005bb867 _ZN8ngDevice16GetFileCachePathER10ngStringV2PKc
+  [20] +0x050 raw=0x00000000 ABS32   resolved=0x005bb879 _ZN8ngDevice20GetCurrentSystemTimeEv
+  [21] +0x054 raw=0x00000000 ABS32   resolved=0x005ef4b5 _ZN15ngDeviceAndroid21CurrentLocaleLanguageEv
+  [22] +0x058 raw=0x00000000 ABS32   resolved=0x005ef595 _ZN15ngDeviceAndroid19CurrentLocaleRegionEv
+  [23] +0x05c raw=0x00000000 ABS32   resolved=0x005ef3d5 _ZN15ngDeviceAndroid25CurrentLocaleLanguageFullEv
+  [24] +0x060 raw=0x00000000 ABS32   resolved=0x005efb9d _ZN15ngDeviceAndroid9LaunchURLEPKc   <<<< ngDeviceAndroid::LaunchURL
+  [25] +0x064 raw=0x00000000 ABS32   resolved=0x005ef019 _ZN15ngDeviceAndroid13GetDeviceTypeEv
+  [26] +0x068 raw=0x00000000 ABS32   resolved=0x005ef0fd _ZN15ngDeviceAndroid16GetDeviceVersionEv
+  [27] +0x06c raw=0x00000000 ABS32   resolved=0x005ef1e1 _ZN15ngDeviceAndroid17GetDeviceVersionfEv
+  [28] +0x070 raw=0x00000000 ABS32   resolved=0x005ef675 _ZN15ngDeviceAndroid11GetDeviceIDEv
+  [29] +0x074 raw=0x00000000 ABS32   resolved=0x005ef7a5 _ZN15ngDeviceAndroid14GetDeviceMacIDEv
+  [30] +0x078 raw=0x00000000 ABS32   resolved=0x005ef005 _ZN15ngDeviceAndroid15GetDeviceFamilyEv
+  [31] +0x07c raw=0x00000000 ABS32   resolved=0x005ef1f5 _ZN15ngDeviceAndroid17GetDevicePlatformEv
+  [32] +0x080 raw=0x00000000 ABS32   resolved=0x005ef209 _ZNK15ngDeviceAndroid12GetChannelIDEv
+  [33] +0x084 raw=0x00000000 ABS32   resolved=0x005ef2dd _ZNK15ngDeviceAndroid11GetMetaDataEPKc
+  [34] +0x088 raw=0x00000000 ABS32   resolved=0x005efac1 _ZNK15ngDeviceAndroid7GetIdfaEv
+  [35] +0x08c raw=0x00000000 ABS32   resolved=0x005bb979 _ZNK8ngDevice17GetReleaseVersionEv
+  [36] +0x090 raw=0x00000000 ABS32   resolved=0x005ef7bd _ZN15ngDeviceAndroid17GetDeviceVendorIDEv
+  [37] +0x094 raw=0x00000000 ABS32   resolved=0x005bb9a1 _ZN8ngDevice17SetAccessGroupKeyEPKc
+  [38] +0x098 raw=0x00000000 ABS32   resolved=0x005bb9a3 _ZN8ngDevice24RegisterPushNotificationEv
+  [39] +0x09c raw=0x00000000 ABS32   resolved=0x005efc49 _ZN15ngDeviceAndroid24RegisterPushNotificationEPKcS1_iS1_
+
+=== ngDevice vtable @ 0x0074edf0 ===
+  [ 0] +0x000 raw=0x00000000 noreloc resolved=0x00000000 None
+  [ 1] +0x004 raw=0x00000000 ABS32   resolved=0x0074eeb0 _ZTI8ngDevice
+  [ 2] +0x008 raw=0x00000000 ABS32   resolved=0x005bb7c5 _ZN8ngDeviceD1Ev
+  [ 3] +0x00c raw=0x00000000 ABS32   resolved=0x005bb7cd _ZN8ngDeviceD0Ev
+  [ 4] +0x010 raw=0x00000000 ABS32   resolved=0x005bb9f1 _ZN11ngSingleton18AddReleaseCallbackEPFvPvES0_i
+  [ 5] +0x014 raw=0x00000000 ABS32   resolved=0x005bb81b _ZN8ngDevice10InitializeEv
+  [ 6] +0x018 raw=0x00000000 ABS32   resolved=0x005bb81d _ZN8ngDevice7DestroyEv
+  [ 7] +0x01c raw=0x00000000 ABS32   resolved=0x005bb81f _ZN8ngDevice17HandleSystemEventEiii
+  [ 8] +0x020 raw=0x00000000 ABS32   resolved=0x005bb821 _ZN8ngDevice16SetRetinaDisplayEh
+  [ 9] +0x024 raw=0x00000000 ABS32   resolved=0x005bb825 _ZN8ngDevice15IsRetinaDisplayEv
+  [10] +0x028 raw=0x00000000 ABS32   resolved=0x005bb829 _ZN8ngDevice6IsIPadEv
+  [11] +0x02c raw=0x00000000 ABS32   resolved=0x005bb7d9 _ZN8ngDevice17SetDeviceDimesionEii
+  [12] +0x030 raw=0x00000000 ABS32   resolved=0x005bb82d _ZN8ngDevice14GetScreenWidthEv
+  [13] +0x034 raw=0x00000000 ABS32   resolved=0x005bb831 _ZN8ngDevice15GetScreenHeightEv
+  [14] +0x038 raw=0x00000000 ABS32   resolved=0x005bb7e1 _ZN8ngDevice12RotateScreenEi
+  [15] +0x03c raw=0x00000000 ABS32   resolved=0x005bb835 _ZN8ngDevice16GetRotationAngleEv
+  [16] +0x040 raw=0x00000000 ABS32   resolved=0x005bb83d _ZN8ngDevice11IsFileExistEPKc
+  [17] +0x044 raw=0x00000000 ABS32   resolved=0x005bb841 _ZN8ngDevice11GetFilePathER10ngStringV2PKc
+  [18] +0x048 raw=0x00000000 ABS32   resolved=0x005bb855 _ZN8ngDevice16GetFileWritePathER10ngStringV2PKc
+  [19] +0x04c raw=0x00000000 ABS32   resolved=0x005bb867 _ZN8ngDevice16GetFileCachePathER10ngStringV2PKc
+  [20] +0x050 raw=0x00000000 ABS32   resolved=0x005bb879 _ZN8ngDevice20GetCurrentSystemTimeEv
+  [21] +0x054 raw=0x00000000 ABS32   resolved=0x005bb881 _ZN8ngDevice21CurrentLocaleLanguageEv
+  [22] +0x058 raw=0x00000000 ABS32   resolved=0x005bb895 _ZN8ngDevice19CurrentLocaleRegionEv
+  [23] +0x05c raw=0x00000000 ABS32   resolved=0x005bb8a9 _ZN8ngDevice25CurrentLocaleLanguageFullEv
+  [24] +0x060 raw=0x00000000 ABS32   resolved=0x005bb8bd _ZN8ngDevice9LaunchURLEPKc   <<<< ngDevice::LaunchURL(stub)
+  [25] +0x064 raw=0x00000000 ABS32   resolved=0x005bb8c1 _ZN8ngDevice13GetDeviceTypeEv
+  [26] +0x068 raw=0x00000000 ABS32   resolved=0x005bb8d5 _ZN8ngDevice16GetDeviceVersionEv
+  [27] +0x06c raw=0x00000000 ABS32   resolved=0x005bb8e9 _ZN8ngDevice17GetDeviceVersionfEv
+  [28] +0x070 raw=0x00000000 ABS32   resolved=0x005bb8ed _ZN8ngDevice11GetDeviceIDEv
+  [29] +0x074 raw=0x00000000 ABS32   resolved=0x005bb901 _ZN8ngDevice14GetDeviceMacIDEv
+  [30] +0x078 raw=0x00000000 ABS32   resolved=0x005bb915 _ZN8ngDevice15GetDeviceFamilyEv
+  [31] +0x07c raw=0x00000000 ABS32   resolved=0x005bb929 _ZN8ngDevice17GetDevicePlatformEv
+  [32] +0x080 raw=0x00000000 ABS32   resolved=0x005bb93d _ZNK8ngDevice12GetChannelIDEv
+  [33] +0x084 raw=0x00000000 ABS32   resolved=0x005bb951 _ZNK8ngDevice11GetMetaDataEPKc
+  [34] +0x088 raw=0x00000000 ABS32   resolved=0x005bb965 _ZNK8ngDevice7GetIdfaEv
+  [35] +0x08c raw=0x00000000 ABS32   resolved=0x005bb979 _ZNK8ngDevice17GetReleaseVersionEv
+  [36] +0x090 raw=0x00000000 ABS32   resolved=0x005bb98d _ZN8ngDevice17GetDeviceVendorIDEv
+  [37] +0x094 raw=0x00000000 ABS32   resolved=0x005bb9a1 _ZN8ngDevice17SetAccessGroupKeyEPKc
+  [38] +0x098 raw=0x00000000 ABS32   resolved=0x005bb9a3 _ZN8ngDevice24RegisterPushNotificationEv
+  [39] +0x09c raw=0x00000000 ABS32   resolved=0x005bb9a5 _ZN8ngDevice24RegisterPushNotificationEPKcS1_iS1_
+

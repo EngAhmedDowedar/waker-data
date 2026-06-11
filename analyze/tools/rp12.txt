@@ -1,0 +1,891 @@
+=== endpoint / command strings ===
+  getallserver   foff=0x6fd88a va=0x006fd88a str='getallserver'
+  allserver      foff=0x6fd88d va=0x006fd88d str='allserver'
+  api/           foff=0x6fb2a8 va=0x006fb2a8 str='api/'
+  connect        foff=0x0c2471 va=0x000c2471 str='connectEv'
+  connect        foff=0x0c258e va=0x000c258e str='connectEv'
+  connect        foff=0x0c2cd3 va=0x000c2cd3 str='connectEv'
+
+=== relevant symbols ===
+  0x0030b498 sz=0x1b4  _ZN18CAchievementScreen17OnReceiveResponseEiPv
+  0x0030b728 sz=0x10   _ZThn268_N18CAchievementScreen17OnReceiveResponseEiPv
+  0x0030c510 sz=0x1f4  _ZN23CAchievementSkillScreen17OnReceiveResponseEiPv
+  0x0030c704 sz=0x10   _ZThn268_N23CAchievementSkillScreen17OnReceiveResponseEiPv
+  0x003129bc sz=0xc8   _ZN26CActiveChallengeMainScreen17OnReceiveResponseEiPv
+  0x00312a84 sz=0x10   _ZThn268_N26CActiveChallengeMainScreen17OnReceiveResponseEiPv
+  0x00313af8 sz=0x28c  _ZN26CActiveChallengeRankScreen17OnReceiveResponseEiPv
+  0x003143d8 sz=0x10   _ZThn272_N26CActiveChallengeRankScreen17OnReceiveResponseEiPv
+  0x003172c8 sz=0x1a8  _ZN19CActiveDetailScreen17OnReceiveResponseEiPv
+  0x0031756c sz=0x10   _ZThn268_N19CActiveDetailScreen17OnReceiveResponseEiPv
+  0x00318740 sz=0x138  _ZN19CActiveResultScreen17OnReceiveResponseEiPv
+  0x00318878 sz=0x10   _ZThn268_N19CActiveResultScreen17OnReceiveResponseEiPv
+  0x003196d6 sz=0x2    _ZN13CActiveScreen17OnReceiveResponseEiPv
+  0x003196d8 sz=0x2    _ZThn268_N13CActiveScreen17OnReceiveResponseEiPv
+  0x00321690 sz=0x16c  _ZN16CAdvSubmitScreen17OnReceiveResponseEiPv
+  0x003217fc sz=0x10   _ZThn268_N16CAdvSubmitScreen17OnReceiveResponseEiPv
+  0x00322052 sz=0x9c   _ZN16CAdvertiseScreen17OnReceiveResponseEiPv
+  0x0032214c sz=0x10   _ZThn268_N16CAdvertiseScreen17OnReceiveResponseEiPv
+  0x0032356c sz=0x100  _ZN14CAirLineScreen17OnReceiveResponseEiPv
+  0x0032366c sz=0x10   _ZThn268_N14CAirLineScreen17OnReceiveResponseEiPv
+  0x00324848 sz=0x2bc  _ZN14CAirportScreen17OnReceiveResponseEiPv
+  0x00324e20 sz=0x10   _ZThn268_N14CAirportScreen17OnReceiveResponseEiPv
+  0x003271ec sz=0x298  _ZN22CApplicationListScreen17OnReceiveResponseEiPv
+  0x00327510 sz=0x10   _ZThn288_N22CApplicationListScreen17OnReceiveResponseEiPv
+  0x00329254 sz=0x128  _ZN17CAuctionBuyScreen17OnReceiveResponseEiPv
+  0x0032937c sz=0x10   _ZThn268_N17CAuctionBuyScreen17OnReceiveResponseEiPv
+  0x003298f2 sz=0x2e   _ZN19CAuctionEventScreen17OnReceiveResponseEiPv
+  0x00329920 sz=0x10   _ZThn268_N19CAuctionEventScreen17OnReceiveResponseEiPv
+  0x00329fd4 sz=0x78   _ZN19CAuctionHouseScreen17OnReceiveResponseEiPv
+  0x0032a04c sz=0x10   _ZThn268_N19CAuctionHouseScreen17OnReceiveResponseEiPv
+  0x0032aae0 sz=0xf4   _ZN20CAuctionSubmitScreen17OnReceiveResponseEiPv
+  0x0032abd4 sz=0x10   _ZThn268_N20CAuctionSubmitScreen17OnReceiveResponseEiPv
+  0x0032bf28 sz=0x4c8  _ZN13CAvatarScreen17OnReceiveResponseEiPv
+  0x0032c3f0 sz=0x10   _ZThn276_N13CAvatarScreen17OnReceiveResponseEiPv
+  0x0033086c sz=0x354  _ZN11CBankScreen17OnReceiveResponseEiPv
+  0x00330bc0 sz=0x10   _ZThn268_N11CBankScreen17OnReceiveResponseEiPv
+  0x00331bf0 sz=0x1a   _ZN23CBattleStatisticsScreen17OnReceiveResponseEiPv
+  0x00331c0c sz=0x20   _ZThn268_N23CBattleStatisticsScreen17OnReceiveResponseEiPv
+  0x00336450 sz=0x34   _ZN16CBlackJackScreen17OnReceiveResponseEiPv
+  0x00336484 sz=0x8    _ZThn268_N16CBlackJackScreen17OnReceiveResponseEiPv
+  0x00336bcc sz=0x25c  _ZN18CBlackMarketScreen17OnReceiveResponseEiPv
+  0x00336e28 sz=0x10   _ZThn268_N18CBlackMarketScreen17OnReceiveResponseEiPv
+  0x00339700 sz=0x1f8  _ZN18CBlackMatrixScreen17OnReceiveResponseEiPv
+  0x003398f8 sz=0x10   _ZThn268_N18CBlackMatrixScreen17OnReceiveResponseEiPv
+  0x0033c13c sz=0x114  _ZN14CBossWarScreen17OnReceiveResponseEiPv
+  0x0033c250 sz=0x10   _ZThn268_N14CBossWarScreen17OnReceiveResponseEiPv
+  0x0033da94 sz=0x70   _ZN13CCBListScreen17OnReceiveResponseEiPv
+  0x0033dbf8 sz=0x10   _ZThn268_N13CCBListScreen17OnReceiveResponseEiPv
+  0x0033e56c sz=0x1a4  _ZN13CCBMainScreen17OnReceiveResponseEiPv
+  0x0033ea50 sz=0x10   _ZThn268_N13CCBMainScreen17OnReceiveResponseEiPv
+  0x003418c0 sz=0x208  _ZN13CCLMainScreen17OnReceiveResponseEiPv
+  0x00341ac8 sz=0x10   _ZThn268_N13CCLMainScreen17OnReceiveResponseEiPv
+  0x0034314c sz=0x168  _ZN15CCampaignScreen17OnReceiveResponseEiPv
+  0x003432b4 sz=0x10   _ZThn316_N15CCampaignScreen17OnReceiveResponseEiPv
+  0x0034ab90 sz=0x270  _ZN11CChatScreen17OnReceiveResponseEiPv
+  0x0034b278 sz=0x10   _ZThn268_N11CChatScreen17OnReceiveResponseEiPv
+  0x0034c128 sz=0xa4   _ZN23CRestoreNerverBeforePay17OnReceiveResponseEiPv
+  0x0034c40c sz=0xa8   _ZN23CRestoreEnergyBeforePay17OnReceiveResponseEiPv
+  0x0034d374 sz=0x4c   _ZN12CCircleMnger17OnReceiveResponseEiPv
+  0x00356064 sz=0x828  _ZN13CCitierScreen17OnReceiveResponseEiPv
+  0x00356b04 sz=0x10   _ZThn268_N13CCitierScreen17OnReceiveResponseEiPv
+  0x0035ca5c sz=0x3a   _ZN20CCityWarResultScreen17OnReceiveResponseEiPv
+  0x0035cb00 sz=0x10   _ZThn268_N20CCityWarResultScreen17OnReceiveResponseEiPv
+  0x0035da04 sz=0x5a   _ZN14CCityWarScreen17OnReceiveResponseEiPv
+  0x0035da60 sz=0x10   _ZThn268_N14CCityWarScreen17OnReceiveResponseEiPv
+  0x0035e91e sz=0x2a   _ZN14CConfigureBase17OnReceiveResponseEiPv
+  0x00362850 sz=0x3ac  _ZN21CCooperateFightScreen17OnReceiveResponseEiPv
+  0x00362d24 sz=0x10   _ZThn268_N21CCooperateFightScreen17OnReceiveResponseEiPv
+  0x00364354 sz=0x34c  _ZN20CCooperateListScreen17OnReceiveResponseEiPv
+  0x0036475c sz=0x10   _ZThn268_N20CCooperateListScreen17OnReceiveResponseEiPv
+  0x00366154 sz=0x270  _ZN17CCorpsFightScreen17OnReceiveResponseEiPv
+  0x00366640 sz=0x10   _ZThn288_N17CCorpsFightScreen17OnReceiveResponseEiPv
+  0x003684d8 sz=0x270  _ZN18CCorpsManageScreen17OnReceiveResponseEiPv
+  0x003688d0 sz=0x10   _ZThn288_N18CCorpsManageScreen17OnReceiveResponseEiPv
+  0x0036ad28 sz=0x100  _ZN12CCrimeScreen17OnReceiveResponseEiPv
+  0x0036ae28 sz=0x10   _ZThn268_N12CCrimeScreen17OnReceiveResponseEiPv
+  0x0036c5d4 sz=0x1e0  _ZN11CCureScreen17OnReceiveResponseEiPv
+  0x0036c7b4 sz=0x10   _ZThn300_N11CCureScreen17OnReceiveResponseEiPv
+  0x0036e878 sz=0x78   _ZN13CCustomTasker24CreateCustomTask_GHLoginEPKcS1_ih
+  0x0036ea08 sz=0x44   _ZN26CCustomTaskGameHelperLoginC2EPKcS1_i
+  0x0036ea08 sz=0x44   _ZN26CCustomTaskGameHelperLoginC1EPKcS1_i
+  0x0036ea4c sz=0x34   _ZN26CCustomTaskGameHelperLoginD2Ev
+  0x0036ea4c sz=0x34   _ZN26CCustomTaskGameHelperLoginD1Ev
+  0x0036ea80 sz=0x38   _ZN26CCustomTaskGameHelperLoginD0Ev
+  0x0036eab8 sz=0x3a   _ZN26CCustomTaskGameHelperLogin4TaskEv
+  0x00371f98 sz=0x34   _ZN20CDZ_ChooseModeScreen16OnConnectSuccessEPv
+  0x00371fcc sz=0x8    _ZThn236_N20CDZ_ChooseModeScreen16OnConnectSuccessEPv
+  0x003800d4 sz=0x58   _ZN17CDZ_PlayersScreen17OnReceiveResponseEiPv
+  0x0038012c sz=0x10   _ZThn292_N17CDZ_PlayersScreen17OnReceiveResponseEiPv
+  0x00382028 sz=0x1fc  _ZN15CDailyLogScreen17OnReceiveResponseEiPv
+  0x00382224 sz=0x10   _ZThn300_N15CDailyLogScreen17OnReceiveResponseEiPv
+  0x003839a4 sz=0xd8   _ZN23CDealMarketDetailScreen17OnReceiveResponseEiPv
+  0x00383a7c sz=0x10   _ZThn272_N23CDealMarketDetailScreen17OnReceiveResponseEiPv
+  0x003860fc sz=0x1c   _ZN17CDealMarketScreen17OnReceiveResponseEiPv
+  0x00386118 sz=0x24   _ZThn268_N17CDealMarketScreen17OnReceiveResponseEiPv
+  0x0038702c sz=0x1a0  _ZN15CDecorateScreen17OnReceiveResponseEiPv
+  0x00387434 sz=0x10   _ZThn268_N15CDecorateScreen17OnReceiveResponseEiPv
+  0x00389d7c sz=0x2d4  _ZN20CDetoxifcationScreen17OnReceiveResponseEiPv
+  0x0038a050 sz=0x10   _ZThn268_N20CDetoxifcationScreen17OnReceiveResponseEiPv
+  0x0038bd24 sz=0xe0   _ZN19CDrinkRedBullScreen17OnReceiveResponseEiPv
+  0x0038be04 sz=0x10   _ZThn268_N19CDrinkRedBullScreen17OnReceiveResponseEiPv
+  0x0038e39c sz=0xf8   _ZN18CDungeonsBarScreen17OnReceiveResponseEiPv
+  0x0038e494 sz=0x10   _ZThn268_N18CDungeonsBarScreen17OnReceiveResponseEiPv
+  0x0038e70c sz=0x2c   _ZN32CCheckBagGoodsBeforeEnterHideout17OnReceiveResponseEiPv
+  0x0038e738 sz=0xa    _ZThn28_N32CCheckBagGoodsBeforeEnterHideout17OnReceiveResponseEiPv
+  0x0038f85c sz=0x2cc  _ZN21CDungeonsChooseScreen17OnReceiveResponseEiPv
+  0x0038fb28 sz=0x10   _ZThn268_N21CDungeonsChooseScreen17OnReceiveResponseEiPv
+  0x00392fc8 sz=0x100  _ZN16CEquipmentScreen17OnReceiveResponseEiPv
+  0x00393710 sz=0x10   _ZThn300_N16CEquipmentScreen17OnReceiveResponseEiPv
+  0x0039d9f8 sz=0x17c  _ZN12CEventScreen17OnReceiveResponseEiPv
+  0x0039db74 sz=0x10   _ZThn268_N12CEventScreen17OnReceiveResponseEiPv
+  0x003aeb4c sz=0x3e0  _ZN15CExchangeScreen17OnReceiveResponseEiPv
+  0x003af000 sz=0x10   _ZThn268_N15CExchangeScreen17OnReceiveResponseEiPv
+  0x003b03bc sz=0x80   _ZN17CFA_LookProScreen17OnReceiveResponseEiPv
+  0x003b0588 sz=0x10   _ZThn268_N17CFA_LookProScreen17OnReceiveResponseEiPv
+  0x003b1790 sz=0x3b8  _ZN14CFA_MainScreen17OnReceiveResponseEiPv
+  0x003b1f20 sz=0x10   _ZThn268_N14CFA_MainScreen17OnReceiveResponseEiPv
+  0x003b3650 sz=0x124  _ZN14CFA_RankScreen17OnReceiveResponseEiPv
+  0x003b3804 sz=0x10   _ZThn268_N14CFA_RankScreen17OnReceiveResponseEiPv
+  0x003b7df8 sz=0x698  _ZN18CFF_BossListScreen17OnReceiveResponseEiPv
+  0x003b8610 sz=0x10   _ZThn268_N18CFF_BossListScreen17OnReceiveResponseEiPv
+  0x003b9a00 sz=0x1cc  _ZN19CFF_BreakDownScreen17OnReceiveResponseEiPv
+  0x003b9c9c sz=0x10   _ZThn268_N19CFF_BreakDownScreen17OnReceiveResponseEiPv
+  0x003ba2fc sz=0xe0   _ZN21CFF_BreakRecordScreen17OnReceiveResponseEiPv
+  0x003ba470 sz=0x10   _ZThn268_N21CFF_BreakRecordScreen17OnReceiveResponseEiPv
+  0x003bb078 sz=0x1c4  _ZN19CFF_FightRankScreen17OnReceiveResponseEiPv
+  0x003bb32c sz=0x10   _ZThn268_N19CFF_FightRankScreen17OnReceiveResponseEiPv
+  0x003bbfac sz=0x13c  _ZN15CFF_FightScreen17OnReceiveResponseEiPv
+  0x003bc1bc sz=0x10   _ZThn268_N15CFF_FightScreen17OnReceiveResponseEiPv
+  0x003be3ac sz=0x194  _ZN19CFG_AttributeScreen17OnReceiveResponseEiPv
+  0x003be688 sz=0x10   _ZThn268_N19CFG_AttributeScreen17OnReceiveResponseEiPv
+  0x003c1654 sz=0x188  _ZN16CFG_AwakenScreen17OnReceiveResponseEiPv
+  0x003c18b8 sz=0x10   _ZThn268_N16CFG_AwakenScreen17OnReceiveResponseEiPv
+  0x003c1c8a sz=0x2    _ZN23CFG_AwakenSuccessScreen17OnReceiveResponseEiPv
+  0x003c1c8c sz=0x2    _ZThn268_N23CFG_AwakenSuccessScreen17OnReceiveResponseEiPv
+  0x003c298c sz=0xc4   _ZN20CFG_BossReliveScreen17OnReceiveResponseEiPv
+  0x003c2a50 sz=0x10   _ZThn268_N20CFG_BossReliveScreen17OnReceiveResponseEiPv
+  0x003c3cd0 sz=0x27c  _ZN14CFG_BossScreen17OnReceiveResponseEiPv
+  0x003c412c sz=0x10   _ZThn268_N14CFG_BossScreen17OnReceiveResponseEiPv
+  0x003c4f80 sz=0xd0   _ZN16CFG_ChoiceScreen17OnReceiveResponseEiPv
+  0x003c5164 sz=0x10   _ZThn268_N16CFG_ChoiceScreen17OnReceiveResponseEiPv
+  0x003c66c4 sz=0x98   _ZN18CFG_ExchangeScreen17OnReceiveResponseEiPv
+  0x003c675c sz=0x10   _ZThn296_N18CFG_ExchangeScreen17OnReceiveResponseEiPv
+  0x003c7f98 sz=0x104  _ZN14CFG_MainScreen17OnReceiveResponseEiPv
+  0x003c81c8 sz=0x10   _ZThn272_N14CFG_MainScreen17OnReceiveResponseEiPv
+  0x003c9130 sz=0x74   _ZN14CFG_ManageInfo17OnReceiveResponseEiPv
+  0x003cb278 sz=0x118  _ZN17CFG_UpgradeScreen17OnReceiveResponseEiPv
+  0x003cb3d4 sz=0x10   _ZThn268_N17CFG_UpgradeScreen17OnReceiveResponseEiPv
+  0x003ccfec sz=0x2    _ZN13ngHttpHandler17OnReceiveResponseEiPv
+  0x003cfbec sz=0x20   _ZN20CFactionBattleScreen17OnReceiveResponseEiPv
+  0x003cfc0c sz=0x10   _ZThn268_N20CFactionBattleScreen17OnReceiveResponseEiPv
+  0x003d12e4 sz=0x208  _ZN24CFactionContributeScreen17OnReceiveResponseEiPv
+  0x003d14ec sz=0x10   _ZThn268_N24CFactionContributeScreen17OnReceiveResponseEiPv
+  0x003d220c sz=0x100  _ZN20CFactionCreateScreen17OnReceiveResponseEiPv
+  0x003d230c sz=0x10   _ZThn268_N20CFactionCreateScreen17OnReceiveResponseEiPv
+  0x003d32e4 sz=0xc8   _ZN19CFactionEnemyScreen17OnReceiveResponseEiPv
+  0x003d33ac sz=0x10   _ZThn268_N19CFactionEnemyScreen17OnReceiveResponseEiPv
+  0x003d6c20 sz=0x5ac  _ZN26CFactionFactoryApplyScreen17OnReceiveResponseEiPv
+  0x003d75a8 sz=0x10   _ZThn268_N26CFactionFactoryApplyScreen17OnReceiveResponseEiPv
+  0x003dae00 sz=0x310  _ZN28CFactionFactoryApproveScreen17OnReceiveResponseEiPv
+  0x003db418 sz=0x10   _ZThn268_N28CFactionFactoryApproveScreen17OnReceiveResponseEiPv
+  0x003dc804 sz=0x2    _ZN28CFactionFactoryBuyTimeScreen17OnReceiveResponseEiPv
+  0x003dc806 sz=0x2    _ZThn268_N28CFactionFactoryBuyTimeScreen17OnReceiveResponseEiPv
+  0x003de414 sz=0x478  _ZN28CFactionFactoryProcessScreen17OnReceiveResponseEiPv
+  0x003dea6c sz=0x10   _ZThn268_N28CFactionFactoryProcessScreen17OnReceiveResponseEiPv
+  0x003e0e44 sz=0x90   _ZN18CFactionFlagScreen17OnReceiveResponseEiPv
+  0x003e0ed4 sz=0x10   _ZThn268_N18CFactionFlagScreen17OnReceiveResponseEiPv
+  0x003e1e58 sz=0x54   _ZN18CFactionInfoScreen17OnReceiveResponseEiPv
+  0x003e1eac sz=0x10   _ZThn268_N18CFactionInfoScreen17OnReceiveResponseEiPv
+  0x003e2ba8 sz=0xb8   _ZN25CFactionInformationScreen17OnReceiveResponseEiPv
+  0x003e2c60 sz=0x10   _ZThn268_N25CFactionInformationScreen17OnReceiveResponseEiPv
+  0x003e349c sz=0xa4   _ZN20CFactionManageScreen17OnReceiveResponseEiPv
+  0x003e3540 sz=0x10   _ZThn300_N20CFactionManageScreen17OnReceiveResponseEiPv
+  0x003e3f9c sz=0x52   _ZN20CFactionMemberScreen17OnReceiveResponseEiPv
+  0x003e3ff0 sz=0x10   _ZThn268_N20CFactionMemberScreen17OnReceiveResponseEiPv
+  0x003e4990 sz=0x108  _ZN20CFactionMngMbrScreen17OnReceiveResponseEiPv
+  0x003e4b48 sz=0x10   _ZThn268_N20CFactionMngMbrScreen17OnReceiveResponseEiPv
+  0x003e5740 sz=0x5e   _ZN21CFactionRequestScreen17OnReceiveResponseEiPv
+  0x003e57a0 sz=0x10   _ZThn268_N21CFactionRequestScreen17OnReceiveResponseEiPv
+  0x003e6d74 sz=0x278  _ZN14CFactionScreen17OnReceiveResponseEiPv
+  0x003e6fec sz=0x10   _ZThn268_N14CFactionScreen17OnReceiveResponseEiPv
+  0x003e8288 sz=0x1c4  _ZN19CFactionSkillScreen17OnReceiveResponseEiPv
+  0x003e8564 sz=0x10   _ZThn268_N19CFactionSkillScreen17OnReceiveResponseEiPv
+  0x003e9106 sz=0x90   _ZN19CFactionTitleScreen17OnReceiveResponseEiPv
+  0x003e9198 sz=0x10   _ZThn268_N19CFactionTitleScreen17OnReceiveResponseEiPv
+  0x003e99b4 sz=0xdc   _ZN21CFactionUpgradeScreen17OnReceiveResponseEiPv
+  0x003e9a90 sz=0x10   _ZThn268_N21CFactionUpgradeScreen17OnReceiveResponseEiPv
+  0x003ea6a8 sz=0x2a   _ZN15CFeedbackScreen17OnReceiveResponseEiPv
+  0x003ea6d4 sz=0x10   _ZThn268_N15CFeedbackScreen17OnReceiveResponseEiPv
+  0x003ee888 sz=0x194  _ZN15CFightingScreen17OnReceiveResponseEiPv
+  0x003eea1c sz=0x10   _ZThn268_N15CFightingScreen17OnReceiveResponseEiPv
+  0x003f3be0 sz=0x90   _Z18FlurryLoginGiftGetiii
+  0x003f3f5c sz=0x74   _Z19FlurryNewLoginEventi
+  0x003f3fd0 sz=0x74   _Z16FlurryLoginEventi
+  0x003f4194 sz=0x48   _Z27FlurryGuestLoginNameTooLongv
+  0x003f6260 sz=0x358  _ZN13CFriendScreen17OnReceiveResponseEiPv
+  0x003f6bb4 sz=0x10   _ZThn268_N13CFriendScreen17OnReceiveResponseEiPv
+  0x003f96a8 sz=0x2e   _ZN8CFunGame15PushLoginScreenEv
+  0x003fa5d8 sz=0x24   _ZN8CFunGame17OnReceiveResponseEiPv
+  0x003fa5fc sz=0xa    _ZThn16_N8CFunGame17OnReceiveResponseEiPv
+  0x003fa818 sz=0x8    _ZN8CFunGame23SetEnableCrossPlatLoginEi
+  0x003fa820 sz=0x10   _ZN8CFunGame22IfEnableCrossPlatLoginEv
+  0x003fbd38 sz=0x294  _ZN12CGMMngScreen17OnReceiveResponseEiPv
+  0x003fbfcc sz=0x10   _ZThn300_N12CGMMngScreen17OnReceiveResponseEiPv
+  0x003fc340 sz=0x2a   _ZN19CGMMngFactionScreen17OnReceiveResponseEiPv
+  0x003fc36c sz=0x34   _ZThn300_N19CGMMngFactionScreen17OnReceiveResponseEiPv
+  0x0040643c sz=0x1dc  _ZN19CGameMissionManager17OnReceiveResponseEiPv
+  0x00406cda sz=0xa    _ZThn4_N19CGameMissionManager17OnReceiveResponseEiPv
+  0x0040bac8 sz=0x72c  _ZN15CGiveGiftScreen17OnReceiveResponseEiPv
+  0x0040c2bc sz=0x10   _ZThn268_N15CGiveGiftScreen17OnReceiveResponseEiPv
+  0x0040c7e8 sz=0x150  _ZN16CGiveMoneyScreen17OnReceiveResponseEiPv
+  0x0040c938 sz=0x10   _ZThn268_N16CGiveMoneyScreen17OnReceiveResponseEiPv
+  0x004130a8 sz=0xc8c  _ZN15CGoodsBuyScreen17OnReceiveResponseEiPv
+  0x00413d34 sz=0x10   _ZThn268_N15CGoodsBuyScreen17OnReceiveResponseEiPv
+  0x00416014 sz=0xa8   _ZN18CGoodsLockInScreen17OnReceiveResponseEiPv
+  0x004160bc sz=0x10   _ZThn272_N18CGoodsLockInScreen17OnReceiveResponseEiPv
+  0x0041e2ec sz=0x100c _ZN12CGoodsScreen17OnReceiveResponseEiPv
+  0x00420474 sz=0x10   _ZThn272_N12CGoodsScreen17OnReceiveResponseEiPv
+  0x004236e0 sz=0xb0   _ZN16CGoodsSellScreen17OnReceiveResponseEiPv
+  0x00423790 sz=0x10   _ZThn268_N16CGoodsSellScreen17OnReceiveResponseEiPv
+  0x00423fcc sz=0x480  _ZN21CGoodsSelltoNPCScreen17OnReceiveResponseEiPv
+  0x0042444c sz=0x10   _ZThn268_N21CGoodsSelltoNPCScreen17OnReceiveResponseEiPv
+  0x00424fcc sz=0x34   _ZN17CGovernmentScreen16OnFBLoginSuccessEPKcS1_
+  0x00425000 sz=0x10   _ZThn304_N17CGovernmentScreen16OnFBLoginSuccessEPKcS1_
+  0x00425010 sz=0x33c  _ZN17CGovernmentScreen17OnReceiveResponseEiPv
+  0x0042534c sz=0x10   _ZThn300_N17CGovernmentScreen17OnReceiveResponseEiPv
+  0x004253f8 sz=0x2c   _ZN17CGovernmentScreen15OnFBLoginFailedEv
+  0x00425424 sz=0x8    _ZThn304_N17CGovernmentScreen15OnFBLoginFailedEv
+  0x004264d4 sz=0x5c   _ZN15CGraduateScreen17OnReceiveResponseEiPv
+  0x00426530 sz=0x10   _ZThn268_N15CGraduateScreen17OnReceiveResponseEiPv
+  0x00427470 sz=0x2f4  _ZN12CGuardScreen17OnReceiveResponseEiPv
+  0x00427970 sz=0x10   _ZThn268_N12CGuardScreen17OnReceiveResponseEiPv
+  0x00428844 sz=0x54   _ZN18CGuardUploadScreen17OnReceiveResponseEiPv
+  0x00428898 sz=0x10   _ZThn268_N18CGuardUploadScreen17OnReceiveResponseEiPv
+  0x00428960 sz=0x70   _ZN16CGuestLoadScreenC2EP12CLoginScreenh
+  0x00428960 sz=0x70   _ZN16CGuestLoadScreenC1EP12CLoginScreenh
+  0x00428dfc sz=0x2a4  _ZN16CGuestLoadScreen10GuestLoginEv
+  0x00429168 sz=0x24   _ZN16CGuestLoadScreen17OnReceiveResponseEiPv
+  0x0042918c sz=0x8    _ZThn268_N16CGuestLoadScreen17OnReceiveResponseEiPv
+  0x0042d664 sz=0x338  _ZN10CGymScreen17OnReceiveResponseEiPv
+  0x0042dd0c sz=0x10   _ZThn268_N10CGymScreen17OnReceiveResponseEiPv
+  0x0043452c sz=0x824  _ZN17CHG_CaptureScreen17OnReceiveResponseEiPv
+  0x004361ac sz=0x10   _ZThn268_N17CHG_CaptureScreen17OnReceiveResponseEiPv
+  0x0043b2b2 sz=0x8    _ZN18CHG_FindPreyScreen17OnReceiveResponseEiPv
+  0x0043b2ba sz=0x8    _ZThn268_N18CHG_FindPreyScreen17OnReceiveResponseEiPv
+  0x0043c498 sz=0x204  _ZN14CHG_MainScreen17OnReceiveResponseEiPv
+  0x0043c88c sz=0x10   _ZThn268_N14CHG_MainScreen17OnReceiveResponseEiPv
+  0x0043de1c sz=0x94   _ZN20CHG_SampleShowScreen17OnReceiveResponseEiPv
+  0x0043e100 sz=0x10   _ZThn268_N20CHG_SampleShowScreen17OnReceiveResponseEiPv
+  0x0043f700 sz=0x20   _ZN15CHG_StoreScreen17OnReceiveResponseEiPv
+  0x0043f99c sz=0x28   _ZThn268_N15CHG_StoreScreen17OnReceiveResponseEiPv
+  0x00444eb8 sz=0x1bc  _ZN19CHG_WarehouseScreen17OnReceiveResponseEiPv
+  0x004456f8 sz=0x10   _ZThn268_N19CHG_WarehouseScreen17OnReceiveResponseEiPv
+  0x0044688c sz=0x90   _ZN10CHeartBeat17OnReceiveResponseEiPv
+  0x00447cfc sz=0x98   _ZN13CHelperScreen17OnReceiveResponseEiPv
+  0x00447d94 sz=0x10   _ZThn268_N13CHelperScreen17OnReceiveResponseEiPv
+  0x00448c94 sz=0x298  _ZN15CHospitalScreen17OnReceiveResponseEiPv
+  0x00449018 sz=0x10   _ZThn268_N15CHospitalScreen17OnReceiveResponseEiPv
+  0x0044a260 sz=0x238  _ZN6CHouse17OnReceiveResponseEiPv
+  0x0044a498 sz=0xa    _ZThn16_N6CHouse17OnReceiveResponseEiPv
+  0x0044b0ac sz=0xec   _ZN16CHouseRentScreen17OnReceiveResponseEiPv
+  0x0044b1ec sz=0x10   _ZThn268_N16CHouseRentScreen17OnReceiveResponseEiPv
+  0x0044b918 sz=0xf8   _ZN16CHouseSellScreen17OnReceiveResponseEiPv
+  0x0044ba64 sz=0x10   _ZThn268_N16CHouseSellScreen17OnReceiveResponseEiPv
+  0x0044c78c sz=0x1b4  _ZN19CHrMarketCateScreen17OnReceiveResponseEiPv
+  0x0044c940 sz=0x10   _ZThn268_N19CHrMarketCateScreen17OnReceiveResponseEiPv
+  0x0044e9b8 sz=0x8c   _ZN11CHttpClient11PlayerLoginEv
+  0x0044ea44 sz=0x88   _ZN11CHttpClient23PlayerLoginOwnCrossPlatEPKc
+  0x00453044 sz=0x94   _ZN11CHttpClient12GetAllServerEv
+  0x00462344 sz=0x84   _ZN11CHttpClient15GetNewLoginInfoEv
+  0x004624f0 sz=0x80   _ZN11CHttpClient21ReqNewLoginRewardDataEv
+  0x0046befc sz=0x164  _ZN7CImpart15ParseLoginGiftsEPv
+  0x00470440 sz=0xe8   _ZN17CInHospitalScreen17OnReceiveResponseEiPv
+  0x00470574 sz=0x10   _ZThn268_N17CInHospitalScreen17OnReceiveResponseEiPv
+  0x004711ac sz=0x254  _ZN15CInPrisonScreen17OnReceiveResponseEiPv
+  0x00471448 sz=0x10   _ZThn268_N15CInPrisonScreen17OnReceiveResponseEiPv
+  0x00475b80 sz=0x918  _ZN20CInstanceZonesScreen17OnReceiveResponseEiPv
+  0x00476498 sz=0x10   _ZThn268_N20CInstanceZonesScreen17OnReceiveResponseEiPv
+  0x00477c40 sz=0x1c8  _ZN13CIphoneScreen17OnReceiveResponseEiPv
+  0x00477e08 sz=0x10   _ZThn276_N13CIphoneScreen17OnReceiveResponseEiPv
+  0x0047b800 sz=0x3b4  _ZN22CKingAppellationScreen17OnReceiveResponseEiPv
+  0x0047bcec sz=0x10   _ZThn268_N22CKingAppellationScreen17OnReceiveResponseEiPv
+  0x0047ed20 sz=0x3d0  _ZN23CKingBeatSeleTeamScreen17OnReceiveResponseEiPv
+  0x0047f0f0 sz=0x10   _ZThn320_N23CKingBeatSeleTeamScreen17OnReceiveResponseEiPv
+  0x00480d84 sz=0x164  _ZN15CKingFightMnger17OnReceiveResponseEiPv
+  0x00482a50 sz=0x1c8  _ZN15CKingMainScreen17OnReceiveResponseEiPv
+  0x00482c18 sz=0x10   _ZThn320_N15CKingMainScreen17OnReceiveResponseEiPv
+  0x00484b98 sz=0x150  _ZN20CKingRightInfoScreen17OnReceiveResponseEiPv
+  0x00484d74 sz=0x10   _ZThn268_N20CKingRightInfoScreen17OnReceiveResponseEiPv
+  0x00486348 sz=0x154  _ZN17CKingWalletScreen17OnReceiveResponseEiPv
+  0x0048661c sz=0x10   _ZThn268_N17CKingWalletScreen17OnReceiveResponseEiPv
+  0x004874fc sz=0x280  _ZN22CLT_CollectPrizeScreen17OnReceiveResponseEiPv
+  0x0048777c sz=0x10   _ZThn300_N22CLT_CollectPrizeScreen17OnReceiveResponseEiPv
+  0x00488550 sz=0xe0   _ZN23CLT_CollectRecordScreen17OnReceiveResponseEiPv
+  0x00488754 sz=0x10   _ZThn268_N23CLT_CollectRecordScreen17OnReceiveResponseEiPv
+  0x0048a230 sz=0x1fc  _ZN23CLT_LotteryActiveScreen17OnReceiveResponseEiPv
+  0x0048a488 sz=0x10   _ZThn268_N23CLT_LotteryActiveScreen17OnReceiveResponseEiPv
+  0x0048b09c sz=0x198  _ZN18CLadderEventScreen17OnReceiveResponseEiPv
+  0x0048b2dc sz=0x10   _ZThn268_N18CLadderEventScreen17OnReceiveResponseEiPv
+  0x0048d598 sz=0x218  _ZN13CLadderScreen17OnReceiveResponseEiPv
+  0x0048d954 sz=0x10   _ZThn268_N13CLadderScreen17OnReceiveResponseEiPv
+  0x0048fe20 sz=0x5f8  _ZN14CLoadingScreen17OnReceiveResponseEiPv
+  0x00490418 sz=0xd4   _ZN14CLoadingScreen24ParseLastLoginPlayerInfoEPv
+  0x004904ec sz=0xa    _ZThn232_N14CLoadingScreen17OnReceiveResponseEiPv
+  0x00490ade sz=0x50   _ZN14CLoadingScreen14OnLoginSuccessEPKcS1_
+  0x00490b30 sz=0x1c   _ZN14CLoadingScreen13OnLoginFailedEv
+  0x00490b4c sz=0x1c   _ZN14CLoadingScreen15OnLoginCanceledEv
+  0x00490b68 sz=0x2c   _ZN14CLoadingScreen15DoFacebookLoginEv
+  0x00490b94 sz=0x12c  _ZN14CLoadingScreen15OnFBLoginFailedEv
+  0x00490cc0 sz=0x10   _ZThn260_N14CLoadingScreen15OnFBLoginFailedEv
+  0x00490cd0 sz=0x68   _ZN14CLoadingScreen16OnFBLoginSuccessEPKcS1_
+  0x00490d38 sz=0x10   _ZThn260_N14CLoadingScreen16OnFBLoginSuccessEPKcS1_
+  0x00490dd0 sz=0x1c   _ZN14CLoadingScreen15DoGetServerInfoEh
+  0x00490e20 sz=0x18   _ZN14CLoadingScreen19DoConnectPlayerInfoEv
+  0x00490e4c sz=0xcc   _ZN14CLoadingScreen7DoLoginEv
+  0x00491260 sz=0x58   _ZN14CLoginEnScreenC2Ev
+  0x00491260 sz=0x58   _ZN14CLoginEnScreenC1Ev
+  0x004912b8 sz=0x58   _ZN14CLoginEnScreenD2Ev
+  0x004912b8 sz=0x58   _ZN14CLoginEnScreenD1Ev
+  0x00491310 sz=0xa    _ZThn4_N14CLoginEnScreenD1Ev
+  0x0049131a sz=0xa    _ZThn232_N14CLoginEnScreenD1Ev
+  0x00491324 sz=0xc    _ZN14CLoginEnScreenD0Ev
+  0x00491330 sz=0xe    _ZThn4_N14CLoginEnScreenD0Ev
+  0x0049133e sz=0xe    _ZThn232_N14CLoginEnScreenD0Ev
+  0x0049134c sz=0x18   _ZN14CLoginEnScreen7DestroyEv
+  0x00491364 sz=0x1b8  _ZN14CLoginEnScreen11ViewDidLoadEv
+  0x0049151c sz=0x12   _ZN14CLoginEnScreen8ExtendBgEv
+  0x0049152e sz=0x84   _ZN14CLoginEnScreen23SetLastLoginAccountInfoEv
+  0x004915b4 sz=0x10c  _ZN14CLoginEnScreen15GetAllTargetMapEv
+  0x004916c0 sz=0x140  _ZN14CLoginEnScreen11HandleEventEP6ngViewiii
+  0x00491800 sz=0xa4   _ZN14CLoginEnScreen10DebugLoginEv
+  0x004918a4 sz=0x20c  _ZN14CLoginEnScreen5LoginEv
+  0x00491ab0 sz=0xe    _ZThn4_N14CLoginEnScreen11HandleEventEP6ngViewiii
+  0x00491ac0 sz=0x90   _ZN14CLoginEnScreen10GuestLoginEv
+  0x00491b50 sz=0x4c   _ZN14CLoginEnScreen17OnReceiveResponseEiPv
+  0x00491b9c sz=0xa    _ZThn232_N14CLoginEnScreen17OnReceiveResponseEiPv
+  0x00491ba8 sz=0x130  _ZN14CLoginEnScreen14OnReceiveErrorEPKcS1_Pv
+  0x00491cd8 sz=0x8    _ZThn232_N14CLoginEnScreen14OnReceiveErrorEPKcS1_Pv
+  0x00491ce0 sz=0xe    _ZN14CLoginEnScreen14OnNetworkErrorEi
+  0x00491cee sz=0xe    _ZThn232_N14CLoginEnScreen14OnNetworkErrorEi
+  0x00491cfc sz=0x8    _ZN14CLoginEnScreen13OnChildClosedEv
+  0x00491d04 sz=0x8    _ZN14CLoginEnScreen19WillRemoveSubScreenEP8ngScreen
+  0x00491d0c sz=0x94   _ZN14CLoginEnScreen16OnServerChooseOKEi
+  0x00491da0 sz=0xa    _ZThn236_N14CLoginEnScreen16OnServerChooseOKEi
+  0x00491dac sz=0xc8   _ZN16CLoginGiftScreenC2Ev
+  0x00491dac sz=0xc8   _ZN16CLoginGiftScreenC1Ev
+  0x00491e74 sz=0x64   _ZN16CLoginGiftScreenD2Ev
+  0x00491e74 sz=0x64   _ZN16CLoginGiftScreenD1Ev
+  0x00491ed8 sz=0xa    _ZThn4_N16CLoginGiftScreenD1Ev
+  0x00491ee4 sz=0x10   _ZThn268_N16CLoginGiftScreenD1Ev
+  0x00491ef4 sz=0x10   _ZThn272_N16CLoginGiftScreenD1Ev
+  0x00491f04 sz=0x42   _ZN16CLoginGiftScreen5ClearEv
+  0x00491f46 sz=0xc    _ZN16CLoginGiftScreenD0Ev
+  0x00491f52 sz=0xe    _ZThn4_N16CLoginGiftScreenD0Ev
+  0x00491f60 sz=0x14   _ZThn268_N16CLoginGiftScreenD0Ev
+  0x00491f74 sz=0x14   _ZThn272_N16CLoginGiftScreenD0Ev
+  0x00491f88 sz=0x18   _ZN16CLoginGiftScreen7DestroyEv
+  0x00491fa0 sz=0x38   _ZN16CLoginGiftScreen11ViewDidLoadEv
+  0x00491fd8 sz=0xc4   _ZN16CLoginGiftScreen10InitScreenEv
+  0x0049209c sz=0x128  _ZN16CLoginGiftScreen15InitTitleButtonEv
+  0x004921c4 sz=0x88   _ZN16CLoginGiftScreen20InitHasGotGoodsLabelEv
+  0x0049224c sz=0x24   _ZN16CLoginGiftScreen16HandleTouchEventEi
+  0x00492270 sz=0x40   _ZN16CLoginGiftScreen17GetCanRaffleTimesEv
+  0x004922b0 sz=0x2a   _ZN16CLoginGiftScreen7GetListEv
+  0x004922da sz=0x86   _ZN16CLoginGiftScreen11CheckRepeatEP6CGoods
+  0x00492360 sz=0x60   _ZN16CLoginGiftScreen14GetRandomGoodsEh
+  0x004923c0 sz=0x34   _ZN16CLoginGiftScreen18GenGoldRandomGoodsEv
+  0x004923f4 sz=0xa0   _ZN16CLoginGiftScreen11HandleEventEP6ngViewiii
+  0x00492494 sz=0x4c   _ZN16CLoginGiftScreen13GetLoginByIdxEi
+  0x004924e0 sz=0x74   _ZN16CLoginGiftScreen8DoRaffleEv
+  0x00492554 sz=0xe    _ZThn4_N16CLoginGiftScreen11HandleEventEP6ngViewiii
+  0x00492564 sz=0x7c   _ZN16CLoginGiftScreen12HandleUpdateEi
+  0x004925e0 sz=0x6a   _ZN16CLoginGiftScreen12FillGoldCellEv
+  0x0049264a sz=0x4a   _ZN16CLoginGiftScreen26FillGoldSpecialDisplayCellEv
+  0x00492694 sz=0x4a   _ZN16CLoginGiftScreen13FillOtherCellEv
+  0x004926de sz=0xe    _ZN16CLoginGiftScreen10GetIdxPlusEii
+  0x004926ec sz=0x104  _ZN16CLoginGiftScreen17OnReceiveResponseEiPv
+  0x004927f0 sz=0x10   _ZThn268_N16CLoginGiftScreen17OnReceiveResponseEiPv
+  0x00492800 sz=0x5c   _ZN16CLoginGiftScreen14OnReceiveErrorEPKcS1_Pv
+  0x0049285c sz=0x10   _ZThn268_N16CLoginGiftScreen14OnReceiveErrorEPKcS1_Pv
+  0x0049286c sz=0x8    _ZN16CLoginGiftScreen14OnNetworkErrorEi
+  0x00492874 sz=0x8    _ZThn268_N16CLoginGiftScreen14OnNetworkErrorEi
+  0x0049287c sz=0x22   _ZN16CLoginGiftScreen9OnAlertOKEi
+  0x004928a0 sz=0x10   _ZThn272_N16CLoginGiftScreen9OnAlertOKEi
+  0x004928b0 sz=0xbc   _ZN16CLoginGiftScreen15GetAllTargetMapEv
+  0x00492bc4 sz=0x2    _ZN16CLoginGiftScreen10OnAlertYesEv
+  0x00492bc6 sz=0x2    _ZN16CLoginGiftScreen9OnAlertNoEv
+  0x00492bc8 sz=0x2    _ZThn272_N16CLoginGiftScreen10OnAlertYesEv
+  0x00492bca sz=0x2    _ZThn272_N16CLoginGiftScreen9OnAlertNoEv
+  0x00493518 sz=0x150  _ZN17CLookBattleScreen17OnReceiveResponseEiPv
+  0x00493814 sz=0x10   _ZThn288_N17CLookBattleScreen17OnReceiveResponseEiPv
+  0x00495810 sz=0x7b0  _ZN14CLotteryScreen17OnReceiveResponseEiPv
+  0x00496298 sz=0x10   _ZThn268_N14CLotteryScreen17OnReceiveResponseEiPv
+  0x0049789c sz=0x550  _ZN14CMC_MainScreen17OnReceiveResponseEiPv
+  0x00497f68 sz=0x10   _ZThn268_N14CMC_MainScreen17OnReceiveResponseEiPv
+  0x0049a220 sz=0x65c  _ZN19CMS_ClassMainScreen17OnReceiveResponseEiPv
+  0x0049a9a0 sz=0x10   _ZThn268_N19CMS_ClassMainScreen17OnReceiveResponseEiPv
+  0x0049dfba sz=0x8    _ZN15CMS_FightScreen17OnReceiveResponseEiPv
+  0x0049e4b8 sz=0x24c  _ZN23CMS_HelpAndBattleScreen17OnReceiveResponseEiPv
+  0x0049e7f8 sz=0x10   _ZThn268_N23CMS_HelpAndBattleScreen17OnReceiveResponseEiPv
+  0x0049fa0c sz=0x3bc  _ZN16CMS_JinWeiScreen17OnReceiveResponseEiPv
+  0x0049ff28 sz=0x10   _ZThn268_N16CMS_JinWeiScreen17OnReceiveResponseEiPv
+  0x004a1d78 sz=0x1d8  _ZN16CMS_LineupScreen17OnReceiveResponseEiPv
+  0x004a1f50 sz=0x10   _ZThn268_N16CMS_LineupScreen17OnReceiveResponseEiPv
+  0x004a3db8 sz=0xf4   _ZN17CMS_LoyaltyScreen17OnReceiveResponseEiPv
+  0x004a3f2c sz=0x10   _ZThn328_N17CMS_LoyaltyScreen17OnReceiveResponseEiPv
+  0x004a4e30 sz=0xc00  _ZN17CMS_MineAllScreen17OnReceiveResponseEiPv
+  0x004a5c54 sz=0x10   _ZThn268_N17CMS_MineAllScreen17OnReceiveResponseEiPv
+  0x004a8958 sz=0x400  _ZN18CMS_MineMainScreen17OnReceiveResponseEiPv
+  0x004a8d58 sz=0x10   _ZThn268_N18CMS_MineMainScreen17OnReceiveResponseEiPv
+  0x004a9590 sz=0x4c0  _ZN16CMS_MyMineScreen17OnReceiveResponseEiPv
+  0x004a9ea4 sz=0x10   _ZThn268_N16CMS_MyMineScreen17OnReceiveResponseEiPv
+  0x004aad94 sz=0x4e0  _ZN14CMS_RankScreen17OnReceiveResponseEiPv
+  0x004ab4b4 sz=0x10   _ZThn268_N14CMS_RankScreen17OnReceiveResponseEiPv
+  0x004ac29c sz=0x260  _ZN15CMS_StoreScreen17OnReceiveResponseEiPv
+  0x004ac5b8 sz=0x10   _ZThn268_N15CMS_StoreScreen17OnReceiveResponseEiPv
+  0x004ad3c8 sz=0x18c  _ZN22CMS_YbClassSummeScreen17OnReceiveResponseEiPv
+  0x004ad650 sz=0x10   _ZThn268_N22CMS_YbClassSummeScreen17OnReceiveResponseEiPv
+  0x004ad898 sz=0x4    _Z21CMH_GetIfUseTestLoginv
+  0x004ae3cc sz=0x98   _ZN14CMailNewScreen17OnReceiveResponseEiPv
+  0x004ae464 sz=0x10   _ZThn268_N14CMailNewScreen17OnReceiveResponseEiPv
+  0x004aefb0 sz=0x3c   _ZN11CMailScreen17OnReceiveResponseEiPv
+  0x004aefec sz=0x10   _ZThn276_N11CMailScreen17OnReceiveResponseEiPv
+  0x004afad8 sz=0x88   _ZN15CMailShowScreen17OnReceiveResponseEiPv
+  0x004afb60 sz=0x10   _ZThn268_N15CMailShowScreen17OnReceiveResponseEiPv
+  0x004b15d0 sz=0xf8   _ZN17CMailThreadScreen17OnReceiveResponseEiPv
+  0x004b16c8 sz=0x10   _ZThn268_N17CMailThreadScreen17OnReceiveResponseEiPv
+  0x004b1d9c sz=0x70   _ZN16CMailVerifScreen17OnReceiveResponseEiPv
+  0x004b1e0c sz=0x10   _ZThn268_N16CMailVerifScreen17OnReceiveResponseEiPv
+  0x004b3a90 sz=0x34   _ZN11CMainScreen14CheckLoginGiftEv
+  0x004b75f8 sz=0x830  _ZN11CMainScreen17OnReceiveResponseEiPv
+  0x004b8314 sz=0x10   _ZThn268_N11CMainScreen17OnReceiveResponseEiPv
+  0x004b8324 sz=0x24   _ZN11CMainScreen12AddLoginGiftEv
+  0x004b8838 sz=0x2    _ZN11CMainScreen14OnLoginSuccessEPKcS1_
+  0x004b883a sz=0x2    _ZN11CMainScreen13OnLoginFailedEv
+  0x004b883c sz=0xe    _ZN11CMainScreen15OnLoginCanceledEv
+  0x004c15ec sz=0x3e0  _ZN20CMaritalStatusScreen17OnReceiveResponseEiPv
+  0x004c1d5c sz=0x10   _ZThn268_N20CMaritalStatusScreen17OnReceiveResponseEiPv
+  0x004c2e8c sz=0x15c  _ZN17CMarketCateScreen17OnReceiveResponseEiPv
+  0x004c30bc sz=0x10   _ZThn268_N17CMarketCateScreen17OnReceiveResponseEiPv
+  0x004c49ac sz=0x28   _ZN13CMarketScreen17OnReceiveResponseEiPv
+  0x004c49d4 sz=0x10   _ZThn268_N13CMarketScreen17OnReceiveResponseEiPv
+  0x004c56a0 sz=0x188  _ZN15CMarriageScreen17OnReceiveResponseEiPv
+  0x004c5844 sz=0x10   _ZThn268_N15CMarriageScreen17OnReceiveResponseEiPv
+  0x004c5f24 sz=0x80   _ZN20CMarryRegisterScreen17OnReceiveResponseEiPv
+  0x004c5fa4 sz=0x10   _ZThn268_N20CMarryRegisterScreen17OnReceiveResponseEiPv
+  0x004c6da0 sz=0x1a8  _ZN21CMasterRelationScreen17OnReceiveResponseEiPv
+  0x004c6f48 sz=0x10   _ZThn268_N21CMasterRelationScreen17OnReceiveResponseEiPv
+  0x004c7fdc sz=0x370  _ZN13CMasterScreen17OnReceiveResponseEiPv
+  0x004c834c sz=0x10   _ZThn268_N13CMasterScreen17OnReceiveResponseEiPv
+  0x004c9b4c sz=0x188  _ZN16CMatrixBetScreen17OnReceiveResponseEiPv
+  0x004c9cd4 sz=0x10   _ZThn268_N16CMatrixBetScreen17OnReceiveResponseEiPv
+  0x004cd270 sz=0x16c  _ZN25CMercenaryBrainwashScreen17OnReceiveResponseEiPv
+  0x004cd3dc sz=0x10   _ZThn308_N25CMercenaryBrainwashScreen17OnReceiveResponseEiPv
+  0x004cf9e4 sz=0xec   _ZN20CMercenaryCellScreen17OnReceiveResponseEiPv
+  0x004cfad0 sz=0x10   _ZThn300_N20CMercenaryCellScreen17OnReceiveResponseEiPv
+  0x004d03b4 sz=0xcc   _ZN22CMercenaryChooseScreen17OnReceiveResponseEiPv
+  0x004d0480 sz=0x10   _ZThn300_N22CMercenaryChooseScreen17OnReceiveResponseEiPv
+  0x004d2bb4 sz=0x19c  _ZN20CMercenaryFireScreen17OnReceiveResponseEiPv
+  0x004d2d50 sz=0x10   _ZThn308_N20CMercenaryFireScreen17OnReceiveResponseEiPv
+  0x004d61e4 sz=0x2e0  _ZN19CMercenaryGymScreen17OnReceiveResponseEiPv
+  0x004d68e0 sz=0x10   _ZThn300_N19CMercenaryGymScreen17OnReceiveResponseEiPv
+  0x004d703c sz=0xf8   _ZN21CMercenaryHouseScreen17OnReceiveResponseEiPv
+  0x004d7134 sz=0x10   _ZThn308_N21CMercenaryHouseScreen17OnReceiveResponseEiPv
+  0x004d93f0 sz=0x320  _ZN20CMercenaryInfoScreen17OnReceiveResponseEiPv
+  0x004d9710 sz=0x10   _ZThn308_N20CMercenaryInfoScreen17OnReceiveResponseEiPv
+  0x004da6ec sz=0x29c  _ZN20CMercenaryMainScreen17OnReceiveResponseEiPv
+  0x004da988 sz=0x10   _ZThn300_N20CMercenaryMainScreen17OnReceiveResponseEiPv
+  0x004dd794 sz=0x70   _ZN15CMercenaryMnger17OnReceiveResponseEiPv
+  0x004dd9fc sz=0x10   _ZN28CMercenaryClassFinishChecker17OnReceiveResponseEiPv
+  0x004dec28 sz=0x128  _ZN21CMercenaryStoreScreen17OnReceiveResponseEiPv
+  0x004ded50 sz=0x10   _ZThn300_N21CMercenaryStoreScreen17OnReceiveResponseEiPv
+  0x004dfec4 sz=0x78   _ZN27CMercenaryStoreShelveScreen17OnReceiveResponseEiPv
+  0x004dff3c sz=0x10   _ZThn268_N27CMercenaryStoreShelveScreen17OnReceiveResponseEiPv
+  0x004e198c sz=0xac   _ZN23CMercenaryUpSkillScreen17OnReceiveResponseEiPv
+  0x004e1ab4 sz=0x10   _ZThn308_N23CMercenaryUpSkillScreen17OnReceiveResponseEiPv
+  0x004e48dc sz=0x30c  _ZN22CMercenaryUpStarScreen17OnReceiveResponseEiPv
+  0x004e4be8 sz=0x10   _ZThn308_N22CMercenaryUpStarScreen17OnReceiveResponseEiPv
+  0x004e677c sz=0x190  _ZN25CMercenaryWarehouseScreen17OnReceiveResponseEiPv
+  0x004e690c sz=0x10   _ZThn300_N25CMercenaryWarehouseScreen17OnReceiveResponseEiPv
+  0x004e8e58 sz=0x1c4  _ZN14CMilitiaScreen17OnReceiveResponseEiPv
+  0x004e901c sz=0x10   _ZThn268_N14CMilitiaScreen17OnReceiveResponseEiPv
+  0x004e9bf8 sz=0xa8   _ZN14CMineBidScreen17OnReceiveResponseEiPv
+  0x004e9cd0 sz=0x10   _ZThn268_N14CMineBidScreen17OnReceiveResponseEiPv
+  0x004eaf8a sz=0x2    _ZN15CMissionManager17OnReceiveResponseEiPv
+  0x004eaf8c sz=0x2    _ZThn16_N15CMissionManager17OnReceiveResponseEiPv
+  0x004ebe40 sz=0x124  _ZN24CModifyFactionNameScreen17OnReceiveResponseEiPv
+  0x004ebf64 sz=0x10   _ZThn268_N24CModifyFactionNameScreen17OnReceiveResponseEiPv
+  0x004ec668 sz=0xb2   _ZN17CModifyNameScreen17OnReceiveResponseEiPv
+  0x004ec7f4 sz=0x10   _ZThn268_N17CModifyNameScreen17OnReceiveResponseEiPv
+  0x004ed340 sz=0x12c  _ZN21CModifyPasswordScreen17OnReceiveResponseEiPv
+  0x004ed46c sz=0x10   _ZThn300_N21CModifyPasswordScreen17OnReceiveResponseEiPv
+  0x004ee886 sz=0x5a   _ZN20CNCW_ChallengeScreen17OnReceiveResponseEiPv
+  0x004ee8e0 sz=0x10   _ZThn268_N20CNCW_ChallengeScreen17OnReceiveResponseEiPv
+  0x004f0c20 sz=0x90   _ZN21CNCW_EnrollHallScreen17OnReceiveResponseEiPv
+  0x004f0cb0 sz=0x10   _ZThn300_N21CNCW_EnrollHallScreen17OnReceiveResponseEiPv
+  0x004f1300 sz=0x100  _ZN23CNCW_JoinCorpListScreen17OnReceiveResponseEiPv
+  0x004f1400 sz=0x10   _ZThn300_N23CNCW_JoinCorpListScreen17OnReceiveResponseEiPv
+  0x004f2156 sz=0x8    _ZN15CNCW_MainScreen17OnReceiveResponseEiPv
+  0x004f215e sz=0x8    _ZThn304_N15CNCW_MainScreen17OnReceiveResponseEiPv
+  0x004f2b2c sz=0x3bc  _ZN22CNCW_SpecialMallScreen17OnReceiveResponseEiPv
+  0x004f2ee8 sz=0x10   _ZThn300_N22CNCW_SpecialMallScreen17OnReceiveResponseEiPv
+  0x004f4824 sz=0xbc   _ZN19CNG_CallCoachScreen17OnReceiveResponseEiPv
+  0x004f4994 sz=0x10   _ZThn296_N19CNG_CallCoachScreen17OnReceiveResponseEiPv
+  0x004f574c sz=0x40   _ZN18CNationalBidScreen17OnReceiveResponseEiPv
+  0x004f578c sz=0x10   _ZThn268_N18CNationalBidScreen17OnReceiveResponseEiPv
+  0x004f6068 sz=0x98   _ZN21CNewLoginRewardScreenC2Ev
+  0x004f6068 sz=0x98   _ZN21CNewLoginRewardScreenC1Ev
+  0x004f6100 sz=0x68   _ZN21CNewLoginRewardScreenD2Ev
+  0x004f6100 sz=0x68   _ZN21CNewLoginRewardScreenD1Ev
+  0x004f6168 sz=0xa    _ZThn4_N21CNewLoginRewardScreenD1Ev
+  0x004f6174 sz=0x10   _ZThn268_N21CNewLoginRewardScreenD1Ev
+  0x004f6184 sz=0xa0   _ZN21CNewLoginRewardScreen9clearListEv
+  0x004f6224 sz=0xc    _ZN21CNewLoginRewardScreenD0Ev
+  0x004f6230 sz=0xe    _ZThn4_N21CNewLoginRewardScreenD0Ev
+  0x004f6240 sz=0x14   _ZThn268_N21CNewLoginRewardScreenD0Ev
+  0x004f6254 sz=0x18   _ZN21CNewLoginRewardScreen7DestroyEv
+  0x004f626c sz=0x4a   _ZN21CNewLoginRewardScreen11ViewDidLoadEv
+  0x004f62b6 sz=0x1e   _ZN21CNewLoginRewardScreen12GetLoginInfoEv
+  0x004f62d4 sz=0x90   _ZN21CNewLoginRewardScreen15GetAllTargetMapEv
+  0x004f6364 sz=0x1b8  _ZN21CNewLoginRewardScreen11HandleEventEP6ngViewiii
+  0x004f651c sz=0x88   _ZN21CNewLoginRewardScreen16DoClickOperationEP6ngView
+  0x004f65a4 sz=0xe    _ZThn4_N21CNewLoginRewardScreen11HandleEventEP6ngViewiii
+  0x004f65b2 sz=0x14   _ZN21CNewLoginRewardScreen12HandleUpdateEi
+  0x004f65c6 sz=0xa    _ZN25CNewLoginRewardCellRender21SetActionMangerUpdateEi
+  0x004f65d0 sz=0xe4   _ZN21CNewLoginRewardScreen17OnReceiveResponseEiPv
+  0x004f66b4 sz=0x84   _ZN21CNewLoginRewardScreen17ParseNewLoginDataEPv
+  0x004f6738 sz=0xac   _ZN21CNewLoginRewardScreen10InitScreenEv
+  0x004f67e4 sz=0x34   _ZN21CNewLoginRewardScreen17UpdateLoginRewardEPv
+  0x004f6818 sz=0x10   _ZThn268_N21CNewLoginRewardScreen17OnReceiveResponseEiPv
+  0x004f6828 sz=0x3e   _ZN21CNewLoginRewardScreen14OnReceiveErrorEPKcS1_Pv
+  0x004f6866 sz=0x8    _ZThn268_N21CNewLoginRewardScreen14OnReceiveErrorEPKcS1_Pv
+  0x004f6870 sz=0x4c   _ZN21CNewLoginRewardScreen14OnNetworkErrorEi
+  0x004f68bc sz=0x8    _ZThn268_N21CNewLoginRewardScreen14OnNetworkErrorEi
+  0x004f68c4 sz=0x10c  _ZN21CNewLoginRewardScreen16GetCurMonthByNumEi
+  0x004f69d0 sz=0xe8   _ZN21CNewLoginRewardScreen9InitTableEv
+  0x004f6ab8 sz=0x140  _ZN21CNewLoginRewardScreen19SetDisplayTableSizeEv
+  0x004f6bf8 sz=0x6    _ZN25CNewLoginRewardCellRender13SetLoginValueEii
+  0x004f6c00 sz=0x280  _ZN21CNewLoginRewardScreen13ParseListDataEPvh
+  0x004f6e80 sz=0x1e   _ZN21CNewLoginRewardScreen18GetLoginRewardDataEv
+  0x004f6ea0 sz=0x38   _ZN25CNewLoginRewardCellRenderC2Ev
+  0x004f6ea0 sz=0x38   _ZN25CNewLoginRewardCellRenderC1Ev
+  0x004f6ed8 sz=0x34   _ZN25CNewLoginRewardCellRenderD2Ev
+  0x004f6ed8 sz=0x34   _ZN25CNewLoginRewardCellRenderD1Ev
+  0x004f6f0c sz=0x38   _ZN25CNewLoginRewardCellRenderD0Ev
+  0x004f6f44 sz=0x120  _ZN25CNewLoginRewardCellRender8SetValueEPvhii
+  0x004f7064 sz=0x1c   _ZN25CNewLoginRewardCellRender22SetSelectImageDoActionEv
+  0x004f7080 sz=0x64   _ZN25CNewLoginRewardCellRender15GetAllTargetMapEv
+  0x004f70e4 sz=0xc8   _ZN15CNewLoginScreenC1Ev
+  0x004f70e4 sz=0xc8   _ZN15CNewLoginScreenC2Ev
+  0x004f71ac sz=0x68   _ZN15CNewLoginScreenD2Ev
+  0x004f71ac sz=0x68   _ZN15CNewLoginScreenD1Ev
+  0x004f7214 sz=0xa    _ZThn4_N15CNewLoginScreenD1Ev
+  0x004f7220 sz=0x10   _ZThn272_N15CNewLoginScreenD1Ev
+  0x004f7230 sz=0x10   _ZThn300_N15CNewLoginScreenD1Ev
+  0x004f7240 sz=0xc    _ZN15CNewLoginScreenD0Ev
+  0x004f724c sz=0xe    _ZThn4_N15CNewLoginScreenD0Ev
+  0x004f725c sz=0x14   _ZThn272_N15CNewLoginScreenD0Ev
+  0x004f7270 sz=0x14   _ZThn300_N15CNewLoginScreenD0Ev
+  0x004f7284 sz=0x18   _ZN15CNewLoginScreen7DestroyEv
+  0x004f729c sz=0x4e   _ZN15CNewLoginScreen11ViewDidLoadEv
+  0x004f72ec sz=0xc4   _ZN15CNewLoginScreen15SetPanelVisibleEv
+  0x004f73b0 sz=0x1cc  _ZN15CNewLoginScreen16InitPlatformInfoEv
+  0x004f757c sz=0x1a0  _ZN15CNewLoginScreen18BeforeTransToFrontEv
+  0x004f771c sz=0x98   _ZN15CNewLoginScreen14GetNowPlatListEv
+  0x004f77b4 sz=0x60   _ZN15CNewLoginScreen22SaveChoosePlatformInfoEv
+  0x004f7814 sz=0x30   _ZN15CNewLoginScreen17SetChoosePlatFormEv
+  0x004f7844 sz=0xc0   _ZN15CNewLoginScreen22DoPlatformSwitchActionEh
+  0x004f7904 sz=0x188  _ZN15CNewLoginScreen15GetAllTargetMapEv
+  0x004f7a8c sz=0x132  _ZN15CNewLoginScreen10OnAlertYesEv
+  0x004f7bc0 sz=0x10   _ZThn272_N15CNewLoginScreen10OnAlertYesEv
+  0x004f7bd0 sz=0x22   _ZN15CNewLoginScreen9OnAlertNoEv
+  0x004f7bf4 sz=0x2c   _ZThn272_N15CNewLoginScreen9OnAlertNoEv
+  0x004f7c20 sz=0x2    _ZN15CNewLoginScreen9OnAlertOKEi
+  0x004f7c22 sz=0x2    _ZThn272_N15CNewLoginScreen9OnAlertOKEi
+  0x004f7c24 sz=0x5a   _ZN15CNewLoginScreen14OnReceiveErrorEPKcS1_Pv
+  0x004f7c80 sz=0x10   _ZThn300_N15CNewLoginScreen14OnReceiveErrorEPKcS1_Pv
+  0x004f7c90 sz=0x5c   _ZN15CNewLoginScreen17OnReceiveResponseEiPv
+  0x004f7cec sz=0x8    _ZThn300_N15CNewLoginScreen17OnReceiveResponseEiPv
+  0x004f7cf4 sz=0x2e   _ZN15CNewLoginScreen14OnNetworkErrorEi
+  0x004f7d24 sz=0x10   _ZThn300_N15CNewLoginScreen14OnNetworkErrorEi
+  0x004f7d34 sz=0xac   _ZN15CNewLoginScreen25CheckHaveAvailableAccountEv
+  0x004f7de0 sz=0x240  _ZN15CNewLoginScreen11HandleEventEP6ngViewiii
+  0x004f8020 sz=0xe    _ZThn4_N15CNewLoginScreen11HandleEventEP6ngViewiii
+  0x004f802e sz=0x58   _ZN15CNewLoginScreen16HandleTouchEventEi
+  0x004f8086 sz=0x36   _ZN15CNewLoginScreen19WillRemoveSubScreenEP8ngScreen
+  0x004f80bc sz=0xe0   _ZN15CNewLoginScreen16OnServerChooseOKEi
+  0x004f819c sz=0x10   _ZThn268_N15CNewLoginScreen16OnServerChooseOKEi
+  0x005009b0 sz=0x7a4  _ZN18CNewPvpFightScreen17OnReceiveResponseEiPv
+  0x00501180 sz=0x10   _ZThn268_N18CNewPvpFightScreen17OnReceiveResponseEiPv
+  0x00502254 sz=0x62   _ZN22CNewServerChooseScreen17OnReceiveResponseEiPv
+  0x005022b8 sz=0x10   _ZThn268_N22CNewServerChooseScreen17OnReceiveResponseEiPv
+  0x005040b8 sz=0x34   _ZN16CNewspaperScreen17OnReceiveResponseEiPv
+  0x005040ec sz=0x10   _ZThn268_N16CNewspaperScreen17OnReceiveResponseEiPv
+  0x00505550 sz=0x94   _ZN18COfferRewardScreen17OnReceiveResponseEiPv
+  0x005055e4 sz=0x10   _ZThn300_N18COfferRewardScreen17OnReceiveResponseEiPv
+  0x00507248 sz=0x34   _ZN23CPL_DonatLightingScreen17OnReceiveResponseEiPv
+  0x0050727c sz=0x10   _ZThn268_N23CPL_DonatLightingScreen17OnReceiveResponseEiPv
+  0x00508e84 sz=0xf4   _ZN14CPL_MainScreen17OnReceiveResponseEiPv
+  0x00508fec sz=0x10   _ZThn308_N14CPL_MainScreen17OnReceiveResponseEiPv
+  0x0050a52c sz=0x1f0  _ZN14CPersActSubmit17OnReceiveResponseEiPv
+  0x0050bf24 sz=0x60   _ZN19CPersonActiveScreen17OnReceiveResponseEiPv
+  0x0050bf84 sz=0x10   _ZThn268_N19CPersonActiveScreen17OnReceiveResponseEiPv
+  0x0050d0bc sz=0x3c   _ZN27CPersonalExchangeListScreen17OnReceiveResponseEiPv
+  0x0050d178 sz=0x10   _ZThn268_N27CPersonalExchangeListScreen17OnReceiveResponseEiPv
+  0x0050e03c sz=0x2    _ZN29CPersonalExchangeRecordScreen17OnReceiveResponseEiPv
+  0x0050e048 sz=0x2    _ZThn268_N29CPersonalExchangeRecordScreen17OnReceiveResponseEiPv
+  0x0050f6e8 sz=0x2f4  _ZN23CPersonalExchangeScreen17OnReceiveResponseEiPv
+  0x0050fadc sz=0x10   _ZThn268_N23CPersonalExchangeScreen17OnReceiveResponseEiPv
+  0x00510f68 sz=0x2    _ZN15CPersonalScreen17OnReceiveResponseEiPv
+  0x00510f6a sz=0x2    _ZThn268_N15CPersonalScreen17OnReceiveResponseEiPv
+  0x00512c84 sz=0x4b4  _ZN7CPlayer17OnReceiveResponseEiPv
+  0x00513348 sz=0xa    _ZThn4_N7CPlayer17OnReceiveResponseEiPv
+  0x0051c5fc sz=0x48   _ZN7CPlayer16OnConnectSuccessEPv
+  0x0051c644 sz=0xa    _ZThn60_N7CPlayer16OnConnectSuccessEPv
+  0x0051e308 sz=0x320  _ZN13CPrisonScreen17OnReceiveResponseEiPv
+  0x0051e628 sz=0x10   _ZThn268_N13CPrisonScreen17OnReceiveResponseEiPv
+  0x00520a2c sz=0x5a0  _ZN19CPropertyCateScreen17OnReceiveResponseEiPv
+  0x005211a0 sz=0x10   _ZThn268_N19CPropertyCateScreen17OnReceiveResponseEiPv
+  0x00524b7c sz=0x4a8  _ZN23CPropertyListCateScreen17OnReceiveResponseEiPv
+  0x00525024 sz=0x10   _ZThn268_N23CPropertyListCateScreen17OnReceiveResponseEiPv
+  0x00525b30 sz=0x56   _ZN19CPropertyListScreen17OnReceiveResponseEiPv
+  0x00525c84 sz=0x10   _ZThn268_N19CPropertyListScreen17OnReceiveResponseEiPv
+  0x0052938c sz=0x980  _ZN15CPvpFightScreen17OnReceiveResponseEiPv
+  0x00529d38 sz=0x10   _ZThn268_N15CPvpFightScreen17OnReceiveResponseEiPv
+  0x0052dc10 sz=0xbc   _ZN17CRG_CarInfoScreen17OnReceiveResponseEiPv
+  0x0052dccc sz=0x10   _ZThn268_N17CRG_CarInfoScreen17OnReceiveResponseEiPv
+  0x0052e5f4 sz=0xa0   _ZN18CRG_CarRefitScreen17OnReceiveResponseEiPv
+  0x0052e694 sz=0x10   _ZThn268_N18CRG_CarRefitScreen17OnReceiveResponseEiPv
+  0x005308fc sz=0x660  _ZN22CRG_CarWarehouseScreen17OnReceiveResponseEiPv
+  0x00530ffc sz=0x10   _ZThn268_N22CRG_CarWarehouseScreen17OnReceiveResponseEiPv
+  0x00534104 sz=0x1e8  _ZN25CRG_ChooseComponentScreen17OnReceiveResponseEiPv
+  0x005342ec sz=0x10   _ZThn268_N25CRG_ChooseComponentScreen17OnReceiveResponseEiPv
+  0x00535b3c sz=0x2    _ZN29CRG_CreatePersonalMatchScreen17OnReceiveResponseEiPv
+  0x00535b3e sz=0x2    _ZThn268_N29CRG_CreatePersonalMatchScreen17OnReceiveResponseEiPv
+  0x005365b4 sz=0x274  _ZN22CRG_ExchangeSkinScreen17OnReceiveResponseEiPv
+  0x00536d58 sz=0x10   _ZThn268_N22CRG_ExchangeSkinScreen17OnReceiveResponseEiPv
+  0x00537f04 sz=0x2    _ZN19CRG_MapDetailScreen17OnReceiveResponseEiPv
+  0x00537f06 sz=0x2    _ZThn268_N19CRG_MapDetailScreen17OnReceiveResponseEiPv
+  0x00538798 sz=0x2c4  _ZN17CRG_MapListScreen17OnReceiveResponseEiPv
+  0x00538a5c sz=0x10   _ZThn268_N17CRG_MapListScreen17OnReceiveResponseEiPv
+  0x0053a874 sz=0x354  _ZN24CRG_MatchAthleticsScreen17OnReceiveResponseEiPv
+  0x0053abdc sz=0x10   _ZThn268_N24CRG_MatchAthleticsScreen17OnReceiveResponseEiPv
+  0x0053bbd8 sz=0x94   _ZN25CRG_PersonalMapListScreen17OnReceiveResponseEiPv
+  0x0053bd50 sz=0x10   _ZThn268_N25CRG_PersonalMapListScreen17OnReceiveResponseEiPv
+  0x0053cb34 sz=0x8    _ZN22CRG_RaceActivityScreen17OnReceiveResponseEiPv
+  0x0053cb3c sz=0x8    _ZThn268_N22CRG_RaceActivityScreen17OnReceiveResponseEiPv
+  0x0053d78c sz=0x4a4  _ZN25CRG_RaceDungeonListScreen17OnReceiveResponseEiPv
+  0x0053dc30 sz=0x10   _ZThn268_N25CRG_RaceDungeonListScreen17OnReceiveResponseEiPv
+  0x0053f104 sz=0x2cc  _ZN21CRG_RaceDungeonScreen17OnReceiveResponseEiPv
+  0x0053f3d0 sz=0x10   _ZThn268_N21CRG_RaceDungeonScreen17OnReceiveResponseEiPv
+  0x00541790 sz=0x31c  _ZN14CRG_RaceScreen17OnReceiveResponseEiPv
+  0x00541d90 sz=0x10   _ZThn268_N14CRG_RaceScreen17OnReceiveResponseEiPv
+  0x00546a0c sz=0x394  _ZN24CRaceDeliverPrizeHandler17OnReceiveResponseEiPv
+  0x00546de4 sz=0x8c   _ZN24CRaceDeliverPrizeHandler12ParseConnectEPv
+  0x005471c4 sz=0x2ac  _ZN20CRG_RecordDescScreen17OnReceiveResponseEiPv
+  0x0054758c sz=0x10   _ZThn268_N20CRG_RecordDescScreen17OnReceiveResponseEiPv
+  0x00547d80 sz=0x27c  _ZN16CRG_RecordScreen17OnReceiveResponseEiPv
+  0x00547ffc sz=0x10   _ZThn268_N16CRG_RecordScreen17OnReceiveResponseEiPv
+  0x0054a238 sz=0x18c  _ZN15CRG_StoreScreen17OnReceiveResponseEiPv
+  0x0054a3c4 sz=0x10   _ZThn268_N15CRG_StoreScreen17OnReceiveResponseEiPv
+  0x0054d834 sz=0x1ac  _ZN15CRankCateScreen17OnReceiveResponseEiPv
+  0x0054db04 sz=0x10   _ZThn268_N15CRankCateScreen17OnReceiveResponseEiPv
+  0x0054f97c sz=0x19c  _ZN23CReceiveRedPacketScreen17OnReceiveResponseEiPv
+  0x0054fdb4 sz=0x10   _ZThn268_N23CReceiveRedPacketScreen17OnReceiveResponseEiPv
+  0x00550b38 sz=0x238  _ZN15CRechargeScreen17OnReceiveResponseEiPv
+  0x00550d70 sz=0x10   _ZThn268_N15CRechargeScreen17OnReceiveResponseEiPv
+  0x005518f0 sz=0xfc   _ZN18CRecommenderScreen17OnReceiveResponseEiPv
+  0x005519ec sz=0x10   _ZThn268_N18CRecommenderScreen17OnReceiveResponseEiPv
+  0x00551d44 sz=0x2    _ZN13CRemarkScreen17OnReceiveResponseEiPv
+  0x00551d46 sz=0x2    _ZThn268_N13CRemarkScreen17OnReceiveResponseEiPv
+  0x005530f8 sz=0x2    _ZN18CRewardEntryScreen17OnReceiveResponseEiPv
+  0x005530fa sz=0x2    _ZThn268_N18CRewardEntryScreen17OnReceiveResponseEiPv
+  0x00553334 sz=0xac   _ZN20CLoginRewardCellDataC2Ev
+  0x00553334 sz=0xac   _ZN20CLoginRewardCellDataC1Ev
+  0x005533e0 sz=0x38   _ZN20CLoginRewardCellDataD2Ev
+  0x005533e0 sz=0x38   _ZN20CLoginRewardCellDataD1Ev
+  0x00553418 sz=0x3c   _ZN20CLoginRewardCellDataD0Ev
+  0x005538ac sz=0x74   _ZN20CLoginRewardCellData16SetHaveNewRewardEv
+  0x00554588 sz=0x28c  _ZN13CRewardScreen17OnReceiveResponseEiPv
+  0x005548a8 sz=0x10   _ZThn268_N13CRewardScreen17OnReceiveResponseEiPv
+  0x00555198 sz=0x8    _ZN17CRoleChooseScreen17OnReceiveResponseEiPv
+  0x0055a6f4 sz=0x5f8  _ZN20CSW_EnterBuildScreen17OnReceiveResponseEiPv
+  0x0055aec0 sz=0x10   _ZThn268_N20CSW_EnterBuildScreen17OnReceiveResponseEiPv
+  0x0055dc30 sz=0x428  _ZN15CSW_EntryScreen17OnReceiveResponseEiPv
+  0x0055e64c sz=0x10   _ZThn268_N15CSW_EntryScreen17OnReceiveResponseEiPv
+  0x005614b8 sz=0x58   _ZN22CSW_JoinCorpListScreen17OnReceiveResponseEiPv
+  0x00561718 sz=0x10   _ZThn300_N22CSW_JoinCorpListScreen17OnReceiveResponseEiPv
+  0x005647b4 sz=0x28   _ZN21CSW_MatchResultScreen17OnReceiveResponseEiPv
+  0x00564ab0 sz=0x10   _ZThn268_N21CSW_MatchResultScreen17OnReceiveResponseEiPv
+  0x00565a28 sz=0x8    _ZN23CSW_MatchShowInfoScreen17OnReceiveResponseEiPv
+  0x00565a30 sz=0x8    _ZThn268_N23CSW_MatchShowInfoScreen17OnReceiveResponseEiPv
+  0x00566db0 sz=0x128  _ZN21CSW_MatchStatusScreen17OnReceiveResponseEiPv
+  0x00566f38 sz=0x10   _ZThn268_N21CSW_MatchStatusScreen17OnReceiveResponseEiPv
+  0x00568bdc sz=0x78   _ZN16CSW_ReviveScreen17OnReceiveResponseEiPv
+  0x00568ce4 sz=0x10   _ZThn268_N16CSW_ReviveScreen17OnReceiveResponseEiPv
+  0x0056a808 sz=0x190  _ZN17CSchoolCateScreen17OnReceiveResponseEiPv
+  0x0056a998 sz=0x10   _ZThn268_N17CSchoolCateScreen17OnReceiveResponseEiPv
+  0x0056b410 sz=0x1c   _ZN13CSchoolScreen17OnReceiveResponseEiPv
+  0x0056b42c sz=0x1c   _ZThn268_N13CSchoolScreen17OnReceiveResponseEiPv
+  0x0056c000 sz=0x44   _ZN19CSearchResultScreen17OnReceiveResponseEiPv
+  0x0056c044 sz=0x10   _ZThn268_N19CSearchResultScreen17OnReceiveResponseEiPv
+  0x0056e740 sz=0x50   _ZN19CServerChooseScreen17OnReceiveResponseEiPv
+  0x0056e790 sz=0x10   _ZThn268_N19CServerChooseScreen17OnReceiveResponseEiPv
+  0x0056eb4c sz=0x7e   _ZN12CServerMnger15ParseServerListEPv
+  0x0056f19a sz=0xde   _ZN12CServerMnger13ParseRoleListEPv
+  0x005707ec sz=0x31c  _ZN20CSetPersonDataScreen17OnReceiveResponseEiPv
+  0x00570b08 sz=0x10   _ZThn268_N20CSetPersonDataScreen17OnReceiveResponseEiPv
+  0x005727ec sz=0x1f4  _ZN22CSkyscraperEntryScreen17OnReceiveResponseEiPv
+  0x005729e0 sz=0x10   _ZThn268_N22CSkyscraperEntryScreen17OnReceiveResponseEiPv
+  0x00575508 sz=0x45c  _ZN17CSkyscraperScreen17OnReceiveResponseEiPv
+  0x0057598c sz=0x10   _ZThn268_N17CSkyscraperScreen17OnReceiveResponseEiPv
+  0x00577fe8 sz=0x4c   _ZN6CStore17OnReceiveResponseEiPv
+  0x00578034 sz=0xa    _ZThn4_N6CStore17OnReceiveResponseEiPv
+  0x0057ac68 sz=0x114  _ZN16CStoreCateScreen17OnReceiveResponseEiPv
+  0x0057ad7c sz=0x10   _ZThn300_N16CStoreCateScreen17OnReceiveResponseEiPv
+  0x0057f234 sz=0x1690 _ZN13CStorePackage17OnReceiveResponseEiPv
+  0x00580d14 sz=0xa    _ZThn200_N13CStorePackage17OnReceiveResponseEiPv
+  0x00587d74 sz=0x124  _ZN21CStrengthenShopScreen17OnReceiveResponseEiPv
+  0x00587efc sz=0x10   _ZThn268_N21CStrengthenShopScreen17OnReceiveResponseEiPv
+  0x0058d51c sz=0x50   _ZN14CTG_MainScreen17OnReceiveResponseEiPv
+  0x0058d56c sz=0x10   _ZThn268_N14CTG_MainScreen17OnReceiveResponseEiPv
+  0x0058e5f8 sz=0x68   _ZN21CTcpLongConnectCreate16CreatLongConnectEPKcS1_i
+  0x0058e660 sz=0xf0   _ZN21CTcpLongConnectCreate16CreatLongConnectE10ngStringV2S0_
+  0x0058e9d4 sz=0x48   _ZN21CTcpLongConnectCreate16OnConnectSuccessEPv
+  0x0058ea1c sz=0xa    _ZThn4_N21CTcpLongConnectCreate16OnConnectSuccessEPv
+  0x005900b4 sz=0x60   _ZN21CThanksgivingV2Screen17OnReceiveResponseEiPv
+  0x00590204 sz=0x10   _ZThn300_N21CThanksgivingV2Screen17OnReceiveResponseEiPv
+  0x00593304 sz=0x1c   _ZN10CTopScreen17OnReceiveResponseEiPv
+  0x00593320 sz=0x10   _ZThn272_N10CTopScreen17OnReceiveResponseEiPv
+  0x00594d74 sz=0x350  _ZN17CTournamentScreen17OnReceiveResponseEiPv
+  0x005950c4 sz=0x10   _ZThn300_N17CTournamentScreen17OnReceiveResponseEiPv
+  0x00597470 sz=0x184  _ZN22CTransitionAtrbtScreen17OnReceiveResponseEiPv
+  0x005975f4 sz=0x10   _ZThn268_N22CTransitionAtrbtScreen17OnReceiveResponseEiPv
+  0x00598250 sz=0xb0   _ZN17CTransitionScreen17OnReceiveResponseEiPv
+  0x00598354 sz=0x10   _ZThn268_N17CTransitionScreen17OnReceiveResponseEiPv
+  0x0059d170 sz=0xfc   _ZN24CUpdateWindowOrderScreen17OnReceiveResponseEiPv
+  0x0059d26c sz=0x10   _ZThn296_N24CUpdateWindowOrderScreen17OnReceiveResponseEiPv
+  0x0059eb28 sz=0x180  _ZN16CValentineScreen17OnReceiveResponseEiPv
+  0x0059eca8 sz=0x10   _ZThn268_N16CValentineScreen17OnReceiveResponseEiPv
+  0x0059f694 sz=0x48   _ZN17CVerifyACCTScreen17OnReceiveResponseEiPv
+  0x0059f6dc sz=0x10   _ZThn272_N17CVerifyACCTScreen17OnReceiveResponseEiPv
+  0x005a6954 sz=0x3d4  _ZN11CVoteScreen17OnReceiveResponseEiPv
+  0x005a6f78 sz=0xa    _ZThn28_N11CVoteScreen17OnReceiveResponseEiPv
+  0x005a90c8 sz=0x100  _ZN21CVoteStatisticsScreen17OnReceiveResponseEiPv
+  0x005a924c sz=0x10   _ZThn268_N21CVoteStatisticsScreen17OnReceiveResponseEiPv
+  0x005ab484 sz=0x188  _ZN16CWeekAwardScreen17OnReceiveResponseEiPv
+  0x005ab60c sz=0x10   _ZThn268_N16CWeekAwardScreen17OnReceiveResponseEiPv
+  0x005ae67c sz=0xb4   _ZN17SlotMachineScreen17OnReceiveResponseEiPv
+  0x005ae730 sz=0x10   _ZThn268_N17SlotMachineScreen17OnReceiveResponseEiPv
+  0x005b358c sz=0xa8   _ZN14asMATInterface10TrackLoginEPKc
+  0x005b3a54 sz=0x40   _ZN22ngFacebookShareAndroid5LoginEv
+  0x005b3b90 sz=0x12   _ZN22ngFacebookShareAndroid14OnLoginSuccessEPKcS1_
+  0x005b3ba2 sz=0x66   Java_com_anansimobile_extra_platform_facebookshare_FacebookShare_onLoginSuccess
+  0x005b3c08 sz=0x5c   _ZN21asFBShareLoginMessageC2EPKcS1_
+  0x005b3c64 sz=0x48   Java_com_anansimobile_extra_platform_facebookshare_FacebookShare_onLoginError
+  0x005b3cac sz=0x48   Java_com_anansimobile_extra_platform_facebookshare_FacebookShare_onLoginCanceled
+  0x005b3d38 sz=0x2    _ZN22ngFacebookShareAndroid13OnLoginFailedEv
+  0x005b3d3a sz=0x2    _ZN22ngFacebookShareAndroid15OnLoginCanceledEv
+  0x005b3d4c sz=0x34   _ZN21asFBShareLoginMessageD2Ev
+  0x005b3d80 sz=0x38   _ZN21asFBShareLoginMessageD0Ev
+  0x005b3db8 sz=0x62   _ZN21asFBShareLoginMessage17HandleMessageDataEv
+  0x005b4f3e sz=0x2    _ZN21asGameHelperInterface11LoginHelperEPKcS1_i
+  0x005b5000 sz=0xac   _ZN18asHelpShiftAndroid11LoginHelperEPKcS1_i
+  0x005cf9b0 sz=0x2    _ZN10ngAppRater17OnReceiveResponseEiPv
+  0x005cf9b2 sz=0x2    _ZThn4_N10ngAppRater17OnReceiveResponseEiPv
+  0x0070d960 sz=0x1d   _ZTS26CCustomTaskGameHelperLogin
+  0x00710c40 sz=0x1f   _ZTS28ngFacebookShareLoginListener
+  0x00711df0 sz=0x11   _ZTS14CLoginEnScreen
+  0x00711e10 sz=0x13   _ZTS16CLoginGiftScreen
+  0x00713480 sz=0x18   _ZTS21CNewLoginRewardScreen
+  0x007134a0 sz=0x1c   _ZTS25CNewLoginRewardCellRender
+  0x007134c0 sz=0x12   _ZTS15CNewLoginScreen
+  0x007148d0 sz=0x17   _ZTS20CLoginRewardCellData
+  0x00716f80 sz=0x18   _ZTS21asFBShareLoginMessage
+  0x00727ce0 sz=0x14   _ZTV26CCustomTaskGameHelperLogin
+  0x00727d0c sz=0xc    _ZTI26CCustomTaskGameHelperLogin
+  0x00734150 sz=0x8    _ZTI28ngFacebookShareLoginListener
+  0x007394d0 sz=0xec   _ZTV14CLoginEnScreen
+  0x007395c0 sz=0x28   _ZTI14CLoginEnScreen
+  0x007395f0 sz=0x134  _ZTV16CLoginGiftScreen
+  0x007397a0 sz=0x28   _ZTI16CLoginGiftScreen
+  0x00740e10 sz=0xf4   _ZTV21CNewLoginRewardScreen
+  0x00740f10 sz=0x38   _ZTV25CNewLoginRewardCellRender
+  0x00740f50 sz=0x20   _ZTI21CNewLoginRewardScreen
+  0x00740f70 sz=0xc    _ZTI25CNewLoginRewardCellRender
+  0x00740f80 sz=0x144  _ZTV15CNewLoginScreen
+  0x007410d0 sz=0x30   _ZTI15CNewLoginScreen
+  0x00747370 sz=0x14   _ZTV20CLoginRewardCellData
+  0x00747480 sz=0xc    _ZTI20CLoginRewardCellData
+  0x0074dcf0 sz=0x14   _ZTV21asFBShareLoginMessage
+  0x0074dd10 sz=0xc    _ZTI21asFBShareLoginMessage
+
+===== CServerMnger::ParseServerList  va=0x0056eb4c len=0x7e =====
+  0x0056eb4c: f0b5     push    {r4, r5, r6, r7, lr}
+  0x0056eb4e: 81b0     sub     sp, #4
+  0x0056eb50: 0d46     mov     r5, r1
+  0x0056eb52: 002d     cmp     r5, #0
+  0x0056eb54: 37d0     beq     #0x56ebc6
+  0x0056eb56: 0090     str     r0, [sp]
+  0x0056eb58: 49f1f0f9 bl      #0x6b7f3c -> 0x006b7f3c
+  0x0056eb5c: 6868     ldr     r0, [r5, #4]
+  0x0056eb5e: 4269     ldr     r2, [r0, #0x14]
+  0x0056eb60: 281d     adds    r0, r5, #4
+  0x0056eb62: 0021     movs    r1, #0
+  0x0056eb64: 9047     blx     r2
+  0x0056eb66: 0546     mov     r5, r0
+  0x0056eb68: 2868     ldr     r0, [r5]
+  0x0056eb6a: 8168     ldr     r1, [r0, #8]
+  0x0056eb6c: 2846     mov     r0, r5
+  0x0056eb6e: 8847     blx     r1
+  0x0056eb70: 0028     cmp     r0, #0
+  0x0056eb72: 1ad0     beq     #0x56ebaa
+  0x0056eb74: 0098     ldr     r0, [sp]
+  0x0056eb76: 061d     adds    r6, r0, #4
+  0x0056eb78: 2868     ldr     r0, [r5]
+  0x0056eb7a: c168     ldr     r1, [r0, #0xc]
+  0x0056eb7c: 2846     mov     r0, r5
+  0x0056eb7e: 8847     blx     r1
+  0x0056eb80: 0746     mov     r7, r0
+  0x0056eb82: a020     movs    r0, #0xa0
+  0x0056eb84: 24f1fafa bl      #0x69317c -> __udivdi3+0x560
+  0x0056eb88: 0446     mov     r4, r0
+  0x0056eb8a: 49f1f7f9 bl      #0x6b7f7c -> 0x006b7f7c
+  0x0056eb8e: 2046     mov     r0, r4
+  0x0056eb90: 3946     mov     r1, r7
+  0x0056eb92: 49f1fbf9 bl      #0x6b7f8c -> 0x006b7f8c
+  0x0056eb96: 3046     mov     r0, r6
+  0x0056eb98: 2146     mov     r1, r4
+  0x0056eb9a: 24f1bffb bl      #0x69331c -> __udivdi3+0x700
+  0x0056eb9e: 2868     ldr     r0, [r5]
+  0x0056eba0: 8168     ldr     r1, [r0, #8]
+  0x0056eba2: 2846     mov     r0, r5
+  0x0056eba4: 8847     blx     r1
+  0x0056eba6: 0028     cmp     r0, #0
+  0x0056eba8: e6d1     bne     #0x56eb78
+  0x0056ebaa: 2868     ldr     r0, [r5]
+  0x0056ebac: 4169     ldr     r1, [r0, #0x14]
+  0x0056ebae: 2846     mov     r0, r5
+  0x0056ebb0: 8847     blx     r1
+  0x0056ebb2: 009c     ldr     r4, [sp]
+  0x0056ebb4: 2046     mov     r0, r4
+  0x0056ebb6: 49f1f1f9 bl      #0x6b7f9c -> 0x006b7f9c
+  0x0056ebba: 2046     mov     r0, r4
+  0x0056ebbc: 49f1f6f9 bl      #0x6b7fac -> 0x006b7fac
+  0x0056ebc0: 2046     mov     r0, r4
+  0x0056ebc2: 49f1fbf9 bl      #0x6b7fbc -> 0x006b7fbc
+  0x0056ebc6: 01b0     add     sp, #4
+  0x0056ebc8: f0bd     pop     {r4, r5, r6, r7, pc}
+
+===== CServer::Parse (recap)  va=0x0056de78 len=0x40 =====
+  0x0056de78: 70b5     push    {r4, r5, r6, lr}
+  0x0056de7a: 0446     mov     r4, r0
+  0x0056de7c: 0029     cmp     r1, #0
+  0x0056de7e: 00d1     bne     #0x56de82
+  0x0056de80: f4e0     b       #0x56e06c
+  0x0056de82: 7b48     ldr     r0, [pc, #0x1ec] lit=0x001ecc98
+  0x0056de84: 7844     add     r0, pc
+  0x0056de86: 7b4a     ldr     r2, [pc, #0x1ec] lit=0xfff9c279
+  0x0056de88: 1218     adds    r2, r2, r0 KEY="idx"
+  0x0056de8a: 4868     ldr     r0, [r1, #4]
+  0x0056de8c: 036c     ldr     r3, [r0, #0x40] (GetNode)
+  0x0056de8e: 0d1d     adds    r5, r1, #4
+  0x0056de90: 2846     mov     r0, r5
+  0x0056de92: 1146     mov     r1, r2
+  0x0056de94: 9847     blx     r3
+  0x0056de96: 0028     cmp     r0, #0
+  0x0056de98: 03d0     beq     #0x56dea2
+  0x0056de9a: 0830     adds    r0, #8
+  0x0056de9c: 25f1b6f8 bl      #0x69300c -> IntValue[INT]
+  0x0056dea0: 6060     str     r0, [r4, #4]
+  0x0056dea2: 7548     ldr     r0, [pc, #0x1d4] lit=0x001ecc78
+  0x0056dea4: 7844     add     r0, pc
+  0x0056dea6: 7549     ldr     r1, [pc, #0x1d4] lit=0xfff9c3db
+  0x0056dea8: 0918     adds    r1, r1, r0 KEY="status"
+  0x0056deaa: 2868     ldr     r0, [r5]
+  0x0056deac: 026c     ldr     r2, [r0, #0x40] (GetNode)
+  0x0056deae: 2846     mov     r0, r5
+  0x0056deb0: 9047     blx     r2
+  0x0056deb2: 0028     cmp     r0, #0
+  0x0056deb4: 03d0     beq     #0x56debe
+  0x0056deb6: 0830     adds    r0, #8

@@ -1,0 +1,193 @@
+
+===== CHttpClient::ParseResponseEx  va=0x00467264 len=0x300 =====
+  0x0046726a: 2bf2cfff bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x0046726e: fe49     ldr     r1, [pc, #0x3f8]  ; lit=0x00001d08
+  0x00467278: fc48     ldr     r0, [pc, #0x3f0]  ; lit=0x002f38a2
+  0x0046727c: fc49     ldr     r1, [pc, #0x3f0]  ; lit=0xffffe920
+  0x0046727e: 0818     adds    r0, r1, r0  ; STR->0x00759440
+  0x00467284: 2bf2c2ff bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x00467288: f749     ldr     r1, [pc, #0x3dc]  ; lit=0x00001d08
+  0x00467294: 2ff282fc bl      #0x696b9c  ; -> 0x00696b9c
+  0x004672a4: 2bf2b2ff bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x004672a8: f249     ldr     r1, [pc, #0x3c8]  ; lit=0x000008a8 "Y"
+  0x004672aa: 4118     adds    r1, r0, r1  ; STR->0x00759ce8
+  0x004672bc: ee48     ldr     r0, [pc, #0x3b8]  ; lit=0x002f385e
+  0x004672c0: ee49     ldr     r1, [pc, #0x3b8]  ; lit=0xfffa4852
+  0x004672c2: 0918     adds    r1, r1, r0  ; STR->0x006fe53a
+  0x004672de: 2bf295fe bl      #0x69300c  ; -> __udivdi3+0x3f0
+  0x004672e4: e649     ldr     r1, [pc, #0x398]  ; lit=0x000009c8 ""
+  0x004672ea: e64c     ldr     r4, [pc, #0x398]  ; lit=0x000009cc
+  0x00467312: 4018     adds    r0, r0, r1  ; STR->0x00a4e37e
+  0x00467316: 4018     adds    r0, r0, r1  ; STR->0x00d41bdc
+  0x00467394: 2bf23aff bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x00467398: bb49     ldr     r1, [pc, #0x2ec]  ; lit=0x00001bcc
+  0x0046739a: 4018     adds    r0, r0, r1  ; STR->0x0103543a
+  0x004673a8: 2bf230ff bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x004673ac: b649     ldr     r1, [pc, #0x2d8]  ; lit=0x00001bcc
+  0x004673ae: 4018     adds    r0, r0, r1  ; STR->0x01328c98
+  0x004673b2: 41f26bfc bl      #0x6a8c8c  ; -> 0x006a8c8c
+  0x004673c0: 2bf224ff bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x004673c4: b149     ldr     r1, [pc, #0x2c4]  ; lit=0x00001bf0
+  0x004673c8: b148     ldr     r0, [pc, #0x2c4]  ; lit=0x002f3752
+  0x004673cc: b149     ldr     r1, [pc, #0x2c4]  ; lit=0xfff9c8f6
+  0x004673ce: 0918     adds    r1, r1, r0  ; STR->0x0069ae30
+  0x004673e0: 2bf214fe bl      #0x69300c  ; -> __udivdi3+0x3f0
+  0x004673e6: 2bf211ff bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x004673ea: a24a     ldr     r2, [pc, #0x288]  ; lit=0x000008a8 "Y"
+  0x004673ec: 8118     adds    r1, r0, r2  ; STR->0x0075b3c8
+  0x004673f8: 2df280fe bl      #0x6950fc  ; -> 0x006950fc
+  0x00467400: 3cf2acfb bl      #0x6a3b5c  ; -> 0x006a3b5c
+  0x00467404: 2bf202ff bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x00467408: 9f49     ldr     r1, [pc, #0x27c]  ; lit=0x00001bcc
+  0x0046740a: 4018     adds    r0, r0, r1  ; STR->0x00a4e272
+  0x0046740e: 41f245fc bl      #0x6a8c9c  ; -> 0x006a8c9c
+  0x0046741c: 2bf2f6fe bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x00467420: 9949     ldr     r1, [pc, #0x264]  ; lit=0x00001bcc
+  0x00467422: 4018     adds    r0, r0, r1  ; STR->0x00d419c4
+  0x00467426: 41f231fc bl      #0x6a8c8c  ; -> 0x006a8c8c
+  0x00467434: 2bf2eafe bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x00467438: 9449     ldr     r1, [pc, #0x250]  ; lit=0x00001bf0
+  0x0046743c: 2df276ff bl      #0x69532c  ; -> 0x0069532c
+  0x00467442: 41f233fc bl      #0x6a8cac  ; -> 0x006a8cac
+  0x00467446: 2df271ff bl      #0x69532c  ; -> 0x0069532c
+  0x0046744a: 41f237fc bl      #0x6a8cbc  ; -> 0x006a8cbc
+  0x00467458: 2bf2d8fe bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x0046745e: 41f235fc bl      #0x6a8ccc  ; -> 0x006a8ccc
+  0x00467468: 41f210fc bl      #0x6a8c8c  ; -> 0x006a8c8c
+  0x00467478: 2bf278fd bl      #0x692f6c  ; -> __udivdi3+0x350
+  0x0046747c: 8648     ldr     r0, [pc, #0x218]  ; lit=0x002f369e
+  0x00467480: 8649     ldr     r1, [pc, #0x218]  ; lit=0xfffa483e
+  0x00467482: 0918     adds    r1, r1, r0  ; STR->0x006ffc06 "ymTypes"
+  0x00467496: 2bf299fd bl      #0x692fcc  ; -> __udivdi3+0x3b0
+  0x004674a4: 2bf29afd bl      #0x692fdc  ; -> __udivdi3+0x3c0
+  0x004674ac: 2df2e6f9 bl      #0x69487c  ; -> 0x0069487c
+  0x004674b2: 2cf2cbfe bl      #0x69424c  ; -> 0x0069424c
+  0x004674ba: 2df21ffe bl      #0x6950fc  ; -> 0x006950fc
+  0x004674c6: 2cf2f9fa bl      #0x693abc  ; -> __udivdi3+0xea0
+  0x004674d0: 41f204fc bl      #0x6a8cdc  ; -> 0x006a8cdc
+  0x004674d6: 2bf251fd bl      #0x692f7c  ; -> __udivdi3+0x360
+  0x004674da: 2bf297fe bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x004674de: f649     ldr     r1, [pc, #0x3d8]  ; lit=0x00001bf0
+  0x004674ea: 41f2fffb bl      #0x6a8cec  ; -> 0x006a8cec
+  0x004674f2: 2df203fe bl      #0x6950fc  ; -> 0x006950fc
+  0x004674fa: 3cf22ffb bl      #0x6a3b5c  ; -> 0x006a3b5c
+  0x004674fe: 2df2fdfd bl      #0x6950fc  ; -> 0x006950fc
+  0x00467502: ef49     ldr     r1, [pc, #0x3bc]  ; lit=0x00000934 """
+  0x00467508: 3cf228fb bl      #0x6a3b5c  ; -> 0x006a3b5c
+  0x00467512: 2df20bff bl      #0x69532c  ; -> 0x0069532c
+  0x00467518: 41f2f0fb bl      #0x6a8cfc  ; -> 0x006a8cfc
+  0x00467522: 2df2ebfd bl      #0x6950fc  ; -> 0x006950fc
+  0x0046752e: 2cf2c5fa bl      #0x693abc  ; -> __udivdi3+0xea0
+  0x0046753a: 41f2cffb bl      #0x6a8cdc  ; -> 0x006a8cdc
+  0x00467540: 2bf21cfd bl      #0x692f7c  ; -> __udivdi3+0x360
+  0x00467544: 2bf262fe bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x00467548: da49     ldr     r1, [pc, #0x368]  ; lit=0x00001bcc
+  0x0046754a: 4018     adds    r0, r0, r1  ; STR->0x00a4e1be
+  0x00467552: 41f2dbfb bl      #0x6a8d0c  ; -> 0x006a8d0c
+  0x00467558: 2bf258fe bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x0046755c: d549     ldr     r1, [pc, #0x354]  ; lit=0x00001bcc
+  0x0046755e: 4018     adds    r0, r0, r1  ; STR->0x00d4185c
+
+===== ngHttpClient::ParseResponseEx  va=0x005cfdb4 len=0x140 =====
+  0x005cfdca: edf037ff bl      #0x6bdc3c  ; -> 0x006bdc3c
+  0x005cfdd0: edf03cff bl      #0x6bdc4c  ; -> 0x006bdc4c
+  0x005cfdd6: edf081fc bl      #0x6bd6dc  ; -> 0x006bd6dc
+  0x005cfe12: c4f01bfa bl      #0x69424c  ; -> 0x0069424c
+  0x005cfe4a: c3f097f9 bl      #0x69317c  ; -> __udivdi3+0x560
+  0x005cfe50: c8f0ccfa bl      #0x6983ec  ; -> 0x006983ec
+  0x005cfe58: e3f0e0fc bl      #0x6b381c  ; -> 0x006b381c
+  0x005cfe68: 074d     ldr     r5, [pc, #0x1c]  ; lit=0x0018acb2 "N11CStoreModel10GetValueAtEii"
+  0x005cfe6c: 0748     ldr     r0, [pc, #0x1c]  ; lit=0xfffa972f
+  0x005cfe6e: 4119     adds    r1, r0, r5  ; STR->0x0070424f "header"
+  0x005cfe72: d8f003ff bl      #0x6a8c7c  ; -> 0x006a8c7c
+  0x005cfe76: 0648     ldr     r0, [pc, #0x18]  ; lit=0xfffaa685
+  0x005cfe78: 4119     adds    r1, r0, r5  ; STR->0x007051a5 "command"
+  0x005cfe7e: d8f0fdfe bl      #0x6a8c7c  ; -> 0x006a8c7c
+
+===== crash-region ~0x5cbdc4  va=0x005cbc20 len=0x200 =====
+  0x005cbc40: c8f06cfc bl      #0x69451c  ; -> 0x0069451c
+  0x005cbc5a: eff017ff bl      #0x6bba8c  ; -> 0x006bba8c
+  0x005cbca0: 0848     ldr     r0, [pc, #0x20]  ; lit=0x0018ee7a "9OnGameStatusChangedEi"
+  0x005cbca4: 084a     ldr     r2, [pc, #0x20]  ; lit=0xfffff4d0
+  0x005cbca6: 1018     adds    r0, r2, r0  ; STR->0x00759ff0
+  0x005cbcba: f1f0fffd bl      #0x6bd8bc  ; -> 0x006bd8bc
+  0x005cbcc8: d0f4ffff bl      #0x29ccca  ; -> 0x0029ccca
+  0x005cbd18: f1f0d0fd bl      #0x6bd8bc  ; -> 0x006bd8bc
+  0x005cbd34: f1f0c2fd bl      #0x6bd8bc  ; -> 0x006bd8bc
+  0x005cbd46: c7f0c9f9 bl      #0x6930dc  ; -> __udivdi3+0x4c0
+  0x005cbd4e: c7f01df9 bl      #0x692f8c  ; -> __udivdi3+0x370
+  0x005cbd54: 0549     ldr     r1, [pc, #0x14]  ; lit=0x0018edc6 "Pv"
+  0x005cbd58: 054a     ldr     r2, [pc, #0x14]  ; lit=0xfffff4d4
+  0x005cbd5a: 5118     adds    r1, r2, r1  ; STR->0x00759ff4
+  0x005cbd70: d4f4ffff bl      #0x2a0d72  ; -> 0x002a0d72
+  0x005cbd76: 0549     ldr     r1, [pc, #0x14]  ; lit=0x0018eda4 "ngConnectCreate16OnConnectSuccessEPv"
+  0x005cbd7a: 054c     ldr     r4, [pc, #0x14]  ; lit=0xfffff4d4
+  0x005cbd7c: 6118     adds    r1, r4, r1  ; STR->0x00759ff4
+  0x005cbd90: d4f4ffff bl      #0x2a0d92  ; -> 0x002a0d92
+  0x005cbd98: 0648     ldr     r0, [pc, #0x18]  ; lit=0x0018ed82 "9OnTCPServerShutDownEv"
+  0x005cbd9c: 064a     ldr     r2, [pc, #0x18]  ; lit=0xfffff4d4
+  0x005cbd9e: 1018     adds    r0, r2, r0  ; STR->0x00759ff4
+  0x005cbda8: c7f0d0fa bl      #0x69334c  ; -> __udivdi3+0x730
+  0x005cbdb8: d4f4ffff bl      #0x2a0dba  ; -> 0x002a0dba
+  0x005cbdbe: c7f0c5fa bl      #0x69334c  ; -> __udivdi3+0x730
+  0x005cbdd0: c7f0dcf8 bl      #0x692f8c  ; -> __udivdi3+0x370
+  0x005cbde0: 0549     ldr     r1, [pc, #0x14]  ; lit=0x0018ed3a "ZN21CTcpLongConnectCreate15OnTCPDisconnectEv"
+  0x005cbde4: 054a     ldr     r2, [pc, #0x14]  ; lit=0xfffff4d8
+  0x005cbde6: 5118     adds    r1, r2, r1  ; STR->0x00759ff8
+  0x005cbdfc: d8f4ffff bl      #0x2a4dfe  ; -> 0x002a4dfe
+  0x005cbe04: 1348     ldr     r0, [pc, #0x4c]  ; lit=0x0018ed16 "pLongConnectCreate12OnTCPOffLineEv"
+  0x005cbe08: 134a     ldr     r2, [pc, #0x4c]  ; lit=0xfffff4d8
+  0x005cbe0a: 1018     adds    r0, r2, r0  ; STR->0x00759ff8
+
+=== envelope / field key strings in image ===
+  b'command':
+     foff=0x7051a5 va=0x007051a5 ctx=b'\x00command\x00'
+     foff=0x707c5f va=0x00707c5f ctx=b' command.'
+     foff=0x707d83 va=0x00707d83 ctx=b' command '
+     foff=0x707e71 va=0x00707e71 ctx=b' command '
+  b'header':
+     foff=0x1c93b4 va=0x001c93b4 ctx=b'kheaders'
+     foff=0x1c93de va=0x001c93de ctx=b'eheader\x00'
+     foff=0x1c93ef va=0x001c93ef ctx=b'_header_'
+     foff=0x1c944e va=0x001c944e ctx=b'yheaders'
+  b'body':
+     foff=0x6f8bb0 va=0x006f8bb0 ctx=b'\x00bodyp'
+     foff=0x6f8bbe va=0x006f8bbe ctx=b'\x00bodyp'
+     foff=0x6f8de6 va=0x006f8de6 ctx=b'_body\x00'
+     foff=0x6fc648 va=0x006fc648 ctx=b'_body.'
+  b'result':
+     foff=0x1c2932 va=0x001c2932 ctx=b'eresult\x00'
+     foff=0x1c2942 va=0x001c2942 ctx=b'cresult\x00'
+     foff=0x1c2a8c va=0x001c2a8c ctx=b'hresult\x00'
+     foff=0x1c2a9c va=0x001c2a9c ctx=b'hresults'
+  b'errorMsg':
+     foff=0x703504 va=0x00703504 ctx=b'\x00errorMsg\x00'
+  b'status':
+     foff=0x1c2840 va=0x001c2840 ctx=b'_status\x00'
+     foff=0x6f6efb va=0x006f6efb ctx=b'\x00status\x00'
+     foff=0x6f7461 va=0x006f7461 ctx=b'\x00statusA'
+     foff=0x6f746a va=0x006f746a ctx=b'\x00statusD'
+  b'code':
+     foff=0x09c015 va=0x0009c015 ctx=b'scodeE'
+     foff=0x0a8ec8 va=0x000a8ec8 ctx=b'_codeE'
+     foff=0x0a8f15 va=0x000a8f15 ctx=b'_codeE'
+     foff=0x0a8f42 va=0x000a8f42 ctx=b'_codeE'
+  b'checkversion':
+     foff=0x1c2b88 va=0x001c2b88 ctx=b'_checkversion_'
+     foff=0x6fd348 va=0x006fd348 ctx=b'\x00checkversion\x00'
+  b'version':
+     foff=0x0c091b va=0x000c091b ctx=b'nversionC'
+     foff=0x0c093c va=0x000c093c ctx=b'nversion\x00'
+     foff=0x0c0958 va=0x000c0958 ctx=b'nversionD'
+     foff=0x0c0978 va=0x000c0978 ctx=b'nversionD'
+  b'reviewVersion':
+     foff=0x6fd33a va=0x006fd33a ctx=b'\x00reviewVersion\x00'
+  b'majorVersion':
+     foff=0x6fd35f va=0x006fd35f ctx=b'\x00majorVersion\x00'
+  b'isReview':
+     foff=0x6fd3a1 va=0x006fd3a1 ctx=b'\x00isReview\x00'
+  b'data':
+     foff=0x0c2255 va=0x000c2255 ctx=b'pdataR'
+     foff=0x0d09af va=0x000d09af ctx=b'pdataL'
+     foff=0x0e2cdc va=0x000e2cdc ctx=b'pdataB'
+     foff=0x0e30a6 va=0x000e30a6 ctx=b'pdataL'

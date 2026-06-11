@@ -1,0 +1,78 @@
+=== LaunchURL symbol addresses ===
+  _ZN8ngDevice9LaunchURLEPKc
+    va=0x005bb8bd (off=0x5bb8bc) size=2
+  _ZN15ngDeviceAndroid9LaunchURLEPKc
+    va=0x005efb9d (off=0x5efb9c) size=172
+
+.text @ va=0x0030a990 off=0x30a990 size=0x3bb3cc
+
+=== Callers of LaunchURL ===
+
+Total callers: 0
+
+CheckUpdate va=0x0048f8b1
+
+bl 0x6a8c9c from CheckUpdate (arg2==NULL branch):
+   nearest sym: 0x00692c1c -> __udivdi3
+
+bl 0x693b7c (vtable getter helper):
+   nearest sym: 0x00692c1c -> __udivdi3
+
+bl 0x693a3c (string-load helper?):
+   nearest sym: 0x00692c1c -> __udivdi3
+
+bl 0x69320c (call from arg2==NULL and at end):
+   nearest sym: 0x00692c1c -> __udivdi3
+
+=== Searching for any function that reads/writes this+0x2AC (this+684) ===
+  off=0x003d41f4 va=0x003d41f4  in _ZN26CFactionFactoryApplyScreen23SwitchScreenBySelectIdxEi (@0x003d41e8)
+  off=0x003d5b9e va=0x003d5b9e  in _ZN26CFactionFactoryApplyScreen16OnCloseOperationEv (@0x003d5b88)
+  off=0x003d6ea8 va=0x003d6ea8  in _ZN26CFactionFactoryApplyScreen17OnReceiveResponseEiPv (@0x003d6c20)
+  off=0x003d7438 va=0x003d7438  in _ZN26CFactionFactoryApplyScreen24SetButtonStatusWithValueEPvi (@0x003d73a0)
+  off=0x003fd6fc va=0x003fd6fc  in _ZN9CGameDataC1Ev (@0x003fd548)
+  off=0x003fde5a va=0x003fde5a  in _ZN9CGameDataD1Ev (@0x003fdb58)
+  off=0x003ff374 va=0x003ff374  in _ZN9CGameData16LoadStorePackageEv (@0x003ff2f0)
+  off=0x0040254c va=0x0040254c  in _ZN9CGameData10ClearTypesEv (@0x00402318)
+  off=0x004031cc va=0x004031cc  in _ZN9CGameData21FindStorePackageByKeyEi (@0x004030fc)
+  off=0x0041e4cc va=0x0041e4cc  in _ZN12CGoodsScreen17OnReceiveResponseEiPv (@0x0041e2ec)
+  off=0x0042e2c8 va=0x0042e2c8  in _ZN10CGymScreen16ShowFloatFadeOutEi (@0x0042e268)
+  off=0x00430896 va=0x00430896  in _ZN17CHG_CaptureScreenC1Eh (@0x0043073c)
+  off=0x0043366c va=0x0043366c  in _ZN17CHG_CaptureScreen14KillPreyFinishEv (@0x00433624)
+  off=0x004354be va=0x004354be  in _ZN17CHG_CaptureScreen18ParseAttackMessageEPv (@0x00435434)
+  off=0x004389bc va=0x004389bc  in _ZN17CHG_CaptureScreen14ResetKillValueEv (@0x004389b8)
+  off=0x0043c4a6 va=0x0043c4a6  in _ZN14CHG_MainScreen17OnReceiveResponseEiPv (@0x0043c498)
+  off=0x004448ce va=0x004448ce  in _ZN19CHG_WarehouseScreen11HandleEventEP6ngViewiii (@0x00444318)
+  off=0x0047a372 va=0x0047a372  in _ZN22CKingAppellationScreenC2Ei (@0x0047a244)
+  off=0x0047aad2 va=0x0047aad2  in _ZN22CKingAppellationScreen11HandleEventEP6ngViewiii (@0x0047aaa0)
+  off=0x0047aba6 va=0x0047aba6  in _ZN22CKingAppellationScreen11HandleEventEP6ngViewiii (@0x0047aaa0)
+  off=0x0047c6b6 va=0x0047c6b6  in _ZN22CKingAppellationScreen12HandleUpdateEi (@0x0047c690)
+  off=0x0048ed6e va=0x0048ed6e  in _ZN14CLoadingScreenC2Eh (@0x0048ec34)
+  off=0x0048f8ec va=0x0048f8ec  in _ZN14CLoadingScreen11CheckUpdateEPKcS1_ (@0x0048f8b0)
+  off=0x00494ea4 va=0x00494ea4  in _ZN14CLotteryScreen12SetGoodsDescEP6CGoods (@0x00494e9c)
+  off=0x004951f2 va=0x004951f2  in _ZN14CLotteryScreen16HandleTouchEventEi (@0x00494f78)
+  off=0x004be61e va=0x004be61e  in _ZN11CMainScreen20AdjustSWTopPanelSizeEv (@0x004be600)
+  off=0x004be6bc va=0x004be6bc  in _ZN11CMainScreen20AdjustSWTopPanelSizeEv (@0x004be600)
+  off=0x004c0754 va=0x004c0754  in _ZN11CMainScreen21CreateSWProgressPriveEv (@0x004c069c)
+  off=0x004c082a va=0x004c082a  in _ZN11CMainScreen21CreateSWProgressPriveEv (@0x004c069c)
+  off=0x004c091c va=0x004c091c  in _ZN11CMainScreen21CreateSWProgressPriveEv (@0x004c069c)
+  off=0x004fd4ce va=0x004fd4ce  in _ZN18CNewPvpFightScreenC2EP14CFightSimulateiih (@0x004fd3dc)
+  off=0x004fdbc2 va=0x004fdbc2  in _ZN18CNewPvpFightScreen13_AdapteLayoutEv (@0x004fda98)
+  off=0x00557528 va=0x00557528  in _ZN17CSW_BuildTreeView15SetScrollEnableEh (@0x005574dc)
+  off=0x005740a0 va=0x005740a0  in _ZN17CSkyscraperScreen16HandleStairEventEPv (@0x00574008)
+  off=0x00574336 va=0x00574336  in _ZN17CSkyscraperScreen16HandleStairEventEv (@0x00574274)
+  off=0x00574e6c va=0x00574e6c  in _ZN17CSkyscraperScreen19OnEventHandleFinishEP6ngViewii (@0x00574e08)
+  off=0x00575178 va=0x00575178  in _ZN17CSkyscraperScreen21OnPvpFightSentCrippleEi (@0x00575150)
+  off=0x005756e4 va=0x005756e4  in _ZN17CSkyscraperScreen17OnReceiveResponseEiPv (@0x00575508)
+  off=0x005854c2 va=0x005854c2  in _ZN21CStrengthenShopScreen11HandleEventEP6ngViewiii (@0x0058500c)
+  off=0x00586cee va=0x00586cee  in _ZN21CStrengthenShopScreen27SetConditionShowByTabSelectEP16CStrengthenEquipS1_ (@0x00586ccc)
+  off=0x00586d38 va=0x00586d38  in _ZN21CStrengthenShopScreen27SetConditionShowByTabSelectEP16CStrengthenEquipS1_ (@0x00586ccc)
+  off=0x00588072 va=0x00588072  in _ZN21CStrengthenShopScreen9OnAlertOKEi (@0x00587fb4)
+  off=0x005c4998 va=0x005c4998  in _ZN12ngFileReader4LoadEPKc (@0x005c48c4)
+  off=0x005d67ca va=0x005d67ca  in _ZN12ngScrollView10InitializeEv (@0x005d6634)
+  off=0x005d6dda va=0x005d6dda  in _ZN12ngScrollView12HandleScrollEi (@0x005d6a88)
+  off=0x005f0f08 va=0x005f0f08  in _ZN16ngTextureAndroid14InitWithStringEP12ngSystemFontR10ngStringV2P25__T_STRING_IMAGE_CATCHE__ (@0x005f0e14)
+  off=0x005f3b22 va=0x005f3b22  in _Z15jstringTostringP8_jstringP7_JNIEnv (@0x005f3a6c)
+  off=0x006219d8 va=0x006219d8  in _ZN11dragonBones10DBCCSpriteC1Ev (@0x00621880)
+  off=0x00621dce va=0x00621dce  in _ZN11dragonBones10DBCCSprite12HandleRenderEP10ngGraphics (@0x00621d88)
+  off=0x006d2e11 va=0x006d2e11  in __udivdi3 (@0x00692c1c)
+  off=0x006d9191 va=0x006d9191  in __udivdi3 (@0x00692c1c)

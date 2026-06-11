@@ -1,0 +1,159 @@
+--------- beginning of main
+05-28 19:35:10.709  5424  5424 D libnativebridge: PreInitializeNativeBridge name=zygote instruction_set=arm
+05-28 19:35:10.710  5424  5424 V libnb   : enter native_bridge2_initialize /data/user/0/com.anansimobile.city_ar/code_cache arm
+05-28 19:35:10.716  5424  5424 D houdini : [5424] Initialize library(version: 7.1.1b_x.49852 RELEASE)... successfully.
+05-28 19:35:11.128  5424  5424 D FirebaseApp: com.google.firebase.auth.FirebaseAuth is not linked. Skipping initialization.
+05-28 19:35:11.215  5424  5424 D FirebaseApp: com.google.firebase.crash.FirebaseCrash is not linked. Skipping initialization.
+05-28 19:35:11.237  5424  5424 I FA      : App measurement is starting up, version: 11400
+05-28 19:35:11.237  5424  5424 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+05-28 19:35:11.249  5424  5424 I FA      : To enable faster debug mode event logging run:
+05-28 19:35:11.249  5424  5424 I FA      :   adb shell setprop debug.firebase.analytics.app com.anansimobile.city_ar
+05-28 19:35:11.285  5424  5424 I FirebaseInitProvider: FirebaseApp initialization successful
+05-28 19:35:11.317  5424  5424 V libnb   : enter native_bridge2_isSupported /data/app/com.anansimobile.city_ar-1/lib/arm/libcity_ar.so
+05-28 19:35:11.317  5424  5424 V libnb   : enter native_bridge2_loadLibrary /data/app/com.anansimobile.city_ar-1/lib/arm/libcity_ar.so
+05-28 19:35:11.339  5424  5444 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+05-28 19:35:11.535  5424  5424 D houdini : [5424] Added shared library /data/app/com.anansimobile.city_ar-1/lib/arm/libcity_ar.so for ClassLoader by Native Bridge.
+05-28 19:35:11.535  5424  5424 V libnb   : enter native_bridge2_getTrampoline JNI_OnLoad, trampoline_addr 0x0
+05-28 19:35:11.563  5424  5424 D native_project_lib: [root_service_log] Callback Activity...
+05-28 19:35:11.587  5424  5424 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_RootActivity_setSystemUIFrame, trampoline_addr 0xb8fc0fc4
+05-28 19:35:11.682  5424  5424 I AppsFlyer_1.17: Start tracking package: com.anansimobile.city_ar
+05-28 19:35:11.688  5424  5466 I AppsFlyer_1.17-986111687: ******* sendTrackingWithEvent: Launch
+--------- beginning of system
+05-28 19:35:11.695  5424  5466 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+05-28 19:35:11.718  5424  5466 I AppsFlyer_1.17: WARNING:READ_PHONE_STATE is missing
+05-28 19:35:11.729  5424  5424 D FlurryAgent: Initializing Flurry session
+05-28 19:35:11.730  5424  5424 D FlurryAgent: New session
+05-28 19:35:11.731  5424  5424 I AppsFlyer_1.17: Start tracking package: com.anansimobile.city_ar
+05-28 19:35:11.732  5424  5424 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_RootActivity_onGameResume, trampoline_addr 0xb8fc0f8c
+05-28 19:35:11.739  5424  5472 I AppsFlyer_1.17-986111736: ******* sendTrackingWithEvent: Launch
+05-28 19:35:11.743  5424  5472 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+05-28 19:35:11.743  5424  5472 I AppsFlyer_1.17: WARNING:READ_PHONE_STATE is missing
+05-28 19:35:11.744  5424  5464 I FlurryAgent: Agent cache file doesn't exist.
+05-28 19:35:11.745  5424  5464 D FlurryAgent: generating agent report
+05-28 19:35:11.750  5424  5424 I HostConnection: HostConnection::HostConnection: pid=5424, tid=5424, this=0xa6a4c080
+05-28 19:35:11.751  5424  5424 I         : fastpipe: Connect success
+05-28 19:35:11.751  5424  5424 D HostConnection: HostRPC::connect sucess: app=com.anansimobile.city_ar, pid=5424, tid=5424, this=0xa6a51980
+05-28 19:35:11.752  5424  5424 E HostConnection: /data/local/cfg-znz/gl_force format error! com.tencent.tmgp.trssj 5 
+05-28 19:35:11.752  5424  5424 E HostConnection: /data/local/cfg-znz/gl_force format error! com.huiqi.mrby gl
+05-28 19:35:11.752  5424  5424 E HostConnection: /data/local/cfg-znz/gl_force format error! aos.playpark.ygc gl
+05-28 19:35:11.752  5424  5424 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:com.anansimobile.city_ar
+05-28 19:35:11.753  5424  5424 I         : fastpipe: Connect success
+05-28 19:35:11.753  5424  5424 D HostConnection: recv ProcessPuidReply name=com.anansimobile.city_ar puid=21 g_u64CapsFlag=1d
+05-28 19:35:11.755  5424  5424 D native_project_lib: [root_service_log] RootService Created!~
+05-28 19:35:11.756  5424  5424 D native_project_lib: [root_service_log] RootService Start!~
+05-28 19:35:11.768  5424  5464 I FlurryAgent: getting push token.
+05-28 19:35:11.768  5424  5464 D FlurryAgent: generated report of size 284 with 0 reports.
+05-28 19:35:11.768  5424  5464 I FlurryDataSenderBlockInfo: Writing FlurryDataSenderBlockInfo: /data/user/0/com.anansimobile.city_ar/files/.flurrydatasenderblock.6bcc9874-e4c7-4b47-b45b-38ef611e88fa
+05-28 19:35:11.769  5424  5464 I FlurryDataSender: Number of not sent blocks = 1
+05-28 19:35:11.769  5424  5464 I FlurryDataSenderBlockInfo: Reading FlurryDataSenderBlockInfo: /data/user/0/com.anansimobile.city_ar/files/.flurrydatasenderblock.6bcc9874-e4c7-4b47-b45b-38ef611e88fa
+05-28 19:35:11.769  5424  5464 I FlurryDataSender: FlurryDataSender: start upload data with id = 6bcc9874-e4c7-4b47-b45b-38ef611e88fa to http://data.flurry.com/aap.do
+05-28 19:35:11.769  5424  5476 I FlurryDataSenderIndex: write iter 0 dataLength = 36
+05-28 19:35:11.769  5424  5464 D FlurryAgent: Done sending initial agent report
+05-28 19:35:11.816  5424  5447 D GraphRequest: Warning: Request without access token missing application ID or client token.
+05-28 19:35:11.817  5424  5435 I art     : Background partial concurrent mark sweep GC freed 13946(1239KB) AllocSpace objects, 20(400KB) LOS objects, 40% free, 2MB/4MB, paused 7.479ms total 38.276ms
+05-28 19:35:11.853  5424  5473 I HostConnection: HostConnection::HostConnection: pid=5424, tid=5473, this=0xa6b822c0
+05-28 19:35:11.853  5424  5473 I         : fastpipe: Connect success
+05-28 19:35:11.853  5424  5473 D HostConnection: HostRPC::connect sucess: app=com.anansimobile.city_ar, pid=5424, tid=5473, this=0xa6bf6300
+05-28 19:35:11.854  5424  5473 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:com.anansimobile.city_ar
+05-28 19:35:11.855  5424  5473 I OpenGLRenderer: Initialized EGL, version 1.4
+05-28 19:35:11.855  5424  5473 D OpenGLRenderer: Swap behavior 1
+05-28 19:35:11.855  5424  5461 I HostConnection: HostConnection::HostConnection: pid=5424, tid=5461, this=0xb6f2c9c0
+05-28 19:35:11.856  5424  5461 I         : fastpipe: Connect success
+05-28 19:35:11.856  5424  5473 I EGL_adreno: eglCreateContext request GLES major-version=2
+05-28 19:35:11.857  5424  5461 D HostConnection: HostRPC::connect sucess: app=com.anansimobile.city_ar, pid=5424, tid=5461, this=0xa6c0d540
+05-28 19:35:11.857  5424  5461 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:com.anansimobile.city_ar
+05-28 19:35:11.866  5424  5473 D EGL_adreno: eglCreateContext: 0xbd70b620: maj 3 min 1 rcv 4
+05-28 19:35:11.875  5424  5461 D EGL_adreno: eglCreateContext: 0xc7c673e0: maj 1 min 0 rcv 1
+05-28 19:35:11.882  5424  5443 I FA      : Tag Manager is not found and thus will not be used
+05-28 19:35:11.884  5424  5473 D EGL_adreno: eglMakeCurrent: 0xbd70b620: ver 3 1 (tinfo 0xb6f7fa10)
+05-28 19:35:11.893  5424  5473 D HostConnection: ExtendedRCEncoderContext GL_VERSION return OpenGL ES 3.1
+05-28 19:35:11.904  5424  5461 D EGL_adreno: eglMakeCurrent: 0xc7c673e0: ver 1 0 (tinfo 0xb6f60f90)
+05-28 19:35:11.913  5424  5461 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NDKRenderer_nativeInit, trampoline_addr 0xb8fc0f54
+05-28 19:35:11.918  5424  5461 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NDKRenderer_nativeResize, trampoline_addr 0xb8fc0f1c
+05-28 19:35:11.920  5424  5446 W System.err: java.net.UnknownHostException: Unable to resolve host "data.flurry.com": No address associated with hostname
+05-28 19:35:11.921  5424  5446 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:125)
+05-28 19:35:11.921  5424  5446 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:74)
+05-28 19:35:11.921  5424  5446 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:752)
+05-28 19:35:11.921  5424  5446 W System.err: 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:142)
+05-28 19:35:11.921  5424  5446 W System.err: 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:169)
+05-28 19:35:11.921  5424  5446 W System.err: 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:124)
+05-28 19:35:11.921  5424  5446 W System.err: 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:366)
+05-28 19:35:11.921  5424  5446 W System.err: 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:560)
+05-28 19:35:11.921  5424  5446 W System.err: 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:492)
+05-28 19:35:11.921  5424  5446 W System.err: 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:470)
+05-28 19:35:11.921  5424  5446 W System.err: 	at com.flurry.android.FlurryDataSenderAsyncOperation.doInBackground(SourceFile:50)
+05-28 19:35:11.921  5424  5446 W System.err: 	at com.flurry.android.FlurryDataSenderAsyncOperation.doInBackground(SourceFile:17)
+05-28 19:35:11.921  5424  5446 W System.err: 	at android.os.AsyncTask$2.call(AsyncTask.java:305)
+05-28 19:35:11.921  5424  5446 W System.err: 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+05-28 19:35:11.921  5424  5446 W System.err: 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:243)
+05-28 19:35:11.921  5424  5446 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+05-28 19:35:11.921  5424  5446 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+05-28 19:35:11.921  5424  5446 W System.err: 	at java.lang.Thread.run(Thread.java:761)
+05-28 19:35:11.921  5424  5446 W System.err: Caused by: android.system.GaiException: android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)
+05-28 19:35:11.921  5424  5446 W System.err: 	at libcore.io.Posix.android_getaddrinfo(Native Method)
+05-28 19:35:11.921  5424  5446 W System.err: 	at libcore.io.ForwardingOs.android_getaddrinfo(ForwardingOs.java:55)
+05-28 19:35:11.921  5424  5446 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:106)
+05-28 19:35:11.921  5424  5446 W System.err: 	... 17 more
+05-28 19:35:11.922  5424  5473 E EGL_adreno: tid 5473: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+05-28 19:35:11.922  5424  5473 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xa6a3c460, error=EGL_BAD_MATCH
+05-28 19:35:11.987  5424  5461 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NextGenEngine_bitmapDataDidLoad, trampoline_addr 0xb8fc0ee4
+05-28 19:35:12.041  5424  5446 D GraphRequest: Warning: Request without access token missing application ID or client token.
+05-28 19:35:12.103  5424  5461 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NDKRenderer_nativeRender, trampoline_addr 0xb8fc0eac
+05-28 19:35:12.175  5424  5473 D EGL_adreno: eglMakeCurrent: 0xbd70b620: ver 3 1 (tinfo 0xb6f7fa10)
+05-28 19:35:12.221  5424  5424 E FlurryDataSender: --onServerError 6bcc9874-e4c7-4b47-b45b-38ef611e88fa
+05-28 19:35:12.239  5424  5461 I engine  : [LoadingMnger] do step:1
+05-28 19:35:14.153  5424  5466 D ApplicationLoaders: ignored Vulkan layer search path /data/app/com.google.android.gms-1/lib/x86:/data/app/com.google.android.gms-1/base.apk!/lib/x86:/data/app/com.google.android.gms-1/split_config.en.apk!/lib/x86:/data/app/com.google.android.gms-1/split_config.hdpi.apk!/lib/x86 for namespace 0xba583090
+05-28 19:35:14.157  5424  5472 W art     : Long monitor contention with owner pool-6-thread-1 (5466) at boolean android.os.BinderProxy.transactNative(int, android.os.Parcel, android.os.Parcel, int)(Binder.java:-2) waiters=0 in java.lang.ClassLoader android.app.LoadedApk.getClassLoader() for 2.353s
+05-28 19:35:14.158  5424  5461 W art     : Long monitor contention with owner pool-6-thread-1 (5466) at boolean android.os.BinderProxy.transactNative(int, android.os.Parcel, android.os.Parcel, int)(Binder.java:-2) waiters=1 in java.lang.ClassLoader android.app.LoadedApk.getClassLoader() for 1.919s
+05-28 19:35:14.171  5424  5466 W ResourceType: ResTable_typeSpec entry count inconsistent: given 112, previously 115
+05-28 19:35:14.171  5424  5461 W ResourceType: ResTable_typeSpec entry count inconsistent: given 112, previously 115
+05-28 19:35:14.171  5424  5472 W ResourceType: ResTable_typeSpec entry count inconsistent: given 112, previously 115
+05-28 19:35:14.172  5424  5466 W ResourceType: ResTable_typeSpec entry count inconsistent: given 4810, previously 5454
+05-28 19:35:14.172  5424  5461 W ResourceType: ResTable_typeSpec entry count inconsistent: given 4810, previously 5454
+05-28 19:35:14.172  5424  5472 W ResourceType: ResTable_typeSpec entry count inconsistent: given 4810, previously 5454
+05-28 19:35:14.172  5424  5461 W ResourceType: ResTable_typeSpec entry count inconsistent: given 3589, previously 3610
+05-28 19:35:14.172  5424  5466 W ResourceType: ResTable_typeSpec entry count inconsistent: given 3589, previously 3610
+05-28 19:35:14.172  5424  5472 W ResourceType: ResTable_typeSpec entry count inconsistent: given 3589, previously 3610
+05-28 19:35:14.172  5424  5461 W ResourceType: ResTable_typeSpec entry count inconsistent: given 235, previously 240
+05-28 19:35:14.172  5424  5461 W ResourceType: ResTable_typeSpec entry count inconsistent: given 508, previously 5852
+05-28 19:35:14.172  5424  5466 W ResourceType: ResTable_typeSpec entry count inconsistent: given 235, previously 240
+05-28 19:35:14.172  5424  5466 W ResourceType: ResTable_typeSpec entry count inconsistent: given 508, previously 5852
+05-28 19:35:14.172  5424  5472 W ResourceType: ResTable_typeSpec entry count inconsistent: given 235, previously 240
+05-28 19:35:14.172  5424  5472 W ResourceType: ResTable_typeSpec entry count inconsistent: given 508, previously 5852
+05-28 19:35:14.217  5424  5466 D AppsFlyer_1.17: AppsFlyer: first launch detected
+05-28 19:35:14.217  5424  5472 D AppsFlyer_1.17: AppsFlyer: first launch detected
+05-28 19:35:14.255  5424  5466 I AppsFlyer_1.17: AppsFlyer: first launch date: 2026-05-28_0735+0300
+05-28 19:35:14.255  5424  5472 I AppsFlyer_1.17: AppsFlyer: first launch date: 2026-05-28_0735+0300
+05-28 19:35:14.569  5424  5424 W System.err: java.lang.Exception: show AlertDialog! title=
+05-28 19:35:14.570  5424  5424 W System.err: 	at android.app.AlertDialog.show(AlertDialog.java:134)
+05-28 19:35:14.570  5424  5424 W System.err: 	at android.app.AlertDialog$Builder.show(AlertDialog.java:1125)
+05-28 19:35:14.570  5424  5424 W System.err: 	at com.anansimobile.nge.NGAlertDialog.handleMessage(NGAlertDialog.java:100)
+05-28 19:35:14.570  5424  5424 W System.err: 	at com.anansimobile.nge.NGMsgHandler.handleMessage(RootActivity.java:1028)
+05-28 19:35:14.570  5424  5424 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+05-28 19:35:14.570  5424  5424 W System.err: 	at android.os.Looper.loop(Looper.java:154)
+05-28 19:35:14.570  5424  5424 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6190)
+05-28 19:35:14.570  5424  5424 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+05-28 19:35:14.570  5424  5424 W System.err: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:892)
+05-28 19:35:14.570  5424  5424 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:782)
+05-28 19:35:14.627  5424  5473 E EGL_adreno: tid 5473: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+05-28 19:35:14.627  5424  5473 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x9f3b4b20, error=EGL_BAD_MATCH
+05-28 19:35:14.632  5424  5473 D EGL_adreno: eglMakeCurrent: 0xbd70b620: ver 3 1 (tinfo 0xb6f7fa10)
+05-28 19:35:15.199  5424  5474 D FCM     : Refreshed token: fbuBsbk17dc:APA91bEKl5c_No4VXV7PDHCzynjBoaULMBF3kmezRRsk8YCTu_ZmiPGt4-DfNJ-2cRFYacJ05YOBA-Je1AXeJK4fmGyTdojm-baFHpW9L66kmiqfd4m9db4
+05-28 19:36:00.064  5424  5424 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+05-28 19:36:00.066  5424  5424 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+05-28 19:36:00.066  5424  5424 D native_project_lib: [root_service_log] notification ignored, activity in foreground!~
+05-28 19:37:00.042  5424  5424 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+05-28 19:37:00.046  5424  5424 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+05-28 19:37:00.046  5424  5424 D native_project_lib: [root_service_log] notification ignored, activity in foreground!~
+05-28 19:38:00.058  5424  5424 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+05-28 19:38:00.064  5424  5424 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+05-28 19:38:00.064  5424  5424 D native_project_lib: [root_service_log] notification ignored, activity in foreground!~
+05-28 19:39:00.042  5424  5424 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+05-28 19:39:00.044  5424  5424 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+05-28 19:39:00.044  5424  5424 D native_project_lib: [root_service_log] notification ignored, activity in foreground!~
+05-28 19:40:00.045  5424  5424 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+05-28 19:40:00.047  5424  5424 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+05-28 19:40:00.047  5424  5424 D native_project_lib: [root_service_log] notification ignored, activity in foreground!~
+05-28 19:41:00.042  5424  5424 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+05-28 19:41:00.046  5424  5424 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+05-28 19:41:00.046  5424  5424 D native_project_lib: [root_service_log] notification ignored, activity in foreground!~

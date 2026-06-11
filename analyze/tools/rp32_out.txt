@@ -1,0 +1,7 @@
+[_ZN17CMarketCateScreen14ParseGoodsAmountEPv MISSING]
+
+=== PIC strings in _ZN17CMarketCateScreen15SetTableContentEv 0x004c27b4 (len 0x3d4) ===
+
+=== PIC strings in _ZN17CMarketCateScreen18RequestGoodsAmountEv 0x004c21f8 (len 0x34) ===
+
+=== PIC strings in _ZN17CMarketCateScreen13InitCateTableEv 0x004c222c (len 0x180) ===

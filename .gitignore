@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+
+# --- Large binary / reproducible artifacts (frozen by SHA in DEPLOYMENT_MANIFEST.md) ---
+*.apk
+*.apk.idsig
+*.so
+analyze/frida-server
+analyze/frida-gadget/
+analyze/apk-builds/
+analyze/baseline-apk-src/
+analyze/client-apk-src/
+analyze/__handlers__/
+analyze/screenshots/
+*.png
+*.mp4

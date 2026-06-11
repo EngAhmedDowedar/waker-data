@@ -1,0 +1,230 @@
+
+===== CMarketCateModel::GetValueAt 0x004c3204 (+0x0..+0x20) =====
+  +0x000 f0b5     push   {r4, r5, r6, r7, lr}
+  +0x002 81b0     sub    sp, #4
+  +0x004 1446     mov    r4, r2
+  +0x006 0d46     mov    r5, r1
+  +0x008 c668     ldr    r6, [r0, #0xc]
+  +0x00a 3168     ldr    r1, [r6]
+  +0x00c cf6a     ldr    r7, [r1, #0x2c]
+  +0x00e 0168     ldr    r1, [r0]
+  +0x010 c968     ldr    r1, [r1, #0xc]
+  +0x012 8847     blx    r1
+  +0x014 6843     muls   r0, r5, r0
+  +0x016 0119     adds   r1, r0, r4
+  +0x018 3046     mov    r0, r6
+  +0x01a b847     blx    r7
+  +0x01c 01b0     add    sp, #4
+  +0x01e f0bd     pop    {r4, r5, r6, r7, pc}
+
+===== CMarketCateCellRender::SetValue @crash(+0x126) 0x004c3330 (+0x100..+0x150) =====
+  +0x100 3846     mov    r0, r7
+  +0x102 8847     blx    r1
+  +0x104 0728     cmp    r0, #7
+  +0x106 1cd1     bne    #0x4c3472
+  +0x108 cff120ff bl     #0x69327c -> __udivdi3+0x660
+  +0x10c 0446     mov    r4, r0
+  +0x10e cff1e5fe bl     #0x69320c -> __udivdi3+0x5f0
+  +0x112 f849     ldr    r1, [pc, #0x3e0]
+  +0x114 4018     adds   r0, r0, r1
+  +0x116 d1f169fe bl     #0x69511c -> __udivdi3+0x2500
+  +0x11a 0146     mov    r1, r0
+  +0x11c 5320     movs   r0, #0x53
+  +0x11e 8000     lsls   r0, r0, #2
+  +0x120 2018     adds   r0, r4, r0
+  +0x122 cff1e3ff bl     #0x69341c -> __udivdi3+0x800
+  +0x126 c06d     ldr    r0, [r0, #0x5c] <<NULLFIELD 0x5c>>
+  +0x128 4f21     movs   r1, #0x4f
+  +0x12a 8900     lsls   r1, r1, #2
+  +0x12c 7958     ldr    r1, [r7, r1]
+  +0x12e 0997     str    r7, [sp, #0x24]
+  +0x130 8142     cmp    r1, r0
+  +0x132 66dd     ble    #0x4c3532
+  +0x134 a86a     ldr    r0, [r5, #0x28]
+  +0x136 0168     ldr    r1, [r0]
+  +0x138 079a     ldr    r2, [sp, #0x1c]
+  +0x13a 8a58     ldr    r2, [r1, r2]
+  +0x13c 0121     movs   r1, #1
+  +0x13e 9047     blx    r2
+  +0x140 5fe0     b      #0x4c3532
+  +0x142 3868     ldr    r0, [r7]
+  +0x144 416c     ldr    r1, [r0, #0x44]
+  +0x146 3846     mov    r0, r7
+  +0x148 8847     blx    r1
+  +0x14a 0428     cmp    r0, #4
+  +0x14c 30d1     bne    #0x4c34e0
+
+===== CMarketCateScreen::InitCateTable 0x004c222c (+0x0..+0x180) =====
+  +0x000 f0b5     push   {r4, r5, r6, r7, lr}
+  +0x002 87b0     sub    sp, #0x1c
+  +0x004 0446     mov    r4, r0
+  +0x006 1520     movs   r0, #0x15
+  +0x008 0001     lsls   r0, r0, #4
+  +0x00a 0490     str    r0, [sp, #0x10]
+  +0x00c d0f1a0ff bl     #0x69317c -> __udivdi3+0x560
+  +0x010 4521     movs   r1, #0x45
+  +0x012 8f00     lsls   r7, r1, #2
+  +0x014 e159     ldr    r1, [r4, r7]
+  +0x016 d0f1a3ff bl     #0x69318c -> __udivdi3+0x570
+  +0x01a 0921     movs   r1, #9
+  +0x01c 4d01     lsls   r5, r1, #5
+  +0x01e 6051     str    r0, [r4, r5]
+  +0x020 261d     adds   r6, r4, #4
+  +0x022 504a     ldr    r2, [pc, #0x140]
+  +0x024 3146     mov    r1, r6
+  +0x026 d1f1bbfc bl     #0x693bcc -> __udivdi3+0xfb0
+  +0x02a 6059     ldr    r0, [r4, r5]
+  +0x02c f821     movs   r1, #0xf8
+  +0x02e 4650     str    r6, [r0, r1]
+  +0x030 2320     movs   r0, #0x23
+  +0x032 c000     lsls   r0, r0, #3
+  +0x034 2158     ldr    r1, [r4, r0]
+  +0x036 e059     ldr    r0, [r4, r7]
+  +0x038 d0f19aff bl     #0x69319c -> __udivdi3+0x580
+  +0x03c 6159     ldr    r1, [r4, r5]
+  +0x03e 2068     ldr    r0, [r4]
+  +0x040 026e     ldr    r2, [r0, #0x60]
+  +0x042 2046     mov    r0, r4
+  +0x044 9047     blx    r2
+  +0x046 6019     adds   r0, r4, r5
+  +0x048 0690     str    r0, [sp, #0x18]
+  +0x04a e019     adds   r0, r4, r7
+  +0x04c 0390     str    r0, [sp, #0xc]
+  +0x04e d0f1c7ff bl     #0x69320c -> __udivdi3+0x5f0
+  +0x052 4549     ldr    r1, [pc, #0x114]
+  +0x054 4018     adds   r0, r0, r1
+  +0x056 d2f14bff bl     #0x69511c -> __udivdi3+0x2500
+  +0x05a 0646     mov    r6, r0
+  +0x05c d0f1c0ff bl     #0x69320c -> __udivdi3+0x5f0
+  +0x060 4248     ldr    r0, [pc, #0x108]
+  +0x062 8642     cmp    r6, r0
+  +0x064 08d1     bne    #0x4c22a4
+  +0x066 5320     movs   r0, #0x53
+  +0x068 8000     lsls   r0, r0, #2
+  +0x06a 2058     ldr    r0, [r4, r0]
+  +0x06c 0028     cmp    r0, #0
+  +0x06e 03d0     beq    #0x4c22a4
+  +0x070 4b21     movs   r1, #0x4b
+  +0x072 8900     lsls   r1, r1, #2
+  +0x074 6050     str    r0, [r4, r1]
+  +0x076 02e0     b      #0x4c22aa
+  +0x078 2046     mov    r0, r4
+  +0x07a ecf119fc bl     #0x6aeadc -> 0x6aeadc
+  +0x07e 0499     ldr    r1, [sp, #0x10]
+  +0x080 6018     adds   r0, r4, r1
+  +0x082 0590     str    r0, [sp, #0x14]
+  +0x084 605c     ldrb   r0, [r4, r1]
+  +0x086 0028     cmp    r0, #0
+  +0x088 07d0     beq    #0x4c22c6
+  +0x08a 5320     movs   r0, #0x53
+  +0x08c 8000     lsls   r0, r0, #2
+  +0x08e 2058     ldr    r0, [r4, r0]
+  +0x090 4b21     movs   r1, #0x4b
+  +0x092 8900     lsls   r1, r1, #2
+  +0x094 6050     str    r0, [r4, r1]
+  +0x096 6718     adds   r7, r4, r1
+  +0x098 02e0     b      #0x4c22cc
+  +0x09a 4b20     movs   r0, #0x4b
+  +0x09c 8000     lsls   r0, r0, #2
+  +0x09e 2718     adds   r7, r4, r0
+  +0x0a0 1420     movs   r0, #0x14
+  +0x0a2 d0f155ff bl     #0x69317c -> __udivdi3+0x560
+  +0x0a6 0546     mov    r5, r0
+  +0x0a8 d0f16aff bl     #0x6931ac -> __udivdi3+0x590
+  +0x0ac 3049     ldr    r1, [pc, #0xc0]
+  +0x0ae 7944     add    r1, pc
+  +0x0b0 3048     ldr    r0, [pc, #0xc0]
+  +0x0b2 4018     adds   r0, r0, r1
+  +0x0b4 0068     ldr    r0, [r0]
+  +0x0b6 0830     adds   r0, #8
+  +0x0b8 2860     str    r0, [r5]
+  +0x0ba 0420     movs   r0, #4
+  +0x0bc 2861     str    r0, [r5, #0x10]
+  +0x0be 4920     movs   r0, #0x49
+  +0x0c0 8000     lsls   r0, r0, #2
+  +0x0c2 0490     str    r0, [sp, #0x10]
+  +0x0c4 2550     str    r5, [r4, r0]
+  +0x0c6 3868     ldr    r0, [r7]
+  +0x0c8 e860     str    r0, [r5, #0xc]
+  +0x0ca 069e     ldr    r6, [sp, #0x18]
+  +0x0cc 3068     ldr    r0, [r6]
+  +0x0ce 2946     mov    r1, r5
+  +0x0d0 d0f15eff bl     #0x6931bc -> __udivdi3+0x5a0
+  +0x0d4 5020     movs   r0, #0x50
+  +0x0d6 d0f13bff bl     #0x69317c -> __udivdi3+0x560
+  +0x0da 0746     mov    r7, r0
+  +0x0dc d0f160ff bl     #0x6931cc -> __udivdi3+0x5b0
+  +0x0e0 2548     ldr    r0, [pc, #0x94]
+  +0x0e2 2649     ldr    r1, [pc, #0x98]
+  +0x0e4 7944     add    r1, pc
+  +0x0e6 4018     adds   r0, r0, r1
+  +0x0e8 0068     ldr    r0, [r0]
+  +0x0ea 0146     mov    r1, r0
+  +0x0ec 0831     adds   r1, #8
+  +0x0ee 3960     str    r1, [r7]
+  +0x0f0 3430     adds   r0, #0x34
+  +0x0f2 7860     str    r0, [r7, #4]
+  +0x0f4 0020     movs   r0, #0
+  +0x0f6 0190     str    r0, [sp, #4]
+  +0x0f8 c043     mvns   r0, r0
+  +0x0fa 0290     str    r0, [sp, #8]
+  +0x0fc b864     str    r0, [r7, #0x48]
+  +0x0fe 2520     movs   r0, #0x25
+  +0x100 c500     lsls   r5, r0, #3
+  +0x102 6751     str    r7, [r4, r5]
+  +0x104 fc64     str    r4, [r7, #0x4c]
+  +0x106 3068     ldr    r0, [r6]
+  +0x108 3946     mov    r1, r7
+  +0x10a d0f151ff bl     #0x6931dc -> __udivdi3+0x5c0
+  +0x10e 6019     adds   r0, r4, r5
+  +0x110 0499     ldr    r1, [sp, #0x10]
+  +0x112 6718     adds   r7, r4, r1
+  +0x114 0599     ldr    r1, [sp, #0x14]
+  +0x116 0978     ldrb   r1, [r1]
+  +0x118 0029     cmp    r1, #0
+  +0x11a 04d1     bne    #0x4c2352
+  +0x11c 0521     movs   r1, #5
+  +0x11e 8901     lsls   r1, r1, #6
+  +0x120 6158     ldr    r1, [r4, r1]
+  +0x122 0068     ldr    r0, [r0]
+  +0x124 8164     str    r1, [r0, #0x48]
+  +0x126 2046     mov    r0, r4
+  +0x128 ecf1cafb bl     #0x6aeaec -> 0x6aeaec
+  +0x12c 2920     movs   r0, #0x29
+  +0x12e c000     lsls   r0, r0, #3
+  +0x130 205c     ldrb   r0, [r4, r0]
+  +0x132 0028     cmp    r0, #0
+  +0x134 13d1     bne    #0x4c238a
+  +0x136 0520     movs   r0, #5
+  +0x138 8001     lsls   r0, r0, #6
+  +0x13a 2058     ldr    r0, [r4, r0]
+  +0x13c 0728     cmp    r0, #7
+  +0x13e 0ed0     beq    #0x4c238a
+  +0x140 3868     ldr    r0, [r7]
+  +0x142 029d     ldr    r5, [sp, #8]
+  +0x144 2946     mov    r1, r5
+  +0x146 2a46     mov    r2, r5
+  +0x148 d0f142ff bl     #0x6931fc -> __udivdi3+0x5e0
+  +0x14c 0398     ldr    r0, [sp, #0xc]
+  +0x14e 0268     ldr    r2, [r0]
+  +0x150 6846     mov    r0, sp
+  +0x152 0560     str    r5, [r0]
+  +0x154 2046     mov    r0, r4
+  +0x156 0199     ldr    r1, [sp, #4]
+  +0x158 2b46     mov    r3, r5
+  +0x15a d0f1b9ff bl     #0x6932fc -> __udivdi3+0x6e0
+  +0x15e 07b0     add    sp, #0x1c
+  +0x160 f0bd     pop    {r4, r5, r6, r7, pc}
+  +0x162 c046     mov    r8, r8
+  +0x164 9101     lsls   r1, r2, #6
+  +0x166 0000     movs   r0, r0
+  +0x168 a808     lsrs   r0, r5, #2
+  +0x16a 0000     movs   r0, r0
+  +0x16c a101     lsls   r1, r4, #6
+  +0x16e 0000     movs   r0, r0
+  +0x170 4288     ldrh   r2, [r0, #2]
+  +0x172 2900     movs   r1, r5
+  +0x174 4cebffff adc.w  pc, ip, pc, ror #31
+  +0x178 50ebffff adcs.w pc, r0, pc, ror #31
+  +0x17c 0c88     ldrh   r4, [r1]
+  +0x17e 2900     movs   r1, r5

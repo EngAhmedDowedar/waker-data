@@ -1,0 +1,96 @@
+
+===== CHouse-parse(house,data) 0x002c6e24 [T] 0x2c6e24 =====
+  +0x000 04c6     stm    r6!, {r2}
+  +0x002 8fe2     b      #0x2c7348
+  +0x004 96ca     ldm    r2, {r1, r2, r4, r7}
+  +0x006 8ce2     b      #0x2c7346
+  +0x008 b0f8bce5 ldrh.w lr, [r0, #0x5bc]
+  +0x00c 04c6     stm    r6!, {r2}
+  +0x00e 8fe2     b      #0x2c7354
+  +0x010 96ca     ldm    r2, {r1, r2, r4, r7}
+  +0x012 8ce2     b      #0x2c7352
+  +0x014 a8f8bce5 strh.w lr, [r8, #0x5bc]
+  +0x018 04c6     stm    r6!, {r2}
+  +0x01a 8fe2     b      #0x2c7360
+  +0x01c 96ca     ldm    r2, {r1, r2, r4, r7}
+  +0x01e 8ce2     b      #0x2c735e
+  +0x020 a0f8bce5 strh.w lr, [r0, #0x5bc]
+  +0x024 04c6     stm    r6!, {r2}
+  +0x026 8fe2     b      #0x2c736c
+  +0x028 96ca     ldm    r2, {r1, r2, r4, r7}
+  +0x02a 8ce2     b      #0x2c736a
+  +0x02c 98f8bce5 ldrb.w lr, [r8, #0x5bc]
+  +0x030 04c6     stm    r6!, {r2}
+  +0x032 8fe2     b      #0x2c7378
+  +0x034 96ca     ldm    r2, {r1, r2, r4, r7}
+  +0x036 8ce2     b      #0x2c7376
+  +0x038 90f8bce5 ldrb.w lr, [r0, #0x5bc]
+  +0x03c 04c6     stm    r6!, {r2}
+  +0x03e 8fe2     b      #0x2c7384
+  +0x040 96ca     ldm    r2, {r1, r2, r4, r7}
+  +0x042 8ce2     b      #0x2c7382
+  +0x044 88f8bce5 strb.w lr, [r8, #0x5bc]
+  +0x048 04c6     stm    r6!, {r2}
+  +0x04a 8fe2     b      #0x2c7390
+  +0x04c 96ca     ldm    r2, {r1, r2, r4, r7}
+  +0x04e 8ce2     b      #0x2c738e
+  +0x050 80f8bce5 strb.w lr, [r0, #0x5bc]
+  +0x054 04c6     stm    r6!, {r2}
+  +0x056 8fe2     b      #0x2c739c
+  +0x058 96ca     ldm    r2, {r1, r2, r4, r7}
+  +0x05a 8ce2     b      #0x2c739a
+
+===== GetPrice-lookup(house) 0x002c5fa4 [T] 0x2c5fa4 =====
+  +0x000 60f2bce5 blx    #0x926b20 -> 0x926b20
+  +0x004 04c6     stm    r6!, {r2}
+  +0x006 8fe2     b      #0x2c64cc
+  +0x008 97ca     ldm    r2, {r0, r1, r2, r4, r7}
+  +0x00a 8ce2     b      #0x2c64ca
+  +0x00c 58f2bce5 blx    #0x91eb2c -> 0x91eb2c
+  +0x010 04c6     stm    r6!, {r2}
+  +0x012 8fe2     b      #0x2c64d8
+  +0x014 97ca     ldm    r2, {r0, r1, r2, r4, r7}
+  +0x016 8ce2     b      #0x2c64d6
+  +0x018 50f2bce5 blx    #0x916b38 -> 0x916b38
+  +0x01c 04c6     stm    r6!, {r2}
+  +0x01e 8fe2     b      #0x2c64e4
+  +0x020 97ca     ldm    r2, {r0, r1, r2, r4, r7}
+  +0x022 8ce2     b      #0x2c64e2
+  +0x024 48f2bce5 blx    #0x90eb44 -> 0x90eb44
+  +0x028 04c6     stm    r6!, {r2}
+  +0x02a 8fe2     b      #0x2c64f0
+  +0x02c 97ca     ldm    r2, {r0, r1, r2, r4, r7}
+  +0x02e 8ce2     b      #0x2c64ee
+  +0x030 40f2bce5 blx    #0x906b50 -> 0x906b50
+  +0x034 04c6     stm    r6!, {r2}
+  +0x036 8fe2     b      #0x2c64fc
+  +0x038 97ca     ldm    r2, {r0, r1, r2, r4, r7}
+  +0x03a 8ce2     b      #0x2c64fa
+  +0x03c 38f2bce5 blx    #0x8feb5c -> 0x8feb5c
+  +0x040 04c6     stm    r6!, {r2}
+  +0x042 8fe2     b      #0x2c6508
+  +0x044 97ca     ldm    r2, {r0, r1, r2, r4, r7}
+  +0x046 8ce2     b      #0x2c6506
+  +0x048 30f2bce5 blx    #0x8f6b68 -> 0x8f6b68
+  +0x04c 04c6     stm    r6!, {r2}
+  +0x04e 8fe2     b      #0x2c6514
+  +0x050 97ca     ldm    r2, {r0, r1, r2, r4, r7}
+  +0x052 8ce2     b      #0x2c6512
+  +0x054 28f2bce5 blx    #0x8eeb74 -> 0x8eeb74
+  +0x058 04c6     stm    r6!, {r2}
+  +0x05a 8fe2     b      #0x2c6520
+  +0x05c 97ca     ldm    r2, {r0, r1, r2, r4, r7}
+  +0x05e 8ce2     b      #0x2c651e
+  +0x060 20f2bce5 blx    #0x8e6b80 -> 0x8e6b80
+  +0x064 04c6     stm    r6!, {r2}
+  +0x066 8fe2     b      #0x2c652c
+  +0x068 97ca     ldm    r2, {r0, r1, r2, r4, r7}
+  +0x06a 8ce2     b      #0x2c652a
+  +0x06c 18f2bce5 blx    #0x8deb8c -> 0x8deb8c
+  +0x070 04c6     stm    r6!, {r2}
+  +0x072 8fe2     b      #0x2c6538
+  +0x074 97ca     ldm    r2, {r0, r1, r2, r4, r7}
+  +0x076 8ce2     b      #0x2c6536
+  +0x078 10f2bce5 blx    #0x8d6b98 -> 0x8d6b98
+  +0x07c 04c6     stm    r6!, {r2}
+  +0x07e 8fe2     b      #0x2c6544

@@ -1,0 +1,125 @@
+
+--- patch site A: cmp r4,#0 + beq desc-NULL  va=0x0048f8ba  off=0x0048f8ba ---
+    raw bytes: 002c2ed0
+    0x0048f8ba: 002c     cmp r4, #0
+    0x0048f8bc: 2ed0     beq #0x48f91c
+
+--- patch site B: state-byte read (this+0x2AC)  va=0x0048f8ec  off=0x0048f8ec ---
+    raw bytes: ab2080002f5c4b20
+    0x0048f8ec: ab20     movs r0, #0xab
+    0x0048f8ee: 8000     lsls r0, r0, #2
+    0x0048f8f0: 2f5c     ldrb r7, [r5, r0]
+    0x0048f8f2: 4b20     movs r0, #0x4b
+
+--- patch site C: cmp r7,#0 + beq state==0  va=0x0048f90e  off=0x0048f90e ---
+    raw bytes: 002f0cd0
+    0x0048f90e: 002f     cmp r7, #0
+    0x0048f910: 0cd0     beq #0x48f92c
+
+--- patch site D: blx r4 (state!=0 dispatch)  va=0x0048f918  off=0x0048f918 ---
+    raw bytes: a04711e0
+    0x0048f918: a047     blx r4
+    0x0048f91a: 11e0     b #0x48f940
+
+--- 0x6a8c9c (suspect helper called when arg2==NULL)  va=0x006a8c9c  off=0x006a8c9c ---
+    raw bytes: 7847c04600c09fe50ff08ce05467c3ff7847c04600c09fe50ff08ce05067c3ff7847c04600c09fe50ff08ce04c67c3ff7847c04600c09fe50ff08ce04867c3ff
+    0x006a8c9c: 7847     bx pc
+    0x006a8c9e: c046     mov r8, r8
+
+--- CLoadingScreen ctor near this+0x2AC  va=0x0048ed68  off=0x0048ed68 ---
+    raw bytes: 2e5023482e54ab2080002e542b200001281804f2f7f85920c0002818
+    0x0048ed68: 2e50     str r6, [r5, r0]
+    0x0048ed6a: 2348     ldr r0, [pc, #0x8c]
+    0x0048ed6c: 2e54     strb r6, [r5, r0]
+    0x0048ed6e: ab20     movs r0, #0xab
+    0x0048ed70: 8000     lsls r0, r0, #2
+    0x0048ed72: 2e54     strb r6, [r5, r0]
+    0x0048ed74: 2b20     movs r0, #0x2b
+    0x0048ed76: 0001     lsls r0, r0, #4
+    0x0048ed78: 2818     adds r0, r5, r0
+    0x0048ed7a: 04f2f7f8 bl #0x692f6c
+    0x0048ed7e: 5920     movs r0, #0x59
+    0x0048ed80: c000     lsls r0, r0, #3
+    0x0048ed82: 2818     adds r0, r5, r0
+
+--- ngDeviceAndroid::LaunchURL (JNI bridge)  va=0x005efb9c  off=0x005efb9c ---
+    raw bytes: f0b581b00d4622487844224f3e186836adf0befa0446002130460a46a1f06efe0121084212d11c48784438186830ccf00ff800280ad0194878443e180220adf0affa706668363046ccf00af87120800021680e581248784412490a1812490b183f18796e2046b047064628462146adf09ffa0546796e204632462b46cbf0f8ff2068c26d20462946904701b0f0bdc04678af160050a6010058af160048af16002aaf1600d4a9faffe297faff
+    0x005efb9c: f0b5     push {r4, r5, r6, r7, lr}
+    0x005efb9e: 81b0     sub sp, #4
+    0x005efba0: 0d46     mov r5, r1
+    0x005efba2: 2248     ldr r0, [pc, #0x88]
+    0x005efba4: 7844     add r0, pc
+    0x005efba6: 224f     ldr r7, [pc, #0x88]
+    0x005efba8: 3e18     adds r6, r7, r0
+    0x005efbaa: 6836     adds r6, #0x68
+    0x005efbac: adf0befa bl #0x69d12c
+    0x005efbb0: 0446     mov r4, r0
+    0x005efbb2: 0021     movs r1, #0
+    0x005efbb4: 3046     mov r0, r6
+    0x005efbb6: 0a46     mov r2, r1
+    0x005efbb8: a1f06efe bl #0x691898
+    0x005efbbc: 0121     movs r1, #1
+    0x005efbbe: 0842     tst r0, r1
+    0x005efbc0: 12d1     bne #0x5efbe8
+    0x005efbc2: 1c48     ldr r0, [pc, #0x70]
+    0x005efbc4: 7844     add r0, pc
+    0x005efbc6: 3818     adds r0, r7, r0
+    0x005efbc8: 6830     adds r0, #0x68
+    0x005efbca: ccf00ff8 bl #0x6bbbec
+    0x005efbce: 0028     cmp r0, #0
+    0x005efbd0: 0ad0     beq #0x5efbe8
+    0x005efbd2: 1948     ldr r0, [pc, #0x64]
+    0x005efbd4: 7844     add r0, pc
+    0x005efbd6: 3e18     adds r6, r7, r0
+    0x005efbd8: 0220     movs r0, #2
+    0x005efbda: adf0affa bl #0x69d13c
+    0x005efbde: 7066     str r0, [r6, #0x64]
+    0x005efbe0: 6836     adds r6, #0x68
+    0x005efbe2: 3046     mov r0, r6
+    0x005efbe4: ccf00af8 bl #0x6bbbfc
+    0x005efbe8: 7120     movs r0, #0x71
+    0x005efbea: 8000     lsls r0, r0, #2
+    0x005efbec: 2168     ldr r1, [r4]
+    0x005efbee: 0e58     ldr r6, [r1, r0]
+    0x005efbf0: 1248     ldr r0, [pc, #0x48]
+    0x005efbf2: 7844     add r0, pc
+    0x005efbf4: 1249     ldr r1, [pc, #0x48]
+    0x005efbf6: 0a18     adds r2, r1, r0
+    0x005efbf8: 1249     ldr r1, [pc, #0x48]
+    0x005efbfa: 0b18     adds r3, r1, r0
+    0x005efbfc: 3f18     adds r7, r7, r0
+    0x005efbfe: 796e     ldr r1, [r7, #0x64]
+    0x005efc00: 2046     mov r0, r4
+    0x005efc02: b047     blx r6
+    0x005efc04: 0646     mov r6, r0
+    0x005efc06: 2846     mov r0, r5
+    0x005efc08: 2146     mov r1, r4
+    0x005efc0a: adf09ffa bl #0x69d14c
+    0x005efc0e: 0546     mov r5, r0
+    0x005efc10: 796e     ldr r1, [r7, #0x64]
+    0x005efc12: 2046     mov r0, r4
+    0x005efc14: 3246     mov r2, r6
+    0x005efc16: 2b46     mov r3, r5
+    0x005efc18: cbf0f8ff bl #0x6bbc0c
+    0x005efc1c: 2068     ldr r0, [r4]
+    0x005efc1e: c26d     ldr r2, [r0, #0x5c]
+    0x005efc20: 2046     mov r0, r4
+    0x005efc22: 2946     mov r1, r5
+    0x005efc24: 9047     blx r2
+    0x005efc26: 01b0     add sp, #4
+    0x005efc28: f0bd     pop {r4, r5, r6, r7, pc}
+    0x005efc2a: c046     mov r8, r8
+    0x005efc2c: 78af     add r7, sp, #0x1e0
+    0x005efc2e: 1600     movs r6, r2
+    0x005efc30: 50a6     adr r6, #0x140
+    0x005efc32: 0100     movs r1, r0
+    0x005efc34: 58af     add r7, sp, #0x160
+    0x005efc36: 1600     movs r6, r2
+    0x005efc38: 48af     add r7, sp, #0x120
+    0x005efc3a: 1600     movs r6, r2
+    0x005efc3c: 2aaf     add r7, sp, #0xa8
+    0x005efc3e: 1600     movs r6, r2
+    0x005efc40: d4a9     add r1, sp, #0x350
+
+PC-rel constant @0x48f954 (used by ldr r1,[pc,#0x30] at 0x48f920) = 0x00001bcc
+PC-rel constant @0x48f950 (used by ldr r1,[pc,#8] at 0x48f944) = 0x00001bf0

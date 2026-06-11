@@ -1,0 +1,109 @@
+ngDevice::CreateInstance @ 0x005eecfc disasm:
+  0x005eecfc: push {r7, lr}
+  0x005eecfe: movs r0, #0x21
+  0x005eed00: lsls r0, r0, #5
+  0x005eed02: bl #0x69317c
+  0x005eed06: bl #0x6bf0cc
+  0x005eed0a: ldr r1, [pc, #0x20]
+  0x005eed0c: add r1, pc
+  0x005eed0e: ldr r2, [pc, #0x20]
+  0x005eed10: adds r2, r2, r1
+  0x005eed12: ldr r2, [r2]
+  0x005eed14: adds r2, #8
+  0x005eed16: str r2, [r0]
+  0x005eed18: ldr r2, [pc, #0x18]
+  0x005eed1a: movs r3, #0
+  0x005eed1c: strb r3, [r0, r2]
+  0x005eed1e: ldr r2, [pc, #0x18]
+  0x005eed20: strb r3, [r0, r2]
+  0x005eed22: ldr r2, [pc, #0x18]
+  0x005eed24: adds r1, r2, r1
+  0x005eed26: ldr r1, [r1]
+  0x005eed28: str r0, [r1]
+  0x005eed2a: pop {r7, pc}
+
+vtable[24]/+0x60 dispatch-site functions whose names suggest URL/web/promo/ad/rate:
+  _ZN11CMainScreen11ViewDidLoadEv
+  _ZN11CViewHelper12SetViewCoverEP6ngView
+  _ZN11CVoteScreen15BaseViewDidLoadEv
+  _ZN12CDZ_Selector12InitSelectorEP13ngTableViewV2P12ngLinkedListi
+  _ZN12CGoodsScreen19OpenUpLoadConsumbleEv
+  _ZN12CGoodsScreen20InitShowPreviewTableEv
+  _ZN12CStoreScreen11HandleEventEP6ngViewiii
+  _ZN12CStoreScreen9InitTableEv
+  _ZN12ngHttpClient9GetHeaderEv
+  _ZN13CCitierScreen17InitAdditionTableEv
+  _ZN13CFriendScreen11ViewDidLoadEv
+  _ZN13CHelperScreen10InitScreenEv
+  _ZN13CHelperScreen11HandleEventEP6ngViewiii
+  _ZN13CHelperScreen16HandleTouchEventEi
+  _ZN13CLadderScreen10ParseFightEPvh
+  _ZN13CLadderScreen16HandleTouchEventEi
+  _ZN13CLadderScreen9InitTableEv
+  _ZN13CPrisonScreen11ViewDidLoadEv
+  _ZN13CRewardScreen11ViewDidLoadEv
+  _ZN14CDZ_HelpScreen9InitTableEv
+  _ZN14CDZ_MainScreen11ViewDidLoadEv
+  _ZN14CLoadingScreen17InitLoadingScreenEv
+  _ZN14CRG_RaceScreen13SetReviewModeEv
+  _ZN15CCustomSelector12InitSelectorEP13ngTableViewV2P12ngLinkedListi
+  _ZN15CDZ_MatchScreen11ViewDidLoadEv
+  _ZN15CDecorateScreen11ViewDidLoadEv
+  _ZN15CGraduateScreen10InitScreenEv
+  _ZN15CHG_StoreScreen11HandleEventEP6ngViewiii
+  _ZN15CHG_StoreScreen13InitHuntTableEv
+  _ZN15CHG_StoreScreen14InitTransTableEv
+  _ZN15CHospitalScreen11ViewDidLoadEv
+  _ZN15CMS_StoreScreen11HandleEventEP6ngViewiii
+  _ZN15CMS_StoreScreen9InitTableEv
+  _ZN15CPersonalScreen17InitAdditionTableEv
+  _ZN15CPvpFightScreen11ViewDidLoadEv
+  _ZN15CRG_StoreScreen11HandleEventEP6ngViewiii
+  _ZN15CRG_StoreScreen12InitTableCarEv
+  _ZN15CRG_StoreScreen13InitTableCateEv
+  _ZN15CRG_StoreScreen13InitTableSkinEv
+  _ZN15CRG_StoreScreen15InitTableRandomEv
+  _ZN16CAdvertiseScreen10InitScreenEv
+  _ZN16CAdvertiseScreen16HandleTouchEventEi
+  _ZN16CFF_LVCellRender13InitFFLVTableEP12ngLinkedList
+  _ZN16CMatrixBetScreen14InitHttpHelperEv
+  _ZN16CStoreCateScreen9InitTableEv
+  _ZN17CFG_UpgradeScreen13InitChipTableEv
+  _ZN17CFG_UpgradeScreen16HandleTouchEventEi
+  _ZN17CHG_CaptureScreen11ViewDidLoadEv
+  _ZN18CAwardActionScreenC1EiP12ngLinkedListii
+  _ZN18CLadderEventScreen10ParseFightEPvh
+  _ZN18CLadderEventScreen15InitTableScreenEv
+  _ZN18CRewardEntryScreen11ViewDidLoadEv
+  _ZN19CMS_ClassMainScreen9InitTableEiP13ngTableScreenP13ngTableViewV2P13CCustomModelVP23CMS_ClassMainCellRenderP12ngLinkedListS9_
+  _ZN19CPropertyCateScreen16OpenAvatarScreenEP6CHouse
+  _ZN19CSkyScrprExitScreen16HandleTouchEventEi
+  _ZN19ngConnectionSession8S3UploadER10ngStringV2S1_
+  _ZN20CCooperateListScreen10InitScreenEv
+  _ZN20CCooperateListScreen16HandleTouchEventEi
+  _ZN20CDZ_CreateRoomScreen11ViewDidLoadEv
+  _ZN20CMcnySkillCellRender19CheckAddPreviewViewEv
+  _ZN21CCooperateAwardScreen9InitTableEv
+  _ZN21CCooperateFightScreen13AddBlackImageEP11ngImageView
+  _ZN21CCooperateFightScreen13InitHarmTableEv
+  _ZN21CCooperateFightScreen14InitPrizeTableEv
+  _ZN21CCooperateFightScreen17OnReceiveResponseEiPv
+  _ZN21CMercenaryStoreScreen10InitScreenEv
+  _ZN21CMercenaryStoreScreen11UpLoadGoodsEP10CStoreCell
+  _ZN21CStrengthenShopScreen18CheckAddFlashPrgrsEv
+  _ZN22CThxgivingV1CellRender9InitTableEP12ngLinkedList
+  _ZN22CThxgivingV2CellRender9InitTableEP12ngLinkedList
+  _ZN23CKingBeatSeleTeamScreen15BaseViewDidLoadEv
+  _ZN23CMS_HelpAndBattleScreen9InitTableEv
+  _ZN24CFG_UpgradeSuccessScreen16HandleTouchEventEi
+  _ZN24CFG_UpgradeSuccessScreen9InitTableEv
+  _ZN24CHuntToolStoreCellRender9InitTableEP16CHG_HuntToolData
+  _ZN25CMercenarySkillHelpScreen15InitTableScreenEv
+  _ZN25CRG_RewardLevelCellRender9InitTableEP12ngLinkedList
+  _ZN25CTransToolStoreCellRender9InitTableEP17CHG_TransToolData
+  _ZN26CActiveChallengeMainScreen11ViewDidLoadEv
+  _ZN26CHuntToolStoreCellRenderV29InitTableEP16CHG_HuntToolData
+  _ZN8ngButton13StartDownLoadEPKcS1_S1_R10ngStringV2S3_S3_
+  _ZN9CAddition19GetFoodAdditionDescEv
+
+TOTAL dispatch-site functions: 578 (most are unrelated UI tables)

@@ -1,0 +1,151 @@
+
+===== _ZN14CLoadingScreen24ParseLastLoginPlayerInfoEPv  va=0x00490418 len=0xd4 =====
+  0x00490418: 70b5     push    {r4, r5, r6, lr}
+  0x0049041a: 0446     mov     r4, r0
+  0x0049041c: 0029     cmp     r1, #0
+  0x0049041e: 57d0     beq     #0x4904d0
+  0x00490420: 2c48     ldr     r0, [pc, #0xb0]  ; lit=0x002ca6fa
+  0x00490422: 7844     add     r0, pc
+  0x00490424: 2c4a     ldr     r2, [pc, #0xb0]  ; lit=0xfff9c250
+  0x00490426: 1218     adds    r2, r2, r0  ; KEY="type"
+  0x00490428: 4868     ldr     r0, [r1, #4]
+  0x0049042a: 036c     ldr     r3, [r0, #0x40]  (GetNode vtbl)
+  0x0049042c: 0d1d     adds    r5, r1, #4
+  0x0049042e: 2846     mov     r0, r5
+  0x00490430: 1146     mov     r1, r2
+  0x00490432: 9847     blx     r3
+  0x00490434: 0028     cmp     r0, #0
+  0x00490436: 07d0     beq     #0x490448
+  0x00490438: 0830     adds    r0, #8
+  0x0049043a: 02f2e7fd bl      #0x69300c  ; -> IntValue[INT]
+  0x0049043e: 0646     mov     r6, r0
+  0x00490440: a920     movs    r0, #0xa9
+  0x00490442: 8000     lsls    r0, r0, #2
+  0x00490444: 2650     str     r6, [r4, r0]
+  0x00490446: 02e0     b       #0x49044e
+  0x00490448: a920     movs    r0, #0xa9
+  0x0049044a: 8000     lsls    r0, r0, #2
+  0x0049044c: 2658     ldr     r6, [r4, r0]
+  0x0049044e: 2348     ldr     r0, [pc, #0x8c]  ; lit=0x002ca6cc
+  0x00490450: 7844     add     r0, pc
+  0x00490452: 2349     ldr     r1, [pc, #0x8c]  ; lit=0xfff9c402
+  0x00490454: 0918     adds    r1, r1, r0  ; KEY="name"
+  0x00490456: 2868     ldr     r0, [r5]
+  0x00490458: 026c     ldr     r2, [r0, #0x40]  (GetNode vtbl)
+  0x0049045a: 2846     mov     r0, r5
+  0x0049045c: 9047     blx     r2
+  0x0049045e: 002e     cmp     r6, #0
+  0x00490460: 23d0     beq     #0x4904aa
+  0x00490462: 0028     cmp     r0, #0
+  0x00490464: 10d0     beq     #0x490488
+  0x00490466: 0430     adds    r0, #4
+  0x00490468: 0121     movs    r1, #1
+  0x0049046a: 02f2affd bl      #0x692fcc  ; -> str_dup[STR]
+  0x0049046e: 0146     mov     r1, r0
+  0x00490470: 9720     movs    r0, #0x97
+  0x00490472: 8000     lsls    r0, r0, #2
+  0x00490474: 2618     adds    r6, r4, r0
+  0x00490476: 0020     movs    r0, #0
+  0x00490478: c243     mvns    r2, r0
+  0x0049047a: 3046     mov     r0, r6
+  0x0049047c: 02f2aefd bl      #0x692fdc  ; -> Str.assign
+  0x00490480: 3046     mov     r0, r6
+  0x00490482: 3146     mov     r1, r6
+  0x00490484: 04f2faf9 bl      #0x69487c  ; -> 0x0069487c
+  0x00490488: 1648     ldr     r0, [pc, #0x58]  ; lit=0x002ca692
+  0x0049048a: 7844     add     r0, pc
+  0x0049048c: 1649     ldr     r1, [pc, #0x58]  ; lit=0xfffa2679
+  0x0049048e: 0918     adds    r1, r1, r0  ; ->0x0069959b
+  0x00490490: 2868     ldr     r0, [r5]
+  0x00490492: 026c     ldr     r2, [r0, #0x40]  (GetNode vtbl)
+  0x00490494: 2846     mov     r0, r5
+  0x00490496: 9047     blx     r2
+  0x00490498: 0028     cmp     r0, #0
+  0x0049049a: 19d0     beq     #0x4904d0
+  0x0049049c: 0430     adds    r0, #4
+  0x0049049e: 0121     movs    r1, #1
+  0x004904a0: 02f294fd bl      #0x692fcc  ; -> str_dup[STR]
+  0x004904a4: 0146     mov     r1, r0
+  0x004904a6: 9d20     movs    r0, #0x9d
+  0x004904a8: 07e0     b       #0x4904ba
+  0x004904aa: 0028     cmp     r0, #0
+  0x004904ac: 10d0     beq     #0x4904d0
+  0x004904ae: 0430     adds    r0, #4
+  0x004904b0: 0121     movs    r1, #1
+  0x004904b2: 02f28bfd bl      #0x692fcc  ; -> str_dup[STR]
+  0x004904b6: 0146     mov     r1, r0
+  0x004904b8: a320     movs    r0, #0xa3
+  0x004904ba: 8000     lsls    r0, r0, #2
+  0x004904bc: 2418     adds    r4, r4, r0
+  0x004904be: 0020     movs    r0, #0
+  0x004904c0: c243     mvns    r2, r0
+  0x004904c2: 2046     mov     r0, r4
+  0x004904c4: 02f28afd bl      #0x692fdc  ; -> Str.assign
+  0x004904c8: 2046     mov     r0, r4
+  0x004904ca: 2146     mov     r1, r4
+  0x004904cc: 04f2d6f9 bl      #0x69487c  ; -> 0x0069487c
+  0x004904d0: 70bd     pop     {r4, r5, r6, pc}
+  0x004904d2: c046     mov     r8, r8
+  0x004904d4: faa6     adr     r6, #0x3e8
+  0x004904d6: 2c00     movs    r4, r5
+  0x004904d8: 50c2     stm     r2!, {r4, r6}
+
+===== OnReceiveResponse +0x32c..+0x38c (lastLoginPlayer call site)  va=0x0049014c len=0x60 =====
+  0x0049014c: 0268     ldr     r2, [r0]
+  0x0049014e: 126c     ldr     r2, [r2, #0x40]  (GetNode vtbl)
+  0x00490150: 9047     blx     r2
+  0x00490152: 0028     cmp     r0, #0
+  0x00490154: 0dd0     beq     #0x490172
+  0x00490156: 0830     adds    r0, #8
+  0x00490158: 02f258ff bl      #0x69300c  ; -> IntValue[INT]
+  0x0049015c: 0025     movs    r5, #0
+  0x0049015e: e943     mvns    r1, r5
+  0x00490160: 8842     cmp     r0, r1
+  0x00490162: 06d0     beq     #0x490172
+  0x00490164: 0128     cmp     r0, #1
+  0x00490166: 00d1     bne     #0x49016a
+  0x00490168: 0546     mov     r5, r0
+  0x0049016a: 03f24ff8 bl      #0x69320c  ; -> __udivdi3+0x5f0
+  0x0049016e: 9b49     ldr     r1, [pc, #0x26c]  ; lit=0x00001cd0 "0"
+  0x00490170: 4554     strb    r5, [r0, r1]
+  0x00490172: 9b48     ldr     r0, [pc, #0x26c]  ; lit=0x002ca9a8
+  0x00490174: 7844     add     r0, pc
+  0x00490176: 9b49     ldr     r1, [pc, #0x26c]  ; lit=0xfffa6308
+  0x00490178: 0918     adds    r1, r1, r0  ; KEY="lastLoginPlayer"
+  0x0049017a: 3d46     mov     r5, r7
+  0x0049017c: 2868     ldr     r0, [r5]
+  0x0049017e: 026c     ldr     r2, [r0, #0x40]  (GetNode vtbl)
+  0x00490180: 2846     mov     r0, r5
+  0x00490182: 9047     blx     r2
+  0x00490184: 0146     mov     r1, r0
+  0x00490186: 0029     cmp     r1, #0
+  0x00490188: 02d0     beq     #0x490190
+  0x0049018a: 2046     mov     r0, r4
+  0x0049018c: 1bf22efb bl      #0x6ab7ec  ; -> 0x006ab7ec
+  0x00490190: 13f29cfa bl      #0x6a36cc  ; -> 0x006a36cc
+  0x00490194: 0028     cmp     r0, #0
+  0x00490196: 04d0     beq     #0x4901a2
+  0x00490198: 05f2c8f8 bl      #0x69532c  ; -> 0x0069532c
+  0x0049019c: 3146     mov     r1, r6
+  0x0049019e: 1bf22dfb bl      #0x6ab7fc  ; -> 0x006ab7fc
+  0x004901a2: 9148     ldr     r0, [pc, #0x244]  ; lit=0x002ca978
+  0x004901a4: 7844     add     r0, pc
+  0x004901a6: 9149     ldr     r1, [pc, #0x244]  ; lit=0xfffa6318
+  0x004901a8: 0918     adds    r1, r1, r0  ; ->0x006a7140
+  0x004901aa: 2868     ldr     r0, [r5]
+
+=== Parse* / LastLogin symbols ===
+  0x00479ed8 sz=0xec _ZN24CPlayerAppellationHelper22ParsePlayerAppellationEPv
+  0x003776ec sz=0x30c _ZN10CDZ_Player15ParsePlayerInfoEPvi
+  0x00377c54 sz=0x1cc _ZN10CDZ_Player19ParsePlayerSyncInfoEPvi
+  0x0037b3c4 sz=0x64 _ZN14CDZ_PlayersMng15ParsePlayerListEPv
+  0x0037b6a4 sz=0x90 _ZN14CDZ_PlayersMng11ParsePlayerEPv
+  0x0037c190 sz=0x64 _ZN14CDZ_PlayersMng19ParsePlayerSyncListEPv
+  0x00435fbc sz=0x1f0 _ZN17CHG_CaptureScreen19__ParsePlayerStatusEPv
+  0x0048081c sz=0x18c _ZN9CKFPlayer11ParsePlayerEPv
+  0x00490418 sz=0xd4 _ZN14CLoadingScreen24ParseLastLoginPlayerInfoEPv
+  0x0049152e sz=0x84 _ZN14CLoginEnScreen23SetLastLoginAccountInfoEv
+  0x004dc1d8 sz=0x250 _ZN15CMercenaryMnger24ParsePlayerMercenaryInfoEPv
+  0x0053b910 sz=0x2c8 _ZN25CRG_PersonalMapListScreen20ParsePlayerMatchDataEPv
+  0x0054d9e0 sz=0xc4 _ZN15CRankCateScreen11ParsePlayerEPv
+  0x0054db14 sz=0x5e _ZN15CRankCateScreen15ParsePlayerListEPv

@@ -1,0 +1,9 @@
+ngDevice::LaunchURL symbol VA: 0x5bb8bd
+  raw: 7047000002487844024908187047c046
+vtable/typeinfo for ngDevice*:
+  0x0074edf0 _ZTV8ngDevice
+  0x0074eeb0 _ZTI8ngDevice
+  0x00717538 _ZTS8ngDevice
+  0x00752b70 _ZTV15ngDeviceAndroid
+  0x00752c30 _ZTI15ngDeviceAndroid
+  0x00718250 _ZTS15ngDeviceAndroid

@@ -1,0 +1,4 @@
+JNI call-site report (libcity_ar.so)
+========================================================================
+JNI veneers found:
+

@@ -1,0 +1,3 @@
+Searching .text for offset-literal d4a9faff (= 0x7054f4 - 0x75AB20):
+  off=0x005efc40  va=0x005efc40  in _ZN15ngDeviceAndroid9LaunchURLEPKc (@0x005efb9c)
+total: 1

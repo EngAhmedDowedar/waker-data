@@ -1,0 +1,270 @@
+
+================================================================================
+[2026-05-29 16:29:38.880] REQUEST PUT /checkversion
+  Headers:
+    Host: 192.168.1.4:8080
+    Accept: */*
+    User-Agent: Anansi/1.0
+    X-Game-Checksum: e58c45ed2aed49a6ced1bb31ef03dc2a
+    Content-Length: 620
+  Body: NEwGTx8EDwlEVlVbUBQIA0FWUkdeFllZXRkRCkNcE0RcQ1MWFVcNXl1aUw0SC1FcGEMKCldCQVBMSwICClIRGwYARRpEREcfRRcFCVc3CxZTAAFOVlJUExlNUAMLBBcWUkBTFUZQGAkRC0E9A0caQVhCRVYRHUkUDD8sAk5FVEECBQkaRUMKOwFJFktURRVFVxEADFddQxJRUA8eEQsNUEIQWFpQFUBdEVdHUF8DAlhKAgxNBCUIAltMB0kdF38VGkcMRgUXHQcGFidZEgxMXgInJUgsH3xZIwJeSwIIQxUDRVBPTgBOVkRHAUEPC04WAgoASHUhS0JFRBEZSQUMKAVNHQQcTxYCLgABUh0ACkUMVgtFFBsKCzFFBhsMAk5DVk4RVUxIAh0HTREbEUEJEVBRX1RDXwIGDBgNQxElBA5nK0xfAkdYVlZGEVYZERNVUEJGWQEOFQMOXRgXWlpXEUdcV1ZEVkMCFQwdF0kbBjECR0UBTF8CUEVMFEUGGUUQOw0WRRpEREcOSAACAkUNTF4CLgFPEwQAcAgACyocR19RRAcfBwdFPQxHVwx3C10XQAoMUhQQXEJLFw5cAlhKAgxNBDoJXlMGAQsCSFpXGl0=
+
+================================================================================
+[2026-05-29 16:29:38.882] PROBE /checkversion #6 variant=FULL_SCHEMA_FROM_BINARY
+
+================================================================================
+[2026-05-29 16:29:38.884] RESPONSE 200 for PUT /checkversion
+  Content-Type: application/json
+  Body: {"result": 0, "code": 200, "status": "ok", "errorMsg": "", "data": {"version": "1.1.38", "majorVersion": "1", "reviewVersion": "1.1.38", "isReview": false, "time": 1780061378, "majorUpgrade": false, "majorUpgradeUrl": "", "majorUpgradeText": "", "minorUpgrade": false, "isForceUpgrade": false, "loadingDoAllStep": 0, "loadingForceDeaf": false, "loadingTimeOut": 60, "minorVersion": "1.1.38", "inReview": false, "contentUrlPrefix": "", "upgradeVersionFile": "", "enableCP": false, "serverCtrlDebugSwitch": 0, "lastLoginPlayer": {"type": 0, "name": "", "password": ""}, "encryptMethod": 0, "preServerIdx": 0, "servers": [{"idx": 1, "status": 1, "port": 9090, "recommend": 1, "register": 0, "mergeServer": 0, "name": "Waker", "url": "192.168.1.4", "comment": "", "bucket": 0, "displayIdx": 1, "useHttps": 0, "crossPlatCode": "android"}]}}
+
+================================================================================
+[2026-05-29 16:29:38.887]   [cipher] response re-encoded base64(XOR), 894->1192 bytes
+
+================================================================================
+[2026-05-29 16:29:44.411] REQUEST PUT /api/connect
+  Headers:
+    Host: 192.168.1.4:8080
+    Accept: */*
+    User-Agent: Anansi/1.0
+    X-Game-Checksum: 5e6f1c2f4afe684ba2c2e79bfa27a40e
+    Content-Length: 572
+  Body: NEwGTx8EDwlEVlVbUAUABFkRGjEUUAROVhwMTR4JQQsMHClBGQoCXEu2zPjcShhBDkgKDwFFAEtUHAIEA0EWFAYcCgJOW1RBAhcJHkkHFzdpS1QRWEoBRRIIEQ47ARoXAlhLW1UYRQ4AVBcsCFwVEFtfA0NBDUJDQVtQFEZZUFgZUAhOAAIIDwhFOw1MXQIXBlQfNg8WAlhKAQhaSQwLMVkCDExdAiciDSNDWlkhAlhKCQJDAAAJAltMAU5LQgIYCQtHRltQDgBIJiACTksKAVYdCwArTyIHCVlQU0wmThAdTxsRTkkCEA0TBEMEOgleUwYBCwJIS19TAlhNVA8ECxdUFQUVTxYRWFZVEERfWFEVWE1EBwQADQJtFQssCQJbTlkRWV8CRVBXQxJRUEJWUBYIWwcRQhRVXFpWEUFdXFxKbUJHUxcaHQ5PGjtPGRACRxpWSklPUwQeGklSJgodAkhYQkVDHA5OCAwCRhpWLwoCS0wKPglBCygcRQxWC0UUGwoLLkRWUkdVRVlbXkMDW1BEWgwZFgpcAkhDFQoDACUWUhEAAQoCTltcEFM=
+
+================================================================================
+[2026-05-29 16:29:44.413] RESPONSE 200 for PUT /api/connect
+  Content-Type: application/json
+  Body: {"code":200,"data":{"id":"1001","keepLiveServerHost":"127.0.0.1","keepLiveServerPort":9090,"key":"waker-key","name":"Player","playerId":"1001","serverId":1,"sessionKey":"waker-key","token":"waker-key","uid":"1001","userId":"1001"},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-05-29 16:29:44.415]   [cipher] response re-encoded base64(XOR), 343->460 bytes
+
+================================================================================
+[2026-05-29 16:29:44.840] REQUEST PUT /api/connect
+  Headers:
+    Host: 192.168.1.4:8080
+    Accept: */*
+    User-Agent: Anansi/1.0
+    X-Game-Checksum: a5ca1ac13db4d0b1686fc626f018c75e
+    Content-Length: 572
+  Body: NEwGTx8EDwlEVlVbUAUABFkRGjEUUAROVgERQ0wORQtLVEoRR1wRX15fURJEFUlPREUOCgBSUFMVRVAYDlQEHRsDRRpHWUlPVgQeBUYYPS0CU18MVgwAVg0CFz4KDBdRGkBcX1wREg1cVE0pV1BCQFgKBBUWDRFGQllREkVdUFQRBU5ADkcOAwBpFktURUMdG1k5CBxGDFYMABtFQwo6HFAXS1RFczlCYVNBXihFDFYECg5BDQlOGkMLCgJFTEwVBgICXkMXBUMwIFEMQA0LEkkXDSMMQyYCHAJISy8JRAYASRZXQEdEER4MDkU3CR5fSQAARxpQWFpFDFYbSQsMHRBBGRhHVx0XV15VFkVZW1EMVgtFFBsKCypBFyEBTxpDWV0YUAgBGVANRk1dBxJVBRFeDAdCRxdXXVxVFUFRVAkMY0wWRQEaBwhOIABLFxtOXwJWREceRRMaCV5pCxZHGkNFTARIFQFOAwVMXgIzBwoKQEU/AgRZMxtMSwIQClYLEQwnAwJOSl0IGFZeD0JUWgATC1dCFlFHDEYGEwYLMxYBUwsGAEYaR1EYEA==
+
+================================================================================
+[2026-05-29 16:29:44.842] RESPONSE 200 for PUT /api/connect
+  Content-Type: application/json
+  Body: {"code":200,"data":{"id":"1001","keepLiveServerHost":"127.0.0.1","keepLiveServerPort":9090,"key":"waker-key","name":"Player","playerId":"1001","serverId":1,"sessionKey":"waker-key","token":"waker-key","uid":"1001","userId":"1001"},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-05-29 16:29:44.844]   [cipher] response re-encoded base64(XOR), 343->460 bytes
+
+================================================================================
+[2026-05-29 16:29:45.150] REQUEST PUT /city/impart
+  Headers:
+    Host: 192.168.1.4:9090
+    Accept: */*
+    User-Agent: Anansi/1.0
+    X-Game-Checksum: 1bbf27f4f8de5ec4a502030585cd6df0
+    Content-Length: 580
+  Body: NEwGTx8EDwlEVlVbUBgND08GPgAfUwgDAg4aXl1JAgYAAwJTAA5NFktUVAxWARYjSVdNVFRdXksGAkEQClJASBJMF0wVHAMCUgxOVhNQQkZWDBxJEhE2aUZbQ0dMARYFSQEMOwBJEEpfTxt+VlRGF1BXBEZNWkJARAgGFRYKVFkXVFheHRVaV1REUEVMAEEZCmkCS1RGQx0cHDJNUk1CR0QXHwcERSAWUAdQU0w0bVkpVF4XJ05AAg0BB0EFCwJOSgBORk1QBw8LFFEaQAwASXUnSklPSioYDEMXLw8KSRgWAkhXLQtEBgcMCQJNTghJVgYNAHYXGx0OTxpNGkRYWkYMVhwMAElTGw8IUFBTX1AYRF8WVUZYVksCEA0TBEMEIQ1DKApGGktbEUxZA0VdWBENV1ARQREGClsGQkVcUlgafV9QFUtYCkUMVhxFAQYFCk4gBw4ITkNWTg4MTR0AUgQMHC5EDE0aV0VMB0gVBgsIQAJVTCJPHQ4CAnAYDlkjAEtCRUQRHgwORSgIThpDVgEYXlxDFl1RRFcDSwkMXFFfAgUIAwF2ERoWBEEhTF8TSxQT
+
+================================================================================
+[2026-05-29 16:29:45.152] RESPONSE 200 for PUT /city/impart
+  Content-Type: application/json
+  Body: {"code":200,"data":{},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-05-29 16:29:45.154]   [cipher] response re-encoded base64(XOR), 113->152 bytes
+
+================================================================================
+[2026-05-29 16:29:45.350] REQUEST PUT /city/impart
+  Headers:
+    Host: 192.168.1.4:9090
+    Accept: */*
+    User-Agent: Anansi/1.0
+    X-Game-Checksum: e91033cda391f1007592df323fd142c6
+    Content-Length: 580
+  Body: NEwGTx8EDwlEVlVbUBgND08GPgAfUwgDAg4aXl1JAgYAAwJTAA5NFktUVAxWARYjSVdNVFRdXksGAkEQClJASBJMF0wVHAMCUgxOVhNQQkZWDBxJEhE2aUZbQ0dMARYFSQEMOwBJEEpfTxt+VlRGF1BXBEZNWkJARAgGFRYKVFkXVFheHRVaV1REUEVMAEEZCmkCS1RGQx0cHDJNUk1CR0QXHwcERSAWUAdQU0w0bVkpVF4XJ05AAg0BB0EFCwJOSgBORk1QBw8LFFEaQAwASXUnSklPSioYDEMXLw8KSRgWAkhXLQtEBgcMCQJNTghJVgYNAHYXGx0OTxpNGkRYWkYMVhwMAElTGw8IUFBTX1AYRF8WVURcWUsCEA0TBEMEIQ1DKApGGktbEUxZA0VdWBENV1ARQREGClsGQkVcUlgafV9QFUtYCkUMVhxFAQYFCk4gBw4ITkNWTg4MTR0AUgQMHC5EDE0aV0VMB0gVBgsIQAJVTCJPHQ4CAnAYDlkjAEtCRUQRHgwORSgIThpDVgEYXlxDFl1RRFcDSwkMXFFfAgUIAwF2ERoWBEEhTF8TSxQT
+
+================================================================================
+[2026-05-29 16:29:45.353] RESPONSE 200 for PUT /city/impart
+  Content-Type: application/json
+  Body: {"code":200,"data":{},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-05-29 16:29:45.355]   [cipher] response re-encoded base64(XOR), 113->152 bytes
+
+================================================================================
+[2026-05-29 16:29:45.414] REQUEST PUT /city/connect/getplayerlist
+  Headers:
+    Host: 192.168.1.4:9090
+    Accept: */*
+    User-Agent: Anansi/1.0
+    X-Game-Checksum: f3fbc5ce7fea1886cfae1b0b98deb777
+    Content-Length: 556
+  Body: NEwGTx8EDwlEVlVbUAUABFkRGi4IWUNWQR8YWFhVEUZQWBoMVgdFBw0LFgJOE0cdQEEbCApSH0tUVBFYTVYHAAAIHnM9Sl9cDEMICVYIDQF1DQdEVlJHFVVZQw0LXEoQRltcDFYREAtQD0x+WlIVRltfUhVNXkRQWU4CQRkNLAkCW04PRVQWMQRSUEVMA0UCBkMDPRcURVZSRz5hDS5fVhc0S0JFTBsMQQ4XS1RFRRpKSU9MAAILAltMAU5EO3NWREdEARcbCAsjEh5JDhBMXgI1BgEfQSYKRwxQDQsRSRcKdhcHHwxPGkpfTxFVTkAOVAYDAFMGCAMXAk5eF15ZXlIXQ1pdQQ5EChgMQxckDwRpEE0aQEdYVlZGEVFcDkZYWQ4SUAoHFQsMEUBfUBRWUEdeV1QXUQxAGgsXUx0HCzlBJAsLAkhLTEsCBwpSBBAeLEQMSl9cDEMPBE1OAQsJAkhLKQhPEwNFNgUPHWEGSklPSEUZBwZFOw1MXQJMChhVQAoMUhQQWwdUQgNVTgxDCQVNDDhFBhsMTwpDSFhXGA4=
+
+================================================================================
+[2026-05-29 16:29:45.416] RESPONSE 200 for PUT /city/connect/getplayerlist
+  Content-Type: application/json
+  Body: {"code":200,"data":[],"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-05-29 16:29:45.419]   [cipher] response re-encoded base64(XOR), 113->152 bytes
+
+================================================================================
+[2026-05-29 16:29:45.616] REQUEST PUT /city/connect/create
+  Headers:
+    Host: 192.168.1.4:9090
+    Accept: */*
+    User-Agent: Anansi/1.0
+    X-Game-Checksum: 7ad22113d1f72da2ed2bbe3ba89e3093
+    Content-Length: 676
+  Body: NEwGTx8EDwlEVlVbUAUABFkRGisMTQROVg74x7bNAl5LHgtBDQpSMhAeAQJORVRBDlMWHTFJHwxMXRFDVxBSRF5CRVAYCRwIUioJFQJbQ1cYXlgQRVxcFkhDEQVXVDoXAlhLXkYMVgELGVwgOwxEUFNeSwITCk4WEB5HGkUVSU9IBA0ISVJNVB4CAgUPE0YbHU1EU11VDFYeAB9FRhY9LAJIWEJFRBEZSQEXPAoORFZSR1gRWV0KRVhXB0ZQW0JGWQFDUQMQWlpSRkcSU1xbXREQSklPSS4DAGkWS1RFQx0bWS0UHkcMVgwAG0kCCThVUApMXwIhJEMmEUdYZkRFTAhPFwkJCA4aTQsLAl5LAgZOE00aQBcHQzJzVkRHCUUXBQ9FJw8JSQUXAk5KJE4AEx0CCkdfUUQHHwcHRSINFx5HIABHGlBYWkUMVhtJHxAfEUEZGEdXEVZUXBwWWFdXEl5LCgJWHQxFKwgNLURWUkdYHRheCAAZSwoIXhUWXREGEVwMBRFAX1BZElBZWRlQCkYMSx1FBxsMTwo1HQALC1FJAkBFTBdFBh4AH2crFkcaQ0VMBEgVAU4XGU5fAjMHCgpMBDwATVkuHEcMUA0LEUkXCmkCS1RGGBFQUl9PQlpaARMQUAwFGVZDAgUTBAsxRQYbDAJOQ1ZfGRwT
+
+================================================================================
+[2026-05-29 16:29:45.618] RESPONSE 200 for PUT /city/connect/create
+  Content-Type: application/json
+  Body: {"code":200,"data":{"agile":50,"avatarAt":1779974985,"bagMaxSize":50,"bags":[],"basicAgile":50,"basicEndurance":50,"basicSpeed":50,"basicStrength":50,"bigHornNum":2,"blood":100,"bloodUp":100,"boughtRecoverEnergy":0,"brave":100,"braveUp":100,"cheque":5000,"createdAt":1777469385,"crimeSuccess":0,"crimeTimes":0,"dealMaxSize":20,"defense":20,"endurance":50,"energy":100,"energyAt":1780061385,"energyUp":100,"estates":[],"exp":0,"fightTimes":0,"firstPayGifted":0,"firstPayed":0,"friendNum":0,"gender":1,"gold":100000,"goods":[],"happy":100,"happyUp":100,"hornNum":5,"hospitalTimes":0,"id":1,"jailTimes":0,"level":20,"loginContinuousDays":1,"loginGift":0,"maritalStatus":0,"maxPlayerEnergy":100,"merits":1000,"missionId":5,"missionProgress":0,"money":5000000,"moral":100,"moralAt":1780061385,"moralUp":100,"name":"Player","newPlayer":0,"payLevel":0,"payed":0,"playerKey":"waker-key","playerRole":1,"playerStatus":{"cityId":1,"noFightedExpireAt":0,"status":0,"statusAt":0,"statusDuration":0,"statusExtra":0,"statusExtraDesc":""},"signature":"Welcome to Waker","speed":50,"spouseName":"","storedEnergy":0,"strength":50,"thriceNum":0,"totalMerits":1000,"uid":1,"vip":0,"vipExpireAt":0,"warehouseSize":50},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-05-29 16:29:45.620]   [cipher] response re-encoded base64(XOR), 1439->1920 bytes
+
+================================================================================
+[2026-05-29 16:29:45.871] REQUEST PUT /city/connect/connect
+  Headers:
+    Host: 192.168.1.4:9090
+    Accept: */*
+    User-Agent: Anansi/1.0
+    X-Game-Checksum: f09244f59e71f7b2c890ef4ffca69b00
+    Content-Length: 832
+  Body: NEwGTx8EDwlEVlVbUAUABFkRGjEUUAROVgERQ0wHVR4FCxNJGiZERFNDVQxWCQELTQJVTFYWSlxfUhERQhlRRFxDUxYVUEhVFFVbQUYCWlUUCgtERgpWGUZNUBgXFicaTQdLVEYRQ1BVXRh+XV0WUEVMFE8XBkEePAhHGlZKSU9EAAUAVXQOHQ51Ag0PE0UQLlRGS1RUDFYYCQxVRR0lAFlQU0NUGENZEFNGUFhLAh0GER9PNAUIAlteSAIOC04QDRcCXlBeSR4JEgpFECAKRhpFREcASzwdBEcXIApFGkRDAhYUBQlZIAkWBmkFTlYcXUNMDUUTDQsVAk4UAhYFDxBGGxoITxYTXkJHVhcbBwFZJyYCWENFTANFAgEGCHUFBQgCW0xREVFfRhFRXEMCWEcJXFQXEBUAC19QF0FcV1wbeldURFBFTABBGQppFldWR0MdHBwyQRNOQA5EChgMQxc9FxdFVlUCNSRDJRFHXyNPAAIDAQZBHgxMXQIRAQJOUAUPCUdWUkcITkw5PwJNTABFHwdDES4ETQ0NC0lURzIdRBAGBwACWEoBCFgmDQB2FxsdDk8aTRpQRFhHDFYcDABFEhgNQVBNVFQXSlleURhFVxFKSwoBVh0LACBNQyYKRxpQXF9fERIKGVsRD1dSQkZZAQ4VAw5dFFZbUBJYWxVNWQECSEMBDh0WGhxONgYFAU5WUkdPAm0dAFIEDBwuRAxNGkNZTgZIFQYLCExDVk5rTwAJCUUiBQ8eYQZNDEQNCxJJFw0sCQ4aTVYAGEVbDQUVQAsTAEsLDF4CWEoCDE0EOglSEgcLTktUE00VGA==
+
+================================================================================
+[2026-05-29 16:29:45.873] RESPONSE 200 for PUT /city/connect/connect
+  Content-Type: application/json
+  Body: {"code":200,"data":{"agile":50,"avatarAt":1779974985,"bagMaxSize":50,"bags":[],"basicAgile":50,"basicEndurance":50,"basicSpeed":50,"basicStrength":50,"bigHornNum":2,"blood":100,"bloodUp":100,"boughtRecoverEnergy":0,"brave":100,"braveUp":100,"cheque":5000,"createdAt":1777469385,"crimeSuccess":0,"crimeTimes":0,"dealMaxSize":20,"defense":20,"endurance":50,"energy":100,"energyAt":1780061385,"energyUp":100,"estates":[],"exp":0,"fightTimes":0,"firstPayGifted":0,"firstPayed":0,"friendNum":0,"gender":1,"gold":100000,"goods":[],"happy":100,"happyUp":100,"hornNum":5,"hospitalTimes":0,"id":1,"jailTimes":0,"level":20,"loginContinuousDays":1,"loginGift":0,"maritalStatus":0,"maxPlayerEnergy":100,"merits":1000,"missionId":5,"missionProgress":0,"money":5000000,"moral":100,"moralAt":1780061385,"moralUp":100,"name":"Player","newPlayer":0,"payLevel":0,"payed":0,"playerKey":"waker-key","playerRole":1,"playerStatus":{"cityId":1,"noFightedExpireAt":0,"status":0,"statusAt":0,"statusDuration":0,"statusExtra":0,"statusExtraDesc":""},"signature":"Welcome to Waker","speed":50,"spouseName":"","storedEnergy":0,"strength":50,"thriceNum":0,"totalMerits":1000,"uid":1,"vip":0,"vipExpireAt":0,"warehouseSize":50},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-05-29 16:29:45.877]   [cipher] response re-encoded base64(XOR), 1439->1920 bytes
+
+================================================================================
+[2026-05-29 16:29:48.210] REQUEST PUT /city/chat/getsysmsgs
+  Headers:
+    Host: 192.168.1.4:9090
+    Accept: */*
+    User-Agent: Anansi/1.0
+    X-Game-Checksum: 8d6bf23d7621f7a89269a86f3dd9b414
+    Content-Length: 544
+  Body: NEwGTx8EDwlEVlVbUAUABFkRGiwJAltdEQACBwsERBcbTF1bVh9MBx0IC1IZSl9eHQxNGABSGw8XNGlWVRFOUA0LEUkXDTAJSQVOVgJUX1wRDwsZTQsDGVEDQFoKBkYRQlNdWVEURllQWBd+CkcMUA4PCkU9CwJIVw8MVA03BB8CTU4ISVYGDQB0CxkLRRpWPG1LKF9XFzJKSU9ATwwPCUVQU0wCTlZDAg4TBwlFGlYNC0B1Mk5AAgULEkkKC2YVBQxMHUNISS8LFwFPCw1MSAIQDRMETSo4AFIBAAEJAk5NEUZXQEdUHQUAHlQAARwOGl5ZXRBCX1ZeEUZDAgIMGA1DESUEDmVETVRHFUNRXwFFTVZDBEtcDFUREAtQD0JQWFsVVVxVFVxXERBKSQIXBAEYBwodJ08JDABGGlZKSU9dKhwTRQAgCh8CTl4MUBYEBE4aDQlPGkMrA0NHAws1TBMQLxUCWE1EAx8HB0U9DEdXDhgKVlISEQtbU0RHDRkAEFBMSwITCQgIdgQeH0kOAEYaWlddCQ==
+
+================================================================================
+[2026-05-29 16:29:48.211] REQUEST PUT /city/monthCard/enterMatchCard
+  Headers:
+    Host: 192.168.1.4:9090
+    Accept: */*
+    User-Agent: Anansi/1.0
+    X-Game-Checksum: 8d6bf23d7621f7a89269a86f3dd9b414
+    Content-Length: 544
+  Body: NEwGTx8EDwlEVlVbUAUABFkRGiwJAltdEQACBwsERBcbTF1bVh9MBx0IC1IZSl9eHQxNGABSGw8XNGlWVRFOUA0LEUkXDTAJSQVOVgJUX1wRDwsZTQsDGVEDQFoKBkYRQlNdWVEURllQWBd+CkcMUA4PCkU9CwJIVw8MVA03BB8CTU4ISVYGDQB0CxkLRRpWPG1LKF9XFzJKSU9ATwwPCUVQU0wCTlZDAg4TBwlFGlYNC0B1Mk5AAgULEkkKC2YVBQxMHUNISS8LFwFPCw1MSAIQDRMETSo4AFIBAAEJAk5NEUZXQEdUHQUAHlQAARwOGl5ZXRBCX1ZeEUZDAgIMGA1DESUEDmVETVRHFUNRXwFFTVZDBEtcDFUREAtQD0JQWFsVVVxVFVxXERBKSQIXBAEYBwodJ08JDABGGlZKSU9dKhwTRQAgCh8CTl4MUBYEBE4aDQlPGkMrA0NHAws1TBMQLxUCWE1EAx8HB0U9DEdXDhgKVlISEQtbU0RHDRkAEFBMSwITCQgIdgQeH0kOAEYaWlddCQ==
+
+================================================================================
+[2026-05-29 16:29:48.212] RESPONSE 200 for PUT /city/chat/getsysmsgs
+  Content-Type: application/json
+  Body: {"code":200,"data":[],"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-05-29 16:29:48.214] RESPONSE 200 for PUT /city/monthCard/enterMatchCard
+  Content-Type: application/json
+  Body: {"code":200,"data":{},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-05-29 16:29:48.216]   [cipher] response re-encoded base64(XOR), 113->152 bytes
+
+================================================================================
+[2026-05-29 16:29:48.218]   [cipher] response re-encoded base64(XOR), 113->152 bytes
+
+================================================================================
+[2026-05-29 16:29:49.020] REQUEST PUT /race/match/matchconfig
+  Headers:
+    Host: 192.168.1.4:9090
+    Accept: */*
+    User-Agent: Anansi/1.0
+    X-Game-Checksum: 31a74c2a4e80531660cf6d3f6987bbd3
+    Content-Length: 544
+  Body: NEwGTx8EDwlEVlVbUAUABFkRGiwJAltdEQACBwsERBcbTF1bVh9MBx0IC1IZSl9eHQxNGABSGw8XNGlWVRFOUA0LEUkXDTAJSQVOVgJUX1wRDwsZTQsDGVEDQFoKBkYRQlNdWVEURllQWBd+CkcMUA4PCkU9CwJIVw8MVA03BB8CTU4ISVYGDQB0CxkLRRpWPG1LKF9XFzJKSU9ATwwPCUVQU0wCTlZDAg4TBwlFGlYNC0B1Mk5AAgULEkkKC2YVBQxMHUNISS8LFwFPCw1MSAIQDRMETSo4AFIBAAEJAk5NEUZXQEdUHQUAHlQAARwOGl5ZXRBCXl9WGUJDAgIMGA1DESUEDmVETVRHFUNRXwFFTVZDBEtcDFUREAtQD0JQWFsVVVxVFVxXERBKSQIXBAEYBwodJ08JDABGGlZKSU9dKhwTRQAgCh8CTl4MUBYEBE4aDQlPGkMrA0NHAws1TBMQLxUCWE1EAx8HB0U9DEdXDhgKVlISEQtbU0RHDRkAEFBMSwITCQgIdgQeH0kOAEYaWlddCQ==
+
+================================================================================
+[2026-05-29 16:29:49.022] RESPONSE 200 for PUT /race/match/matchconfig
+  Content-Type: application/json
+  Body: {"code":200,"data":{},"errorMsg":"","result":0,"status":"ok"}
+
+
+================================================================================
+[2026-05-29 16:29:49.024]   [cipher] response re-encoded base64(XOR), 129->172 bytes
+
+================================================================================
+[2026-05-29 16:29:56.510] REQUEST PUT /city/chat/getmsg
+  Headers:
+    Host: 192.168.1.4:9090
+    Accept: */*
+    User-Agent: Anansi/1.0
+    X-Game-Checksum: f53bfce23b2d5828868e59e2b469d4e6
+    Content-Length: 604
+  Body: NEwGTx8EDwlEVlVbUAYZB2kQSl9dDEMLDUJHJgpHGkJFTBNZBAoCXFxCRkwVGxEgX0cmCkcaX1hCRVAYDlkHACAKRRpFFUlPSAQNCEUTTF5bSx5MFRwDTxYMUFFdVF9RVgcbBwJZJyFHVx9jTAFFBAANAnUQBkRQT05QEUxZAwgZWA8KFRUNXFREEVwMBRFAWBVSW19RFU1ZAU8AAggPCEU7DUxdAhcGVBstCBxFDFYMABtJAgk4WRELRhpLPW1ZKVQTUydQR0wJHBBBDgxMXgIRBkdBDCMPC0dQU0wCTlk6c1BZTgFFAgEGCGYAAQVAWU1UR2EcDRwISRBNDEQNCxJJFw0zCF5TBgELAkhLX1MCWE1UCx8MHRNBGRhHVxFWVFwQVlZTEl5CAhANE0kHBD8KDSwXURpAXF9cERINXFRNKVdQQkBYCgQVFg0RRkJZURJFXVBUEQVOQA5TCh0WSR0HOghLEQECXEtMSAIHDRcbSVImCh0CSFhCRUMcDk4MFwVMXQIzBwoKTAQ8AEEYLxYCRUxEER4MQwEoFklUR0sWGFVbDQYVQAxWDxctDFwCXksJBk0ROUUABgUKTlZSVlRdHA==
+
+================================================================================
+[2026-05-29 16:29:56.512] RESPONSE 200 for PUT /city/chat/getmsg
+  Content-Type: application/json
+  Body: {"code":200,"data":[],"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-05-29 16:29:56.513]   [cipher] response re-encoded base64(XOR), 113->152 bytes
+
+================================================================================
+[2026-05-29 16:30:17.610] REQUEST PUT /checkversion
+  Headers:
+    Host: 192.168.1.4:8080
+    Accept: */*
+    User-Agent: Anansi/1.0
+    X-Game-Checksum: 1bb607a53b6ffc0d331a860ccbf643b7
+    Content-Length: 620
+  Body: NEwGTx8EDwlEVlVbUBQIA0FWUkdeFllZXRkRCkNcE0RcQ1MWFVcNXl1aUw0SC1FcGEMKCldCQVBMSwICClIRGwYARRpEREcfRRcFCVc3CxZTAAFOVlJUExlNUAMLBBcWUkBTFUZQGAkRC0E9A0caQVhCRVYRHUkUDD8sAk5FVEECBQkaRUMKOwFJFktURRVFVxEADFddQxJRUA8eEQsNUEIQWFpQFUBdEVdHUF8DAlhKAgxNBCUIAltMB0kdF38VGkcMRgUXHQcGFidZEgxMXgInJUgsH3xZIwJeSwIIQxUDRVBPTgBOVkRHAUEPC04WAgoASHUhS0JFRBEZSQUMKAVNHQQcTxYCLgABUh0ACkUMVgtFFBsKCzFFBhsMAk5DVk4RVUxIAh0HTREbEUEJEVBRX1VLXwIGDBgNQxElBA5nK0xfAkdYVlZGEVYZERNVUEJGWQEOFQMOXRgXWlpXEUdcV1ZEVkMCFQwdF0kbBjECR0UBTF8CUEVMFEUGGUUQOw0WRRpEREcOSAACAkUNTF4CLgFPEwQAcAgACyocR19RRAcfBwdFPQxHVwx3C10XQAoMUhQQXEJLFw5cAlhKAgxNBDoJXlMGAQsCSFpXGl0=
+
+================================================================================
+[2026-05-29 16:30:17.611] PROBE /checkversion #6 variant=FULL_SCHEMA_FROM_BINARY
+
+================================================================================
+[2026-05-29 16:30:17.613] RESPONSE 200 for PUT /checkversion
+  Content-Type: application/json
+  Body: {"result": 0, "code": 200, "status": "ok", "errorMsg": "", "data": {"version": "1.1.38", "majorVersion": "1", "reviewVersion": "1.1.38", "isReview": false, "time": 1780061417, "majorUpgrade": false, "majorUpgradeUrl": "", "majorUpgradeText": "", "minorUpgrade": false, "isForceUpgrade": false, "loadingDoAllStep": 0, "loadingForceDeaf": false, "loadingTimeOut": 60, "minorVersion": "1.1.38", "inReview": false, "contentUrlPrefix": "", "upgradeVersionFile": "", "enableCP": false, "serverCtrlDebugSwitch": 0, "lastLoginPlayer": {"type": 0, "name": "", "password": ""}, "encryptMethod": 0, "preServerIdx": 0, "servers": [{"idx": 1, "status": 1, "port": 9090, "recommend": 1, "register": 0, "mergeServer": 0, "name": "Waker", "url": "192.168.1.4", "comment": "", "bucket": 0, "displayIdx": 1, "useHttps": 0, "crossPlatCode": "android"}]}}
+
+================================================================================
+[2026-05-29 16:30:17.615]   [cipher] response re-encoded base64(XOR), 894->1192 bytes
+
+================================================================================
+[2026-05-29 16:30:18.570] REQUEST PUT /api/authplayerkey
+  Headers:
+    Host: 192.168.1.4:8080
+    Accept: */*
+    User-Agent: Anansi/1.0
+    X-Game-Checksum: 71cde7c1026fc9fb7a2aac788c3d55c1
+    Content-Length: 596
+  Body: NEwGTx8EDwlEVlVbUAUNFlMDBxcJAltOTgACHwIEWRcbOh5QEU0aS1hCRlAYCRwIXmsKF0caX1taXhdFXRBXRBRCRUgRCQEIUkNWFwIRAgVUDwFSGUpfE1VNUB0LFxoVWTEgTF4NRURHCUs5BwZFJw0HAwJOTRVDTV0DRU1RBgsZVA5eHUQMWwdCQ11ZUhRGXhVTUF8AAlhKAgxBRSYKRxpQCgcTWSsOUkBeSwoCVh0LADlZEQlOGkM9KQ0oXxNDLkcMRg0dCA8JFlEaQAwARgxWBAQDSW1UR0UcRDs0AlhNRBcDBQZFMgkIBEwYTlYOYQEKF08bDUxLAhAKVg8KCzJFBhsMAkICVUxUFFBFTBNJGQpTFhMEHkUaRV9dXRBXXl0VVkJGRAwYSRcNKEEHKBZJVEdGQhhTDwtdGRcOXFhMfV8BQ0cLDFYUQ1oUQERZUBlFDEdBAhIJH19JAAAxTxkMAEUaVk0MRBoLFlYRGiwJVAJVXkkCEQEPCU4RAwJYUC4BCEcYDTUBQRgtHgJNTABFHwdDESEBAl5DSg5WUkEQQlddCldCTQoHVAxjTAJBHww4AlIHBk8cV1ZWGQkV
+
+================================================================================
+[2026-05-29 16:30:18.572] RESPONSE 200 for PUT /api/authplayerkey
+  Content-Type: application/json
+  Body: {"code":200,"data":{"id":"1001","keepLiveServerHost":"127.0.0.1","keepLiveServerPort":9090,"key":"waker-key","name":"Player","playerId":"1001","serverId":1,"sessionKey":"waker-key","token":"waker-key","uid":"1001","userId":"1001"},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-05-29 16:30:18.574]   [cipher] response re-encoded base64(XOR), 343->460 bytes

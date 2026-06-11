@@ -1,0 +1,81 @@
+
+========================================================================
+S_str_conv  thumb_veneer=0x00693c4c  ARM target=0x002c04c4
+========================================================================
+  0x002c04c4: add ip, pc, #4, #12
+  0x002c04c8: add ip, ip, #0x9a000
+  0x002c04cc: ldr pc, [ip, #0xef0]!
+  imm_a=4 imm_b=630784 imm_c=None
+  decode err: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+========================================================================
+D0  thumb_veneer=0x006bce9c  ARM target=0x002ff920
+========================================================================
+  0x002ff920: add ip, pc, #4, #12
+  0x002ff924: add ip, ip, #112, #20
+  0x002ff928: ldr pc, [ip, #0xc08]!
+  imm_a=4 imm_b=112 imm_c=None
+  decode err: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+========================================================================
+D1  thumb_veneer=0x006bcaac  ARM target=0x002ff410
+========================================================================
+  0x002ff410: add ip, pc, #4, #12
+  0x002ff414: add ip, ip, #112, #20
+  0x002ff418: ldr pc, [ip, #0xf68]!
+  imm_a=4 imm_b=112 imm_c=None
+  decode err: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+========================================================================
+D2  thumb_veneer=0x006bcabc  ARM target=0x002ff41c
+========================================================================
+  0x002ff41c: add ip, pc, #4, #12
+  0x002ff420: add ip, ip, #112, #20
+  0x002ff424: ldr pc, [ip, #0xf60]!
+  imm_a=4 imm_b=112 imm_c=None
+  decode err: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+========================================================================
+D3  thumb_veneer=0x006bcacc  ARM target=0x002ff428
+========================================================================
+  0x002ff428: add ip, pc, #4, #12
+  0x002ff42c: add ip, ip, #112, #20
+  0x002ff430: ldr pc, [ip, #0xf58]!
+  imm_a=4 imm_b=112 imm_c=None
+  decode err: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+========================================================================
+D4  thumb_veneer=0x006bcadc  ARM target=0x002ff434
+========================================================================
+  0x002ff434: add ip, pc, #4, #12
+  0x002ff438: add ip, ip, #112, #20
+  0x002ff43c: ldr pc, [ip, #0xf50]!
+  imm_a=4 imm_b=112 imm_c=None
+  decode err: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+========================================================================
+D5  thumb_veneer=0x006bcb9c  ARM target=0x002ff4c4
+========================================================================
+  0x002ff4c4: add ip, pc, #4, #12
+  0x002ff4c8: add ip, ip, #112, #20
+  0x002ff4cc: ldr pc, [ip, #0xef0]!
+  imm_a=4 imm_b=112 imm_c=None
+  decode err: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+========================================================================
+D6  thumb_veneer=0x006bcecc  ARM target=0x002ff944
+========================================================================
+  0x002ff944: add ip, pc, #4, #12
+  0x002ff948: add ip, ip, #112, #20
+  0x002ff94c: ldr pc, [ip, #0xbf0]!
+  imm_a=4 imm_b=112 imm_c=None
+  decode err: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+========================================================================
+D7  thumb_veneer=0x006bf62c  ARM target=0x00303acc
+========================================================================
+  0x00303acc: add ip, pc, #4, #12
+  0x00303ad0: add ip, ip, #0x6e000
+  0x00303ad4: ldr pc, [ip, #0x40]!
+  imm_a=4 imm_b=450560 imm_c=None
+  decode err: unsupported operand type(s) for +: 'int' and 'NoneType'

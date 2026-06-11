@@ -1,0 +1,279 @@
+=== ParseSysMsg / chat parser symbols ===
+  0x004b623c sz=0x2a _ZN11CMainScreen15UpdateTopScreenEv
+  0x00380bfc sz=0x9c _ZN13CDZ_TopScreenC1Ev
+  0x004bca84 sz=0x8 _ZN11CMainScreen12GetTopScreenEv
+  0x00593c20 sz=0x1a _ZN10CTopScreen22CancelSWFightCountDownEv
+  0x0059362e sz=0x2a _ZN10CTopScreen15GetScreenHeightEv
+  0x005935d8 sz=0x56 _ZN10CTopScreen16ClearRollingTextEv
+  0x00347edc sz=0x47c _ZN11CChatScreen8ParseMsgEPv
+  0x0034ae00 sz=0x418 _ZN11CChatScreen14ParsePulledMsgEPv
+  0x00593842 sz=0x38 _ZN10CTopScreen13SetBloodParamExx
+  0x0059387a sz=0x20 _ZN10CTopScreen23SetBloodModeToKingFightEv
+  0x00380bfc sz=0x9c _ZN13CDZ_TopScreenC2Ev
+  0x00590ba8 sz=0x148 _ZN10CTopScreenC2Ev
+  0x00729230 sz=0x150 _ZTV13CDZ_TopScreen
+  0x00380c98 sz=0x9c _ZN13CDZ_TopScreenD2Ev
+  0x00590cf0 sz=0xf8 _ZN10CTopScreenD2Ev
+  0x00380d34 sz=0xa _ZThn4_N13CDZ_TopScreenD1Ev
+  0x00380d40 sz=0x10 _ZThn272_N13CDZ_TopScreenD1Ev
+  0x00380d50 sz=0xc _ZN13CDZ_TopScreenD0Ev
+  0x00380d5c sz=0xe _ZThn4_N13CDZ_TopScreenD0Ev
+  0x00380d6c sz=0x14 _ZThn272_N13CDZ_TopScreenD0Ev
+  0x00380d80 sz=0x140 _ZN13CDZ_TopScreen11HandleEventEP6ngViewiii
+  0x00380ec0 sz=0x14 _ZThn4_N13CDZ_TopScreen11HandleEventEP6ngViewiii
+  0x00380ed4 sz=0x8 _ZN13CDZ_TopScreen7DismissEv
+  0x00380edc sz=0x8 _ZN13CDZ_TopScreen15UpdateTopScreenEv
+  0x00591090 sz=0x28 _ZN10CTopScreen9SetValuesEv
+  0x00380ee4 sz=0x10 _ZThn600_N13CDZ_TopScreen15UpdateTopScreenEv
+  0x00380ef4 sz=0x1c _ZN13CDZ_TopScreen8OnReturnEi
+  0x00380f10 sz=0x24 _ZThn596_N13CDZ_TopScreen8OnReturnEi
+  0x00380f34 sz=0x2 _ZN10CTopScreen13OnActionStartEv
+  0x00380f36 sz=0x2 _ZThn276_N10CTopScreen13OnActionStartEv
+  0x00729380 sz=0x28 _ZTI13CDZ_TopScreen
+  0x00591504 sz=0x3c4 _ZN10CTopScreen15GetAllTargetMapEv
+  0x00590e88 sz=0x18 _ZN10CTopScreen7DestroyEv
+  0x00590ea0 sz=0x1f0 _ZN10CTopScreen11ViewDidLoadEv
+  0x005918c8 sz=0x66c _ZN10CTopScreen12HandleUpdateEi
+  0x00593304 sz=0x1c _ZN10CTopScreen17OnReceiveResponseEiPv
+  0x00593330 sz=0x36 _ZN10CTopScreen14OnReceiveErrorEPKcS1_Pv
+  0x0059336e sz=0x2 _ZN10CTopScreen14OnNetworkErrorEi
+  0x00593374 sz=0x1a4 _ZN10CTopScreen16OnRollingOneTimeEv
+  0x0059389c sz=0xf4 _ZN10CTopScreen17OnSwitchFGSuccessEv
+  0x005937b4 sz=0x40 _ZN10CTopScreen14OnActionFinishEiiP6ngView
+  0x00593550 sz=0x10 _ZThn268_N10CTopScreen16OnRollingOneTimeEv
+  0x00593320 sz=0x10 _ZThn272_N10CTopScreen17OnReceiveResponseEiPv
+  0x00593366 sz=0x8 _ZThn272_N10CTopScreen14OnReceiveErrorEPKcS1_Pv
+  0x00593370 sz=0x2 _ZThn272_N10CTopScreen14OnNetworkErrorEi
+  0x005937f4 sz=0x10 _ZThn276_N10CTopScreen14OnActionFinishEiiP6ngView
+  0x00593990 sz=0x10 _ZThn280_N10CTopScreen17OnSwitchFGSuccessEv
+  0x0070dfb0 sz=0x10 _ZTS13CDZ_TopScreen
+  0x0070dfe0 sz=0x1b _ZTS24CTopScreenUpdateListener
+  0x007293b8 sz=0x8 _ZTI24CTopScreenUpdateListener
+  0x0074b770 sz=0x38 _ZTI10CTopScreen
+  0x00380c98 sz=0x9c _ZN13CDZ_TopScreenD1Ev
+  0x003ef0e8 sz=0x74 _ZN24CFinishActiveFloatScreen12HasTopScreenEv
+  0x0050a94c sz=0x48 _ZN14CPersActSubmit15IsNeedTopScreenEi
+  0x0059366c sz=0x14 _ZN10CTopScreen19SetBossBtnForceShowEh
+  0x00593658 sz=0x12 _ZN10CTopScreen14SetBossBtnShowEh
+  0x004287f4 sz=0x50 _ZN18CGuardUploadScreen18CheckOverTopScreenEP6ngView
+  0x00593804 sz=0x20 _ZN10CTopScreen20SetBloodModeToNormalEv
+  0x004862e2 sz=0x4e _ZN17CKingWalletScreen18CheckOverTopScreenEP6ngView
+  0x00590ba8 sz=0x148 _ZN10CTopScreenC1Ev
+  0x005910b8 sz=0xa8 _ZN10CTopScreen9SetAvatarEv
+  0x005928a4 sz=0xa8 _ZN10CTopScreen7OnTouchEii
+  0x005939a0 sz=0x22 _ZN10CTopScreen20GetTopViewByIconTypeEi
+  0x00593680 sz=0x12 _ZN10CTopScreen19InitBossBtnPositionEv
+  0x00593696 sz=0x4 _ZN10CTopScreen15GetVoiceBtnPosYEv
+  0x00593bdc sz=0x44 _ZN10CTopScreen20ShowSWFightCountDownExiPKc
+  0x005939c4 sz=0x218 _ZN10CTopScreen20ShowSWFightEndEffectEih
+  0x004c0aee sz=0x8 _ZN11CMainScreen17SetUpdateListenerEP24CTopScreenUpdateListener
+  0x004d5df4 sz=0x2a _ZN19CMercenaryGymScreen21NotifyBeforeTopScreenEP11ngTextField
+  0x004f9144 sz=0x8c _ZN11CFightMnger25_UI_RefreshTopScreenBloodEx
+  0x004fbbdc sz=0x12 _ZN11CFightRound23__RefreshTopScreenBloodEx
+  0x005705d4 sz=0x50 _ZN20CSetPersonDataScreen18CheckOverTopScreenEP6ngView
+  0x00593824 sz=0x1e _ZN10CTopScreen24SetBloodModeToSkyscraperEv
+  0x0059369c sz=0x118 _ZN10CTopScreen14DoAvatarMoveToEiiiiP18CTopActionListener
+  0x0074b640 sz=0x12c _ZTV10CTopScreen
+  0x00590e04 sz=0x56 _ZN10CTopScreen15ClearSysMsgTextEv
+  0x00590de8 sz=0xa _ZThn4_N10CTopScreenD1Ev
+  0x00590df4 sz=0x10 _ZThn272_N10CTopScreenD1Ev
+  0x00590e5a sz=0xc _ZN10CTopScreenD0Ev
+  0x00590e66 sz=0xe _ZThn4_N10CTopScreenD0Ev
+  0x00590e74 sz=0x14 _ZThn272_N10CTopScreenD0Ev
+  0x00591174 sz=0x134 _ZN10CTopScreen14InitImagePanalEv
+  0x0059294c sz=0xe8 _ZN10CTopScreen13SetSingLabelsEv
+  0x00592a34 sz=0x130 _ZN10CTopScreen6SetExpEv
+  0x00592ee8 sz=0x88 _ZN10CTopScreen9SetEnergyEv
+  0x00592b64 sz=0x80 _ZN10CTopScreen8SetNerveEv
+  0x00592be4 sz=0x18c _ZN10CTopScreen8SetBloodEv
+  0x00592e6c sz=0x7c _ZN10CTopScreen8SetMoralEv
+  0x00591160 sz=0x12 _ZN10CTopScreen13RequestSysMsgEv
+  0x005912a8 sz=0xa4 _ZN10CTopScreen13SetShowSpriteEv
+  0x0059134c sz=0x44 _ZN10CTopScreen12SetShowPanelEh
+  0x00591390 sz=0x10 _ZN10CTopScreen14GetPanelIfShowEv
+  0x005913a0 sz=0xa4 _ZN10CTopScreen12DoShowActionEv
+  0x00591444 sz=0xc0 _ZN10CTopScreen15DoDismissActionEv
+  0x00591f34 sz=0x304 _ZN10CTopScreen11UpdateTimesEv
+  0x00592262 sz=0x172 _ZN10CTopScreen11DoStrechOutEP12ngTouchInput
+  0x00592f70 sz=0x44 _ZN10CTopScreen16UpdateBloodTimesEv
+  0x00592238 sz=0x2a _ZN10CTopScreen10RequestMsgEv
+  0x005923d4 sz=0x260 _ZN10CTopScreen11HandleEventEP6ngViewiii
+  0x00592658 sz=0x238 _ZN10CTopScreen21ShowDetailInformationEP6ngView
+  0x00592634 sz=0x24 _ZN10CTopScreen15SetSwitchFGDataEi
+  0x00592890 sz=0x14 _ZThn4_N10CTopScreen11HandleEventEP6ngViewiii
+  0x00592d70 sz=0xfc _ZN10CTopScreen14GetFormatBloodEx
+  0x00592fb4 sz=0x184 _ZN10CTopScreen8ParseMsgEPv
+  0x00593138 sz=0x54 _ZN10CTopScreen9ShortTextER10ngStringV2
+  0x0059318c sz=0x178 _ZN10CTopScreen11ParseSysMsgEPv
+  0x00593518 sz=0x38 _ZN10CTopScreen17RemoveRollingTextEi
+  0x00593560 sz=0x78 _ZN10CTopScreen14SetRollingTextEv
+  0x00593692 sz=0x4 _ZN10CTopScreen18GetVoiceBtnVisibleEv
+  0x00716570 sz=0xd _ZTS10CTopScreen
+  0x00590cf0 sz=0xf8 _ZN10CTopScreenD1Ev
+
+===== _ZN10CTopScreen11ParseSysMsgEPv  va=0x0059318c len=0x178 =====
+  +0x00 f0b5     push   {r4, r5, r6, r7, lr}
+  +0x02 87b0     sub    sp, #0x1c
+  +0x04 0446     mov    r4, r0
+  +0x06 4868     ldr    r0, [r1, #4]
+  +0x08 4269     ldr    r2, [r0, #0x14] <ARRAY begin-iter(vtbl+0x14)>
+  +0x0a 081d     adds   r0, r1, #4
+  +0x0c 0025     movs   r5, #0
+  +0x0e 0395     str    r5, [sp, #0xc]
+  +0x10 2946     mov    r1, r5
+  +0x12 9047     blx    r2
+  +0x14 0646     mov    r6, r0
+  +0x16 0496     str    r6, [sp, #0x10]
+  +0x18 3068     ldr    r0, [r6]
+  +0x1a 8168     ldr    r1, [r0, #8]
+  +0x1c 3046     mov    r0, r6
+  +0x1e 8847     blx    r1
+  +0x20 0028     cmp    r0, #0
+  +0x22 00d1     bne    #0x5931b2
+  +0x24 94e0     b      #0x5932dc
+  +0x26 7720     movs   r0, #0x77
+  +0x28 8000     lsls   r0, r0, #2
+  +0x2a 2018     adds   r0, r4, r0
+  +0x2c 0290     str    r0, [sp, #8]
+  +0x2e 1f20     movs   r0, #0x1f
+  +0x30 0001     lsls   r0, r0, #4
+  +0x32 2018     adds   r0, r4, r0
+  +0x34 0190     str    r0, [sp, #4]
+  +0x36 494f     ldr    r7, [pc, #0x124]
+  +0x38 7f44     add    r7, pc
+  +0x3a 3068     ldr    r0, [r6]
+  +0x3c c168     ldr    r1, [r0, #0xc]
+  +0x3e 3046     mov    r0, r6
+  +0x40 8847     blx    r1
+  +0x42 0590     str    r0, [sp, #0x14] <ARRAY begin-iter(vtbl+0x14)>
+  +0x44 4020     movs   r0, #0x40
+  +0x46 fff0d3ff bl     #0x69317c -> __udivdi3+0x560
+  +0x4a 3e46     mov    r6, r7
+  +0x4c 0746     mov    r7, r0
+  +0x4e 0697     str    r7, [sp, #0x18]
+  +0x50 3d60     str    r5, [r7]
+  +0x52 bd60     str    r5, [r7, #8]
+  +0x54 fd60     str    r5, [r7, #0xc]
+  +0x56 3c46     mov    r4, r7
+  +0x58 1034     adds   r4, #0x10
+  +0x5a 2046     mov    r0, r4
+  +0x5c fff0c0fe bl     #0x692f6c -> __udivdi3+0x350
+  +0x60 3d46     mov    r5, r7
+  +0x62 2835     adds   r5, #0x28
+  +0x64 2846     mov    r0, r5
+  +0x66 fff0bbfe bl     #0x692f6c -> __udivdi3+0x350
+  +0x6a 3d48     ldr    r0, [pc, #0xf4]
+  +0x6c 8119     adds   r1, r0, r6 KEY="senderName"
+  +0x6e 059b     ldr    r3, [sp, #0x14] <ARRAY begin-iter(vtbl+0x14)>
+  +0x70 5868     ldr    r0, [r3, #4]
+  +0x72 026c     ldr    r2, [r0, #0x40] <OBJECT GetNode(vtbl+0x40)>
+  +0x74 1e1d     adds   r6, r3, #4
+  +0x76 3046     mov    r0, r6
+  +0x78 9047     blx    r2
+  +0x7a 0837     adds   r7, #8
+  +0x7c 0597     str    r7, [sp, #0x14] <ARRAY begin-iter(vtbl+0x14)>
+  +0x7e 039f     ldr    r7, [sp, #0xc]
+  +0x80 0028     cmp    r0, #0
+  +0x82 0cd0     beq    #0x59322a
+  +0x84 0430     adds   r0, #4
+  +0x86 0121     movs   r1, #1
+  +0x88 fff0dafe bl     #0x692fcc -> __udivdi3+0x3b0
+  +0x8c 0146     mov    r1, r0
+  +0x8e fa43     mvns   r2, r7
+  +0x90 2046     mov    r0, r4
+  +0x92 fff0ddfe bl     #0x692fdc -> __udivdi3+0x3c0
+  +0x96 2046     mov    r0, r4
+  +0x98 2146     mov    r1, r4
+  +0x9a 01f129fb bl     #0x69487c -> 0x69487c
+  +0x9e 3c46     mov    r4, r7
+  +0xa0 3048     ldr    r0, [pc, #0xc0]
+  +0xa2 344f     ldr    r7, [pc, #0xd0]
+  +0xa4 7f44     add    r7, pc
+  +0xa6 c119     adds   r1, r0, r7 KEY="content"
+  +0xa8 3068     ldr    r0, [r6]
+  +0xaa 026c     ldr    r2, [r0, #0x40] <OBJECT GetNode(vtbl+0x40)>
+  +0xac 3046     mov    r0, r6
+  +0xae 9047     blx    r2
+  +0xb0 0028     cmp    r0, #0
+  +0xb2 0cd0     beq    #0x59325a
+  +0xb4 0430     adds   r0, #4
+  +0xb6 0121     movs   r1, #1
+  +0xb8 fff0c2fe bl     #0x692fcc -> __udivdi3+0x3b0
+  +0xbc 0146     mov    r1, r0
+  +0xbe e243     mvns   r2, r4
+  +0xc0 2846     mov    r0, r5
+  +0xc2 fff0c5fe bl     #0x692fdc -> __udivdi3+0x3c0
+  +0xc6 2846     mov    r0, r5
+  +0xc8 2946     mov    r1, r5
+  +0xca 01f111fb bl     #0x69487c -> 0x69487c
+  +0xce 2648     ldr    r0, [pc, #0x98]
+  +0xd0 c119     adds   r1, r0, r7 KEY="createdAt"
+  +0xd2 3068     ldr    r0, [r6]
+  +0xd4 026c     ldr    r2, [r0, #0x40] <OBJECT GetNode(vtbl+0x40)>
+  +0xd6 3046     mov    r0, r6
+  +0xd8 9047     blx    r2
+  +0xda 0028     cmp    r0, #0
+  +0xdc 05d0     beq    #0x593276
+  +0xde 0830     adds   r0, #8
+  +0xe0 fff0cefe bl     #0x69300c -> __udivdi3+0x3f0
+  +0xe4 059a     ldr    r2, [sp, #0x14] <ARRAY begin-iter(vtbl+0x14)>
+  +0xe6 1060     str    r0, [r2]
+  +0xe8 5160     str    r1, [r2, #4]
+  +0xea 2048     ldr    r0, [pc, #0x80]
+  +0xec c119     adds   r1, r0, r7 KEY="id"
+  +0xee 3068     ldr    r0, [r6]
+  +0xf0 026c     ldr    r2, [r0, #0x40] <OBJECT GetNode(vtbl+0x40)>
+  +0xf2 3046     mov    r0, r6
+  +0xf4 9047     blx    r2
+  +0xf6 0246     mov    r2, r0
+  +0xf8 2546     mov    r5, r4
+  +0xfa e843     mvns   r0, r5
+  +0xfc 002a     cmp    r2, #0
+  +0xfe 0146     mov    r1, r0
+  +0x100 03d0     beq    #0x593296
+  +0x102 0832     adds   r2, #8
+  +0x104 1046     mov    r0, r2
+  +0x106 fff0bbfe bl     #0x69300c -> __udivdi3+0x3f0
+  +0x10a 069a     ldr    r2, [sp, #0x18]
+  +0x10c 1560     str    r5, [r2]
+  +0x10e 019c     ldr    r4, [sp, #4]
+  +0x110 2368     ldr    r3, [r4]
+  +0x112 0122     movs   r2, #1
+  +0x114 9842     cmp    r0, r3
+  +0x116 1346     mov    r3, r2
+  +0x118 049e     ldr    r6, [sp, #0x10]
+  +0x11a 00d9     bls    #0x5932aa
+  +0x11c 2b46     mov    r3, r5
+  +0x11e 2746     mov    r7, r4
+  +0x120 7c68     ldr    r4, [r7, #4]
+  +0x122 a142     cmp    r1, r4
+  +0x124 00dd     ble    #0x5932b4
+  +0x126 2a46     mov    r2, r5
+  +0x128 a142     cmp    r1, r4
+  +0x12a 00d0     beq    #0x5932ba
+  +0x12c 1346     mov    r3, r2
+  +0x12e 002b     cmp    r3, #0
+  +0x130 01d1     bne    #0x5932c2
+  +0x132 3860     str    r0, [r7]
+  +0x134 7960     str    r1, [r7, #4]
+  +0x136 0298     ldr    r0, [sp, #8]
+  +0x138 0699     ldr    r1, [sp, #0x18]
+  +0x13a 01f1a9f9 bl     #0x69461c -> 0x69461c
+  +0x13e 3068     ldr    r0, [r6]
+  +0x140 8168     ldr    r1, [r0, #8]
+  +0x142 3046     mov    r0, r6
+  +0x144 8847     blx    r1
+  +0x146 0028     cmp    r0, #0
+  +0x148 094f     ldr    r7, [pc, #0x24]
+  +0x14a 7f44     add    r7, pc
+  +0x14c 00d0     beq    #0x5932dc
+  +0x14e 74e7     b      #0x5931c6
+  +0x150 3068     ldr    r0, [r6]
+  +0x152 4169     ldr    r1, [r0, #0x14] <ARRAY begin-iter(vtbl+0x14)>
+  +0x154 3046     mov    r0, r6
+  +0x156 8847     blx    r1
+  +0x158 07b0     add    sp, #0x1c
+  +0x15a f0bd     pop    {r4, r5, r6, r7, pc}
+  +0x15c 5879     ldrb   r0, [r3, #5]
+  +0x15e 1c00     movs   r4, r3
+  +0x160 ded0     beq    #0x5932ac

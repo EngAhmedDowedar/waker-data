@@ -1,0 +1,368 @@
+--------- beginning of main
+06-11 03:45:06.952  4638  4638 I appproc : exec app_process! cmdline: /system/bin com.android.commands.am.Am start -n com.anansimobile.city_ar/com.anansimobile.city_ar.Main 
+06-11 03:45:06.952  4638  4638 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-11 03:45:06.967  4638  4638 D AndroidRuntime: CheckJNI is OFF
+06-11 03:45:07.081  4638  4638 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+06-11 03:45:07.125  4638  4638 D libnativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86
+06-11 03:45:07.125  4638  4638 D libnativebridge: call UnloadNativeBridge! state=1
+06-11 03:45:07.146  4638  4638 E memtrack: Couldn't load memtrack module (No such file or directory)
+06-11 03:45:07.146  4638  4638 E android.os.Debug: failed to load memtrack module: -2
+06-11 03:45:07.148  4638  4638 I Radio-JNI: register_android_hardware_Radio DONE
+06-11 03:45:07.185  4638  4638 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+--------- beginning of system
+06-11 03:45:07.191  1302  2911 I ActivityManager: START u0 {flg=0x10000000 cmp=com.anansimobile.city_ar/.Main} from uid 0 on display 0
+06-11 03:45:07.197  4638  4638 D AndroidRuntime: Shutting down VM
+06-11 03:45:07.199  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:44 android.app.ActivityThread.handleReceiver:3073 
+06-11 03:45:07.205  4650  4650 D libnativebridge: PreInitializeNativeBridge name=zygote instruction_set=arm
+06-11 03:45:07.205  4650  4650 V libnb   : enter native_bridge2_initialize /data/user/0/com.anansimobile.city_ar/code_cache arm
+06-11 03:45:07.209  4650  4650 D houdini : [4650] Initialize library(version: 7.1.1b_x.49852 RELEASE)... successfully.
+06-11 03:45:07.209  1302  2906 I ActivityManager: Start proc 4650:com.anansimobile.city_ar/u0a56 for activity com.anansimobile.city_ar/.Main
+06-11 03:45:07.250  2029  2029 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+06-11 03:45:07.250  2029  2029 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+06-11 03:45:07.255  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:53 android.app.ActivityThread.handleReceiver:3073 
+06-11 03:45:07.277  2029  4664 D AdvertisingIdClient: AdvertisingIdClient already created.
+06-11 03:45:07.277  2029  4664 D AdvertisingIdClient: AdvertisingIdClient is not bounded. Starting to bind it...
+06-11 03:45:07.281  2029  4664 D AdvertisingIdClient: AdvertisingIdClient is bounded
+06-11 03:45:07.282  1758  1918 D EGL_adreno: eglMakeCurrent: 0xb6f221a0: ver 3 1 (tinfo 0xa617fbd0)
+06-11 03:45:07.291  2029  4664 I AdvertisingIdClient: shouldSendLog 4580433
+06-11 03:45:07.291  2029  4664 I AdvertisingIdClient: GetInfoInternal elapse 14ms
+06-11 03:45:07.698  4650  4650 I FirebaseInitProvider: FirebaseApp initialization skipped (Waker patch)
+06-11 03:45:07.757  4650  4669 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+06-11 03:45:07.781  4650  4650 V libnb   : enter native_bridge2_isSupported /data/app/com.anansimobile.city_ar-1/lib/arm/libcity_ar.so
+06-11 03:45:07.781  4650  4650 V libnb   : enter native_bridge2_loadLibrary /data/app/com.anansimobile.city_ar-1/lib/arm/libcity_ar.so
+06-11 03:45:08.517  4650  4650 D houdini : [4650] Added shared library /data/app/com.anansimobile.city_ar-1/lib/arm/libcity_ar.so for ClassLoader by Native Bridge.
+06-11 03:45:08.517  4650  4650 V libnb   : enter native_bridge2_getTrampoline JNI_OnLoad, trampoline_addr 0x0
+06-11 03:45:08.569  4650  4650 D native_project_lib: [root_service_log] Callback Activity...
+06-11 03:45:08.612  4650  4650 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_RootActivity_setSystemUIFrame, trampoline_addr 0xb91bafc4
+06-11 03:45:08.961  4650  4650 I AppsFlyer_1.17: Start tracking package: com.anansimobile.city_ar
+06-11 03:45:08.966  4650  4691 I AppsFlyer_1.17-138708966: ******* sendTrackingWithEvent: Launch
+06-11 03:45:08.986  4650  4691 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+06-11 03:45:09.019  4650  4691 I AppsFlyer_1.17: WARNING:READ_PHONE_STATE is missing
+06-11 03:45:09.122  4650  4650 D FlurryAgent: Initializing Flurry session
+06-11 03:45:09.130  4650  4650 D FlurryAgent: New session
+06-11 03:45:09.132  4650  4650 I AppsFlyer_1.17: Start tracking package: com.anansimobile.city_ar
+06-11 03:45:09.135  4650  4650 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_RootActivity_onGameResume, trampoline_addr 0xb91baf8c
+06-11 03:45:09.141  4650  4699 I AppsFlyer_1.17-138709140: ******* sendTrackingWithEvent: Launch
+06-11 03:45:09.142  4650  4689 I FlurryAgent: Agent cache file doesn't exist.
+06-11 03:45:09.155  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:53 android.app.ActivityThread.handleReceiver:3073 
+06-11 03:45:09.156  4650  4689 D FlurryAgent: generating agent report
+06-11 03:45:09.164  4650  4689 I FlurryAgent: getting push token.
+06-11 03:45:09.166  4650  4689 D FlurryAgent: generated report of size 284 with 0 reports.
+06-11 03:45:09.169  4650  4689 I FlurryDataSenderBlockInfo: Writing FlurryDataSenderBlockInfo: /data/user/0/com.anansimobile.city_ar/files/.flurrydatasenderblock.ab584eef-36f5-4aaa-a2c2-74b6eead3849
+06-11 03:45:09.169  4650  4699 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+06-11 03:45:09.170  4650  4689 I FlurryDataSender: Number of not sent blocks = 1
+06-11 03:45:09.171  4650  4699 I AppsFlyer_1.17: WARNING:READ_PHONE_STATE is missing
+06-11 03:45:09.172  4650  4689 I FlurryDataSenderBlockInfo: Reading FlurryDataSenderBlockInfo: /data/user/0/com.anansimobile.city_ar/files/.flurrydatasenderblock.ab584eef-36f5-4aaa-a2c2-74b6eead3849
+06-11 03:45:09.173  4650  4689 I FlurryDataSender: FlurryDataSender: start upload data with id = ab584eef-36f5-4aaa-a2c2-74b6eead3849 to http://data.flurry.com/aap.do
+06-11 03:45:09.174  4650  4689 D FlurryAgent: Done sending initial agent report
+06-11 03:45:09.177  1302  1310 I art     : Background partial concurrent mark sweep GC freed 19222(840KB) AllocSpace objects, 14(280KB) LOS objects, 33% free, 9MB/14MB, paused 951us total 102.919ms
+06-11 03:45:09.182  4650  4701 I FlurryDataSenderIndex: write iter 0 dataLength = 36
+06-11 03:45:09.213  4650  4650 I HostConnection: HostConnection::HostConnection: pid=4650, tid=4650, this=0xb6f2ce80
+06-11 03:45:09.217  4650  4650 I         : fastpipe: Connect success
+06-11 03:45:09.217  4650  4650 D HostConnection: HostRPC::connect sucess: app=com.anansimobile.city_ar, pid=4650, tid=4650, this=0xa6a18440
+06-11 03:45:09.218  4650  4650 E HostConnection: /data/local/cfg-znz/gl_force format error! com.tencent.tmgp.trssj 5 
+06-11 03:45:09.219  4650  4650 E HostConnection: /data/local/cfg-znz/gl_force format error! com.huiqi.mrby gl
+06-11 03:45:09.219  4650  4650 E HostConnection: /data/local/cfg-znz/gl_force format error! aos.playpark.ygc gl
+06-11 03:45:09.219  4650  4650 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:com.anansimobile.city_ar
+06-11 03:45:09.221  4650  4650 I         : fastpipe: Connect success
+06-11 03:45:09.221  4650  4650 D HostConnection: recv ProcessPuidReply name=com.anansimobile.city_ar puid=10 g_u64CapsFlag=1d
+06-11 03:45:09.227  4650  4650 D native_project_lib: [root_service_log] RootService Created!~
+06-11 03:45:09.228  4650  4650 D native_project_lib: [root_service_log] RootService Start!~
+06-11 03:45:09.249  3517  3565 W Finsky  : [204] com.anansimobile.city_ar: No account found.
+06-11 03:45:09.249  3517  3565 I Finsky  : [204] Billing preferred account via installer for com.anansimobile.city_ar: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+06-11 03:45:09.252  1758  4649 I FA      : Application backgrounded at: timestamp_millis: 1781138707249
+06-11 03:45:09.304  4650  4671 D GraphRequest: Warning: Request without access token missing application ID or client token.
+06-11 03:45:09.319  4650  4700 I HostConnection: HostConnection::HostConnection: pid=4650, tid=4700, this=0xa6a1f0c0
+06-11 03:45:09.321  4650  4700 I         : fastpipe: Connect success
+06-11 03:45:09.321  4650  4700 D HostConnection: HostRPC::connect sucess: app=com.anansimobile.city_ar, pid=4650, tid=4700, this=0xa6b4bf80
+06-11 03:45:09.322  4650  4700 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:com.anansimobile.city_ar
+06-11 03:45:09.324  4650  4700 I OpenGLRenderer: Initialized EGL, version 1.4
+06-11 03:45:09.324  4650  4700 D OpenGLRenderer: Swap behavior 1
+06-11 03:45:09.324  4650  4686 I HostConnection: HostConnection::HostConnection: pid=4650, tid=4686, this=0xa6a3b540
+06-11 03:45:09.324  4650  4700 I EGL_adreno: eglCreateContext request GLES major-version=2
+06-11 03:45:09.326  4650  4686 I         : fastpipe: Connect success
+06-11 03:45:09.326  4650  4686 D HostConnection: HostRPC::connect sucess: app=com.anansimobile.city_ar, pid=4650, tid=4686, this=0xa6b60600
+06-11 03:45:09.327  4650  4686 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:com.anansimobile.city_ar
+06-11 03:45:09.346  4650  4700 D EGL_adreno: eglCreateContext: 0xbd70a900: maj 3 min 1 rcv 4
+06-11 03:45:09.368  4650  4686 D EGL_adreno: eglCreateContext: 0xb8f9eba0: maj 1 min 0 rcv 1
+06-11 03:45:09.385  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:45:09.388  4650  4700 D HostConnection: ExtendedRCEncoderContext GL_VERSION return OpenGL ES 3.1
+06-11 03:45:09.416  4650  4686 D EGL_adreno: eglMakeCurrent: 0xb8f9eba0: ver 1 0 (tinfo 0xbd705c00)
+06-11 03:45:09.421  4650  4686 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NDKRenderer_nativeInit, trampoline_addr 0xb91baf54
+06-11 03:45:09.436  4650  4700 E EGL_adreno: tid 4700: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+06-11 03:45:09.436  4650  4700 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xa6e02c40, error=EGL_BAD_MATCH
+06-11 03:45:09.444  4650  4686 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NDKRenderer_nativeResize, trampoline_addr 0xb91baf1c
+06-11 03:45:09.706  4650  4686 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NextGenEngine_bitmapDataDidLoad, trampoline_addr 0xb91baee4
+06-11 03:45:10.060  4650  4686 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NDKRenderer_nativeRender, trampoline_addr 0xb91baeac
+06-11 03:45:10.154  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:45:10.249  4650  4686 I engine  : [LoadingMnger] do step:1
+06-11 03:45:10.258  1302  1323 I ActivityManager: Displayed com.anansimobile.city_ar/.Main: +3s60ms
+06-11 03:45:10.280  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 03:45:10.285  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 03:45:10.945  1716  4447 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 4784148]
+06-11 03:45:11.003  1716  4447 W WakeLock: GCM_HB_ALARM release without a matched acquire! [CONTEXT service_id=259 ]
+06-11 03:45:11.622  4650  4672 W System.err: java.net.UnknownHostException: Unable to resolve host "data.flurry.com": No address associated with hostname
+06-11 03:45:11.628  4650  4672 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:125)
+06-11 03:45:11.628  4650  4672 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:74)
+06-11 03:45:11.628  4650  4672 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:752)
+06-11 03:45:11.628  4650  4672 W System.err: 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:142)
+06-11 03:45:11.628  4650  4672 W System.err: 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:169)
+06-11 03:45:11.628  4650  4672 W System.err: 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:124)
+06-11 03:45:11.628  4650  4672 W System.err: 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:366)
+06-11 03:45:11.628  4650  4672 W System.err: 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:560)
+06-11 03:45:11.628  4650  4672 W System.err: 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:492)
+06-11 03:45:11.628  4650  4672 W System.err: 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:470)
+06-11 03:45:11.628  4650  4672 W System.err: 	at com.flurry.android.FlurryDataSenderAsyncOperation.doInBackground(SourceFile:50)
+06-11 03:45:11.628  4650  4672 W System.err: 	at com.flurry.android.FlurryDataSenderAsyncOperation.doInBackground(SourceFile:17)
+06-11 03:45:11.628  4650  4672 W System.err: 	at android.os.AsyncTask$2.call(AsyncTask.java:305)
+06-11 03:45:11.628  4650  4672 W System.err: 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+06-11 03:45:11.628  4650  4672 W System.err: 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:243)
+06-11 03:45:11.628  4650  4672 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+06-11 03:45:11.628  4650  4672 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+06-11 03:45:11.628  4650  4672 W System.err: 	at java.lang.Thread.run(Thread.java:761)
+06-11 03:45:11.630  4650  4672 W System.err: Caused by: android.system.GaiException: android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)
+06-11 03:45:11.630  4650  4672 W System.err: 	at libcore.io.Posix.android_getaddrinfo(Native Method)
+06-11 03:45:11.630  4650  4672 W System.err: 	at libcore.io.ForwardingOs.android_getaddrinfo(ForwardingOs.java:55)
+06-11 03:45:11.630  4650  4672 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:106)
+06-11 03:45:11.630  4650  4672 W System.err: 	... 17 more
+06-11 03:45:11.630  4650  4650 E FlurryDataSender: --onServerError ab584eef-36f5-4aaa-a2c2-74b6eead3849
+06-11 03:45:12.019  4650  4669 D GraphRequest: Warning: Request without access token missing application ID or client token.
+06-11 03:45:12.080  1716  4447 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 5015283]
+06-11 03:45:16.070  4650  4691 D ApplicationLoaders: ignored Vulkan layer search path /data/app/com.google.android.gms-1/lib/x86:/data/app/com.google.android.gms-1/base.apk!/lib/x86:/data/app/com.google.android.gms-1/split_config.en.apk!/lib/x86:/data/app/com.google.android.gms-1/split_config.hdpi.apk!/lib/x86 for namespace 0xba583090
+06-11 03:45:16.072  4650  4699 W art     : Long monitor contention with owner pool-5-thread-1 (4691) at java.lang.Object dalvik.system.DexFile.openDexFileNative(java.lang.String, java.lang.String, int, java.lang.ClassLoader, dalvik.system.DexPathList$Element[])(DexFile.java:-2) waiters=0 in java.lang.ClassLoader android.app.LoadedApk.getClassLoader() for 6.876s
+06-11 03:45:16.072  4650  4686 W art     : Long monitor contention with owner pool-5-thread-1 (4691) at java.lang.Object dalvik.system.DexFile.openDexFileNative(java.lang.String, java.lang.String, int, java.lang.ClassLoader, dalvik.system.DexPathList$Element[])(DexFile.java:-2) waiters=1 in java.lang.ClassLoader android.app.LoadedApk.getClassLoader() for 5.822s
+06-11 03:45:16.181  4650  4699 W ResourceType: ResTable_typeSpec entry count inconsistent: given 112, previously 115
+06-11 03:45:16.181  4650  4686 W ResourceType: ResTable_typeSpec entry count inconsistent: given 112, previously 115
+06-11 03:45:16.181  4650  4691 W ResourceType: ResTable_typeSpec entry count inconsistent: given 112, previously 115
+06-11 03:45:16.185  4650  4686 W ResourceType: ResTable_typeSpec entry count inconsistent: given 4810, previously 5454
+06-11 03:45:16.185  4650  4699 W ResourceType: ResTable_typeSpec entry count inconsistent: given 4810, previously 5454
+06-11 03:45:16.186  4650  4691 W ResourceType: ResTable_typeSpec entry count inconsistent: given 4810, previously 5454
+06-11 03:45:16.186  4650  4686 W ResourceType: ResTable_typeSpec entry count inconsistent: given 3589, previously 3610
+06-11 03:45:16.186  4650  4699 W ResourceType: ResTable_typeSpec entry count inconsistent: given 3589, previously 3610
+06-11 03:45:16.186  4650  4691 W ResourceType: ResTable_typeSpec entry count inconsistent: given 3589, previously 3610
+06-11 03:45:16.188  4650  4699 W ResourceType: ResTable_typeSpec entry count inconsistent: given 235, previously 240
+06-11 03:45:16.188  4650  4686 W ResourceType: ResTable_typeSpec entry count inconsistent: given 235, previously 240
+06-11 03:45:16.188  4650  4699 W ResourceType: ResTable_typeSpec entry count inconsistent: given 508, previously 5852
+06-11 03:45:16.188  4650  4686 W ResourceType: ResTable_typeSpec entry count inconsistent: given 508, previously 5852
+06-11 03:45:16.188  4650  4691 W ResourceType: ResTable_typeSpec entry count inconsistent: given 235, previously 240
+06-11 03:45:16.188  4650  4691 W ResourceType: ResTable_typeSpec entry count inconsistent: given 508, previously 5852
+06-11 03:45:16.297  4650  4699 D AppsFlyer_1.17: AppsFlyer: first launch detected
+06-11 03:45:16.302  4650  4691 I AppsFlyer_1.17: AppsFlyer: first launch date: 2026-06-11_0345+0300
+06-11 03:45:16.306  4650  4699 I AppsFlyer_1.17: AppsFlyer: first launch date: 2026-06-11_0345+0300
+06-11 03:45:16.594  4650  4686 I engine  : [LoadingMnger] do step:4
+06-11 03:45:16.675  4650  4686 I engine  : [LoadingMnger] do step:5
+06-11 03:45:17.994  4650  4686 I engine  : [LoadingMnger] do step:6
+06-11 03:45:18.675  4650  4686 I engine  : [LoadingMnger] do step:7
+06-11 03:45:18.846  4650  4686 D FlurryAgent: Event count incremented: new_login_step
+06-11 03:45:19.289  2029  2029 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+06-11 03:45:22.722  4650  4657 I art     : Debugger is no longer active
+06-11 03:45:22.723  4650  4657 I art     : Starting a blocking GC Instrumentation
+06-11 03:45:36.047  4650  4686 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NGGLSurfaceView_onTouchBegin, trampoline_addr 0xb91bae74
+06-11 03:45:36.134  4650  4686 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NGGLSurfaceView_onTouchMoved, trampoline_addr 0xb91bae3c
+06-11 03:45:36.220  4650  4686 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NGGLSurfaceView_onTouchEnd, trampoline_addr 0xb91bae04
+06-11 03:45:36.221  4650  4686 D FlurryAgent: Event count incremented: Statistics
+06-11 03:45:36.407  4650  4686 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NGStringHelper_UpdateLineHeight, trampoline_addr 0xb91badcc
+06-11 03:45:36.410  4650  4686 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NGStringHelper_AddStringLine, trampoline_addr 0xb91bad94
+06-11 03:45:36.475  4650  4686 D FlurryAgent: Event count incremented: login_step
+06-11 03:45:38.283  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 03:45:38.284  4650  4650 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+06-11 03:45:38.299  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 03:45:38.301  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 03:45:38.305  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 03:45:38.369  1302  2893 D NotificationService: notify pkg=android pid=1302
+06-11 03:45:38.372  1302  2893 D NotificationService: notify init pkg=android
+06-11 03:45:38.375  1302  2893 W System.err: org.json.JSONException: Value at 94 is null.
+06-11 03:45:38.381  1302  2893 W System.err: 	at org.json.JSONArray.get(JSONArray.java:289)
+06-11 03:45:38.381  1302  2893 W System.err: 	at org.json.JSONArray.getString(JSONArray.java:462)
+06-11 03:45:38.381  1302  2893 W System.err: 	at com.android.server.notification.NotificationManagerService.notifyFilters(NotificationManagerService.java:2555)
+06-11 03:45:38.381  1302  2893 W System.err: 	at com.android.server.notification.NotificationManagerService.enqueueNotificationInternal(NotificationManagerService.java:2582)
+06-11 03:45:38.381  1302  2893 W System.err: 	at com.android.server.notification.NotificationManagerService$5.enqueueNotificationWithTag(NotificationManagerService.java:1379)
+06-11 03:45:38.381  1302  2893 W System.err: 	at android.app.NotificationManager.notifyAsUser(NotificationManager.java:313)
+06-11 03:45:38.381  1302  2893 W System.err: 	at com.android.server.InputMethodManagerService.updateSystemUiLocked(InputMethodManagerService.java:1849)
+06-11 03:45:38.381  1302  2893 W System.err: 	at com.android.server.InputMethodManagerService.setImeWindowStatus(InputMethodManagerService.java:1800)
+06-11 03:45:38.381  1302  2893 W System.err: 	at com.android.internal.view.IInputMethodManager$Stub.onTransact(IInputMethodManager.java:304)
+06-11 03:45:38.381  1302  2893 W System.err: 	at com.android.server.InputMethodManagerService.onTransact(InputMethodManagerService.java:1065)
+06-11 03:45:38.381  1302  2893 W System.err: 	at android.os.Binder.execTransact(Binder.java:565)
+06-11 03:45:38.381  1302  2893 D NotificationService: notifyFilters Exception!
+06-11 03:45:38.437  1933  1933 I HostConnection: HostConnection::HostConnection: pid=1933, tid=1933, this=0xc7c2ae80
+06-11 03:45:38.443  1933  1933 I         : fastpipe: Connect success
+06-11 03:45:38.443  1933  1933 D HostConnection: HostRPC::connect sucess: app=com.android.inputmethod.pinyin, pid=1933, tid=1933, this=0xb8f5b280
+06-11 03:45:38.445  1933  1933 E HostConnection: /data/local/cfg-znz/gl_force format error! com.tencent.tmgp.trssj 5 
+06-11 03:45:38.445  1933  1933 E HostConnection: /data/local/cfg-znz/gl_force format error! com.huiqi.mrby gl
+06-11 03:45:38.445  1933  1933 E HostConnection: /data/local/cfg-znz/gl_force format error! aos.playpark.ygc gl
+06-11 03:45:38.445  1933  1933 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:com.android.inputmethod.pinyin
+06-11 03:45:38.447  1933  1933 I         : fastpipe: Connect success
+06-11 03:45:38.449  1933  1933 D HostConnection: recv ProcessPuidReply name=com.android.inputmethod.pinyin puid=11 g_u64CapsFlag=1d
+06-11 03:45:38.454  1302  1313 D NotificationService: notify pkg=android pid=1302
+06-11 03:45:38.473  1302  1367 D NotificationSQLiteLog: Pruned event entries: 11
+06-11 03:45:38.485  1933  4713 I HostConnection: HostConnection::HostConnection: pid=1933, tid=4713, this=0xbd75c340
+06-11 03:45:38.488  1933  4713 I         : fastpipe: Connect success
+06-11 03:45:38.489  1933  4713 D HostConnection: HostRPC::connect sucess: app=com.android.inputmethod.pinyin, pid=1933, tid=4713, this=0xa8186940
+06-11 03:45:38.490  1933  4713 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:com.android.inputmethod.pinyin
+06-11 03:45:38.492  1933  4713 I OpenGLRenderer: Initialized EGL, version 1.4
+06-11 03:45:38.492  1933  4713 D OpenGLRenderer: Swap behavior 1
+06-11 03:45:38.492  1933  4713 I EGL_adreno: eglCreateContext request GLES major-version=2
+06-11 03:45:38.515  1933  4713 D EGL_adreno: eglCreateContext: 0xbd70a600: maj 3 min 1 rcv 4
+06-11 03:45:38.531  1933  4713 D EGL_adreno: eglMakeCurrent: 0xbd70a600: ver 3 1 (tinfo 0xb6f07020)
+06-11 03:45:38.536  1933  4713 D HostConnection: ExtendedRCEncoderContext GL_VERSION return OpenGL ES 3.1
+06-11 03:45:38.550  1933  4713 E EGL_adreno: tid 4713: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+06-11 03:45:38.550  1933  4713 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xb6e4d880, error=EGL_BAD_MATCH
+06-11 03:45:38.830  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:878 android.content.ContextWrapper.sendBroadcast:421 com.android.coreservice.CoreService.sendImeAction:435 com.android.coreservice.HostService.onReceived:303 com.android.coreservice.HostService.onData:225 
+06-11 03:45:38.836  4650  4650 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NGTextInputConn_nativeCommitAllText, trampoline_addr 0xb91bad5c
+06-11 03:45:38.973  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:878 android.content.ContextWrapper.sendBroadcast:421 com.android.coreservice.CoreService.sendImeAction:435 com.android.coreservice.HostService.onReceived:303 com.android.coreservice.HostService.onData:225 
+06-11 03:45:39.123  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:878 android.content.ContextWrapper.sendBroadcast:421 com.android.coreservice.CoreService.sendImeAction:435 com.android.coreservice.HostService.onReceived:303 com.android.coreservice.HostService.onData:225 
+06-11 03:45:40.602  1933  1933 W InputService: onEvaluateInputViewShown inputType=0 imeOptions=0
+06-11 03:45:40.603  1933  1933 W InputService: onEvaluateInputViewShown inputType=0 imeOptions=0
+06-11 03:45:40.604  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 03:45:40.604  1302  1676 D NotificationService: notify pkg=android pid=1302
+06-11 03:45:40.612  4650  4650 W System.err: java.lang.Exception: show AlertDialog! title=
+06-11 03:45:40.614  1735  1735 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1358 android.content.ContextWrapper.startService:613 android.content.ContextWrapper.startService:613 com.android.coreservice.CoreBroadcastReceiver.onReceive:69 android.app.ActivityThread.handleReceiver:3073 
+06-11 03:45:40.627  4650  4650 W System.err: 	at android.app.AlertDialog.show(AlertDialog.java:134)
+06-11 03:45:40.628  4650  4650 W System.err: 	at com.anansimobile.nge.NGAlertDialog.handleMessage(NGAlertDialog.java:127)
+06-11 03:45:40.628  4650  4650 W System.err: 	at com.anansimobile.nge.NGMsgHandler.handleMessage(RootActivity.java:1028)
+06-11 03:45:40.628  4650  4650 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+06-11 03:45:40.628  4650  4650 W System.err: 	at android.os.Looper.loop(Looper.java:154)
+06-11 03:45:40.628  4650  4650 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6190)
+06-11 03:45:40.628  4650  4650 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+06-11 03:45:40.628  4650  4650 W System.err: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:892)
+06-11 03:45:40.628  4650  4650 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:782)
+06-11 03:45:40.713  4650  4650 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+06-11 03:45:40.809  4650  4700 E EGL_adreno: tid 4700: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+06-11 03:45:40.809  4650  4700 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xa6f20a00, error=EGL_BAD_MATCH
+06-11 03:45:40.818  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:45:40.868  1302  1310 I art     : Background partial concurrent mark sweep GC freed 33649(1430KB) AllocSpace objects, 17(340KB) LOS objects, 33% free, 9MB/14MB, paused 1.280ms total 145.582ms
+06-11 03:45:40.888  4650  4686 I engine  : [LoadingMnger] do step:8
+06-11 03:45:40.987  4650  4686 I engine  : [LoadingMnger] do step:9
+06-11 03:45:40.992  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:45:41.035  1302  1676 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@cf68e1c attribute=null, token = android.os.BinderProxy@5172b60
+06-11 03:45:41.208  4650  4686 I engine  : [LoadingMnger] do step:10
+06-11 03:45:41.343  4650  4650 W System.err: java.lang.Exception: show AlertDialog! title=
+06-11 03:45:41.343  4650  4650 W System.err: 	at android.app.AlertDialog.show(AlertDialog.java:134)
+06-11 03:45:41.344  4650  4650 W System.err: 	at android.app.AlertDialog$Builder.show(AlertDialog.java:1125)
+06-11 03:45:41.344  4650  4650 W System.err: 	at com.anansimobile.nge.NGAlertDialog.handleMessage(NGAlertDialog.java:100)
+06-11 03:45:41.344  4650  4650 W System.err: 	at com.anansimobile.nge.NGMsgHandler.handleMessage(RootActivity.java:1028)
+06-11 03:45:41.344  4650  4650 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+06-11 03:45:41.344  4650  4650 W System.err: 	at android.os.Looper.loop(Looper.java:154)
+06-11 03:45:41.344  4650  4650 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6190)
+06-11 03:45:41.344  4650  4650 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+06-11 03:45:41.344  4650  4650 W System.err: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:892)
+06-11 03:45:41.344  4650  4650 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:782)
+06-11 03:45:41.440  4650  4700 E EGL_adreno: tid 4700: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+06-11 03:45:41.440  4650  4700 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xa6fcef20, error=EGL_BAD_MATCH
+06-11 03:45:41.457  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:45:42.898  4650  4650 V libnb   : enter native_bridge2_getTrampoline Java_com_anansimobile_nge_NGAlertDialog_onAlertDialogButtonClick, trampoline_addr 0xb91bad24
+06-11 03:45:42.901  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:45:42.914  1117  1138 D audio_hw_hal: raw_start_output_stream, stream=0xc6f05140, sampleRate=48000, channel=2, bps=16, bufSize=4096
+06-11 03:45:42.915  1302  2906 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@55f31ab attribute=null, token = android.os.BinderProxy@5172b60
+06-11 03:45:46.025  1117  1138 D audio_hw_hal: log_func, out_standby
+06-11 03:45:46.025  1117  1138 D audio_hw_hal: raw_close_output_stream, dev=0xc6f0a0c0, stream =0xc6f05140
+06-11 03:45:46.025  1117  1138 D audio_hw_hal: raw_close_output_stream, stream=0xc6f05140,  success!
+06-11 03:46:00.117  4650  4650 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+06-11 03:46:00.134  4650  4650 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+06-11 03:46:00.134  4650  4650 D native_project_lib: [root_service_log] notification ignored, activity in foreground!~
+06-11 03:46:01.174  4650  4686 I engine  : [WARNING][LoadingMnger] step time out:10,now try reload this step 
+06-11 03:46:01.175  4650  4686 I engine  : [LoadingMnger] do step:10
+06-11 03:46:01.217  4650  4650 W System.err: java.lang.Exception: show AlertDialog! title=
+06-11 03:46:01.217  4650  4650 W System.err: 	at android.app.AlertDialog.show(AlertDialog.java:134)
+06-11 03:46:01.217  4650  4650 W System.err: 	at android.app.AlertDialog$Builder.show(AlertDialog.java:1125)
+06-11 03:46:01.217  4650  4650 W System.err: 	at com.anansimobile.nge.NGAlertDialog.handleMessage(NGAlertDialog.java:100)
+06-11 03:46:01.217  4650  4650 W System.err: 	at com.anansimobile.nge.NGMsgHandler.handleMessage(RootActivity.java:1028)
+06-11 03:46:01.217  4650  4650 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+06-11 03:46:01.217  4650  4650 W System.err: 	at android.os.Looper.loop(Looper.java:154)
+06-11 03:46:01.217  4650  4650 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6190)
+06-11 03:46:01.217  4650  4650 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+06-11 03:46:01.217  4650  4650 W System.err: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:892)
+06-11 03:46:01.217  4650  4650 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:782)
+06-11 03:46:01.275  4650  4700 E EGL_adreno: tid 4700: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+06-11 03:46:01.275  4650  4700 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xa6fe6040, error=EGL_BAD_MATCH
+06-11 03:46:01.286  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:46:06.314  1117  1138 D audio_hw_hal: raw_start_output_stream, stream=0xc6f05140, sampleRate=48000, channel=2, bps=16, bufSize=4096
+06-11 03:46:06.314  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:46:06.315  1117  1138 D AudioFlinger: mixer(0xc5a80000) throttle end: throttle time(9)
+06-11 03:46:06.351  1302  2907 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@c4ad9c6 attribute=null, token = android.os.BinderProxy@5172b60
+06-11 03:46:09.419  1117  1138 D audio_hw_hal: log_func, out_standby
+06-11 03:46:09.419  1117  1138 D audio_hw_hal: raw_close_output_stream, dev=0xc6f0a0c0, stream =0xc6f05140
+06-11 03:46:09.420  1117  1138 D audio_hw_hal: raw_close_output_stream, stream=0xc6f05140,  success!
+06-11 03:46:21.196  4650  4686 I engine  : [WARNING][LoadingMnger] step time out:10,now try reload this step 
+06-11 03:46:21.198  4650  4686 I engine  : [LoadingMnger] do step:10
+06-11 03:46:21.283  4650  4650 W System.err: java.lang.Exception: show AlertDialog! title=
+06-11 03:46:21.284  4650  4650 W System.err: 	at android.app.AlertDialog.show(AlertDialog.java:134)
+06-11 03:46:21.284  4650  4650 W System.err: 	at android.app.AlertDialog$Builder.show(AlertDialog.java:1125)
+06-11 03:46:21.284  4650  4650 W System.err: 	at com.anansimobile.nge.NGAlertDialog.handleMessage(NGAlertDialog.java:100)
+06-11 03:46:21.284  4650  4650 W System.err: 	at com.anansimobile.nge.NGMsgHandler.handleMessage(RootActivity.java:1028)
+06-11 03:46:21.284  4650  4650 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+06-11 03:46:21.284  4650  4650 W System.err: 	at android.os.Looper.loop(Looper.java:154)
+06-11 03:46:21.284  4650  4650 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6190)
+06-11 03:46:21.284  4650  4650 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+06-11 03:46:21.284  4650  4650 W System.err: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:892)
+06-11 03:46:21.284  4650  4650 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:782)
+06-11 03:46:21.353  4650  4700 E EGL_adreno: tid 4700: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+06-11 03:46:21.354  4650  4700 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xa6f054a0, error=EGL_BAD_MATCH
+06-11 03:46:21.366  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:46:26.636  1302  1358 D WifiStateMachine: setScanResults mScanResults.size=1
+06-11 03:46:41.241  4650  4686 I engine  : [WARNING][LoadingMnger] step time out:10,now try reload this step 
+06-11 03:46:41.242  4650  4686 I engine  : [LoadingMnger] do step:10
+06-11 03:46:41.284  4650  4650 W System.err: java.lang.Exception: show AlertDialog! title=
+06-11 03:46:41.284  4650  4650 W System.err: 	at android.app.AlertDialog.show(AlertDialog.java:134)
+06-11 03:46:41.284  4650  4650 W System.err: 	at android.app.AlertDialog$Builder.show(AlertDialog.java:1125)
+06-11 03:46:41.285  4650  4650 W System.err: 	at com.anansimobile.nge.NGAlertDialog.handleMessage(NGAlertDialog.java:100)
+06-11 03:46:41.285  4650  4650 W System.err: 	at com.anansimobile.nge.NGMsgHandler.handleMessage(RootActivity.java:1028)
+06-11 03:46:41.285  4650  4650 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+06-11 03:46:41.285  4650  4650 W System.err: 	at android.os.Looper.loop(Looper.java:154)
+06-11 03:46:41.285  4650  4650 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6190)
+06-11 03:46:41.285  4650  4650 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+06-11 03:46:41.285  4650  4650 W System.err: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:892)
+06-11 03:46:41.285  4650  4650 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:782)
+06-11 03:46:41.394  4650  4700 E EGL_adreno: tid 4700: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+06-11 03:46:41.394  4650  4700 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xa69eb460, error=EGL_BAD_MATCH
+06-11 03:46:41.407  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:46:41.465  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:46:42.504  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:47:00.168  4650  4650 D native_project_lib: [root_service_log] TimeTickReceiver.onReceive()...
+06-11 03:47:00.182  4650  4650 D native_project_lib: [root_service_log] saved callback activity class name: com.anansimobile.city_ar.Main
+06-11 03:47:00.182  4650  4650 D native_project_lib: [root_service_log] notification ignored, activity in foreground!~
+06-11 03:47:00.232  1302  1310 I art     : Background partial concurrent mark sweep GC freed 35676(1438KB) AllocSpace objects, 17(340KB) LOS objects, 33% free, 9MB/14MB, paused 1.713ms total 124.210ms
+06-11 03:47:01.271  4650  4686 I engine  : [WARNING][LoadingMnger] step time out:10,now try reload this step 
+06-11 03:47:01.271  4650  4686 I engine  : [LoadingMnger] do step:10
+06-11 03:47:01.316  4650  4650 W System.err: java.lang.Exception: show AlertDialog! title=
+06-11 03:47:01.317  4650  4650 W System.err: 	at android.app.AlertDialog.show(AlertDialog.java:134)
+06-11 03:47:01.317  4650  4650 W System.err: 	at android.app.AlertDialog$Builder.show(AlertDialog.java:1125)
+06-11 03:47:01.317  4650  4650 W System.err: 	at com.anansimobile.nge.NGAlertDialog.handleMessage(NGAlertDialog.java:100)
+06-11 03:47:01.317  4650  4650 W System.err: 	at com.anansimobile.nge.NGMsgHandler.handleMessage(RootActivity.java:1028)
+06-11 03:47:01.317  4650  4650 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+06-11 03:47:01.317  4650  4650 W System.err: 	at android.os.Looper.loop(Looper.java:154)
+06-11 03:47:01.317  4650  4650 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6190)
+06-11 03:47:01.317  4650  4650 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+06-11 03:47:01.317  4650  4650 W System.err: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:892)
+06-11 03:47:01.317  4650  4650 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:782)
+06-11 03:47:01.410  4650  4700 E EGL_adreno: tid 4700: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+06-11 03:47:01.410  4650  4700 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xa69eb4e0, error=EGL_BAD_MATCH
+06-11 03:47:01.428  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:47:01.483  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:47:02.548  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:47:07.236  1716  1716 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.presencemanager.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+06-11 03:47:07.238  1716  1716 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.presencemanager.service.INTERNAL_IDENTITY dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+06-11 03:47:07.243  2029  2029 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+06-11 03:47:15.581  1716  4447 I art     : Starting a blocking GC Explicit
+06-11 03:47:15.720  1716  4447 I art     : Explicit concurrent mark sweep GC freed 36253(1737KB) AllocSpace objects, 2(88KB) LOS objects, 40% free, 12MB/20MB, paused 974us total 136.479ms
+06-11 03:47:21.291  4650  4686 I engine  : [WARNING][LoadingMnger] step time out:10,now try reload this step 
+06-11 03:47:21.292  4650  4686 I engine  : [LoadingMnger] do step:10
+06-11 03:47:21.334  4650  4650 W System.err: java.lang.Exception: show AlertDialog! title=
+06-11 03:47:21.335  4650  4650 W System.err: 	at android.app.AlertDialog.show(AlertDialog.java:134)
+06-11 03:47:21.335  4650  4650 W System.err: 	at android.app.AlertDialog$Builder.show(AlertDialog.java:1125)
+06-11 03:47:21.335  4650  4650 W System.err: 	at com.anansimobile.nge.NGAlertDialog.handleMessage(NGAlertDialog.java:100)
+06-11 03:47:21.335  4650  4650 W System.err: 	at com.anansimobile.nge.NGMsgHandler.handleMessage(RootActivity.java:1028)
+06-11 03:47:21.335  4650  4650 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+06-11 03:47:21.335  4650  4650 W System.err: 	at android.os.Looper.loop(Looper.java:154)
+06-11 03:47:21.335  4650  4650 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6190)
+06-11 03:47:21.335  4650  4650 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+06-11 03:47:21.335  4650  4650 W System.err: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:892)
+06-11 03:47:21.335  4650  4650 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:782)
+06-11 03:47:21.443  4650  4700 E EGL_adreno: tid 4700: eglSurfaceAttrib(1338): error 0x3009 (EGL_BAD_MATCH)
+06-11 03:47:21.443  4650  4700 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xa1d16660, error=EGL_BAD_MATCH
+06-11 03:47:21.458  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:47:21.516  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:47:22.586  4650  4700 D EGL_adreno: eglMakeCurrent: 0xbd70a900: ver 3 1 (tinfo 0xb6f7fb00)
+06-11 03:47:22.703  2029  4406 I art     : Starting a blocking GC Explicit
+06-11 03:47:22.841  2029  4406 I art     : Explicit concurrent mark sweep GC freed 770(34KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 13MB/18MB, paused 901us total 138.064ms
+06-11 03:47:33.309  1716  1716 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }

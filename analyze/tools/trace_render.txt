@@ -1,0 +1,22 @@
+========================================================================
+(1) JNI-bound symbols in libcity_ar.so
+========================================================================
+  total Java_* symbols: 50
+    va=0x005f4505  size=   132  Java_com_anansimobile_nge_NDKRenderer_nativeInit
+    va=0x005f4589  size=   392  Java_com_anansimobile_nge_NDKRenderer_nativeResize
+    va=0x005f4711  size=   476  Java_com_anansimobile_nge_NDKRenderer_nativeRender
+    va=0x005f48ed  size=     2  Java_com_anansimobile_nge_NDKRenderer_nativeDone
+    va=0x005f5087  size=    68  Java_com_anansimobile_nge_NGTextInputConn_nativeCommitText
+    va=0x005f5115  size=    84  Java_com_anansimobile_nge_NGTextInputConn_nativeSendKeyEvent
+    va=0x005f5169  size=    64  Java_com_anansimobile_nge_NGTextInputConn_nativeCommitAllText
+  -- only render/device related shown; others omitted.
+
+  nativeRender entry: Java_com_anansimobile_nge_NDKRenderer_nativeRender
+    va=0x005f4710  size=476
+
+========================================================================
+(2) vtables containing &ngDeviceAndroid::LaunchURL (0x5efb9c)
+========================================================================
+  (no occurrences of LaunchURL VA found in data sections)
+
+  Reconstructed vtable around each hit (slot index of LaunchURL):

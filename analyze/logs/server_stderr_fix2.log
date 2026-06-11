@@ -1,0 +1,30 @@
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8992
+ * Running on http://192.168.1.3:8992
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9090
+ * Running on http://192.168.1.3:9090
+Press CTRL+C to quit
+Press CTRL+C to quit
+192.168.1.3 - - [11/Jun/2026 14:01:18] "PUT /checkversion HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:02:17] "GET /policy.html HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:02:17] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:07:32] "GET /policy.html HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:07:33] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:08:36] "PUT /api/connect HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:08:37] "PUT /api/connect HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:08:37] "PUT /city/impart HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:08:37] "PUT /city/impart HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:08:37] "PUT /city/connect/getplayerlist HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:08:37] "PUT /city/connect/create HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:08:37] "PUT /city/connect/connect HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:08:41] "PUT /city/chat/getsysmsgs HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:08:41] "PUT /city/monthCard/enterMatchCard HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:08:43] "PUT /race/match/matchconfig HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:08:50] "PUT /city/airline/airlines HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:08:53] "PUT /city/gym/enter HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:09:02] "PUT /city/gang/randomgangs HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:09:07] "PUT /city/hospital/patients HTTP/1.1" 200 -
+192.168.1.3 - - [11/Jun/2026 14:09:10] "PUT /city/jail/prisonerlist HTTP/1.1" 200 -

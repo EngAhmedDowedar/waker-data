@@ -1,0 +1,274 @@
+
+===== CTopScreen::ParseMsg (gettopmsgs parser)  va=0x00592fb4 len=0x184 =====
+  +0x000 f0b5     push   {r4, r5, r6, r7, lr}
+  +0x002 87b0     sub    sp, #0x1c
+  +0x004 0646     mov    r6, r0
+  +0x006 4868     ldr    r0, [r1, #4]
+  +0x008 4269     ldr    r2, [r0, #0x14] <arr-begin>
+  +0x00a 081d     adds   r0, r1, #4
+  +0x00c 0021     movs   r1, #0
+  +0x00e 0c46     mov    r4, r1
+  +0x010 9047     blx    r2
+  +0x012 0546     mov    r5, r0
+  +0x014 0295     str    r5, [sp, #8]
+  +0x016 2868     ldr    r0, [r5]
+  +0x018 8168     ldr    r1, [r0, #8]
+  +0x01a 2846     mov    r0, r5
+  +0x01c 8847     blx    r1
+  +0x01e 0028     cmp    r0, #0
+  +0x020 00d1     bne    #0x592fd8
+  +0x022 9ae0     b      #0x59310e
+  +0x024 7320     movs   r0, #0x73
+  +0x026 8000     lsls   r0, r0, #2
+  +0x028 3018     adds   r0, r6, r0
+  +0x02a 0190     str    r0, [sp, #4]
+  +0x02c 1f20     movs   r0, #0x1f
+  +0x02e 0001     lsls   r0, r0, #4
+  +0x030 3018     adds   r0, r6, r0
+  +0x032 0090     str    r0, [sp]
+  +0x034 4c4f     ldr    r7, [pc, #0x130]
+  +0x036 7f44     add    r7, pc
+  +0x038 2868     ldr    r0, [r5]
+  +0x03a c168     ldr    r1, [r0, #0xc]
+  +0x03c 2846     mov    r0, r5
+  +0x03e 8847     blx    r1
+  +0x040 0490     str    r0, [sp, #0x10]
+  +0x042 4020     movs   r0, #0x40
+  +0x044 00f1c0f8 bl     #0x69317c -> __udivdi3+0x560
+  +0x048 3e46     mov    r6, r7
+  +0x04a 0746     mov    r7, r0
+  +0x04c 0697     str    r7, [sp, #0x18]
+  +0x04e 3c60     str    r4, [r7]
+  +0x050 bc60     str    r4, [r7, #8]
+  +0x052 fc60     str    r4, [r7, #0xc]
+  +0x054 3d46     mov    r5, r7
+  +0x056 1035     adds   r5, #0x10
+  +0x058 2846     mov    r0, r5
+  +0x05a fff0adff bl     #0x692f6c -> __udivdi3+0x350
+  +0x05e 3846     mov    r0, r7
+  +0x060 2830     adds   r0, #0x28
+  +0x062 0590     str    r0, [sp, #0x14] <arr-begin>
+  +0x064 fff0a8ff bl     #0x692f6c -> __udivdi3+0x350
+  +0x068 4048     ldr    r0, [pc, #0x100]
+  +0x06a 8119     adds   r1, r0, r6 KEY="senderName"
+  +0x06c 049b     ldr    r3, [sp, #0x10]
+  +0x06e 5868     ldr    r0, [r3, #4]
+  +0x070 026c     ldr    r2, [r0, #0x40] <GetNode>
+  +0x072 181d     adds   r0, r3, #4
+  +0x074 0490     str    r0, [sp, #0x10]
+  +0x076 9047     blx    r2
+  +0x078 2646     mov    r6, r4
+  +0x07a 0837     adds   r7, #8
+  +0x07c 0397     str    r7, [sp, #0xc]
+  +0x07e 0028     cmp    r0, #0
+  +0x080 0cd0     beq    #0x593050
+  +0x082 0430     adds   r0, #4
+  +0x084 0121     movs   r1, #1
+  +0x086 fff0c7ff bl     #0x692fcc -> __udivdi3+0x3b0
+  +0x08a 0146     mov    r1, r0
+  +0x08c f243     mvns   r2, r6
+  +0x08e 2846     mov    r0, r5
+  +0x090 fff0caff bl     #0x692fdc -> __udivdi3+0x3c0
+  +0x094 2846     mov    r0, r5
+  +0x096 2946     mov    r1, r5
+  +0x098 01f116fc bl     #0x69487c -> 0x69487c
+  +0x09c 3446     mov    r4, r6
+  +0x09e 3448     ldr    r0, [pc, #0xd0]
+  +0x0a0 374f     ldr    r7, [pc, #0xdc]
+  +0x0a2 7f44     add    r7, pc
+  +0x0a4 c119     adds   r1, r0, r7 KEY="content"
+  +0x0a6 049d     ldr    r5, [sp, #0x10]
+  +0x0a8 2868     ldr    r0, [r5]
+  +0x0aa 026c     ldr    r2, [r0, #0x40] <GetNode>
+  +0x0ac 2846     mov    r0, r5
+  +0x0ae 9047     blx    r2
+  +0x0b0 0028     cmp    r0, #0
+  +0x0b2 0dd0     beq    #0x593084
+  +0x0b4 0430     adds   r0, #4
+  +0x0b6 0121     movs   r1, #1
+  +0x0b8 fff0aeff bl     #0x692fcc -> __udivdi3+0x3b0
+  +0x0bc 0146     mov    r1, r0
+  +0x0be e243     mvns   r2, r4
+  +0x0c0 059e     ldr    r6, [sp, #0x14] <arr-begin>
+  +0x0c2 3046     mov    r0, r6
+  +0x0c4 fff0b0ff bl     #0x692fdc -> __udivdi3+0x3c0
+  +0x0c8 3046     mov    r0, r6
+  +0x0ca 3146     mov    r1, r6
+  +0x0cc 01f1fcfb bl     #0x69487c -> 0x69487c
+  +0x0d0 2848     ldr    r0, [pc, #0xa0]
+  +0x0d2 c119     adds   r1, r0, r7 KEY="createdAt"
+  +0x0d4 2868     ldr    r0, [r5]
+  +0x0d6 026c     ldr    r2, [r0, #0x40] <GetNode>
+  +0x0d8 2846     mov    r0, r5
+  +0x0da 9047     blx    r2
+  +0x0dc 0028     cmp    r0, #0
+  +0x0de 05d0     beq    #0x5930a0
+  +0x0e0 0830     adds   r0, #8
+  +0x0e2 fff0b9ff bl     #0x69300c -> __udivdi3+0x3f0
+  +0x0e6 039a     ldr    r2, [sp, #0xc]
+  +0x0e8 1060     str    r0, [r2]
+  +0x0ea 5160     str    r1, [r2, #4]
+  +0x0ec 2248     ldr    r0, [pc, #0x88]
+  +0x0ee c119     adds   r1, r0, r7 KEY="id"
+  +0x0f0 2868     ldr    r0, [r5]
+  +0x0f2 026c     ldr    r2, [r0, #0x40] <GetNode>
+  +0x0f4 2846     mov    r0, r5
+  +0x0f6 9047     blx    r2
+  +0x0f8 0246     mov    r2, r0
+  +0x0fa 2646     mov    r6, r4
+  +0x0fc f043     mvns   r0, r6
+  +0x0fe 002a     cmp    r2, #0
+  +0x100 0146     mov    r1, r0
+  +0x102 03d0     beq    #0x5930c0
+  +0x104 0832     adds   r2, #8
+  +0x106 1046     mov    r0, r2
+  +0x108 fff0a6ff bl     #0x69300c -> __udivdi3+0x3f0
+  +0x10c 069a     ldr    r2, [sp, #0x18]
+  +0x10e 1660     str    r6, [r2]
+  +0x110 009c     ldr    r4, [sp]
+  +0x112 2368     ldr    r3, [r4]
+  +0x114 0122     movs   r2, #1
+  +0x116 9842     cmp    r0, r3
+  +0x118 1346     mov    r3, r2
+  +0x11a 029d     ldr    r5, [sp, #8]
+  +0x11c 00d9     bls    #0x5930d4
+  +0x11e 3346     mov    r3, r6
+  +0x120 2746     mov    r7, r4
+  +0x122 7c68     ldr    r4, [r7, #4]
+  +0x124 a142     cmp    r1, r4
+  +0x126 00dd     ble    #0x5930de
+  +0x128 3246     mov    r2, r6
+  +0x12a a142     cmp    r1, r4
+  +0x12c 00d0     beq    #0x5930e4
+  +0x12e 1346     mov    r3, r2
+  +0x130 3446     mov    r4, r6
+  +0x132 002b     cmp    r3, #0
+  +0x134 01d1     bne    #0x5930ee
+  +0x136 3860     str    r0, [r7]
+  +0x138 7960     str    r1, [r7, #4]
+  +0x13a 0599     ldr    r1, [sp, #0x14] <arr-begin>
+  +0x13c 27f14cf8 bl     #0x6ba18c -> 0x6ba18c
+  +0x140 0198     ldr    r0, [sp, #4]
+  +0x142 0699     ldr    r1, [sp, #0x18]
+  +0x144 01f190fa bl     #0x69461c -> 0x69461c
+  +0x148 2868     ldr    r0, [r5]
+  +0x14a 8168     ldr    r1, [r0, #8]
+  +0x14c 2846     mov    r0, r5
+  +0x14e 8847     blx    r1
+  +0x150 0028     cmp    r0, #0
+  +0x152 0a4f     ldr    r7, [pc, #0x28]
+  +0x154 7f44     add    r7, pc
+  +0x156 00d0     beq    #0x59310e
+  +0x158 6ee7     b      #0x592fec
+  +0x15a 2868     ldr    r0, [r5]
+  +0x15c 4169     ldr    r1, [r0, #0x14] <arr-begin>
+  +0x15e 2846     mov    r0, r5
+  +0x160 8847     blx    r1
+  +0x162 07b0     add    sp, #0x1c
+  +0x164 f0bd     pop    {r4, r5, r6, r7, pc}
+  +0x166 c046     mov    r8, r8
+  +0x168 327b     ldrb   r2, [r6, #0xc]
+  +0x16a 1c00     movs   r4, r3
+  +0x16c ded0     beq    #0x5930e0
+
+===== CTopScreen::RequestMsg  va=0x00592238 len=0x2a =====
+  +0x000 10b5     push   {r4, lr}
+  +0x002 82b0     sub    sp, #8
+  +0x004 0446     mov    r4, r0
+  +0x006 1120     movs   r0, #0x11
+  +0x008 0001     lsls   r0, r0, #4
+  +0x00a 2018     adds   r0, r4, r0
+  +0x00c 00f17aff bl     #0x69313c -> __udivdi3+0x520
+  +0x010 7d21     movs   r1, #0x7d
+  +0x012 8900     lsls   r1, r1, #2
+  +0x014 6358     ldr    r3, [r4, r1]
+  +0x016 1f21     movs   r1, #0x1f
+  +0x018 0901     lsls   r1, r1, #4
+  +0x01a 6258     ldr    r2, [r4, r1]
+  +0x01c 0021     movs   r1, #0
+  +0x01e 6c46     mov    r4, sp
+  +0x020 2160     str    r1, [r4]
+  +0x022 27f13fff bl     #0x6ba0dc -> 0x6ba0dc
+  +0x026 02b0     add    sp, #8
+  +0x028 10bd     pop    {r4, pc}
+
+===== CTopScreen::RequestSysMsg  va=0x00591160 len=0x12 =====
+  +0x000 80b5     push   {r7, lr}
+  +0x002 1121     movs   r1, #0x11
+  +0x004 0901     lsls   r1, r1, #4
+  +0x006 4018     adds   r0, r0, r1
+  +0x008 01f1e8ff bl     #0x69313c -> __udivdi3+0x520
+  +0x00c 28f16eff bl     #0x6ba04c -> 0x6ba04c
+  +0x010 80bd     pop    {r7, pc}
+
+===== CTopScreen::OnRollingOneTime  va=0x00593374 len=0xa0 =====
+  +0x000 f0b5     push   {r4, r5, r6, r7, lr}
+  +0x002 8db0     sub    sp, #0x34
+  +0x004 0446     mov    r4, r0
+  +0x006 0394     str    r4, [sp, #0xc]
+  +0x008 07a8     add    r0, sp, #0x1c
+  +0x00a fff0f5fd bl     #0x692f6c -> __udivdi3+0x350
+  +0x00e 7320     movs   r0, #0x73
+  +0x010 8000     lsls   r0, r0, #2
+  +0x012 2518     adds   r5, r4, r0
+  +0x014 2846     mov    r0, r5
+  +0x016 00f13ffa bl     #0x69380c -> __udivdi3+0xbf0
+  +0x01a 0028     cmp    r0, #0
+  +0x01c 28d0     beq    #0x5933e4
+  +0x01e 0021     movs   r1, #0
+  +0x020 0691     str    r1, [sp, #0x18]
+  +0x022 2846     mov    r0, r5
+  +0x024 00f140fa bl     #0x69381c -> __udivdi3+0xc00
+  +0x028 0546     mov    r5, r0
+  +0x02a 1030     adds   r0, #0x10
+  +0x02c 0126     movs   r6, #1
+  +0x02e 3146     mov    r1, r6
+  +0x030 fff012fe bl     #0x692fcc -> __udivdi3+0x3b0
+  +0x034 0746     mov    r7, r0
+  +0x036 2835     adds   r5, #0x28
+  +0x038 2846     mov    r0, r5
+  +0x03a 3146     mov    r1, r6
+  +0x03c fff00cfe bl     #0x692fcc -> __udivdi3+0x3b0
+  +0x040 0346     mov    r3, r0
+  +0x042 5448     ldr    r0, [pc, #0x150]
+  +0x044 7844     add    r0, pc
+  +0x046 5449     ldr    r1, [pc, #0x150]
+  +0x048 0918     adds   r1, r1, r0 KEY="%s: %s"
+  +0x04a 07ad     add    r5, sp, #0x1c
+  +0x04c 2846     mov    r0, r5
+  +0x04e 3a46     mov    r2, r7
+  +0x050 fff06aff bl     #0x69329c -> __udivdi3+0x680
+  +0x054 6320     movs   r0, #0x63
+  +0x056 8000     lsls   r0, r0, #2
+  +0x058 2058     ldr    r0, [r4, r0]
+  +0x05a 0168     ldr    r1, [r0]
+  +0x05c 6122     movs   r2, #0x61
+  +0x05e 9200     lsls   r2, r2, #2
+  +0x060 8a58     ldr    r2, [r1, r2]
+  +0x062 2946     mov    r1, r5
+  +0x064 9047     blx    r2
+  +0x066 2046     mov    r0, r4
+  +0x068 0699     ldr    r1, [sp, #0x18]
+  +0x06a 26f1fdfe bl     #0x6ba1dc -> 0x6ba1dc
+  +0x06e 8ce0     b      #0x5934fe
+  +0x070 7720     movs   r0, #0x77
+  +0x072 8000     lsls   r0, r0, #2
+  +0x074 2018     adds   r0, r4, r0
+  +0x076 0590     str    r0, [sp, #0x14] <arr-begin>
+  +0x078 0026     movs   r6, #0
+  +0x07a 0598     ldr    r0, [sp, #0x14] <arr-begin>
+  +0x07c 00f10cfa bl     #0x69380c -> __udivdi3+0xbf0
+  +0x080 0490     str    r0, [sp, #0x10]
+  +0x082 0028     cmp    r0, #0
+  +0x084 75d0     beq    #0x5934e6
+  +0x086 0096     str    r6, [sp]
+  +0x088 0021     movs   r1, #0
+  +0x08a 0191     str    r1, [sp, #4]
+  +0x08c 0228     cmp    r0, #2
+  +0x08e 0e46     mov    r6, r1
+  +0x090 3edb     blt    #0x593484
+  +0x092 01f139ff bl     #0x69527c -> 0x69527c
+  +0x096 0746     mov    r7, r0
+  +0x098 2846     mov    r0, r5
+  +0x09a 00f1fdf9 bl     #0x69380c -> __udivdi3+0xbf0
+  +0x09e 0028     cmp    r0, #0
