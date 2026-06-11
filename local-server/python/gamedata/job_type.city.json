@@ -1,0 +1,59 @@
+{
+ "file": "job_type.city",
+ "size": 187,
+ "count": 9,
+ "schema": "iis",
+ "fields": [
+  "id",
+  "f1",
+  "name"
+ ],
+ "records": [
+  {
+   "id": 1300,
+   "f1": 462,
+   "name": "CanTing"
+  },
+  {
+   "id": 1301,
+   "f1": 463,
+   "name": "YeZongHui"
+  },
+  {
+   "id": 1302,
+   "f1": 464,
+   "name": "JuZu"
+  },
+  {
+   "id": 1305,
+   "f1": 467,
+   "name": "KeXueYuan"
+  },
+  {
+   "id": 1306,
+   "f1": 468,
+   "name": "JunShiJiDi"
+  },
+  {
+   "id": 1307,
+   "f1": 469,
+   "name": "YiYuan_job"
+  },
+  {
+   "id": 1309,
+   "f1": 471,
+   "name": "MeiKuang"
+  },
+  {
+   "id": 1310,
+   "f1": 473,
+   "name": "ZiYouZhiYeZhe"
+  },
+  {
+   "id": 1311,
+   "f1": 1253,
+   "name": "DuChang"
+  }
+ ],
+ "status": "decoded"
+}

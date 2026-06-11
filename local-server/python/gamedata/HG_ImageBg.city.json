@@ -1,0 +1,41 @@
+{
+ "file": "HG_ImageBg.city",
+ "size": 240,
+ "count": 3,
+ "schema": "isisss",
+ "fields": [
+  "id",
+  "name",
+  "f2",
+  "str3",
+  "str4",
+  "str5"
+ ],
+ "records": [
+  {
+   "id": 1,
+   "name": "hunt_search1",
+   "f2": 2,
+   "str3": "forest_1_ske.json",
+   "str4": "forest_1_tex.json",
+   "str5": "[0,500]"
+  },
+  {
+   "id": 2,
+   "name": "hunt_search2",
+   "f2": 2,
+   "str3": "forest_2_ske.json",
+   "str4": "forest_2_tex.json",
+   "str5": "[501,2000]"
+  },
+  {
+   "id": 3,
+   "name": "hunt_search3",
+   "f2": 2,
+   "str3": "forest_3_ske.json",
+   "str4": "forest_3_tex.json",
+   "str5": "[2001,5000]"
+  }
+ ],
+ "status": "decoded"
+}

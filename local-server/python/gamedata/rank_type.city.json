@@ -1,0 +1,86 @@
+{
+ "file": "rank_type.city",
+ "size": 342,
+ "count": 10,
+ "schema": "iisii",
+ "fields": [
+  "id",
+  "f1",
+  "name",
+  "f3",
+  "f4"
+ ],
+ "records": [
+  {
+   "id": 6,
+   "f1": 4568,
+   "name": "Rank_weekly",
+   "f3": 4569,
+   "f4": 24
+  },
+  {
+   "id": 1,
+   "f1": 4060,
+   "name": "ChengZhanZhongJian",
+   "f3": 4065,
+   "f4": 0
+  },
+  {
+   "id": 2,
+   "f1": 4061,
+   "name": "meirixinxian",
+   "f3": 4066,
+   "f4": 0
+  },
+  {
+   "id": 3,
+   "f1": 4062,
+   "name": "BangHuiXinGui",
+   "f3": 4067,
+   "f4": 0
+  },
+  {
+   "id": 4,
+   "f1": 4063,
+   "name": "gerenjilei",
+   "f3": 4068,
+   "f4": 0
+  },
+  {
+   "id": 5,
+   "f1": 4064,
+   "name": "BangPaiShengWang",
+   "f3": 4069,
+   "f4": 0
+  },
+  {
+   "id": 7,
+   "f1": 5299,
+   "name": "ShenghuaWQ",
+   "f3": 5300,
+   "f4": 0
+  },
+  {
+   "id": 8,
+   "f1": 8507,
+   "name": "rank_type_car_race",
+   "f3": 8508,
+   "f4": 0
+  },
+  {
+   "id": 9,
+   "f1": 8509,
+   "name": "rank_type_race_map",
+   "f3": 8510,
+   "f4": 0
+  },
+  {
+   "id": 10,
+   "f1": 9058,
+   "name": "rank_type_hunt",
+   "f3": 9059,
+   "f4": 0
+  }
+ ],
+ "status": "decoded"
+}

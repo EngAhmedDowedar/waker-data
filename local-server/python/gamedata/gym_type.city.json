@@ -1,0 +1,33 @@
+{
+ "file": "gym_type.city",
+ "size": 109,
+ "count": 3,
+ "schema": "iisi",
+ "fields": [
+  "id",
+  "f1",
+  "name",
+  "f3"
+ ],
+ "records": [
+  {
+   "id": 1,
+   "f1": 7634,
+   "name": "JianShenFang_putong",
+   "f3": 7637
+  },
+  {
+   "id": 2,
+   "f1": 7635,
+   "name": "JianShenFang_zhongjian",
+   "f3": 7638
+  },
+  {
+   "id": 3,
+   "f1": 7636,
+   "name": "JianShenFang_teshu",
+   "f3": 7639
+  }
+ ],
+ "status": "decoded"
+}

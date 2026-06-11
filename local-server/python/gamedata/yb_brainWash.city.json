@@ -1,0 +1,29 @@
+{
+ "file": "yb_brainWash.city",
+ "size": 38,
+ "count": 3,
+ "schema": "iii",
+ "fields": [
+  "id",
+  "f1",
+  "f2"
+ ],
+ "records": [
+  {
+   "id": 1,
+   "f1": 1,
+   "f2": 20
+  },
+  {
+   "id": 2,
+   "f1": 2,
+   "f2": 50
+  },
+  {
+   "id": 3,
+   "f1": 3,
+   "f2": 100
+  }
+ ],
+ "status": "decoded"
+}

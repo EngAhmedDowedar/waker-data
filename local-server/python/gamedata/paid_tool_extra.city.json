@@ -1,0 +1,27 @@
+{
+ "file": "paid_tool_extra.city",
+ "size": 34,
+ "count": 2,
+ "schema": "iiii",
+ "fields": [
+  "id",
+  "f1",
+  "f2",
+  "f3"
+ ],
+ "records": [
+  {
+   "id": 1001,
+   "f1": 6203,
+   "f2": 6205,
+   "f3": 0
+  },
+  {
+   "id": 1002,
+   "f1": 6204,
+   "f2": 6206,
+   "f3": 0
+  }
+ ],
+ "status": "decoded"
+}

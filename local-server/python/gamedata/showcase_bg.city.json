@@ -1,0 +1,75 @@
+{
+ "file": "showcase_bg.city",
+ "size": 342,
+ "count": 10,
+ "schema": "iisi",
+ "fields": [
+  "id",
+  "f1",
+  "name",
+  "f3"
+ ],
+ "records": [
+  {
+   "id": 1,
+   "f1": 4369,
+   "name": "showbox_ud_lovelypink",
+   "f3": 4375
+  },
+  {
+   "id": 2,
+   "f1": 4370,
+   "name": "showbox_ud_skyblue",
+   "f3": 4376
+  },
+  {
+   "id": 3,
+   "f1": 4371,
+   "name": "showbox_ud_wood",
+   "f3": 4377
+  },
+  {
+   "id": 4,
+   "f1": 4372,
+   "name": "showbox_ud_greenflowers",
+   "f3": 4378
+  },
+  {
+   "id": 5,
+   "f1": 4373,
+   "name": "showbox_ud_lovelypink",
+   "f3": 4379
+  },
+  {
+   "id": 6,
+   "f1": 4374,
+   "name": "showbox_ud_skyblue",
+   "f3": 4380
+  },
+  {
+   "id": 7,
+   "f1": 9711,
+   "name": "showbox_ud_4th",
+   "f3": 9715
+  },
+  {
+   "id": 8,
+   "f1": 9712,
+   "name": "showbox_ud_forest",
+   "f3": 9716
+  },
+  {
+   "id": 9,
+   "f1": 9713,
+   "name": "showbox_ud_shell",
+   "f3": 9717
+  },
+  {
+   "id": 10,
+   "f1": 9714,
+   "name": "showbox_ud_univse",
+   "f3": 9718
+  }
+ ],
+ "status": "decoded"
+}

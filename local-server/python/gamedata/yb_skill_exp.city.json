@@ -1,0 +1,27 @@
+{
+ "file": "yb_skill_exp.city",
+ "size": 22,
+ "count": 5,
+ "schema": "i",
+ "fields": [
+  "id"
+ ],
+ "records": [
+  {
+   "id": 200
+  },
+  {
+   "id": 500
+  },
+  {
+   "id": 1500
+  },
+  {
+   "id": 3000
+  },
+  {
+   "id": 5000
+  }
+ ],
+ "status": "decoded"
+}

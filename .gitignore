@@ -14,3 +14,6 @@ analyze/__handlers__/
 analyze/screenshots/
 *.png
 *.mp4
+
+# decoded-asset working copy (canonical committed copy is local-server/python/gamedata/)
+analyze/assets_decoded/

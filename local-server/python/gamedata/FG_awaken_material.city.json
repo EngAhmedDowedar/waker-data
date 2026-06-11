@@ -1,0 +1,39 @@
+{
+ "file": "FG_awaken_material.city",
+ "size": 62,
+ "count": 5,
+ "schema": "iii",
+ "fields": [
+  "id",
+  "f1",
+  "f2"
+ ],
+ "records": [
+  {
+   "id": 1,
+   "f1": 801,
+   "f2": 7
+  },
+  {
+   "id": 2,
+   "f1": 802,
+   "f2": 7
+  },
+  {
+   "id": 3,
+   "f1": 803,
+   "f2": 7
+  },
+  {
+   "id": 4,
+   "f1": 804,
+   "f2": 7
+  },
+  {
+   "id": 5,
+   "f1": 805,
+   "f2": 7
+  }
+ ],
+ "status": "decoded"
+}

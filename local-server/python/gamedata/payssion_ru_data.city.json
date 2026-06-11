@@ -1,0 +1,191 @@
+{
+ "file": "payssion_ru_data.city",
+ "size": 996,
+ "count": 25,
+ "schema": "isssi",
+ "fields": [
+  "id",
+  "name",
+  "str2",
+  "str3",
+  "f4"
+ ],
+ "records": [
+  {
+   "id": 1,
+   "name": "CASHU",
+   "str2": "cashu",
+   "str3": "cashu",
+   "f4": 0
+  },
+  {
+   "id": 2,
+   "name": "OneCard",
+   "str2": "onecard",
+   "str3": "onecard",
+   "f4": 0
+  },
+  {
+   "id": 3,
+   "name": "Paysafecard",
+   "str2": "paysafecard",
+   "str3": "paysafecard",
+   "f4": 0
+  },
+  {
+   "id": 4,
+   "name": "neosurf",
+   "str2": "0",
+   "str3": "neosurf",
+   "f4": 0
+  },
+  {
+   "id": 5,
+   "name": "polipayment",
+   "str2": "0",
+   "str3": "polipayment",
+   "f4": 0
+  },
+  {
+   "id": 6,
+   "name": "cherrycredits",
+   "str2": "0",
+   "str3": "cherrycredits",
+   "f4": 0
+  },
+  {
+   "id": 7,
+   "name": "maybank2u",
+   "str2": "0",
+   "str3": "maybank2u_my",
+   "f4": 0
+  },
+  {
+   "id": 8,
+   "name": "fpx",
+   "str2": "0",
+   "str3": "fpx_my",
+   "f4": 0
+  },
+  {
+   "id": 9,
+   "name": "molpay",
+   "str2": "0",
+   "str3": "molpay",
+   "f4": 0
+  },
+  {
+   "id": 10,
+   "name": "molpoints",
+   "str2": "0",
+   "str3": "molpoints",
+   "f4": 0
+  },
+  {
+   "id": 11,
+   "name": "sofortbanking",
+   "str2": "0",
+   "str3": "sofort",
+   "f4": 0
+  },
+  {
+   "id": 12,
+   "name": "QIWI",
+   "str2": "qiwi",
+   "str3": "qiwi",
+   "f4": 0
+  },
+  {
+   "id": 13,
+   "name": "Boleto",
+   "str2": "0",
+   "str3": "boleto_br",
+   "f4": 0
+  },
+  {
+   "id": 14,
+   "name": "Bradesco",
+   "str2": "0",
+   "str3": "bradesco_br",
+   "f4": 0
+  },
+  {
+   "id": 15,
+   "name": "Caixa",
+   "str2": "0",
+   "str3": "caixa_br",
+   "f4": 0
+  },
+  {
+   "id": 16,
+   "name": "Santander",
+   "str2": "0",
+   "str3": "santander_br",
+   "f4": 0
+  },
+  {
+   "id": 17,
+   "name": "HSBC",
+   "str2": "0",
+   "str3": "hsbc_br",
+   "f4": 0
+  },
+  {
+   "id": 18,
+   "name": "Bancodobrasil",
+   "str2": "0",
+   "str3": "bancodobrasil_br",
+   "f4": 0
+  },
+  {
+   "id": 19,
+   "name": "Itau",
+   "str2": "0",
+   "str3": "itau_br",
+   "f4": 0
+  },
+  {
+   "id": 20,
+   "name": "Visa",
+   "str2": "0",
+   "str3": "visa_br",
+   "f4": 0
+  },
+  {
+   "id": 21,
+   "name": "Mastercard",
+   "str2": "0",
+   "str3": "mastercard_br",
+   "f4": 0
+  },
+  {
+   "id": 22,
+   "name": "Hipercard",
+   "str2": "0",
+   "str3": "hipercard_br",
+   "f4": 0
+  },
+  {
+   "id": 23,
+   "name": "American Express",
+   "str2": "0",
+   "str3": "americanexpress_br",
+   "f4": 0
+  },
+  {
+   "id": 24,
+   "name": "Dinersclub",
+   "str2": "0",
+   "str3": "dinersclub_br",
+   "f4": 0
+  },
+  {
+   "id": 25,
+   "name": "yamoney",
+   "str2": "yamoney",
+   "str3": "yamoney",
+   "f4": 0
+  }
+ ],
+ "status": "decoded"
+}

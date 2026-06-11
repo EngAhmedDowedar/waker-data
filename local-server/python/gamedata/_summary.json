@@ -1,0 +1,653 @@
+[
+ {
+  "file": "FF_boss_type.city",
+  "count": 2,
+  "schema": "iiiiiiis",
+  "status": "decoded",
+  "size": 104
+ },
+ {
+  "file": "FG_awaken_consume.city",
+  "count": 25,
+  "schema": "iiiiii",
+  "status": "decoded",
+  "size": 602
+ },
+ {
+  "file": "FG_awaken_material.city",
+  "count": 5,
+  "schema": "iii",
+  "status": "decoded",
+  "size": 62
+ },
+ {
+  "file": "FactionFactory_data.city",
+  "count": 132,
+  "schema": "iiiiiiiiiiii",
+  "status": "decoded",
+  "size": 6338
+ },
+ {
+  "file": "FactionFactory_exp.city",
+  "count": 59,
+  "schema": "i",
+  "status": "decoded",
+  "size": 238
+ },
+ {
+  "file": "ForceGenerator_data.city",
+  "count": 3,
+  "schema": null,
+  "status": "ambiguous",
+  "size": 212
+ },
+ {
+  "file": "ForceGenerator_exp.city",
+  "count": 499,
+  "schema": "i",
+  "status": "decoded",
+  "size": 1998
+ },
+ {
+  "file": "HG_Animal.city",
+  "count": 30,
+  "schema": null,
+  "status": "ambiguous",
+  "size": 4419
+ },
+ {
+  "file": "HG_AnimalEvent.city",
+  "count": 11,
+  "schema": "iii",
+  "status": "decoded",
+  "size": 134
+ },
+ {
+  "file": "HG_HuntMap.city",
+  "count": 1,
+  "schema": "iiisisssis",
+  "status": "decoded",
+  "size": 107
+ },
+ {
+  "file": "HG_HuntTool.city",
+  "count": 12,
+  "schema": null,
+  "status": "ambiguous",
+  "size": 1013
+ },
+ {
+  "file": "HG_ImageBg.city",
+  "count": 3,
+  "schema": "isisss",
+  "status": "decoded",
+  "size": 240
+ },
+ {
+  "file": "HG_SpoilsGoods.city",
+  "count": 131,
+  "schema": "iiisiii",
+  "status": "decoded",
+  "size": 6034
+ },
+ {
+  "file": "HG_TransportTool.city",
+  "count": 11,
+  "schema": null,
+  "status": "ambiguous",
+  "size": 741
+ },
+ {
+  "file": "PersonActive_data.city",
+  "count": 28,
+  "schema": "iiiiisii",
+  "status": "decoded",
+  "size": 954
+ },
+ {
+  "file": "RG_car.city",
+  "count": 35,
+  "schema": null,
+  "status": "ambiguous",
+  "size": 5358
+ },
+ {
+  "file": "RG_component.city",
+  "count": 220,
+  "schema": null,
+  "status": "ambiguous",
+  "size": 16502
+ },
+ {
+  "file": "RG_cptType.city",
+  "count": 37,
+  "schema": "iiii",
+  "status": "decoded",
+  "size": 594
+ },
+ {
+  "file": "RG_dungeon.city",
+  "count": 18,
+  "schema": "iisisiiiiiii",
+  "status": "decoded",
+  "size": 1114
+ },
+ {
+  "file": "RG_map_data.city",
+  "count": 7,
+  "schema": null,
+  "status": "ambiguous",
+  "size": 1028
+ },
+ {
+  "file": "RG_skin.city",
+  "count": 5,
+  "schema": "iiiiiiiii",
+  "status": "decoded",
+  "size": 182
+ },
+ {
+  "file": "SW_BuildAdjacent.city",
+  "count": 15,
+  "schema": "isssssss",
+  "status": "decoded",
+  "size": 1162
+ },
+ {
+  "file": "Strengthen.city",
+  "count": 4,
+  "schema": "iiiiiiiiiii",
+  "status": "decoded",
+  "size": 178
+ },
+ {
+  "file": "ThemeGift.city",
+  "count": 37,
+  "schema": null,
+  "status": "ambiguous",
+  "size": 5447
+ },
+ {
+  "file": "achievement.city",
+  "count": 893,
+  "schema": "iiiis",
+  "status": "decoded",
+  "size": 32750
+ },
+ {
+  "file": "achievement_skill.city",
+  "count": 31,
+  "schema": "iiisii",
+  "status": "decoded",
+  "size": 1267
+ },
+ {
+  "file": "activity_extra.city",
+  "count": 564,
+  "schema": "iiiii",
+  "status": "decoded",
+  "size": 11282
+ },
+ {
+  "file": "addition.city",
+  "count": 19,
+  "schema": "iiiii",
+  "status": "decoded",
+  "size": 382
+ },
+ {
+  "file": "appellation_effect.city",
+  "count": 17,
+  "schema": "iiii",
+  "status": "decoded",
+  "size": 274
+ },
+ {
+  "file": "building_lock.city",
+  "count": 23,
+  "schema": "iii",
+  "status": "decoded",
+  "size": 278
+ },
+ {
+  "file": "cb_effect.city",
+  "count": 9,
+  "schema": "iiiiii",
+  "status": "decoded",
+  "size": 218
+ },
+ {
+  "file": "cbweapon.city",
+  "count": 9,
+  "schema": "iisii",
+  "status": "decoded",
+  "size": 272
+ },
+ {
+  "file": "circle_node.city",
+  "count": 5,
+  "schema": "iii",
+  "status": "decoded",
+  "size": 62
+ },
+ {
+  "file": "cities.city",
+  "count": 13,
+  "schema": null,
+  "status": "ambiguous",
+  "size": 750
+ },
+ {
+  "file": "crime.city",
+  "count": 83,
+  "schema": "iiisiiiii",
+  "status": "decoded",
+  "size": 3619
+ },
+ {
+  "file": "crime_type.city",
+  "count": 17,
+  "schema": "iisii",
+  "status": "decoded",
+  "size": 485
+ },
+ {
+  "file": "drugs.city",
+  "count": 21,
+  "schema": "iiiisiii",
+  "status": "decoded",
+  "size": 796
+ },
+ {
+  "file": "dungeon.city",
+  "count": 4,
+  "schema": "iiiiii",
+  "status": "decoded",
+  "size": 98
+ },
+ {
+  "file": "equipment.city",
+  "count": 223,
+  "schema": "iiisii",
+  "status": "decoded",
+  "size": 9650
+ },
+ {
+  "file": "exchange_ctrl.city",
+  "count": 12,
+  "schema": "iiiiii",
+  "status": "decoded",
+  "size": 290
+ },
+ {
+  "file": "exchange_extra.city",
+  "count": 5,
+  "schema": "iiiiii",
+  "status": "decoded",
+  "size": 122
+ },
+ {
+  "file": "exchange_need.city",
+  "count": 926,
+  "schema": "iiiiiiiii",
+  "status": "decoded",
+  "size": 33338
+ },
+ {
+  "file": "exchange_type.city",
+  "count": 16,
+  "schema": "iis",
+  "status": "decoded",
+  "size": 418
+ },
+ {
+  "file": "exp.city",
+  "count": 550,
+  "schema": "i",
+  "status": "decoded",
+  "size": 2202
+ },
+ {
+  "file": "faction_store.city",
+  "count": 8,
+  "schema": "iiiiii",
+  "status": "decoded",
+  "size": 194
+ },
+ {
+  "file": "faction_yb_popedom.city",
+  "count": 6,
+  "schema": "iii",
+  "status": "decoded",
+  "size": 74
+ },
+ {
+  "file": "function_tool.city",
+  "count": 79,
+  "schema": "iiisiii",
+  "status": "decoded",
+  "size": 2930
+ },
+ {
+  "file": "fund.city",
+  "count": 4,
+  "schema": "iiiiii",
+  "status": "decoded",
+  "size": 98
+ },
+ {
+  "file": "gift.city",
+  "count": 239,
+  "schema": "iisiii",
+  "status": "decoded",
+  "size": 9557
+ },
+ {
+  "file": "gold_package.city",
+  "count": 17,
+  "schema": "iiisiiiiiii",
+  "status": "decoded",
+  "size": 1012
+ },
+ {
+  "file": "guild_skills.city",
+  "count": 19,
+  "schema": "iiiisi",
+  "status": "decoded",
+  "size": 754
+ },
+ {
+  "file": "gym_item.city",
+  "count": 31,
+  "schema": "iisiiisiis",
+  "status": "decoded",
+  "size": 1935
+ },
+ {
+  "file": "gym_service.city",
+  "count": 15,
+  "schema": "iisiiiii",
+  "status": "decoded",
+  "size": 726
+ },
+ {
+  "file": "gym_service_cost.city",
+  "count": 26,
+  "schema": "iiii",
+  "status": "decoded",
+  "size": 418
+ },
+ {
+  "file": "gym_type.city",
+  "count": 3,
+  "schema": "iisi",
+  "status": "decoded",
+  "size": 109
+ },
+ {
+  "file": "job.city",
+  "count": 54,
+  "schema": "iiisi",
+  "status": "decoded",
+  "size": 1673
+ },
+ {
+  "file": "job_type.city",
+  "count": 9,
+  "schema": "iis",
+  "status": "decoded",
+  "size": 187
+ },
+ {
+  "file": "king_appellation.city",
+  "count": 16,
+  "schema": "iisii",
+  "status": "decoded",
+  "size": 383
+ },
+ {
+  "file": "mercenary.city",
+  "count": 56,
+  "schema": null,
+  "status": "ambiguous",
+  "size": 6670
+ },
+ {
+  "file": "militia.city",
+  "count": 7,
+  "schema": "iis",
+  "status": "decoded",
+  "size": 163
+ },
+ {
+  "file": "mine.city",
+  "count": 150,
+  "schema": "iiisii",
+  "status": "decoded",
+  "size": 5282
+ },
+ {
+  "file": "mineshop.city",
+  "count": 7,
+  "schema": "iiiiii",
+  "status": "decoded",
+  "size": 170
+ },
+ {
+  "file": "mission.city",
+  "count": 29,
+  "schema": "iiiiiiiiiiiiii",
+  "status": "decoded",
+  "size": 1626
+ },
+ {
+  "file": "mounts.city",
+  "count": 415,
+  "schema": "iisii",
+  "status": "decoded",
+  "size": 15366
+ },
+ {
+  "file": "paid_tool.city",
+  "count": 295,
+  "schema": "iiisiiiiiii",
+  "status": "decoded",
+  "size": 17610
+ },
+ {
+  "file": "paid_tool_extra.city",
+  "count": 2,
+  "schema": "iiii",
+  "status": "decoded",
+  "size": 34
+ },
+ {
+  "file": "payssion_ru_data.city",
+  "count": 25,
+  "schema": "isssi",
+  "status": "decoded",
+  "size": 996
+ },
+ {
+  "file": "product.city",
+  "count": 194,
+  "schema": "iiisiiiiiiii",
+  "status": "decoded",
+  "size": 11866
+ },
+ {
+  "file": "property.city",
+  "count": 18,
+  "schema": "iiiiiiiiiisi",
+  "status": "decoded",
+  "size": 1033
+ },
+ {
+  "file": "pseudo_target.city",
+  "count": 111,
+  "schema": null,
+  "status": "ambiguous",
+  "size": 7176
+ },
+ {
+  "file": "rank.city",
+  "count": 67,
+  "schema": "iisiiiiiii",
+  "status": "decoded",
+  "size": 3593
+ },
+ {
+  "file": "rank_type.city",
+  "count": 10,
+  "schema": "iisii",
+  "status": "decoded",
+  "size": 342
+ },
+ {
+  "file": "repair_type.city",
+  "count": 28,
+  "schema": "iisi",
+  "status": "decoded",
+  "size": 753
+ },
+ {
+  "file": "showcase_bg.city",
+  "count": 10,
+  "schema": "iisi",
+  "status": "decoded",
+  "size": 342
+ },
+ {
+  "file": "slave.city",
+  "count": 24,
+  "schema": "iisi",
+  "status": "decoded",
+  "size": 560
+ },
+ {
+  "file": "slot.city",
+  "count": 19,
+  "schema": "iiiii",
+  "status": "decoded",
+  "size": 382
+ },
+ {
+  "file": "subject.city",
+  "count": 35,
+  "schema": "iiisiiii",
+  "status": "decoded",
+  "size": 1379
+ },
+ {
+  "file": "subject_type.city",
+  "count": 5,
+  "schema": "iis",
+  "status": "decoded",
+  "size": 93
+ },
+ {
+  "file": "tools_effect.city",
+  "count": 53,
+  "schema": "iiiii",
+  "status": "decoded",
+  "size": 1062
+ },
+ {
+  "file": "transition.city",
+  "count": 21,
+  "schema": "iiiiiiii",
+  "status": "decoded",
+  "size": 674
+ },
+ {
+  "file": "weapon.city",
+  "count": 274,
+  "schema": "iiisii",
+  "status": "decoded",
+  "size": 10892
+ },
+ {
+  "file": "yb_brainWash.city",
+  "count": 3,
+  "schema": "iii",
+  "status": "decoded",
+  "size": 38
+ },
+ {
+  "file": "yb_chip.city",
+  "count": 56,
+  "schema": "iisiiii",
+  "status": "decoded",
+  "size": 2374
+ },
+ {
+  "file": "yb_class.city",
+  "count": 272,
+  "schema": null,
+  "status": "ambiguous",
+  "size": 19826
+ },
+ {
+  "file": "yb_consumable.city",
+  "count": 2,
+  "schema": null,
+  "status": "ambiguous",
+  "size": 132
+ },
+ {
+  "file": "yb_fight_effect.city",
+  "count": 4,
+  "schema": "iiisisi",
+  "status": "decoded",
+  "size": 216
+ },
+ {
+  "file": "yb_level_exp.city",
+  "count": 498,
+  "schema": "i",
+  "status": "decoded",
+  "size": 1994
+ },
+ {
+  "file": "yb_property.city",
+  "count": 5,
+  "schema": "iisiiiii",
+  "status": "decoded",
+  "size": 232
+ },
+ {
+  "file": "yb_screen_tip.city",
+  "count": 12,
+  "schema": "iiiiiii",
+  "status": "decoded",
+  "size": 338
+ },
+ {
+  "file": "yb_skill_exp.city",
+  "count": 5,
+  "schema": "i",
+  "status": "decoded",
+  "size": 22
+ },
+ {
+  "file": "yb_skill_provide.city",
+  "count": 6,
+  "schema": "ii",
+  "status": "decoded",
+  "size": 50
+ },
+ {
+  "file": "yb_star.city",
+  "count": 5,
+  "schema": "iiiiii",
+  "status": "decoded",
+  "size": 122
+ },
+ {
+  "file": "yb_upstar_factor.city",
+  "count": 3,
+  "schema": "iiiii",
+  "status": "decoded",
+  "size": 62
+ }
+]

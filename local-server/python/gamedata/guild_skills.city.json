@@ -1,0 +1,169 @@
+{
+ "file": "guild_skills.city",
+ "size": 754,
+ "count": 19,
+ "schema": "iiiisi",
+ "fields": [
+  "id",
+  "f1",
+  "f2",
+  "f3",
+  "name",
+  "f5"
+ ],
+ "records": [
+  {
+   "id": 1,
+   "f1": 4,
+   "f2": 391,
+   "f3": 1114,
+   "name": "JiNeng_BeiDongLiLiang",
+   "f5": 2438
+  },
+  {
+   "id": 2,
+   "f1": 5,
+   "f2": 392,
+   "f3": 1115,
+   "name": "bpxy_yiliao",
+   "f5": 2439
+  },
+  {
+   "id": 3,
+   "f1": 6,
+   "f2": 393,
+   "f3": 1116,
+   "name": "JiNeng_BeiDongNaiLi",
+   "f5": 2440
+  },
+  {
+   "id": 4,
+   "f1": 7,
+   "f2": 394,
+   "f3": 1117,
+   "name": "bpxy_lianhuan",
+   "f5": 2441
+  },
+  {
+   "id": 5,
+   "f1": 8,
+   "f2": 395,
+   "f3": 1118,
+   "name": "JiNeng_BeiDongSuDu",
+   "f5": 2442
+  },
+  {
+   "id": 6,
+   "f1": 9,
+   "f2": 396,
+   "f3": 1119,
+   "name": "bpxy_wuju",
+   "f5": 2443
+  },
+  {
+   "id": 7,
+   "f1": 10,
+   "f2": 397,
+   "f3": 1120,
+   "name": "JiNeng_BeiDongMinJie",
+   "f5": 2444
+  },
+  {
+   "id": 8,
+   "f1": 12,
+   "f2": 398,
+   "f3": 1121,
+   "name": "bpxy_yunshu",
+   "f5": 2445
+  },
+  {
+   "id": 9,
+   "f1": 13,
+   "f2": 399,
+   "f3": 1122,
+   "name": "bpxy_huti",
+   "f5": 2446
+  },
+  {
+   "id": 10,
+   "f1": 14,
+   "f2": 400,
+   "f3": 1123,
+   "name": "bpxy_xunlian",
+   "f5": 2447
+  },
+  {
+   "id": 11,
+   "f1": 15,
+   "f2": 401,
+   "f3": 1124,
+   "name": "JiNeng_WuQiJingTong",
+   "f5": 2448
+  },
+  {
+   "id": 12,
+   "f1": 0,
+   "f2": 402,
+   "f3": 1057,
+   "name": "JiNeng_ShanDong",
+   "f5": 2453
+  },
+  {
+   "id": 13,
+   "f1": 1,
+   "f2": 403,
+   "f3": 1058,
+   "name": "jinglijianshao",
+   "f5": 2454
+  },
+  {
+   "id": 14,
+   "f1": 2,
+   "f2": 404,
+   "f3": 1059,
+   "name": "JiNeng_YueZhanYueYong",
+   "f5": 2455
+  },
+  {
+   "id": 15,
+   "f1": 3,
+   "f2": 405,
+   "f3": 1060,
+   "name": "JiNeng_SiWeiTiSheng",
+   "f5": 2456
+  },
+  {
+   "id": 16,
+   "f1": 11,
+   "f2": 4686,
+   "f3": 4688,
+   "name": "jineng_tizhi",
+   "f5": 4690
+  },
+  {
+   "id": 17,
+   "f1": 16,
+   "f2": 4687,
+   "f3": 4689,
+   "name": "jineng_fennu",
+   "f5": 4691
+  },
+  {
+   "id": 18,
+   "f1": 17,
+   "f2": 7111,
+   "f3": 7113,
+   "name": "jineng_bossjinglian",
+   "f5": 7115
+  },
+  {
+   "id": 19,
+   "f1": 18,
+   "f2": 7112,
+   "f3": 7114,
+   "name": "jineng_renyuanjinglian",
+   "f5": 7116
+  }
+ ],
+ "status": "decoded"
+}

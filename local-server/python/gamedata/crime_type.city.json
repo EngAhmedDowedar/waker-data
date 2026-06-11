@@ -1,0 +1,135 @@
+{
+ "file": "crime_type.city",
+ "size": 485,
+ "count": 17,
+ "schema": "iisii",
+ "fields": [
+  "id",
+  "f1",
+  "name",
+  "f3",
+  "f4"
+ ],
+ "records": [
+  {
+   "id": 1,
+   "f1": 33,
+   "name": "SouSuoJieDao",
+   "f3": 50,
+   "f4": 100
+  },
+  {
+   "id": 2,
+   "f1": 34,
+   "name": "BaiTanMaiDie",
+   "f3": 150,
+   "f4": 300
+  },
+  {
+   "id": 3,
+   "f1": 35,
+   "name": "ShangDianHangQie",
+   "f3": 180,
+   "f4": 360
+  },
+  {
+   "id": 4,
+   "f1": 279,
+   "name": "rob",
+   "f3": 150,
+   "f4": 300
+  },
+  {
+   "id": 5,
+   "f1": 280,
+   "name": "burglary",
+   "f3": 150,
+   "f4": 300
+  },
+  {
+   "id": 6,
+   "f1": 281,
+   "name": "armed_robbery",
+   "f3": 140,
+   "f4": 280
+  },
+  {
+   "id": 7,
+   "f1": 282,
+   "name": "drug_trafficking",
+   "f3": 240,
+   "f4": 480
+  },
+  {
+   "id": 8,
+   "f1": 283,
+   "name": "BingDu",
+   "f3": 225,
+   "f4": 450
+  },
+  {
+   "id": 9,
+   "f1": 284,
+   "name": "AnSha",
+   "f3": 200,
+   "f4": 400
+  },
+  {
+   "id": 10,
+   "f1": 285,
+   "name": "arson",
+   "f3": 385,
+   "f4": 770
+  },
+  {
+   "id": 11,
+   "f1": 286,
+   "name": "steal_car",
+   "f3": 180,
+   "f4": 360
+  },
+  {
+   "id": 12,
+   "f1": 287,
+   "name": "dangpu_en",
+   "f3": 130,
+   "f4": 260
+  },
+  {
+   "id": 13,
+   "f1": 288,
+   "name": "ZaoJia",
+   "f3": 420,
+   "f4": 840
+  },
+  {
+   "id": 14,
+   "f1": 289,
+   "name": "kidnap",
+   "f3": 300,
+   "f4": 600
+  },
+  {
+   "id": 15,
+   "f1": 290,
+   "name": "firearms",
+   "f3": 80,
+   "f4": 160
+  },
+  {
+   "id": 16,
+   "f1": 291,
+   "name": "bomb",
+   "f3": 85,
+   "f4": 170
+  },
+  {
+   "id": 17,
+   "f1": 292,
+   "name": "HeiKe",
+   "f3": 90,
+   "f4": 180
+  }
+ ],
+ "status": "decoded"
+}

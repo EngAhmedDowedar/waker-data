@@ -86,6 +86,8 @@ from datetime import datetime
 
 from flask import Flask, jsonify, make_response, request
 
+import city_loader
+
 
 # =============================================================================
 # Configuration
@@ -111,6 +113,26 @@ PROTOCOL_DUMP = os.environ.get('PROTOCOL_DUMP', '1') == '1'
 DUMP_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                          'protocol_dump.log')
 _dump_lock = threading.Lock()
+
+# -----------------------------------------------------------------------------
+# Asset-driven game data — the decoded .city catalog tables (see
+# analyze/docs/ASSET_SCHEMA.md). Loaded once at import. Set CITY_ASSETS_DIR to a
+# live `.city` assets folder to parse fresh; otherwise the committed gamedata/
+# JSON snapshot is used. Endpoints below pull REAL ids/values from GAMEDATA
+# instead of empty stubs.
+# -----------------------------------------------------------------------------
+GAMEDATA = city_loader.load_catalogs()
+
+# Opt-in: serve real asset-sourced records from gameplay endpoints. Default OFF
+# so the committed default stays byte-identical to the frozen-safe boot baseline.
+# Populated responses are to be validated on real ARM hardware (not the emulator,
+# where the layout/GC path is unreliable under Houdini).
+SERVE_ASSET_DATA = os.environ.get('SERVE_ASSET_DATA', '0') == '1'
+
+
+def _catalog(name):
+    """Return a Catalog or None; never raises so endpoints degrade gracefully."""
+    return GAMEDATA.get(name)
 
 
 # =============================================================================
@@ -536,9 +558,22 @@ def city_introplayers():
 def city_getcitygoods():
     """CMarketCateScreen::ParseGoodsAmount @0x4c2fe8 reads data.goodsList
     (array of {category, type, amount}). The catch-all `data:{}` shape
-    leaves the goods model null → SetValue null-deref on the cate table."""
+    leaves the goods model null → SetValue null-deref on the cate table.
+
+    ASSET-BACKED: with SERVE_ASSET_DATA=1, `type` is a real product.city id
+    (194 goods, ids 600+). Default OFF keeps the verified-safe empty baseline;
+    the populated path is to be validated on ARM hardware, not the emulator
+    (see ASSET_ENDPOINT_MAPPING.md)."""
+    goods_list = []
+    if SERVE_ASSET_DATA:
+        prod = _catalog('product')
+        if prod:
+            # category 0 = single shop tab (category→tab mapping unverified);
+            # type = product id (the GetById key); amount = nominal stock.
+            goods_list = [{'category': 0, 'type': pid, 'amount': 99}
+                          for pid in prod.ids()]
     return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
-                    'data': {'goodsList': []}})
+                    'data': {'goodsList': goods_list}})
 
 
 @app.route('/city/estate/listestates', methods=['GET', 'POST', 'PUT'])
@@ -952,6 +987,24 @@ def debug_probe():
     the expected JSON. It's a no-op.
     """
     return jsonify({'next_variant': 6})
+
+
+@app.route('/debug/gamedata', methods=['GET'])
+def debug_gamedata():
+    """Read-only view of the loaded asset catalogs (real .city data). Plaintext,
+    not ciphered — inspect from a desktop browser. `?table=job` for one table's
+    full records; no arg = summary of all 93."""
+    t = request.args.get('table')
+    if t and t in GAMEDATA:
+        c = GAMEDATA[t]
+        return jsonify({'table': t, 'count': c.count, 'schema': c.schema,
+                        'fields': c.fields, 'status': c.status,
+                        'records': c.records})
+    return jsonify({'serve_asset_data': SERVE_ASSET_DATA,
+                    'tables': [{'name': c.name, 'count': c.count,
+                                'status': c.status}
+                               for c in sorted(GAMEDATA.values(),
+                                               key=lambda x: x.name)]})
 
 
 @app.route('/', defaults={'path': ''},

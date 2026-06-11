@@ -1,0 +1,94 @@
+{
+ "file": "exchange_type.city",
+ "size": 418,
+ "count": 16,
+ "schema": "iis",
+ "fields": [
+  "id",
+  "f1",
+  "name"
+ ],
+ "records": [
+  {
+   "id": 1,
+   "f1": 5161,
+   "name": "market_huodong"
+  },
+  {
+   "id": 12,
+   "f1": 7935,
+   "name": "market_moon"
+  },
+  {
+   "id": 2,
+   "f1": 5162,
+   "name": "mall_jintiao"
+  },
+  {
+   "id": 3,
+   "f1": 5163,
+   "name": "market_food"
+  },
+  {
+   "id": 4,
+   "f1": 5164,
+   "name": "market_weapon"
+  },
+  {
+   "id": 8,
+   "f1": 4270,
+   "name": "market_techan"
+  },
+  {
+   "id": 5,
+   "f1": 5372,
+   "name": "market_crystal"
+  },
+  {
+   "id": 9,
+   "f1": 6703,
+   "name": "market_kingbadge"
+  },
+  {
+   "id": 10,
+   "f1": 7491,
+   "name": "market_force"
+  },
+  {
+   "id": 11,
+   "f1": 7753,
+   "name": "market_advance"
+  },
+  {
+   "id": 13,
+   "f1": 8063,
+   "name": "market_CrossKingbadge"
+  },
+  {
+   "id": 14,
+   "f1": 8602,
+   "name": "rank_type_car_race"
+  },
+  {
+   "id": 15,
+   "f1": 9102,
+   "name": "rank_type_hunt"
+  },
+  {
+   "id": 16,
+   "f1": 9545,
+   "name": "DH_Jiequzhan"
+  },
+  {
+   "id": 17,
+   "f1": 9545,
+   "name": "DH_Jiequzhan"
+  },
+  {
+   "id": 18,
+   "f1": 9707,
+   "name": "exchange_kingkong"
+  }
+ ],
+ "status": "decoded"
+}

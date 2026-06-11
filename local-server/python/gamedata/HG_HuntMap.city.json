@@ -1,0 +1,33 @@
+{
+ "file": "HG_HuntMap.city",
+ "size": 107,
+ "count": 1,
+ "schema": "iiisisssis",
+ "fields": [
+  "id",
+  "f1",
+  "f2",
+  "name",
+  "f4",
+  "str5",
+  "str6",
+  "str7",
+  "f8",
+  "str9"
+ ],
+ "records": [
+  {
+   "id": 1,
+   "f1": 8907,
+   "f2": 8908,
+   "name": "hunt_showMap1",
+   "f4": 2,
+   "str5": "forest_bg_ske.json",
+   "str6": "forest_bg_tex.json",
+   "str7": "[1,2,3]",
+   "f8": 5000,
+   "str9": "[1,2,3,4]"
+  }
+ ],
+ "status": "decoded"
+}

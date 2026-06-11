@@ -1,0 +1,49 @@
+{
+ "file": "militia.city",
+ "size": 163,
+ "count": 7,
+ "schema": "iis",
+ "fields": [
+  "id",
+  "f1",
+  "name"
+ ],
+ "records": [
+  {
+   "id": 1,
+   "f1": 4982,
+   "name": "militia_lv1"
+  },
+  {
+   "id": 2,
+   "f1": 4983,
+   "name": "militia_lv2"
+  },
+  {
+   "id": 3,
+   "f1": 4984,
+   "name": "militia_lv3"
+  },
+  {
+   "id": 4,
+   "f1": 4985,
+   "name": "militia_lv4"
+  },
+  {
+   "id": 5,
+   "f1": 4986,
+   "name": "militia_lv5"
+  },
+  {
+   "id": 6,
+   "f1": 4987,
+   "name": "militia_lv6"
+  },
+  {
+   "id": 7,
+   "f1": 4988,
+   "name": "militia_lv7"
+  }
+ ],
+ "status": "decoded"
+}

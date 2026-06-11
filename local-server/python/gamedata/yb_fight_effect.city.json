@@ -1,0 +1,54 @@
+{
+ "file": "yb_fight_effect.city",
+ "size": 216,
+ "count": 4,
+ "schema": "iiisisi",
+ "fields": [
+  "id",
+  "f1",
+  "f2",
+  "name",
+  "f4",
+  "str5",
+  "f6"
+ ],
+ "records": [
+  {
+   "id": 1,
+   "f1": 6141,
+   "f2": 6145,
+   "name": "fight_red.psi",
+   "f4": 1021,
+   "str5": "yb_effect_1",
+   "f6": 0
+  },
+  {
+   "id": 2,
+   "f1": 6142,
+   "f2": 6146,
+   "name": "fight_purple.psi",
+   "f4": 1025,
+   "str5": "yb_effect_2",
+   "f6": 0
+  },
+  {
+   "id": 3,
+   "f1": 6143,
+   "f2": 6147,
+   "name": "fight_blue.psi",
+   "f4": 1027,
+   "str5": "yb_effect_3",
+   "f6": 0
+  },
+  {
+   "id": 4,
+   "f1": 6144,
+   "f2": 6148,
+   "name": "fight_green.psi",
+   "f4": 1023,
+   "str5": "yb_effect_4",
+   "f6": 0
+  }
+ ],
+ "status": "decoded"
+}

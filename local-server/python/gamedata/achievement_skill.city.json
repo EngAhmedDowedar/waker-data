@@ -1,0 +1,265 @@
+{
+ "file": "achievement_skill.city",
+ "size": 1267,
+ "count": 31,
+ "schema": "iiisii",
+ "fields": [
+  "id",
+  "f1",
+  "f2",
+  "name",
+  "f4",
+  "f5"
+ ],
+ "records": [
+  {
+   "id": 1,
+   "f1": 1070,
+   "f2": 1092,
+   "name": "JiNeng_WuQiJingTong",
+   "f4": 2,
+   "f5": 2457
+  },
+  {
+   "id": 2,
+   "f1": 1071,
+   "f2": 1093,
+   "name": "JiNeng_FangJuJingTong",
+   "f4": 3,
+   "f5": 2458
+  },
+  {
+   "id": 4,
+   "f1": 1073,
+   "f2": 1095,
+   "name": "bpxy_yiliao@2x",
+   "f4": 4,
+   "f5": 2460
+  },
+  {
+   "id": 5,
+   "f1": 1074,
+   "f2": 1096,
+   "name": "ach_ShenChuGuiMei1",
+   "f4": 5,
+   "f5": 2461
+  },
+  {
+   "id": 6,
+   "f1": 1075,
+   "f2": 1097,
+   "name": "ach_FanZuiTeZhang",
+   "f4": 6,
+   "f5": 2462
+  },
+  {
+   "id": 7,
+   "f1": 1076,
+   "f2": 1098,
+   "name": "ach_LiCaiDaShi",
+   "f4": 7,
+   "f5": 2463
+  },
+  {
+   "id": 8,
+   "f1": 1077,
+   "f2": 1099,
+   "name": "ach_ZhiChangDaRen",
+   "f4": 8,
+   "f5": 2464
+  },
+  {
+   "id": 9,
+   "f1": 1078,
+   "f2": 1100,
+   "name": "ach_KongZhongFeiRen",
+   "f4": 9,
+   "f5": 2465
+  },
+  {
+   "id": 10,
+   "f1": 1079,
+   "f2": 1101,
+   "name": "ach_TaoJiaHuanJia",
+   "f4": 10,
+   "f5": 2466
+  },
+  {
+   "id": 11,
+   "f1": 1080,
+   "f2": 1102,
+   "name": "ach_ZhangShouMiJi",
+   "f4": 11,
+   "f5": 2467
+  },
+  {
+   "id": 12,
+   "f1": 1081,
+   "f2": 1103,
+   "name": "ach_GuShangZao",
+   "f4": 12,
+   "f5": 2468
+  },
+  {
+   "id": 13,
+   "f1": 1082,
+   "f2": 1104,
+   "name": "JiNeng_SiWeiTiSheng",
+   "f4": 13,
+   "f5": 2469
+  },
+  {
+   "id": 14,
+   "f1": 1083,
+   "f2": 1105,
+   "name": "ach_ShenHangQianLi",
+   "f4": 14,
+   "f5": 2470
+  },
+  {
+   "id": 15,
+   "f1": 1084,
+   "f2": 1106,
+   "name": "ach_LiDaWuQiong",
+   "f4": 15,
+   "f5": 2471
+  },
+  {
+   "id": 16,
+   "f1": 1085,
+   "f2": 1107,
+   "name": "ach_PiCaoRouHou",
+   "f4": 16,
+   "f5": 2472
+  },
+  {
+   "id": 17,
+   "f1": 1086,
+   "f2": 1108,
+   "name": "ach_ShenChuGuiMei2",
+   "f4": 17,
+   "f5": 2473
+  },
+  {
+   "id": 18,
+   "f1": 1087,
+   "f2": 1109,
+   "name": "ach_XinHenShouLa",
+   "f4": 18,
+   "f5": 2474
+  },
+  {
+   "id": 19,
+   "f1": 1088,
+   "f2": 1110,
+   "name": "ach_ShaRenYueHuo",
+   "f4": 19,
+   "f5": 2475
+  },
+  {
+   "id": 20,
+   "f1": 1089,
+   "f2": 1111,
+   "name": "ach_QianLiYanShunFengEr",
+   "f4": 20,
+   "f5": 2476
+  },
+  {
+   "id": 21,
+   "f1": 1090,
+   "f2": 1112,
+   "name": "ach_YiShenShiDan",
+   "f4": 21,
+   "f5": 2477
+  },
+  {
+   "id": 22,
+   "f1": 1091,
+   "f2": 1113,
+   "name": "ach_DaDuNan",
+   "f4": 1,
+   "f5": 2478
+  },
+  {
+   "id": 23,
+   "f1": 2614,
+   "f2": 2615,
+   "name": "ach_BaoJi",
+   "f4": 22,
+   "f5": 2618
+  },
+  {
+   "id": 24,
+   "f1": 3542,
+   "f2": 3543,
+   "name": "ach_XueBa",
+   "f4": 23,
+   "f5": 3544
+  },
+  {
+   "id": 26,
+   "f1": 5120,
+   "f2": 5121,
+   "name": "ach_shenghuawuqi",
+   "f4": 26,
+   "f5": 5122
+  },
+  {
+   "id": 27,
+   "f1": 5937,
+   "f2": 5945,
+   "name": "achievement_skill27",
+   "f4": 27,
+   "f5": 5950
+  },
+  {
+   "id": 28,
+   "f1": 5938,
+   "f2": 5946,
+   "name": "achievement_skill28",
+   "f4": 28,
+   "f5": 5951
+  },
+  {
+   "id": 29,
+   "f1": 5939,
+   "f2": 5947,
+   "name": "achievement_skill29",
+   "f4": 29,
+   "f5": 5952
+  },
+  {
+   "id": 30,
+   "f1": 5940,
+   "f2": 5948,
+   "name": "achievement_skill30",
+   "f4": 30,
+   "f5": 5953
+  },
+  {
+   "id": 31,
+   "f1": 5941,
+   "f2": 5949,
+   "name": "achievement_skill31",
+   "f4": 31,
+   "f5": 5954
+  },
+  {
+   "id": 32,
+   "f1": 8565,
+   "f2": 8567,
+   "name": "achievement_skill35",
+   "f4": 35,
+   "f5": 8569
+  },
+  {
+   "id": 33,
+   "f1": 8566,
+   "f2": 8568,
+   "name": "achievement_skill36",
+   "f4": 36,
+   "f5": 8570
+  }
+ ],
+ "status": "decoded"
+}

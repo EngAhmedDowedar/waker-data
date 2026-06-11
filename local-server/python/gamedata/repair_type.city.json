@@ -1,0 +1,183 @@
+{
+ "file": "repair_type.city",
+ "size": 753,
+ "count": 28,
+ "schema": "iisi",
+ "fields": [
+  "id",
+  "f1",
+  "name",
+  "f3"
+ ],
+ "records": [
+  {
+   "id": 900,
+   "f1": 1288,
+   "name": "ZhaoMing",
+   "f3": 1332
+  },
+  {
+   "id": 901,
+   "f1": 1289,
+   "name": "JianYiNeiZhuang",
+   "f3": 1333
+  },
+  {
+   "id": 902,
+   "f1": 1290,
+   "name": "SiRenCheKu",
+   "f3": 1334
+  },
+  {
+   "id": 907,
+   "f1": 1291,
+   "name": "JiaGaiDingPeng",
+   "f3": 1335
+  },
+  {
+   "id": 908,
+   "f1": 1292,
+   "name": "JiaGuDiJi",
+   "f3": 1336
+  },
+  {
+   "id": 903,
+   "f1": 1293,
+   "name": "WuDingHuoDongQu",
+   "f3": 1337
+  },
+  {
+   "id": 904,
+   "f1": 1294,
+   "name": "XiaoXingYouYongChi",
+   "f3": 1338
+  },
+  {
+   "id": 909,
+   "f1": 1295,
+   "name": "BaoQuanSheShi",
+   "f3": 1339
+  },
+  {
+   "id": 910,
+   "f1": 1296,
+   "name": "AnZhaoDeng",
+   "f3": 1340
+  },
+  {
+   "id": 915,
+   "f1": 1297,
+   "name": "XiuCaoPing",
+   "f3": 1341
+  },
+  {
+   "id": 916,
+   "f1": 1298,
+   "name": "JiaGaiLiangCang",
+   "f3": 1342
+  },
+  {
+   "id": 905,
+   "f1": 1299,
+   "name": "WenQuan",
+   "f3": 1343
+  },
+  {
+   "id": 906,
+   "f1": 1300,
+   "name": "SiRenHaiTan",
+   "f3": 1344
+  },
+  {
+   "id": 911,
+   "f1": 1301,
+   "name": "SiJiaHuaYuan",
+   "f3": 1345
+  },
+  {
+   "id": 912,
+   "f1": 1302,
+   "name": "WuDingFanXin",
+   "f3": 1346
+  },
+  {
+   "id": 913,
+   "f1": 1303,
+   "name": "MenJin",
+   "f3": 1347
+  },
+  {
+   "id": 914,
+   "f1": 1304,
+   "name": "JianKong",
+   "f3": 1348
+  },
+  {
+   "id": 917,
+   "f1": 1305,
+   "name": "WuDingDiaoHua",
+   "f3": 1349
+  },
+  {
+   "id": 918,
+   "f1": 1306,
+   "name": "ShouGongBiZhi",
+   "f3": 1350
+  },
+  {
+   "id": 919,
+   "f1": 1307,
+   "name": "HuChengHe",
+   "f3": 1351
+  },
+  {
+   "id": 920,
+   "f1": 1308,
+   "name": "DiaoKe",
+   "f3": 1352
+  },
+  {
+   "id": 921,
+   "f1": 1309,
+   "name": "MaTou",
+   "f3": 1353
+  },
+  {
+   "id": 922,
+   "f1": 1310,
+   "name": "ZhiShuZaoLin",
+   "f3": 1354
+  },
+  {
+   "id": 923,
+   "f1": 3295,
+   "name": "TingJiPing",
+   "f3": 3296
+  },
+  {
+   "id": 924,
+   "f1": 4863,
+   "name": "jiqishouwei",
+   "f3": 4867
+  },
+  {
+   "id": 925,
+   "f1": 4864,
+   "name": "jianongpao",
+   "f3": 4868
+  },
+  {
+   "id": 926,
+   "f1": 4865,
+   "name": "tongxinshebei",
+   "f3": 4869
+  },
+  {
+   "id": 927,
+   "f1": 4866,
+   "name": "qiluotai",
+   "f3": 4870
+  }
+ ],
+ "status": "decoded"
+}

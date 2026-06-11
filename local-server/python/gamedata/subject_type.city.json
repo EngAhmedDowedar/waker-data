@@ -1,0 +1,39 @@
+{
+ "file": "subject_type.city",
+ "size": 93,
+ "count": 5,
+ "schema": "iis",
+ "fields": [
+  "id",
+  "f1",
+  "name"
+ ],
+ "records": [
+  {
+   "id": 1500,
+   "f1": 3465,
+   "name": "falv"
+  },
+  {
+   "id": 1501,
+   "f1": 3467,
+   "name": "junshi"
+  },
+  {
+   "id": 1502,
+   "f1": 3468,
+   "name": "wenshi"
+  },
+  {
+   "id": 1503,
+   "f1": 3469,
+   "name": "keji"
+  },
+  {
+   "id": 1504,
+   "f1": 3466,
+   "name": "tiyu_school"
+  }
+ ],
+ "status": "decoded"
+}
