@@ -79,6 +79,7 @@ machine. Default 127.0.0.1 only works for on-device testing.
 import base64
 import json
 import os
+import random
 import threading
 import time
 from collections import deque
@@ -87,6 +88,7 @@ from datetime import datetime
 from flask import Flask, jsonify, make_response, request
 
 import city_loader
+import player_state
 
 
 # =============================================================================
@@ -133,6 +135,60 @@ SERVE_ASSET_DATA = os.environ.get('SERVE_ASSET_DATA', '0') == '1'
 def _catalog(name):
     """Return a Catalog or None; never raises so endpoints degrade gracefully."""
     return GAMEDATA.get(name)
+
+
+# -----------------------------------------------------------------------------
+# Phase 1 player state — the mutable, persisted single-player record. Action
+# endpoints mutate player_state and persist; state endpoints serialize slices
+# of it into the verified shapes. See PLAYER_STATE_IMPLEMENTATION_PLAN.md.
+# -----------------------------------------------------------------------------
+PLAYER = player_state.load()
+
+
+def _req_json():
+    """Best-effort decode of the request parameters. The client ciphers bodies
+    (base64(XOR(json))); we also accept plaintext JSON, form, and query args so
+    actions can read e.g. an estateType / crimeId when present. Returns {} if
+    nothing decodes — endpoints fall back to sensible defaults."""
+    out = {}
+    try:
+        out.update(request.args.to_dict())
+    except Exception:
+        pass
+    try:
+        if request.form:
+            out.update(request.form.to_dict())
+    except Exception:
+        pass
+    raw = b''
+    try:
+        raw = request.get_data() or b''
+    except Exception:
+        raw = b''
+    if raw:
+        for candidate in (raw,):
+            # try ciphered first, then plaintext
+            for attempt in ('cipher', 'plain'):
+                try:
+                    if attempt == 'cipher':
+                        text = _xor_bytes(base64.b64decode(candidate)).decode('utf-8')
+                    else:
+                        text = candidate.decode('utf-8')
+                    obj = json.loads(text)
+                    if isinstance(obj, dict):
+                        out.update(obj)
+                        break
+                except Exception:
+                    continue
+    return out
+
+
+def _req_int(name, default=0):
+    v = _req_json().get(name, default)
+    try:
+        return int(v)
+    except (TypeError, ValueError):
+        return default
 
 
 # =============================================================================
@@ -378,27 +434,36 @@ def _make_player():
                        falls through their accessors with no type mismatch.
     """
     now = int(time.time())
-    # CLASS B CRASH INVESTIGATION (2026-06-11): Full 65-field response causes
-    # deterministic SEGV_ACCERR at 0x756f707b (Dalvik GC guard) in
-    # ngHashMap→ngLinkedList during JSON tree cleanup. Testing minimal set
-    # to bisect the trigger. Original full set preserved below in comment.
+    # Phase 1: mutable values (money/exp/mission/inventory/estates) come from the
+    # persisted player_state; the boot-safe structure (newPlayer:0, avatarAt>0,
+    # playerStatus OBJECT, ARRAY goods/bags/estates) is preserved verbatim. The
+    # full 65-field response previously caused the 0x756f707b JSON-cleanup crash,
+    # so the field set stays minimal.
+    p = player_state.load()
     return {
-        'id': 1, 'uid': 1, 'name': 'Abu Hassan', 'level': 20, 'exp': 0,
+        'id': 1, 'uid': 1, 'name': p.get('name', 'Abu Hassan'),
+        'level': p.get('level', 20), 'exp': p.get('exp', 0),
         'gender': 1, 'playerRole': 1, 'avatarAt': now - 86400,
         'signature': '',
         'createdAt': now - 86400 * 30, 'playerKey': 'waker-key',
-        'newPlayer': 0, 'missionId': 1, 'missionProgress': 0,
+        'newPlayer': 0,
+        'missionId': p.get('missionId', 1),
+        'missionProgress': p.get('missionProgress', 0),
         'loginGift': 0, 'loginContinuousDays': 1,
-        'gold': 100000, 'money': 5000000, 'cheque': 5000,
-        'energy': 100, 'energyUp': 100, 'energyAt': now,
-        'blood': 100, 'bloodUp': 100,
-        'happy': 100, 'happyUp': 100,
+        'gold': p.get('gold', 100000), 'money': p.get('money', 5000000),
+        'cheque': p.get('cheque', 5000),
+        'energy': p.get('energy', 100), 'energyUp': p.get('energyUp', 100),
+        'energyAt': now,
+        'blood': p.get('blood', 100), 'bloodUp': p.get('bloodUp', 100),
+        'happy': p.get('happy', 100), 'happyUp': p.get('happyUp', 100),
         'brave': 100, 'braveUp': 100,
         'moral': 100, 'moralUp': 100, 'moralAt': now,
-        'playerStatus': {'cityId': 1, 'status': 0, 'statusAt': 0,
-                         'statusDuration': 0, 'statusExtra': 0,
-                         'statusExtraDesc': '', 'noFightedExpireAt': 0},
-        'goods': [], 'bags': [], 'estates': [],
+        'playerStatus': p.get('playerStatus',
+                              {'cityId': 1, 'status': 0, 'statusAt': 0,
+                               'statusDuration': 0, 'statusExtra': 0,
+                               'statusExtraDesc': '', 'noFightedExpireAt': 0}),
+        'goods': p.get('goods', []), 'bags': p.get('bags', []),
+        'estates': p.get('estates', []),
     }
     # ORIGINAL FULL SET (pre-bisect):
     # 'maritalStatus': 0, 'spouseName': '',
@@ -578,21 +643,52 @@ def city_getcitygoods():
 
 @app.route('/city/estate/listestates', methods=['GET', 'POST', 'PUT'])
 def city_listestates():
-    """Array of CHouse — the player's owned estates.
-    NOTE: returning the full 20-field _make_house() causes a heap corruption
-    crash in ngHashMap→ngLinkedList during JSON tree cleanup (fault addr
-    0x756f707b in Dalvik GC guard memory). Empty array avoids the crash;
-    re-enable with minimal fields once the safe set is identified."""
+    """PLAYER_STATE. CPropertyCateScreen::OnReceiveResponse reads an OBJECT
+    `{myEstates:[CHouse], spouseEstates:[CHouse], money, happy, ...}` — NOT a
+    bare array. The previous bare-array shape was the 0x756f707b JSON-cleanup
+    crash (ESTATE_PARSER_FINAL.md). Empty arrays are guaranteed-safe; populated
+    arrays carry the player's owned CHouse instances."""
+    p = player_state.load()
     return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
-                    'data': []})
+                    'data': {
+                        'myEstates': p['estates'],
+                        'spouseEstates': [],
+                        'money': p['money'],
+                        'happy': p['happy'],
+                        'liveEstate': p.get('liveEstate', 0),
+                        'maintainExpireAt': 0,
+                        'spouseLiveEstate': 0,
+                    }})
 
 
 @app.route('/city/estate/buy', methods=['GET', 'POST', 'PUT'])
 def city_estate_buy():
-    """Buy = one CHouse (cmd 0x13b). CPropertyListCateScreen builds one
-    CHouse from `data` and calls CHouse::GetPrice → needs a valid estateType."""
+    """ACTION (cmd 315). Deduct property price, append a CHouse, return
+    {buy_house, estates}. estateType must be a valid property.city id (800-817)."""
+    p = player_state.load()
+    estate_type = _req_int('estateType', 800)
+    if not (800 <= estate_type <= 817):
+        estate_type = 800
+    # price from property.city if available (CProperty proxyPrice ~ row field),
+    # else a nominal demo price.
+    price = 100000
+    cat = _catalog('property')
+    if cat and cat.by_id(estate_type):
+        row = cat.by_id(estate_type)
+        # f1 column tracks the price tier in property.city; fall back to nominal.
+        price = int(row.get('f1') or 0) * 100 or price
+    if p['money'] < price:
+        return jsonify({'result': 1, 'code': 200, 'errorMsg': 'not enough money',
+                        'data': {}})
+    house = player_state.make_house(estate_type, owner_id=p['id'],
+                                    owner_name=p['name'], sell_price=price)
+    p['money'] -= price
+    p['estates'].append(house)
+    if not p.get('liveEstate'):
+        p['liveEstate'] = house['id']
+    player_state.save()
     return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
-                    'data': _make_house()})
+                    'data': {'buy_house': house, 'estates': p['estates']}})
 
 
 @app.route('/city/fight/randomfighters', methods=['GET', 'POST', 'PUT'])
@@ -759,9 +855,30 @@ def city_getjobs():
 
 @app.route('/city/job/work', methods=['GET', 'POST', 'PUT'])
 def city_job_work():
-    """Start working — returns updated CPlayer."""
+    """ACTION (cmd 285 work / 284 salary). Awards salary+exp from job.city and
+    records the job-category progress, then returns the verified salary slice
+    `{money, salaryAt}` plus a result flag (all keys null-guarded). Real money
+    persists and is reflected on the next /connect via _make_player."""
+    p = player_state.load()
+    job_id = _req_int('jobId', 1200)
+    job = _catalog('job')
+    job_type_id = 1300
+    if job and job.by_id(job_id):
+        job_type_id = int(job.by_id(job_id).get('f1') or 1300)
+    # salary scales with the job-category level the player has reached.
+    cat_key = str(job_type_id)
+    cat_level = int(p['jobCategory'].get(cat_key, 0))
+    salary = 1000 + cat_level * 250
+    exp_gain = 10 + cat_level
+    p['money'] += salary
+    p['exp'] += exp_gain
+    p['jobCategory'][cat_key] = cat_level + 1
+    p['salaryAt'] = player_state.now()
+    player_state.save()
     return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
-                    'data': _make_player()})
+                    'data': {'result': 1, 'money': p['money'],
+                             'salaryAt': p['salaryAt'], 'awardMoney': salary,
+                             'awardExp': exp_gain}})
 
 
 @app.route('/city/gym/getgym', methods=['GET', 'POST', 'PUT'])
@@ -780,9 +897,54 @@ def city_gym_train():
 
 @app.route('/city/crime/docrime', methods=['GET', 'POST', 'PUT'])
 def city_docrime():
-    """Crime action — returns updated CPlayer."""
-    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
-                    'data': _make_player()})
+    """ACTION (cmd 232). Rolls success vs the crime, awards money/exp on success
+    or sets blood loss + jail cooldown on failure, updates crimeSkills, and
+    returns the verified ParseDoCrimeResponse object (CRIME_PARSER_FINAL.md).
+    All keys scalar + null-guarded (no Class-A risk)."""
+    p = player_state.load()
+    crime_id = _req_int('crimeId', 100)
+    crime = _catalog('crime')
+    crime_type = _catalog('crime_type')
+    # reward range from crime_type.{f3,f4} (min,max) via crime.f1 -> crime_type.id
+    money_min, money_max = 50, 100
+    if crime and crime.by_id(crime_id):
+        ct_id = int(crime.by_id(crime_id).get('f1') or 1)
+        if crime_type and crime_type.by_id(ct_id):
+            row = crime_type.by_id(ct_id)
+            money_min = int(row.get('f3') or 50)
+            money_max = int(row.get('f4') or 100)
+    skill = player_state.add_crime_skill(crime_id)
+    p['crimeTimes'] += 1
+    # success chance improves with experience (demo formula), capped.
+    chance = min(0.55 + skill['crimeNum'] * 0.03, 0.9)
+    success = random.random() < chance
+    if success:
+        award_money = random.randint(money_min, money_max) * 100
+        award_exp = 20
+        p['money'] += award_money
+        p['exp'] += award_exp
+        p['crimeSuccess'] += 1
+        result = {'result': 1, 'awardType': 1, 'awardMoney': award_money,
+                  'awardCheque': 0, 'awardGoodsType': 0, 'awardGoodsCategory': 0,
+                  'awardGoodsAmount': 0, 'awardExp': award_exp,
+                  'statusDuration': 60, 'lostToolFlag': 0, 'blood': 0,
+                  'consumeNum': 0}
+        cooldown = 60
+    else:
+        blood_loss = 20
+        p['blood'] = max(0, p['blood'] - blood_loss)
+        cooldown = 300  # caught -> jail
+        result = {'result': 0, 'awardType': 0, 'awardMoney': 0,
+                  'awardCheque': 0, 'awardGoodsType': 0, 'awardGoodsCategory': 0,
+                  'awardGoodsAmount': 0, 'awardExp': 0,
+                  'statusDuration': cooldown, 'lostToolFlag': 1,
+                  'blood': blood_loss, 'consumeNum': 0}
+    p['coolingTime'] = cooldown
+    p['playerStatus']['status'] = 0 if success else 1
+    p['playerStatus']['statusAt'] = player_state.now()
+    p['playerStatus']['statusDuration'] = cooldown
+    player_state.save()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': result})
 
 
 @app.route('/city/player/getplayerinfo', methods=['GET', 'POST', 'PUT'])
@@ -808,16 +970,22 @@ def city_getranking():
 
 @app.route('/city/goods/playerbags', methods=['GET', 'POST', 'PUT'])
 def city_playerbags():
-    """Player inventory bags — array."""
+    """PLAYER_STATE bag. CGoodsScreen::ParseBag reads `playerGoods` and
+    `specialities` (GOODS_MARKET_FINAL.md) — NOT bags/goods (those are the
+    CPlayer-payload keys). `playerGoods` = the player's carried bag items."""
+    p = player_state.load()
     return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
-                    'data': {'bags': [], 'goods': []}})
+                    'data': {'playerGoods': p['bags'], 'specialities': []}})
 
 
 @app.route('/city/goods/playergoods', methods=['GET', 'POST', 'PUT'])
 def city_playergoods():
-    """Player goods — object with goods array."""
+    """PLAYER_STATE warehouse. CGoodsScreen::ParseWarehouse reads `playerGoods`,
+    `tradeGoods`, `specialities`. `playerGoods` = the player's warehouse goods."""
+    p = player_state.load()
     return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
-                    'data': {'goods': []}})
+                    'data': {'playerGoods': p['goods'], 'tradeGoods': [],
+                             'specialities': []}})
 
 
 # ----- ARRAY-EXPECTING STUBS (binary-verified: crash with data:{}) ---------

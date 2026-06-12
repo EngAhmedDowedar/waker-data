@@ -17,3 +17,7 @@ analyze/screenshots/
 
 # decoded-asset working copy (canonical committed copy is local-server/python/gamedata/)
 analyze/assets_decoded/
+
+# Phase 1 runtime player state (regenerated at runtime)
+local-server/python/player_state.json
+local-server/python/player_state.json.tmp

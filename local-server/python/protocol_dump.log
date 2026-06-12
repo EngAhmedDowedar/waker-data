@@ -6127,3 +6127,376 @@
   Content-Type: application/json
   Body: {"count":54,"fields":["id","f1","f2","name","f4"],"records":[{"f1":1300,"f2":474,"f4":2530,"id":1200,"name":"ShuaWanGong"},{"f1":1300,"f2":475,"f4":2531,"id":1201,"name":"FuWuYuan"},{"f1":1300,"f2":476,"f4":2532,"id":1202,"name":"ZhuLiChuShi_en"},{"f1":1300,"f2":477,"f4":2533,"id":1203,"name":"ZhuChu"},{"f1":1300,"f2":478,"f4":2534,"id":1204,"name":"JinPaiZhuChu"},{"f1":1300,"f2":479,"f4":2535,"id":1205,"name":"ShiShen"},{"f1":1301,"f2":480,"f4":2536,"id":1206,"name":"MenWei_en"},{"f1":1301,"f2":481,"f4":2537,"id":1207,"name":"ChengGuan_en"},{"f1":1301,"f2":482,"f4":2538,"id":1208,"name":"WuNiang"},{"f1":1301,"f2":483,"f4":2539,"id":1209,"name":"TiaoJiuShi"},{"f1":1301,"f2":484,"f4":2540,"id":1210,"name":"DJ"},{"f1":1301,"f2":485,"f4":2541,"id":1211,"name":"JiuBaLaoBan"},{"f1":1302,"f2":486,"f4":2542,"id":1212,"name":"LongTao_en"},{"f1":1302,"f2":487,"f4":2543,"id":1213,"name":"ZhuJiao_en"},{"f1":1302,"f2":488,"f4":2544,"id":1214,"name":"YouTaiCiLongTao_en"},{"f1":1302,"f2":489,"f4":2545,"id":1215,"name":"Peijiao_en"},{"f1":1302,"f2":490,"f4":2546,"id":1216,"name":"ChaoJiYingXing"},{"f1":1302,"f2":491,"f4":2547,"id":1217,"name":"XiJuZhiWang_en"},{"f1":1305,"f2":504,"f4":2548,"id":1218,"name":"BeiShiYanDuiXiang"},{"f1":1305,"f2":505,"f4":2549,"id":1219,"name":"ShiYanJiShi"},{"f1":1305,"f2":506,"f4":2550,"id":1220,"name":"ShengWuTiaoChaYuan"},{"f1":1305,"f2":507,"f4":2551,"id":1221,"name":"MiMiYanJiuYuan"},{"f1":1305,"f2":508,"f4":2552,"id":1222,"name":"ShengHuaRenKaiFaZhe"},{"f1":1305,"f2":509,"f4":2553,"id":1223,"name":"FengKuangKeXueJia"},{"f1":1306,"f2":510,"f4":2554,"id":1224,"name":"YuBeiYi"},{"f1":1306,"f2":511,"f4":2555,"id":1225,"name":"LaoBing_en"},{"f1":1306,"f2":512,"f4":2556,"id":1226,"name":"TeZhongBing"},{"f1":1306,"f2":513,"f4":2557,"id":1227,"name":"FeiHangDaDui"},{"f1":1306,"f2":514,"f4":2558,"id":1228,"name":"SiLing"},{"f1":1306,"f2":515,"f4":2559,"id":1229,"name":"GuoFangBuZhang"},{"f1":1307,"f2":516,"f4":2560,"id":1230,"name":"YiYaoDaiBiao"},{"f1":1307,"f2":517,"f4":2561,"id":1231,"name":"HuShi_en"},{"f1":1307,"f2":518,"f4":2562,"id":1232,"name":"ShiXiYiSheng"},{"f1":1307,"f2":519,"f4":2563,"id":1233,"name":"ZhuZhiYiShi"},{"f1":1307,"f2":520,"f4":2564,"id":1234,"name":"ZhuRenYiSheng_en"},{"f1":1307,"f2":521,"f4":2565,"id":1235,"name":"YuanZhang_en"},{"f1":1309,"f2":528,"f4":2566,"id":1236,"name":"KuangGong"},{"f1":1309,"f2":529,"f4":2567,"id":1237,"name":"JiShuYuan_en"},{"f1":1309,"f2":530,"f4":2568,"id":1238,"name":"ZuanTanShi"},{"f1":1309,"f2":531,"f4":2569,"id":1239,"name":"CeHuiShi_en"},{"f1":1309,"f2":532,"f4":2570,"id":1240,"name":"KanCeYuan"},{"f1":1309,"f2":533,"f4":2571,"id":1241,"name":"MeiLaoBan_en"},{"f1":1310,"f2":540,"f4":2572,"id":1242,"name":"YuZhaiZu"},{"f1":1310,"f2":541,"f4":2573,"id":1243,"name":"cosplay"},{"f1":1310,"f2":542,"f4":2574,"id":1244,"name":"CheMo_en"},{"f1":1310,"f2":543,"f4":2575,"id":1245,"name":"SheYingShi_en"},{"f1":1310,"f2":544,"f4":2576,"id":1246,"name":"HunQingCeHua_en"},{"f1":1310,"f2":545,"f4":2577,"id":1247,"name":"ShiJieMingZui"},{"f1":1311,"f2":1980,"f4":2578,"id":1248,"name":"sdfhjkl"},{"f1":1311,"f2":1981,"f4":2579,"id":1249,"name":"BaoAn"},{"f1":1311,"f2":1982,"f4":2580,"id":1250,"name":"HeGuan"},{"f1":1311,"f2":1983,"f4":2581,"id":1251,"name":"LaoQian_en"},{"f1":1311,"f2":1984,"f4":2582,"id":1252,"name":"DuShen"},{"f1":1311,"f2":1985,"f4":2583,"id":1253,"name":"QianWangZhiWang_en"}],"schema":"iiisi","status":"decoded","table":"job"}
 
+
+================================================================================
+[2026-06-12 10:47:50.289] REQUEST PUT /city/estate/listestates
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+  Body: 
+
+================================================================================
+[2026-06-12 10:47:50.290] RESPONSE 200 for PUT /city/estate/listestates
+  Content-Type: application/json
+  Body: {"code":200,"data":{"happy":100,"liveEstate":0,"maintainExpireAt":0,"money":5000000,"myEstates":[],"spouseEstates":[],"spouseLiveEstate":0},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.291] REQUEST PUT /city/estate/buy
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 19
+  Body: {"estateType": 800}
+
+================================================================================
+[2026-06-12 10:47:50.293] RESPONSE 200 for PUT /city/estate/buy
+  Content-Type: application/json
+  Body: {"code":200,"data":{"buy_house":{"customHouseAt":0,"customHouseTag":"","decoration1":0,"decoration2":0,"decoration3":0,"estateType":800,"id":1,"maid1":0,"maid1ExpireAt":0,"maid2":0,"maid2ExpireAt":0,"maintainExpireAt":0,"ownerId":1,"ownerName":"Abu Hassan","rentDays":0,"rentExpireAt":0,"rentPrice":100,"renterId":0,"renterName":"","sellPrice":78500,"status":1,"systemEstate":0},"estates":[{"customHouseAt":0,"customHouseTag":"","decoration1":0,"decoration2":0,"decoration3":0,"estateType":800,"id":1,"maid1":0,"maid1ExpireAt":0,"maid2":0,"maid2ExpireAt":0,"maintainExpireAt":0,"ownerId":1,"ownerName":"Abu Hassan","rentDays":0,"rentExpireAt":0,"rentPrice":100,"renterId":0,"renterName":"","sellPrice":78500,"status":1,"systemEstate":0}]},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.294] REQUEST PUT /city/estate/listestates
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+  Body: 
+
+================================================================================
+[2026-06-12 10:47:50.294] RESPONSE 200 for PUT /city/estate/listestates
+  Content-Type: application/json
+  Body: {"code":200,"data":{"happy":100,"liveEstate":1,"maintainExpireAt":0,"money":4921500,"myEstates":[{"customHouseAt":0,"customHouseTag":"","decoration1":0,"decoration2":0,"decoration3":0,"estateType":800,"id":1,"maid1":0,"maid1ExpireAt":0,"maid2":0,"maid2ExpireAt":0,"maintainExpireAt":0,"ownerId":1,"ownerName":"Abu Hassan","rentDays":0,"rentExpireAt":0,"rentPrice":100,"renterId":0,"renterName":"","sellPrice":78500,"status":1,"systemEstate":0}],"spouseEstates":[],"spouseLiveEstate":0},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.295] REQUEST PUT /city/goods/playerbags
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+  Body: 
+
+================================================================================
+[2026-06-12 10:47:50.295] RESPONSE 200 for PUT /city/goods/playerbags
+  Content-Type: application/json
+  Body: {"code":200,"data":{"playerGoods":[],"specialities":[]},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.296] REQUEST PUT /city/goods/playergoods
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+  Body: 
+
+================================================================================
+[2026-06-12 10:47:50.296] RESPONSE 200 for PUT /city/goods/playergoods
+  Content-Type: application/json
+  Body: {"code":200,"data":{"playerGoods":[],"specialities":[],"tradeGoods":[]},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.297] REQUEST PUT /city/job/work
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 15
+  Body: {"jobId": 1200}
+
+================================================================================
+[2026-06-12 10:47:50.298] RESPONSE 200 for PUT /city/job/work
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardExp":10,"awardMoney":1000,"money":4922500,"result":1,"salaryAt":1781250470},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.299] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.300] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":20,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":6300,"awardType":1,"blood":0,"consumeNum":0,"lostToolFlag":0,"result":1,"statusDuration":60},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.301] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.303] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":0,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":0,"awardType":0,"blood":20,"consumeNum":0,"lostToolFlag":1,"result":0,"statusDuration":300},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.304] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.305] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":20,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":8700,"awardType":1,"blood":0,"consumeNum":0,"lostToolFlag":0,"result":1,"statusDuration":60},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.306] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.307] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":20,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":7600,"awardType":1,"blood":0,"consumeNum":0,"lostToolFlag":0,"result":1,"statusDuration":60},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.308] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.309] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":20,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":6200,"awardType":1,"blood":0,"consumeNum":0,"lostToolFlag":0,"result":1,"statusDuration":60},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.310] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.311] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":20,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":6100,"awardType":1,"blood":0,"consumeNum":0,"lostToolFlag":0,"result":1,"statusDuration":60},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.312] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.314] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":0,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":0,"awardType":0,"blood":20,"consumeNum":0,"lostToolFlag":1,"result":0,"statusDuration":300},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.314] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.316] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":20,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":6800,"awardType":1,"blood":0,"consumeNum":0,"lostToolFlag":0,"result":1,"statusDuration":60},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.316] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.318] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":20,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":8400,"awardType":1,"blood":0,"consumeNum":0,"lostToolFlag":0,"result":1,"statusDuration":60},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.319] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.320] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":20,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":9000,"awardType":1,"blood":0,"consumeNum":0,"lostToolFlag":0,"result":1,"statusDuration":60},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.321] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.322] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":20,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":5600,"awardType":1,"blood":0,"consumeNum":0,"lostToolFlag":0,"result":1,"statusDuration":60},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.323] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.324] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":20,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":6600,"awardType":1,"blood":0,"consumeNum":0,"lostToolFlag":0,"result":1,"statusDuration":60},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.325] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.326] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":20,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":8600,"awardType":1,"blood":0,"consumeNum":0,"lostToolFlag":0,"result":1,"statusDuration":60},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.326] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.328] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":20,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":10000,"awardType":1,"blood":0,"consumeNum":0,"lostToolFlag":0,"result":1,"statusDuration":60},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.328] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.330] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":20,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":6700,"awardType":1,"blood":0,"consumeNum":0,"lostToolFlag":0,"result":1,"statusDuration":60},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.330] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.332] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":20,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":6400,"awardType":1,"blood":0,"consumeNum":0,"lostToolFlag":0,"result":1,"statusDuration":60},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.332] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.334] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":20,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":9200,"awardType":1,"blood":0,"consumeNum":0,"lostToolFlag":0,"result":1,"statusDuration":60},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.335] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.336] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":0,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":0,"awardType":0,"blood":20,"consumeNum":0,"lostToolFlag":1,"result":0,"statusDuration":300},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.337] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.338] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":20,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":6200,"awardType":1,"blood":0,"consumeNum":0,"lostToolFlag":0,"result":1,"statusDuration":60},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.339] REQUEST PUT /city/crime/docrime
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+    Content-Length: 16
+  Body: {"crimeId": 100}
+
+================================================================================
+[2026-06-12 10:47:50.340] RESPONSE 200 for PUT /city/crime/docrime
+  Content-Type: application/json
+  Body: {"code":200,"data":{"awardCheque":0,"awardExp":0,"awardGoodsAmount":0,"awardGoodsCategory":0,"awardGoodsType":0,"awardMoney":0,"awardType":0,"blood":20,"consumeNum":0,"lostToolFlag":1,"result":0,"statusDuration":300},"errorMsg":"","result":0}
+
+
+================================================================================
+[2026-06-12 10:47:50.348] REQUEST PUT /city/connect/connect
+  Headers:
+    User-Agent: Werkzeug/3.0.1
+    Host: localhost
+  Body: 
+
+================================================================================
+[2026-06-12 10:47:50.349] RESPONSE 200 for PUT /city/connect/connect
+  Content-Type: application/json
+  Body: {"code":200,"data":{"avatarAt":1781164070,"bags":[],"blood":20,"bloodUp":100,"brave":100,"braveUp":100,"cheque":5000,"createdAt":1778658470,"energy":100,"energyAt":1781250470,"energyUp":100,"estates":[{"customHouseAt":0,"customHouseTag":"","decoration1":0,"decoration2":0,"decoration3":0,"estateType":800,"id":1,"maid1":0,"maid1ExpireAt":0,"maid2":0,"maid2ExpireAt":0,"maintainExpireAt":0,"ownerId":1,"ownerName":"Abu Hassan","rentDays":0,"rentExpireAt":0,"rentPrice":100,"renterId":0,"renterName":"","sellPrice":78500,"status":1,"systemEstate":0}],"exp":330,"gender":1,"gold":100000,"goods":[],"happy":100,"happyUp":100,"id":1,"level":20,"loginContinuousDays":1,"loginGift":0,"missionId":1,"missionProgress":0,"money":5040900,"moral":100,"moralAt":1781250470,"moralUp":100,"name":"Abu Hassan","newPlayer":0,"playerKey":"waker-key","playerRole":1,"playerStatus":{"cityId":1,"noFightedExpireAt":0,"status":1,"statusAt":1781250470,"statusDuration":300,"statusExtra":0,"statusExtraDesc":""},"signature":"","uid":1},"errorMsg":"","result":0}
+
