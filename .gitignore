@@ -21,3 +21,4 @@ analyze/assets_decoded/
 # Phase 1 runtime player state (regenerated at runtime)
 local-server/python/player_state.json
 local-server/python/player_state.json.tmp
+local-server/python/protocol_dump.log
