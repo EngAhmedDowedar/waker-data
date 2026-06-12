@@ -39,7 +39,7 @@ network capture). Listed by gameplay value.
 
 | Endpoint | Catalog(s) | Records | Parser to field-check |
 |----------|-----------|---------|------------------------|
-| `/city/job/getjobs` | `job` + `job_type` | 54 + 9 | CHrMarketCateScreen |
+| ~~`/city/job/getjobs`~~ | — | — | **RESOLVED: not a real endpoint — see below** |
 | `/city/estate/listestates` *(owned)* / estate type list | `property` | 18 | CPropertyCateScreen::Parse — ⚠ heap-corruption risk with full CHouse (see note) |
 | `/city/crime/*` (target list) | `crime` + `crime_type` | 83 + 17 | CCrimeScreen |
 | `/city/gym/getgym` | `gym_service`, `gym_type`, `gym_service_cost`, `gym_item` | 15/3/26/31 | CGymScreen::ParseResponse |
@@ -68,6 +68,26 @@ These can be **populated from assets** once each array's element schema (from
 client falls back to bundled `.city`).
 
 ---
+
+## 3b. RESOLVED via binary verification — `/city/job/getjobs` is NOT an endpoint
+
+Verified in `JOB_PARSER_FINAL.md`: no `getjobs`/`jobs`/`jobId` string exists in the
+binary; `CHrMarketCateScreen::OnReceiveResponse` handles only command 285 (work) and
+284 (salary). The **job catalog is loaded client-side** from `job.city`/`job_type.city`
+by `CGameData::LoadJobs`/`LoadJobTypes` and rendered by `GetJobList` — the server sends
+no job list. The route is now a never-reached empty array (speculative fields removed).
+
+The real, action-only job endpoints:
+| Endpoint | Command | Parser | Verified keys |
+|----------|---------|--------|---------------|
+| `/city/job/work` | 285 | `ParseDoJobResponse` | result int + reward-item array (unnamed in body) |
+| salary query | 284 | `ParseGetSaleryResponse` | `money`, `salaryAt` |
+
+Player job *state* = the job-category object map in CPlayer (`ParseJobCategoryInfo`,
+object keyed by job-type id); safely omitted today (null-guarded).
+
+This is the model for the other ASSET-READY entries: **verify the parser before serving**
+— several may likewise turn out to be client-local or action-only.
 
 ## 4. DYNAMIC — cannot be served from assets
 

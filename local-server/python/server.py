@@ -747,17 +747,14 @@ def game_maintenance_check():
 
 @app.route('/city/job/getjobs', methods=['GET', 'POST', 'PUT'])
 def city_getjobs():
-    """Job listings — array of job objects. Mission 1 sends the player to
-    the job screen; the parser iterates data as an array."""
-    jobs = [
-        {'id': 1, 'jobType': 1, 'name': 'عامل نظافة', 'level': 1,
-         'salary': 500, 'exp': 10, 'energy': 5, 'duration': 60,
-         'status': 0, 'playerId': 0},
-        {'id': 2, 'jobType': 2, 'name': 'حارس', 'level': 5,
-         'salary': 1000, 'exp': 20, 'energy': 8, 'duration': 120,
-         'status': 0, 'playerId': 0},
-    ]
-    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': jobs})
+    """ASSET-DRIVEN / never called. Verified in JOB_PARSER_FINAL.md: the strings
+    'getjobs'/'jobs'/'jobId' do not exist in the binary, and
+    CHrMarketCateScreen::OnReceiveResponse handles only cmd 285 (work) and
+    284 (salary) — there is no list-jobs command. The job catalog is built
+    client-side by GetJobList from job.city/job_type.city via CGameData.
+    Kept as a harmless empty array; the previous hardcoded job objects used
+    SPECULATIVE field names and were removed (no binary evidence for them)."""
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': []})
 
 
 @app.route('/city/job/work', methods=['GET', 'POST', 'PUT'])
