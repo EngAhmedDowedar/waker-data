@@ -1,0 +1,29 @@
+============================================
+  Waker Local Server - وكر الاوغاد
+============================================
+[HTTP] Game API server running on port 8080
+       URL: http://192.168.1.3:8080/
+[CITY] keepLiveServer (HTTP) on port 9090
+[STAT] Analytics server running on port 8992
+============================================
+Ready! Configure your device to point to this server.
+ * Serving Flask app 'server'
+ * Debug mode: off
+ * Serving Flask app 'stat_server'
+ * Debug mode: off
+ * Serving Flask app 'server'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9090
+ * Running on http://192.168.1.3:9090
+Press CTRL+C to quit
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8992
+ * Running on http://192.168.1.3:8992
+Press CTRL+C to quit
+192.168.1.3 - - [12/Jun/2026 11:21:14] "GET /debug/probe HTTP/1.1" 200 -
+192.168.1.3 - - [12/Jun/2026 11:21:14] "GET /debug/probe HTTP/1.1" 200 -
+192.168.1.3 - - [12/Jun/2026 11:21:14] "GET /debug/probe HTTP/1.1" 200 -
+192.168.1.3 - - [12/Jun/2026 11:41:07] "PUT /checkversion HTTP/1.1" 200 -
