@@ -178,6 +178,32 @@ if __name__ == '__main__':
         key = sys.argv[2]
         for a, sz, nm in find(key):
             disasm(a, max(sz, 4), nm)
+    elif what == 'gymdisc':
+        print('## gym symbols ##')
+        for key in ('GymScreen', 'LoadGym', 'ParseGym', 'ParseEnterGym', 'GymService',
+                    'GymType', 'CGym'):
+            res = find(key)
+            if res:
+                print(f'-- "{key}" ({len(res)}) --')
+                for a, sz, nm in res[:25]:
+                    print(f'  0x{a:08x} sz=0x{sz:<5x} {nm}')
+        print('\n## CPlayer gym-related ##')
+        for a, sz, nm in find('CPlayer'):
+            if 'ym' in nm or 'Coach' in nm or 'Train' in nm:
+                print(f'  0x{a:08x} sz=0x{sz:<5x} {nm}')
+        print('\n## gym strings present ##')
+        for s in ('getgym', 'gym', 'train', 'enterGym', 'gymType', 'gymTypes',
+                  'gymServiceDetails', 'coach', 'serviceId', 'gymId', 'cost',
+                  'trainTimes', 'level', 'endTime', 'expireAt'):
+            vas = find_string_va(s)
+            print(f'  "{s}": ' + (', '.join(f'0x{v:x}' for v in vas) if vas else '(none)'))
+    elif what == 'gymdis':
+        for want in ('GymScreen17OnReceiveResponse', 'GymScreen', 'CPlayer'):
+            pass
+        # disassemble exact gym symbols passed as remaining args (mangled substrings)
+        for key in sys.argv[2:]:
+            for a, sz, nm in find(key):
+                disasm(a, max(sz, 4), nm)
     elif what == 'full':
         print('## job strings present in binary ##')
         for s in ('getjobs', 'jobs', 'highestJobs', 'job', 'category', 'salary',

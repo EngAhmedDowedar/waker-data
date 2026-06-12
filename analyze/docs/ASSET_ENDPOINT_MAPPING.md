@@ -42,7 +42,7 @@ network capture). Listed by gameplay value.
 | ~~`/city/job/getjobs`~~ | — | — | **RESOLVED: not a real endpoint — see below** |
 | `/city/estate/listestates` *(owned)* / estate type list | `property` | 18 | CPropertyCateScreen::Parse — ⚠ heap-corruption risk with full CHouse (see note) |
 | `/city/crime/*` (target list) | `crime` + `crime_type` | 83 + 17 | CCrimeScreen |
-| `/city/gym/getgym` | `gym_service`, `gym_type`, `gym_service_cost`, `gym_item` | 15/3/26/31 | CGymScreen::ParseResponse |
+| ~~`/city/gym/getgym`~~ | — | — | **RESOLVED: player-state, not asset — see §3c (GYM_PARSER_FINAL.md)** |
 | `/city/school/subjects` | `subject` + `subject_type` | 35 + 5 | CSchoolCateScreen |
 | `/city/goods/market*` | `product`,`weapon`,`equipment`,`drugs` | 712 total | CMarketScreen::ParseGoodsAmount |
 | `/city/store/*` | `gift`,`gold_package`,`paid_tool` | 551 total | CStoreCateScreen / CStorePackage |
@@ -88,6 +88,25 @@ object keyed by job-type id); safely omitted today (null-guarded).
 
 This is the model for the other ASSET-READY entries: **verify the parser before serving**
 — several may likewise turn out to be client-local or action-only.
+
+## 3c. RESOLVED via binary verification — gym is player-state, not asset-served
+
+Verified in `GYM_PARSER_FINAL.md`. The gym catalog (`gym_service`/`gym_type`/
+`gym_service_cost`/`gym_item`.city) is **client-local** (`CGameData::LoadGym*`) and never
+sent by any endpoint; `getgym`/`enterGym` path strings don't exist in the binary.
+`CGymScreen::ParseResponse` reads **player attributes** (`basicStrength..speed`,
+`gymLevel`); `ParseEnterGymInfo` reads player state (`curUseGymIdx`, `openedGyms[]`,
+`services[{gymIdx}]`). All null-guarded.
+
+| Endpoint | Class | Container |
+|----------|-------|-----------|
+| gym catalog | ASSET_ONLY (client-local; no endpoint) | n/a |
+| `/city/gym/getgym` | PLAYER_STATE (attributes) | object of scalars |
+| `/city/gym/train` (251/252) | ACTION_RESPONSE | object of scalars |
+| enter-gym | PLAYER_STATE | object + arrays |
+| open/join gym (601/602) | ACTION_RESPONSE | — |
+
+**Do not enable `SERVE_ASSET_DATA` for `gym_service`** — no endpoint consumes it.
 
 ## 4. DYNAMIC — cannot be served from assets
 
