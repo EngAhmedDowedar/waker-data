@@ -5,6 +5,27 @@ Follow this top to bottom on a clean machine to reproduce the current working st
 
 ---
 
+## ⚠️ IF THE SERVER "DID NOT START" — READ THIS FIRST
+
+On **Windows**, `python server.py` crashes **immediately** with a `UnicodeEncodeError`
+because the startup banner contains Arabic text the default `cp1252` console can't encode.
+**You must force UTF-8 output.** The single command that works from a clean clone:
+
+```powershell
+cd local-server\python
+$env:SERVER_HOST="192.168.1.3"; $env:PYTHONUTF8="1"; python -X utf8 server.py
+```
+```bash
+# git-bash / WSL / Linux / macOS
+cd local-server/python
+SERVER_HOST=192.168.1.3 PYTHONUTF8=1 python -X utf8 server.py
+```
+
+If you see three `Running on http://...:8080/9090/8992` lines, it started. Full details,
+ports, verification, and other failure modes are below.
+
+---
+
 ## 0. Networking overview (read first)
 
 The game client needs to reach this server by hostname or IP. There are three
@@ -12,8 +33,8 @@ deployment options — pick whichever fits your setup:
 
 | Setup | APK patched to | SERVER_HOST= | Name resolution |
 |-------|---------------|-------------|-----------------|
-| **A. Hostname (recommended)** | `waker.local` | your LAN IP (e.g. `192.168.1.4`) | phone's `/etc/hosts`, router DNS, or mDNS |
-| **B. Direct IP** | your LAN IP (e.g. `192.168.1.4`) | same IP | none needed |
+| **A. Hostname (recommended)** | `waker.local` | your LAN IP (e.g. `192.168.1.3`) | phone's `/etc/hosts`, router DNS, or mDNS |
+| **B. Direct IP** | your LAN IP (e.g. `192.168.1.3`) | same IP | none needed |
 | **C. Remote / VPS** | `my-vps.example.com` | the domain | public DNS |
 
 **Option A** is recommended because the APK doesn't need to be re-patched when
@@ -53,9 +74,22 @@ python -m pip install -r requirements.txt
 | **9090** | "keepLiveServerPort" keepalive channel (same cipher) | `0.0.0.0` |
 | **8992** | Analytics/stat server | `0.0.0.0` |
 
-## 3. Required assets/config files
+## 3. Required files (must be present next to server.py)
 
-**None.** `server.py` builds every response in code; it reads no external assets.
+`server.py` imports two sibling modules and one data directory — all are committed, so a
+clean clone has them, but the server **must be launched from `local-server/python/`** so the
+imports resolve:
+
+| Path | Role | Required? |
+|------|------|-----------|
+| `local-server/python/server.py` | the server | yes |
+| `local-server/python/city_loader.py` | loads the `.city` catalogs | yes (imported) |
+| `local-server/python/player_state.py` | Phase 1 mutable player state | yes (imported) |
+| `local-server/python/gamedata/*.json` | 93 decoded catalog tables | yes — `city_loader` reads these at startup |
+| `local-server/python/player_state.json` | runtime save file | **auto-created** on first run (gitignored) |
+
+No external network assets are fetched. If `gamedata/` is missing, the server still starts
+but logs `0 catalogs` and asset-backed endpoints serve empty data.
 
 ---
 
@@ -66,18 +100,18 @@ python -m pip install -r requirements.txt
 git-bash / WSL / Linux / macOS:
 ```bash
 cd local-server/python
-SERVER_HOST=192.168.1.4 PYTHONUTF8=1 python -X utf8 server.py
+SERVER_HOST=192.168.1.3 PYTHONUTF8=1 python -X utf8 server.py
 ```
 
 Windows PowerShell:
 ```powershell
 cd local-server\python
-$env:SERVER_HOST="192.168.1.4"; $env:PYTHONUTF8="1"; python -X utf8 server.py
+$env:SERVER_HOST="192.168.1.3"; $env:PYTHONUTF8="1"; python -X utf8 server.py
 ```
 
-Replace `192.168.1.4` with your actual LAN IP, hostname, or domain:
+Replace `192.168.1.3` with your actual LAN IP, hostname, or domain:
 ```bash
-SERVER_HOST=192.168.1.4       # LAN IP
+SERVER_HOST=192.168.1.3       # LAN IP
 SERVER_HOST=waker.local       # mDNS / hosts-file hostname
 SERVER_HOST=my-vps.example.com  # remote VPS
 ```
@@ -140,7 +174,7 @@ Add a DNS entry in your router mapping `waker.local` → your PC's LAN IP.
 
 **Method 2 — Phone hosts file (rooted):**
 ```bash
-adb shell "echo '192.168.1.4 waker.local' >> /etc/hosts"
+adb shell "echo '192.168.1.3 waker.local' >> /etc/hosts"
 ```
 
 **Method 3 — mDNS (Bonjour/Avahi):**
@@ -158,7 +192,7 @@ The hostname/IP is stored as a string in `libcity_ar.so`. To change it:
 
 ```bash
 cd analyze/tools
-python patch_so.py --server-host 192.168.1.4     # direct IP
+python patch_so.py --server-host 192.168.1.3     # direct IP
 python patch_so.py --server-host waker.local      # hostname (default)
 python patch_so.py --server-host my-vps.com       # remote server
 ```
@@ -219,3 +253,67 @@ adb reverse tcp:8992 tcp:8992
 cd local-server/python
 PYTHONUTF8=1 python -X utf8 server.py
 ```
+
+---
+
+## 11. Fresh-clone checklist (zero → running)
+
+```
+[ ] 1. python --version            → 3.8+ (verified on 3.12.3)
+[ ] 2. pip install -r local-server/python/requirements.txt   (flask 3.0.0, werkzeug 3.0.1)
+[ ] 3. confirm local-server/python/gamedata/ has ~93 *.json   (ls | wc -l)
+[ ] 4. cd local-server/python      (MUST cd here — imports are relative siblings)
+[ ] 5. set SERVER_HOST to the IP/host the device reaches      (e.g. 192.168.1.3)
+[ ] 6. set PYTHONUTF8=1  /  -X utf8 (Windows: mandatory)
+[ ] 7. python -X utf8 server.py    → see three "Running on ...8080/9090/8992"
+[ ] 8. curl http://127.0.0.1:8080/debug/probe   → {"next_variant":6}
+[ ] 9. (device) browser http://<SERVER_HOST>:8080/debug/probe → JSON
+[ ] 10. install + launch APK (§4b/§4c)
+```
+
+Minimal one-liner once deps are installed:
+```bash
+cd local-server/python && SERVER_HOST=192.168.1.3 PYTHONUTF8=1 python -X utf8 server.py
+```
+
+---
+
+## 12. Startup Verification Report (repo state as of this commit)
+
+Verified by importing every module from a clean checkout — **nothing is missing**.
+
+### Environment
+| Item | Value |
+|------|-------|
+| Python | 3.12.3 (requirement: 3.8+) |
+| Third-party packages | **flask 3.0.0**, **werkzeug 3.0.1** (flask's dep) — both in `requirements.txt`, both installed |
+| Working dir | `local-server/python/` (required for sibling imports) |
+| Catalogs loaded | **93** from `gamedata/*.json` (94 files incl. `_summary.json`) |
+| Ports | HTTP **8080**, keepalive **9090**, analytics **8992** |
+| `SERVER_HOST` default | `127.0.0.1` (override per network) |
+
+### Full dependency inventory (every import)
+| Module | Imports | Type | Present? |
+|--------|---------|------|----------|
+| `server.py` | `base64, json, os, random, threading, time, collections.deque, datetime.datetime` | stdlib | ✅ |
+| `server.py` | `flask (Flask, jsonify, make_response, request)` | pip | ✅ flask 3.0.0 |
+| `server.py` | `city_loader`, `player_state` | local sibling | ✅ |
+| `player_state.py` | `json, os, time, threading` | stdlib | ✅ |
+| `city_loader.py` | `os, json, glob, struct` | stdlib | ✅ |
+
+**No optional/missing imports.** The only non-stdlib dependency in the entire server is
+`flask` (+ its bundled `werkzeug`). Everything else is the Python standard library.
+
+### Boot confirmation
+`python -c "import server"` (from `local-server/python/`, with `PYTHONUTF8=1`) returns:
+```
+city_loader, player_state, server: import OK
+GAMEDATA catalogs: 93
+ports HTTP/TCP/STAT: 8080 9090 8992
+```
+i.e. the repository **imports and initializes cleanly**. The *only* thing that stops a
+launch on Windows is the cp1252 banner (§ top + §9) — solved by `PYTHONUTF8=1 -X utf8`.
+
+> Note (no code change here): the banner crash could be removed permanently with a
+> one-line guard on the print, but per instruction the code is left unmodified — use the
+> UTF-8 env var.
