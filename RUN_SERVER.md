@@ -5,6 +5,41 @@ Follow this top to bottom on a clean machine to reproduce the current working st
 
 ---
 
+## ✅ VERIFIED WORKING METHOD (USB / ADB Reverse)
+
+The most reliable setup — works even when the device is on a different subnet than the PC:
+
+```powershell
+# 1. Start the server (Windows PowerShell, from repo root)
+cd local-server\python
+$env:PYTHONUTF8="1"; python -X utf8 server.py
+
+# 2. Set up ADB reverse port forwarding (device → PC, over USB)
+adb reverse tcp:8080 tcp:8080
+adb reverse tcp:9090 tcp:9090
+adb reverse tcp:8992 tcp:8992
+
+# 3. Clear game state (forces direct-login path; avoids resume-path stall)
+adb shell pm clear com.anansimobile.city_ar
+
+# 4. Install and launch the USB-patched APK
+adb install -r client/waker-usb-signed.apk
+adb shell am start -n com.anansimobile.city_ar/.Main
+```
+
+The game will auto-proceed past the login screen in ~3–5 minutes.
+Watch for `[LoadingMnger] do step:13` in logcat to confirm city boot.
+
+**Why ADB reverse?** The device may be on a different IP subnet (172.16.x vs 192.168.x).
+ADB reverse tunnels all three game ports through the USB connection so the device reaches
+the server at `127.0.0.1` regardless of network topology.
+
+**Why `pm clear`?** The resume path (used after any crash/restart) tries a binary keepalive
+on port 9090 that our HTTP-only server cannot respond to. Clearing state forces the fresh
+direct-login path which uses standard HTTP throughout. Always `pm clear` before launch.
+
+---
+
 ## ⚠️ IF THE SERVER "DID NOT START" — READ THIS FIRST
 
 On **Windows**, `python server.py` crashes **immediately** with a `UnicodeEncodeError`
@@ -13,16 +48,20 @@ because the startup banner contains Arabic text the default `cp1252` console can
 
 ```powershell
 cd local-server\python
-$env:SERVER_HOST="192.168.1.3"; $env:PYTHONUTF8="1"; python -X utf8 server.py
+$env:PYTHONUTF8="1"; python -X utf8 server.py
 ```
 ```bash
 # git-bash / WSL / Linux / macOS
 cd local-server/python
-SERVER_HOST=192.168.1.3 PYTHONUTF8=1 python -X utf8 server.py
+PYTHONUTF8=1 python -X utf8 server.py
 ```
 
 If you see three `Running on http://...:8080/9090/8992` lines, it started. Full details,
 ports, verification, and other failure modes are below.
+
+> **Note:** `SERVER_HOST` is no longer needed for the USB/ADB-reverse setup — the APK
+> connects to `127.0.0.1` directly and ADB reverse handles the forwarding. Set it only
+> if you also want the `/debug/probe` banner to show the right IP.
 
 ---
 
@@ -127,21 +166,35 @@ and `URL: http://<your-host>:8080/`.
 ### 4b. Install the client (first time / after re-patch)
 
 ```bash
-adb install -r client/waker-patched-signed.apk
+# Recommended: USB/ADB-reverse APK (server at 127.0.0.1, works on any device)
+adb install -r client/waker-usb-signed.apk
 # if signature mismatch: adb uninstall com.anansimobile.city_ar  then install again
+
+# Legacy: Wi-Fi APK (server at 192.168.1.3, requires same subnet)
+# adb install -r client/waker-patched-signed.apk
 ```
 
-### 4c. Launch the game (use a CLEAN state so it takes the direct-login path)
+### 4c. Set up ADB reverse and launch with CLEAN state
 
 ```bash
-adb shell rm -rf /sdcard/Android/data/com.anansimobile.city_ar
+# Forward all three game ports through USB (MUST be done after every adb reconnect)
+adb reverse tcp:8080 tcp:8080
+adb reverse tcp:9090 tcp:9090
+adb reverse tcp:8992 tcp:8992
+
+# Clear state (forces direct-login path; avoids resume-path binary-keepalive stall)
 adb shell pm clear com.anansimobile.city_ar
 adb shell am start -n com.anansimobile.city_ar/.Main
 ```
 
-> Why the clears: leftover state makes the client take a cached **resume /
-> server-selection** path that stalls at step 10. Clearing forces the proven
-> direct path: `checkversion → api/connect → getplayerlist → connect → main`.
+> **Why the clears:** leftover state makes the client take the **resume / authplayerkey**
+> path which tries a binary keepalive on port 9090 that this HTTP server cannot handle.
+> Clearing forces the proven direct path:
+> `checkversion → api/connect → impart → getplayerlist → create → connect → city`
+>
+> **After `pm clear`, the game auto-proceeds through the login screen** in ~3–5 minutes
+> without requiring any manual taps. No interaction needed — just wait for
+> `[LoadingMnger] do step:13` in logcat.
 
 ---
 
@@ -219,8 +272,8 @@ java -jar uber-apk-signer.jar -a dist/*.apk
 | 4 | **Same network** — phone and PC can reach each other | Same Wi-Fi/subnet |
 | 5 | **Firewall** — inbound TCP 8080/9090/8992 allowed | Add firewall rules or test with firewall off |
 | 6 | **Phone browser test** — `http://<host>:8080/debug/probe` returns JSON | Confirms end-to-end connectivity |
-| 7 | **Step 10 stall** — game loops after login | Clear device state (section 4c) |
-| 8 | **ADB reverse (USB fallback)** — if APK targets `127.0.0.1` | `adb reverse tcp:8080 tcp:8080; adb reverse tcp:9090 tcp:9090; adb reverse tcp:8992 tcp:8992` |
+| 7 | **Step 10 stall** — game loops after login | Clear device state (`pm clear`) and re-run adb reverse (section 4c) |
+| 8 | **ADB reverse required** — device on different subnet (172.16.x vs 192.168.x) | `adb reverse tcp:8080 tcp:8080; adb reverse tcp:9090 tcp:9090; adb reverse tcp:8992 tcp:8992` |
 
 ## 9. Common failures
 
@@ -230,7 +283,9 @@ java -jar uber-apk-signer.jar -a dist/*.apk
 | `OSError: address already in use` | Previous server still running | Kill it: find PID with `netstat`, then kill |
 | Banner shows `127.0.0.1` | `SERVER_HOST` not set | Restart with `SERVER_HOST=<your-host>` |
 | Game stuck on title | Phone can't reach the server | Check name resolution + firewall |
-| Game reaches step 10, retries | Cached resume path (unimplemented) | Clear device state and relaunch |
+| Game reaches step 10, retries | Cached resume path binary keepalive — HTTP server can't respond | `adb shell pm clear com.anansimobile.city_ar` then relaunch |
+| Game stuck on loading screen (no city) | ADB reverse not set up or expired | Run `adb reverse tcp:8080/9090/8992 tcp:8080/9090/8992` again |
+| Server gets no requests after `authplayerkey` | Resume path — binary keepalive stall | `pm clear` to force direct-login path |
 | `adb install` signature error | Different signer than installed | `adb uninstall com.anansimobile.city_ar`, reinstall |
 
 ---
@@ -259,21 +314,22 @@ PYTHONUTF8=1 python -X utf8 server.py
 ## 11. Fresh-clone checklist (zero → running)
 
 ```
-[ ] 1. python --version            → 3.8+ (verified on 3.12.3)
+[ ] 1. python --version                        → 3.8+ (verified on 3.12.3)
 [ ] 2. pip install -r local-server/python/requirements.txt   (flask 3.0.0, werkzeug 3.0.1)
-[ ] 3. confirm local-server/python/gamedata/ has ~93 *.json   (ls | wc -l)
-[ ] 4. cd local-server/python      (MUST cd here — imports are relative siblings)
-[ ] 5. set SERVER_HOST to the IP/host the device reaches      (e.g. 192.168.1.3)
-[ ] 6. set PYTHONUTF8=1  /  -X utf8 (Windows: mandatory)
-[ ] 7. python -X utf8 server.py    → see three "Running on ...8080/9090/8992"
-[ ] 8. curl http://127.0.0.1:8080/debug/probe   → {"next_variant":6}
-[ ] 9. (device) browser http://<SERVER_HOST>:8080/debug/probe → JSON
-[ ] 10. install + launch APK (§4b/§4c)
+[ ] 3. confirm local-server/python/gamedata/ has ~93 *.json
+[ ] 4. cd local-server/python                  (MUST cd here — imports are relative siblings)
+[ ] 5. PYTHONUTF8=1 python -X utf8 server.py   → see three "Running on ...8080/9090/8992"
+[ ] 6. curl http://127.0.0.1:8080/debug/probe  → {"next_variant":6}
+[ ] 7. adb reverse tcp:8080 tcp:8080 && adb reverse tcp:9090 tcp:9090 && adb reverse tcp:8992 tcp:8992
+[ ] 8. adb install -r client/waker-usb-signed.apk
+[ ] 9. adb shell pm clear com.anansimobile.city_ar
+[ ] 10. adb shell am start -n com.anansimobile.city_ar/.Main
+[ ] 11. wait ~3-5 min → logcat shows [LoadingMnger] do step:13 → CITY SCREEN
 ```
 
 Minimal one-liner once deps are installed:
 ```bash
-cd local-server/python && SERVER_HOST=192.168.1.3 PYTHONUTF8=1 python -X utf8 server.py
+cd local-server/python && PYTHONUTF8=1 python -X utf8 server.py
 ```
 
 ---
