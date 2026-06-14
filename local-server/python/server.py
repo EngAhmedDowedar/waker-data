@@ -259,6 +259,14 @@ app.wsgi_app = MethodNormalizerMiddleware(app.wsgi_app)
 @app.before_request
 def _log_request():
     original = request.environ.get('ORIGINAL_HTTP_METHOD', request.method)
+    # Cache the raw body BEFORE touching request.form. Accessing request.form on a
+    # non-form POST consumes the input stream, after which request.get_data()
+    # returns b'' — silently dropping the ciphered action params (amount, etc.)
+    # that _req_json needs. Caching here preserves the body for every later read.
+    try:
+        request.get_data(cache=True)
+    except Exception:
+        pass
     raw_body = ''
     if request.form:
         raw_body = '&'.join(f'{k}={v}' for k, v in request.form.items())

@@ -27,3 +27,4 @@ local-server/python/protocol_dump.log
 local-server/python/server_run.log
 local-server/python/protocol_server.log
 local-server/python/tombs/
+local-server/python/release_validation_result.json
