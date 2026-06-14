@@ -22,3 +22,8 @@ analyze/assets_decoded/
 local-server/python/player_state.json
 local-server/python/player_state.json.tmp
 local-server/python/protocol_dump.log
+
+# runtime logs / pulled artifacts (audit session)
+local-server/python/server_run.log
+local-server/python/protocol_server.log
+local-server/python/tombs/

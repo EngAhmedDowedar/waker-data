@@ -68,6 +68,19 @@ def load():
                     # backfill any keys added since the file was written
                     for k, v in default_state().items():
                         _player.setdefault(k, v)
+                    # migrate: strip convertGoods from persisted goods/bags —
+                    # CGoods::Parse type-confuses on a scalar convertGoods
+                    # (see make_goods docstring). Absent key = safe (skipped).
+                    for _key in ('goods', 'bags'):
+                        for _g in _player.get(_key, []) or []:
+                            if isinstance(_g, dict):
+                                _g.pop('convertGoods', None)
+                    # migrate: customHouseTag must be INT (CHouse::Parse int
+                    # veneer); a persisted '' string crashes (IntValue-null 0x10).
+                    for _h in _player.get('estates', []) or []:
+                        if isinstance(_h, dict) and isinstance(
+                                _h.get('customHouseTag'), str):
+                            _h['customHouseTag'] = 0
                 except Exception:
                     _player = default_state()
             else:
@@ -96,13 +109,22 @@ def reset():
 # --- element builders (verified shapes from the subsystem reports) ----------
 
 def make_goods(gtype, amount, category=0, bought_price=0, gid=None):
-    """CGoods (CGoods::Parse): id,type,amount,category,boughtPrice,canUseTime,convertGoods."""
+    """CGoods (CGoods::Parse): id,type,amount,category,boughtPrice,canUseTime.
+
+    `convertGoods` is DELIBERATELY OMITTED. Binary-proven (TOMBSTONE_CRASH_MAP.md):
+    CGoods::Parse @0x40cc70 reads convertGoods at the 0x40cd40 GetNode and treats
+    the result as a NESTED node — `ldr r2,[r0,#4]; ldr r2,[r2,#0x40]; blx r2`. A
+    scalar `0` yields a non-null int node; dereferencing [node+4] as a child
+    collection and calling its vtable type-confuses → SIGSEGV (tomb_00, 0x6469af).
+    When the key is absent, GetNode returns null and the parser's `cmp r0,#0; beq`
+    skips it — safe. id/type/amount/category/boughtPrice/canUseTime use the scalar
+    read path and are fine as ints."""
     p = load()
     if gid is None:
         gid = p['_next_goods_id']
         p['_next_goods_id'] += 1
     return {'id': gid, 'type': gtype, 'amount': amount, 'category': category,
-            'boughtPrice': bought_price, 'canUseTime': 0, 'convertGoods': 0}
+            'boughtPrice': bought_price, 'canUseTime': 0}
 
 
 def make_house(estate_type, owner_id=1, owner_name='Abu Hassan', hid=None,
@@ -120,7 +142,9 @@ def make_house(estate_type, owner_id=1, owner_name='Abu Hassan', hid=None,
             'ownerName': owner_name, 'status': 1,
             'sellPrice': sell_price, 'rentPrice': rent_price,
             'rentExpireAt': 0, 'rentDays': 0, 'maintainExpireAt': 0,
-            'customHouseAt': 0, 'customHouseTag': ''}
+            'customHouseAt': 0, 'customHouseTag': 0}  # INT not string —
+            # CHouse::Parse reads customHouseTag via the int veneer; '' crashes
+            # (IntValue-null 0x10). See server._make_house note.
 
 
 def add_crime_skill(crime_idx):

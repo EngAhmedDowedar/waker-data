@@ -1,0 +1,59 @@
+==============================================================================
+PARSER-CONTRACT AUDIT — city boot chain
+==============================================================================
+### CPlayer::Parse               /city/connect/connect            fields=169 recs=1 OK
+### CPlayer::ParseStatus         /city/connect/connect            fields=  6 recs=1 OK
+### CGoods::Parse(goods)         /city/connect/connect            fields=  7 recs=0 ∅
+### CGoods::Parse(bags)          /city/connect/connect            fields=  7 recs=7 OK
+### CHouse::Parse(estates)       /city/connect/connect            fields= 21 recs=7 OK
+### CHouse::Parse(listest)       /city/estate/listestates         fields= 21 recs=7 OK
+### CCitier::Parse(fight)        /city/fight/randomfighters       fields= 54 recs=2 OK
+### CGoods::Parse(pbags)         /city/goods/playerbags           fields=  7 recs=7 OK
+### CGoods::Parse(pgoods)        /city/goods/playergoods          fields=  7 recs=0 ∅
+### CTopScreen::ParseMsg         /city/chat/gettopmsgs            fields=  4 recs=5 OK
+### CFaction::Parse              /city/faction/info               fields= 27 recs=1 OK
+### CServer::Parse               /api/getallserver                fields= 12 recs=1 OK
+### CServer::Parse(ckver)        /checkversion                    fields= 12 recs=1 OK
+### ParseLastLoginPlayer         /checkversion                    fields=  2 recs=1 OK
+### CChatScreen::ParseMsg        /city/chat/getmsg                fields= 10 recs=1 OK
+### CFaction(randomgangs)        /city/gang/randomgangs           fields= 27 recs=1 OK
+### CFight::Parse                /city/fight/statistics           fields=  9 recs=0 ∅
+### CCrime::Parse                /city/crime/list                 fields=  5 recs=0 ∅
+### CJob::Parse                  /city/job/getjobs                fields=  6 recs=0 ∅
+### CGym::Parse                  /city/gym/getgym                 fields=  6 recs=4 OK
+### CMessage::Parse              /city/message/list               fields= 10 recs=0 ∅
+### CSubject::Parse              /city/school/subjects            fields=  6 recs=0 ∅
+
+==============================================================================
+GAMEPLAY (post-city) PARSER-CONTRACT AUDIT
+==============================================================================
+Subsystem  Parser                       Endpoint                       Field            Exp      Act      Risk Patch
+Crime      ParseDoCrimeResponse         /city/crime/docrime            -                -        -        -    N   [OK f=13 r=1]
+Jobs       ParseGetSaleryResponse       /city/job/work                 -                -        -        -    N   [OK f=1 r=1]
+Jobs       ParseDoJobResponse           /city/job/work                 -                -        -        -    N   [OK f=0 r=1]
+Bank       CBankScreen::OnRecv          /city/bank/checkbalance        -                -        -        -    N   [OK f=3 r=1]
+Bank       CBankScreen::OnRecv          /city/bank/deposit             -                -        -        -    N   [OK f=3 r=1]
+Gym        ParseEnterGymInfo            /city/gym/getgym               -                -        -        -    N   [OK f=4 r=1]
+Gym        CGymService::ParseConfig     /city/gym/getgym               -                -        -        -    N   [OK f=0 r=4]
+Gym        CGymScreen::ParseResponse    /city/gym/getgym               -                -        -        -    N   [OK f=8 r=1]
+Hospital   CHospitalScreen::OnRecv      /city/hospital/cure            -                -        -        -    N   [OK f=1 r=1]
+Hospital   ParsePatient                 /city/hospital/patients        -                -        -        -    N   [∅(empty) f=0 r=0]
+Missions   CGameMissionMgr::OnRecv      /city/mission/getmission       -                -        -        -    N   [OK f=1 r=1]
+Fight      CFightingScreen::OnRecv      /city/fight/attack             -                -        -        -    N   [OK f=0 r=1]
+Fight      CFight::Parse                /city/fight/statistics         -                -        -        -    N   [OK f=9 r=1]
+Fight      CFight::ParseNew             /city/fight/attack             -                -        -        -    N   [OK f=29 r=1]
+Fight      CFightingScreen::ParseFighters /city/fight/attack             -                -        -        -    N   [OK f=0 r=1]
+Store      CStorePackage::Parse         /city/store/package            -                -        -        -    N   [∅(empty) f=10 r=0]
+Lottery    CLotteryScreen::OnRecv       /city/lottery/info             -                -        -        -    N   [∅(empty) f=9 r=0]
+Rankings   CRankCateScreen::ParsePlayer /city/rank/list                -                -        -        -    N   [∅(empty) f=2 r=0]
+School     CSchoolScreen::ParseSubject  /city/school/getmyclasses      -                -        -        -    N   [∅(empty) f=2 r=0]
+Mail       CMessage::Parse              /city/message/list             -                -        -        -    N   [∅(empty) f=10 r=0]
+Auction    CAuction::ParseMyAuctions    /city/auction/list             -                -        -        -    N   [∅(empty) f=12 r=0]
+GoodsMkt   CGoods::ParseDeal            /city/deal/list                -                -        -        -    N   [∅(empty) f=5 r=0]
+Inventory  CGoods::Parse(buy)           /city/goods/buy                -                -        -        -    N   [OK f=7 r=8]
+Estate     CHouse::Parse(buy)           /city/estate/buy               -                -        -        -    N   [OK f=21 r=8]
+
+==============================================================================
+TOTAL_MISMATCH_COUNT     = 0
+TOTAL_UNAUDITED_PARSERS  = 0
+==============================================================================

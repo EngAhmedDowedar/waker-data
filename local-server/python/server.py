@@ -342,7 +342,10 @@ def _server_entry():
     return {
         'idx': 1, 'status': 1, 'port': TCP_PORT, 'recommend': 1, 'register': 0,
         'mergeServer': 0, 'name': 'Waker', 'url': SERVER_HOST, 'comment': '',
-        'bucket': 0, 'displayIdx': 1, 'useHttps': 0, 'crossPlatCode': 'android',
+        'bucket': '', 'displayIdx': 1, 'useHttps': 0, 'crossPlatCode': 'android',
+        # bucket is a STRING: CServer::Parse reads it at 0x56dfde via the string
+        # path (adds r0,#4; movs r1,#1), like name/comment. An int crashes the
+        # string accessor. CServer::Parse runs at boot (/checkversion servers[]).
     }
 
 
@@ -376,7 +379,9 @@ def _make_house(hid=1, estate_type=800, owner_id=1, owner_name='Player'):
         'ownerName': owner_name, 'status': 1,
         'sellPrice': 1000, 'rentPrice': 100,
         'rentExpireAt': 0, 'rentDays': 0, 'maintainExpireAt': 0,
-        'customHouseAt': 0, 'customHouseTag': '',
+        'customHouseAt': 0, 'customHouseTag': 0,  # INT: CHouse::Parse reads it
+        # via the int veneer (0x449b96 adds r0,#8; bl 0x69300c), NOT the string
+        # path. A string '' here extracts as int → IntValue-null (fault 0x10).
     }
 
 
@@ -399,7 +404,9 @@ def _make_fighter(fid=2001, name='Rival', level=18):
         'blood': 100, 'bloodUp': 100, 'status': 0, 'statusAt': 0,
         'statusDuration': 0, 'statusExtra': 0, 'statusExtraDesc': '',
         'rankPos': 0, 'rankScore': 0, 'cityId': 1, 'avatarAt': 0,
-        'online': 1, 'vip': 0, 'gangFlag': 0, 'gangId': 0, 'title': 0,
+        'online': 1, 'vip': 0, 'gangFlag': '', 'gangId': 0, 'title': 0,
+        # gangFlag STRING: CCitier::Parse reads it at 0x34e264 via the string
+        # accessor (adds r0,#4; movs r1,#1; bl 0x692fcc). int crashes it.
         'prestige': 0, 'contribution': 0, 'gangMemberRelationId': 0,
         'relation': 0, 'lastOnlineAt': now, 'playerRole': 1, 'wantedId': 0,
         'wantedOwnerId': 0, 'rewardMoney': 0, 'content': '', 'gender': 1,
@@ -691,6 +698,80 @@ def city_estate_buy():
                     'data': {'buy_house': house, 'estates': p['estates']}})
 
 
+@app.route('/city/estate/listonrent', methods=['GET', 'POST', 'PUT'])
+def city_estate_listonrent():
+    p = player_state.load()
+    on_rent = [h for h in p['estates'] if h.get('renterId', 0) != 0]
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'onRentEstates': on_rent, 'total': len(on_rent)}})
+
+
+@app.route('/city/estate/getonrentamount', methods=['GET', 'POST', 'PUT'])
+def city_estate_getonrentamount():
+    p = player_state.load()
+    total_rent = sum(h.get('rentPrice', 0) for h in p['estates'] if h.get('renterId', 0) != 0)
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'amount': total_rent, 'count': 0}})
+
+
+@app.route('/city/estate/collectrent', methods=['GET', 'POST', 'PUT'])
+def city_estate_collectrent():
+    p = player_state.load()
+    total_rent = sum(h.get('rentPrice', 0) for h in p['estates'] if h.get('renterId', 0) != 0)
+    if total_rent > 0:
+        p['money'] += total_rent
+        player_state.save()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'money': p['money'], 'rentIncome': total_rent}})
+
+
+@app.route('/city/estate/sellproperty', methods=['GET', 'POST', 'PUT'])
+def city_estate_sell():
+    p = player_state.load()
+    estate_id = _req_int('estateId', 0)
+    p['estates'] = [h for h in p['estates'] if h['id'] != estate_id]
+    player_state.save()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'estates': p['estates'], 'money': p['money']}})
+
+
+@app.route('/city/estate/setforsale', methods=['GET', 'POST', 'PUT'])
+def city_estate_setforsale():
+    p = player_state.load()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'estates': p['estates']}})
+
+
+@app.route('/city/estate/setforrent', methods=['GET', 'POST', 'PUT'])
+def city_estate_setforrent():
+    p = player_state.load()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'estates': p['estates']}})
+
+
+@app.route('/city/estate/furnish', methods=['GET', 'POST', 'PUT'])
+def city_estate_furnish():
+    p = player_state.load()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'estates': p['estates']}})
+
+
+@app.route('/city/estate/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_estate_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/volunteer/list', methods=['GET', 'POST', 'PUT'])
+def city_volunteer_list():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'volunteers': [], 'total': 0}})
+
+
+@app.route('/city/volunteer/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_volunteer_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
 @app.route('/city/fight/randomfighters', methods=['GET', 'POST', 'PUT'])
 def city_randomfighters():
     """Array of CCitier — fight targets. See _make_fighter() docstring for
@@ -785,7 +866,8 @@ def city_randomgangs():
         'memberCount': 10, 'maxMember': 50,
         'prestige': 500, 'money': 100000,
         'notice': '', 'createdAt': now - 86400 * 90,
-        'flag': 1, 'status': 0,
+        'flag': '', 'status': 0,  # STRING: gangs are CFaction instances;
+        # CFaction::Parse reads flag via the string path (0x3ce2ec). int crashes it.
     }
     return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
                     'data': [gang]})
@@ -795,9 +877,10 @@ def city_randomgangs():
 
 @app.route('/city/mission/updatemission', methods=['GET', 'POST', 'PUT'])
 def city_updatemission():
-    """Mission progress update — returns the updated CPlayer."""
+    """cmd 369: CGameMissionManager reads only missionId — scalar object per MISSION_PARSER_FINAL.md."""
+    p = player_state.load()
     return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
-                    'data': _make_player()})
+                    'data': {'missionId': p['missionId']}})
 
 
 @app.route('/city/mission/getmission', methods=['GET', 'POST', 'PUT'])
@@ -883,9 +966,21 @@ def city_job_work():
 
 @app.route('/city/gym/getgym', methods=['GET', 'POST', 'PUT'])
 def city_getgym():
-    """Gym info — object with gym state."""
+    gym_types = [
+        {'id': 1, 'type': 1, 'name': 'القوة',   'cost': 500, 'duration': 3600,
+         'attrType': 1, 'attrGain': 2, 'maxTimes': 10},
+        {'id': 2, 'type': 2, 'name': 'التحمل',  'cost': 500, 'duration': 3600,
+         'attrType': 2, 'attrGain': 2, 'maxTimes': 10},
+        {'id': 3, 'type': 3, 'name': 'السرعة',  'cost': 500, 'duration': 3600,
+         'attrType': 3, 'attrGain': 2, 'maxTimes': 10},
+        {'id': 4, 'type': 4, 'name': 'الرشاقة', 'cost': 500, 'duration': 3600,
+         'attrType': 4, 'attrGain': 2, 'maxTimes': 10},
+    ]
+    p = player_state.load()
     return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
-                    'data': {'gymTypes': [], 'gymServiceDetails': []}})
+                    'data': {'gymTypes': gym_types, 'gymServiceDetails': [],
+                             'trainExpireAt': 0, 'trainCount': 0,
+                             'energy': p['energy'], 'blood': p['blood']}})
 
 
 @app.route('/city/gym/train', methods=['GET', 'POST', 'PUT'])
@@ -1002,21 +1097,21 @@ def city_chat_getsysmsgs():
 
 @app.route('/race/car/getcars', methods=['GET', 'POST', 'PUT'])
 def race_car_getcars():
-    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': []})
+    # 404 bypasses XOR encoder (non-200) → game parse fails → null-guard safe, no bone-anim crash
+    # 404 = "feature not found" → game ignores, NO reconnect triggered
+    # 503 = "server unavailable" → game's reconnect fires → infinite auth loop (proven)
+    from flask import Response
+    return Response('{"error":"race_disabled"}', status=404, mimetype='text/plain')
 
 
 @app.route('/race/car/getstoreitems', methods=['GET', 'POST', 'PUT'])
 def race_car_getstoreitems():
-    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': []})
+    from flask import Response
+    return Response('{"error":"race_disabled"}', status=404, mimetype='text/plain')
 
 
 @app.route('/city/hospital/patients', methods=['GET', 'POST', 'PUT'])
 def city_hospital_patients():
-    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': []})
-
-
-@app.route('/city/gang/randomgangs', methods=['GET', 'POST', 'PUT'])
-def city_gang_randomgangs():
     return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': []})
 
 
@@ -1121,6 +1216,744 @@ def race_match_recorddesc():
 @app.route('/city/deal/taobao', methods=['GET', 'POST', 'PUT'])
 def city_deal_taobao():
     return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': []})
+
+
+# ----- BANK -----------------------------------------------------------------
+
+@app.route('/city/bank/checkbalance', methods=['GET', 'POST', 'PUT'])
+def city_bank_checkbalance():
+    p = player_state.load()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'money': p['money'], 'cheque': p['cheque'],
+                             'bankLimit': 50000000, 'saveFee': 0,
+                             'withdrawFee': 0, 'dailyLimit': 0}})
+
+
+@app.route('/city/bank/save', methods=['GET', 'POST', 'PUT'])
+@app.route('/city/bank/deposit', methods=['GET', 'POST', 'PUT'])
+def city_bank_deposit():
+    p = player_state.load()
+    amount = _req_int('amount', 0)
+    if amount > 0 and p['money'] >= amount:
+        p['money'] -= amount
+        p['cheque'] += amount
+        player_state.save()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'money': p['money'], 'cheque': p['cheque']}})
+
+
+@app.route('/city/bank/take', methods=['GET', 'POST', 'PUT'])
+@app.route('/city/bank/withdraw', methods=['GET', 'POST', 'PUT'])
+def city_bank_withdraw():
+    p = player_state.load()
+    amount = _req_int('amount', 0)
+    if amount > 0 and p['cheque'] >= amount:
+        p['cheque'] -= amount
+        p['money'] += amount
+        player_state.save()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'money': p['money'], 'cheque': p['cheque']}})
+
+
+# ----- GYM (enhanced) -------------------------------------------------------
+
+@app.route('/city/gym/enter', methods=['GET', 'POST', 'PUT'])
+def city_gym_enter():
+    p = player_state.load()
+    gym_types = [
+        {'id': 1, 'type': 1, 'name': 'القوة',    'cost': 500,  'duration': 3600,
+         'attrType': 1, 'attrGain': 2, 'maxTimes': 10},
+        {'id': 2, 'type': 2, 'name': 'التحمل',   'cost': 500,  'duration': 3600,
+         'attrType': 2, 'attrGain': 2, 'maxTimes': 10},
+        {'id': 3, 'type': 3, 'name': 'السرعة',   'cost': 500,  'duration': 3600,
+         'attrType': 3, 'attrGain': 2, 'maxTimes': 10},
+        {'id': 4, 'type': 4, 'name': 'الرشاقة',  'cost': 500,  'duration': 3600,
+         'attrType': 4, 'attrGain': 2, 'maxTimes': 10},
+    ]
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'gymTypes': gym_types,
+                             'trainExpireAt': 0, 'trainCount': 0,
+                             'energy': p['energy'], 'blood': p['blood']}})
+
+
+# ----- LADDER FIGHT ---------------------------------------------------------
+
+@app.route('/city/ladderfight/getmerit', methods=['GET', 'POST', 'PUT'])
+def city_ladderfight_getmerit():
+    p = player_state.load()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'merit': 0, 'rank': 0, 'score': 0,
+                             'winCount': 0, 'loseCount': 0,
+                             'challengeTimes': 3, 'maxChallengeTimes': 3,
+                             'refreshCost': 100}})
+
+
+@app.route('/city/ladderfight/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_ladderfight_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- NEWS -----------------------------------------------------------------
+
+@app.route('/city/news/frontpage', methods=['GET', 'POST', 'PUT'])
+def city_news_frontpage():
+    now = int(time.time())
+    news = [
+        {'id': 1, 'title': 'أخبار المدينة', 'content': 'مرحباً بكم في الوكر',
+         'createdAt': now - 3600, 'type': 1},
+    ]
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'news': news, 'fairList': [], 'advertises': []}})
+
+
+@app.route('/city/news/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_news_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- FIGHT (action + statistics) -----------------------------------------
+
+@app.route('/city/fight/statistics', methods=['GET', 'POST', 'PUT'])
+def city_fight_statistics():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'winCount': 0, 'loseCount': 0, 'drawCount': 0,
+                             'streak': 0, 'records': []}})
+
+
+@app.route('/city/fight/fight', methods=['GET', 'POST', 'PUT'])
+@app.route('/city/fight/attack', methods=['GET', 'POST', 'PUT'])
+def city_fight_action():
+    p = player_state.load()
+    target_id = _req_int('targetId', 2001)
+    win = random.random() < 0.6
+    award_money = random.randint(100, 500) * 100 if win else 0
+    award_exp = 30 if win else 10
+    if win:
+        p['money'] += award_money
+        p['exp'] += award_exp
+    else:
+        p['blood'] = max(0, p['blood'] - 20)
+    p.setdefault('battleWin', 0)
+    p.setdefault('battleLose', 0)
+    if win:
+        p['battleWin'] += 1
+    else:
+        p['battleLose'] += 1
+    player_state.save()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'result': 1 if win else 0,
+                             'awardMoney': award_money, 'awardExp': award_exp,
+                             'winnerName': p['name'] if win else 'Rival',
+                             'rounds': random.randint(3, 10),
+                             'myHp': p['blood'], 'targetHp': 0 if win else 50,
+                             'money': p['money']}})
+
+
+@app.route('/city/fight/boss/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_fight_boss(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- FACTION --------------------------------------------------------------
+
+@app.route('/city/faction/list', methods=['GET', 'POST', 'PUT'])
+def city_faction_list():
+    p = player_state.load()
+    faction = {
+        'id': 1, 'name': 'عصابة الوكر', 'level': 3,
+        'leaderId': 1, 'leaderName': p['name'],
+        'memberCount': 1, 'maxMember': 50,
+        'prestige': 500, 'notice': 'أهلاً بكم',
+        'flag': '', 'status': 0, 'contribution': 0,  # flag STRING: CFaction::Parse
+        # reads it at 0x3ce2ec via the string path (adds r0,#4); int crashes it.
+        'createdAt': int(time.time()) - 86400 * 30,
+    }
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'factions': [faction], 'myFactionId': 0, 'total': 1}})
+
+
+@app.route('/city/faction/info', methods=['GET', 'POST', 'PUT'])
+def city_faction_info():
+    now = int(time.time())
+    p = player_state.load()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'id': 1, 'name': 'عصابة الوكر', 'level': 3,
+                             'leaderId': 1, 'leaderName': p['name'],
+                             'memberCount': 1, 'maxMember': 50, 'prestige': 500,
+                             'notice': 'أهلاً بكم', 'flag': '', 'status': 0,
+                             'contribution': 0, 'money': 100000,
+                             'createdAt': now - 86400 * 30,
+                             'members': [], 'skills': []}})
+
+
+@app.route('/city/faction/members', methods=['GET', 'POST', 'PUT'])
+def city_faction_members():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'members': [], 'total': 0}})
+
+
+@app.route('/city/faction/create', methods=['GET', 'POST', 'PUT'])
+def city_faction_create():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'id': 1, 'name': _req_json().get('name', 'عصابة جديدة')}})
+
+
+@app.route('/city/faction/join', methods=['GET', 'POST', 'PUT'])
+def city_faction_join():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/faction/leave', methods=['GET', 'POST', 'PUT'])
+def city_faction_leave():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/faction/contribute', methods=['GET', 'POST', 'PUT'])
+def city_faction_contribute():
+    p = player_state.load()
+    amount = _req_int('money', 1000)
+    if p['money'] >= amount:
+        p['money'] -= amount
+        player_state.save()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'contribution': amount, 'money': p['money']}})
+
+
+@app.route('/city/faction/skills', methods=['GET', 'POST', 'PUT'])
+def city_faction_skills():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'skills': []}})
+
+
+@app.route('/city/faction/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_faction_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- SCHOOL ---------------------------------------------------------------
+
+@app.route('/city/school/applyclass', methods=['GET', 'POST', 'PUT'])
+def city_school_applyclass():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'classId': _req_int('classId', 1),
+                             'expireAt': int(time.time()) + 3600}})
+
+
+@app.route('/city/school/getmyclasses', methods=['GET', 'POST', 'PUT'])
+def city_school_getmyclasses():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'subjects': [], 'myClasses': []}})
+
+
+@app.route('/city/school/subjects', methods=['GET', 'POST', 'PUT'])
+def city_school_subjects():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'subjects': []}})
+
+
+@app.route('/city/school/graduate', methods=['GET', 'POST', 'PUT'])
+def city_school_graduate():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': _make_player()})
+
+
+@app.route('/city/school/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_school_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- GOODS / MARKET -------------------------------------------------------
+
+@app.route('/city/goods/marketlist', methods=['GET', 'POST', 'PUT'])
+def city_goods_marketlist():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': []})
+
+
+@app.route('/city/goods/equipment', methods=['GET', 'POST', 'PUT'])
+def city_goods_equipment():
+    p = player_state.load()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'playerGoods': p['bags'], 'tradeGoods': [],
+                             'specialities': [], 'equipments': []}})
+
+
+@app.route('/city/goods/blackmarket', methods=['GET', 'POST', 'PUT'])
+def city_goods_blackmarket():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'goodsList': [], 'refreshCost': 100}})
+
+
+@app.route('/city/goods/buy', methods=['GET', 'POST', 'PUT'])
+def city_goods_buy():
+    p = player_state.load()
+    goods_type = _req_int('goodsType', 1)
+    amount = _req_int('amount', 1)
+    price = 1000 * amount
+    if p['money'] >= price:
+        p['money'] -= price
+        p['bags'].append(player_state.make_goods(goods_type, amount))
+        player_state.save()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'money': p['money'], 'bags': p['bags']}})
+
+
+@app.route('/city/goods/sell', methods=['GET', 'POST', 'PUT'])
+def city_goods_sell():
+    p = player_state.load()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'money': p['money']}})
+
+
+@app.route('/city/goods/use', methods=['GET', 'POST', 'PUT'])
+def city_goods_use():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': _make_player()})
+
+
+@app.route('/city/deal/list', methods=['GET', 'POST', 'PUT'])
+def city_deal_list():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'items': [], 'total': 0}})
+
+
+@app.route('/city/trade/list', methods=['GET', 'POST', 'PUT'])
+def city_trade_list():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'trades': [], 'total': 0}})
+
+
+# ----- PLAYER INFO / SOCIAL -------------------------------------------------
+
+@app.route('/city/player/avatarinfo', methods=['GET', 'POST', 'PUT'])
+def city_player_avatarinfo():
+    now = int(time.time())
+    p = player_state.load()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'avatarAt': now - 86400, 'avatarUrl': ''}})
+
+
+@app.route('/city/player/setavatar', methods=['GET', 'POST', 'PUT'])
+def city_player_setavatar():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'avatarAt': int(time.time())}})
+
+
+@app.route('/city/player/setname', methods=['GET', 'POST', 'PUT'])
+def city_player_setname():
+    p = player_state.load()
+    new_name = _req_json().get('name', p['name'])
+    p['name'] = new_name
+    player_state.save()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': _make_player()})
+
+
+@app.route('/city/player/search', methods=['GET', 'POST', 'PUT'])
+def city_player_search():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'players': [], 'total': 0}})
+
+
+@app.route('/city/player/personal', methods=['GET', 'POST', 'PUT'])
+def city_player_personal():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': _make_player()})
+
+
+# ----- FRIEND / SOCIAL ------------------------------------------------------
+
+@app.route('/city/friend/add', methods=['GET', 'POST', 'PUT'])
+def city_friend_add():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/friend/delete', methods=['GET', 'POST', 'PUT'])
+def city_friend_delete():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/friend/request', methods=['GET', 'POST', 'PUT'])
+def city_friend_request():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'requests': []}})
+
+
+# ----- MAIL -----------------------------------------------------------------
+
+@app.route('/city/message/list', methods=['GET', 'POST', 'PUT'])
+def city_message_list():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'messages': [], 'total': 0, 'unread': 0}})
+
+
+@app.route('/city/message/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_message_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- ACHIEVEMENT / RANK ---------------------------------------------------
+
+@app.route('/city/achievement/list', methods=['GET', 'POST', 'PUT'])
+def city_achievement_list():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'achievements': [], 'total': 0}})
+
+
+@app.route('/city/achievement/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_achievement_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/rank/list', methods=['GET', 'POST', 'PUT'])
+def city_rank_list():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'players': [], 'total': 0, 'myRank': 0}})
+
+
+@app.route('/city/rank/nationalbid', methods=['GET', 'POST', 'PUT'])
+def city_rank_nationalbid():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': []})
+
+
+@app.route('/city/rank/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_rank_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- EVENTS & REWARDS -----------------------------------------------------
+
+@app.route('/city/event/weekaward', methods=['GET', 'POST', 'PUT'])
+def city_event_weekaward():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'awards': [], 'received': []}})
+
+
+@app.route('/city/event/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_event_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/activities/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_activities(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/wanted/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_wanted(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- VOTE -----------------------------------------------------------------
+
+@app.route('/city/vote/list', methods=['GET', 'POST', 'PUT'])
+def city_vote_list():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'votes': [], 'total': 0}})
+
+
+@app.route('/city/vote/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_vote_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- GUARD / HELPER -------------------------------------------------------
+
+@app.route('/city/guard/list', methods=['GET', 'POST', 'PUT'])
+def city_guard_list():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'guards': [], 'total': 0}})
+
+
+@app.route('/city/guard/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_guard_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/helper/list', methods=['GET', 'POST', 'PUT'])
+def city_helper_list():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': []})
+
+
+@app.route('/city/helper/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_helper_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- HOSPITAL -------------------------------------------------------------
+
+@app.route('/city/hospital/cure', methods=['GET', 'POST', 'PUT'])
+def city_hospital_cure():
+    p = player_state.load()
+    cost = (100 - p['blood']) * 100
+    if p['money'] >= cost:
+        p['money'] -= cost
+        p['blood'] = 100
+        player_state.save()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'blood': p['blood'], 'money': p['money']}})
+
+
+@app.route('/city/hospital/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_hospital_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- PRISON ---------------------------------------------------------------
+
+@app.route('/city/jail/breakout', methods=['GET', 'POST', 'PUT'])
+def city_jail_breakout():
+    p = player_state.load()
+    p['playerStatus']['status'] = 0
+    player_state.save()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': _make_player()})
+
+
+@app.route('/city/jail/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_jail_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- STORE / SHOP ---------------------------------------------------------
+
+@app.route('/city/store/package', methods=['GET', 'POST', 'PUT'])
+def city_store_package():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'packages': []}})
+
+
+@app.route('/city/store/buy', methods=['GET', 'POST', 'PUT'])
+def city_store_buy():
+    p = player_state.load()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'gold': p['gold'], 'result': 1}})
+
+
+@app.route('/city/store/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_store_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- PURCHASE / RECHARGE --------------------------------------------------
+
+@app.route('/city/purchase/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_purchase(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'items': []}})
+
+
+# ----- LOTTERY --------------------------------------------------------------
+
+@app.route('/city/lottery/draw', methods=['GET', 'POST', 'PUT'])
+def city_lottery_draw():
+    p = player_state.load()
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'rewards': [], 'gold': p['gold']}})
+
+
+@app.route('/city/lottery/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_lottery_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- AUCTION --------------------------------------------------------------
+
+@app.route('/city/auction/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_auction(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'items': []}})
+
+
+# ----- SKYSCRAPER -----------------------------------------------------------
+
+@app.route('/city/skyscraper/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_skyscraper(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- MINE -----------------------------------------------------------------
+
+@app.route('/city/mine/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_mine(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- HUNT -----------------------------------------------------------------
+
+@app.route('/city/hunt/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_hunt(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- KING FIGHT / FORCE ARENA ---------------------------------------------
+
+@app.route('/city/kingfight/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_kingfight(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/forcearena/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_forcearena(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- CORP / WAR -----------------------------------------------------------
+
+@app.route('/city/corp/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_corp(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/citywar/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_citywar(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/streetwar/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_streetwar(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/crossserverwar/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_crossserverwar_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/crossserverladderfight/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_crossserverladderfight(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- MERCENARY ------------------------------------------------------------
+
+@app.route('/city/mercenary/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_mercenary_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/mercenaryGrow/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_mercenarygrow(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/mercenaryPit/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_mercenarypit(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- MENTORING ------------------------------------------------------------
+
+@app.route('/city/mentoring/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_mentoring(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- COOPERATE BOSS -------------------------------------------------------
+
+@app.route('/city/cooperateboss/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_cooperateboss(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- MARITAL --------------------------------------------------------------
+
+@app.route('/city/marital/status', methods=['GET', 'POST', 'PUT'])
+def city_marital_status():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'status': 0, 'spouseName': '', 'spouseId': 0}})
+
+
+@app.route('/city/marital/marry', methods=['GET', 'POST', 'PUT'])
+def city_marital_marry():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/city/marital/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_marital_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- MINI GAMES -----------------------------------------------------------
+
+@app.route('/city/game/circle', methods=['GET', 'POST', 'PUT'])
+def city_game_circle():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': []})
+
+
+@app.route('/city/game/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_game(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- FEEDBACK -------------------------------------------------------------
+
+@app.route('/city/feedback/list', methods=['GET', 'POST', 'PUT'])
+def city_feedback_list():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': []})
+
+
+@app.route('/city/feedback/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_feedback_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- RED PACKET -----------------------------------------------------------
+
+@app.route('/city/redpacket/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_redpacket(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- RACE (enhanced) ------------------------------------------------------
+
+@app.route('/race/match/matchconfig', methods=['GET', 'POST', 'PUT'])
+def race_match_matchconfig():
+    # data:{} → CRaceCoreMnger::ParseAthleticsData null-guard triggers → game takes airline/city path
+    # data:null → different code path → game skips airlines, gets stuck in loading spinner
+    # getcars/getstoreitems protected by 503 to prevent bone-anim Houdini crash
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/race/match/matchinginfo', methods=['GET', 'POST', 'PUT'])
+def race_match_matchinginfo():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'status': 0, 'matchId': 0}})
+
+
+@app.route('/race/match/matchingprizelist', methods=['GET', 'POST', 'PUT'])
+def race_match_matchingprizelist():
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'prizes': []}})
+
+
+@app.route('/race/match/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def race_match_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/race/skin/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def race_skin(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+@app.route('/race/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def race_other(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
+
+
+# ----- MONTH CARD -----------------------------------------------------------
+
+@app.route('/city/monthCard/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_monthcard(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '',
+                    'data': {'active': 0, 'expireAt': 0}})
+
+
+# ----- GANGBOSS -------------------------------------------------------------
+
+@app.route('/city/gangboss/<path:cmd>', methods=['GET', 'POST', 'PUT'])
+def city_gangboss(cmd):
+    return jsonify({'result': 0, 'code': 200, 'errorMsg': '', 'data': {}})
 
 
 # ----- catch-alls -----------------------------------------------------------
